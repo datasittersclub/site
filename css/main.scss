@@ -1,0 +1,13 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+$grey-color: #828282;
+$grey-color-light: lighten($grey-color, 40%);
+
+$grey-color-dark: darken(
+  $grey-color,
+  25%
+); // Import partials from `sass_dir` (defaults to `_sass`)
+@import "milligram/milligram", "base", "layout";

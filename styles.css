@@ -1,0 +1,97 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  padding-bottom: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*.wrapper > * {
+  padding: 20px;
+}*/
+
+.page-header {
+  flex: 0 0 auto;
+}
+
+.page-content {
+  flex-grow: 1;
+  flex-direction: column;
+  position: relative; /* need this to position inner content */
+  overflow-y: auto;
+}
+
+/*.page-footer {
+  flex: 0 0 auto;
+}*/
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.my-flex-container {
+  height: 100vh;
+  z-index: 1;
+  /*margin-bottom: 20px;*/
+}
+.my-flex-container-column {
+  height: 100vh;
+  /*margin-bottom: 20px;*/
+}
+.my-flex-item {
+  height: 100vh;
+}
+
+.my-flex-item-2 {
+  height: 100vh;
+}
+
+.container-fluid {
+  height: 100vh;
+  position: absolute;
+  overflow-y: auto;
+  z-index: 0;
+}
+
+.navbar-brand {
+  position: relative;
+  background: url(../assets/img/logo.png);
+  width: 130px;
+  height: 60px;
+  background-size: contain;
+}
+
+.page-footer {
+  height: -50px;
+  margin-top: -50px;
+}
+
+.map {
+  height: 100vh;
+  z-index: 1;
+}
+
+#footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 65px;
+  z-index: 2;
+}
