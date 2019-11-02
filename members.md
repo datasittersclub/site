@@ -1,7 +1,7 @@
 ---
 layout: default
-title: members
-permalink: /members/
+title: Chapter 2
+permalink: /chapter-2/
 ---
 
 Say hello to your friends...
