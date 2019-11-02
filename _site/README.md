@@ -2,4 +2,4 @@
 
 Building the most thorough, comprehensive, and colloquial guide to digital humanities computational text analysis ever.
 
-![](/dsclogo.png)
+![](/datasittersclub.github.io/DSClogo.png)
