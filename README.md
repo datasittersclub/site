@@ -1,5 +1,4 @@
-# urban-theme
+The Data-Sitters Club
 
-This theme is a Jekyll port of http://erosie.net/ with some modifications. It is designed for visual artists.
+Building the most thorough, comprehensive, and colloquial guide to digital humanities computational text analysis ever.
 
-Live-Demo: http://narkotyk.net/
