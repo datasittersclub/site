@@ -533,9 +533,7 @@ h6 {
  * Licensed under the MIT license
  */
 img {
-  min-width: 320px;
-  max-width: 100%;
-  height: auto; }
+  max-width: 100%; }
 
 /*!
  * Milligram-scss v1.3.0

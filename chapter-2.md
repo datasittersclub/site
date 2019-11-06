@@ -10,7 +10,7 @@ As we have observed, _The Baby-Sitters Club_ books tend to include a formulaic "
 
 Say hello to your friends...
 
-![Photo of Katia Bowers](https://github.com/datasittersclub/site/blob/master/katiapic.jpg?raw=true) Katia Bowers, University of British Columbia
+![Photo of Katia Bowers](https://github.com/datasittersclub/site/blob/master/katiapic.jpg?raw=true){:style="float: left; margin-right: 5px;"} Katia Bowers, University of British Columbia
 
 Maria Cecire, Bard College  
 Quinn Dombrowski, Stanford University  
