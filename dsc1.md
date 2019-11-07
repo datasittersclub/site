@@ -66,3 +66,7 @@ It was the day before Halloween when all five of us were finally able to get tog
 As we went around, thinking aloud about the directions we could explore together, I was delighted. We could actually do this: kids who once read _BSC_ books in our bedrooms, thousands of miles away from one another, were now grown-ups with faculty or alt-ac jobs. We had the resources to ask and answer the questions we were only dimly aware of then, and make visible all the steps along the way.
 
 The Data-Sitters Club was going to be a success, and I helped make it work. I hoped Roopsi, Katia, Maria, Anouk, and I -- the Data-Sitters Club -- would stay together for a long time.
+
+<div style="text-align:center" markdown="1">
+![Photo of the first Data-Sitters Club Zoom meeting with Quinn Dombrowski, Katia Bowers, Maria Cecire, Anouk Lang, and Roopika Risam](https://raw.githubusercontent.com/datasittersclub/site/master/bscmeeting.png)
+</div>
