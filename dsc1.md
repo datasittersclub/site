@@ -70,3 +70,7 @@ The Data-Sitters Club was going to be a success, and I helped make it work. I ho
 <div style="text-align:center" markdown="1">
 ![Photo of the first Data-Sitters Club Zoom meeting with Quinn Dombrowski, Katia Bowers, Maria Cecire, Anouk Lang, and Roopika Risam](https://raw.githubusercontent.com/datasittersclub/site/master/bscmeeting.png)
 </div>
+
+### Suggested citation
+Dombrowski, Quinn. "DSC #1: Quinn's Great Idea". _The Data-Sitters Club._ November 7, 2019. https://datasittersclub.github.io/site/dsc1/
+
