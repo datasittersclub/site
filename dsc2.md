@@ -106,11 +106,9 @@ I wrote back right away:
 >**Subject:** Re: Amazing discovery for our next volume!
 >
 >That's so interesting!!! I had noticed that there were a few weird places where they had updated things - like in one of the first 4 books, one of them (I forget who) mentions spending her baby-sitting $$ on CDs... but that seems like something that would have been a luxury item for suburban tweens of the 80s considering CD players then were *so* expensive. Interesting to see what things they updated and what they didn't update (I'm not sure this last question is possible to find out digitally). And I wonder if the updates stopped because the books were being written about the same time as the re-releases were coming out?
-</span>
 
 It wasn't long before everyone weighed in:
 
-<span style="font-family: mono;">
 >**From:** Anouk Lang
 >**To:** Katia Bowers, Maria Sachiko Cecire, Quinn Dombrowski, Roopika Risam
 >**Date:** 11/7/19 3:02 PM
@@ -119,27 +117,23 @@ It wasn't long before everyone weighed in:
 >That is interesting. Makes you want to go and talk to the publisher and find out at what level there was an editorial policy to make updates like that, and where it was at the discretion of individual editors (or copyeditors). Speaking for myself I'd want to use the original versions in any analysis at scale, just to capture what I feel like would have been the largest readership (assuming its readership has tailed off steadily since the original publication).
 >
 >Also just thinking about this from the feminist computational text analysis viewpoint, this might offer us an opportunity to think out loud a bit about how one does feminist/critical corpus construction: what the rationale might be for choosing one version over another as we construct our corpus. There are lots of principles for corpus construction out there (about which, full disclosure, I don't know enough), but I don't remember ever having seen explicitly feminist ones. (Feminist being an inadequate shorthand here for perspectives cognisant of critical race studies, queer theory, disability studies etc.)
-</span>
 
 
-<span style="font-family: mono;">
 >**From:** Roopika Risam
 >**To:** Katia Bowers, Maria Sachiko Cecire, Quinn Dombrowski, Anouk Lang
 >**Date:** 11/7/19 3:04 PM
 >**Subject:** Re: Amazing discovery for our next volume!
 >
 >That's super interesting - at some point maybe we could do Roopsi and the Trouble with Juxta or similar 😂
-</span>
 
-
-<span style="font-family: mono;">
 >**From:** Maria Sachiko Cecire
 >**To:** Katia Bowers, Quinn Dombrowski, Anouk Lang, Roopika Risam
 >**Date:** 11/7/19 6:39 PM
 >**Subject:** Re: Amazing discovery for our next volume!
 >
 >Thanks, Quinn! Those are cool findings, and in line with some other examples from the history of children's literature publishing. Up until the Harry Potter phenomenon, children's publishing worked on a "slow burn" model rather than a blockbuster model of sales (which it now goes for much more, though they are still re-releasing and promoting old classics too). That meant selling the same books over many generations of readers -- parents/grandparents/etc. buying for children was and is a key part of the market -- and I imagine this long lifespan had something to do with the fact that it's not uncommon for children's lit to be updated as norms change. I'm sure this has to do with the fact that anything written for children almost inevitably gets treated as didactic, and so is scrutinized for its presumed effects on youth -- and anything that might be deemed a "bad influence" is likely to get changed in a way that books for adults might not over time.
-</span>
+
+
 
 Quinn spelled out exactly what she'd done later on in the thread. She was following up on a [Twitter discussion she'd had with Hannah Alpert-Abrams on OCR evaluation](https://twitter.com/quinnanya/status/1181960738794958848) by actually trying out [ocreval](https://github.com/eddieantonio/ocreval). The GitHub repo has step-by-step instructions for how to install ocreval on Mac or Linux. Then, all you need to do is [use the command line](https://programminghistorian.org/en/lessons/intro-to-bash) to navigate to a folder that contains both versions of the plain-text file you want to compare, and run accuracy file1.txt file2.txt.
 
