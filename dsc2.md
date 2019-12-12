@@ -90,14 +90,13 @@ Before long, we had two corpora: Quinn's scavenged Baby-Sitters Club corpus, and
 
 Quinn runs another club at Stanford, which she's dubbed the "Danger Noodle Club". It's a weekly meet-up for humanists who are learning Python in particular, and computational methodologies in general. They help debug each other's code, and also spend a lot of time talking about situations where other tools might be more helpful than Python. Like most things, she organizes it last-minute, so I didn't even realize she was comparing her corpus and mine until she sent a note out to all the data-sitters one Thursday afternoon:
 
-<span style="font-family: monospace;">
-**From:** Quinn Dombrowski
-**To:** Maria Sachiko Cecire, Katia Bowers, Anouk Lang, Roopika Risam
-**Date:** 11/7/19 2:51 PM
-**Subject:** Amazing discovery for our next volume!
-
-So I was demoing OCR quality evaluation today during my Python working group using "Claudia and Mean Jeanine", and I discovered THERE ARE CONTENT CHANGES between the clean version and the version I originally found, including both computers and fashion (ie equal attention paid to gendered tech) and removing ableist language. What's more, there were no changes in "Mystery 29: Stacey and the Fashion Victim" (despite, presumably, including fashion language) so I guess they gave up at some point. But we can find out which point, in our next DSC volume!
-</span>
+>**From:** Quinn Dombrowski
+>**To:** Maria Sachiko Cecire, Katia Bowers, Anouk Lang, Roopika Risam
+>**Date:** 11/7/19 2:51 PM
+>**Subject:** Amazing discovery for our next volume!
+>
+>So I was demoing OCR quality evaluation today during my Python working group using "Claudia and Mean Jeanine", and I discovered THERE ARE CONTENT CHANGES between the clean version and the version I originally found, including both computers and fashion (ie equal attention paid to gendered tech) and removing ableist language. What's more, there were no changes in "Mystery 29: Stacey and the Fashion Victim" (despite, presumably, including fashion language) so I guess they gave up at some point. But we can find out which point, in our next DSC volume!
+{:.email}
 
 I wrote back right away:
 
