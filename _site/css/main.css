@@ -564,6 +564,12 @@ img {
   .icon > svg path {
     fill: #195587; }
 
+email {
+  font-family: "Roboto Mono", monospace; }
+
+blockquote.email {
+  font-family: "Roboto Mono", monospace; }
+
 /**
  * Site header
  */

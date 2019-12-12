@@ -13,3 +13,14 @@
     }
   }
 }
+
+
+$Monospace: 'Roboto Mono', monospace;
+
+email {
+	font-family:$Monospace;
+}
+
+blockquote.email {
+  font-family:$Monospace;
+}
