@@ -94,7 +94,7 @@ Quinn runs another club at Stanford, which she's dubbed the "Danger Noodle Club"
 >**To:** Maria Sachiko Cecire, Katia Bowers, Anouk Lang, Roopika Risam
 >**Date:** 11/7/19 2:51 PM
 >**Subject:** Amazing discovery for our next volume!
-{:.email}
+{:email}
 
 So I was demoing OCR quality evaluation today during my Python working group using "Claudia and Mean Jeanine", and I discovered THERE ARE CONTENT CHANGES between the clean version and the version I originally found, including both computers and fashion (ie equal attention paid to gendered tech) and removing ableist language. What's more, there were no changes in "Mystery 29: Stacey and the Fashion Victim" (despite, presumably, including fashion language) so I guess they gave up at some point. But we can find out which point, in our next DSC volume!
 {:.email}
