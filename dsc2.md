@@ -6,7 +6,7 @@ permalink: /dsc2/
 
 # DSC #2 - _Katia and the Phantom Corpus_
 
-by Katia Bowers, December 12, 2019
+by Katherine Bowers, December 12, 2019
 
 It was a dark and windy fall night, with rain lashing at the windows, when I settled in to do some reading and began working my way through the Baby-Sitters Club series. This kind of weather is not surprising because I live in Vancouver, Canada, where it rains most of the year. What was surprising was that I was reading Baby-Sitters Club books again. I'm an Assistant Professor of Slavic Studies and a lot of the time you will find me reading long Russian novels, which is what I research and teach for work. I last read a BSC book circa 25 years ago, but I started rereading the series on that rainy night because of the DSC, the Data-Sitters Club, a group I've joined that is working on creating a comprehensive, colloquial guide to DH computational text analysis.
 
@@ -117,6 +117,7 @@ It wasn't long before everyone weighed in:
 >That is interesting. Makes you want to go and talk to the publisher and find out at what level there was an editorial policy to make updates like that, and where it was at the discretion of individual editors (or copyeditors). Speaking for myself I'd want to use the original versions in any analysis at scale, just to capture what I feel like would have been the largest readership (assuming its readership has tailed off steadily since the original publication).
 >
 >Also just thinking about this from the feminist computational text analysis viewpoint, this might offer us an opportunity to think out loud a bit about how one does feminist/critical corpus construction: what the rationale might be for choosing one version over another as we construct our corpus. There are lots of principles for corpus construction out there (about which, full disclosure, I don't know enough), but I don't remember ever having seen explicitly feminist ones. (Feminist being an inadequate shorthand here for perspectives cognisant of critical race studies, queer theory, disability studies etc.)
+{:.email}
 
 
 >**From:** Roopika Risam
