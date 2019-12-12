@@ -20,26 +20,25 @@ To start with, I bought a bundle of the first four books as ebooks. The corpus w
 
 I opened up the corpus copy, started reading, and:
 
->A he <BZZT!>  Baby-sitters Club. I didn't start it and I don't run it, but I am its newset member... 
->uprooted from hot, sunny California and trans-
->planted to cold, sloppy Connecticut **<BZZT!>**.
+> A he <BZZT!>  Baby-sitters Club. I didn't start it and I don't run it, but I am its newset member...
+> uprooted from hot, sunny California and trans-
+> planted to cold, sloppy Connecticut **<BZZT!>**.
 
-
->The door was flung open by Claire, the youngest Pike. She loves answering the door and the phone.
+> The door was flung open by Claire, the youngest Pike. She loves answering the door and the phone.
 >
->"Hi, Clairer  **<BZZT!>** I said brightly!"
+> "Hi, Clairer  **<BZZT!>** I said brightly!"
 
 Maybe that corpus would be okay for computational analysis at scale, but it was not okay for my brain, especially when reading quickly. The errors that crept in when whatever entities were responsible for this text did OCR (Optical Character Recognition) on scans of book page images -- they were like nails on a chalkboard as I tried to read. And then, in some of the books, like a slash across the text, there was this: "ClHHEfflfflB". Or this: "ClHSIEffllHE". Or this: "HI HE I] [E] El / j =j. / / /". WTF was this garbage?
 
 And it got worse. Sometimes, there would be a wall of gibberish, with faint traces of intelligible words:
 
->~Thur6dflu, September 2tf
+> ~Thur6dflu, September 2tf
 >
->&6+zrdau X baba6flt {or Kr?6iil6
+> &6+zrdau X baba6flt {or Kr?6iil6
 >
->iTHta. brom^DavtdtehaeUK^tu-told
+> iTHta. brom^DavtdtehaeUK^tu-told
 >
->U5 -to wn+e to -ttY2 Bflbu-5T-ttgT6 Sub Notebook 5o\we Could *eep track of tinu prdolem6 we h&d wT^^bu-iTte) aubMft, bo* -ftkTna care dt ttMtf HwSfcl w35m+rDUbl(2 3rZltt° H<2w36 very otxd. White Kr?6+-y w35 chfoTrg rjroona nf+er -mobe +wd dephzlh+6,
+> U5 -to wn+e to -ttY2 Bflbu-5T-ttgT6 Sub Notebook 5o\we Could _eep track of tinu prdolem6 we h&d wT^^bu-iTte) aubMft, bo_ -ftkTna care dt ttMtf HwSfcl w35m+rDUbl(2 3rZltt° H<2w36 very otxd. White Kr?6+-y w35 chfoTrg rjroona nf+er -mobe +wd dephzlh+6,
 
 When I was browsing in Lawrence Books later that week, I found an old paperback copy of no. 16, _Jessi's Secret Language_, and flipping through it, the answer jumped out at me:
 
@@ -53,10 +52,9 @@ The OCR software that had been used for some of these books wasn't able to handl
 
 ![Picture of Quinn and Katia by the Cyber Café sign at the ASEEES Convention](cyber_cafe.jpg){:style="float: left; margin-right: 7px;margin-top: 0px;"}Quinn and I met up at the amusingly retro "Cyber Café" sign at the ASEEES Convention in San Francisco in November. (ASEEES is the Association for Slavic, East European, and Eurasian Studies - the biggest Slavic conference in North America, which happens every November). The Cyber Cafe sign seemed nicely thematic because it looked like it had fallen out of some kind of time warp from the mid- to late-BSC books. We took a selfie to mark what we jokingly called "DSC Slavist Super Special" (obviously) and sat down to talk about the issues I'd been having with the corpus Quinn put together.
 
+The thing about Quinn's corpus is that it's from a lot of different sources. They didn't all use the same software to digitize the texts, and didn't have the same post-processing conventions. In some sense, the OCR gibberish was better: you could see that something had gone wrong, and knowing something is wrong is the first step in fixing it. But in some texts, the traces of OCR failure were just erased. Instead of garbage, there was nothing. Sometimes you can't necessarily tell that anything is missing, like the transition between chapters. Sometimes, there's a gaping void, like at the end of _Baby-Sitters Club Super-Special 9: Starring the Baby-Sitters Club_, where the last words in the text file are:
 
-The thing about Quinn's corpus is that it's from a lot of different sources. They didn't all use the same software to digitize the texts, and didn't have the same post-processing conventions. In some sense, the OCR gibberish was better: you could see that something had gone wrong, and knowing something is wrong is the first step in fixing it. But in some texts, the traces of OCR failure were just erased. Instead of garbage, there was nothing. Sometimes you can't necessarily tell that anything is missing, like the transition between chapters. Sometimes, there's a gaping void, like at the end of *Baby-Sitters Club Super-Special 9: Starring the Baby-Sitters Club*, where the last words in the text file are:
-
->When I first sat down to write the rough draft, my friends gave me a hand once again. I asked them for their final thoughts and observations. This is what they wrote:
+> When I first sat down to write the rough draft, my friends gave me a hand once again. I asked them for their final thoughts and observations. This is what they wrote:
 
 Omitting long strings of obviously bad OCR isn't the world's worst approach: sometimes when you're doing OCR, the software will try to "read" things like shadows in the margins of a book, or illustrations, giving you a block of gibberish when there was nothing meaningful there to begin with. In fact, if you're scanning thousands of books, that kind of situation is going to be more common than books with unusual lettering in their chapter headers, or cursive pseudo-"handwriting". The Baby-Sitters Club books are an edge case -- but they're the case we care about.
 
@@ -90,59 +88,53 @@ Before long, we had two corpora: Quinn's scavenged Baby-Sitters Club corpus, and
 
 Quinn runs another club at Stanford, which she's dubbed the "Danger Noodle Club". It's a weekly meet-up for humanists who are learning Python in particular, and computational methodologies in general. They help debug each other's code, and also spend a lot of time talking about situations where other tools might be more helpful than Python. Like most things, she organizes it last-minute, so I didn't even realize she was comparing her corpus and mine until she sent a note out to all the data-sitters one Thursday afternoon:
 
->**From:** Quinn Dombrowski
->**To:** Maria Sachiko Cecire, Katia Bowers, Anouk Lang, Roopika Risam
->**Date:** 11/7/19 2:51 PM
->**Subject:** Amazing discovery for our next volume!
+> **From:** Quinn Dombrowski  
+> **To:** Maria Sachiko Cecire, Katia Bowers, Anouk Lang, Roopika Risam  
+> **Date:** 11/7/19 2:51 PM  
+> **Subject:** Amazing discovery for our next volume!
 >
->So I was demoing OCR quality evaluation today during my Python working group using "Claudia and Mean Jeanine", and I discovered THERE ARE CONTENT CHANGES between the clean version and the version I originally found, including both computers and fashion (ie equal attention paid to gendered tech) and removing ableist language. What's more, there were no changes in "Mystery 29: Stacey and the Fashion Victim" (despite, presumably, including fashion language) so I guess they gave up at some point. But we can find out which point, in our next DSC volume!
+> So I was demoing OCR quality evaluation today during my Python working group using "Claudia and Mean Jeanine", and I discovered THERE ARE CONTENT CHANGES between the clean version and the version I originally found, including both computers and fashion (ie equal attention paid to gendered tech) and removing ableist language. What's more, there were no changes in "Mystery 29: Stacey and the Fashion Victim" (despite, presumably, including fashion language) so I guess they gave up at some point. But we can find out which point, in our next DSC volume!
 
 I wrote back right away:
 
-
->**From:** Katia Bowers
->**To:** Maria Sachiko Cecire, Quinn Dombrowski, Anouk Lang, Roopika Risam
->**Date:** 11/7/19 2:58 PM
->**Subject:** Re: Amazing discovery for our next volume!
+> **From:** Katia Bowers  
+> **To:** Maria Sachiko Cecire, Quinn Dombrowski, Anouk Lang, Roopika Risam  
+> **Date:** 11/7/19 2:58 PM  
+> **Subject:** Re: Amazing discovery for our next volume!
 >
->That's so interesting!!! I had noticed that there were a few weird places where they had updated things - like in one of the first 4 books, one of them (I forget who) mentions spending her baby-sitting $$ on CDs... but that seems like something that would have been a luxury item for suburban tweens of the 80s considering CD players then were *so* expensive. Interesting to see what things they updated and what they didn't update (I'm not sure this last question is possible to find out digitally). And I wonder if the updates stopped because the books were being written about the same time as the re-releases were coming out?
+> That's so interesting!!! I had noticed that there were a few weird places where they had updated things - like in one of the first 4 books, one of them (I forget who) mentions spending her baby-sitting $$ on CDs... but that seems like something that would have been a luxury item for suburban tweens of the 80s considering CD players then were _so_ expensive. Interesting to see what things they updated and what they didn't update (I'm not sure this last question is possible to find out digitally). And I wonder if the updates stopped because the books were being written about the same time as the re-releases were coming out?
 
 It wasn't long before everyone weighed in:
 
->**From:** Anouk Lang
->**To:** Katia Bowers, Maria Sachiko Cecire, Quinn Dombrowski, Roopika Risam
->**Date:** 11/7/19 3:02 PM
->**Subject:** Re: Amazing discovery for our next volume!
+> **From:** Anouk Lang  
+> **To:** Katia Bowers, Maria Sachiko Cecire, Quinn Dombrowski, Roopika Risam  
+> **Date:** 11/7/19 3:02 PM  
+> **Subject:** Re: Amazing discovery for our next volume!
 >
->That is interesting. Makes you want to go and talk to the publisher and find out at what level there was an editorial policy to make updates like that, and where it was at the discretion of individual editors (or copyeditors). Speaking for myself I'd want to use the original versions in any analysis at scale, just to capture what I feel like would have been the largest readership (assuming its readership has tailed off steadily since the original publication).
+> That is interesting. Makes you want to go and talk to the publisher and find out at what level there was an editorial policy to make updates like that, and where it was at the discretion of individual editors (or copyeditors). Speaking for myself I'd want to use the original versions in any analysis at scale, just to capture what I feel like would have been the largest readership (assuming its readership has tailed off steadily since the original publication).
 >
->Also just thinking about this from the feminist computational text analysis viewpoint, this might offer us an opportunity to think out loud a bit about how one does feminist/critical corpus construction: what the rationale might be for choosing one version over another as we construct our corpus. There are lots of principles for corpus construction out there (about which, full disclosure, I don't know enough), but I don't remember ever having seen explicitly feminist ones. (Feminist being an inadequate shorthand here for perspectives cognisant of critical race studies, queer theory, disability studies etc.)
-{:.email}
+> Also just thinking about this from the feminist computational text analysis viewpoint, this might offer us an opportunity to think out loud a bit about how one does feminist/critical corpus construction: what the rationale might be for choosing one version over another as we construct our corpus. There are lots of principles for corpus construction out there (about which, full disclosure, I don't know enough), but I don't remember ever having seen explicitly feminist ones. (Feminist being an inadequate shorthand here for perspectives cognisant of critical race studies, queer theory, disability studies etc.)
+> {:.email}
 
-
->**From:** Roopika Risam
->**To:** Katia Bowers, Maria Sachiko Cecire, Quinn Dombrowski, Anouk Lang
->**Date:** 11/7/19 3:04 PM
->**Subject:** Re: Amazing discovery for our next volume!
+> **From:** Roopika Risam  
+> **To:** Katia Bowers, Maria Sachiko Cecire, Quinn Dombrowski, Anouk Lang  
+> **Date:** 11/7/19 3:04 PM  
+> **Subject:** Re: Amazing discovery for our next volume!
 >
->That's super interesting - at some point maybe we could do Roopsi and the Trouble with Juxta or similar 😂
+> That's super interesting - at some point maybe we could do Roopsi and the Trouble with Juxta or similar 😂
 
->**From:** Maria Sachiko Cecire
->**To:** Katia Bowers, Quinn Dombrowski, Anouk Lang, Roopika Risam
->**Date:** 11/7/19 6:39 PM
->**Subject:** Re: Amazing discovery for our next volume!
+> **From:** Maria Sachiko Cecire  
+> **To:** Katia Bowers, Quinn Dombrowski, Anouk Lang, Roopika Risam  
+> **Date:** 11/7/19 6:39 PM  
+> **Subject:** Re: Amazing discovery for our next volume!
 >
->Thanks, Quinn! Those are cool findings, and in line with some other examples from the history of children's literature publishing. Up until the Harry Potter phenomenon, children's publishing worked on a "slow burn" model rather than a blockbuster model of sales (which it now goes for much more, though they are still re-releasing and promoting old classics too). That meant selling the same books over many generations of readers -- parents/grandparents/etc. buying for children was and is a key part of the market -- and I imagine this long lifespan had something to do with the fact that it's not uncommon for children's lit to be updated as norms change. I'm sure this has to do with the fact that anything written for children almost inevitably gets treated as didactic, and so is scrutinized for its presumed effects on youth -- and anything that might be deemed a "bad influence" is likely to get changed in a way that books for adults might not over time.
-
-
+> Thanks, Quinn! Those are cool findings, and in line with some other examples from the history of children's literature publishing. Up until the Harry Potter phenomenon, children's publishing worked on a "slow burn" model rather than a blockbuster model of sales (which it now goes for much more, though they are still re-releasing and promoting old classics too). That meant selling the same books over many generations of readers -- parents/grandparents/etc. buying for children was and is a key part of the market -- and I imagine this long lifespan had something to do with the fact that it's not uncommon for children's lit to be updated as norms change. I'm sure this has to do with the fact that anything written for children almost inevitably gets treated as didactic, and so is scrutinized for its presumed effects on youth -- and anything that might be deemed a "bad influence" is likely to get changed in a way that books for adults might not over time.
 
 Quinn spelled out exactly what she'd done later on in the thread. She was following up on a [Twitter discussion she'd had with Hannah Alpert-Abrams on OCR evaluation](https://twitter.com/quinnanya/status/1181960738794958848) by actually trying out [ocreval](https://github.com/eddieantonio/ocreval). The GitHub repo has step-by-step instructions for how to install ocreval on Mac or Linux. Then, all you need to do is [use the command line](https://programminghistorian.org/en/lessons/intro-to-bash) to navigate to a folder that contains both versions of the plain-text file you want to compare, and run accuracy file1.txt file2.txt.
 
 Quinn used her version as file1, and mine as file2. For no. 7, Claudia and Mean Jeanine, the ocreval accuracy report stated that there were 141611 characters and 6,905 errors, for an overall accuracy of 95.12%. That sounds like a big number, but for OCR on modern English, that's actually not amazing.
 
-Scrolling down further in the report, Quinn noticed some interesting things in the stats for different classes of characters. The ASCII Digits class had terrible stats (Count: 120, Missed: 95, Right: 20.83%), but some of those "digits" were just failed attempts to make sense of the "handwritten" text. (Claudia may not be able to spell, but she can write in cursive.) The ASCII Special Symbols class was also a lot lower than everything else, with 57.7% right. On the list of errors that followed in the report, the top three had to do with punctuation variants: 1122 instances of " (un-angled quotation marks) corresponding to angled opening quotation marks, 1094 instances of " corresponding to angled closing quotation marks, and 921 instances of '
-
-(a non-typographically-fancy apostrophe) corresponding to the more typographically-fancy '. There were also issues with three periods and their correspondence with the ellipsis character (...), which are identical to the human eye, but distinct things to a computer.
+Scrolling down further in the report, Quinn noticed some interesting things in the stats for different classes of characters. The ASCII Digits class had terrible stats (Count: 120, Missed: 95, Right: 20.83%), but some of those "digits" were just failed attempts to make sense of the "handwritten" text. (Claudia may not be able to spell, but she can write in cursive.) The ASCII Special Symbols class was also a lot lower than everything else, with 57.7% right. On the list of errors that followed in the report, the top three had to do with punctuation variants: 1122 instances of " (un-angled quotation marks) corresponding to angled opening quotation marks, 1094 instances of " corresponding to angled closing quotation marks, and 921 instances of ' (a non-typographically-fancy apostrophe) corresponding to the more typographically-fancy '. There were also issues with three periods and their correspondence with the ellipsis character (...), which are identical to the human eye, but distinct things to a computer.
 
 That said, those are the sorts of differences that are easy to resolve! Quinn used simple find-and-replace in a plain-text editor (she has a lot of them installed on her laptop: TextMate, BBEdit, Atom) to change the punctuation in my files to align with the punctuation conventions in hers. And by replacing just those things I've described above, suddenly the "OCR accuracy" jumped from 95% to 98%, which is meaningfully better.
 
@@ -152,11 +144,11 @@ But Quinn and her Danger Noodle Club colleagues kept scanning the error list. Th
 
 Quinn checked the source files. In her original version:
 
->Stacey put the money on the bed and emptied the contents of the envelope over it. "Nineteen dollars even," she announced. She said this after one pretty quick glance at the bills and change, which is why she's our treasurer.
+> Stacey put the money on the bed and emptied the contents of the envelope over it. "Nineteen dollars even," she announced. She said this after one pretty quick glance at the bills and change, which is why she's our treasurer.
 
 Became in my version:
 
->Stacey put the money on the bed and emptied the contents of the envelope over it. She announced the total after one pretty quick glance at the bills and change, which is why she's our treasurer.
+> Stacey put the money on the bed and emptied the contents of the envelope over it. She announced the total after one pretty quick glance at the bills and change, which is why she's our treasurer.
 
 But there was more.
 
@@ -194,11 +186,10 @@ Maria was surprised at our enthusiasm for her off-the-cuff responses to the chan
 
 "We're getting close to the end of our meeting," Quinn interjected. "Let's open up our scheduling spreadsheet and sort out who's going to be doing what between now and the summer."
 
-*To be continued...*
+_To be continued..._
 
 The author gratefully acknowledges Quinn Dombrowski for her help in preparing this manuscript.
 
-
 ### Suggested citation
-Bowers, Katherine and Quinn Dombrowski. "DSC #2: Katia and the Phantom Corpus". _The Data-Sitters Club._ December 12, 2019. https://datasittersclub.github.io/site/dsc2/
 
+Bowers, Katherine and Quinn Dombrowski. "DSC #2: Katia and the Phantom Corpus". _The Data-Sitters Club._ December 12, 2019. https://datasittersclub.github.io/site/dsc2/
