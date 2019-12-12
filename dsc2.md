@@ -51,9 +51,8 @@ The OCR software that had been used for some of these books wasn't able to handl
 
 (Honestly, I wonder how easy it'd be for young human readers in 2019 to successfully read Mary Anne, Jessi, Kristy, and Claudia's cursive writing. This is Claudia's from no. 3, The Truth About Stacey; it takes me a bit to get through it - and I'm used to reading 19th-century Russian cursive!)
 
-Quinn and I met up at the amusingly retro "Cyber Café" sign at the ASEEES Convention in San Francisco in November. (ASEEES is the Association for Slavic, East European, and Eurasian Studies - the biggest Slavic conference in North America, which happens every November). The Cyber Cafe sign seemed nicely thematic because it looked like it had fallen out of some kind of time warp from the mid- to late-BSC books. We took a selfie to mark what we jokingly called "DSC Slavist Super Special" (obviously) and sat down to talk about the issues I'd been having with the corpus Quinn put together.
+![Picture of Quinn and Katia by the Cyber Café sign at the ASEEES Convention](cyber_cafe.jpg){:style="float: left; margin-right: 7px;margin-top: 0px;"}Quinn and I met up at the amusingly retro "Cyber Café" sign at the ASEEES Convention in San Francisco in November. (ASEEES is the Association for Slavic, East European, and Eurasian Studies - the biggest Slavic conference in North America, which happens every November). The Cyber Cafe sign seemed nicely thematic because it looked like it had fallen out of some kind of time warp from the mid- to late-BSC books. We took a selfie to mark what we jokingly called "DSC Slavist Super Special" (obviously) and sat down to talk about the issues I'd been having with the corpus Quinn put together.
 
-![Picture of Quinn and Katia by the Cyber Café sign at the ASEEES Convention](cyber_cafe.jpg){:style="float: left; margin-right: 7px;margin-top: 0px;"} (Check out the Cyber Café! In reality, it amounted to chairs and usable conference wifi.)
 
 The thing about Quinn's corpus is that it's from a lot of different sources. They didn't all use the same software to digitize the texts, and didn't have the same post-processing conventions. In some sense, the OCR gibberish was better: you could see that something had gone wrong, and knowing something is wrong is the first step in fixing it. But in some texts, the traces of OCR failure were just erased. Instead of garbage, there was nothing. Sometimes you can't necessarily tell that anything is missing, like the transition between chapters. Sometimes, there's a gaping void, like at the end of *Baby-Sitters Club Super-Special 9: Starring the Baby-Sitters Club*, where the last words in the text file are:
 
@@ -77,11 +76,11 @@ The [ABBYY FineReader documentation](https://abbyy.technology/en:kb:images_resol
 
 **Use ABBYY FineReader (on Windows)**. Ideologically, we all (especially in DH) support open-source software. Various DH projects have focused on improving OCR quality for Tesseract (e.g. Laura Mandell et al's [Early Modern OCR Project](http://emop.tamu.edu/) which trained an earlier version of Tesseract for early modern typefaces, and the [Open Islamicate Texts Initiative Arabic-script OCR Catalyst Project](https://medium.com/@openiti/openiti-aocp-9802865a6586), which is providing a more user-friendly workflow for Arabic and Persian OCR based on Tesseract). But the fact is, while character-by-character recognition (at least for English) is basically identical between FineReader and Tesseract, FineReader does a lot of "common-sense" things that make your life easier:
 
--   End-of-line hyphens: FineReader understands that if a line ends with a hyphen, it means that the word continues on the next line. So when you export text from FineReader, it re-connects those split words.
+**End-of-line hyphens**: FineReader understands that if a line ends with a hyphen, it means that the word continues on the next line. So when you export text from FineReader, it re-connects those split words.
 
--   Lines in general: Tesseract's OCR exactly replicates the line structure of the original source. But for most computational text analysis purposes, what we care about is meaningful divisions in the text, rather than arbitrary ones caused by the inherent constraints of mass-market book layout. Paragraphs matter, not which 7-10 words happen to make up a line. FineReader gets this, and maintains paragraph divisions, but treats individual lines within a paragraph as continuous text.
+**Lines in general**: Tesseract's OCR exactly replicates the line structure of the original source. But for most computational text analysis purposes, what we care about is meaningful divisions in the text, rather than arbitrary ones caused by the inherent constraints of mass-market book layout. Paragraphs matter, not which 7-10 words happen to make up a line. FineReader gets this, and maintains paragraph divisions, but treats individual lines within a paragraph as continuous text.
 
--   Running headers and page numbers: FineReader understands that, in the vast majority of cases, what you want is just the text, not paratextual elements like running page headers, page numbers, etc. There's an option when you export the text to remove those header and footer elements.
+**Running headers and page numbers**: FineReader understands that, in the vast majority of cases, what you want is just the text, not paratextual elements like running page headers, page numbers, etc. There's an option when you export the text to remove those header and footer elements.
 
 If you're OCRing so much text (hundreds or thousands of volumes, by many authors, etc.) that small perturbations like page numbers won't matter, and mostly-successful text corrections applied en-masse (e.g. to try to connect lines and remove end-of-line hyphens), Tesseract is free, open-source, and high-quality (at least for English). But if you're doing a project like ours where you care about each individual text, it's worth using ABBYY FineReader. The FineReader interface also makes it easy to manually transcribe portions of the text that you could potentially train it to recognize given enough time and examples, but it's faster to just type in yourself (e.g. Claudia's cursive handwriting). While ABBYY doesn't offer an academic discount, many institutions have FineReader available somewhere on campus (e.g. in computer labs), and depending on your situation, it may be worth paying the $200 one-time standard license. One important caveat, though: as of 2019, the Windows version of FineReader has much better functionality than the Mac version (to say nothing of the cloud-based mobile version). If you want the nice interface for transcribing text that can't be meaningfully OCR'd (again, looking at you, Claudia's handwriting), you've got to figure out some way to run it on Windows, even if you're primarily a Mac user (like the whole Data-Sitters Club).
 
@@ -91,18 +90,18 @@ Before long, we had two corpora: Quinn's scavenged Baby-Sitters Club corpus, and
 
 Quinn runs another club at Stanford, which she's dubbed the "Danger Noodle Club". It's a weekly meet-up for humanists who are learning Python in particular, and computational methodologies in general. They help debug each other's code, and also spend a lot of time talking about situations where other tools might be more helpful than Python. Like most things, she organizes it last-minute, so I didn't even realize she was comparing her corpus and mine until she sent a note out to all the data-sitters one Thursday afternoon:
 
-<span style="font-family: mono;">
->**From:** Quinn Dombrowski
->**To:** Maria Sachiko Cecire, Katia Bowers, Anouk Lang, Roopika Risam
->**Date:** 11/7/19 2:51 PM
->**Subject:** Amazing discovery for our next volume!
->
->So I was demoing OCR quality evaluation today during my Python working group using "Claudia and Mean Jeanine", and I discovered THERE ARE CONTENT CHANGES between the clean version and the version I originally found, including both computers and fashion (ie equal attention paid to gendered tech) and removing ableist language. What's more, there were no changes in "Mystery 29: Stacey and the Fashion Victim" (despite, presumably, including fashion language) so I guess they gave up at some point. But we can find out which point, in our next DSC volume!
+<span style="font-family: monospace;">
+**From:** Quinn Dombrowski
+**To:** Maria Sachiko Cecire, Katia Bowers, Anouk Lang, Roopika Risam
+**Date:** 11/7/19 2:51 PM
+**Subject:** Amazing discovery for our next volume!
+
+So I was demoing OCR quality evaluation today during my Python working group using "Claudia and Mean Jeanine", and I discovered THERE ARE CONTENT CHANGES between the clean version and the version I originally found, including both computers and fashion (ie equal attention paid to gendered tech) and removing ableist language. What's more, there were no changes in "Mystery 29: Stacey and the Fashion Victim" (despite, presumably, including fashion language) so I guess they gave up at some point. But we can find out which point, in our next DSC volume!
 </span>
 
 I wrote back right away:
 
-<span style="font-family: mono;">
+<span style="font-family: monospace;">
 >**From:** Katia Bowers
 >**To:** Maria Sachiko Cecire, Quinn Dombrowski, Anouk Lang, Roopika Risam
 >**Date:** 11/7/19 2:58 PM
