@@ -66,7 +66,7 @@ I realized I just wasn't going to be able to read the corpus as I had planned, a
 
 If you need to do some OCR yourself, here's some tips from someone who's spent a lot of time doing it:
 
-**Actually scan your sources**. With a scanner. At minimum 300 dpi (dots per inch -- it's a measure of how much detail the image captures). More like 400-600 dpi if your books include a really small font, like for footnotes. Yes, the technology is improving, and sometimes you can get better-than-total-garbage with photos from your phone, as long as they're not skewed (taken at an angle), the lighting is good, etc., but still, most phone pictures are still only 72 dpi, and it's hard to position your phone directly above a book and not cast a shadow. Just use a scanner.{:.email}
+**Actually scan your sources**. With a scanner. At minimum 300 dpi (dots per inch -- it's a measure of how much detail the image captures). More like 400-600 dpi if your books include a really small font, like for footnotes. Yes, the technology is improving, and sometimes you can get better-than-total-garbage with photos from your phone, as long as they're not skewed (taken at an angle), the lighting is good, etc., but still, most phone pictures are still only 72 dpi, and it's hard to position your phone directly above a book and not cast a shadow. Just use a scanner.
 
 **Scan your sources in grayscale**, especially if you're going to be using ABBYY FineReader. While all the OCR algorithms actually use on binarized images (black & white -- where everything in the image is either black or white, according to some threshold you or the software defines), you can go from grayscale to B&W, but not the other way around. Even though the OCR algorithm itself involves a binarized image, the algorithms used for layout analysis (i.e. figuring out where the text is on the page, whether it's one column or two, whether there's tables or running headers or page numbers, etc.) are more nuanced. Also, both ABBYY FineReader and the open-source Tesseract software include pre-processing steps before they perform the OCR, including binarizing images using a sensible threshold that cuts down on the noise in the image. For instance, if you run a B&W scan of a two-page spread through Tesseract (i.e. an image where the binarization has happened at the time when you did the scanning), you'll end up with some gibberish from when the OCR algorithm tried to "read" the shadow caused by the binding.
 
@@ -91,13 +91,13 @@ Before long, we had two corpora: Quinn's scavenged Baby-Sitters Club corpus, and
 Quinn runs another club at Stanford, which she's dubbed the "Danger Noodle Club". It's a weekly meet-up for humanists who are learning Python in particular, and computational methodologies in general. They help debug each other's code, and also spend a lot of time talking about situations where other tools might be more helpful than Python. Like most things, she organizes it last-minute, so I didn't even realize she was comparing her corpus and mine until she sent a note out to all the data-sitters one Thursday afternoon:
 
 >**From:** Quinn Dombrowski
-
+>
 >**To:** Maria Sachiko Cecire, Katia Bowers, Anouk Lang, Roopika Risam
-
+>
 >**Date:** 11/7/19 2:51 PM
-
+>
 >**Subject:** Amazing discovery for our next volume!
-
+>
 >So I was demoing OCR quality evaluation today during my Python working group using "Claudia and Mean Jeanine", and I discovered THERE ARE CONTENT CHANGES between the clean version and the version I originally found, including both computers and fashion (ie equal attention paid to gendered tech) and removing ableist language. What's more, there were no changes in "Mystery 29: Stacey and the Fashion Victim" (despite, presumably, including fashion language) so I guess they gave up at some point. But we can find out which point, in our next DSC volume!
 
 I wrote back right away:
