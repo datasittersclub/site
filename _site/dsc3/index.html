@@ -82,35 +82,64 @@ Anyway, I thought I’d throw this history into the mix because a) I’m a nerd,
 
 <p><img src="https://github.com/datasittersclub/site/blob/master/spreadsheet-variants.png?raw=true" alt="Spreadsheet reflecting textual variants" /></p>
 
-<p>Dear Reader,</p>
+<blockquote>
+  <p>Dear Reader,</p>
+</blockquote>
 
-<p>In DSC #3, Maria gave us a reality check about what initially seemed like a remarkable discovery: differences between the (presumably older) versions of the corpus I initially found online, and the recent re-releases that we scanned and OCR’d. While these updates – ranging from punctuation conventions, to inflation, to fashion trends – are unsurprising in children’s literature, such changes may point to changes of greater interest in other kinds of texts.</p>
+<blockquote>
+  <p>In DSC #3, Maria gave us a reality check about what initially seemed like a remarkable discovery: differences between the (presumably older) versions of the corpus I initially found online, and the recent re-releases that we scanned and OCR’d. While these updates – ranging from punctuation conventions, to inflation, to fashion trends – are unsurprising in children’s literature, such changes may point to changes of greater interest in other kinds of texts.</p>
+</blockquote>
 
-<p>Identifying differences between two versions of a text is a problem just asking for computational methods. You don’t have to identify as a digital humanist to not want to spend time comparing texts manually. Text collation is one most intuitively understandable computational text analysis methods, at least at first glance: “how are these texts different?” For that reason, it’s been an appealing target for digital humanities tool development, to make it easier for anyone to do text collation without having to learn how to write code. Text collation also has applications in commercial software. Have you ever looked at the version history for a Google Doc? It uses text collation to identify additions and deletions: that’s easier than monitoring every change as you make it.</p>
+<blockquote>
+  <p>Identifying differences between two versions of a text is a problem just asking for computational methods. You don’t have to identify as a digital humanist to not want to spend time comparing texts manually. Text collation is one most intuitively understandable computational text analysis methods, at least at first glance: “how are these texts different?” For that reason, it’s been an appealing target for digital humanities tool development, to make it easier for anyone to do text collation without having to learn how to write code. Text collation also has applications in commercial software. Have you ever looked at the version history for a Google Doc? It uses text collation to identify additions and deletions: that’s easier than monitoring every change as you make it.</p>
+</blockquote>
 
-<p>There’s a few different ways to do it – and more that I haven’t included here – but this should be enough to get you started with text collation.</p>
+<blockquote>
+  <p>There’s a few different ways to do it – and more that I haven’t included here – but this should be enough to get you started with text collation.</p>
+</blockquote>
 
-<p><strong><em>What I actually used: Diff Match Patch</em></strong></p>
+<blockquote>
+  <p><strong>What I actually used: Diff Match Patch</strong></p>
+</blockquote>
 
-<p>As mentioned in DSC #2: Katia and the Phantom Corpus, what I used to find the differences in the text was <a href="https://github.com/google/diff-match-patch">Diff Match Patch</a>, the code behind the Google Docs version history. I used the <a href="https://neil.fraser.name/software/diff_match_patch/demos/diff.html">Diff Demo</a> linked from the GitHub repo, using the default settings, to compile a Google Sheet full of changes for Maria to take a look at.</p>
+<blockquote>
+  <p>As mentioned in DSC #2: Katia and the Phantom Corpus, what I used to find the differences in the text was <a href="https://github.com/google/diff-match-patch">Diff Match Patch</a>, the code behind the Google Docs version history. I used the <a href="https://neil.fraser.name/software/diff_match_patch/demos/diff.html">Diff Demo</a> linked from the GitHub repo, using the default settings, to compile a Google Sheet full of changes for Maria to take a look at.</p>
+</blockquote>
 
-<p>Why that tool? Well, our corpus wasn’t that big – and I suspected that the relevant subset of the corpus would be much smaller. (It didn’t seem likely that the publisher went through all the books to make content edits when the books were re-released as e-books.) The Diff Demo does the comparison really fast (unlike certain other options described below). Because I expected only a few books would show traces of these edits, I suspected it’d be all-around faster and easier to manually copy and paste dirty and clean corpus texts for comparison, review the differences with my own eyeballs, and then copy and paste relevant differences (i.e. ones not resulting from OCR errors) into a Google Sheet. Honestly, even if I thought there would be a lot of books with these changes, I’d probably start with the Diff Demo to first get a sense of what the changes were, how many there tended to be per book, etc., before moving on to trying to write code to scale up the process beyond what I could reasonably do myself.</p>
+<blockquote>
+  <p>Why that tool? Well, our corpus wasn’t that big – and I suspected that the relevant subset of the corpus would be much smaller. (It didn’t seem likely that the publisher went through all the books to make content edits when the books were re-released as e-books.) The Diff Demo does the comparison really fast (unlike certain other options described below). Because I expected only a few books would show traces of these edits, I suspected it’d be all-around faster and easier to manually copy and paste dirty and clean corpus texts for comparison, review the differences with my own eyeballs, and then copy and paste relevant differences (i.e. ones not resulting from OCR errors) into a Google Sheet. Honestly, even if I thought there would be a lot of books with these changes, I’d probably start with the Diff Demo to first get a sense of what the changes were, how many there tended to be per book, etc., before moving on to trying to write code to scale up the process beyond what I could reasonably do myself.</p>
+</blockquote>
 
-<p>[SCREENSHOT: DIFF DEMO]</p>
+<blockquote>
+  <p>[SCREENSHOT: DIFF DEMO]</p>
+</blockquote>
 
-<p>When I first started doing the collation this way, there were a lot of “false alarms”: things flagged as differences that were entirely typographical. Curly instead of straight quotes and apostrophes. Ellipses expressed through a single character instead of three periods. That kind of thing. To minimize the number of things that would catch my eye as I skimmed the results, I did a bit of pre-processing, replacing the quotes and ellipses so they’d be consistent, just using find-and-replace in a plain text editor.</p>
+<blockquote>
+  <p>When I first started doing the collation this way, there were a lot of “false alarms”: things flagged as differences that were entirely typographical. Curly instead of straight quotes and apostrophes. Ellipses expressed through a single character instead of three periods. That kind of thing. To minimize the number of things that would catch my eye as I skimmed the results, I did a bit of pre-processing, replacing the quotes and ellipses so they’d be consistent, just using find-and-replace in a plain text editor.</p>
+</blockquote>
 
-<p>One handy thing about the Diff Demo is that if you copy the output and paste it into Microsoft Word, the changes will show up formatted as you’d expect from Word’s built-in Track Changes.</p>
+<blockquote>
+  <p>One handy thing about the Diff Demo is that if you copy the output and paste it into Microsoft Word, the changes will show up formatted as you’d expect from Word’s built-in Track Changes.</p>
+</blockquote>
 
-<p>[SCREENSHOT: TRACK CHANGES]</p>
+<blockquote>
+  <p>[SCREENSHOT: TRACK CHANGES]</p>
+</blockquote>
 
-<p><strong><em>What I tried: Juxta</em></strong></p>
+<blockquote>
+  <p><strong>What I tried: Juxta</strong></p>
+</blockquote>
 
-<p>When I first told the other data-sitters that there were changes in the text, the tool that immediately leaped to mind for a couple of us was Juxta. Juxta made a big splash in the late 2000’s – initially as an installable Java app, and then as a web-based version, <a href="juxtacommons.org">Juxta Commons</a>. Juxta Commons is still “in beta” about a decade later, but has <a href="http://juxtacommons.org/guide">detailed documentation</a>, still works, and you can even create new accounts (as I discovered, since my old account is associated with an email from two jobs ago).</p>
+<blockquote>
+  <p>When I first told the other data-sitters that there were changes in the text, the tool that immediately leaped to mind for a couple of us was Juxta. Juxta made a big splash in the late 2000’s – initially as an installable Java app, and then as a web-based version, <a href="juxtacommons.org">Juxta Commons</a>. Juxta Commons is still “in beta” about a decade later, but has <a href="http://juxtacommons.org/guide">detailed documentation</a>, still works, and you can even create new accounts (as I discovered, since my old account is associated with an email from two jobs ago).</p>
+</blockquote>
 
-<p>A web-based DH tool that still works a decade later, even as the associated blog is six years out-of-date, is nothing short of a miracle. There’s just one catch:</p>
+<blockquote>
+  <p>A web-based DH tool that still works a decade later, even as the associated blog is six years out-of-date, is nothing short of a miracle. There’s just one catch:</p>
+</blockquote>
 
-<p>Juxta<br />
+<blockquote>
+  <p>Juxta<br />
 …<br />
 …<br />
 Commons<br />
@@ -129,31 +158,56 @@ agonizingly<br />
 …<br />
 …<br />
 slowly.</p>
+</blockquote>
 
-<p>I was certain that it wasn’t working at all, and I gave up and went to bed. The next morning, I was about to close the browser tab with Juxta Commons open when I saw – that it had worked! What’s more, it was “smarter” about its output than the Diff Demo, not flagging the typographical differences, even though I hadn’t done any pre-processing on the source text files.</p>
+<blockquote>
+  <p>I was certain that it wasn’t working at all, and I gave up and went to bed. The next morning, I was about to close the browser tab with Juxta Commons open when I saw – that it had worked! What’s more, it was “smarter” about its output than the Diff Demo, not flagging the typographical differences, even though I hadn’t done any pre-processing on the source text files.</p>
+</blockquote>
 
-<p>The only problem is that if you need to make any changes (like changing which source is used as baseline for deviation), you have to wait all over again.</p>
+<blockquote>
+  <p>The only problem is that if you need to make any changes (like changing which source is used as baseline for deviation), you have to wait all over again.</p>
+</blockquote>
 
-<p>For better performance, you could try running the <a href="https://github.com/performant-software/juxta-service">Juxta Commons source code</a> on your own laptop, but it’s probably more straightforward to <a href="http://www.juxtasoftware.org/download/">install the desktop software</a>. I found it a little counterintuitive – though to be fair, I’m the type who usually leaps into software without reading the documentation first. The <a href="https://github.com/performant-software/juxta-desktop/wiki/UserManual">user manual</a> is actually helpful for working through the process of comparing texts.</p>
+<blockquote>
+  <p>For better performance, you could try running the <a href="https://github.com/performant-software/juxta-service">Juxta Commons source code</a> on your own laptop, but it’s probably more straightforward to <a href="http://www.juxtasoftware.org/download/">install the desktop software</a>. I found it a little counterintuitive – though to be fair, I’m the type who usually leaps into software without reading the documentation first. The <a href="https://github.com/performant-software/juxta-desktop/wiki/UserManual">user manual</a> is actually helpful for working through the process of comparing texts.</p>
+</blockquote>
 
-<p>[SCREENSHOT: JUXTA DESKTOP]</p>
+<blockquote>
+  <p>[SCREENSHOT: JUXTA DESKTOP]</p>
+</blockquote>
 
-<p><strong><em>Do It With Code: CollateX</em></strong></p>
+<blockquote>
+  <p><strong>Do It With Code: CollateX</strong></p>
+</blockquote>
 
-<p>Back around 2010, Juxta had a “competitor” of sorts, <a href="https://collatex.net">CollateX</a>. CollateX was another piece of Java software, developed in the EU as part of <a href="www.interedition.eu">Interedition</a>, whereas Juxta was developed in the US by <a href="https://nines.org">NINES</a>. For a while, choosing between Juxta and CollateX was something of a toss-up, but they’ve since gone in different directions. Juxta invested in the web-based Juxta Commons, whereas CollateX developed into a Python package. What’s more, there’s even <a href="collatex.obdurodon.org">materials</a> (<a href="collatex.obdurodon.org">including Jupyter notebooks</a>) available for how to use CollateX, from a workshop at DH 2015. (If you’re not familiar with Jupyter notebooks, check them out – they’re especially useful if you’re new to coding. I co-wrote a <a href="https://programminghistorian.org/en/lessons/jupyter-notebooks">tutorial on Jupyter notebooks</a> on Programming Historian.)</p>
+<blockquote>
+  <p>Back around 2010, Juxta had a “competitor” of sorts, <a href="https://collatex.net">CollateX</a>. CollateX was another piece of Java software, developed in the EU as part of <a href="www.interedition.eu">Interedition</a>, whereas Juxta was developed in the US by <a href="https://nines.org">NINES</a>. For a while, choosing between Juxta and CollateX was something of a toss-up, but they’ve since gone in different directions. Juxta invested in the web-based Juxta Commons, whereas CollateX developed into a Python package. What’s more, there’s even <a href="collatex.obdurodon.org">materials</a> (<a href="collatex.obdurodon.org">including Jupyter notebooks</a>) available for how to use CollateX, from a workshop at DH 2015. (If you’re not familiar with Jupyter notebooks, check them out – they’re especially useful if you’re new to coding. I co-wrote a <a href="https://programminghistorian.org/en/lessons/jupyter-notebooks">tutorial on Jupyter notebooks</a> on Programming Historian.)</p>
+</blockquote>
 
-<p>Both the CollateX and the Juxta crowds are <a href="https://tei-c.org">Text Encoding Initiative</a> (TEI)-friendly, and both tools have special options if your source texts are encoded using the TEI conventions. (I have feelings about TEI, but I’ll save them for a future Data-Sitters Club piece.) What we have for our corpus is just plain text.</p>
+<blockquote>
+  <p>Both the CollateX and the Juxta crowds are <a href="https://tei-c.org">Text Encoding Initiative</a> (TEI)-friendly, and both tools have special options if your source texts are encoded using the TEI conventions. (I have feelings about TEI, but I’ll save them for a future Data-Sitters Club piece.) What we have for our corpus is just plain text.</p>
+</blockquote>
 
-<p>The Jupyter notebooks from the DH 2015 workshop are really the place to start if you want to use CollateX with Python. One thing I soon discovered, though, is that CollateX doesn’t seem to be the right tool when collating things of the length of a “Baby-Sitters Club” novel. My poor laptop whirred angrily at me for an hour, before quieting down without actually completing the collation.</p>
+<blockquote>
+  <p>The Jupyter notebooks from the DH 2015 workshop are really the place to start if you want to use CollateX with Python. One thing I soon discovered, though, is that CollateX doesn’t seem to be the right tool when collating things of the length of a “Baby-Sitters Club” novel. My poor laptop whirred angrily at me for an hour, before quieting down without actually completing the collation.</p>
+</blockquote>
 
-<p>Given the much smaller chunk of a few paragraphs (the ones used for the screenshots above), it performed great, and has a couple of nice visualizations, including color-coded lines that split out textual differences, and a graph visualization.</p>
+<blockquote>
+  <p>Given the much smaller chunk of a few paragraphs (the ones used for the screenshots above), it performed great, and has a couple of nice visualizations, including color-coded lines that split out textual differences, and a graph visualization.</p>
+</blockquote>
 
-<p>[SCREENSHOTS]</p>
+<blockquote>
+  <p>[SCREENSHOTS]</p>
+</blockquote>
 
-<p>Text collation is a relatively easy way to answer some kinds of questions about the editorial history of a text. Whether you’d rather write code, paste things into a browser, or install really old Java software, there are multiple options for exploring text collation. Give it a try – but always remember to check with a disciplinary expert before you get too excited!</p>
+<blockquote>
+  <p>Text collation is a relatively easy way to answer some kinds of questions about the editorial history of a text. Whether you’d rather write code, paste things into a browser, or install really old Java software, there are multiple options for exploring text collation. Give it a try – but always remember to check with a disciplinary expert before you get too excited!</p>
+</blockquote>
 
-<p>Happy analyzing,<br />
+<blockquote>
+  <p>Happy analyzing,<br />
 Quinn</p>
+</blockquote>
 
 <h3 id="suggested-citation">Suggested Citation</h3>
 
