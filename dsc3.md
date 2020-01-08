@@ -50,7 +50,7 @@ For now, I’ll leave you with Quinn’s notes on how to computationally work ou
 
 ![Spreadsheet reflecting textual variants](https://github.com/datasittersclub/site/blob/master/spreadsheet-variants.png?raw=true)
 
-\*Interestingly, they reversed the changes to the Blyton books in 2016 due to lack of interest; and we found that the _BSC_ changes petered out after the first 20 volumes or so.
+\*Interestingly, they [reversed the changes](https://www.theguardian.com/books/2016/sep/16/famous-five-go-back-to-original-language-after-update-flops) to the Blyton books in 2016 due to lack of interest; and we found that the _BSC_ changes petered out after the first 20 volumes or so.
 
 ### Suggested Citation
 
