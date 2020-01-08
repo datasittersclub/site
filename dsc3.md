@@ -48,7 +48,7 @@ There might be some really interesting findings as we dig in deeper, and computa
 
 For now, I’ll leave you with Quinn’s notes on how to computationally work out differences between two versions of a text.
 
-![Spreadsheet reflecting textual variants](https://raw.githubusercontent.com/datasittersclub/site/master/spreadsheet-variants.jpg){:style="float: right;margin-right: 7px;margin-top: 0px;"}
+![Spreadsheet reflecting textual variants](https://github.com/datasittersclub/site/blob/master/spreadsheet-variants.png?raw=true)
 
 \*Interestingly, they reversed the changes to the Blyton books in 2016 due to lack of interest; and we found that the _BSC_ changes petered out after the first 20 volumes or so.
 
