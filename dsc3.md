@@ -76,7 +76,7 @@ For now, I’ll leave you with Quinn’s notes on how to computationally work ou
 
 > When I first told the other data-sitters that there were changes in the text, the tool that immediately leaped to mind for a couple of us was Juxta. Juxta made a big splash in the late 2000’s -- initially as an installable Java app, and then as a web-based version, [Juxta Commons](juxtacommons.org). Juxta Commons is still “in beta” about a decade later, but has [detailed documentation](http://juxtacommons.org/guide), still works, and you can even create new accounts (as I discovered, since my old account is associated with an email from two jobs ago).
 
-> A web-based DH tool that still works a decade later, even as the associated blog is six years out-of-date, is nothing short of a miracle. There’s just one catch:
+> A web-based digital humanities tool that still works a decade later, even as the associated blog is six years out-of-date, is nothing short of a miracle. There’s just one catch:
 
 > Juxta  
 > …  
