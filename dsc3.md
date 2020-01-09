@@ -64,13 +64,13 @@ For now, I’ll leave you with Quinn’s notes on how to computationally work ou
 
 > Why that tool? Well, our corpus wasn’t that big -- and I suspected that the relevant subset of the corpus would be much smaller. (It didn’t seem likely that the publisher went through all the books to make content edits when the books were re-released as e-books.) The Diff Demo does the comparison really fast (unlike certain other options described below). Because I expected only a few books would show traces of these edits, I suspected it’d be all-around faster and easier to manually copy and paste dirty and clean corpus texts for comparison, review the differences with my own eyeballs, and then copy and paste relevant differences (i.e. ones not resulting from OCR errors) into a Google Sheet. Honestly, even if I thought there would be a lot of books with these changes, I’d probably start with the Diff Demo to first get a sense of what the changes were, how many there tended to be per book, etc., before moving on to trying to write code to scale up the process beyond what I could reasonably do myself.
 
-> ![Screenshot of Diff Demo](https://github.com/datasittersclub/site/blob/master/dsc3_diffdemo.png?raw=true)
+![Screenshot of Diff Demo](https://raw.githubusercontent.com/datasittersclub/site/master/dsc3_diffdemo.png)
 
 > When I first started doing the collation this way, there were a lot of “false alarms”: things flagged as differences that were entirely typographical. Curly instead of straight quotes and apostrophes. Ellipses expressed through a single character instead of three periods. That kind of thing. To minimize the number of things that would catch my eye as I skimmed the results, I did a bit of pre-processing, replacing the quotes and ellipses so they’d be consistent, just using find-and-replace in a plain text editor.
 
 > One handy thing about the Diff Demo is that if you copy the output and paste it into Microsoft Word, the changes will show up formatted as you’d expect from Word’s built-in Track Changes.
 
-> ![Screenshot of Track Changes](https://github.com/datasittersclub/site/blob/master/dsc3_trackchanges.png?raw=true)
+![Screenshot of Track Changes](https://raw.githubusercontent.com/datasittersclub/site/master/dsc3_trackchanges.png)
 
 > **What I tried: Juxta**
 
@@ -104,7 +104,7 @@ For now, I’ll leave you with Quinn’s notes on how to computationally work ou
 
 > For better performance, you could try running the [Juxta Commons source code](https://github.com/performant-software/juxta-service) on your own laptop, but it’s probably more straightforward to [install the desktop software](http://www.juxtasoftware.org/download/). I found it a little counterintuitive -- though to be fair, I’m the type who usually leaps into software without reading the documentation first. The [user manual](https://github.com/performant-software/juxta-desktop/wiki/UserManual) is actually helpful for working through the process of comparing texts.
 
-> ![Screenshot of Juxta Desktop](https://github.com/datasittersclub/site/blob/master/dsc3_juxtadesktop.png?raw=true)
+> ![Screenshot of Juxta Desktop](<https://raw.githubusercontent.com/datasittersclub/site/master/dsc3_juxtadesktop(1).png>)
 
 > **Do It With Code: CollateX**
 
@@ -116,16 +116,16 @@ For now, I’ll leave you with Quinn’s notes on how to computationally work ou
 
 > Given the much smaller chunk of a few paragraphs (the ones used for the screenshots above), it performed great, and has a couple of nice visualizations, including color-coded lines that split out textual differences, and a graph visualization.
 
-> ![Screenshot of CollateX Table](https://github.com/datasittersclub/site/blob/master/dsc3_collatextable.png?raw=true)
+![Screenshot of CollateX Table](https://raw.githubusercontent.com/datasittersclub/site/master/dsc3_collatextable.png)
 
-> ![Screenshot of CollateX Graph](https://github.com/datasittersclub/site/blob/master/dsc3_collatexgraph.png?raw=true)
+![Screenshot of CollateX Graph](https://raw.githubusercontent.com/datasittersclub/site/master/dsc3_collatexgraph.png)
 
 > Text collation is a relatively easy way to answer some kinds of questions about the editorial history of a text. Whether you’d rather write code, paste things into a browser, or install really old Java software, there are multiple options for exploring text collation. Give it a try -- but always remember to check with a disciplinary expert before you get too excited!
 
 > Happy analyzing,  
 > Quinn
 
-> ![Screenshot of Quinn's signature](https://github.com/datasittersclub/site/blob/master/dsc_quinnsig.png?raw=true)
+![Screenshot of Quinn's signature](https://raw.githubusercontent.com/datasittersclub/site/master/dsc_quinnsig.png)
 
 ### Suggested Citation
 
