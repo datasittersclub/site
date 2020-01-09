@@ -123,7 +123,6 @@ For now, I’ll leave you with Quinn’s notes on how to computationally work ou
 > Text collation is a relatively easy way to answer some kinds of questions about the editorial history of a text. Whether you’d rather write code, paste things into a browser, or install really old Java software, there are multiple options for exploring text collation. Give it a try -- but always remember to check with a disciplinary expert before you get too excited!
 
 > Happy analyzing,  
-> Quinn
 
 ![Screenshot of Quinn's signature](https://raw.githubusercontent.com/datasittersclub/site/master/dsc_quinnsig.png)
 
