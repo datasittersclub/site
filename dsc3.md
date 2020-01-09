@@ -18,7 +18,7 @@ Children’s publishing has a long history of revising texts to keep up with cha
 
 ![Original illustrations of Oompa Loompas from Roald Dahl's Charlie and the Chocolate Factory](https://raw.githubusercontent.com/datasittersclub/site/master/oompaloompa1.jpg){:style="float: left;margin-right: 7px;margin-top: 0px;"} Another children’s lit classic that has gotten this treatment is Roald Dahl’s _Charlie and the Chocolate Factory_; there were some (honestly, reaaaally necessary) [revisions](https://groovyhistory.com/oompa-loompas-the-original-ones) in the 1970s to deal with the fact that the Oompa Loompas were described in the ‘60s original as "amiable black pygmies" from "the very deepest and darkest part of the African jungle where no white man had been before." Ew. (More on these kind of changes at children’s literature scholar [Phil Nel’s blog](www.philnel.com/2010/09/19/censoring-ideology/), from which the Oompa Loompa illustrations were taken.)
 
-But the changes Quinn was seeing didn’t seem to be at the level of social lessons (unless you mean the lesson that the perm craze is better off left in the past) – they were more about making the books, as the kids say, “relatable” to modern readers. That felt pretty normal given what I knew about children’s literature too. Books for young people have been commercial products basically since they became A Thing in the mid- to late eighteenth century. Ever heard of the prestigious Newbury Medal for children’s literature? [John Newbury](https://en.wikipedia.org/wiki/John_Newbery), the “Father of Children’s Literature,” was the English publisher and merchant who got the whole shebang started…by printing and selling books. Children’s presses are always looking for ways to make the same books more exciting for new markets – this results in things like the [Americanizations](https://www.hp-lexicon.org/2001/08/25/differences-between-british-and-us-versions-of-ps/) when _Harry Potter and the Philosopher's Stone_ was first sold as _Harry Potter and the Sorcerer's Stone_ in the US (they stopped doing this after Book 1 though, because everyone knows a [Weasley jumper](https://harrypotter.fandom.com/wiki/Weasley_jumper) is way cozier than a Weasley sweater). Children’s publishing also relies a lot more on nostalgia sales than adult books do, since all those grown-up buyers of children’s literature often want to pass down their old faves to the next generation. So it’s not uncommon for presses to re-release classics with hipper cover art and contemporary updates to the text itself. This happened with bestselling British author [Enid Blyton’s books](https://www.theguardian.com/books/2010/jul/23/enid-blyton-famous-five-makeover) in 2010 and (a later google search revealed)…[_The Baby-Sitters Club_ books](https://www.nytimes.com/2009/12/31/books/31babysitters.html) in the same year. And most of the changes the team was discussing were the kinds of ones the BSC publisher, Scholastic, had openly announced they planned to make! (Interestingly, they [reversed the changes](https://www.theguardian.com/books/2016/sep/16/famous-five-go-back-to-original-language-after-update-flops) to the Blyton books in 2016 due to lack of interest; and we found that the _BSC_ changes petered out after the first 20 volumes or so.)
+But the changes Quinn was seeing didn’t seem to be at the level of social lessons (unless you mean the lesson that the perm craze is better off left in the past) – they were more about making the books, as the kids say, “relatable” to modern readers. That felt pretty normal given what I knew about children’s literature too. Books for young people have been commercial products basically since they became A Thing in the mid- to late eighteenth century. Ever heard of the prestigious Newbury Medal for children’s literature? [John Newbury](https://en.wikipedia.org/wiki/John_Newbery), the “Father of Children’s Literature,” was the English publisher and merchant who got the whole shebang started…by printing and selling books. Children’s presses are always looking for ways to make the same books more exciting for new markets – this results in things like the [Americanizations](https://www.hp-lexicon.org/2001/08/25/differences-between-british-and-us-versions-of-ps/) when _Harry Potter and the Philosopher's Stone_ was first sold as _Harry Potter and the Sorcerer's Stone_ in the US (they stopped doing this after Book 1 though, because everyone knows a [Weasley jumper](https://harrypotter.fandom.com/wiki/Weasley_jumper) is way cozier than a Weasley sweater). Children’s publishing also relies a lot more on nostalgia sales than adult books do, since all those grown-up buyers of children’s literature often want to pass down their old faves to the next generation. So it’s not uncommon for presses to re-release classics with hipper cover art and contemporary updates to the text itself. This happened with bestselling British author [Enid Blyton’s books](https://www.theguardian.com/books/2010/jul/23/enid-blyton-famous-five-makeover) in 2010 and (a later google search revealed)…[_The Baby-Sitters Club_ books](https://www.nytimes.com/2009/12/31/books/31babysitters.html) in the same year. And most of the changes the team was discussing were the kinds of ones the BSC publisher, Scholastic, had openly announced they planned to make! (Interestingly, they [reversed the changes](https://www.theguardian.com/books/2016/sep/16/famous-five-go-back-to-original-language-after-update-flops) to the Blyton books in 2016 due to lack of interest; and we found that the _BSC_ changes petered out after the first 10 volumes or so.)
 
 So there I was, a font of possibly unwanted information. I didn't want to rain on everyone’s parade: one of the awesome things about computational text analysis is supposed to be its ability to reveal information that humans wouldn’t be able to detect on their own or, in some cases, even think to ask about. And everyone else was fired up about what the digital comparisons had shown. So it felt like a big party pooper move – and not an awesome collaborator move – to respond by saying that the changes were not really a major discovery after all.
 
@@ -64,13 +64,13 @@ For now, I’ll leave you with Quinn’s notes on how to computationally work ou
 
 > Why that tool? Well, our corpus wasn’t that big -- and I suspected that the relevant subset of the corpus would be much smaller. (It didn’t seem likely that the publisher went through all the books to make content edits when the books were re-released as e-books.) The Diff Demo does the comparison really fast (unlike certain other options described below). Because I expected only a few books would show traces of these edits, I suspected it’d be all-around faster and easier to manually copy and paste dirty and clean corpus texts for comparison, review the differences with my own eyeballs, and then copy and paste relevant differences (i.e. ones not resulting from OCR errors) into a Google Sheet. Honestly, even if I thought there would be a lot of books with these changes, I’d probably start with the Diff Demo to first get a sense of what the changes were, how many there tended to be per book, etc., before moving on to trying to write code to scale up the process beyond what I could reasonably do myself.
 
-> [SCREENSHOT: DIFF DEMO]
+> ![Screenshot of Diff Demo](https://github.com/datasittersclub/site/blob/master/dsc3_diffdemo.png?raw=true)
 
 > When I first started doing the collation this way, there were a lot of “false alarms”: things flagged as differences that were entirely typographical. Curly instead of straight quotes and apostrophes. Ellipses expressed through a single character instead of three periods. That kind of thing. To minimize the number of things that would catch my eye as I skimmed the results, I did a bit of pre-processing, replacing the quotes and ellipses so they’d be consistent, just using find-and-replace in a plain text editor.
 
 > One handy thing about the Diff Demo is that if you copy the output and paste it into Microsoft Word, the changes will show up formatted as you’d expect from Word’s built-in Track Changes.
 
-> [SCREENSHOT: TRACK CHANGES]
+> ![Screenshot of Track Changes](https://github.com/datasittersclub/site/blob/master/dsc3_trackchanges.png?raw=true)
 
 > **What I tried: Juxta**
 
@@ -104,7 +104,7 @@ For now, I’ll leave you with Quinn’s notes on how to computationally work ou
 
 > For better performance, you could try running the [Juxta Commons source code](https://github.com/performant-software/juxta-service) on your own laptop, but it’s probably more straightforward to [install the desktop software](http://www.juxtasoftware.org/download/). I found it a little counterintuitive -- though to be fair, I’m the type who usually leaps into software without reading the documentation first. The [user manual](https://github.com/performant-software/juxta-desktop/wiki/UserManual) is actually helpful for working through the process of comparing texts.
 
-> [SCREENSHOT: JUXTA DESKTOP]
+> ![Screenshot of Juxta Desktop](https://github.com/datasittersclub/site/blob/master/dsc3_juxtadesktop.png?raw=true)
 
 > **Do It With Code: CollateX**
 
@@ -116,12 +116,16 @@ For now, I’ll leave you with Quinn’s notes on how to computationally work ou
 
 > Given the much smaller chunk of a few paragraphs (the ones used for the screenshots above), it performed great, and has a couple of nice visualizations, including color-coded lines that split out textual differences, and a graph visualization.
 
-> [SCREENSHOTS]
+> ![Screenshot of CollateX Table](https://github.com/datasittersclub/site/blob/master/dsc3_collatextable.png?raw=true)
+
+> ![Screenshot of CollateX Graph](https://github.com/datasittersclub/site/blob/master/dsc3_collatexgraph.png?raw=true)
 
 > Text collation is a relatively easy way to answer some kinds of questions about the editorial history of a text. Whether you’d rather write code, paste things into a browser, or install really old Java software, there are multiple options for exploring text collation. Give it a try -- but always remember to check with a disciplinary expert before you get too excited!
 
 > Happy analyzing,  
 > Quinn
+
+> ![Screenshot of Quinn's signature](https://github.com/datasittersclub/site/blob/master/dsc_quinnsig.png?raw=true)
 
 ### Suggested Citation
 
