@@ -12,5 +12,6 @@ permalink: /books/
 
 ## Multilingual Mysteries (New series!)
 
-[DSC Multilingual Mystery #1 - _Lee and the Missing Metadata_]({{ site.baseurl }}/dscm1/) (1/23/2020)  
+[DSC Multilingual Mystery #1 - _Lee and the Missing Metadata_]({{ site.baseurl }}/dscm1/) (1/23/2020)
+
 ![Ad for the Data-Sitters Club Multilingual Mysteries based on an original Baby-Sitters Club ad.](dsc_mystery_series_ad.png)
