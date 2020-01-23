@@ -128,4 +128,4 @@ For now, I’ll leave you with Quinn’s notes on how to computationally work ou
 
 ### Suggested Citation
 
-Cecire, Maria Sachiko. “DSC #2: The Truth About Digital Humanities Collaboration.” _The Data-Sitters Club_. January 10, 2020. https://datasittersclub.github.io/site/dsc3/.
+Cecire, Maria Sachiko. “DSC #3: The Truth About Digital Humanities Collaboration.” _The Data-Sitters Club_. January 10, 2020. https://datasittersclub.github.io/site/dsc3/.
