@@ -9,15 +9,16 @@ permalink: /dscm1/
 by Lee Skallerup Bessette and Quinn Dombrowski, January 24, 2020
 
 ### Quinn
+
 I engaged in some retail therapy over the holidays. With a little Christmas money burning a hole in my pocket, and two weeks on the East Coast visiting relatives with three small kids in tow, sitting down with a beer at the end of the day and hunting down translations of Baby-Sitters Club books was a reliable small source of joy.
 
-The Data-Sitters Club has become something of an awkward undertaking for me, in relation to my job. I support *non-English* DH at Stanford, and help run a [Multilingual DH](http://multilingualdh.org/) group. While we'd [managed to acquire the complete corpus of The Baby-Sitters Club with financial support from the Stanford Literary Lab](https://datasittersclub.github.io/site/dsc2/), we were nearly out of money and all we had was English. I had a good story to explain why I was doing it: the methods we're walking through in these posts can, in most cases, be applied to non-English text as well, given some care and pre-processing. But still, it bugged me. Non-English DH is where I feel most at home, and since the series has been translated -- at least in part -- into over 15 languages, aren't there things we should explore with those versions, too?
+The Data-Sitters Club has become something of an awkward undertaking for me, in relation to my job. I support _non-English_ DH at Stanford, and help run a [Multilingual DH](http://multilingualdh.org/) group. While we'd [managed to acquire the complete corpus of The Baby-Sitters Club with financial support from the Stanford Literary Lab](https://datasittersclub.github.io/site/dsc2/), we were nearly out of money and all we had was English. I had a good story to explain why I was doing it: the methods we're walking through in these posts can, in most cases, be applied to non-English text as well, given some care and pre-processing. But still, it bugged me. Non-English DH is where I feel most at home, and since the series has been translated -- at least in part -- into over 15 languages, aren't there things we should explore with those versions, too?
 
 (If you're wondering what the deal is with the Data-Sitters Club, read [Chapter 2](https://datasittersclub.github.io/site/chapter-2/).)
 
 As MSNBC talking heads, 15-year-old reruns of Law & Order, or, on a good night, Discovery Channel docu-dramas of harsh, unforgiving nature flashed across the TV at my in-laws' house, and my jet-lagged children attempted to postpone sleep indefinitely by jumping on an air mattress upstairs, I curled up on the couch with my laptop and lost myself in WorldCat.
 
-Amazon or AbeBooks is fine if you know what you're looking for. Katia managed to get us a number of recent French translations that way using the Literary Lab funds. Some of them even arrived at my in-laws' over the holidays, leaving me giggling at the temptation for mistranslation based on near-cognates. *Claudia's Ennui*. *Lucy Is Amorous*.
+Amazon or AbeBooks is fine if you know what you're looking for. Katia managed to get us a number of recent French translations that way using the Literary Lab funds. Some of them even arrived at my in-laws' over the holidays, leaving me giggling at the temptation for mistranslation based on near-cognates. _Claudia's Ennui_. _Lucy Is Amorous_.
 
 ![Picture of two French book covers, 'Claudia a des ennuis' and 'Lucy est amoureuse'](ennuis_amoureuse.jpg)
 
@@ -33,11 +34,11 @@ For starters, I went to the [advanced search page](https://www.worldcat.org/adva
 
 Scrolling down to (and expanding) the Language facet, I saw there were over 2,000 English hits. No surprise there.
 
-I started with Polish: 7 results. Joanna Byszuk had mentioned reading them as a child, and I was itching to get my hands on *Wspaniały pomysł Kristy* (Kristy's great idea), *Claudia, telefon i człowiek-widmo* (Claudia, the phone, and the ghost-man), or *Cała prawda o Stacey* (The whole truth about Stacey). Unfortunately, the only library included in WorldCat that had a copy was the National Library of Poland in Warsaw. It was hard to imagine that an interlibrary loan request to mail those books halfway across the world to California would get me anywhere.
+I started with Polish: 7 results. Joanna Byszuk had mentioned reading them as a child, and I was itching to get my hands on _Wspaniały pomysł Kristy_ (Kristy's great idea), _Claudia, telefon i człowiek-widmo_ (Claudia, the phone, and the ghost-man), or _Cała prawda o Stacey_ (The whole truth about Stacey). Unfortunately, the only library included in WorldCat that had a copy was the National Library of Poland in Warsaw. It was hard to imagine that an interlibrary loan request to mail those books halfway across the world to California would get me anywhere.
 
-This became a recurring theme. *Kristy a její klub: Kristin bezva nápad*? National Library of the Czech Republic in Prague. *La Mary Anne salva la situació*? Biblioteca Nacional de España in Madrid. Then there were some records that either point to a good story, or a strange cataloging error. How is Harvard the only WorldCat library with *הרעיון הגדול של קריסטי / ha-Raʻyon ha-gadol shel Ḳrisṭi*? Why are Norwegian translations like *Kristys gode idé* only available in the Newark Public Library? Why is *Stacey loca por los chicos* (and many other Spanish translations) available in the Biblioteca Nacional de España, Red de Lectura Pública de Euskadi in the Basque Country, and... the Anchorage School District? And I found other ghostly traces of books: *Claudia dan Janine sie besar kepala* (which Google Translate assures me is "Claudia and Janine are Big Heads" in Indonesian) and *Kristy vs kelompok sok pamer* ("Kristy vs. the group showing off") are listed as results, but aren't shown as being available in any library at all.
+This became a recurring theme. _Kristy a její klub: Kristin bezva nápad_? National Library of the Czech Republic in Prague. _La Mary Anne salva la situació_? Biblioteca Nacional de España in Madrid. Then there were some records that either point to a good story, or a strange cataloging error. How is Harvard the only WorldCat library with _הרעיון הגדול של קריסטי / ha-Raʻyon ha-gadol shel Ḳrisṭi_? Why are Norwegian translations like _Kristys gode idé_ only available in the Newark Public Library? Why is _Stacey loca por los chicos_ (and many other Spanish translations) available in the Biblioteca Nacional de España, Red de Lectura Pública de Euskadi in the Basque Country, and... the Anchorage School District? And I found other ghostly traces of books: _Claudia dan Janine sie besar kepala_ (which Google Translate assures me is "Claudia and Janine are Big Heads" in Indonesian) and _Kristy vs kelompok sok pamer_ ("Kristy vs. the group showing off") are listed as results, but aren't shown as being available in any library at all.
 
-If you want Baby-Sitters Club books you can actually get your hands on, you're limited to a much smaller set of languages than you might think at first. (For Chinese, Japanese, Korean, and Thai, it was Ann M. Martin's other works, like *A Corner of the Universe* and *Doll People*, that got translated.) We're talking Spanish, French, Italian, German, and Dutch if you're lucky. One thing I like about WorldCat is the integration with booksellers. On the page for an individual work, in the upper right, there's a widget that queries the API for Amazon.com (crucially, not all international Amazons, where you're more likely to find some of these translations), AbeBooks, Barnes & Noble, Better World Books, iTunes, and a few other sites where you can potentially buy the book. If WorldCat "finds" it using the metadata in that record, it'll display the price. (Of course, if the metadata in the record is *wrong*, you may end up following the link to another book entirely, which happened more than once.)
+If you want Baby-Sitters Club books you can actually get your hands on, you're limited to a much smaller set of languages than you might think at first. (For Chinese, Japanese, Korean, and Thai, it was Ann M. Martin's other works, like _A Corner of the Universe_ and _Doll People_, that got translated.) We're talking Spanish, French, Italian, German, and Dutch if you're lucky. One thing I like about WorldCat is the integration with booksellers. On the page for an individual work, in the upper right, there's a widget that queries the API for Amazon.com (crucially, not all international Amazons, where you're more likely to find some of these translations), AbeBooks, Barnes & Noble, Better World Books, iTunes, and a few other sites where you can potentially buy the book. If WorldCat "finds" it using the metadata in that record, it'll display the price. (Of course, if the metadata in the record is _wrong_, you may end up following the link to another book entirely, which happened more than once.)
 
 I don't get the pricing for Baby-Sitters Club translations. Really, I don't. Sometimes they're dirt cheap: I picked up five Dutch translations for $1 apiece (before shipping, which is the real killer if you're in the US; $5 turned into $30, all said and done). One of those books, Een nieuwe stijl voor Inge (AKA "Mary-Anne's Makeover"), is now available for $40 from AbeBooks and $60 from Amazon. I've seen books -- without any obvious special features, like a signature from Ann M. Martin, or a lock of her hair, or her personal phone number -- going for over $200 before shipping. I've even seen as much as $400.
 
@@ -58,28 +59,25 @@ French clearly seemed the way to go. There was just one problem: I don't really 
 
 Luckily, Roopsi knew just the right person. "I bet Lee would be interested..."
 
+> From: Roopika Risam
+> To: Katia Bowers, Maria Cecire, Quinn Dombrowski, Anouk Lang
+> Date: January 7, 2020 at 4:52:29 PM
+>
+> Dear DSC friends.
+>
+> I'm pleased to introduce Lee Skallerup Bessette, whose response to my email was:
+>
+> "YOU DO KNOW THAT I HAVE WRITTEN ABOUT FRENCH VS QUEBECOIS TRANSLATIONS RIGHT?
+>
+> OMG I WOULD LOVE TO."
+>
+> Welcome to the DSC, Lee!
+>
+> All best,
+>
+> Roopsi
 
-
->From: Roopika Risam
->To: Katia Bowers, Maria Cecire, Quinn Dombrowski, Anouk Lang
->Date: January 7, 2020 at 4:52:29 PM
->
->Dear DSC friends.
->
->I'm pleased to introduce Lee Skallerup Bessette, whose response to my email was:
->
->"YOU DO KNOW THAT I HAVE WRITTEN ABOUT FRENCH VS QUEBECOIS TRANSLATIONS RIGHT?
->
->OMG I WOULD LOVE TO."
->
->Welcome to the DSC, Lee!
->
->All best, 
->
->Roopsi
-
-
-###Lee
+### Lee
 
 When I first saw the announcement about the Data-Sitters Club, I was not so secretly jealous of those lucky few who were participating. I was obsessed with The Baby-Sitters Club books when I was younger. But, I thought, they've got everything covered. What could I possibly offer? So, I kept quiet tabs on the goings-on of the project and went on with the other 27 or so writing and research projects I have going on.
 
@@ -122,8 +120,6 @@ See, Quebec did get it right: representation does matter.
 Okay, so maybe we haven't solved any francophone mysteries yet. But we're on our way, now that we've got Lee as our Mallory -- in the "keeper of the mystery journal" sense, not the "ugh... another Mallory book?" sense! It's good to be back in the non-English DH business.
 
 Stay tuned for Data-Sitters Club Mystery #2...
-
-
 
 ### Suggested Citation
 
