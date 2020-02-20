@@ -608,6 +608,10 @@ img {
   list-style: none;
   margin-left: 0; }
 
+p.postlist, h3.postlist {
+  margin: 0;
+  padding: 0; }
+
 /**
  * Misc
  */
