@@ -15,11 +15,3 @@ permalink: /books/
 [DSC Multilingual Mystery #1 - _Lee and the Missing Metadata_]({{ site.baseurl }}/dscm1/) (1/23/2020)
 
 ![Ad for the Data-Sitters Club Multilingual Mysteries based on an original Baby-Sitters Club ad.]({{ site.baseurl }}/assets/dsc_mystery_series_ad.png)
-
-
-<h2>Projects</h2>
-{% for post in site.posts %}
-	<img src="{{ site.baseurl }}/assets/bookcoovers/{{ post.cover }}" />
-    <h3 class="postlist"><a href="{{ post.url }}">{{ post.title }}</h3>
-	<p class="postlist">{{ post.blurb }}</p>			
-{% endfor %}
