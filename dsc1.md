@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 'DSC #1 - Quinn’s Great Idea'
+title: dsc1
 coverart: 'dsc1_cover.jpg'
 blurb: 'A colloquial, collaborative guide to computational text analysis for digital humanities — what could be more fun?'
 bookseries: mystery
