@@ -1,0 +1,28 @@
+- id: dhawards2019
+  description: Ads for the DH Awards 2019
+  imagefolder: /site/assets/dhawards2019
+  images:
+  - name: dsc_fun_ad.jpg
+    thumb: dsc_fun_ad_thumb.jpg
+    text: The start of the award campaign
+  - name: kenner_dolls_dsc_ad.jpg
+    thumb: kenner_dolls_dsc_ad_thumb.jpg
+    text: They're more than project collaborators, they're the Data-Sitters Club!
+  - name: valentines_day_dsc_ad.jpg
+    thumb: valentines_day_dsc_ad_thumb.jpg
+    text: After Valentine's Day
+  - name: jessi_troublemaker_dsc_ad.jpg
+    thumb: jessi_troublemaker_dsc_ad_thumb.jpg
+    text: DH text analysis methods aren't supposed to hurt
+  - name: dsc_ad_dawn.jpg
+    thumb: dsc_ad_dawn_thumb.jpg
+    text: Trust a tired parent, this project is fun
+  - name: 1990_cover_dsc_ad.jpg
+    thumb: 1990_cover_dsc_ad_thumb.jpg
+    text: Easier and more fun than french braiding your best friend's hair
+  - name: dsc_ad_no_dolls.jpg
+    thumb: dsc_ad_no_dolls_thumb.jpg
+    text: We're no dolls
+  - name: everybodys_talking_dsc_ad.jpg
+    thumb: everybodys_talking_dsc_ad_thumb.jpg
+    text: Everybody's talking about the Data-Sitters Club
