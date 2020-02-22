@@ -6,9 +6,618 @@
 </description>
     <link>http://localhost:4000/site/</link>
     <atom:link href="http://localhost:4000/site/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 19 Feb 2020 22:52:07 -0800</pubDate>
-    <lastBuildDate>Wed, 19 Feb 2020 22:52:07 -0800</lastBuildDate>
+    <pubDate>Sat, 22 Feb 2020 09:53:49 -0800</pubDate>
+    <lastBuildDate>Sat, 22 Feb 2020 09:53:49 -0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>DSC Multilingual Mystery #1: Lee and the Missing Metadata</title>
+        <description>&lt;p&gt;by Lee Skallerup Bessette and Quinn Dombrowski, January 24, 2020&lt;/p&gt;
+
+&lt;h3 id=&quot;quinn&quot;&gt;Quinn&lt;/h3&gt;
+
+&lt;p&gt;I engaged in some retail therapy over the holidays. With a little Christmas money burning a hole in my pocket, and two weeks on the East Coast visiting relatives with three small kids in tow, sitting down with a beer at the end of the day and hunting down translations of Baby-Sitters Club books was a reliable small source of joy.&lt;/p&gt;
+
+&lt;p&gt;The Data-Sitters Club has become something of an awkward undertaking for me, in relation to my job. I support &lt;em&gt;non-English&lt;/em&gt; DH at Stanford, and help run a &lt;a href=&quot;http://multilingualdh.org/&quot;&gt;Multilingual DH&lt;/a&gt; group. While we’d &lt;a href=&quot;https://datasittersclub.github.io/site/dsc2/&quot;&gt;managed to acquire the complete corpus of The Baby-Sitters Club with financial support from the Stanford Literary Lab&lt;/a&gt;, we were nearly out of money and all we had was English. I had a good story to explain why I was doing it: the methods we’re walking through in these posts can, in most cases, be applied to non-English text as well, given some care and pre-processing. But still, it bugged me. Non-English DH is where I feel most at home, and since the series has been translated – at least in part – into over 15 languages, aren’t there things we should explore with those versions, too?&lt;/p&gt;
+
+&lt;p&gt;(If you’re wondering what the deal is with the Data-Sitters Club, read &lt;a href=&quot;https://datasittersclub.github.io/site/chapter-2/&quot;&gt;Chapter 2&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;As MSNBC talking heads, 15-year-old reruns of Law &amp;amp; Order, or, on a good night, Discovery Channel docu-dramas of harsh, unforgiving nature flashed across the TV at my in-laws’ house, and my jet-lagged children attempted to postpone sleep indefinitely by jumping on an air mattress upstairs, I curled up on the couch with my laptop and lost myself in WorldCat.&lt;/p&gt;
+
+&lt;p&gt;Amazon or AbeBooks is fine if you know what you’re looking for. Katia managed to get us a number of recent French translations that way using the Literary Lab funds. Some of them even arrived at my in-laws’ over the holidays, leaving me giggling at the temptation for mistranslation based on near-cognates. &lt;em&gt;Claudia’s Ennui&lt;/em&gt;. &lt;em&gt;Lucy Is Amorous&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/site/assets/ennuis_amoureuse.jpg&quot; alt=&quot;Picture of two French book covers, 'Claudia a des ennuis' and 'Lucy est amoureuse'&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;But truly, I had nearly no idea what I was looking for. The &lt;a href=&quot;https://babysittersclub.fandom.com/wiki/Translations&quot;&gt;“Translations” page on a BSC fan wiki&lt;/a&gt; had a list of languages, without claiming it was comprehensive. Under the French translation, someone had put together a list of book titles that had been published in Quebec. There was also a list of titles for Finnish and for Polish. (For the latter, titles had been announced for five translations, but only three were ever published.) I knew there had to be more out there. So I pulled out a search technique I’d tried before and often recommended to people who were looking for translations, without knowing many more details: I went to WorldCat.&lt;/p&gt;
+
+&lt;p&gt;If you haven’t really used it, &lt;a href=&quot;https://www.worldcat.org/&quot;&gt;WorldCat&lt;/a&gt; aggregates metadata records from libraries around the world. It’s like a meta-library-catalog, with the usual features you’d expect from a library catalog (e.g. searching by particular fields – like author or title, and lots of different ways to refine your search using facets). There’s a really interesting mix of libraries represented, from public school libraries in the US to national libraries in Europe to teachers’ colleges in Asia. I’m sure many, many libraries and archives, particularly in the Global South, are not there (thinking about this from the perspective of Roopsi’s book &lt;a href=&quot;http://www.nupress.northwestern.edu/content/new-digital-worlds&quot;&gt;New Digital Worlds&lt;/a&gt;, which you should read), but at least when it comes to the languages and countries where we know The Baby-Sitters Club was translated, WorldCat is a better place to start an open-ended search than Amazon.&lt;/p&gt;
+
+&lt;p&gt;One more thing you should keep in mind about WorldCat: they take what they get from those libraries in terms of metadata. Sometimes it’s a total mess, with metadata obviously and painfully wrong – like claiming a book with a transliterated Russian title, published in Moscow, with all-Russian metadata and no translator, is in English. If you’re lucky, it’s just incomplete. In either case, when you search for something, chances are that there’ll be multiple separate records for the same book, due to minor differences in the metadata.&lt;/p&gt;
+
+&lt;p&gt;For starters, I went to the &lt;a href=&quot;https://www.worldcat.org/advancedsearch&quot;&gt;advanced search page&lt;/a&gt;, typed in &lt;code class=&quot;highlighter-rouge&quot;&gt;Martin, Ann M.&lt;/code&gt; into the author field, and ran the search. Selecting the correct author facet left me with a bit over 3,200 results.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/site/assets/worldcat-martinfacet.png&quot; alt=&quot;Author facet for Ann M. Martin on WorldCat&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Scrolling down to (and expanding) the Language facet, I saw there were over 2,000 English hits. No surprise there.&lt;/p&gt;
+
+&lt;p&gt;I started with Polish: 7 results. Joanna Byszuk had mentioned reading them as a child, and I was itching to get my hands on &lt;em&gt;Wspaniały pomysł Kristy&lt;/em&gt; (Kristy’s great idea), &lt;em&gt;Claudia, telefon i człowiek-widmo&lt;/em&gt; (Claudia, the phone, and the ghost-man), or &lt;em&gt;Cała prawda o Stacey&lt;/em&gt; (The whole truth about Stacey). Unfortunately, the only library included in WorldCat that had a copy was the National Library of Poland in Warsaw. It was hard to imagine that an interlibrary loan request to mail those books halfway across the world to California would get me anywhere.&lt;/p&gt;
+
+&lt;p&gt;This became a recurring theme. &lt;em&gt;Kristy a její klub: Kristin bezva nápad&lt;/em&gt;? National Library of the Czech Republic in Prague. &lt;em&gt;La Mary Anne salva la situació&lt;/em&gt;? Biblioteca Nacional de España in Madrid. Then there were some records that either point to a good story, or a strange cataloging error. How is Harvard the only WorldCat library with &lt;em&gt;הרעיון הגדול של קריסטי / ha-Raʻyon ha-gadol shel Ḳrisṭi&lt;/em&gt;? Why are Norwegian translations like &lt;em&gt;Kristys gode idé&lt;/em&gt; only available in the Newark Public Library? Why is &lt;em&gt;Stacey loca por los chicos&lt;/em&gt; (and many other Spanish translations) available in the Biblioteca Nacional de España, Red de Lectura Pública de Euskadi in the Basque Country, and… the Anchorage School District? And I found other ghostly traces of books: &lt;em&gt;Claudia dan Janine sie besar kepala&lt;/em&gt; (which Google Translate assures me is “Claudia and Janine are Big Heads” in Indonesian) and &lt;em&gt;Kristy vs kelompok sok pamer&lt;/em&gt; (“Kristy vs. the group showing off”) are listed as results, but aren’t shown as being available in any library at all.&lt;/p&gt;
+
+&lt;p&gt;If you want Baby-Sitters Club books you can actually get your hands on, you’re limited to a much smaller set of languages than you might think at first. (For Chinese, Japanese, Korean, and Thai, it was Ann M. Martin’s other works, like &lt;em&gt;A Corner of the Universe&lt;/em&gt; and &lt;em&gt;Doll People&lt;/em&gt;, that got translated.) We’re talking Spanish, French, Italian, German, and Dutch if you’re lucky. One thing I like about WorldCat is the integration with booksellers. On the page for an individual work, in the upper right, there’s a widget that queries the API for Amazon.com (crucially, not all international Amazons, where you’re more likely to find some of these translations), AbeBooks, Barnes &amp;amp; Noble, Better World Books, iTunes, and a few other sites where you can potentially buy the book. If WorldCat “finds” it using the metadata in that record, it’ll display the price. (Of course, if the metadata in the record is &lt;em&gt;wrong&lt;/em&gt;, you may end up following the link to another book entirely, which happened more than once.)&lt;/p&gt;
+
+&lt;p&gt;I don’t get the pricing for Baby-Sitters Club translations. Really, I don’t. Sometimes they’re dirt cheap: I picked up five Dutch translations for $1 apiece (before shipping, which is the real killer if you’re in the US; $5 turned into $30, all said and done). One of those books, Een nieuwe stijl voor Inge (AKA “Mary-Anne’s Makeover”), is now available for $40 from AbeBooks and $60 from Amazon. I’ve seen books – without any obvious special features, like a signature from Ann M. Martin, or a lock of her hair, or her personal phone number – going for over $200 before shipping. I’ve even seen as much as $400.&lt;/p&gt;
+
+&lt;p&gt;I had a little extra money after Christmas, but not that much. So I looked for cheap books, then on AbeBooks, looked for additional books from the same booksellers (an option feature you get when you add a book to your cart), hoping that combining international shipping might make it slightly less painful. Other than the five Dutch books that I couldn’t resist, I largely focused on Spanish books so I could read them. Also, the Spanish books have the best translation of “The Baby-Sitters Club” (as “El club de las canguro”), and the best logo to match. And they even do a derivative logo for the mystery books.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/site/assets/canguro_logo.png&quot; alt=&quot;Club de las Canguro logo, a kangaroo with a human baby in its pouch. And the mystery logo, with the kangaroo and a magnifying glass&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;What’s more, the Spanish cover art takes the US cover art and turns it up to 11 in terms of being utterly 80’s/90’s-tastic.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/site/assets/mary_anne_romance_cover_comparison.jpg&quot; alt=&quot;'Mary Anne and the Great Romance' cover comparison. Dawn's mother looks much more dramatic in the Spanish version&quot; /&gt;
+&lt;img src=&quot;/site/assets/staceys_mistake_cover_comparison.jpg&quot; alt=&quot;'Stacey's Mistake' cover comparison. Stacey is in an all-yellow suit (was that the mistake?), and Claudia doesn't look at all like herself in the Spanish version&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I was surprised by what I often didn’t find in the metadata for these translations: the translators! I expect that to be a fundamental piece of metadata about any translation, about equal in importance to the author. Not when it comes to mass-market children’s literature, I guess. The hit-or-miss translator information was going to make it tricky to figure out how many times these books had been translated. Sure, there were new editions of the books with more-contemporary cover art (the members of the new Club de las Canguro are so much cooler than me), but especially since the modernizing edits to the original English books stopped after about the first 10, is there any reason to expect that publishers would’ve invested in all-new translations?&lt;/p&gt;
+
+&lt;p&gt;The Data-Sitters Club may have been my great idea, but the project (and its funding) belongs to all of us now. So while I indulged in a handful of translations on my own dime, I wanted to wait until our next meeting to consult with the rest of the data-sitters on how we should spend the rest of the money for the Literary Lab. I described what I’d found in my WorldCat browsing: lots of translations locked up in libraries with no obvious way of accessing them, and godawful shipping rates to the US from Europe (though I’d started making inquiries with a network of potential summer “book mules” to help out with Italian and Spanish translations). French, though, seemed like an appealing option. Katia had managed to find copies of recently-published French translations on Amazon. There were some used bookstores in France that had lots of copies of 90’s translations, and were generous with combining shipping. But what’s more, one of the earliest translations of the Baby-Sitters Club series was done in Quebec, in order to enable distribution of the original English versions of the books into Canada. And even more: there was a Belgian translation after the Quebecois version, but well before the translation in France. We’re talking up to four different translations for some of the French books: 90’s Quebec, 90’s Belgium, 90’s France, and recent France (if it was, indeed, different) – and the Quebec ones could be mailed to Katia in British Columbia for non-exorbitant shipping. And still more: in the Ann M. Martin papers at Smith College where my friend Shannon Supple works as the curator of rare books, there’s a copy of a draft French translation of Mary Anne Saves the Day from Quebec, and a letter from the Quebec publisher!&lt;/p&gt;
+
+&lt;p&gt;French clearly seemed the way to go. There was just one problem: I don’t really read French (beyond what anyone with some knowledge of historical linguistics and Romance languages can sort out). I can handle the computational end of text analysis on French, but I’m not the right person to solve any mysteries here (as I was &lt;a href=&quot;http://datasittersclub.github.io/site/dsc3&quot;&gt;gently reminded by Maria in DSC #3&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Luckily, Roopsi knew just the right person. “I bet Lee would be interested…”&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;From: Roopika Risam
+To: Katia Bowers, Maria Cecire, Quinn Dombrowski, Anouk Lang
+Date: January 7, 2020 at 4:52:29 PM&lt;/p&gt;
+
+  &lt;p&gt;Dear DSC friends.&lt;/p&gt;
+
+  &lt;p&gt;I’m pleased to introduce Lee Skallerup Bessette, whose response to my email was:&lt;/p&gt;
+
+  &lt;p&gt;“YOU DO KNOW THAT I HAVE WRITTEN ABOUT FRENCH VS QUEBECOIS TRANSLATIONS RIGHT?&lt;/p&gt;
+
+  &lt;p&gt;OMG I WOULD LOVE TO.”&lt;/p&gt;
+
+  &lt;p&gt;Welcome to the DSC, Lee!&lt;/p&gt;
+
+  &lt;p&gt;All best,&lt;/p&gt;
+
+  &lt;p&gt;Roopsi&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;lee&quot;&gt;Lee&lt;/h3&gt;
+
+&lt;p&gt;When I first saw the announcement about the Data-Sitters Club, I was not so secretly jealous of those lucky few who were participating. I was obsessed with The Baby-Sitters Club books when I was younger. But, I thought, they’ve got everything covered. What could I possibly offer? So, I kept quiet tabs on the goings-on of the project and went on with the other 27 or so writing and research projects I have going on.&lt;/p&gt;
+
+&lt;p&gt;Little did I know that they would become interested in the various foreign-language translations and publications of the books, and, what do you know? I happen to have written a dissertation on translation, focused specifically on various French-language markets, as well as first-hand knowledge of Quebec language and culture, including publishing. Would I be interested in helping them look into the various (Quebec, France, Belgium) French translations of the series?&lt;/p&gt;
+
+&lt;p&gt;Folks, this is academic-nerd dreams come true.&lt;/p&gt;
+
+&lt;p&gt;First thing I did was to head over to the &lt;a href=&quot;https://www.banq.qc.ca/&quot;&gt;Bibliothèque et Archives nationales du Québec (BAnQ)&lt;/a&gt; website to search for the Québécois translations of the books. I knew they would be in there, as any and all books published in Quebec have to be legally deposited there. While the library itself &lt;a href=&quot;https://www.banq.qc.ca/a_propos_banq/historique/&quot;&gt;has been around for 100 years in one form or another (EXACTLY 100 years)&lt;/a&gt;, the law that required any and all publications in and about Quebec moving forward was enacted in 1968, at the height of the Natonalist movement in the province. The idea of and for this library was to make history and knowledge accessible to all in Quebec, in their mother tongue. So while Canada has its own &lt;a href=&quot;https://www.bac-lac.gc.ca/eng/pages/home.aspx&quot;&gt;National Library and Archives&lt;/a&gt;, Quebec wanted to ensure the preservation of their own history, accessible to their own people.&lt;/p&gt;
+
+&lt;p&gt;The remnants of the first-wave Nationalist movement also formed the infrastructure that facilitated the rapid publication of these books for the Quebec market, almost at the same rate they were coming out in English, one per month. Canada, in response to Quebec’s Nationalist sentiments, created funds to support the translation and publication of works from each official language into the other. Literary translation flourished, and so did the number of translators. This meant that in the late 1980s, there was a rich network of talented and skilled translators.&lt;/p&gt;
+
+&lt;p&gt;The metadata on the Quebec translations of the books is much better here, and there are no less than four different translators who worked on the series. This makes sense, as they were trying to match the one-a-month pace of the actual series. Three of the four translators were either authors of children’s or YA books themselves, published through Héritage, or had translated other books for the publisher, thus could be considered “in house”. But one of the names sounded familiar, and a bit of digging revealed why: it could be that the Nicole Perron who translated Baby-Sitter Club books is the same Nicole Perron who is the mother of Yann Martel (author of The Life of Pi), co-translator of the book with her husband. Now, there could be two Nicole Perron’s who do translation, but really, this is an interesting development: respected literary translator who got her start translating YA.&lt;/p&gt;
+
+&lt;p&gt;Gotta pay the bills somehow.&lt;/p&gt;
+
+&lt;p&gt;This is also why the metadata on the translators was so well-documented: it was important in terms of getting paid, later, in terms of sales and reprints. In order for the translators to remain in the business of translating, they needed to be paid. It also represents Canada’s (and Quebec’s) efforts to recognize and reward the work of translators. And while translations of Degrassi or Baby-Sitters Club wouldn’t be winning any awards (insert commentary about “high” vs “low” literature here), nonetheless, this was important information that Quebec and Canada has worked hard to try and preserve, post 1960s.&lt;/p&gt;
+
+&lt;p&gt;YA in Quebec has a long history, and with various changes to the language laws and curriculum, including that all textbooks and other assigned materials in Quebec schools having been written and published in Quebec. This meant there were no fewer than 12 youth book publishers in Quebec when the French-language version of the Baby-Sitters Club was published. Quebec knew the importance of representation, so put their laws and resources into home-grown literature for schools and for kids. Interestingly enough, Héritage was singled out in an overview of YA publishing in Quebec during the 1980s as being the only publisher doing YA series in translation; they were also publishing Degrassi books (a wonderful late-1980s uniquely Canadian pop-culture reference), Choose Your Own Adventure books, and Goosebumps, among others. It has such an importance that the BAnQ has developed a center within the library devoted to Quebec youth literature: Centre québécois de ressources en littérature pour la jeunesse (CQRLJ).&lt;/p&gt;
+
+&lt;p&gt;Maybe the Héritage archives are there…&lt;/p&gt;
+
+&lt;p&gt;This knowledge of Anglophone YA series reflects Quebec’s proximity to English-Canada and, of course, the United States. Quebec also had a long history of translating and adapting cartoons for the Quebecois market, most notably, The Flintstones and &lt;a href=&quot;https://news.avclub.com/take-a-tour-of-franco-canadian-relations-with-this-look-1837030009&quot;&gt;The Simpsons&lt;/a&gt;. The Flintstones, in particular, are an interesting and illustrative example: it aired in both French and English simultaneously in Quebec (on different local channels, of course) at noon, and we all watched while we were home eating lunch. Except, all of the Flintstone character names had been changed to more Francophone names, except for Fred. When I went to school in French at Sherbrooke, we had a hard time figuring out that we were, in fact, talking about the same show, despite my saying “Barney” and them saying “Arture.”&lt;/p&gt;
+
+&lt;p&gt;I haven’t gotten my hands on the Quebecois Baby-Sitters Club books yet, and I don’t ever remember seeing them growing up. Then again, that’s not that surprising. I grew up in the western suburbs of Montreal, which were still largely Anglophone. There were few French books at the bookstores I frequented, and if the French-language sisters of the books I was reading were anywhere, they would be in the French section, and why would I look there? I’m planning, now, to head out to the BAnQ and request to see their collection, to read them and see what impact having up to four different translators working on various translations almost simultaneously. As I understand it, the stories now take place in Quebec, and I’m curious where the fictional suburb is meant to be: South Shore? Laval? East End? Certainly not where I grew up (see: Anglophone area). The publisher also still exists, and maybe they still have the archive of how these books came to be in French.&lt;/p&gt;
+
+&lt;p&gt;I wanted to see if I could gage if the books had any sort of lasting impact. I went to &lt;a href=&quot;https://www.erudit.org/en/&quot;&gt;Érudite&lt;/a&gt;, Quebec’s own JSTOR, to see what I could find, and outside of a celebrity profile that says that she voraciously read the books as a teen, and a review of the series from a 15-year-old from another magazine, there is little trace of the books. That isn’t to say they weren’t popular, as they kept being published well into the 1990s, so they must have made the publisher money.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/site/assets/bsc3_frqu.jpg&quot; alt=&quot;&amp;quot;Sophie's Problem&amp;quot;, AKA &amp;quot;The Truth About Stacey&amp;quot; in the Quebec translation&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, being impatient (and also needing something to do while watching hockey), I started searching AbeBooks for copies of the Quebec translations. I can easily save on shipping costs by sending them “home” to my mother, but if they happened to be for sale at a Montreal used bookshop, I could send her on a field trip. I narrowed my search parameters by limiting myself to book sellers in Canada, and by searching for just Héritage as the publisher. Turns out, one used bookshop in Hearst, Ontario, seems to have an almost complete set of the books. Northern Ontario is home to a number of French-Canadian communities, formed during the great migration of French-Canadians during the late 19th and early 20th Century; the Catholic Church encouraged/required large families to resist assimilation, as well as a slavish devotion to an agrarian lifestyle meant that there wasn’t enough hereditary land to go around, causing French-Canadians to migrate west and south. Hearst is one of those communities, and the used bookstore, Librairie du Nord, specializes in Francophone books. I imagine a young girl growing up in Hearst collecting the series, keeping it for years and years, and then selling the whole thing off when she moved away.&lt;/p&gt;
+
+&lt;p&gt;I also want to know if they’ll give me a deal if I offer to buy the whole collection that they have.&lt;/p&gt;
+
+&lt;p&gt;The more I think and write about this, the more I feel like I’m coming full-circle, and this is coming at just the right time: my dissertation supervisor wrote about YA books in translation, I have been itching to have an excuse to go digging in archives again, and I just finished a first draft of a manuscript of my own experience growing up where I did. Part of the reason I wanted to is because I never saw where I lived described and depicted in literature and other pop-culture. Stoneybrook was so unlike the suburbs I grew up in that sometimes I struggled with the setting to the distraction of the story. I wonder if the French version would have resonated with me more growing up, if only because it would have perhaps been a little bit more like home.&lt;/p&gt;
+
+&lt;p&gt;See, Quebec did get it right: representation does matter.&lt;/p&gt;
+
+&lt;h3 id=&quot;quinn-1&quot;&gt;Quinn&lt;/h3&gt;
+
+&lt;p&gt;Okay, so maybe we haven’t solved any francophone mysteries yet. But we’re on our way, now that we’ve got Lee as our Mallory – in the “keeper of the mystery journal” sense, not the “ugh… another Mallory book?” sense! It’s good to be back in the non-English DH business.&lt;/p&gt;
+
+&lt;p&gt;Stay tuned for Data-Sitters Club Mystery #2…&lt;/p&gt;
+
+&lt;h3 id=&quot;suggested-citation&quot;&gt;Suggested Citation&lt;/h3&gt;
+
+&lt;p&gt;Bessette, Lee Skallerup and Quinn Dombrowski. “DSC Multilingual Mystery #1: Lee and the Missing Metadata.” &lt;em&gt;The Data-Sitters Club&lt;/em&gt;. January 23, 2020. https://datasittersclub.github.io/site/dscm1/.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 24 Jan 2020 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/site/dscm1/</link>
+        <guid isPermaLink="true">http://localhost:4000/site/dscm1/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>DSC #3: The Truth About Digital Humanities Collaboration (and Textual Variants!)</title>
+        <description>&lt;p&gt;by Maria Sachiko Cecire, January 10, 2020&lt;/p&gt;
+
+&lt;p&gt;I read the email thread again. Then one more time. “Oh my gosh,” I whispered. “What do I say?”&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/site/assets/truth-about-stacey-rerelease.jpg&quot; alt=&quot;First rerelease cover of The Truth About Stacey&quot; style=&quot;float: right;margin-right: 7px;margin-top: 0px;&quot; /&gt; The first message in the thread, titled “Amazing discovery for our next volume!” was from Quinn, who’d had the &lt;a href=&quot;/site/dsc1/&quot;&gt;great idea&lt;/a&gt; to start the Data-Sitters Club in the first place. The DSC is a group of scholars that are creating a digital humanities guide to computational text analysis by building and analyzing a corpus of the Baby-Sitters Club books, and I was the last member to join before we launched a few months ago (there’s more about all the members of the gang and our history in &lt;a href=&quot;/site/chapter-2/&quot;&gt;Chapter 2&lt;/a&gt;). Quinn asked me to be part of the DSC because of my background in &lt;a href=&quot;https://www.upress.umn.edu/book-division/books/re-enchanted&quot;&gt;children’s literature and childhood studies&lt;/a&gt;, and because of my digital humanities-friendliness as the director of the &lt;a href=&quot;https://eh.bard.edu&quot;&gt;Center for Experimental Humanities&lt;/a&gt; at Bard College. But not particularly for my data mining experience, because it’s not something I usually do! Everyone in the DSC was so nice, and I already knew some of the other members from before, but already I was feeling out of place.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/site/assets/truth-about-stacey-2010-reissue.jpg&quot; alt=&quot;Cover of the 2010 rerelease of The Truth About Stacey&quot; style=&quot;float: right;margin-right: 7px;margin-top: 0px;&quot; /&gt; The emails I was reading were about some findings that Quinn had made when comparing the Baby-Sitters Club books she found online, with the more recently released versions we digitized through scanning and optical character recognition (OCR). These findings showed that the supposedly same books often had a lot of differences. Katia, another DSC member, helped build these two collections of Baby-Sitters Club books, and you can read about the process of corpus-building and some of the discrepancies in &lt;a href=&quot;/site/dsc2/&quot;&gt;&lt;em&gt;Katia and the Phantom Corpus&lt;/em&gt;&lt;/a&gt;. Now everyone in the email thread was gushing about how interesting it was to see content changes that seemed to reflect updated expectations, norms, and day-to-day realities: for example, swapping twenty-first century technologies and fashions for the 80s and 90s ones in the original books. Think “styled” hair instead of “permed” hair, “player” instead of “VCR,” and amounts of money removed or updated to account for inflation. (Granted, the lack of metadata for the versions Quinn found online mean we can’t know conclusively that they’re the originals, or even older than the more recent versions we digitized, but it sure looked that way.) I was happy to see the team so enthusiastic and united, but the problem was…the findings weren’t surprising to me at all.&lt;/p&gt;
+
+&lt;p&gt;Children’s publishing has a long history of revising texts to keep up with changing social norms, especially since books for kids have always been seen as instructional (even didactic and, some claim, “civilizing”), as well as entertaining. And since children’s books are overwhelmingly written, published, and bought by adults – most of whom care a LOT about what kids are reading and thinking about – there have always been adult eyeballs on children’s literature and calls to take out or change “inappropriate” material. One old-school version of this is the &lt;a href=&quot;https://www.neh.gov/humanities/2015/marchapril/feature/how-the-grimm-brothers-saved-the-fairy-tale&quot;&gt;differences&lt;/a&gt; between the first edition of the Brothers Grimm’s &lt;em&gt;Children’s and Household Tales in 1812&lt;/em&gt; and the “definitive” version in 1857, where the stories were dramatically edited to make them more “suitable” (less violent, sexual, and pagan) for children. They did this even though the original project was supposed to be a folk record of deep-rooted national tales, not necessarily an influence on modern youth! But from the late eighteenth century on, if you say any cultural object is “for children,” it automatically sets off all kinds of appropriateness radars.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/site/assets/oompaloompa1.jpg&quot; alt=&quot;Original illustrations of Oompa Loompas from Roald Dahl's Charlie and the Chocolate Factory&quot; style=&quot;float: left;margin-right: 7px;margin-top: 0px;&quot; /&gt; Another children’s lit classic that has gotten this treatment is Roald Dahl’s &lt;em&gt;Charlie and the Chocolate Factory&lt;/em&gt;; there were some (honestly, reaaaally necessary) &lt;a href=&quot;https://groovyhistory.com/oompa-loompas-the-original-ones&quot;&gt;revisions&lt;/a&gt; in the 1970s to deal with the fact that the Oompa Loompas were described in the ‘60s original as “amiable black pygmies” from “the very deepest and darkest part of the African jungle where no white man had been before.” Ew. (More on these kind of changes at children’s literature scholar &lt;a href=&quot;www.philnel.com/2010/09/19/censoring-ideology/&quot;&gt;Phil Nel’s blog&lt;/a&gt;, from which the Oompa Loompa illustrations were taken.)&lt;/p&gt;
+
+&lt;p&gt;But the changes Quinn was seeing didn’t seem to be at the level of social lessons (unless you mean the lesson that the perm craze is better off left in the past) – they were more about making the books, as the kids say, “relatable” to modern readers. That felt pretty normal given what I knew about children’s literature too. Books for young people have been commercial products basically since they became A Thing in the mid- to late eighteenth century. Ever heard of the prestigious Newbery Medal for children’s literature? &lt;a href=&quot;https://en.wikipedia.org/wiki/John_Newbery&quot;&gt;John Newbery&lt;/a&gt;, the “Father of Children’s Literature,” was the English publisher and merchant who got the whole shebang started…by printing and selling books. Children’s presses are always looking for ways to make the same books more exciting for new markets – this results in things like the &lt;a href=&quot;https://www.hp-lexicon.org/2001/08/25/differences-between-british-and-us-versions-of-ps/&quot;&gt;Americanizations&lt;/a&gt; when &lt;em&gt;Harry Potter and the Philosopher’s Stone&lt;/em&gt; was first sold as &lt;em&gt;Harry Potter and the Sorcerer’s Stone&lt;/em&gt; in the US (they stopped doing this after Book 1 though, because everyone knows a &lt;a href=&quot;https://harrypotter.fandom.com/wiki/Weasley_jumper&quot;&gt;Weasley jumper&lt;/a&gt; is way cozier than a Weasley sweater). Children’s publishing also relies a lot more on nostalgia sales than adult books do, since all those grown-up buyers of children’s literature often want to pass down their old faves to the next generation. So it’s not uncommon for presses to re-release classics with hipper cover art and contemporary updates to the text itself. This happened with bestselling British author &lt;a href=&quot;https://www.theguardian.com/books/2010/jul/23/enid-blyton-famous-five-makeover&quot;&gt;Enid Blyton’s books&lt;/a&gt; in 2010 and (a later google search revealed)…&lt;a href=&quot;https://www.nytimes.com/2009/12/31/books/31babysitters.html&quot;&gt;&lt;em&gt;The Baby-Sitters Club&lt;/em&gt; books&lt;/a&gt; in the same year. And most of the changes the team was discussing were the kinds of ones the BSC publisher, Scholastic, had openly announced they planned to make! (Interestingly, they &lt;a href=&quot;https://www.theguardian.com/books/2016/sep/16/famous-five-go-back-to-original-language-after-update-flops&quot;&gt;reversed the changes&lt;/a&gt; to the Blyton books in 2016 due to lack of interest; and we found that the &lt;em&gt;BSC&lt;/em&gt; changes petered out after the first 10 volumes or so.)&lt;/p&gt;
+
+&lt;p&gt;So there I was, a font of possibly unwanted information. I didn’t want to rain on everyone’s parade: one of the awesome things about computational text analysis is supposed to be its ability to reveal information that humans wouldn’t be able to detect on their own or, in some cases, even think to ask about. And everyone else was fired up about what the digital comparisons had shown. So it felt like a big party pooper move – and not an awesome collaborator move – to respond by saying that the changes were not really a major discovery after all.&lt;/p&gt;
+
+&lt;p&gt;Meanwhile, after a ton of techie back-and-forth over the last few weeks that I couldn’t add much to, and as the least text-analysis-savvy member of the DSC, I was already feeling like my input wasn’t as valuable as other members of the team. I mean, the Center and program I founded at Bard is called “Experimental Humanities” instead of “Digital Humanities” because our crew tends to be more interested in the questions we ask, people we work with, and the methods we use in the humanities than anything digital per se (though digital projects do happen!). &lt;a href=&quot;https://dhdebates.gc.cuny.edu/read/untitled/section/a5a2c3f4-65ca-4257-a8bb-6618d635c49f#ch07&quot;&gt;Was I about to be too much “yack” in a moment of excited “hack”?&lt;/a&gt; Maybe I had missed some key element of what make these findings thrilling because of my lack of experience with corpus-building? Shouldn’t feminist collaboration always be supportive instead of contradicting, like a scholarly version of the &lt;a href=&quot;https://www.dramanotebook.com/drama-games/yes-and/&quot;&gt;“yes, and” game&lt;/a&gt;? I sat there, doubting myself.&lt;/p&gt;
+
+&lt;p&gt;So what did I say?&lt;/p&gt;
+
+&lt;p&gt;In the end I kind of split the difference. In my email response I affirmed everyone’s enthusiasm and thanked Quinn for her work. Then I gave some (though not all) of the historical background I just talked about and ended with this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;From:&lt;/strong&gt; Maria Sachiko Cecire&lt;br /&gt;
+&lt;strong&gt;To:&lt;/strong&gt; Quinn Dombrowski, Katia Bowers, Anouk Lang, Roopika Risam&lt;br /&gt;
+&lt;strong&gt;Date:&lt;/strong&gt; 11/7/19 6:39 PM&lt;br /&gt;
+&lt;strong&gt;Subject:&lt;/strong&gt; Re: Amazing discovery for our next volume!&lt;/p&gt;
+
+  &lt;p&gt;[…]
+Anyway, I thought I’d throw this history into the mix because a) I’m a nerd, b) it really does ask us to think about which corpus we’d want to use and why […] And apologies if this is all TMI, but I thought I’d mention these thoughts since Quinn had said it could be helpful to have a children’s lit perspective to flag what computational findings might read as novel and what might be known already in the field, so that we can present our findings accordingly!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I definitely buried the lede, hoping that the rest of the DSC would figure out that I was trying to gently say that finding content changes between original and re-released children’s books isn’t necessarily a big deal in and of itself – even if it probably feels that way when your computational analysis starts spitting out discrepancies. To me, presenting these differences as a major finding seemed like we’d be recreating exactly the kind of blind spot that people have criticized digital humanities projects for: claiming something that’s already known in the field as exciting new knowledge just because it’s been found digitally. But in a pretty un-feminist turn, I tried to soften this (already hard-to-parse) position by calling myself a nerd rather than an expert, apologizing for even sharing my expertise, and justifying why I was sharing it at all. It my way of trying to make the collaboration run more smoothly, but in retrospect it was not my finest moment.&lt;/p&gt;
+
+&lt;p&gt;It wasn’t until our call a few weeks later that the whole truth came out: I have way less of a filter in person! And at first it was kind of awkward, probably because the group didn’t understand why I was the only person unsure about the value of diving into these changes as a whole, dedicated DSC post. But before long, people got interested in the awesome tradition of &lt;a href=&quot;https://www.representingchildhood.pitt.edu/rose.html&quot;&gt;theorizing power relations in childhood studies and its implications for children’s literature&lt;/a&gt;, and I was thinking about how the process itself of finding these differences might be useful to others. The rest of the DSC also asked questions about my own anxious experience of feeling like the least “digital” humanist in the group, and we agreed that it would be nice to make that part of the post, too. After a good talk (Katia described some of it at the end of her &lt;a href=&quot;/site/dsc2/&quot;&gt;last post&lt;/a&gt;), we turned our plans for DSC #3 into what it is now: a post about collaboration and disciplinary knowledge in digital humanities projects, with a bonus section about corpus comparison.&lt;/p&gt;
+
+&lt;p&gt;As most digital humanities people now agree, there is no meaningful “hacking” without deep, well-theorized “yacking” – but too often, collaborators in digital humanities projects can feel less relevant if they aren’t the ones writing code. At the same time, the labor that goes into preparing and running a digital project (from building the corpus to cleaning data to running text comparisons) should be valued and honored as intellectual work too. It’s important for digital humanities teams to foreground this “both-and” (“yes, and”?) approach, from forming research groups that meaningfully include both digital and disciplinary experts to making sure that each member knows their contributions are essential to the project. This can be especially tough to do when your team is spread around the world, like ours is, and only communicates by email and occasional calls. But it’s worth the time and effort it takes to talk through the conflicts, ambiguities, and surprising overlaps.&lt;/p&gt;
+
+&lt;p&gt;This isn’t the end for our discrepancy data – just because having differences between original and re-released books is not that uncommon in children’s literature doesn’t mean that the differences can’t tell us interesting things about the books and their shifting cultural contexts. Check out this sample of differences from the great spreadsheet Quinn made!&lt;/p&gt;
+
+&lt;p&gt;There might be some really interesting findings as we dig in deeper, and computational text analysis could be one way to help us understand these changes more. We are still figuring that out, as well as how we are going to handle the enormous amount of data that this corpus contains: what to pursue more deeply, and what to leave aside in favor of delving into other discoveries. But we know for sure that asking our questions in conversation with the knowledge of both specific disciplines and the digital humanities is one important place to start!&lt;/p&gt;
+
+&lt;p&gt;For now, I’ll leave you with Quinn’s notes on how to computationally work out differences between two versions of a text.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/site/assets/spreadsheet-variants.png&quot; alt=&quot;Spreadsheet reflecting textual variants&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Dear Reader,&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In DSC #3, Maria gave us a reality check about what initially seemed like a remarkable discovery: differences between the (presumably older) versions of the corpus I initially found online, and the recent re-releases that we scanned and OCR’d. While these updates – ranging from punctuation conventions, to inflation, to fashion trends – are unsurprising in children’s literature, such changes may point to changes of greater interest in other kinds of texts.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Identifying differences between two versions of a text is a problem just asking for computational methods. You don’t have to identify as a digital humanist to not want to spend time comparing texts manually. Text collation is one most intuitively understandable computational text analysis methods, at least at first glance: “how are these texts different?” For that reason, it’s been an appealing target for digital humanities tool development, to make it easier for anyone to do text collation without having to learn how to write code. Text collation also has applications in commercial software. Have you ever looked at the version history for a Google Doc? It uses text collation to identify additions and deletions: that’s easier than monitoring every change as you make it.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;There’s a few different ways to do it – and more that I haven’t included here – but this should be enough to get you started with text collation.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;What I actually used: Diff Match Patch&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;As mentioned in DSC #2: Katia and the Phantom Corpus, what I used to find the differences in the text was &lt;a href=&quot;https://github.com/google/diff-match-patch&quot;&gt;Diff Match Patch&lt;/a&gt;, the code behind the Google Docs version history. I used the &lt;a href=&quot;https://neil.fraser.name/software/diff_match_patch/demos/diff.html&quot;&gt;Diff Demo&lt;/a&gt; linked from the GitHub repo, using the default settings, to compile a Google Sheet full of changes for Maria to take a look at.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Why that tool? Well, our corpus wasn’t that big – and I suspected that the relevant subset of the corpus would be much smaller. (It didn’t seem likely that the publisher went through all the books to make content edits when the books were re-released as e-books.) The Diff Demo does the comparison really fast (unlike certain other options described below). Because I expected only a few books would show traces of these edits, I suspected it’d be all-around faster and easier to manually copy and paste dirty and clean corpus texts for comparison, review the differences with my own eyeballs, and then copy and paste relevant differences (i.e. ones not resulting from OCR errors) into a Google Sheet. Honestly, even if I thought there would be a lot of books with these changes, I’d probably start with the Diff Demo to first get a sense of what the changes were, how many there tended to be per book, etc., before moving on to trying to write code to scale up the process beyond what I could reasonably do myself.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/site/assets/dsc3_diffdemo.png&quot; alt=&quot;Screenshot of Diff Demo&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;When I first started doing the collation this way, there were a lot of “false alarms”: things flagged as differences that were entirely typographical. Curly instead of straight quotes and apostrophes. Ellipses expressed through a single character instead of three periods. That kind of thing. To minimize the number of things that would catch my eye as I skimmed the results, I did a bit of pre-processing, replacing the quotes and ellipses so they’d be consistent, just using find-and-replace in a plain text editor.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;One handy thing about the Diff Demo is that if you copy the output and paste it into Microsoft Word, the changes will show up formatted as you’d expect from Word’s built-in Track Changes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/site/assets/dsc3_trackchanges.png&quot; alt=&quot;Screenshot of Track Changes&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;What I tried: Juxta&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;When I first told the other data-sitters that there were changes in the text, the tool that immediately leaped to mind for a couple of us was Juxta. Juxta made a big splash in the late 2000’s – initially as an installable Java app, and then as a web-based version, &lt;a href=&quot;juxtacommons.org&quot;&gt;Juxta Commons&lt;/a&gt;. Juxta Commons is still “in beta” about a decade later, but has &lt;a href=&quot;http://juxtacommons.org/guide&quot;&gt;detailed documentation&lt;/a&gt;, still works, and you can even create new accounts (as I discovered, since my old account is associated with an email from two jobs ago).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A web-based digital humanities tool that still works a decade later, even as the associated blog is six years out-of-date, is nothing short of a miracle. There’s just one catch:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Juxta&lt;br /&gt;
+…&lt;br /&gt;
+…&lt;br /&gt;
+Commons&lt;br /&gt;
+…&lt;br /&gt;
+…&lt;br /&gt;
+…&lt;br /&gt;
+runs&lt;br /&gt;
+…&lt;br /&gt;
+…&lt;br /&gt;
+…&lt;br /&gt;
+…&lt;br /&gt;
+agonizingly&lt;br /&gt;
+…&lt;br /&gt;
+…&lt;br /&gt;
+…&lt;br /&gt;
+…&lt;br /&gt;
+…&lt;br /&gt;
+slowly.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I was certain that it wasn’t working at all, and I gave up and went to bed. The next morning, I was about to close the browser tab with Juxta Commons open when I saw – that it had worked! What’s more, it was “smarter” about its output than the Diff Demo, not flagging the typographical differences, even though I hadn’t done any pre-processing on the source text files.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The only problem is that if you need to make any changes (like changing which source is used as baseline for deviation), you have to wait all over again.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;For better performance, you could try running the &lt;a href=&quot;https://github.com/performant-software/juxta-service&quot;&gt;Juxta Commons source code&lt;/a&gt; on your own laptop, but it’s probably more straightforward to &lt;a href=&quot;http://www.juxtasoftware.org/download/&quot;&gt;install the desktop software&lt;/a&gt;. I found it a little counterintuitive – though to be fair, I’m the type who usually leaps into software without reading the documentation first. The &lt;a href=&quot;https://github.com/performant-software/juxta-desktop/wiki/UserManual&quot;&gt;user manual&lt;/a&gt; is actually helpful for working through the process of comparing texts.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;/site/assets/dsc3_juxtadesktop.png&amp;gt;&quot; alt=&quot;Screenshot of Juxta Desktop&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Do It With Code: CollateX&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Back around 2010, Juxta had a “competitor” of sorts, &lt;a href=&quot;https://collatex.net&quot;&gt;CollateX&lt;/a&gt;. CollateX was another piece of Java software, developed in the EU as part of &lt;a href=&quot;www.interedition.eu&quot;&gt;Interedition&lt;/a&gt;, whereas Juxta was developed in the US by &lt;a href=&quot;https://nines.org&quot;&gt;NINES&lt;/a&gt;. For a while, choosing between Juxta and CollateX was something of a toss-up, but they’ve since gone in different directions. Juxta invested in the web-based Juxta Commons, whereas CollateX developed into a Python package. What’s more, there’s even &lt;a href=&quot;collatex.obdurodon.org&quot;&gt;materials&lt;/a&gt; (&lt;a href=&quot;collatex.obdurodon.org&quot;&gt;including Jupyter notebooks&lt;/a&gt;) available for how to use CollateX, from a workshop at DH 2015. (If you’re not familiar with Jupyter notebooks, check them out – they’re especially useful if you’re new to coding. I co-wrote a &lt;a href=&quot;https://programminghistorian.org/en/lessons/jupyter-notebooks&quot;&gt;tutorial on Jupyter notebooks&lt;/a&gt; on Programming Historian.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Both the CollateX and the Juxta crowds are &lt;a href=&quot;https://tei-c.org&quot;&gt;Text Encoding Initiative&lt;/a&gt; (TEI)-friendly, and both tools have special options if your source texts are encoded using the TEI conventions. (I have feelings about TEI, but I’ll save them for a future Data-Sitters Club piece.) What we have for our corpus is just plain text.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The Jupyter notebooks from the DH 2015 workshop are really the place to start if you want to use CollateX with Python. One thing I soon discovered, though, is that CollateX doesn’t seem to be the right tool when collating things of the length of a “Baby-Sitters Club” novel. My poor laptop whirred angrily at me for an hour, before quieting down without actually completing the collation.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Given the much smaller chunk of a few paragraphs (the ones used for the screenshots above), it performed great, and has a couple of nice visualizations, including color-coded lines that split out textual differences, and a graph visualization.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/site/assets/dsc3_collatextable.png&quot; alt=&quot;Screenshot of CollateX Table&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/site/assets/dsc3_collatexgraph.png&quot; alt=&quot;Screenshot of CollateX Graph&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Text collation is a relatively easy way to answer some kinds of questions about the editorial history of a text. Whether you’d rather write code, paste things into a browser, or install really old Java software, there are multiple options for exploring text collation. Give it a try – but always remember to check with a disciplinary expert before you get too excited!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Happy analyzing,&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/site/assets/dsc_quinnsig.png&quot; alt=&quot;Screenshot of Quinn's signature&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;suggested-citation&quot;&gt;Suggested Citation&lt;/h3&gt;
+
+&lt;p&gt;Cecire, Maria Sachiko. “DSC #3: The Truth About Digital Humanities Collaboration.” &lt;em&gt;The Data-Sitters Club&lt;/em&gt;. January 10, 2020. https://datasittersclub.github.io/site/dsc3/.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 10 Jan 2020 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/site/dsc3/</link>
+        <guid isPermaLink="true">http://localhost:4000/site/dsc3/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>DSC #2: Katia and the Phantom Corpus</title>
+        <description>&lt;p&gt;by Katherine Bowers, December 12, 2019&lt;/p&gt;
+
+&lt;p&gt;It was a dark and windy fall night, with rain lashing at the windows, when I settled in to do some reading and began working my way through the Baby-Sitters Club series. This kind of weather is not surprising because I live in Vancouver, Canada, where it rains most of the year. What was surprising was that I was reading Baby-Sitters Club books again. I’m an Assistant Professor of Slavic Studies and a lot of the time you will find me reading long Russian novels, which is what I research and teach for work. I last read a BSC book circa 25 years ago, but I started rereading the series on that rainy night because of the DSC, the Data-Sitters Club, a group I’ve joined that is working on creating a comprehensive, colloquial guide to digital humanities computational text analysis.&lt;/p&gt;
+
+&lt;p&gt;What is the DSC? It all started with &lt;a href=&quot;https://datasittersclub.github.io/site/dsc1/&quot;&gt;Quinn’s great idea&lt;/a&gt;. The DSC is a group of scholars who are interested in and have varying levels of expertise in digital humanities and computational text analysis, but who have come together to collaborate on a digital humanities guide centered around the Baby-Sitters Club books, which were published by Scholastic from 1986-1999. To learn more about us, &lt;a href=&quot;https://datasittersclub.github.io/site/chapter-2/&quot;&gt;read Chapter 2&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;My involvement with what became the DSC had started about a month earlier when Quinn, Roopsi and I had started talking on Twitter about a corpus of BSC books Quinn had found online while she was on holiday in Vegas. I had read BSC books obsessively as a kid – to the point that I read them way beyond what their typical age range was and was book-shamed in my 7th grade English class by my teacher who told me to read more “elevated” things. It’s true that BSC books were maybe not so “elevated” as what she wanted us to read, but, for me, a kid who had recently moved to the US and was figuring American middle school out for the first time, BSC books were comforting in their formula and their tales of American suburbia that always had a happy ending. (And, anyway, I’d already read the books assigned for 7th grade English.. I’m kind of a bookworm). What I realized when we had our first DSC Zoom meeting to talk about the project was that, while my knowledge of the BSC series is somewhat misty, Roopsi’s is impressively encyclopedic. And so, as Quinn fleshed out our corpus, I started reading so I would have better knowledge of our corpus (and, let’s face it, reading BSC books is not something you really have to twist my arm to do).&lt;/p&gt;
+
+&lt;p&gt;Just how did Quinn manage to find most of the Baby-Sitters Club books while on vacation, you might ask. Quinn and I share a love of the Russian language, and one of the perks of studying Russian is that you learn how to find things. “I always wished I could get away with making posters for first-year Russian that read ‘Learn the one verb you need to find anything online!’ – that’d fix our enrollment problems!” Quinn jokes. (That verb, by the way, is скачать “skah-CHAHTS”, and if you add it to your query on a Russian search engine like yandex.ru, you might be surprised at what you can find sitting on the open web.) But there’s a difference between what you find in assorted corners of the internet that aren’t indexed by American search engines, and what you’d get if you “did it right” by scanning and OCR-ing in-copyright books for private research use, with manual correction as necessary. (Cracking the DRM on e-books is illegal even if you’ve purchased the e-books, are just trying to get a text file for research use, and don’t redistribute the text files.)&lt;/p&gt;
+
+&lt;p&gt;To start with, I bought a bundle of the first four books as ebooks. The corpus wasn’t in place yet, and I was just so excited to start reading! I can finish a BSC book in a little less than an hour, reading them is comforting, even today (I think because of the time in my life when last I was reading them and how important they were for me then), and, as the DSC got started up, I was finishing up my monograph (which is about Russian realism and the gothic genre) and actively in search of stress-free pleasure reading that would help me get to sleep in the evening. These three factors all contributed to the fact that before I knew it, I had read all four, and was ready to move on to no. 5, Dawn and the Impossible Three. I was really excited to reread this one because this was the one I had read the most as a kid; it was the only one I had owned and not just checked out from the public library.&lt;/p&gt;
+
+&lt;p&gt;I opened up the corpus copy, started reading, and:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A he &amp;lt;BZZT!&amp;gt;  Baby-sitters Club. I didn’t start it and I don’t run it, but I am its newset member…
+uprooted from hot, sunny California and trans-
+planted to cold, sloppy Connecticut &lt;strong&gt;&amp;lt;BZZT!&amp;gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The door was flung open by Claire, the youngest Pike. She loves answering the door and the phone.&lt;/p&gt;
+
+  &lt;p&gt;“Hi, Clairer  &lt;strong&gt;&amp;lt;BZZT!&amp;gt;&lt;/strong&gt; I said brightly!”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Maybe that corpus would be okay for computational analysis at scale, but it was not okay for my brain, especially when reading quickly. The errors that crept in when whatever entities were responsible for this text did OCR (Optical Character Recognition) on scans of book page images – they were like nails on a chalkboard as I tried to read. And then, in some of the books, like a slash across the text, there was this: “ClHHEfflfflB”. Or this: “ClHSIEffllHE”. Or this: “HI HE I] [E] El / j =j. / / /”. WTF was this garbage?&lt;/p&gt;
+
+&lt;p&gt;And it got worse. Sometimes, there would be a wall of gibberish, with faint traces of intelligible words:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;~Thur6dflu, September 2tf&lt;/p&gt;
+
+  &lt;p&gt;&amp;amp;6+zrdau X baba6flt {or Kr?6iil6&lt;/p&gt;
+
+  &lt;p&gt;iTHta. brom^DavtdtehaeUK^tu-told&lt;/p&gt;
+
+  &lt;p&gt;U5 -to wn+e to -ttY2 Bflbu-5T-ttgT6 Sub Notebook 5o\we Could &lt;em&gt;eep track of tinu prdolem6 we h&amp;amp;d wT^^bu-iTte) aubMft, bo&lt;/em&gt; -ftkTna care dt ttMtf HwSfcl w35m+rDUbl(2 3rZltt° H&amp;lt;2w36 very otxd. White Kr?6+-y w35 chfoTrg rjroona nf+er -mobe +wd dephzlh+6,&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;When I was browsing in Lawrence Books later that week, I found an old paperback copy of no. 16, &lt;em&gt;Jessi’s Secret Language&lt;/em&gt;, and flipping through it, the answer jumped out at me:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/site/assets/bsc-ch1.jpg&quot; alt=&quot;Picture of the header for chapter 1, with letters in 3D blocks&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The OCR software that had been used for some of these books wasn’t able to handle the children’s building-block lettering of the chapter headers, or the Baby-Sitters Club notebook entries (or diary entries, or letters) written in the characters’ “handwriting”!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/site/assets/claudia-handwriting.png&quot; alt=&quot;Picture of one of Claudia's &amp;quot;handwritten&amp;quot; sections, in sloppy cursive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;(Honestly, I wonder how easy it’d be for young human readers in 2019 to successfully read Mary Anne, Jessi, Kristy, and Claudia’s cursive writing. This is Claudia’s from no. 3, The Truth About Stacey; it takes me a bit to get through it - and I’m used to reading 19th-century Russian cursive!)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/site/assets/cyber_cafe.jpg&quot; alt=&quot;Picture of Quinn and Katia by the Cyber Café sign at the ASEEES Convention&quot; style=&quot;float: left; margin-right: 7px;margin-top: 0px;&quot; /&gt;Quinn and I met up at the amusingly retro “Cyber Café” sign at the ASEEES Convention in San Francisco in November. (ASEEES is the Association for Slavic, East European, and Eurasian Studies - the biggest Slavic conference in North America, which happens every November). The Cyber Cafe sign seemed nicely thematic because it looked like it had fallen out of some kind of time warp from the mid- to late-BSC books. We took a selfie to mark what we jokingly called “DSC Slavist Super Special” (obviously) and sat down to talk about the issues I’d been having with the corpus Quinn put together.&lt;/p&gt;
+
+&lt;p&gt;The thing about Quinn’s corpus is that it’s from a lot of different sources. They didn’t all use the same software to digitize the texts, and didn’t have the same post-processing conventions. In some sense, the OCR gibberish was better: you could see that something had gone wrong, and knowing something is wrong is the first step in fixing it. But in some texts, the traces of OCR failure were just erased. Instead of garbage, there was nothing. Sometimes you can’t necessarily tell that anything is missing, like the transition between chapters. Sometimes, there’s a gaping void, like at the end of &lt;em&gt;Baby-Sitters Club Super-Special 9: Starring the Baby-Sitters Club&lt;/em&gt;, where the last words in the text file are:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;When I first sat down to write the rough draft, my friends gave me a hand once again. I asked them for their final thoughts and observations. This is what they wrote:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Omitting long strings of obviously bad OCR isn’t the world’s worst approach: sometimes when you’re doing OCR, the software will try to “read” things like shadows in the margins of a book, or illustrations, giving you a block of gibberish when there was nothing meaningful there to begin with. In fact, if you’re scanning thousands of books, that kind of situation is going to be more common than books with unusual lettering in their chapter headers, or cursive pseudo-“handwriting”. The Baby-Sitters Club books are an edge case – but they’re the case we care about.&lt;/p&gt;
+
+&lt;p&gt;I realized I just wasn’t going to be able to read the corpus as I had planned, and so, in order to keep reading and keep my sanity, I started buying books. A bonus was that I could then turn them into our “ground truth” for comparing against Quinn’s corpus. “Ground truth” is a concept used in evaluating OCR quality: it’s typically a transcribed (or OCR’d and hand-corrected) version of some number of pages or lines, such that you can do OCR (either using out-of-the-box software like open source &lt;a href=&quot;https://github.com/tesseract-ocr/tesseract&quot;&gt;Tesseract OCR&lt;/a&gt; or &lt;a href=&quot;https://github.com/tmbdev/ocropy&quot;&gt;OCRopus&lt;/a&gt;, or commercial – and sometimes better-performing – software like ABBYY FineReader) and easily compare the output with the “correct” answer that’s been verified by a person who knows what they’re doing.&lt;/p&gt;
+
+&lt;h3 id=&quot;quinns-ocr-tips&quot;&gt;Quinn’s OCR Tips&lt;/h3&gt;
+
+&lt;p&gt;If you need to do some OCR yourself, here’s some tips from someone who’s spent a lot of time doing it:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Actually scan your sources&lt;/strong&gt;. With a scanner. At minimum 300 dpi (dots per inch – it’s a measure of how much detail the image captures). More like 400-600 dpi if your books include a really small font, like for footnotes. Yes, the technology is improving, and sometimes you can get better-than-total-garbage with photos from your phone, as long as they’re not skewed (taken at an angle), the lighting is good, etc., but still, most phone pictures are still only 72 dpi, and it’s hard to position your phone directly above a book and not cast a shadow. Just use a scanner.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Scan your sources in grayscale&lt;/strong&gt;, especially if you’re going to be using ABBYY FineReader. While all the OCR algorithms actually use on binarized images (black &amp;amp; white – where everything in the image is either black or white, according to some threshold you or the software defines), you can go from grayscale to B&amp;amp;W, but not the other way around. Even though the OCR algorithm itself involves a binarized image, the algorithms used for layout analysis (i.e. figuring out where the text is on the page, whether it’s one column or two, whether there’s tables or running headers or page numbers, etc.) are more nuanced. Also, both ABBYY FineReader and the open-source Tesseract software include pre-processing steps before they perform the OCR, including binarizing images using a sensible threshold that cuts down on the noise in the image. For instance, if you run a B&amp;amp;W scan of a two-page spread through Tesseract (i.e. an image where the binarization has happened at the time when you did the scanning), you’ll end up with some gibberish from when the OCR algorithm tried to “read” the shadow caused by the binding.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://abbyy.technology/en:kb:images_resolution_size_ocr&quot;&gt;ABBYY FineReader documentation&lt;/a&gt; recommends color scans, but in most cases, the improvement in final OCR quality from color images vs. grayscale is negligible, and the file sizes are much bigger for color images.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Save your scans as .tif files&lt;/strong&gt;, which are uncompressed and don’t lose any of the data in the image to make the file size smaller. A 300 dpi grayscale scan of a two-page spread of a Baby-Sitters Club book (like you’d get when scanning it, assuming you don’t want to just cut the book’s spine and run it through a sheet-feeder scanner – which is viscerally disturbing, but a much more time-efficient option) is close to 7 MB, and there’s around 80 such scanned images per book, which works out to around half a gigabyte per book for the page images. If all you want is good OCR, don’t feel like you need to keep all these image files for the long-term: you’re not responsible for library-quality preservation for the books. Once you’re satisfied with the OCR quality, you can let them go and delete them.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Use ABBYY FineReader (on Windows)&lt;/strong&gt;. Ideologically, we all (especially in digital humanities) support open-source software. Various digital humanities projects have focused on improving OCR quality for Tesseract (e.g. Laura Mandell et al’s &lt;a href=&quot;http://emop.tamu.edu/&quot;&gt;Early Modern OCR Project&lt;/a&gt; which trained an earlier version of Tesseract for early modern typefaces, and the &lt;a href=&quot;https://medium.com/@openiti/openiti-aocp-9802865a6586&quot;&gt;Open Islamicate Texts Initiative Arabic-script OCR Catalyst Project&lt;/a&gt;, which is providing a more user-friendly workflow for Arabic and Persian OCR based on Tesseract). But the fact is, while character-by-character recognition (at least for English) is basically identical between FineReader and Tesseract, FineReader does a lot of “common-sense” things that make your life easier:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;End-of-line hyphens&lt;/strong&gt;: FineReader understands that if a line ends with a hyphen, it means that the word continues on the next line. So when you export text from FineReader, it re-connects those split words.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Lines in general&lt;/strong&gt;: Tesseract’s OCR exactly replicates the line structure of the original source. But for most computational text analysis purposes, what we care about is meaningful divisions in the text, rather than arbitrary ones caused by the inherent constraints of mass-market book layout. Paragraphs matter, not which 7-10 words happen to make up a line. FineReader gets this, and maintains paragraph divisions, but treats individual lines within a paragraph as continuous text.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Running headers and page numbers&lt;/strong&gt;: FineReader understands that, in the vast majority of cases, what you want is just the text, not paratextual elements like running page headers, page numbers, etc. There’s an option when you export the text to remove those header and footer elements.&lt;/p&gt;
+
+&lt;p&gt;If you’re OCRing so much text (hundreds or thousands of volumes, by many authors, etc.) that small perturbations like page numbers won’t matter, and mostly-successful text corrections applied en-masse (e.g. to try to connect lines and remove end-of-line hyphens), Tesseract is free, open-source, and high-quality (at least for English). But if you’re doing a project like ours where you care about each individual text, it’s worth using ABBYY FineReader. The FineReader interface also makes it easy to manually transcribe portions of the text that you could potentially train it to recognize given enough time and examples, but it’s faster to just type in yourself (e.g. Claudia’s cursive handwriting). While ABBYY doesn’t offer an academic discount, many institutions have FineReader available somewhere on campus (e.g. in computer labs), and depending on your situation, it may be worth paying the $200 one-time standard license. One important caveat, though: as of 2019, the Windows version of FineReader has much better functionality than the Mac version (to say nothing of the cloud-based mobile version). If you want the nice interface for transcribing text that can’t be meaningfully OCR’d (again, looking at you, Claudia’s handwriting), you’ve got to figure out some way to run it on Windows, even if you’re primarily a Mac user (like the whole Data-Sitters Club).&lt;/p&gt;
+
+&lt;p&gt;Before long, we had two corpora: Quinn’s scavenged Baby-Sitters Club corpus, and the more-accurate “phantom corpus” I’d created for the 60 or so books I’d hunted down and shared with the rest of the Data-Sitters Club.&lt;/p&gt;
+
+&lt;h3 id=&quot;ocr-evaluation&quot;&gt;OCR evaluation&lt;/h3&gt;
+
+&lt;p&gt;Quinn runs another club at Stanford, which she’s dubbed the “Danger Noodle Club”. It’s a weekly meet-up for humanists who are learning Python in particular, and computational methodologies in general. They help debug each other’s code, and also spend a lot of time talking about situations where other tools might be more helpful than Python. Like most things, she organizes it last-minute, so I didn’t even realize she was comparing her corpus and mine until she sent a note out to all the data-sitters one Thursday afternoon:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;From:&lt;/strong&gt; Quinn Dombrowski&lt;br /&gt;
+&lt;strong&gt;To:&lt;/strong&gt; Maria Sachiko Cecire, Katia Bowers, Anouk Lang, Roopika Risam&lt;br /&gt;
+&lt;strong&gt;Date:&lt;/strong&gt; 11/7/19 2:51 PM&lt;br /&gt;
+&lt;strong&gt;Subject:&lt;/strong&gt; Amazing discovery for our next volume!&lt;/p&gt;
+
+  &lt;p&gt;So I was demoing OCR quality evaluation today during my Python working group using “Claudia and Mean Jeanine”, and I discovered THERE ARE CONTENT CHANGES between the clean version and the version I originally found, including both computers and fashion (ie equal attention paid to gendered tech) and removing ableist language. What’s more, there were no changes in “Mystery 29: Stacey and the Fashion Victim” (despite, presumably, including fashion language) so I guess they gave up at some point. But we can find out which point, in our next DSC volume!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I wrote back right away:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;From:&lt;/strong&gt; Katia Bowers&lt;br /&gt;
+&lt;strong&gt;To:&lt;/strong&gt; Maria Sachiko Cecire, Quinn Dombrowski, Anouk Lang, Roopika Risam&lt;br /&gt;
+&lt;strong&gt;Date:&lt;/strong&gt; 11/7/19 2:58 PM&lt;br /&gt;
+&lt;strong&gt;Subject:&lt;/strong&gt; Re: Amazing discovery for our next volume!&lt;/p&gt;
+
+  &lt;p&gt;That’s so interesting!!! I had noticed that there were a few weird places where they had updated things - like in one of the first 4 books, one of them (I forget who) mentions spending her baby-sitting $$ on CDs… but that seems like something that would have been a luxury item for suburban tweens of the 80s considering CD players then were &lt;em&gt;so&lt;/em&gt; expensive. Interesting to see what things they updated and what they didn’t update (I’m not sure this last question is possible to find out digitally). And I wonder if the updates stopped because the books were being written about the same time as the re-releases were coming out?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It wasn’t long before everyone weighed in:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;From:&lt;/strong&gt; Anouk Lang&lt;br /&gt;
+&lt;strong&gt;To:&lt;/strong&gt; Katia Bowers, Maria Sachiko Cecire, Quinn Dombrowski, Roopika Risam&lt;br /&gt;
+&lt;strong&gt;Date:&lt;/strong&gt; 11/7/19 3:02 PM&lt;br /&gt;
+&lt;strong&gt;Subject:&lt;/strong&gt; Re: Amazing discovery for our next volume!&lt;/p&gt;
+
+  &lt;p&gt;That is interesting. Makes you want to go and talk to the publisher and find out at what level there was an editorial policy to make updates like that, and where it was at the discretion of individual editors (or copyeditors). Speaking for myself I’d want to use the original versions in any analysis at scale, just to capture what I feel like would have been the largest readership (assuming its readership has tailed off steadily since the original publication).&lt;/p&gt;
+
+  &lt;p&gt;Also just thinking about this from the feminist computational text analysis viewpoint, this might offer us an opportunity to think out loud a bit about how one does feminist/critical corpus construction: what the rationale might be for choosing one version over another as we construct our corpus. There are lots of principles for corpus construction out there (about which, full disclosure, I don’t know enough), but I don’t remember ever having seen explicitly feminist ones. (Feminist being an inadequate shorthand here for perspectives cognisant of critical race studies, queer theory, disability studies etc.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;From:&lt;/strong&gt; Roopika Risam&lt;br /&gt;
+&lt;strong&gt;To:&lt;/strong&gt; Katia Bowers, Maria Sachiko Cecire, Quinn Dombrowski, Anouk Lang&lt;br /&gt;
+&lt;strong&gt;Date:&lt;/strong&gt; 11/7/19 3:04 PM&lt;br /&gt;
+&lt;strong&gt;Subject:&lt;/strong&gt; Re: Amazing discovery for our next volume!&lt;/p&gt;
+
+  &lt;p&gt;That’s super interesting - at some point maybe we could do Roopsi and the Trouble with Juxta or similar 😂&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;From:&lt;/strong&gt; Maria Sachiko Cecire&lt;br /&gt;
+&lt;strong&gt;To:&lt;/strong&gt; Katia Bowers, Quinn Dombrowski, Anouk Lang, Roopika Risam&lt;br /&gt;
+&lt;strong&gt;Date:&lt;/strong&gt; 11/7/19 6:39 PM&lt;br /&gt;
+&lt;strong&gt;Subject:&lt;/strong&gt; Re: Amazing discovery for our next volume!&lt;/p&gt;
+
+  &lt;p&gt;Thanks, Quinn! Those are cool findings, and in line with some other examples from the history of children’s literature publishing. Up until the Harry Potter phenomenon, children’s publishing worked on a “slow burn” model rather than a blockbuster model of sales (which it now goes for much more, though they are still re-releasing and promoting old classics too). That meant selling the same books over many generations of readers – parents/grandparents/etc. buying for children was and is a key part of the market – and I imagine this long lifespan had something to do with the fact that it’s not uncommon for children’s lit to be updated as norms change. I’m sure this has to do with the fact that anything written for children almost inevitably gets treated as didactic, and so is scrutinized for its presumed effects on youth – and anything that might be deemed a “bad influence” is likely to get changed in a way that books for adults might not over time.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Quinn spelled out exactly what she’d done later on in the thread. She was following up on a &lt;a href=&quot;https://twitter.com/quinnanya/status/1181960738794958848&quot;&gt;Twitter discussion she’d had with Hannah Alpert-Abrams on OCR evaluation&lt;/a&gt; by actually trying out &lt;a href=&quot;https://github.com/eddieantonio/ocreval&quot;&gt;ocreval&lt;/a&gt;. The GitHub repo has step-by-step instructions for how to install ocreval on Mac or Linux. Then, all you need to do is &lt;a href=&quot;https://programminghistorian.org/en/lessons/intro-to-bash&quot;&gt;use the command line&lt;/a&gt; to navigate to a folder that contains both versions of the plain-text file you want to compare, and run accuracy file1.txt file2.txt.&lt;/p&gt;
+
+&lt;p&gt;Quinn used her version as file1, and mine as file2. For no. 7, Claudia and Mean Jeanine, the ocreval accuracy report stated that there were 141611 characters and 6,905 errors, for an overall accuracy of 95.12%. That sounds like a big number, but for OCR on modern English, that’s actually not amazing.&lt;/p&gt;
+
+&lt;p&gt;Scrolling down further in the report, Quinn noticed some interesting things in the stats for different classes of characters. The ASCII Digits class had terrible stats (Count: 120, Missed: 95, Right: 20.83%), but some of those “digits” were just failed attempts to make sense of the “handwritten” text. (Claudia may not be able to spell, but she can write in cursive.) The ASCII Special Symbols class was also a lot lower than everything else, with 57.7% right. On the list of errors that followed in the report, the top three had to do with punctuation variants: 1122 instances of “ (un-angled quotation marks) corresponding to angled opening quotation marks, 1094 instances of “ corresponding to angled closing quotation marks, and 921 instances of ‘ (a non-typographically-fancy apostrophe) corresponding to the more typographically-fancy ‘. There were also issues with three periods and their correspondence with the ellipsis character (…), which are identical to the human eye, but distinct things to a computer.&lt;/p&gt;
+
+&lt;p&gt;That said, those are the sorts of differences that are easy to resolve! Quinn used simple find-and-replace in a plain-text editor (she has a lot of them installed on her laptop: TextMate, BBEdit, Atom) to change the punctuation in my files to align with the punctuation conventions in hers. And by replacing just those things I’ve described above, suddenly the “OCR accuracy” jumped from 95% to 98%, which is meaningfully better.&lt;/p&gt;
+
+&lt;p&gt;But Quinn and her Danger Noodle Club colleagues kept scanning the error list. There were some differences that were unsurprising: differences in spacing (additional newline characters in one file vs. another), sometimes a period being rendered as a comma (or vice-vesa), and strings of gibberish in Quinn’s texts turning into correct transcriptions of handwritten text in mine. But nonetheless, there were things that jumped out at them. In the report from ocreval:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;{&quot;Nineteen dollars even,&quot;...}-{S}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Quinn checked the source files. In her original version:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Stacey put the money on the bed and emptied the contents of the envelope over it. “Nineteen dollars even,” she announced. She said this after one pretty quick glance at the bills and change, which is why she’s our treasurer.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Became in my version:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Stacey put the money on the bed and emptied the contents of the envelope over it. She announced the total after one pretty quick glance at the bills and change, which is why she’s our treasurer.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;But there was more.&lt;/p&gt;
+
+&lt;p&gt;“I love it! Did you get it permed again?” became just “I love it!”&lt;/p&gt;
+
+&lt;p&gt;“Her blonde hair, which had been long and fluffy, was now cut to just above her shoulders.” became “Her blonde hair was now cut to just above her shoulders.”&lt;/p&gt;
+
+&lt;p&gt;“She pressed a few keys, waited a moment, then reached around to the side of the computer and touched something or other that made the screen go blank.” turned into “She pressed a few keys, waited a moment, then touched something or other that made the screen go blank.” (This one surprised me: I’m not sure I would’ve thought to edit out the “reaching around to the side of the computer” to account for the different dimensions and conventions of modern vs. 1980’s computers.)&lt;/p&gt;
+
+&lt;p&gt;One of Quinn’s Danger Noodle Club colleagues, Nichole Nomura, pointed out the equal attention paid to updating differently-gendered technologies (feminine via fashion, masculine via computers). Another, Matt Warner, pointed Quinn to &lt;a href=&quot;https://github.com/google/diff-match-patch&quot;&gt;Diff Match Patch&lt;/a&gt; as an easier way to see the differences between two texts (rather than treating it as an evaluative task for OCR quality). Conveniently, if you use the Diff demo and copy and paste the results into Word, the changes show up using Word’s track changes functionality.&lt;/p&gt;
+
+&lt;h3 id=&quot;dsc-in-stanfords-literary-lab&quot;&gt;DSC in Stanford’s Literary Lab&lt;/h3&gt;
+
+&lt;p&gt;Between the comparisons using Claudia and Mean Jeanine and Dawn and the Impossible Three (which Quinn later shared with everyone), it was clear that we really did need both the original and the edited versions of the Baby-Sitters Club corpus.&lt;/p&gt;
+
+&lt;p&gt;I have some research funding this year, but I’d long exceeded the “no questions asked” point when it came to ordering second-hand English-language girls’ literature on Amazon Marketplace. (Remember, I’m a Russianist.) It was going to take more resources than I could cover to get the corpus we needed.&lt;/p&gt;
+
+&lt;p&gt;Quinn works at Stanford, and is involved with a few projects through the Stanford Literary Lab. She’d met with Mark Algee-Hewitt, the professor who directs the Lab, soon after we started this project. He was open to it becoming a Lab project, but asked her to put in a proposal that he could review with the other directors. In our first meeting, we put together a proposal that Quinn officially submitted to the Literary Lab, requesting funding to cover a “clean” corpus. We got the response in late November: The Data-Sitters Club could be an official Literary Lab project, with funding to support the corpus-building, provided we accession the corpus into their corpus management system and use their data-sharing process for people outside of the project (really, who wants to come up with those systems and processes from scratch?), collaborate with other Lab members (we’d love to apply methods from other projects to the BSC corpus and document it all), and if we do a talk or pamphlet for the project through the Lab, it should address particular scholarly research questions (no problem, we’ve got a whole Google Doc full of those!)&lt;/p&gt;
+
+&lt;p&gt;The BSC had Logan Bruno as their “boy babysitter” associate member, so as a Stanford Literary Lab project, it’s only fair for us to count Mark Algee-Hewitt as an associate data-sitter. Mark is an Assistant Professor in the English department at Stanford. He has a goatee, red hair that he wears in a ponytail, and sense for fashion that makes him the Claudia Kishi of male academics. He has an amazing assortment of colorful and interesting sports coats, and a penchant for creative cowboy boots. Much like Logan, Mark has distant origins (Nova Scotia, rather than Kentucky). Unlike Logan, he’s not into sports or making a big display of masculinity. Mark did babysit growing up, with an hourly rate that would’ve worked out to $3.50 USD – similar to the $3 rate mentioned in the original books, which got updated to $5 in at least one of the revisions.&lt;/p&gt;
+
+&lt;p&gt;As an associate data-sitter, Mark doesn’t have to come to meetings, so it was just the five of us on our call at the beginning of December. Our conversation quickly turned to the biggest question facing the Data-Sitters Club, namely, what are our questions here, and how do we go about answering them?&lt;/p&gt;
+
+&lt;p&gt;Maria was surprised at our enthusiasm for her off-the-cuff responses to the changes we’d discovered (which she, centered in the discipline of children’s literature, felt were more expected than a surprise). “It feels like I’m a pundit on cable news – where I hear from you what the data is, then riff on it. I’m so not used to working with data that way; I’m usually the one who gathers it, through close reading and archival research. In digital humanities, it seems like the underlying mechanism for discovery is ‘let’s try it and see what happens’, which is different than what most traditional literary scholarship does. In those cases, we pick texts with frameworks and questions already in mind. The DSC has lots of questions for our dataset, but they’re kinda all over the place. If our research process is ‘let’s see where this takes us’, I think we should say that in the posts. Or if we’re trying to figure out specific things, let’s say that.”&lt;/p&gt;
+
+&lt;p&gt;“I think a key to our research process is what we’re doing right at this moment,” suggested Anouk. “Humanities training doesn’t usually involve working in a team, but all of our individual understandings of where this project might go have been enriched by the conversations we’re having in these meetings. I think a big part of this is trying to figure out how our own individual ideas fit with what we might learn from other people. We all have our research goals. But we all agree that taking the project forward as a group will be enriching, and that’s something that I think distinguishes feminist scholarship from more individualistic models of the scholar as Lone Genius.”&lt;/p&gt;
+
+&lt;p&gt;“I’m not very advanced in digital humanities, but the projects I’ve been working on are invariably team-based, and it’s gotten me to the point where I’m co-writing a book with someone,” I said. “Team work like that seems anathema to how we were trained to work as humanities scholars, but is integral to digital humanities practice, I’m finding. Maybe a post about how to work with a team and manage different roles and aspects of the project would be helpful?”&lt;/p&gt;
+
+&lt;p&gt;“I was just thinking about what you’re saying about literary scholarship and how it works, Maria,” said Roopsi. “One of the ways I think about and teach using something like Voyant is that when you’re close-reading, you’re like, ‘What’s sticking out to us as we read?’ and that’s what helps shape the research questions. Most people don’t go to the text and are like, ‘I’m going to pick my research question for the text without reading it’ – some people do, I’m not judging – but that’s not how I do things. Looking at the results, learning how to interpret the results of something like Voyant, that’s the method part. It’s like close reading: what sticks out for you for your research question? It just happens with a tool. You look at the results you’re getting, that connects with these questions you have, and that informs the actual research questions. And in some ways it’s not super different from how we do literary scholarship, it’s just that instead of close reading, what we have is ‘how do we interpret the statistics, or math, or word cloud, or collocations?’”&lt;/p&gt;
+
+&lt;p&gt;“I get you – but how do we know what discoveries are worth diving into more? And what things we want to present field-related background on?” asked Maria. “Do we do that every time we find something that interests us? Or are there principles that guide what we pick?”&lt;/p&gt;
+
+&lt;p&gt;“One way to think about it might be as an iterative process,” suggested Anouk. “We explore various things, and some of those will have traction while others won’t. Maybe that’s where the genre of the blog post is useful, too – maybe a path goes somewhere, maybe it doesn’t. Or maybe someone picks it up for further research and publication in a different form.”&lt;/p&gt;
+
+&lt;p&gt;“We’re getting close to the end of our meeting,” Quinn interjected. “Let’s open up our scheduling spreadsheet and sort out who’s going to be doing what between now and the summer.”&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;To be continued…&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The author gratefully acknowledges Quinn Dombrowski for her help in preparing this manuscript.&lt;/p&gt;
+
+&lt;h3 id=&quot;suggested-citation&quot;&gt;Suggested citation&lt;/h3&gt;
+
+&lt;p&gt;Bowers, Katherine and Quinn Dombrowski. “DSC #2: Katia and the Phantom Corpus.” &lt;em&gt;The Data-Sitters Club.&lt;/em&gt; December 12, 2019. https://datasittersclub.github.io/site/dsc2/.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 12 Dec 2019 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/site/dsc2/</link>
+        <guid isPermaLink="true">http://localhost:4000/site/dsc2/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>DSC #1: Quinn's Great Idea</title>
+        <description>&lt;p&gt;by Quinn Dombrowski, November 7, 2019&lt;/p&gt;
+
+&lt;p&gt;It doesn’t really matter that it was my idea. I don’t really care about credit— I’ve got what’s half-jokingly been called “the world’s best dead-end job,” and credit doesn’t buy me anything. What matters to me is that good things happen, and this project is a very good thing.&lt;/p&gt;
+
+&lt;p&gt;I got the idea while I was on vacation. It was the first vacation I’d taken in four years, and my husband, Andy, and I were happily working on our own projects on the 10th floor of a giant pyramid in Las Vegas. Because it was vacation, I’d promised myself I wouldn’t do anything related to my job — which meant no non-English digital humanities. But by the second day of our trip, my thoughts kept coming back to a &lt;a href=&quot;https://bookriot.com/2019/09/04/the-babysitters-club/&quot;&gt;blog post&lt;/a&gt; about &lt;em&gt;The Baby-Sitters Club&lt;/em&gt; (&lt;em&gt;BSC&lt;/em&gt;), featuring my friend Shannon Supple, who stewards Ann M. Martin’s papers at Smith College. Some of my projects involve fanfic, and I’d already written a Jupyter notebook to scrape &lt;a href=&quot;http://fanfiction.net&quot;&gt;fanfiction.net&lt;/a&gt;, so I first thought I’d just grab the metadata for English-language &lt;em&gt;BSC&lt;/em&gt; fanfic and throw together a few visualizations. But I’ve been spoiled by the size of the Harry Potter fanfic corpus (nearly 800,000 — 100x bigger than the BSC’s 800) and wasn’t feeling inspired.&lt;/p&gt;
+
+&lt;p&gt;Then I started searching for the full text of the original novels — and I found some. And then I found more. (It seems like lots of libraries didn’t think twice about getting rid of their copies, and the &lt;a href=&quot;https://archive.org&quot;&gt;Internet Archive&lt;/a&gt; took in the cast-offs.) Before I realized it, I was on a quest. That whole week in Las Vegas, I slept in until a luxurious 7:30 AM, braved the pyramid’s morning Starbucks line, and mostly spent the rest of the day searching for &lt;em&gt;BSC&lt;/em&gt; novels, when Andy and I weren’t out enjoying Las Vegas — and sometimes even when we were. More than once, we noticed we were the only two nerds sitting in a pub with laptops open. Look, that’s our idea of a romantic getaway. We’ve been married 12 years, and as of this year, we’ve known each other for about half our lives, since we met as incoming undergrads at the University of Chicago. But I guess I’m getting ahead of myself, as I often do.&lt;/p&gt;
+
+&lt;p&gt;Hi! I’m Quinn Dombrowski, the DLCL ATS (or Academic Technology Specialist in the Division of Literatures, Cultures and Languages) at Stanford University. Essentially, I’m a half-library, half-departmental staff person who supports and implements non-English digital humanities scholarship.&lt;/p&gt;
+
+&lt;p&gt;I’m short (about the size of a 10-year-old), with short brown hair, glasses, and the same light blue eyes as my three kids (ages 5, 3, and 1). You might think that with so many kids, I enjoyed babysitting when I was a teenager, but you would be wrong. The one time I ventured into the promised land of fun and profit as depicted by the &lt;em&gt;BSC&lt;/em&gt;, I discovered that I hated it, and it didn’t even pay as well as building websites. Such was my introduction to gendered labor. I built a lot of websites, but never once changed a diaper, before giving birth myself.&lt;/p&gt;
+
+&lt;p&gt;At least in English, I identify as non-binary, but I have no preference whatsoever about pronouns. Grow up in the 1990s with a name like Quinn, and you get used to lots of different pronouns. I do care about nouns (person not woman, parent not mother), but explaining all that is an awful lot to stick in an email signature or on a conference name tag. My kids call me “PG,” short for “progenitor/progenitrix.” I sew all my own clothes — everything (and I do mean everything), except socks. Dressing in bright colors and interesting prints (Eyeballs! Dinosaur-Unicorns! People being tormented by demons in illustrations from Russian folk tales!) is more important to me than androgyny, so when I’m at work, I only wear dresses with enormous pockets. Even in formal contexts like Stanford’s literature departments, you can wear absolutely anything if it’s in the shape of a dress. At home in Berkeley, it’s all pants and sweatshirts — always in colorful prints (Sailor Moon! Fraggle Rock! Octopi!).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/site/assets/babyquinn.jpg&quot; alt=&quot;Picture of a young Quinn, reading a Baby-Sitters Club book&quot; style=&quot;float: left; width: 175px;margin-right: 7px;margin-top: 0px;&quot; /&gt; (Here I am, reading a &lt;em&gt;Baby-Sitters Club&lt;/em&gt; book in my backyard, c. 1992!)&lt;/p&gt;
+
+&lt;p&gt;So there I was in Las Vegas, sipping on a beer, building a &lt;em&gt;BSC&lt;/em&gt; corpus — and as usual, tweeting about it. On the geopolitical stage, it’s hard to argue with the claim that Twitter is a force of evil. But Twitter is also the infrastructural backbone of much of the digital humanities world. It was on this same trip that I realized that Twitter gave me the community of friends who share my weird interests that I’d dreamed of since reading the &lt;em&gt;BSC&lt;/em&gt; books as a child. One notable thing about tweeting about the &lt;em&gt;BSC&lt;/em&gt; is who replies: it’s all people who experienced girlhood in the 1990s. The first &lt;em&gt;BSC&lt;/em&gt; book came out in 1986, and the last in 2000 (not counting &lt;em&gt;The Summer Before&lt;/em&gt;, which was published a decade later). If you grew up female in the Anglophone world, and you’re in your 30s or early 40s, these books are a cultural touchstone — even for people like me who moved on to other franchises (&lt;em&gt;Star Wars&lt;/em&gt; novels, in my case) by the time they hit puberty.&lt;/p&gt;
+
+&lt;p&gt;Over the course of the week, lots of people were generous in answering the more technical questions I had when playing with this emerging corpus (like — ugh — is it normal for the top 20 words for every single topic in a topic model to just be names?), but I was surprised and delighted to find pools of interest in the books themselves among my digital humanities Twitter friends. And not just interest, but expertise: Roopika Risam, in addition to being a brilliant postcolonial digital humanities scholar, is also a walking encyclopedia of &lt;em&gt;BSC&lt;/em&gt;. The more people threw ideas out on Twitter, the more sure I was that I was on to something, that the &lt;em&gt;BSC&lt;/em&gt; is, in fact, an amazing potential laboratory for computational text analysis.&lt;/p&gt;
+
+&lt;p&gt;Think about it: there are over 200 novels, all written in the voice of one (or multiple) characters, by Ann M. Martin or a clearly identified ghostwriter. (There’s no one I need to gratefully acknowledge for their help in preparing this manuscript, because I wrote it myself, thank you very much.) Does each character have a distinct voice? Is that voice different across writers? Do non-narrating characters have distinct voices expressed through their dialogue? How does the characters’ written language (through the handwritten portions of the text) differ from their implicitly spoken text through the first-person narration? The &lt;em&gt;BSC&lt;/em&gt; is (in)famous for its use of tropes (Claudia’s “almond-shaped eyes”, “Mal is white and Jessi is black”, etc.), so what else can we find in terms of explicit text reuse in the more formulaic parts of the book (the “Chapter 2” question, AKA “how many different ways can you describe the basic premise and major characters across 200+ novels”)? How do these books treat religion, race, adoption, divorce, disability, not to mention the “Very Special Episode” topics? And all that is just the books: what about how the material was adapted for the 1990’s show, the movie, the new graphic novels, the upcoming Netflix series, and the fanfic? There’s unexplored material for a whole research agenda in the area of cultural analytics, which could really use a teenage girl lit counterbalance to its superheroes and sci-fi.&lt;/p&gt;
+
+&lt;p&gt;But what if a project did more than just analyze these books? What if it actually walked through the whole process? A year ago, when I started this job at Stanford, I’d done digital humanities for nearly 15 years but had never done computational text analysis. The internet is littered with workshop materials, tutorials, and Python and R scripts with varying levels of documentation, but I had trouble putting all the pieces together. My question to folks at Stanford’s Literary Lab, again and again, was “so what do you actually do next?” And what I learned was that what lies behind the glossy final graphs isn’t a paved road, but a series of choices that shape a walk through the woods. Yes, there are some things (particularly with statistics) that you can unambiguously do wrong, but in most contexts there isn’t a right choice — it’s more like each possible decision provides a different set of opportunities and constraints for your analysis. Some of those constraints make a difference, some of them don’t, and it all depends on what you’re trying to do. At a “Women and Gender Minorities in Digital Humanities” event at Stanford last May, Nichole Nomura — a member of the Literary Lab, and my co-director at Stanford’s Textile Makerspace — brought up the “view of the whole” from Lave &amp;amp; Wenger’s conceptual framework for communities of practice, in the context of an alternate model of mentoring in digital humanities: “To mentor and have people join our community, we have to show them the whole work of the whole community. We have to make all our practices visible. Maybe we don’t have to teach them explicitly right away, but they need to be seen.” I’ve been thinking about this ever since, and whether demystifying computational text analysis might make it more accessible for folks who don’t see themselves as programmers, or “the sort of person who does that stuff” (i.e. white dudes with some previous exposure to computer science).&lt;/p&gt;
+
+&lt;p&gt;This was the great idea that came together in Las Vegas: to apply the computational tools and methods that are widely used in the digital humanities text analysis community to the &lt;em&gt;BSC&lt;/em&gt; corpus, making visible all the steps and decisions that shape that path. And to write the whole thing up in a series of detailed but colloquial posts that could serve as a guidebook for fellow travelers. I wanted it to be useful — something that newbies of all genders would consult, regardless of whether they grew up as fans of the &lt;em&gt;BSC&lt;/em&gt;. Even in the reality-distortion field of Las Vegas, I was under no delusion that I could tackle this by myself. So I emailed a couple friends who’d chimed in on the &lt;em&gt;BSC&lt;/em&gt; tweets, and then a few more.&lt;/p&gt;
+
+&lt;p&gt;My vacation came to an end, throwing me right back into getting kids dressed and fed and delivered to and picked up from the right places at the right times; meetings, projects, just enough housework to postpone descent into utter chaos, and the four-hour daily commute three times a week. But this project was the best souvenir I could have asked for. It has some challenges, including language: English is one of the few languages out of scope for my job. But it’s mostly a project for after the kids’ bedtime, and I think that understanding what it’s like to work on a project in modern English will help me advocate for better resources for languages that aren’t English.&lt;/p&gt;
+
+&lt;p&gt;So I’d like to introduce The Data-Sitters Club. Need computational text analysis? Save time! Visit the Data-Sitters Club and get the inside story on how to apply digital humanities methods to a real project. So far, there are five of us, and, like the BSC members, we all have different experience and specializations.&lt;/p&gt;
+
+&lt;p&gt;Roopika Risam is an Associate Professor of Secondary and Higher Education and English at Salem State University. Everyone calls her Roopsi. Her family is from Kashmir, but she was born in Wales. She actually has &lt;em&gt;two&lt;/em&gt; passports. Roopsi has beautiful, clear, Bit-O-Honey-colored skin and black hair, which she wears in a graduated bob with blonde highlights. She grew up in Washington, DC, and she’s dibbly jaded from it. This is probably why Roopsi still wears Doc Martens boots and dresses everyday, like it’s still the 1990s. Her sister, Monica, is a real, live &lt;em&gt;genius.&lt;/em&gt; She’s even a member of Mensa. Roopsi’s the black sheep of the family even though she’s the one who skipped Kindergarten. But that really just means she’s not that great at cutting and pasting or sharing. Monica recently admitted that Roopsi is actually the brilliant one. I think that made Roopsi feel pretty good. I’ve known Roopsi for a while but the first time we really connected was when I wrote the first review for her book, &lt;a href=&quot;http://www.nupress.northwestern.edu/content/new-digital-worlds&quot;&gt;&lt;em&gt;New Digital Worlds: Postcolonial Digital Humanities in Theory, Praxis, and Pedagogy.&lt;/em&gt;&lt;/a&gt; It was fresh and distant.&lt;/p&gt;
+
+&lt;p&gt;Katia Bowers is an Assistant Professor and Russianist at the University of British Columbia, so we have some Slavic Studies connections. Katia has curly-wavy light brown hair, brown eyes and glasses. She’s lived all over the world - in Germany, the US, Russia, Croatia, the UK, and now Canada - and when she was a tween,
+&lt;em&gt;BSC&lt;/em&gt; books were a way for her to connect with American culture from abroad. Since moving to Canada she has adopted a kind of Vancouver-style that involves an espresso addiction and a daily uniform of black leggings and tunics or long sweaters. Her clothing might seem nondescript and utilitarian, but she jazzes it up with shoes from her large collection, which has a 19th-century vibe, and she’s often to be found wearing shoes that are historically accurate to the period she’s writing and reading about that day. Katia and I met at the Slavic Digital Humanities Summer Workshop at Princeton in September the week before my trip to Las Vegas. At the workshop, she was talking about a new digital humanities text analysis project she’s doing with Kate Holland at Toronto that focuses on Dostoevsky’s writing, but I didn’t realize that Katia was a fellow &lt;em&gt;BSC&lt;/em&gt; fan until she and Roopsi and I got to talking on Twitter.&lt;/p&gt;
+
+&lt;p&gt;Anouk Lang is a Senior Lecturer in Digital Humanities in the Department of English Literature at the University of Edinburgh. Her introduction to the &lt;em&gt;BSC&lt;/em&gt; books came in sixth grade in Sydney, when their candy-bright spines lit up the shelf of sensible whites and creams that made up the rest of the class lending library, and the race to beat everyone else through the series was on. Somewhat hilariously for someone who would grow up to be a postcolonialist, as a kid she read much more American literature than Australian — &lt;em&gt;Sweet Valley High&lt;/em&gt;, the &lt;em&gt;Ramona&lt;/em&gt; books, &lt;em&gt;Little House on the Prairie&lt;/em&gt;, &lt;em&gt;Nancy Drew&lt;/em&gt;, the &lt;em&gt;Hardy Boys&lt;/em&gt;, the &lt;em&gt;Three Investigators&lt;/em&gt; — alongside the more normative shelves and shelves full of British English books by the likes of Blyton, Noel Streatfeild, C.S. Lewis, Tolkien, and Douglas Adams. Anouk is probably closest to being a mixture of Mallory’s glasses-wearing awkwardness and Dawn, always figured as geographically other. Her Australian twang has faded after 20-odd years in the UK into a more generic learnt-English-somewhere-other-than-England accent. She can, with effort, code-switch between the different uses of “pants” (US &amp;amp; Australian English = long trousers, British English = underwear), and is gradually adding Scots words to her vocabulary, the most useful so far being “outwith.” She has no hopes of keeping up either with Claudia’s barrette and earring game, or with Quinn’s sartorial creativity in the digital humanities-dress department, but does pull out her beloved Bernina sewing machine from time to time to make things, most recently a black plush Toothless dragon.&lt;/p&gt;
+
+&lt;p&gt;Maria Sachiko Cecire is an Associate Professor of Literature and the Director of the Center for Experimental Humanities at Bard College. I actually went to undergrad with Maria at the University of Chicago, and who would have thought we would end up working together later in life? It’s pretty great. Maria is half-Japanese and half-Italian, and has dark brown hair, brown eyes, and olive skin that turns a deep toast color in the summer. She grew up in the South and absolutely loves the beach. She also loves books and has shelves and shelves of them in her house. She’s so interested in children’s literature that she wrote her own book about it! It’s called &lt;a href=&quot;https://www.upress.umn.edu/book-division/books/re-enchanted&quot;&gt;&lt;em&gt;Re-Enchanted: The Rise of Children’s Fantasy Literature in the Twentieth Century&lt;/em&gt;&lt;/a&gt;. Now she’s excited about diving back into the &lt;em&gt;BSC&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;But Maria is more than a bookworm: she also loves getting out there and doing stuff, especially with her friends. She can be super social. For example, she started an interdisciplinary curriculum and center in Experimental Humanities at the small liberal arts college where she works. The students, faculty, staff, and community members involved in EH (that’s what they call it for short) use all kinds of tools and methods to think together about how technology mediates what it means to be human. It sounds like heavy stuff, and I guess it is, but they have a ton of fun! Maria is always experimenting with different media and coming up with new projects, and if that can involve group calls with her colleague-friends around the world to talk about children’s lit, all the better!&lt;/p&gt;
+
+&lt;p&gt;It was the day before Halloween when all five of us were finally able to get together. I had subtly raided my kids’ Halloween candy buckets (from trick-or-treating at businesses the weekend before) before leaving for work, swiping a mix of Almond Joys, M&amp;amp;Ms, and Nerds. (What would Claudia Kishi do as a parent?) The biggest downside to virtual meetings is that you can’t share candy with your friends.&lt;/p&gt;
+
+&lt;p&gt;“It’s been really interesting to see how the ideology of the 90’s plays out in these books,” said Anouk.&lt;/p&gt;
+
+&lt;p&gt;“It’s such a period piece of suburban girlhood,” agreed Roopsi. “I moved to the US when I was a kid, and Stonybrook is so much like where I grew up, in ‘post-racial’ DC, where everyone pretended there were no structural differences.”&lt;/p&gt;
+
+&lt;p&gt;“For me, the structures implicit in the books were the implicit structures around me,” added Katia. “Before I moved to the US when I was 12, &lt;em&gt;The Baby-Sitters Club&lt;/em&gt; was my primer on how to be a suburban tween.”&lt;/p&gt;
+
+&lt;p&gt;“What I’ve been thinking about has been how &lt;em&gt;The Baby-Sitters Club&lt;/em&gt; relates to work on girlhood studies around boarding school books — things like &lt;em&gt;Malory Towers&lt;/em&gt;,” mused Maria.&lt;/p&gt;
+
+&lt;p&gt;“I was literally just reading those to my kids!” laughed Anouk.&lt;/p&gt;
+
+&lt;p&gt;“Boarding school books present this low-stakes environment for practicing how to be a — usually — starkly gendered person in the world outside that little world. I’m curious if there’s any computational way to look at whether &lt;em&gt;The Baby-Sitters Club&lt;/em&gt; functions as a ‘little world’, where it’s safe to try and fail, in preparation for the outside world,” Maria suggested.&lt;/p&gt;
+
+&lt;p&gt;“Even if some of our questions turn out to not be compatible with computational analysis, it’ll still worth talking about the limits we run into with these methods. Publishing negative results is a good thing!” I replied.&lt;/p&gt;
+
+&lt;p&gt;As we went around, thinking aloud about the directions we could explore together, I was delighted. We could actually do this: kids who once read &lt;em&gt;BSC&lt;/em&gt; books in our bedrooms, thousands of miles away from one another, were now grown-ups with faculty or alt-ac jobs. We had the resources to ask and answer the questions we were only dimly aware of then, and make visible all the steps along the way.&lt;/p&gt;
+
+&lt;p&gt;The Data-Sitters Club was going to be a success, and I helped make it work. I hoped Roopsi, Katia, Maria, Anouk, and I – the Data-Sitters Club – would stay together for a long time.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;/site/assets/bscmeeting.png&quot; alt=&quot;Photo of the first Data-Sitters Club Zoom meeting with Quinn Dombrowski, Katia Bowers, Maria Cecire, Anouk Lang, and Roopika Risam&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;suggested-citation&quot;&gt;Suggested citation&lt;/h3&gt;
+
+&lt;p&gt;Dombrowski, Quinn. “DSC #1: Quinn’s Great Idea.” &lt;em&gt;The Data-Sitters Club.&lt;/em&gt; November 7, 2019. https://datasittersclub.github.io/site/dsc1/.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 07 Nov 2019 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/site/dsc1/</link>
+        <guid isPermaLink="true">http://localhost:4000/site/dsc1/</guid>
+        
+        
+      </item>
     
   </channel>
 </rss>

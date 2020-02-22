@@ -6,12 +6,29 @@ permalink: /books/
 
 # The Latest from The Data-Sitters Club
 
-[DSC #1 - _Quinn's Great Idea_]({{ site.baseurl }}/dsc1/) (11/07/2019)  
-[DSC #2 - *Katia and the Phantom Corpus*]({{ site.baseurl }}/dsc2/) (12/12/2019)  
-[DSC #3 - *The Truth About Digital Humanities Collaboration (and Textual Variants!)*]({{ site.baseurl }}/dsc3/) (01/10/2020)
+Be sure to also check out our <a href="#mystery">multilingual mystery series</a>!
 
-## Multilingual Mysteries (New series!)
+{% for post in site.posts reversed %}
+{% if post.bookseries contains "regular" %}
+<a href="/site/{{ post.url }}"><img src="/site/assets/bookcovers/{{ post.coverart }}" /></a>
+<h3 class="postlist"><a href="/site/{{ post.url }}">{{ post.title }}</a></h3>
+<p class="postlist">{{ post.author }}</p>
+<p class="postlist">{{ post.date | date_to_long_string }}</p>
+<p class="postlist">{{ post.blurb }}</p>	
+<br />	
+{% endif %}	
+{% endfor %}
 
-[DSC Multilingual Mystery #1 - _Lee and the Missing Metadata_]({{ site.baseurl }}/dscm1/) (1/23/2020)
+<a name="mystery" />
+## Multilingual Mysteries
 
-![Ad for the Data-Sitters Club Multilingual Mysteries based on an original Baby-Sitters Club ad.]({{ site.baseurl }}/assets/dsc_mystery_series_ad.png)
+{% for post in site.posts reversed %}
+{% if post.bookseries contains "mystery" %}
+<a href="/site/{{ post.url }}"><img src="/site/assets/bookcovers/{{ post.coverart }}" /></a>
+<h3 class="postlist"><a href="/site/{{ post.url }}">{{ post.title }}</a></h3>
+<p class="postlist">{{ post.author }}</p>
+<p class="postlist">{{ post.date | date_to_long_string }}</p>
+<p class="postlist">{{ post.blurb }}</p>	
+<br />	
+{% endif %}	
+{% endfor %}
