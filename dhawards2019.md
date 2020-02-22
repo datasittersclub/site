@@ -16,5 +16,8 @@ Need some fun? Vote for *The Data-Sitters Club* in [The DH Awards 2019](http://d
 ![1990s calendar ad](/site/assets/dhawards2019/1990_cover_dsc_ad.jpg)
 ![No dolls ad](/site/assets/dhawards2019/dsc_ad_no_dolls.jpg)
 ![Everybody's talking](/site/assets/dhawards2019/everybodys_talking_dsc_ad.jpg)
+![Creepy doll](/site/assets/dhawards2019/possessed_doll_dsc_ad.jpg)
+![DSC collector club](/site/assets/dhawards2019/collectors_club_ad.jpg)
+![DSC ad, localized for the UK](/site/assets/dhawards2019/dsc_uk_kristy_president_ad.jpg)
 
 Have we convinced you? Go [vote in the DH Awards 2019 now](http://dhawards.org/dhawards2019/voting/)!
