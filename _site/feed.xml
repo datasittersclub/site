@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/site/</link>
     <atom:link href="http://localhost:4000/site/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 22 Feb 2020 09:59:29 -0800</pubDate>
-    <lastBuildDate>Sat, 22 Feb 2020 09:59:29 -0800</lastBuildDate>
+    <pubDate>Sat, 22 Feb 2020 10:07:02 -0800</pubDate>
+    <lastBuildDate>Sat, 22 Feb 2020 10:07:02 -0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -283,7 +283,7 @@ slowly.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Back around 2010, Juxta had a “competitor” of sorts, &lt;a href=&quot;https://collatex.net&quot;&gt;CollateX&lt;/a&gt;. CollateX was another piece of Java software, developed in the EU as part of &lt;a href=&quot;www.interedition.eu&quot;&gt;Interedition&lt;/a&gt;, whereas Juxta was developed in the US by &lt;a href=&quot;https://nines.org&quot;&gt;NINES&lt;/a&gt;. For a while, choosing between Juxta and CollateX was something of a toss-up, but they’ve since gone in different directions. Juxta invested in the web-based Juxta Commons, whereas CollateX developed into a Python package. What’s more, there’s even &lt;a href=&quot;collatex.obdurodon.org&quot;&gt;materials&lt;/a&gt; (&lt;a href=&quot;collatex.obdurodon.org&quot;&gt;including Jupyter notebooks&lt;/a&gt;) available for how to use CollateX, from a workshop at DH 2015. (If you’re not familiar with Jupyter notebooks, check them out – they’re especially useful if you’re new to coding. I co-wrote a &lt;a href=&quot;https://programminghistorian.org/en/lessons/jupyter-notebooks&quot;&gt;tutorial on Jupyter notebooks&lt;/a&gt; on Programming Historian.)&lt;/p&gt;
+  &lt;p&gt;Back around 2010, Juxta had a “competitor” of sorts, &lt;a href=&quot;https://collatex.net&quot;&gt;CollateX&lt;/a&gt;. CollateX was another piece of Java software, developed in the EU as part of &lt;a href=&quot;http://www.interedition.eu&quot;&gt;Interedition&lt;/a&gt;, whereas Juxta was developed in the US by &lt;a href=&quot;https://nines.org&quot;&gt;NINES&lt;/a&gt;. For a while, choosing between Juxta and CollateX was something of a toss-up, but they’ve since gone in different directions. Juxta invested in the web-based Juxta Commons, whereas CollateX developed into a Python package. What’s more, there’s even &lt;a href=&quot;http://collatex.obdurodon.org&quot;&gt;materials&lt;/a&gt; (&lt;a href=&quot;http://collatex.obdurodon.org&quot;&gt;including Jupyter notebooks&lt;/a&gt;) available for how to use CollateX, from a workshop at DH 2015. (If you’re not familiar with Jupyter notebooks, check them out – they’re especially useful if you’re new to coding. I co-wrote a &lt;a href=&quot;https://programminghistorian.org/en/lessons/jupyter-notebooks&quot;&gt;tutorial on Jupyter notebooks&lt;/a&gt; on Programming Historian.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;blockquote&gt;
