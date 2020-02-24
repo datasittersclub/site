@@ -20,5 +20,6 @@ Need some fun? Vote for *The Data-Sitters Club* in [The DH Awards 2019](http://d
 ![DSC collector club](/site/assets/dhawards2019/collectors_club_ad.jpg)
 ![DSC ad, localized for the UK](/site/assets/dhawards2019/dsc_uk_kristy_president_ad.jpg)
 ![Men can cook and women can do text analysis](/site/assets/dhawards2019/dsc_ad_mr_mom.jpg)
+![Text analysis: it's as easy as desktop publishing for kids](/site/assets/dhawards2019/dsc_ad_friendship_kit.jpg)
 
 Have we convinced you? Go [vote in the DH Awards 2019 now](http://dhawards.org/dhawards2019/voting/)!
