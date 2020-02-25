@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/site/</link>
     <atom:link href="http://localhost:4000/site/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 22 Feb 2020 10:10:20 -0800</pubDate>
-    <lastBuildDate>Sat, 22 Feb 2020 10:10:20 -0800</lastBuildDate>
+    <pubDate>Tue, 25 Feb 2020 08:37:12 -0500</pubDate>
+    <lastBuildDate>Tue, 25 Feb 2020 08:37:12 -0500</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -133,7 +133,7 @@ Date: January 7, 2020 at 4:52:29 PM&lt;/p&gt;
 
 &lt;p&gt;Bessette, Lee Skallerup and Quinn Dombrowski. “DSC Multilingual Mystery #1: Lee and the Missing Metadata.” &lt;em&gt;The Data-Sitters Club&lt;/em&gt;. January 23, 2020. https://datasittersclub.github.io/site/dscm1/.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 24 Jan 2020 00:00:00 -0800</pubDate>
+        <pubDate>Fri, 24 Jan 2020 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/site/dscm1/</link>
         <guid isPermaLink="true">http://localhost:4000/site/dscm1/</guid>
         
@@ -316,7 +316,7 @@ slowly.&lt;/p&gt;
 
 &lt;p&gt;Cecire, Maria Sachiko. “DSC #3: The Truth About Digital Humanities Collaboration.” &lt;em&gt;The Data-Sitters Club&lt;/em&gt;. January 10, 2020. https://datasittersclub.github.io/site/dsc3/.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 10 Jan 2020 00:00:00 -0800</pubDate>
+        <pubDate>Fri, 10 Jan 2020 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/site/dsc3/</link>
         <guid isPermaLink="true">http://localhost:4000/site/dsc3/</guid>
         
@@ -534,7 +534,7 @@ planted to cold, sloppy Connecticut &lt;strong&gt;&amp;lt;BZZT!&amp;gt;&lt;/stro
 
 &lt;p&gt;Bowers, Katherine and Quinn Dombrowski. “DSC #2: Katia and the Phantom Corpus.” &lt;em&gt;The Data-Sitters Club.&lt;/em&gt; December 12, 2019. https://datasittersclub.github.io/site/dsc2/.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 12 Dec 2019 00:00:00 -0800</pubDate>
+        <pubDate>Thu, 12 Dec 2019 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/site/dsc2/</link>
         <guid isPermaLink="true">http://localhost:4000/site/dsc2/</guid>
         
@@ -612,7 +612,7 @@ planted to cold, sloppy Connecticut &lt;strong&gt;&amp;lt;BZZT!&amp;gt;&lt;/stro
 
 &lt;p&gt;Dombrowski, Quinn. “DSC #1: Quinn’s Great Idea.” &lt;em&gt;The Data-Sitters Club.&lt;/em&gt; November 7, 2019. https://datasittersclub.github.io/site/dsc1/.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 07 Nov 2019 00:00:00 -0800</pubDate>
+        <pubDate>Thu, 07 Nov 2019 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/site/dsc1/</link>
         <guid isPermaLink="true">http://localhost:4000/site/dsc1/</guid>
         
