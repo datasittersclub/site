@@ -34,4 +34,14 @@ Need some fun? Vote for _The Data-Sitters Club_ in [The DH Awards 2019](http://d
 
 ![Text analysis: it's as easy as desktop publishing for kids](/site/assets/dhawards2019/dsc_ad_friendship_kit.jpg)
 
+![DSC 33rd grade learning adventure](/site/assets/dhawards2019/dsc_ad_33rd_grade_learning_adventure.jpg)
+
+![DSC Planner ad](/site/assets/dhawards2019/dsc_ad_planner.jpg)
+
+![Time is running out](/site/assets/dhawards2019/dsc_time_running_out.jpg)
+
+![Prodigy reminder ad](/site/assets/dhawards2019/prodigy_reminder_dsc_ad.jpg)
+
+![Vote is still open](/site/assets/dhawards2019/dsc_vote_still_open.jpg)
+
 Have we convinced you? Go [vote in the DH Awards 2019 now](http://dhawards.org/dhawards2019/voting/)!
