@@ -6,7 +6,7 @@ permalink: /dhawards2019/
 
 # DH Awards 2019 Ad Campaign
 
-Need some fun? Vote for _The Data-Sitters Club_ in [The DH Awards 2019](http://dhawards.org/dhawards2019/voting/), for **Best Use of DH for Fun** and/or **Best Blog**.
+Need some fun? We've got it right here! We put together this ad campaign for the <a href="http://dhawards.org/dhawards2019/results/">DH Awards 2019</a> where we won first place for **Best Use of DH for Fun** (tie) and 3rd place for **Best Blog** (also a tie).
 
 ![DSC 'fun' ad](/site/assets/dhawards2019/dsc_fun_ad.jpg)
 
