@@ -10,6 +10,10 @@ Also [compiled as a Facebook album](https://www.facebook.com/quinn.dombrowski/me
 
 Click on a cover to view the full-sized message!
 
+
+[![Stop touching people, Dawn!](/site/assets/covid19/018_dsc_health_mystery7.jpg){:height="50%"}](/site/assets/covid19/018_dsc_health_mystery7.jpg)
+[![California schools are out for the year and it's good news for Claudia!](/site/assets/covid19/017_dsc_health_claudia_dropout.jpg){:height="50%"}](/site/assets/covid19/017_dsc_health_claudia_dropout.jpg)
+[![Cleaning the house with kids seemed like a good idea](/site/assets/covid19/016_dsc_health_maid_maryanne.jpg){:height="50%"}](/site/assets/covid19/016_dsc_health_maid_maryanne.jpg)
 [![6 feet of distance means back off, jerk!](/site/assets/covid19/015_dsc_health_kristy_bart.jpg){:height="50%"}](/site/assets/covid19/015_dsc_health_kristy_bart.jpg)
 [![Kristy the Zoombomber](/site/assets/covid19/014_dsc_health_vandal.jpg){:height="50%"}](/site/assets/covid19/014_dsc_health_vandal.jpg)
 [![Boy-crazy Stacey](/site/assets/covid19/012_dsc_health_boy_crazy_stacey.jpg){:height="50%"}](/site/assets/covid19/012_dsc_health_boy_crazy_stacey.jpg)
