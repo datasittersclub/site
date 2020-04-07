@@ -11,6 +11,9 @@ Also [compiled as a Facebook album](https://www.facebook.com/quinn.dombrowski/me
 Click on a cover to view the full-sized message!
 
 
+[![Don't give up, Mallory! Having clear guidelines for asking questions in Zoom classes is important.](/site/assets/covid19/020_dsc_health_dontgiveupmallory.jpg){:height="50%"}](/site/assets/covid19/020_dsc_health_dontgiveupmallory.jpg)
+[![The terrible truth about hugs and childcare.](/site/assets/covid19/019_dsc_health_terribletruth.jpg){:height="50%"}](/site/assets/covid19/019_dsc_health_terribletruth.jpg)
+
 [![Stop touching people, Dawn!](/site/assets/covid19/018_dsc_health_mystery7.jpg){:height="50%"}](/site/assets/covid19/018_dsc_health_mystery7.jpg)
 [![California schools are out for the year and it's good news for Claudia!](/site/assets/covid19/017_dsc_health_claudia_dropout.jpg){:height="50%"}](/site/assets/covid19/017_dsc_health_claudia_dropout.jpg)
 [![Cleaning the house with kids seemed like a good idea](/site/assets/covid19/016_dsc_health_maid_maryanne.jpg){:height="50%"}](/site/assets/covid19/016_dsc_health_maid_maryanne.jpg)
