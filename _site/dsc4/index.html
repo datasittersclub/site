@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/site/css/main.css">
+
+
+    <link rel="shortcut icon" href="/site/assets/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/site/assets/favicon.ico" type="image/x-icon">
+<meta name="referrer" content="no-referrer">
+
+</head>
+
+
+  <body>
+
+    <main class="wrapper">
+      
+      <header class="site-header">
+  <a class="site-title" href="/site/"><img src="/site/assets/DSClogo.png" style="width:829px;height:288px;"></a>
+
+  <nav class="navbar">
+    <ul>
+      <li class="nav-item"><a href="/site/">Home</a></li>
+      <li class="nav-item"><a href="/site/chapter-2/">Chapter 2</a></li>
+      <li class="nav-item"><a href="/site/books/">Books</a></li>
+      <li class="nav-item"><a href="/site/dhawards2019/">DH Awards 2019</a></li>
+	  <li class="nav-item"><a href="/site/covid19/">COVID-19</a></li>
+    </ul>
+  </nav>
+
+</header>
+
+
+      <div class="container">
+        <h1 id="dsc-4-antconc-saves-the-day">DSC #4: AntConc Saves the Day</h1>
+
+<p>by Anouk Lang, April 10, 2020</p>
+
+<p>My heart racing, I flipped my laptop open, powered it up and waited with bated breath for the browser to start. This was the moment I’d been waiting for. At last the page loaded and I clicked the link, to get to what I’d been waiting for with such anticipation. Hundreds of beautiful clean text files shone out of the screen at me, carefully labelled, fixed of their OCR errors and culled of their paratexts and their encoding gremlins. It was better than finding a stash of candy in one of Claudia’s pillowcases: it was the corpus of BSC texts, <a href="https://datasittersclub.github.io/site/dsc2/">lovingly curated and cleaned by Quinn and Katia (as described in <em>DSC #2: Katia and the Phantom Corpus</em>)</a>, and all ready to work with. Meanwhile, a thicket of deadlines and disasters had sprung up in front of the other Data-Sitters, which was just the excuse I needed. “I’ll get started with AntConc!” I told them.</p>
+
+<p><img src="/site/assets/dsc4_gettingahead.png" alt="AntConc results for 'getting ahead of myself'" style="float: right;margin-right: 7px;margin-top: 0px;" /></p>
+
+<p>But, as BSC narrators like to do, I’m getting ahead of myself. AntConc, for those who’ve not encountered it before, is a concordancer: a piece of software used in the fields of corpus linguistics and natural language processing (NLP) that lets you load a corpus of texts and then search it for words or phrases. You can modify your search terms with a set of customizable wildcards or regular expressions, and AntConc will bring up those words or phrases in what’s known as a key word in context (KWIC) display. You can then sort these KWIC lines to get a sense of the words that precede or follow the words in your query, generate a frequency list of all the words in the corpus, find words which commonly appear (or collocate) together, bring up a visual display of where in each file the words in your query appear, compare the frequency of words in your corpus to their frequency in a reference corpus, and more. AntConc is well regarded in the digital humanities community as it’s well maintained by its creator Laurence Anthony, it’s free to use, and – one of the things I particularly appreciate about it – it’s lightweight and can usually be installed on lab PCs of the type that people teaching digital humanities can find themselves restricted to using. For classes, or DH beginners for whom jumping into NLP with Python is not a realistic option, it is a good way to demonstrate some of the potential of text analysis using a pretty intuitive graphical user interface (GUI). You might see it as the text analysis equivalent of the Kid-Kit, the box of crafty fun things the BSC took to babysitting gigs when they particularly wanted to keep their charges amused.</p>
+
+<p>I loaded the corpus of BSC books into AntConc (<em>File &gt; Open Dir</em>) and started by generating a word frequency list (<em>Word List</em> tab then <em>Start</em>) and taking a look at the basic stats, which appear at the top of the main white window in the Word List tab once you have clicked Start. The corpus was around 4.7 million words, with around 33 000 different unique words (or types). I then looked at the word frequency list, something which can be an interesting exploratory step, as it lets you see if there are any terms with fairly high frequencies whose presence isn’t immediately explainable by intuition. I was all primed to look up terms relating to the things the other Data-Sitters and I had speculated would make for interesting queries: words around gender, race, consumerism, suburbia and so on. But before any of those appeared on the frequency list, however, I came across the term “little” quite high up. What was even more interesting was that of the 7075 instances of little in the corpus, almost two thirds of them (4653) appeared as part of the bigram “a little”. What could it mean? I decided to investigate further by doing a concordance search for “a little” (<em>Concordance</em> tab, type <code class="highlighter-rouge">little</code> into the search box and press <em>Start</em>) and sorting the results alphabetically by the word to the right of the search terms (enter <em>1R, 2R</em> and <em>3R</em> into the Kwic Sort boxes then press <em>Sort</em>).</p>
+
+<p><img src="/site/assets/dsc4_LookALittleAlike.png" alt="AntConc results for 'look a little alike'" style="float: right;margin-right: 7px;margin-top: 0px;" /></p>
+
+<p>The first thing to jump out at me – in light of our discussions about similarities and differences between the books and the logistics of keeping things consistent across the series when a number of ghostwriters were producing the books  – was the way the formula of “look a little alike” recurred in the introductory descriptions of Mary Anne and Kristy. (If you look at the KWIC lines you’ll spot other formulae in there, notably being best friends, being short and having brown hair.) Given what we knew of the ‘BSC Bible’ (as mentioned in <a href="https://datasittersclub.github.io/site/dscm2/">DSC Multilingual Mystery #2: Beware, Lee and Quinn</a>) and its role in guiding the ghostwriters, this wasn’t that surprising. I made a mental note to check, once we got access to the version in the archives, whether “look a little alike” was part of the phraseology it used when describing those two characters.</p>
+
+<p>As I continued to cast my eye over the KWIC lines for the search query “look a little”, trying different sorting options and looking out for other combinations, a more subtle pattern emerged. The phrase was, it seemed, more likely to modify negatively rather than positively inflected adjectives: terms like <em>downcast, forlorn, guilty, hurt, green, pale, wary</em>, and <em>wistful</em> that encompassed emotional, behavioral or somatic states. Were the BSC books, I wondered idly, offering readers a lesson in the textual regulation of negative feelings or bodily states, by suggesting that the way to express one’s own feelings, or represent someone else’s, was by using the premodifying phrase “a little”?</p>
+
+<p>This is the dangerous point in corpus analysis: when a potential finding of interest suggests itself to you and – if you are trained as a literary analyst to value this as ‘close reading’, rather than as a statistician to dismiss it as ‘overfitting’ – it is an almost irresistible mental leap to land on an intuitive explanation, and use the KWIC lines that support your theory as evidence, while quietly discarding the ones that complicate it. There could be any number of reasons why the numbers shake out as they do, so what you need to do is park that intuitive explanation and carry out some additional tests. You could, for instance, check if the word or phrase is more or less frequent in your corpus when compared to a reference corpus (a comparable group of texts which is a roughly acceptable match for the genre, historical period, regional variants and so forth of your own corpus). I sighed. It had been enough of an effort getting our own data together. What corpus could I possibly find that would approximate 4.7 million words of 1980/90s young adult fiction in American English?</p>
+
+<p>In the meantime, though, what I <strong>could</strong> do pretty easily was a comparison of look a little + [negative state] to look + [negative state]. I used the * wildcard (which stands in for zero or more of any character: see <em>Settings &gt; Global settings</em> then the <em>Wildcards</em> tab for more) to pull up all instances of the lemma <em>look</em>, ie. <em>look, looks, looking, looked</em> and so on, and pulled out a few examples to get a sense of how often a term describing a negative state would be preceded by a little:</p>
+
+<ul>
+  <li>8 instances of <em>look* a little surprised</em> vs 82 of <em>look* surprised</em> (10%)</li>
+  <li>8 instances of <em>look* a little puzzled</em> vs 62 of <em>look*</em> puzzled (13%)</li>
+  <li>12 instances of <em>look* a little confused</em> vs 62 of <em>look* confused</em> (19%)</li>
+  <li>12 instances of <em>look* a little embarrassed</em> vs 28 of <em>look* embarrassed</em> (43%)</li>
+  <li>7 instances of <em>look* a little sheepish</em> vs 13 instances of <em>look* sheepish</em> (54%)</li>
+</ul>
+
+<p>Pulling on my amateur sociolinguist’s deerstalker hat (one of which fashion-forward Claudia would undoubtedly own), I noticed that, as the percentages in this short list increased – that is, as the likelihood that one of these states would be qualified by “a little” – so the perceived negative qualities of the emotion seemed also to increase. There’s nothing particularly wrong with or shameful about being surprised, I figured, so perhaps it’s not very important to cushion that judgment of oneself or others with “a little”. But if someone is embarrassed or sheepish, then that’s an unpleasant state for them to be in, and for others to witness them in, so it might become more pressing to modify those descriptors.</p>
+
+<p>I really wanted the other Data-Sitters to weigh in on this – safety in numbers when you have a potentially dangerous data-sitting job – but I still had some work to do. For a start, I wanted to be sure I had captured all the adjectives describing emotional states that were modified by “a little” in the corpus, rather than relying on those I had identified manually, and see whether my hypothesis still held. The best way to do this was to apply part-of-speech tags, or POS-tags, to every word in the corpus. This is most efficiently done with something like the NLTK’s nltk.pos_tag function. But, as I wanted to use only tools with a GUI, I turned to the<a href="http://ucrel-api.lancaster.ac.uk/claws/free.html">  CLAWS POS-tagger</a>, which allows you to manually paste in plain-text and get back a version that has had parts of speech tags applied to it automatically. A singular noun such as “cat” will be tagged as <code class="highlighter-rouge">cat_NN1</code>, for instance, while a verb such as “babysit” will be tagged <code class="highlighter-rouge">babysit_VV0</code> and so forth. The automated tagging isn’t perfect, but as it would take an absurd amount of time to manually assign part-of-speech tags to a corpus this size, it’s a good deal better than not having any pos-tags at all. The<a href="http://ucrel.lancs.ac.uk/claws7tags.html">  C7 tagset</a>, which is the one I was using, has three tags for adjectives: JJ (general adjective), JJR (general comparative adjective and JJT (general superlative adjective), which are appended to the end of each word with an underscore, so you can include all or part of a tag in your search term by using wildcards. AntConc allows you to specify the characters that separate words from their tags, so once I had tagged my corpus and loaded it into AntConc, I set the tag marker to _ (<em>Settings &gt; Global Settings</em> then select <em>Tags</em> and look in the box next to <em>Tag</em> marker). I then typed in the search query <code class="highlighter-rouge">a_* little_* *_J*</code> (meaning “find me all instances of phrases consisting of the word a followed by any tag, then “little” followed by any tag, then any word followed by a tag that starts with J and contains 0 or more other letters, ie. JJ, JJR and JJT”), and hit <em>Start</em>.</p>
+
+<p>I got back 1271 results, mostly consisting of adjectives of the sort I was looking for, but there were a fair number of errors such a “little stuffed koala bear” (where a “little” denoted size), and “let’s go downtown, shop a little, separate for lunch and then shop some more” (where a tagging error had missed the comma before “separate” and thus miscategorized it as an adjective rather than a noun). I saved the output to a text file, opened that in Excel and manually removed all the false positives, which yielded a list of 1054. I then ran the same search but with a search query string that picked up the past participles of verbs (ie. <code class="highlighter-rouge">a_* little_* *_VVN</code>), so as to return phrases such as “a little carried away” and “a little choked up”. This search produced 353 results which, after removing a few errors (eg. “a little jeweled mirror”), left me with 351. Once that was done, I amalgamated the two lists, copied the column containing “a little” + the descriptor, and pasted it into a new file in the text editor BBEdit. I used regular expressions to strip out the tags and all the words in the sentence except the descriptor (replacing <code class="highlighter-rouge">a_.{2}\slittle_.{2}\s </code> with nothing to remove the text that preceded each descriptor, <code class="highlighter-rouge">_.{2,3}\s.*</code> with nothing to remove the text that followed, and <code class="highlighter-rouge">\n[^a-z]*</code> with <code class="highlighter-rouge">\n</code> to clean up any stray non-alphanumeric characters), and was left with a list of 1405 descriptors. (For more on using regular expressions, see <a href="https://datasittersclub.github.io/site/dscm3/">DSC Multilingual Mystery #3</a>.)</p>
+
+<p>But I wasn’t quite done yet. I had to find out how many of each type of word there were in my list, so I used OpenRefine’s Text Facet function to get a list of the clustered terms (367, as it turns out) with counts. OpenRefine will give you a tab-separated version of this information (if you click ‘367 choices’, just below the words ‘Column 1’ to the left of the screen), so I dumped that into Excel, and added two more columns: the number of times the word appeared in the corpus in total, and the proportion of times the word was modified by a little. (For those seeking a proper tutorial on how to use the power tool that is OpenRefine, Quinn’s got you covered: see <a href="https://datasittersclub.github.io/site/dscm3/">DSC Multilingual Mystery #3</a>.)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>word</th>
+      <th>n preceded by a little in BSC corpus</th>
+      <th>total n in BSC corpus</th>
+      <th>n preceded by a little in BSC corpus / total n in BSC corpus (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>panicky</td>
+      <td>6</td>
+      <td>13</td>
+      <td>46.15384615</td>
+    </tr>
+    <tr>
+      <td>straighter</td>
+      <td>8</td>
+      <td>25</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>slower</td>
+      <td>8</td>
+      <td>28</td>
+      <td>28.57142857</td>
+    </tr>
+    <tr>
+      <td>queasy</td>
+      <td>5</td>
+      <td>18</td>
+      <td>27.77777778</td>
+    </tr>
+    <tr>
+      <td>taken_aback</td>
+      <td>6</td>
+      <td>22</td>
+      <td>27.27272727</td>
+    </tr>
+    <tr>
+      <td>choked_up</td>
+      <td>10</td>
+      <td>38</td>
+      <td>26.31578947</td>
+    </tr>
+    <tr>
+      <td>shaky</td>
+      <td>18</td>
+      <td>82</td>
+      <td>21.95121951</td>
+    </tr>
+    <tr>
+      <td>sheepish</td>
+      <td>8</td>
+      <td>40</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>carried_away</td>
+      <td>8</td>
+      <td>41</td>
+      <td>19.51219512</td>
+    </tr>
+    <tr>
+      <td>calmer</td>
+      <td>6</td>
+      <td>31</td>
+      <td>19.35483871</td>
+    </tr>
+    <tr>
+      <td>overwhelmed</td>
+      <td>9</td>
+      <td>52</td>
+      <td>17.30769231</td>
+    </tr>
+    <tr>
+      <td>dazed</td>
+      <td>5</td>
+      <td>32</td>
+      <td>15.625</td>
+    </tr>
+    <tr>
+      <td>dizzy</td>
+      <td>5</td>
+      <td>40</td>
+      <td>12.5</td>
+    </tr>
+    <tr>
+      <td>disappointed</td>
+      <td>29</td>
+      <td>266</td>
+      <td>10.90225564</td>
+    </tr>
+    <tr>
+      <td>bewildered</td>
+      <td>8</td>
+      <td>74</td>
+      <td>10.81081081</td>
+    </tr>
+    <tr>
+      <td>annoyed</td>
+      <td>14</td>
+      <td>142</td>
+      <td>9.85915493</td>
+    </tr>
+    <tr>
+      <td>jealous</td>
+      <td>15</td>
+      <td>164</td>
+      <td>9.146341463</td>
+    </tr>
+    <tr>
+      <td>nervous</td>
+      <td>63</td>
+      <td>709</td>
+      <td>8.885754584</td>
+    </tr>
+    <tr>
+      <td>guilty</td>
+      <td>24</td>
+      <td>273</td>
+      <td>8.791208791</td>
+    </tr>
+    <tr>
+      <td>immature</td>
+      <td>6</td>
+      <td>73</td>
+      <td>8.219178082</td>
+    </tr>
+    <tr>
+      <td>confused</td>
+      <td>25</td>
+      <td>311</td>
+      <td>8.038585209</td>
+    </tr>
+    <tr>
+      <td>distracted</td>
+      <td>8</td>
+      <td>101</td>
+      <td>7.920792079</td>
+    </tr>
+    <tr>
+      <td>lonely</td>
+      <td>10</td>
+      <td>129</td>
+      <td>7.751937984</td>
+    </tr>
+    <tr>
+      <td>embarrassed</td>
+      <td>25</td>
+      <td>332</td>
+      <td>7.530120482</td>
+    </tr>
+    <tr>
+      <td>uncomfortable</td>
+      <td>12</td>
+      <td>162</td>
+      <td>7.407407407</td>
+    </tr>
+    <tr>
+      <td>odd</td>
+      <td>10</td>
+      <td>161</td>
+      <td>6.211180124</td>
+    </tr>
+    <tr>
+      <td>suspicious</td>
+      <td>10</td>
+      <td>163</td>
+      <td>6.134969325</td>
+    </tr>
+    <tr>
+      <td>awkward</td>
+      <td>5</td>
+      <td>82</td>
+      <td>6.097560976</td>
+    </tr>
+    <tr>
+      <td>puzzled</td>
+      <td>10</td>
+      <td>174</td>
+      <td>5.747126437</td>
+    </tr>
+    <tr>
+      <td>louder</td>
+      <td>7</td>
+      <td>123</td>
+      <td>5.691056911</td>
+    </tr>
+    <tr>
+      <td>surprised</td>
+      <td>42</td>
+      <td>760</td>
+      <td>5.526315789</td>
+    </tr>
+    <tr>
+      <td>complicated</td>
+      <td>10</td>
+      <td>183</td>
+      <td>5.464480874</td>
+    </tr>
+    <tr>
+      <td>easier</td>
+      <td>13</td>
+      <td>240</td>
+      <td>5.416666667</td>
+    </tr>
+    <tr>
+      <td>early</td>
+      <td>40</td>
+      <td>805</td>
+      <td>4.968944099</td>
+    </tr>
+    <tr>
+      <td>embarrassing</td>
+      <td>6</td>
+      <td>138</td>
+      <td>4.347826087</td>
+    </tr>
+    <tr>
+      <td>harder</td>
+      <td>8</td>
+      <td>190</td>
+      <td>4.210526316</td>
+    </tr>
+    <tr>
+      <td>worried</td>
+      <td>26</td>
+      <td>674</td>
+      <td>3.857566766</td>
+    </tr>
+    <tr>
+      <td>concerned</td>
+      <td>10</td>
+      <td>263</td>
+      <td>3.802281369</td>
+    </tr>
+    <tr>
+      <td>closer</td>
+      <td>14</td>
+      <td>389</td>
+      <td>3.598971722</td>
+    </tr>
+    <tr>
+      <td>further</td>
+      <td>5</td>
+      <td>141</td>
+      <td>3.546099291</td>
+    </tr>
+    <tr>
+      <td>scary</td>
+      <td>10</td>
+      <td>286</td>
+      <td>3.496503497</td>
+    </tr>
+    <tr>
+      <td>unusual</td>
+      <td>5</td>
+      <td>144</td>
+      <td>3.472222222</td>
+    </tr>
+    <tr>
+      <td>difficult</td>
+      <td>7</td>
+      <td>233</td>
+      <td>3.004291845</td>
+    </tr>
+    <tr>
+      <td>strange</td>
+      <td>13</td>
+      <td>447</td>
+      <td>2.908277405</td>
+    </tr>
+    <tr>
+      <td>late</td>
+      <td>29</td>
+      <td>1153</td>
+      <td>2.515177797</td>
+    </tr>
+    <tr>
+      <td>weird</td>
+      <td>16</td>
+      <td>687</td>
+      <td>2.328966521</td>
+    </tr>
+    <tr>
+      <td>sad</td>
+      <td>12</td>
+      <td>521</td>
+      <td>2.303262956</td>
+    </tr>
+    <tr>
+      <td>bored</td>
+      <td>6</td>
+      <td>263</td>
+      <td>2.281368821</td>
+    </tr>
+    <tr>
+      <td>shocked</td>
+      <td>5</td>
+      <td>227</td>
+      <td>2.202643172</td>
+    </tr>
+    <tr>
+      <td>older</td>
+      <td>19</td>
+      <td>877</td>
+      <td>2.166476625</td>
+    </tr>
+    <tr>
+      <td>better</td>
+      <td>63</td>
+      <td>2912</td>
+      <td>2.163461538</td>
+    </tr>
+    <tr>
+      <td>tired</td>
+      <td>13</td>
+      <td>641</td>
+      <td>2.028081123</td>
+    </tr>
+    <tr>
+      <td>wild</td>
+      <td>9</td>
+      <td>498</td>
+      <td>1.807228916</td>
+    </tr>
+    <tr>
+      <td>afraid</td>
+      <td>10</td>
+      <td>591</td>
+      <td>1.692047377</td>
+    </tr>
+    <tr>
+      <td>scared</td>
+      <td>7</td>
+      <td>436</td>
+      <td>1.605504587</td>
+    </tr>
+    <tr>
+      <td>crazy</td>
+      <td>12</td>
+      <td>845</td>
+      <td>1.420118343</td>
+    </tr>
+    <tr>
+      <td>hurt</td>
+      <td>11</td>
+      <td>780</td>
+      <td>1.41025641</td>
+    </tr>
+    <tr>
+      <td>young</td>
+      <td>8</td>
+      <td>614</td>
+      <td>1.302931596</td>
+    </tr>
+    <tr>
+      <td>different</td>
+      <td>19</td>
+      <td>1526</td>
+      <td>1.24508519</td>
+    </tr>
+    <tr>
+      <td>angry</td>
+      <td>7</td>
+      <td>576</td>
+      <td>1.215277778</td>
+    </tr>
+    <tr>
+      <td>sick</td>
+      <td>7</td>
+      <td>706</td>
+      <td>0.991501416</td>
+    </tr>
+    <tr>
+      <td>funny</td>
+      <td>9</td>
+      <td>1178</td>
+      <td>0.764006791</td>
+    </tr>
+    <tr>
+      <td>younger</td>
+      <td>6</td>
+      <td>800</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <td>hard</td>
+      <td>18</td>
+      <td>2488</td>
+      <td>0.723472669</td>
+    </tr>
+    <tr>
+      <td>sorry</td>
+      <td>10</td>
+      <td>1773</td>
+      <td>0.564015792</td>
+    </tr>
+    <tr>
+      <td>short</td>
+      <td>5</td>
+      <td>1017</td>
+      <td>0.491642085</td>
+    </tr>
+    <tr>
+      <td>old</td>
+      <td>7</td>
+      <td>3979</td>
+      <td>0.175923599</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>I sat back and looked at my handiwork with satisfaction: a table of the words in the BSC modified by “a little” 5 times or more, sorted from highest to lowest likelihood of being thus modified. The columns made it easy to see that a word like “panicky”, for instance, was preceded by “a little” over 46% of the time, which looked like an impressively high result, but as “panicky” only made 13 appearances in the corpus in total, this wasn’t a very reliable finding. In comparison, words like “tired” (modified just over 2% of the time) or “sick” (modified just under 1% of the time) had much lower likelihoods of appearing after “a little”, but with a much higher frequency in the corpus (both around 700 instances), the proportions were more reliable. How much more reliable, I couldn’t say: one of the missing things in doctoral training in English literature and the Stoneybrook Middle School curriculum is a proper grounding in statistics. Without that in my own disciplinary background, my best bet was to find another Data-Sitter or perhaps recruit a new associate Data-Sitter with which to collaborate. A book for later in the series, perhaps (drop us a tweet at #DataSittersClub if you’re interested).</p>
+
+<p>So, some of the terms in the list were more trustworthy than others. But to what extent did that compromise my earlier hypothesis about there being a focus in the books on mitigating unpleasant emotions via the (over)use of the premodifying phrase a little? There were terms towards the top of the list – <em>panicky, queasy, taken aback, choked up, sheepish, carried away</em> – which seemed very much in tune with the intense emotions experienced in teenagerhood: feelings whose distress was multiplied by the mortifying possibility that you would be observed – and judged – for going through them, rather than gliding through them unruffled. But as evocative as they were, these terms were not a reliable basis on which to build an argument, as they each numbered only a few dozen. However, a little further down the list were terms including <em>disappointed, annoyed, jealous, nervous, guilty, confused, embarrassed</em> and <em>uncomfortable</em> that, while denoting feelings that were perhaps less viscerally intense, nonetheless signalled other unpleasant states, and which appeared at least a hundred times in the corpus (nervous, in fact, appeared 709 times). These seemed like more of a solid basis on which to hang an interpretation. And, taking the more and the less reliable terms all together, it did feel like the list moved, roughly, from more intense to less intense, and from more excessive to more reasonable, as the likelihood of modification by “a little” decreased. Describing someone as “carried away” felt to me as if it contained the implication that they were over-excited and unreasonably emotional, as opposed to “worried” or “concerned” which didn’t carry those same overtones of inappropriate excess.</p>
+
+<p>Pondering the extent to which my British/Australian English would lead my judgments about the positive or negative associations of particular words in 1980s tween American English to differ to those of the rest of the Data-Sitters on the other side of the Atlantic, I went off to search for a reference corpus. The Corpus of Contemporary American English (COCA) presented itself as my best option, as it contains 1 billion words from 1990 to the present, and covers a range of genres, including fiction. It was far from a perfect match, and the interface limited me to an irritatingly low number of queries per 24 hour period, but it was the best thing to hand. I rolled up my sleeves and got searching.</p>
+
+<p>Querying COCA for all phrases with “a little” + an adjective turned up a list that, sorted by frequency, was also heavy on the negative terms, but didn’t follow quite the same pattern I’d been hypothesizing about:</p>
+
+<p><img src="/site/assets/dsc4_COCA_ALittle.png" alt="COCA results for 'a little'" style="float: right;margin-right: 7px;margin-top: 0px;" /></p>
+
+<p>I wasn’t comparing like with like here, of course: I’d selected from the BSC corpus only those adjectives that I interpreted as descriptive of emotional states, and my COCA search had delivered all adjectives, but it nonetheless showed that negatively-inflected words did generally outnumber positively-inflected ones. The most common negative terms, however, weren’t along the lines of the intensely emotional words that had been prominent in the DSC corpus. Terms like <em>scared, disappointed, uncomfortable, worried, awkward</em> and <em>embarrassed</em> were, in fact, less frequent than more prosaic terms like different, extra and higher. In other words, American English of the last four or so decades didn’t seem to be as focused on the discursive cushioning of emotional distress as the BSC books.</p>
+
+<p>However, when I repeated with COCA what I’d done on the BSC corpus—considering not just the raw frequencies but also the likelihood that a particular word would be modified by a little—the results looked much more like what I’d found earlier. The words “higher” and “different”, prominent in the raw frequencies, retreated further down the list due to their relatively high incidence as unmodified terms, and the words that clustered at the top (all with at least a few hundred appearances in the corpus) were more redolent of the intense-emotions words in the BSC: <em>nervous, awkward, embarrassed, disappointed, uncomfortable</em>. As I went down the list, these words gave way to others that conveyed less intensity: <em>scared</em> and <em>sad</em> yielded to the somewhat more formal worried and concerned, and a little further down more neutral and positive terms began appearing (<em>bigger, easier, better</em>).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>word</th>
+      <th>n preceded by a little in COCA</th>
+      <th>total n in COCA</th>
+      <th>n preceded by a little in COCA / total n in COCA (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>nervous</td>
+      <td>1767</td>
+      <td>33768</td>
+      <td>5.232764748</td>
+    </tr>
+    <tr>
+      <td>awkward</td>
+      <td>395</td>
+      <td>14593</td>
+      <td>2.706777222</td>
+    </tr>
+    <tr>
+      <td>embarrassed</td>
+      <td>387</td>
+      <td>14747</td>
+      <td>2.624262562</td>
+    </tr>
+    <tr>
+      <td>extra</td>
+      <td>1687</td>
+      <td>65358</td>
+      <td>2.581168334</td>
+    </tr>
+    <tr>
+      <td>weird</td>
+      <td>1024</td>
+      <td>41486</td>
+      <td>2.46830256</td>
+    </tr>
+    <tr>
+      <td>disappointed</td>
+      <td>498</td>
+      <td>21133</td>
+      <td>2.356504046</td>
+    </tr>
+    <tr>
+      <td>uncomfortable</td>
+      <td>467</td>
+      <td>20240</td>
+      <td>2.307312253</td>
+    </tr>
+    <tr>
+      <td>scary</td>
+      <td>466</td>
+      <td>21383</td>
+      <td>2.179301314</td>
+    </tr>
+    <tr>
+      <td>rough</td>
+      <td>499</td>
+      <td>27516</td>
+      <td>1.813490333</td>
+    </tr>
+    <tr>
+      <td>surprised</td>
+      <td>843</td>
+      <td>47280</td>
+      <td>1.782994924</td>
+    </tr>
+    <tr>
+      <td>tired</td>
+      <td>869</td>
+      <td>50685</td>
+      <td>1.714511197</td>
+    </tr>
+    <tr>
+      <td>odd</td>
+      <td>494</td>
+      <td>29414</td>
+      <td>1.67947236</td>
+    </tr>
+    <tr>
+      <td>strange</td>
+      <td>789</td>
+      <td>55527</td>
+      <td>1.420930358</td>
+    </tr>
+    <tr>
+      <td>crazy</td>
+      <td>1007</td>
+      <td>86075</td>
+      <td>1.169909962</td>
+    </tr>
+    <tr>
+      <td>scared</td>
+      <td>517</td>
+      <td>44224</td>
+      <td>1.16904848</td>
+    </tr>
+    <tr>
+      <td>sad</td>
+      <td>499</td>
+      <td>51799</td>
+      <td>0.963339061</td>
+    </tr>
+    <tr>
+      <td>older</td>
+      <td>826</td>
+      <td>94860</td>
+      <td>0.870756905</td>
+    </tr>
+    <tr>
+      <td>worried</td>
+      <td>462</td>
+      <td>55732</td>
+      <td>0.8289672</td>
+    </tr>
+    <tr>
+      <td>concerned</td>
+      <td>565</td>
+      <td>74264</td>
+      <td>0.760799311</td>
+    </tr>
+    <tr>
+      <td>slow</td>
+      <td>498</td>
+      <td>66674</td>
+      <td>0.746917839</td>
+    </tr>
+    <tr>
+      <td>late</td>
+      <td>1342</td>
+      <td>187921</td>
+      <td>0.714129874</td>
+    </tr>
+    <tr>
+      <td>busy</td>
+      <td>358</td>
+      <td>50183</td>
+      <td>0.713388996</td>
+    </tr>
+    <tr>
+      <td>bigger</td>
+      <td>384</td>
+      <td>55578</td>
+      <td>0.690920868</td>
+    </tr>
+    <tr>
+      <td>easier</td>
+      <td>381</td>
+      <td>60632</td>
+      <td>0.628381053</td>
+    </tr>
+    <tr>
+      <td>different</td>
+      <td>2456</td>
+      <td>413594</td>
+      <td>0.593819059</td>
+    </tr>
+    <tr>
+      <td>higher</td>
+      <td>658</td>
+      <td>145934</td>
+      <td>0.450888758</td>
+    </tr>
+    <tr>
+      <td>short</td>
+      <td>491</td>
+      <td>151942</td>
+      <td>0.323149623</td>
+    </tr>
+    <tr>
+      <td>difficult</td>
+      <td>397</td>
+      <td>136572</td>
+      <td>0.29068916</td>
+    </tr>
+    <tr>
+      <td>longer</td>
+      <td>416</td>
+      <td>155671</td>
+      <td>0.267230248</td>
+    </tr>
+    <tr>
+      <td>hard</td>
+      <td>786</td>
+      <td>308005</td>
+      <td>0.255190662</td>
+    </tr>
+    <tr>
+      <td>early</td>
+      <td>602</td>
+      <td>262539</td>
+      <td>0.229299266</td>
+    </tr>
+    <tr>
+      <td>old</td>
+      <td>736</td>
+      <td>425700</td>
+      <td>0.172891708</td>
+    </tr>
+    <tr>
+      <td>black</td>
+      <td>367</td>
+      <td>310325</td>
+      <td>0.118263111</td>
+    </tr>
+    <tr>
+      <td>white</td>
+      <td>374</td>
+      <td>369206</td>
+      <td>0.101298462</td>
+    </tr>
+    <tr>
+      <td>better</td>
+      <td>368</td>
+      <td>495459</td>
+      <td>0.074274562</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>(The lower percentages in the right-most column are explained by the fact that COCA is a great deal bigger than the BSC corpus. The larger the corpus, the larger the number of unique words, so it’s understandable that the number of times any single word occurs in a bigger corpus relative to the total word count will be lower than the same calculation for the same word in a smaller corpus.)</p>
+
+<p>While I was wondering what to make of the appearance of more objectively descriptive terms such as <em>bigger, easier, better</em>, I made a momentous discovery. There was in fact a decent reference corpus for the BSC, and it had been right in front of my nose all along: COCA’s sub-corpus of Juvenile Fiction! (That’d teach me not to read the documentation properly when taking a new corpus for a ride.) At 3.2 million words it was, size-wise, in the same ballpark as our DSC corpus, and so I wouldn’t even have to do any sampling to bring the two corpora into line. I ran the same “a little” + adjective search that I’d done for the big COCA corpus (including words that were premodified 3 times or more), normalized by the raw frequencies as before, and then, again, sorted the terms by likelihood of being premodified by “a little”.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>word</th>
+      <th>n preceded by a little in COCA Juv Fic</th>
+      <th>total n in COCA Juv Fic</th>
+      <th>n preceded by a little in COCA Juv Fic / total n in COCA Juv Fic (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>confusing</td>
+      <td>3</td>
+      <td>17</td>
+      <td>17.64705882</td>
+    </tr>
+    <tr>
+      <td>jealous</td>
+      <td>5</td>
+      <td>83</td>
+      <td>6.024096386</td>
+    </tr>
+    <tr>
+      <td>nervous</td>
+      <td>11</td>
+      <td>247</td>
+      <td>4.453441296</td>
+    </tr>
+    <tr>
+      <td>shy</td>
+      <td>3</td>
+      <td>73</td>
+      <td>4.109589041</td>
+    </tr>
+    <tr>
+      <td>embarrassed</td>
+      <td>4</td>
+      <td>118</td>
+      <td>3.389830508</td>
+    </tr>
+    <tr>
+      <td>extra</td>
+      <td>5</td>
+      <td>183</td>
+      <td>2.732240437</td>
+    </tr>
+    <tr>
+      <td>guilty</td>
+      <td>3</td>
+      <td>126</td>
+      <td>2.380952381</td>
+    </tr>
+    <tr>
+      <td>rough</td>
+      <td>3</td>
+      <td>128</td>
+      <td>2.34375</td>
+    </tr>
+    <tr>
+      <td>higher</td>
+      <td>3</td>
+      <td>152</td>
+      <td>1.973684211</td>
+    </tr>
+    <tr>
+      <td>crazy</td>
+      <td>6</td>
+      <td>322</td>
+      <td>1.863354037</td>
+    </tr>
+    <tr>
+      <td>lower</td>
+      <td>3</td>
+      <td>165</td>
+      <td>1.818181818</td>
+    </tr>
+    <tr>
+      <td>weak</td>
+      <td>3</td>
+      <td>184</td>
+      <td>1.630434783</td>
+    </tr>
+    <tr>
+      <td>older</td>
+      <td>8</td>
+      <td>499</td>
+      <td>1.603206413</td>
+    </tr>
+    <tr>
+      <td>weird</td>
+      <td>3</td>
+      <td>195</td>
+      <td>1.538461538</td>
+    </tr>
+    <tr>
+      <td>pale</td>
+      <td>4</td>
+      <td>269</td>
+      <td>1.486988848</td>
+    </tr>
+    <tr>
+      <td>tired</td>
+      <td>6</td>
+      <td>432</td>
+      <td>1.388888889</td>
+    </tr>
+    <tr>
+      <td>scared</td>
+      <td>5</td>
+      <td>393</td>
+      <td>1.272264631</td>
+    </tr>
+    <tr>
+      <td>early</td>
+      <td>6</td>
+      <td>482</td>
+      <td>1.244813278</td>
+    </tr>
+    <tr>
+      <td>strange</td>
+      <td>6</td>
+      <td>493</td>
+      <td>1.21703854</td>
+    </tr>
+    <tr>
+      <td>mad</td>
+      <td>4</td>
+      <td>330</td>
+      <td>1.212121212</td>
+    </tr>
+    <tr>
+      <td>different</td>
+      <td>6</td>
+      <td>721</td>
+      <td>0.832177531</td>
+    </tr>
+    <tr>
+      <td>afraid</td>
+      <td>4</td>
+      <td>556</td>
+      <td>0.71942446</td>
+    </tr>
+    <tr>
+      <td>sick</td>
+      <td>3</td>
+      <td>418</td>
+      <td>0.717703349</td>
+    </tr>
+    <tr>
+      <td>green</td>
+      <td>5</td>
+      <td>785</td>
+      <td>0.636942675</td>
+    </tr>
+    <tr>
+      <td>longer</td>
+      <td>3</td>
+      <td>502</td>
+      <td>0.597609562</td>
+    </tr>
+    <tr>
+      <td>late</td>
+      <td>4</td>
+      <td>737</td>
+      <td>0.542740841</td>
+    </tr>
+    <tr>
+      <td>brown</td>
+      <td>3</td>
+      <td>648</td>
+      <td>0.462962963</td>
+    </tr>
+    <tr>
+      <td>old</td>
+      <td>5</td>
+      <td>2831</td>
+      <td>0.176616037</td>
+    </tr>
+    <tr>
+      <td>white</td>
+      <td>3</td>
+      <td>1732</td>
+      <td>0.173210162</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The raw frequencies were even lower here than in my BSC corpus, so all the same disclaimers applied. But the comparison with the COCA corpus and the COCA Juvenile Fiction sub-corpus did suggest that, while it might be a feature of American English that words or phrases describing unpleasant emotional states would be fairly likely to be modified by “a little”—both in children’s and teen fiction and in language more generally, which is something that I imagine sociolinguists are already well aware of and have explanations for, and perhaps they’d like to weigh in with them on our #DataSittersClub hashtag if they’re reading this—the BSC books had a more intensified version of this discursive formation going on. The terms that topped the COCA and COCA Juvenile Fiction searches – <em>confusing, jealous, nervous, shy, embarrassed, awkward</em> – appeared in the BSC search, but some way down the list (jealous was the highest, coming in at number 17). Above those words (which, to me at least, signalled a moderate level of distress) there were more intensive emotional states, many of which had some kind of somatic dimension to them: <em>panicky, queasy, choked up, shaky, dazed, dizzy</em>. It was as if the BSC books had taken an existing pattern in language and amped it up so as to capture, and foreground, the intimate nexus between bodily and emotional states that is often portrayed as quintessential to the experience of being a teenager.</p>
+
+<p>By now I was bursting to take all of this to a Data-Sitters Club meeting and to hear what everyone else made of it. We dialled in – Quinn having rigged up a green screen for her Zoom background so that her head appeared, Cheshire Cat-like, in front of a rainbow of BSC covers – and I ran everyone through the searches, the word lists, the disclaimers, the reference corpora and all the rest of it. I shared my AntConc screen and ran some searches to illustrate. I finished with my grand unified theory of what it meant for our understanding of the ideological work being done by the books: “… and so it feels to me like the books might be modelling for the reader in a discursive way one of the forms of emotional labor that women are socialized to do in daily life: regulating other people’s emotions for them.”</p>
+
+<p><img src="/site/assets/dsc4_QuinnGreenScreen.jpg" alt="Quinn on Zoom with a green screen and BSC books" style="float: right;margin-right: 7px;margin-top: 0px;" /></p>
+
+<p>No one was interested in my dumb theory. Everyone was, however, entranced by AntConc. “Hey, I saw ‘happy ending’ a bunch of times!” exclaimed Roopsi. “Can you look that up?”</p>
+
+<p><img src="/site/assets/dsc4_HappyEnding.png" alt="AntConc results for 'happy ending'" style="float: right;margin-right: 7px;margin-top: 0px;" /></p>
+
+<p>“Sure,” I said, and did the search. Everyone started to talk at once about why there might be so many mentions of happy endings, and whether this was about the endings of the novels themselves, ways of describing what happened to characters and families, or something else. It was, I had to admit, more interesting than my deep dive into “a little”.</p>
+
+<p>“I’m sure they start talking about Ronald Reagan at one point”, Katia said, so I looked up <em>reagan</em>.</p>
+
+<p><img src="/site/assets/dsc4_Reagan.png" alt="AntConc results for 'Regan'" style="float: right;margin-right: 7px;margin-top: 0px;" /></p>
+
+<p>“Wait, are they talking about <em>Back to the Future</em>? They’re talking about <em>Back to the Future</em>!” Roopsi squealed.</p>
+
+<p><img src="/site/assets/dsc4_BTTF.png" alt="AntConc results for 'Back to the Future'" style="float: right;margin-right: 7px;margin-top: 0px;" /></p>
+
+<p>And, before I knew it, we were down a rabbit hole of the movies the BSC characters watched:</p>
+
+<p><img src="/site/assets/dsc4_WizOfOz.png" alt="AntConc results for 'Wizard of Oz'" style="float: right;margin-right: 7px;margin-top: 0px;" /></p>
+
+<p>“Um. Guys … guys?” I said, trying to get us back on track by using the term that the BSC overwhelmingly uses to address each other.</p>
+
+<p><img src="/site/assets/dsc4_Guys.png" alt="AntConc results for 'guys'" style="float: right;margin-right: 7px;margin-top: 0px;" /></p>
+
+<p>“<em>Guys</em>,” I said more firmly, attempting to channel Kristy bringing a BSC meeting to order. “What do you think about these findings around ‘a little’ and the interpretation I’ve come up with? Is there something there? What have I missed?”</p>
+
+<p>Gradually, everyone turned their attention back to the searches I’d done. “I think you’d want to look at other kinds of modifying phrases as well”, suggested Quinn. “Like ‘sort of’ and ‘kind of’, and see if the same pattern appeared.”</p>
+
+<p>“Yeah, I had the same idea,” I said, “but I was running a bit short on time. I’ll give them a go, though. ”</p>
+
+<p>“You could also look at what comes after those phrases,” Roopsi pointed out. “If they’re followed by the word ‘but’, for instance, that’d change something of the meaning.”</p>
+
+<p>“OK, cool.” I said. “That’s pretty easy to try out.” And sure enough, a few quick searches pulled up lots of hits where but worked to signal a swerve away from whatever the ‘a little’ + descriptor phrase had been hedging.</p>
+
+<p><img src="/site/assets/dsc4_ALittleBut.png" alt="AntConc results for 'a little, but'" style="float: right;margin-right: 7px;margin-top: 0px;" />
+<img src="/site/assets/dsc4_ALittleBut2.png" alt="AntConc results for 'a little, but'" style="float: right;margin-right: 7px;margin-top: 0px;" /></p>
+
+<p>“Does it make a difference who’s talking to who? Or whether the narrator is describing an interaction?” wondered Katia.</p>
+
+<p>“Yeah, that was one of the things I wanted to look at in more detail too,” I said. “I was curious about whether women and girls were overrepresented as either saying these phrases, or being described by them. I had a quick back-of-the-envelope look at it, but nothing really clear emerged. It’d have to be done properly by, I guess, using the tags to separate out masculine pronouns from feminine pronouns, automating the categorization of names into male and female, and so on. So it’s probably a bigger project for another day.”</p>
+
+<p>“It’s kind of surprising that ‘scared’ is so frequent,” said Roopsi. “I wonder if that’s the influence of the mysteries? Could you separate out the mysteries and do a search on just those?”</p>
+
+<p>“Sure,” I said. “You just have to construct a corpus out of just those files, put them in a folder, load that new folder into AntConc and off you go. You could even load the rest of the files into AntConc as your reference corpus, and then see how the mystery novels differed from the other BSC novels.”</p>
+
+<p>“’Bewildered’” is interesting,” mused Katia. “That doesn’t seem like the kind of word you’d expect to see in teen fiction.”</p>
+
+<p>“Maybe it’s a pet word for one of the ghostwriters?” Quinn wondered. “Hey, we could cross-reference all the books in which it appears with the list of which ghostwriter wrote what that’s on the fan wiki!”</p>
+
+<p>“That would be neat,” I agreed. “Maybe we can work towards an authorship attribution book in the future?”</p>
+
+<p>We talked some more, I took notes as best I could, and then everyone had to go off to other meetings, appointments, and in my case, to sleep.</p>
+
+<p>The other Data-Sitters had given me a lot to think about, and I was glad to have had their eyes on my methodology and results, such as they were, and their moderating influence on my somewhat premature conclusions. I tried out Quinn’s suggestion of looking for other premodifying phrases: “sort of” came in at 1232 instances, and had the same patterning around “sort of alike” that I’d noticed with “a little alike” in the Mary Anne and Kristy introductions, while “kind of” appeared 1940 time, and at a first glance seemed slightly more likely to collocate with positively inflected terms such as <em>cute, fun and interesting</em>. Following Roopsi’s idea of looking at what followed the words and phrases pre-modified by “a little”, I noticed other features – sometimes punctuation, sometimes the word “well” or “um” – being used to further delay or cushion the descriptors.</p>
+
+<p><img src="/site/assets/dsc4_ALittleWell.png" alt="AntConc results for 'a little, well'" style="float: right;margin-right: 7px;margin-top: 0px;" />
+<img src="/site/assets/dsc4_ALittleDotDotDot.png" alt="AntConc results for 'a little...'" style="float: right;margin-right: 7px;margin-top: 0px;" /></p>
+
+<p>These examples felt like they supported my theory: not only did most of them have some kind of negative connotations to them (rooms and houses being untidy; people being displeased; judgments about unpleasant character traits), but they showcased other ways to push back the moment when a negative judgement is voiced (“the script is a little – well, it’s a little boring and it seems a little … I don’t know … a little insulting”). I could see it was going to be hard to give up my theory. I guess close reading habits die hard.</p>
+
+<p>In the days that followed, I found myself wondering what these findings illuminated of the books more broadly. My thoughts kept returning to the pedagogical imperative of children’s literature that Maria had spoken about in <a href="https://datasittersclub.github.io/site/dsc3/">DSC #3: The Truth About Digital Humanities Collaborations (and Textual Variants!)</a>, and in addition, the socializing function of children’s literature that it is impossible not to notice when you begin reading children’s literature to children when you yourself are an adult. I couldn’t shake the sense that the BSC books were gently modelling to their readers ways to mitigate the emotional distress experienced by people around you, even if those people are characters in a book rather than real people in the real world, in ways that seemed to me remarkably well aligned with concepts of emotional labour that women are disproportionately socialised and expected to perform. Was it taking it too far to draw a conclusion of that sort just from lists of word frequencies? Maybe the other Data-Sitters would take up that question in their own explorations with Voyant. Maybe they’d find much more intriguing, or even contradictory, things. Or maybe they’d just happily fall down a rabbit hole following popular culture references from the 1980s and 1990s, and that’d be the last we ever heard of them.</p>
+
+<h3 id="suggested-citation">Suggested Citation</h3>
+
+<p>Lang, Anouk. “DSC #4: AntConc Saves the Day.” <em>The Data-Sitters Club</em>. April 10, 2020. https://datasittersclub.github.io/site/dsc4/.</p>
+
+
+        <footer class="site-footer">
+  <h2 class="footer-heading">The Data-Sitters Club</h2>
+
+  <div class="row">
+    <div class="column">
+      <ul class="contact-list">
+        <li>Need a Data-Sitter? <br> Save time!<br> Call The Data-Sitters Club.
+</li>
+        <li><a href="mailto:"></a></li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <ul class="social-media-list">
+        
+        <li>
+          <a href="https://github.com/datasittersclub">
+            <span class="icon  icon--github">
+              <svg viewBox="0 0 16 16">
+                <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+              </svg>
+            </span>
+
+            <span class="username">datasittersclub</span>
+          </a>
+        </li>
+        
+
+        
+        <li>
+          <a href="https://twitter.com/hashtag/datasittersclub?src=hashtag_click">
+            <span class="icon  icon--twitter">
+              <svg viewBox="0 0 16 16">
+                <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+              </svg>
+            </span>
+
+            <span class="username">datasittersclub</span>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+
+    <div class="column">
+      <p>A comprehensive, colloquial guide to digital humanities computational text analysis.</p>
+    </div>
+    <div class="column">
+      <p>1st place, <a href="http://dhawards.org/dhawards2019/results/"><img src="/site/assets/DHAwards2019-fun.png" /></a> (tie)</p>
+    </div>
+<div class="column">
+  <p>3rd place, <a href="http://dhawards.org/dhawards2019/results/"><img src="/site/assets/DHAwards2019-blog.png" /></a> (tie)</p>
+		
+</div>
+  </div>
+
+</footer>
+
+      </div>
+    
+    </main>
+
+    
+    
+  </body>
+
+</html>

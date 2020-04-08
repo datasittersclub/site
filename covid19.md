@@ -11,6 +11,7 @@ Also [compiled as a Facebook album](https://www.facebook.com/quinn.dombrowski/me
 Click on a cover to view the full-sized message!
 
 
+[![Don't let relatives talk you into going to an Easter party.](/site/assets/covid19/021_dsc_health_easter.jpg){:height="50%"}](/site/assets/covid19/021_dsc_health_easter.jpg)
 [![Don't give up, Mallory! Having clear guidelines for asking questions in Zoom classes is important.](/site/assets/covid19/020_dsc_health_dontgiveupmallory.jpg){:height="50%"}](/site/assets/covid19/020_dsc_health_dontgiveupmallory.jpg)
 [![The terrible truth about hugs and childcare.](/site/assets/covid19/019_dsc_health_terribletruth.jpg){:height="50%"}](/site/assets/covid19/019_dsc_health_terribletruth.jpg)
 
