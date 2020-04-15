@@ -11,6 +11,13 @@ Also [compiled as a Facebook album](https://www.facebook.com/quinn.dombrowski/me
 Click on a cover to view the full-sized message!
 
 
+[![Throw a birthday party on Zoom!](/site/assets/covid19/026_dsc_health_birthday.jpg){:height="50%"}](/site/assets/covid19/026_dsc_health_birthday.jpg)
+[![Just put on a mask, kids!](/site/assets/covid19/025_dsc_health_halloween.jpg){:height="50%"}](/site/assets/covid19/025_dsc_health_halloween.jpg)
+
+[![No one can tell you have a bad haircut on Zoom.](/site/assets/covid19/024_dsc_health_haircut.jpg){:height="50%"}](/site/assets/covid19/024_dsc_health_haircut.jpg)
+[![It's okay to not be a domestic goddess.](/site/assets/covid19/023_dsc_health_supersitter.jpg){:height="50%"}](/site/assets/covid19/023_dsc_health_supersitter.jpg)
+[![Don't go to the playground, Mary Anne!](/site/assets/covid19/022_dsc_health_playgroundfight.jpg){:height="50%"}](/site/assets/covid19/022_dsc_health_playgroundfight.jpg)
+
 [![Don't let relatives talk you into going to an Easter party.](/site/assets/covid19/021_dsc_health_easter.jpg){:height="50%"}](/site/assets/covid19/021_dsc_health_easter.jpg)
 [![Don't give up, Mallory! Having clear guidelines for asking questions in Zoom classes is important.](/site/assets/covid19/020_dsc_health_dontgiveupmallory.jpg){:height="50%"}](/site/assets/covid19/020_dsc_health_dontgiveupmallory.jpg)
 [![The terrible truth about hugs and childcare.](/site/assets/covid19/019_dsc_health_terribletruth.jpg){:height="50%"}](/site/assets/covid19/019_dsc_health_terribletruth.jpg)
