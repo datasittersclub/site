@@ -10,6 +10,14 @@ Also [compiled as a Facebook album](https://www.facebook.com/quinn.dombrowski/me
 
 Click on a cover to view the full-sized message!
 
+[![Your lemonade is unsafe, Karen.](/site/assets/covid19/041_dsc_guide_lemonade.jpg){:height="50%"}](/site/assets/covid19/041_dsc_guide_lemonade.jpg)
+[![Bad haircuts are better on Zoom.](/site/assets/covid19/040_dsc_guide_haircut.jpg){:height="50%"}](/site/assets/covid19/040_dsc_guide_haircut.jpg)
+
+
+[![Virtual birthday parties are a disaster.](/site/assets/covid19/039_dsc_guide_karen_birthday.jpg){:height="50%"}](/site/assets/covid19/039_dsc_guide_karen_birthday.jpg)
+[![Are your kids picking up your bad habits?](/site/assets/covid19/038_dsc_health_kristys_copycat.jpg){:height="50%"}](/site/assets/covid19/038_dsc_health_kristys_copycat.jpg)
+[![Stay back from dogs, too.](/site/assets/covid19/037_dsc_health_kristy_dogsitter.jpg){:height="50%"}](/site/assets/covid19/037_dsc_health_kristy_dogsitter.jpg)
+
 [![Virtual fishing is more fun](/site/assets/covid19/036_dsc_guide_fishing_trip.jpg){:height="50%"}](/site/assets/covid19/036_dsc_guide_fishing_trip.jpg)
 [![Too many boys at the beach.](/site/assets/covid19/035_dsc_health_mary_anne_too_many_boys.jpg){:height="50%"}](/site/assets/covid19/035_dsc_health_mary_anne_too_many_boys.jpg)
 [![No, do not drink bleach.](/site/assets/covid19/034_dsc_health_mystery_bakeoff.jpg){:height="50%"}](/site/assets/covid19/034_dsc_health_mystery_bakeoff.jpg)
