@@ -10,9 +10,12 @@ Also [compiled as a Facebook album](https://www.facebook.com/quinn.dombrowski/me
 
 Click on a cover to view the full-sized message!
 
+[![Art is great, but take it easy on the matching t-shirts, okay?](/site/assets/covid19/044_dsc_guide_little_sister.jpg){:height="50%"}](/site/assets/covid19/044_dsc_guide_little_sister.jpg)
+[![Have you seen your wallet lately?](/site/assets/covid19/043_dsc_guide_lucky_penny.jpg){:height="50%"}](/site/assets/covid19/043_dsc_guide_lucky_penny.jpg)
+
+[![Karen's a substitute teacher!](/site/assets/covid19/042_dsc_guide_bigjob.jpg){:height="50%"}](/site/assets/covid19/042_dsc_guide_bigjob.jpg)
 [![Your lemonade is unsafe, Karen.](/site/assets/covid19/041_dsc_guide_lemonade.jpg){:height="50%"}](/site/assets/covid19/041_dsc_guide_lemonade.jpg)
 [![Bad haircuts are better on Zoom.](/site/assets/covid19/040_dsc_guide_haircut.jpg){:height="50%"}](/site/assets/covid19/040_dsc_guide_haircut.jpg)
-
 
 [![Virtual birthday parties are a disaster.](/site/assets/covid19/039_dsc_guide_karen_birthday.jpg){:height="50%"}](/site/assets/covid19/039_dsc_guide_karen_birthday.jpg)
 [![Are your kids picking up your bad habits?](/site/assets/covid19/038_dsc_health_kristys_copycat.jpg){:height="50%"}](/site/assets/covid19/038_dsc_health_kristys_copycat.jpg)
