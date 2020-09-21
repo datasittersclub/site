@@ -56,6 +56,7 @@
 <p>But before we dive into the tech, you might want to <a href="https://datasittersclub.github.io/site/chapter-2/">read Chapter 2</a> about what the Data-Sitters Club is, and you <em>definitely</em> should meet Lee Skallerup-Bessette, who’s been working on the Multilingual Mysteries with me but is making her main-series debut here.</p>
 
 <h2 id="lee">Lee</h2>
+
 <p>While I was initially brought into the Data-Sitters Club because of my experience and expertise with French (and specifically Québécois) as well as plumbing the depths of national library databases and used bookstores online, I have a number of “adjacent” areas of expertise that are applicable here, too. I’m “adjacent” to DH in a lot of ways, but I am also “adjacent” to YA graphic novels, as well as adaptations and TEI.</p>
 
 <p><img src="/site/assets/dsc5_lee_tei_dhsi.jpg" alt="Lee's DHSI certificate for a DHSI workshop in 2012" style="float: right;margin-right: 7px;margin-top: 0px;width:400px;" /></p>
@@ -101,6 +102,7 @@
 <p>And soon you realize you’ve spent a lot of time making a file that’s <em>much less readable</em> than what you started with. The only way out of this mess is to keep going and learn how to write XSLT (we’ll get to that shortly), in order to transform your text cluttered up with angled brackets back into something that’s readable – and/or something that can count, compare, and make use of all the annotations you’ve made.</p>
 
 <h3 id="a-xxx-toolkit">A XXX Toolkit</h3>
+
 <p>Here’s another tricky thing about TEI: you can do everything I’ve described so far – marking up stuff in your text, and then analyzing it – <em>without TEI</em>. TEI is just a set of guidelines for what elements to use, what attributes those elements should have, and how to structure them hierarchically. It is <em>not</em> meant to be a <em>standard</em>, where you can count on particular elements always appearing in a particular order, and you can write code that will work to analyze or display any arbitrary TEI file in a particular way. I’ve worked on projects that have tried and failed chasing that dream, and mine aren’t the only project corpses along that road.</p>
 
 <p>The kind of syntax or formatting used for actually doing TEI markup is called XML (eXtensible Markup Language). There’s a whole set of languages that can be used together to locate, query, process, analyze, and transform XML documents: XSLT (eXtensible Style Sheet Language Transformations, a programming language used to transform XML), XPath (a formal way to navigate through XML documents), XQuery (for querying XML documents), and more. None of those languages for querying, transforming, and analyzing XML care about whether you’re using TEI, or any other set of elements and attributes that follow the rules for being “well-formed” XML.</p>
@@ -114,28 +116,28 @@
 <p>You write XML by putting element names in angled brackets at the <em>beginning</em> of the “stuff” that that element contains, and doing the same thing (with a forward slash before the element name) at the end of the “stuff”. And there has to be one single element that contains ALL THE THINGS in your XML. And you also have to close things in the order you open them – no overlapping tags. So here’s some well-formed XML that’s just a hierarchy of elements:</p>
 
 <p>&lt;claudias_bedroom&gt;<br />
-	&lt;under_bed&gt;<br />
-		&lt;book&gt;The Clue in the Camera&lt;/book&gt;<br />
-		&lt;candy&gt;Almond Joy&lt;/candy&gt;<br />
-	&lt;/under_bed&gt;<br />
-	&lt;closet&gt;<br />
-		&lt;candy&gt;Jolly Rancher&lt;/candy&gt;<br />
-		&lt;candy&gt;Jelly beans&lt;/candy&gt;<br />
-		&lt;candy&gt;gum&lt;/candy&gt;<br />
-	&lt;/closet&gt;<br />
+&lt;under_bed&gt;<br />
+&lt;book&gt;The Clue in the Camera&lt;/book&gt;<br />
+&lt;candy&gt;Almond Joy&lt;/candy&gt;<br />
+&lt;/under_bed&gt;<br />
+&lt;closet&gt;<br />
+&lt;candy&gt;Jolly Rancher&lt;/candy&gt;<br />
+&lt;candy&gt;Jelly beans&lt;/candy&gt;<br />
+&lt;candy&gt;gum&lt;/candy&gt;<br />
+&lt;/closet&gt;<br />
 &lt;/claudias_bedroom&gt;<br /></p>
 
 <p>If you want to add attributes, they go <em>inside</em> the element tag that they’re modifying, separated by a space. (This is why elements and attributes can’t have spaces as part of their names.)</p>
 
 <p>&lt;claudias_bedroom state=”messy”&gt;<br />
-	&lt;under_bed&gt;<br />
-		&lt;book series=”nancy_drew”&gt;The Clue in the Camera&lt;/book&gt;<br />
-		&lt;candy type=”chocolate”&gt;Almond Joy&lt;/candy&gt;<br />
-	&lt;/under_bed&gt;<br />
-	&lt;closet&gt;<br />
-		&lt;candy type=”fruit”&gt;Jolly Rancher&lt;/candy&gt;<br />
-		&lt;candy type=”fruit”&gt;Jelly beans&lt;/candy&gt;<br />
-		&lt;candy type=”other”&gt;gum&lt;/candy&gt;<br />
+&lt;under_bed&gt;<br />
+&lt;book series=”nancy_drew”&gt;The Clue in the Camera&lt;/book&gt;<br />
+&lt;candy type=”chocolate”&gt;Almond Joy&lt;/candy&gt;<br />
+&lt;/under_bed&gt;<br />
+&lt;closet&gt;<br />
+&lt;candy type=”fruit”&gt;Jolly Rancher&lt;/candy&gt;<br />
+&lt;candy type=”fruit”&gt;Jelly beans&lt;/candy&gt;<br />
+&lt;candy type=”other”&gt;gum&lt;/candy&gt;<br />
 &lt;/closet&gt;<br />
 &lt;/claudias_bedroom&gt;<br /></p>
 
@@ -145,17 +147,18 @@
 
 <p>&lt;bsc_bedrooms&gt;<br />
 &lt;bedroom owner=”claudia”&gt;<br />
-		&lt;area loc=”under_bed”&gt;<br />
-			&lt;item type=”book” series=”nancy_drew” title=”the_clue_in_the_camera” permitted=”false” /&gt;<br />
-			&lt;item type=”book” series=”textbook” title=”algebra” permitted=”true” /&gt;<br />
-			&lt;item type=”candy” edible=”true” brand=”almond_joy” /&gt;<br />
-		&lt;/area&gt;<br />
+&lt;area loc=”under_bed”&gt;<br />
+&lt;item type=”book” series=”nancy_drew” title=”the_clue_in_the_camera” permitted=”false” /&gt;<br />
+&lt;item type=”book” series=”textbook” title=”algebra” permitted=”true” /&gt;<br />
+&lt;item type=”candy” edible=”true” brand=”almond_joy” /&gt;<br />
+&lt;/area&gt;<br />
 &lt;/bedroom&gt;<br />
 &lt;bsc_bedrooms&gt;<br /></p>
 
 <p>You won’t get an error if you use spaces in attributes, but spaces are commonly used to separate multiple values of an attribute– so someone reading your XML might understand “nancy drew” as two values: “nancy” and “drew” rather than the girl detective series. It might be better to skip the “title” and “brand” attributes and just put that as text within the element. But text isn’t a complete free-for-all! There are certain characters – like the angled brackets themselves, as well as the ampersand (&amp;) that you’re not allowed to write in valid XML, and you have to use the entity name instead. And this is very important when you’re marking up Claudia’s secret candy stash, because she doesn’t have M&amp;Ms, she has: <code class="highlighter-rouge">M&amp;amp;Ms</code>.</p>
 
 <h3 id="so-why-bother-with-tei">So why bother with TEI?</h3>
+
 <p>Since the X-family (XML, XSLT, XPath, XQuery, and friends) has all the functionality you need to annotate, analyze, and transform/display texts, why even bother with TEI? To be totally honest… for years, I didn’t. When I started doing DH, I worked on some pretty niche projects, like marking up excerpts from a Bulgarian dialectological atlas. It might have been possible to mark up the things that were important for my research question in a manner compatible with TEI, but it would have been convoluted and awkward and would have taken even longer. Instead, I made up my own schema – my own rules and set of elements – that covered only the things that mattered for my project, in a straightforward manner.</p>
 
 <p>It would have been a different story if I had been applying for grant funding with this project. Much as TEI isn’t “a standard” (in the sense of mandating a whole lot of consistency and uniformity), it is still <em>the standard</em> for doing XML markup in DH. If you’re applying for a grant and you want to do XML markup that’s <em>not</em> TEI, you better have a really good story for why you’re not using TEI… or, you know, claim you’re using TEI for purposes of the grant, and just make sure your final output is transformed from your own custom schema into something TEI-compatible at the end.</p>
@@ -178,10 +181,11 @@
 
 <p>Lee felt the same way. So we set off to do the most minimalist TEI markup possible so we could write DSC #5 about TEI and get it over with.</p>
 
-<p>##Lee</p>
+<h2 id="lee-1">Lee</h2>
 
-<p>###Installing the software
-Since I’m probably not going to be doing a lot of sustained TEI work moving forward, I was looking for a cost-effective (read: free) way of importing a TEI framework into my XML editor. I am currently using the free and open source <a href="https://atom.io/">Atom platform</a> for when I have to still hand-code HTML. Google was my friend here, and through a search of “atom” and “TEI” I used three different tutorials and had to phone a friend (Quinn) when it wasn’t working.</p>
+<h3 id="installing-the-software">Installing the software</h3>
+
+<p>Since I’m probably not going to be doing a lot of sustained TEI work moving forward, I was looking for a cost-effective (read: free) way of importing a TEI framework into my XML editor. I am currently using the free and open source <a href="https://atom.io/">Atom platform</a> for when I have to still hand-code HTML. Google was my friend here, and through a search of “atom” and “TEI” I used three different tutorials and had to phone a friend (Quinn) when it wasn’t working.</p>
 
 <p>First tutorial I tried was “<a href="https://andrewdunning.ca/getting-started-editing-tei-xml-atom">Getting Started with editing TEI XML using Atom</a>” by Andrew Dunning. This is where I made my first mistake insofar as I didn’t install Java, and when the error message appeared, the link provided took me to a page to download Adobe? Thanks to Quinn for <a href="https://www.oracle.com/java/technologies/javase-downloads.html">finding this resource on downloading and installing Java</a>. But this particular tutorial ended at installing the following:</p>
 
@@ -198,6 +202,7 @@ Since I’m probably not going to be doing a lot of sustained TEI work moving fo
 <h2 id="quinn-2">Quinn</h2>
 
 <h3 id="transcribing-and-tei-ing">Transcribing and TEI-ing</h3>
+
 <p>I’ll confess to forfeiting free and open source software for the familiar. Stanford, where I work, had bought me a license for <a href="https://www.oxygenxml.com/">Oxygen XML editor</a> for one of the faculty projects I help support. It’s the software I used when I learned to do XML in the early 2000’s, it’s what I used for trying (and failing) to write generalizable XSLT to display TEI-encoded bibliographies as part of Project Bamboo around 2010, and it’s what I returned to for this latest trip to the XXX-lands.</p>
 
 <p>I created a new XML document. Optimistically, I thought, “Since what I’m doing will be super-simple, surely TEI Lite will be sufficient,” so I chose that as my schema in Oxygen XML Editor. I opened the ebook version of the graphic novel of “Kristy’s Great Idea” and began to transcribe the text – as I read it for the first time.</p>
@@ -338,13 +343,15 @@ All TEI files start with a &lt;teiHeader&gt; section, where you’re supposed to
 </blockquote>
 
 <h3 id="tei-is-personal">TEI is personal</h3>
+
 <p>The last two graphic novels were “Kristy’s Big Day” and “Boy-Crazy Stacey”. I remembered hating “Boy-Crazy Stacey” even as a kid, so I did it first – even though it’s chronologically last – so that my final book would be anything else. It seemed like a good choice at the time; suffice it to say that I didn’t find “Boy-Crazy Stacey” any less tedious this time around. Finally, I got to “Kristy’s Big Day”. If I’d been thinking, I’d have done it earlier, or one piece at a time, or better yet, just handed it off to another Data-Sitter to transcribe and encode. Instead, I ended up in a weird headspace, loathing this text I was working with, resenting this whole project, wishing it would go away, and blowing up Lee’s phone with grumpy text messages.</p>
 
 <p>See, here’s the thing with this book – and if I’m being honest, all the books. It’s a super awkward thing to say as the founder of the DSC, but unlike some of my fellow Data-Sitters, I’m mostly interested in The Baby-Sitters Club as a corpus. I’m much less into individual books… including reading them with my eyeballs – especially now that, thanks to COVID-19, I’m not commuting for the foreseeable future. But with “Kristy’s Big Day”, it goes beyond disinterest. It was actually hard for me to read. Even as a child, Kristy was the baby-sitter I could relate most to (insofar as I could relate to any of them), although I found her interest in sports incomprehensible. She was a “tomboy”; so was I. And her sudden pivot in “Kristy’s Big Day” to being overwhelmed with delight at getting to be a bridesmaid and wear a fancy dress felt like a personal betrayal. I hadn’t thought about that scene once during the 27 years or so since I’d first read it, but it felt raw to re-read – particularly after how things went down with my father’s remarriage. A 12-year-old non-binary kid without a term to articulate that identity, begging to be allowed to wear a suit at the wedding, and being required instead to wear a salmon pink dress, their absolute least favorite color, even as their sister and step-sister wore white in the wedding. One after another, the details brought me back again and again. The fancy shoes that can be dyed to match the dress. The hairstylist. The flowers. I shuddered as I typed the last lines: “Everyone coming together to make a new family. That’s what the wedding had been all about.” My “new family” ultimately gave rise to a high school nickname of Quinnderella. I’m an adult now, I have my own family, I don’t dwell on it. But transcribing and encoding something like “Kristy’s Big Day” still really sucks.</p>
 
-<p>That’s how it is with TEI – all the more so if you have to transcribe a text, but even if you’re just encoding. TEI is personal. TEI forces you to engage with the text. You can’t keep a safe distance while doing TEI markup; you have to read it closely enough to make decisions about  which portions of the text should be marked up in which way. With some of the NLP methods (like named-entity recognition, as described in <a href="https://datasittersclub.github.io/site/dscm2/">DSC Multilingual Mystery #2</a>), you can analyze things in the text without having to read through every single line – or without even being able to actually read the text fluently at all. (I claim no proficiency with French.) But not so with TEI. If you have some issue with a text, find someone else to mark it up. Or grit your teeth and pour yourself a drink because it’s not feasible to create for yourself some psychological distance from the text if you’re doing TEI. It’s something to keep in mind if you’re working with a team (especially of students) on encoding texts: consider telling them upfront that it’s okay to opt out of encoding any text for personal reasons, no explanation required, and it’s not a problem to shuffle around who’s doing what. I wish I’d reached out to the rest of the team instead of making myself transcribe that book.</p>
+<p>That’s how it is with TEI – all the more so if you have to transcribe a text, but even if you’re just encoding. TEI is personal. TEI forces you to engage with the text. You can’t keep a safe distance while doing TEI markup; you have to read it closely enough to make decisions about which portions of the text should be marked up in which way. With some of the NLP methods (like named-entity recognition, as described in <a href="https://datasittersclub.github.io/site/dscm2/">DSC Multilingual Mystery #2</a>), you can analyze things in the text without having to read through every single line – or without even being able to actually read the text fluently at all. (I claim no proficiency with French.) But not so with TEI. If you have some issue with a text, find someone else to mark it up. Or grit your teeth and pour yourself a drink because it’s not feasible to create for yourself some psychological distance from the text if you’re doing TEI. It’s something to keep in mind if you’re working with a team (especially of students) on encoding texts: consider telling them upfront that it’s okay to opt out of encoding any text for personal reasons, no explanation required, and it’s not a problem to shuffle around who’s doing what. I wish I’d reached out to the rest of the team instead of making myself transcribe that book.</p>
 
-<h2 id="lee-1">Lee</h2>
+<h2 id="lee-2">Lee</h2>
+
 <h3 id="going-wild-with-tei">Going wild with TEI</h3>
 
 <p>Let’s take a look at one of the examples here that Quinn has already shown. One of the things that you may notice from her markup is that she was focusing on dialogue, while choosing not to encode any of the visual information. This is where CBML can be really helpful, because it is made to encode the <em>visual</em> aspects of a comic, from the placement on the page to what else is going on in each panel only communicated through the images themselves. Take, for example, the opening scene of Kristy’s Great Idea (shown above) with Kristy sitting in class with her classmates, waiting for the day to end, and then the next panel of her writing and sweating. How do you encode all of the other students also sitting in the room, or that she was writing and sweating?</p>
@@ -378,6 +385,7 @@ All TEI files start with a &lt;teiHeader&gt; section, where you’re supposed to
 <h2 id="quinn-3">Quinn</h2>
 
 <h3 id="where-do-we-go-from-here">Where do we go from here?</h3>
+
 <p>Lee and I filled everyone in on the state of things at our next DSC meeting. We’d done a ton of work, installing software, transcribing all the graphic novels and marking them up with some really lightweight TEI, making a personography, noticing things that might be worth looking into further… but it hadn’t come together into any sort of discovery.</p>
 
 <p>Sure, Jessi was missing, and the artist (and/or colorist) depicted Stoneybrook through crowd scenes as much more diverse than how Jessi described it. But that shouldn’t be a shock, as Maria pointed out: “So, other than description, what’s the bigger question or frame? Within children’s literature, what we’re talking about with race-bending is pretty common, especially with background characters.”</p>
