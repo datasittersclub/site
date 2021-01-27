@@ -1,5 +1,3 @@
-#The Data-Sitters Club website
+The Data-Sitters Club website... now in Jupyter Book form, to better support displaying code!
 
-Now in Jupyter Book form, to better support displaying code!
-
-Check out all the books in this fun, colloquial guide to computational text analysis for digital humanities at [https://datasittersclub.github.io/site/books].
+Check out all the books in this fun, colloquial guide to computational text analysis for digital humanities at https://datasittersclub.github.io/site/books.
