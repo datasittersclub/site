@@ -1,4 +1,4 @@
-<img src="_static/images/DSCLogo.png" />
+<img src="_images/DSCLogo.png" />
 
 # About The Data-Sitters Club
 

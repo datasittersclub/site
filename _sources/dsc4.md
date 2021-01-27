@@ -8,7 +8,7 @@ bookseries: regular
 permalink: /dsc4/
 ---
 
-<img src="_static/images/DSCLogo.png" />
+<img src="_images/DSCLogo.png" />
 
 # DSC #4: AntConc Saves the Day
 

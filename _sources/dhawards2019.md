@@ -4,7 +4,7 @@ title: dhawards
 permalink: /dhawards2019/
 ---
 
-<img src="_static/images/DSCLogo.png" />
+<img src="_images/DSCLogo.png" />
 
 # DH Awards 2019 Ad Campaign
 
