@@ -1,0 +1,94 @@
+#blue-66ccff
+#pink-f9bbc6
+#yellow-fff66b
+
+
+
+#pinkthings
+
+body {
+	background-color: #f9bbc6 !important;
+}
+
+div.container-xl {
+	background-color: #f9bbc6 !important;
+}
+
+#main-content {
+    background-color: #f9bbc6;
+    font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	background-clip: padding-box;
+	margin:0px;
+}
+
+.col py-md-3 pl-md-4 bd-content overflow-auto {
+	background-color: #f9bbc6;
+    font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	background-clip: padding-box;
+}
+
+
+div.row {
+	background-color: #f9bbc6;
+	background-clip: padding-box;
+}
+
+main.col {
+	background-color: #f9bbc6;
+	background-clip: padding-box;
+}
+
+
+#leftsidebarnav-should-be-yellow
+div.d-none d-md-block col-md-2 bd-toc show {
+	background-color: #fff66b;
+	background-clip: padding-box;
+}
+
+div.col-12 col-md-3 bd-sidebar site-navigation show {
+	background-color: #fff66b;
+	background-clip: padding-box;
+}
+
+div.col-12 col-md-3 bd-sidebar site-navigation show {
+    background-color: #fff66b;
+	background-clip: padding-box;
+}
+
+#site-navigation {
+	background-color: #fff66b;
+	background-clip: padding-box;
+}
+
+button {
+	background-color: #fff66b;
+}
+
+
+#thispagenav-should-be-blue
+
+div.tocsection {
+    background-color: #66ccff;
+	margin:0;
+}
+
+#bd-toc-nav {
+	background-color: #66ccff;
+}
+
+div.d-none.d-md-block.col-md-2.bd-toc.show {
+	background-color: #66ccff;
+	margin:0;
+	padding:0;
+}
+
+button.btn.btn-secondary.topbarbtn {
+	background-color: #66ccff;
+}
+
+body {
+	background-color: #f9bbc6 !important;
+}
+
+
+

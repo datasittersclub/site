@@ -1,0 +1,483 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSC #3: The Truth About Digital Humanities Collaborations (and Textual Variants!) &#8212; Data-Sitters Club Notebook</title>
+    
+  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/style.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="DSC #4: AntConc Saves the Day" href="dsc4.html" />
+    <link rel="prev" title="DSC #2: Katia and the Phantom corpus" href="dsc2.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/DSClogo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Data-Sitters Club Notebook</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <p class="caption collapsible-parent">
+ <span class="caption-text">
+  About
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter-2.html">
+   About the DSC
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="books.html">
+   DSC Books
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Main series
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc1.html">
+   DSC 1: Quinn's Great Idea
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc2.html">
+   DSC 2: Katia and the Phantom Corpus
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   DSC 3: The Truth About DH Collaboration (and Textual Variants!)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc4.html">
+   DSC 4: AntConc Saves the Day
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc5.html">
+   DSC 5: The DSC and the Impossible TEI Quandaries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc6.html">
+   DSC 6: Voyant's Big Day
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc7.html">
+   DSC 7: The DSC and Mean Copyright Law
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc8.html">
+   DSC 8: Text-Comparison-Algorithm-Crazy Quinn
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Multilingual mysteries
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm1.html">
+   DSCM 1: Lee and the Missing Metadata
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm2.html">
+   DSCM 2: Beware, Lee and Quinn!
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm3.html">
+   DSCM 3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Fun
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="covid19.html">
+   Important Public Health Messages from the Data-Sitters Club about COVID-19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dhawards2019.html">
+   DH Awards 2019 Ad Campaign
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/dsc3.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dear-reader">
+   Dear Reader
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#suggested-citation">
+   Suggested Citation
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <img src="_static/images/DSCLogo.png" />
+<div class="section" id="dsc-3-the-truth-about-digital-humanities-collaborations-and-textual-variants">
+<h1>DSC #3: The Truth About Digital Humanities Collaborations (and Textual Variants!)<a class="headerlink" href="#dsc-3-the-truth-about-digital-humanities-collaborations-and-textual-variants" title="Permalink to this headline">¶</a></h1>
+<p>by Maria Sachiko Cecire, January 10, 2020</p>
+<div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
+<img src="_static/images/bookcovers/dsc3_cover.jpg" alt="DSC 3 book cover" />
+</div>
+<p>I read the email thread again. Then one more time. “Oh my gosh,” I whispered. “What do I say?”</p>
+<div style="float: left; width: 175px;margin-right: 7px;margin-top: 0px;">
+<img src="_static/images/truth-about-stacey-rerelease.jpg" alt="First rerelease cover of The Truth About Stacey" />
+</div>
+<p>The first message in the thread, titled “Amazing discovery for our next volume!” was from Quinn, who’d had the <a class="reference internal" href="dsc1.html"><span class="doc std std-doc">great idea</span></a> to start the Data-Sitters Club in the first place. The DSC is a group of scholars that are creating a digital humanities guide to computational text analysis by building and analyzing a corpus of the Baby-Sitters Club books, and I was the last member to join before we launched a few months ago (there’s more about all the members of the gang and our history in <a class="reference internal" href="chapter-2.html"><span class="doc std std-doc">Chapter 2</span></a>). Quinn asked me to be part of the DSC because of my background in <a class="reference external" href="https://www.upress.umn.edu/book-division/books/re-enchanted">children’s literature and childhood studies</a>, and because of my digital humanities-friendliness as the director of the <a class="reference external" href="https://eh.bard.edu">Center for Experimental Humanities</a> at Bard College. But not particularly for my data mining experience, because it’s not something I usually do! Everyone in the DSC was so nice, and I already knew some of the other members from before, but already I was feeling out of place.</p>
+<div style="float: left; width: 175px;margin-right: 7px;margin-top: 0px;">
+<img src="_static/images/truth-about-stacey-2010-reissue.jpg" alt="Cover of the 2010 rerelease of The Truth About Stacey" />
+</div>
+The emails I was reading were about some findings that Quinn had made when comparing the Baby-Sitters Club books she found online, with the more recently released versions we digitized through scanning and optical character recognition (OCR). These findings showed that the supposedly same books often had a lot of differences. Katia, another DSC member, helped build these two collections of Baby-Sitters Club books, and you can read about the process of corpus-building and some of the discrepancies in [*Katia and the Phantom Corpus*](dsc2). Now everyone in the email thread was gushing about how interesting it was to see content changes that seemed to reflect updated expectations, norms, and day-to-day realities: for example, swapping twenty-first century technologies and fashions for the 80s and 90s ones in the original books. Think “styled” hair instead of “permed” hair, “player” instead of “VCR,” and amounts of money removed or updated to account for inflation. (Granted, the lack of metadata for the versions Quinn found online mean we can’t know conclusively that they’re the originals, or even older than the more recent versions we digitized, but it sure looked that way.) I was happy to see the team so enthusiastic and united, but the problem was…the findings weren’t surprising to me at all.
+<p>Children’s publishing has a long history of revising texts to keep up with changing social norms, especially since books for kids have always been seen as instructional (even didactic and, some claim, “civilizing”), as well as entertaining. And since children’s books are overwhelmingly written, published, and bought by adults – most of whom care a LOT about what kids are reading and thinking about – there have always been adult eyeballs on children’s literature and calls to take out or change “inappropriate” material. One old-school version of this is the <a class="reference external" href="https://www.neh.gov/humanities/2015/marchapril/feature/how-the-grimm-brothers-saved-the-fairy-tale">differences</a> between the first edition of the Brothers Grimm’s <em>Children’s and Household Tales in 1812</em> and the “definitive” version in 1857, where the stories were dramatically edited to make them more “suitable” (less violent, sexual, and pagan) for children. They did this even though the original project was supposed to be a folk record of deep-rooted national tales, not necessarily an influence on modern youth! But from the late eighteenth century on, if you say any cultural object is “for children,” it automatically sets off all kinds of appropriateness radars.</p>
+<div style="float: left; width: 175px;margin-right: 7px;margin-top: 0px;">
+<img src="_static/images/oompaloompa1.jpg" alt="Original illustrations of Oompa Loompas from Roald Dahl's Charlie and the Chocolate Factory" />
+</div>
+<p>Another children’s lit classic that has gotten this treatment is Roald Dahl’s <em>Charlie and the Chocolate Factory</em>; there were some (honestly, reaaaally necessary) <a class="reference external" href="https://groovyhistory.com/oompa-loompas-the-original-ones">revisions</a> in the 1970s to deal with the fact that the Oompa Loompas were described in the ‘60s original as “amiable black pygmies” from “the very deepest and darkest part of the African jungle where no white man had been before.” Ew. (More on these kind of changes at children’s literature scholar <a class="reference external" href="http://www.philnel.com/2010/09/19/censoring-ideology/">Phil Nel’s blog</a>, from which the Oompa Loompa illustrations were taken.)</p>
+<p>But the changes Quinn was seeing didn’t seem to be at the level of social lessons (unless you mean the lesson that the perm craze is better off left in the past) – they were more about making the books, as the kids say, “relatable” to modern readers. That felt pretty normal given what I knew about children’s literature too. Books for young people have been commercial products basically since they became A Thing in the mid- to late eighteenth century. Ever heard of the prestigious Newbery Medal for children’s literature? <a class="reference external" href="https://en.wikipedia.org/wiki/John_Newbery">John Newbery</a>, the “Father of Children’s Literature,” was the English publisher and merchant who got the whole shebang started…by printing and selling books. Children’s presses are always looking for ways to make the same books more exciting for new markets – this results in things like the <a class="reference external" href="https://www.hp-lexicon.org/2001/08/25/differences-between-british-and-us-versions-of-ps/">Americanizations</a> when <em>Harry Potter and the Philosopher’s Stone</em> was first sold as <em>Harry Potter and the Sorcerer’s Stone</em> in the US (they stopped doing this after Book 1 though, because everyone knows a <a class="reference external" href="https://harrypotter.fandom.com/wiki/Weasley_jumper">Weasley jumper</a> is way cozier than a Weasley sweater). Children’s publishing also relies a lot more on nostalgia sales than adult books do, since all those grown-up buyers of children’s literature often want to pass down their old faves to the next generation. So it’s not uncommon for presses to re-release classics with hipper cover art and contemporary updates to the text itself. This happened with bestselling British author <a class="reference external" href="https://www.theguardian.com/books/2010/jul/23/enid-blyton-famous-five-makeover">Enid Blyton’s books</a> in 2010 and (a later google search revealed)…<a class="reference external" href="https://www.nytimes.com/2009/12/31/books/31babysitters.html"><em>The Baby-Sitters Club</em> books</a> in the same year. And most of the changes the team was discussing were the kinds of ones the BSC publisher, Scholastic, had openly announced they planned to make! (Interestingly, they <a class="reference external" href="https://www.theguardian.com/books/2016/sep/16/famous-five-go-back-to-original-language-after-update-flops">reversed the changes</a> to the Blyton books in 2016 due to lack of interest; and we found that the <em>BSC</em> changes petered out after the first 10 volumes or so.)</p>
+<p>So there I was, a font of possibly unwanted information. I didn’t want to rain on everyone’s parade: one of the awesome things about computational text analysis is supposed to be its ability to reveal information that humans wouldn’t be able to detect on their own or, in some cases, even think to ask about. And everyone else was fired up about what the digital comparisons had shown. So it felt like a big party pooper move – and not an awesome collaborator move – to respond by saying that the changes were not really a major discovery after all.</p>
+<p>Meanwhile, after a ton of techie back-and-forth over the last few weeks that I couldn’t add much to, and as the least text-analysis-savvy member of the DSC, I was already feeling like my input wasn’t as valuable as other members of the team. I mean, the Center and program I founded at Bard is called “Experimental Humanities” instead of “Digital Humanities” because our crew tends to be more interested in the questions we ask, people we work with, and the methods we use in the humanities than anything digital per se (though digital projects do happen!). <a class="reference external" href="https://dhdebates.gc.cuny.edu/read/untitled/section/a5a2c3f4-65ca-4257-a8bb-6618d635c49f#ch07">Was I about to be too much “yack” in a moment of excited “hack”?</a> Maybe I had missed some key element of what make these findings thrilling because of my lack of experience with corpus-building? Shouldn’t feminist collaboration always be supportive instead of contradicting, like a scholarly version of the <a class="reference external" href="https://www.dramanotebook.com/drama-games/yes-and/">“yes, and” game</a>? I sat there, doubting myself.</p>
+<p>So what did I say?</p>
+<p>In the end I kind of split the difference. In my email response I affirmed everyone’s enthusiasm and thanked Quinn for her work. Then I gave some (though not all) of the historical background I just talked about and ended with this:</p>
+<blockquote>
+<div><p><strong>From:</strong> Maria Sachiko Cecire<br />
+<strong>To:</strong> Quinn Dombrowski, Katia Bowers, Anouk Lang, Roopika Risam<br />
+<strong>Date:</strong> 11/7/19 6:39 PM<br />
+<strong>Subject:</strong> Re: Amazing discovery for our next volume!</p>
+<p>[…]
+Anyway, I thought I’d throw this history into the mix because a) I’m a nerd, b) it really does ask us to think about which corpus we’d want to use and why […] And apologies if this is all TMI, but I thought I’d mention these thoughts since Quinn had said it could be helpful to have a children’s lit perspective to flag what computational findings might read as novel and what might be known already in the field, so that we can present our findings accordingly!</p>
+</div></blockquote>
+<p>I definitely buried the lede, hoping that the rest of the DSC would figure out that I was trying to gently say that finding content changes between original and re-released children’s books isn’t necessarily a big deal in and of itself – even if it probably feels that way when your computational analysis starts spitting out discrepancies. To me, presenting these differences as a major finding seemed like we’d be recreating exactly the kind of blind spot that people have criticized digital humanities projects for: claiming something that’s already known in the field as exciting new knowledge just because it’s been found digitally. But in a pretty un-feminist turn, I tried to soften this (already hard-to-parse) position by calling myself a nerd rather than an expert, apologizing for even sharing my expertise, and justifying why I was sharing it at all. It my way of trying to make the collaboration run more smoothly, but in retrospect it was not my finest moment.</p>
+<p>It wasn’t until our call a few weeks later that the whole truth came out: I have way less of a filter in person! And at first it was kind of awkward, probably because the group didn’t understand why I was the only person unsure about the value of diving into these changes as a whole, dedicated DSC post. But before long, people got interested in the awesome tradition of <a class="reference external" href="https://www.representingchildhood.pitt.edu/rose.html">theorizing power relations in childhood studies and its implications for children’s literature</a>, and I was thinking about how the process itself of finding these differences might be useful to others. The rest of the DSC also asked questions about my own anxious experience of feeling like the least “digital” humanist in the group, and we agreed that it would be nice to make that part of the post, too. After a good talk (Katia described some of it at the end of her <a class="reference internal" href="dsc2.html"><span class="doc std std-doc">last post</span></a>), we turned our plans for DSC #3 into what it is now: a post about collaboration and disciplinary knowledge in digital humanities projects, with a bonus section about corpus comparison.</p>
+<p>As most digital humanities people now agree, there is no meaningful “hacking” without deep, well-theorized “yacking” – but too often, collaborators in digital humanities projects can feel less relevant if they aren’t the ones writing code. At the same time, the labor that goes into preparing and running a digital project (from building the corpus to cleaning data to running text comparisons) should be valued and honored as intellectual work too. It’s important for digital humanities teams to foreground this “both-and” (“yes, and”?) approach, from forming research groups that meaningfully include both digital and disciplinary experts to making sure that each member knows their contributions are essential to the project. This can be especially tough to do when your team is spread around the world, like ours is, and only communicates by email and occasional calls. But it’s worth the time and effort it takes to talk through the conflicts, ambiguities, and surprising overlaps.</p>
+<p>This isn’t the end for our discrepancy data – just because having differences between original and re-released books is not that uncommon in children’s literature doesn’t mean that the differences can’t tell us interesting things about the books and their shifting cultural contexts. Check out this sample of differences from the great spreadsheet Quinn made!</p>
+<p>There might be some really interesting findings as we dig in deeper, and computational text analysis could be one way to help us understand these changes more. We are still figuring that out, as well as how we are going to handle the enormous amount of data that this corpus contains: what to pursue more deeply, and what to leave aside in favor of delving into other discoveries. But we know for sure that asking our questions in conversation with the knowledge of both specific disciplines and the digital humanities is one important place to start!</p>
+<p>For now, I’ll leave you with Quinn’s notes on how to computationally work out differences between two versions of a text.</p>
+<p><img alt="Spreadsheet reflecting textual variants" src="_images/spreadsheet-variants.png" /></p>
+<div class="section" id="dear-reader">
+<h2>Dear Reader<a class="headerlink" href="#dear-reader" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>Dear Reader,</p>
+</div></blockquote>
+<blockquote>
+<div><p>In DSC #3, Maria gave us a reality check about what initially seemed like a remarkable discovery: differences between the (presumably older) versions of the corpus I initially found online, and the recent re-releases that we scanned and OCR’d. While these updates – ranging from punctuation conventions, to inflation, to fashion trends – are unsurprising in children’s literature, such changes may point to changes of greater interest in other kinds of texts.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Identifying differences between two versions of a text is a problem just asking for computational methods. You don’t have to identify as a digital humanist to not want to spend time comparing texts manually. Text collation is one most intuitively understandable computational text analysis methods, at least at first glance: “how are these texts different?” For that reason, it’s been an appealing target for digital humanities tool development, to make it easier for anyone to do text collation without having to learn how to write code. Text collation also has applications in commercial software. Have you ever looked at the version history for a Google Doc? It uses text collation to identify additions and deletions: that’s easier than monitoring every change as you make it.</p>
+</div></blockquote>
+<blockquote>
+<div><p>There’s a few different ways to do it – and more that I haven’t included here – but this should be enough to get you started with text collation.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>What I actually used: Diff Match Patch</strong></p>
+</div></blockquote>
+<blockquote>
+<div><p>As mentioned in DSC #2: Katia and the Phantom Corpus, what I used to find the differences in the text was <a class="reference external" href="https://github.com/google/diff-match-patch">Diff Match Patch</a>, the code behind the Google Docs version history. I used the <a class="reference external" href="https://neil.fraser.name/software/diff_match_patch/demos/diff.html">Diff Demo</a> linked from the GitHub repo, using the default settings, to compile a Google Sheet full of changes for Maria to take a look at.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Why that tool? Well, our corpus wasn’t that big – and I suspected that the relevant subset of the corpus would be much smaller. (It didn’t seem likely that the publisher went through all the books to make content edits when the books were re-released as e-books.) The Diff Demo does the comparison really fast (unlike certain other options described below). Because I expected only a few books would show traces of these edits, I suspected it’d be all-around faster and easier to manually copy and paste dirty and clean corpus texts for comparison, review the differences with my own eyeballs, and then copy and paste relevant differences (i.e. ones not resulting from OCR errors) into a Google Sheet. Honestly, even if I thought there would be a lot of books with these changes, I’d probably start with the Diff Demo to first get a sense of what the changes were, how many there tended to be per book, etc., before moving on to trying to write code to scale up the process beyond what I could reasonably do myself.</p>
+</div></blockquote>
+<p><img alt="Screenshot of Diff Demo" src="_images/dsc3_diffdemo.png" /></p>
+<blockquote>
+<div><p>When I first started doing the collation this way, there were a lot of “false alarms”: things flagged as differences that were entirely typographical. Curly instead of straight quotes and apostrophes. Ellipses expressed through a single character instead of three periods. That kind of thing. To minimize the number of things that would catch my eye as I skimmed the results, I did a bit of pre-processing, replacing the quotes and ellipses so they’d be consistent, just using find-and-replace in a plain text editor.</p>
+</div></blockquote>
+<blockquote>
+<div><p>One handy thing about the Diff Demo is that if you copy the output and paste it into Microsoft Word, the changes will show up formatted as you’d expect from Word’s built-in Track Changes.</p>
+</div></blockquote>
+<p><img alt="Screenshot of Track Changes" src="_images/dsc3_trackchanges.png" /></p>
+<blockquote>
+<div><p><strong>What I tried: Juxta</strong></p>
+</div></blockquote>
+<blockquote>
+<div><p>When I first told the other data-sitters that there were changes in the text, the tool that immediately leaped to mind for a couple of us was Juxta. Juxta made a big splash in the late 2000’s – initially as an installable Java app, and then as a web-based version, <span class="xref myst">Juxta Commons</span>. Juxta Commons is still “in beta” about a decade later, but has <a class="reference external" href="http://juxtacommons.org/guide">detailed documentation</a>, still works, and you can even create new accounts (as I discovered, since my old account is associated with an email from two jobs ago).</p>
+</div></blockquote>
+<blockquote>
+<div><p>A web-based digital humanities tool that still works a decade later, even as the associated blog is six years out-of-date, is nothing short of a miracle. There’s just one catch:</p>
+</div></blockquote>
+<blockquote>
+<div><p>Juxta<br />
+…<br />
+…<br />
+Commons<br />
+…<br />
+…<br />
+…<br />
+runs<br />
+…<br />
+…<br />
+…<br />
+…<br />
+agonizingly<br />
+…<br />
+…<br />
+…<br />
+…<br />
+…<br />
+slowly.</p>
+</div></blockquote>
+<blockquote>
+<div><p>I was certain that it wasn’t working at all, and I gave up and went to bed. The next morning, I was about to close the browser tab with Juxta Commons open when I saw – that it had worked! What’s more, it was “smarter” about its output than the Diff Demo, not flagging the typographical differences, even though I hadn’t done any pre-processing on the source text files.</p>
+</div></blockquote>
+<blockquote>
+<div><p>The only problem is that if you need to make any changes (like changing which source is used as baseline for deviation), you have to wait all over again.</p>
+</div></blockquote>
+<blockquote>
+<div><p>For better performance, you could try running the <a class="reference external" href="https://github.com/performant-software/juxta-service">Juxta Commons source code</a> on your own laptop, but it’s probably more straightforward to <a class="reference external" href="http://www.juxtasoftware.org/download/">install the desktop software</a>. I found it a little counterintuitive – though to be fair, I’m the type who usually leaps into software without reading the documentation first. The <a class="reference external" href="https://github.com/performant-software/juxta-desktop/wiki/UserManual">user manual</a> is actually helpful for working through the process of comparing texts.</p>
+</div></blockquote>
+<blockquote>
+<div><p><img alt="Screenshot of Juxta Desktop" src="_images/dsc3_juxtadesktop.png" /></p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Do It With Code: CollateX</strong></p>
+</div></blockquote>
+<blockquote>
+<div><p>Back around 2010, Juxta had a “competitor” of sorts, <a class="reference external" href="https://collatex.net">CollateX</a>. CollateX was another piece of Java software, developed in the EU as part of <a class="reference external" href="http://www.interedition.eu">Interedition</a>, whereas Juxta was developed in the US by <a class="reference external" href="https://nines.org">NINES</a>. For a while, choosing between Juxta and CollateX was something of a toss-up, but they’ve since gone in different directions. Juxta invested in the web-based Juxta Commons, whereas CollateX developed into a Python package. What’s more, there’s even <a class="reference external" href="http://collatex.obdurodon.org">materials</a> (<a class="reference external" href="http://collatex.obdurodon.org">including Jupyter notebooks</a>) available for how to use CollateX, from a workshop at DH 2015. (If you’re not familiar with Jupyter notebooks, check them out – they’re especially useful if you’re new to coding. I co-wrote a <a class="reference external" href="https://programminghistorian.org/en/lessons/jupyter-notebooks">tutorial on Jupyter notebooks</a> on Programming Historian.)</p>
+</div></blockquote>
+<blockquote>
+<div><p>Both the CollateX and the Juxta crowds are <a class="reference external" href="https://tei-c.org">Text Encoding Initiative</a> (TEI)-friendly, and both tools have special options if your source texts are encoded using the TEI conventions. (I have feelings about TEI, but I’ll save them for a future Data-Sitters Club piece.) What we have for our corpus is just plain text.</p>
+</div></blockquote>
+<blockquote>
+<div><p>The Jupyter notebooks from the DH 2015 workshop are really the place to start if you want to use CollateX with Python. One thing I soon discovered, though, is that CollateX doesn’t seem to be the right tool when collating things of the length of a “Baby-Sitters Club” novel. My poor laptop whirred angrily at me for an hour, before quieting down without actually completing the collation.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Given the much smaller chunk of a few paragraphs (the ones used for the screenshots above), it performed great, and has a couple of nice visualizations, including color-coded lines that split out textual differences, and a graph visualization.</p>
+</div></blockquote>
+<p><img alt="Screenshot of CollateX Table" src="_images/dsc3_collatextable.png" /></p>
+<p><img alt="Screenshot of CollateX Graph" src="_images/dsc3_collatexgraph.png" /></p>
+<blockquote>
+<div><p>Text collation is a relatively easy way to answer some kinds of questions about the editorial history of a text. Whether you’d rather write code, paste things into a browser, or install really old Java software, there are multiple options for exploring text collation. Give it a try – but always remember to check with a disciplinary expert before you get too excited!</p>
+</div></blockquote>
+<blockquote>
+<div><p>Happy analyzing,</p>
+</div></blockquote>
+<p><img alt="Screenshot of Quinn's signature" src="_images/dsc_quinnsig.png" /></p>
+</div>
+<div class="section" id="suggested-citation">
+<h2>Suggested Citation<a class="headerlink" href="#suggested-citation" title="Permalink to this headline">¶</a></h2>
+<p>Cecire, Maria Sachiko. “DSC #3: The Truth About Digital Humanities Collaboration.” <em>The Data-Sitters Club</em>. January 10, 2020. https://datasittersclub.github.io/site/dsc3.html.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="dsc2.html" title="previous page">DSC #2: Katia and the Phantom corpus</a>
+    <a class='right-next' id="next-link" href="dsc4.html" title="next page">DSC #4: AntConc Saves the Day</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Data-Sitters Club<br/>
+        
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

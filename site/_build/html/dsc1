@@ -1,0 +1,382 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSC #1 - Quinn’s Great idea &#8212; Data-Sitters Club Notebook</title>
+    
+  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/style.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex" />
+    <link rel="search" title="Search" href="search" />
+    <link rel="next" title="DSC #2: Katia and the Phantom corpus" href="dsc2" />
+    <link rel="prev" title="The Data-Sitters Club Books" href="books" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index">
+  
+  <img src="_static/DSClogo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Data-Sitters Club Notebook</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="search" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <p class="caption collapsible-parent">
+ <span class="caption-text">
+  About
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter-2">
+   About the DSC
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="books">
+   DSC Books
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Main series
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   DSC 1: Quinn's Great Idea
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc2">
+   DSC 2: Katia and the Phantom Corpus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc3">
+   DSC 3: The Truth About DH Collaboration (and Textual Variants!)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc4">
+   DSC 4: AntConc Saves the Day
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc5">
+   DSC 5: The DSC and the Impossible TEI Quandaries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc6">
+   DSC 6: Voyant's Big Day
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc7">
+   DSC 7: The DSC and Mean Copyright Law
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc8">
+   DSC 8: Text-Comparison-Algorithm-Crazy Quinn
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Multilingual mysteries
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm1">
+   DSCM 1: Lee and the Missing Metadata
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm2">
+   DSCM 2: Beware, Lee and Quinn!
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm3">
+   DSCM 3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Fun
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="covid19">
+   Important Public Health Messages from the Data-Sitters Club about COVID-19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dhawards2019">
+   DH Awards 2019 Ad Campaign
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/dsc1.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#suggested-citation">
+   Suggested citation
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <img src="_static/images/DSCLogo.png" />
+<div class="section" id="dsc-1-quinn-s-great-idea">
+<h1>DSC #1 - Quinn’s Great idea<a class="headerlink" href="#dsc-1-quinn-s-great-idea" title="Permalink to this headline">¶</a></h1>
+<p>by Quinn Dombrowski, November 7, 2019</p>
+<div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
+<img src="_static/images/bookcovers/dsc1_cover.jpg" alt="DSC 1 book cover" />
+</div>
+<p>It doesn’t really matter that it was my idea. I don’t really care about credit— I’ve got what’s half-jokingly been called “the world’s best dead-end job,” and credit doesn’t buy me anything. What matters to me is that good things happen, and this project is a very good thing.</p>
+<p>I got the idea while I was on vacation. It was the first vacation I’d taken in four years, and my husband, Andy, and I were happily working on our own projects on the 10th floor of a giant pyramid in Las Vegas. Because it was vacation, I’d promised myself I wouldn’t do anything related to my job — which meant no non-English digital humanities. But by the second day of our trip, my thoughts kept coming back to a <a class="reference external" href="https://bookriot.com/2019/09/04/the-babysitters-club/">blog post</a> about <em>The Baby-Sitters Club</em> (<em>BSC</em>), featuring my friend Shannon Supple, who stewards Ann M. Martin’s papers at Smith College. Some of my projects involve fanfic, and I’d already written a Jupyter notebook to scrape <a class="reference external" href="http://fanfiction.net">fanfiction.net</a>, so I first thought I’d just grab the metadata for English-language <em>BSC</em> fanfic and throw together a few visualizations. But I’ve been spoiled by the size of the Harry Potter fanfic corpus (nearly 800,000 — 100x bigger than the BSC’s 800) and wasn’t feeling inspired.</p>
+<p>Then I started searching for the full text of the original novels — and I found some. And then I found more. (It seems like lots of libraries didn’t think twice about getting rid of their copies, and the <a class="reference external" href="https://archive.org">Internet Archive</a> took in the cast-offs.) Before I realized it, I was on a quest. That whole week in Las Vegas, I slept in until a luxurious 7:30 AM, braved the pyramid’s morning Starbucks line, and mostly spent the rest of the day searching for <em>BSC</em> novels, when Andy and I weren’t out enjoying Las Vegas — and sometimes even when we were. More than once, we noticed we were the only two nerds sitting in a pub with laptops open. Look, that’s our idea of a romantic getaway. We’ve been married 12 years, and as of this year, we’ve known each other for about half our lives, since we met as incoming undergrads at the University of Chicago. But I guess I’m getting ahead of myself, as I often do.</p>
+<p>Hi! I’m Quinn Dombrowski, the DLCL ATS (or Academic Technology Specialist in the Division of Literatures, Cultures and Languages) at Stanford University. Essentially, I’m a half-library, half-departmental staff person who supports and implements non-English digital humanities scholarship.</p>
+<p>I’m short (about the size of a 10-year-old), with short brown hair, glasses, and the same light blue eyes as my three kids (ages 5, 3, and 1). You might think that with so many kids, I enjoyed babysitting when I was a teenager, but you would be wrong. The one time I ventured into the promised land of fun and profit as depicted by the <em>BSC</em>, I discovered that I hated it, and it didn’t even pay as well as building websites. Such was my introduction to gendered labor. I built a lot of websites, but never once changed a diaper, before giving birth myself.</p>
+<p>At least in English, I identify as non-binary, but I have no preference whatsoever about pronouns. Grow up in the 1990s with a name like Quinn, and you get used to lots of different pronouns. I do care about nouns (person not woman, parent not mother), but explaining all that is an awful lot to stick in an email signature or on a conference name tag. My kids call me “PG,” short for “progenitor/progenitrix.” I sew all my own clothes — everything (and I do mean everything), except socks. Dressing in bright colors and interesting prints (Eyeballs! Dinosaur-Unicorns! People being tormented by demons in illustrations from Russian folk tales!) is more important to me than androgyny, so when I’m at work, I only wear dresses with enormous pockets. Even in formal contexts like Stanford’s literature departments, you can wear absolutely anything if it’s in the shape of a dress. At home in Berkeley, it’s all pants and sweatshirts — always in colorful prints (Sailor Moon! Fraggle Rock! Octopi!).</p>
+<div style="float: left; width: 175px;margin-right: 7px;margin-top: 0px;">
+<img src="_static/images/babyquinn.jpg" alt="Picture of a young Quinn, reading a Baby-Sitters Club book" />
+<p><em>(Here I am, reading a Baby-Sitters Club book in my backyard, c. 1992!)</em></p>
+</div>
+<p>So there I was in Las Vegas, sipping on a beer, building a <em>BSC</em> corpus — and as usual, tweeting about it. On the geopolitical stage, it’s hard to argue with the claim that Twitter is a force of evil. But Twitter is also the infrastructural backbone of much of the digital humanities world. It was on this same trip that I realized that Twitter gave me the community of friends who share my weird interests that I’d dreamed of since reading the <em>BSC</em> books as a child. One notable thing about tweeting about the <em>BSC</em> is who replies: it’s all people who experienced girlhood in the 1990s. The first <em>BSC</em> book came out in 1986, and the last in 2000 (not counting <em>The Summer Before</em>, which was published a decade later). If you grew up female in the Anglophone world, and you’re in your 30s or early 40s, these books are a cultural touchstone — even for people like me who moved on to other franchises (<em>Star Wars</em> novels, in my case) by the time they hit puberty.</p>
+<p>Over the course of the week, lots of people were generous in answering the more technical questions I had when playing with this emerging corpus (like — ugh — is it normal for the top 20 words for every single topic in a topic model to just be names?), but I was surprised and delighted to find pools of interest in the books themselves among my digital humanities Twitter friends. And not just interest, but expertise: Roopika Risam, in addition to being a brilliant postcolonial digital humanities scholar, is also a walking encyclopedia of <em>BSC</em>. The more people threw ideas out on Twitter, the more sure I was that I was on to something, that the <em>BSC</em> is, in fact, an amazing potential laboratory for computational text analysis.</p>
+<p>Think about it: there are over 200 novels, all written in the voice of one (or multiple) characters, by Ann M. Martin or a clearly identified ghostwriter. (There’s no one I need to gratefully acknowledge for their help in preparing this manuscript, because I wrote it myself, thank you very much.) Does each character have a distinct voice? Is that voice different across writers? Do non-narrating characters have distinct voices expressed through their dialogue? How does the characters’ written language (through the handwritten portions of the text) differ from their implicitly spoken text through the first-person narration? The <em>BSC</em> is (in)famous for its use of tropes (Claudia’s “almond-shaped eyes”, “Mal is white and Jessi is black”, etc.), so what else can we find in terms of explicit text reuse in the more formulaic parts of the book (the “Chapter 2” question, AKA “how many different ways can you describe the basic premise and major characters across 200+ novels”)? How do these books treat religion, race, adoption, divorce, disability, not to mention the “Very Special Episode” topics? And all that is just the books: what about how the material was adapted for the 1990’s show, the movie, the new graphic novels, the upcoming Netflix series, and the fanfic? There’s unexplored material for a whole research agenda in the area of cultural analytics, which could really use a teenage girl lit counterbalance to its superheroes and sci-fi.</p>
+<p>But what if a project did more than just analyze these books? What if it actually walked through the whole process? A year ago, when I started this job at Stanford, I’d done digital humanities for nearly 15 years but had never done computational text analysis. The internet is littered with workshop materials, tutorials, and Python and R scripts with varying levels of documentation, but I had trouble putting all the pieces together. My question to folks at Stanford’s Literary Lab, again and again, was “so what do you actually do next?” And what I learned was that what lies behind the glossy final graphs isn’t a paved road, but a series of choices that shape a walk through the woods. Yes, there are some things (particularly with statistics) that you can unambiguously do wrong, but in most contexts there isn’t a right choice — it’s more like each possible decision provides a different set of opportunities and constraints for your analysis. Some of those constraints make a difference, some of them don’t, and it all depends on what you’re trying to do. At a “Women and Gender Minorities in Digital Humanities” event at Stanford last May, Nichole Nomura — a member of the Literary Lab, and my co-director at Stanford’s Textile Makerspace — brought up the “view of the whole” from Lave &amp; Wenger’s conceptual framework for communities of practice, in the context of an alternate model of mentoring in digital humanities: “To mentor and have people join our community, we have to show them the whole work of the whole community. We have to make all our practices visible. Maybe we don’t have to teach them explicitly right away, but they need to be seen.” I’ve been thinking about this ever since, and whether demystifying computational text analysis might make it more accessible for folks who don’t see themselves as programmers, or “the sort of person who does that stuff” (i.e. white dudes with some previous exposure to computer science).</p>
+<p>This was the great idea that came together in Las Vegas: to apply the computational tools and methods that are widely used in the digital humanities text analysis community to the <em>BSC</em> corpus, making visible all the steps and decisions that shape that path. And to write the whole thing up in a series of detailed but colloquial posts that could serve as a guidebook for fellow travelers. I wanted it to be useful — something that newbies of all genders would consult, regardless of whether they grew up as fans of the <em>BSC</em>. Even in the reality-distortion field of Las Vegas, I was under no delusion that I could tackle this by myself. So I emailed a couple friends who’d chimed in on the <em>BSC</em> tweets, and then a few more.</p>
+<p>My vacation came to an end, throwing me right back into getting kids dressed and fed and delivered to and picked up from the right places at the right times; meetings, projects, just enough housework to postpone descent into utter chaos, and the four-hour daily commute three times a week. But this project was the best souvenir I could have asked for. It has some challenges, including language: English is one of the few languages out of scope for my job. But it’s mostly a project for after the kids’ bedtime, and I think that understanding what it’s like to work on a project in modern English will help me advocate for better resources for languages that aren’t English.</p>
+<p>So I’d like to introduce The Data-Sitters Club. Need computational text analysis? Save time! Visit the Data-Sitters Club and get the inside story on how to apply digital humanities methods to a real project. So far, there are five of us, and, like the BSC members, we all have different experience and specializations.</p>
+<p>Roopika Risam is an Associate Professor of Secondary and Higher Education and English at Salem State University. Everyone calls her Roopsi. Her family is from Kashmir, but she was born in Wales. She actually has <em>two</em> passports. Roopsi has beautiful, clear, Bit-O-Honey-colored skin and black hair, which she wears in a graduated bob with blonde highlights. She grew up in Washington, DC, and she’s dibbly jaded from it. This is probably why Roopsi still wears Doc Martens boots and dresses everyday, like it’s still the 1990s. Her sister, Monica, is a real, live <em>genius.</em> She’s even a member of Mensa. Roopsi’s the black sheep of the family even though she’s the one who skipped Kindergarten. But that really just means she’s not that great at cutting and pasting or sharing. Monica recently admitted that Roopsi is actually the brilliant one. I think that made Roopsi feel pretty good. I’ve known Roopsi for a while but the first time we really connected was when I wrote the first review for her book, <a class="reference external" href="http://www.nupress.northwestern.edu/content/new-digital-worlds"><em>New Digital Worlds: Postcolonial Digital Humanities in Theory, Praxis, and Pedagogy.</em></a> It was <a href="dsc6.html">fresh and distant</a>.</p>
+<p>Katia Bowers is an Assistant Professor and Russianist at the University of British Columbia, so we have some Slavic Studies connections. Katia has curly-wavy light brown hair, brown eyes and glasses. She’s lived all over the world - in Germany, the US, Russia, Croatia, the UK, and now Canada - and when she was a tween,
+<em>BSC</em> books were a way for her to connect with American culture from abroad. Since moving to Canada she has adopted a kind of Vancouver-style that involves an espresso addiction and a daily uniform of black leggings and tunics or long sweaters. Her clothing might seem nondescript and utilitarian, but she jazzes it up with shoes from her large collection, which has a 19th-century vibe, and she’s often to be found wearing shoes that are historically accurate to the period she’s writing and reading about that day. Katia and I met at the Slavic Digital Humanities Summer Workshop at Princeton in September the week before my trip to Las Vegas. At the workshop, she was talking about a new digital humanities text analysis project she’s doing with Kate Holland at Toronto that focuses on Dostoevsky’s writing, but I didn’t realize that Katia was a fellow <em>BSC</em> fan until she and Roopsi and I got to talking on Twitter.</p>
+<p>Anouk Lang is a Senior Lecturer in Digital Humanities in the Department of English Literature at the University of Edinburgh. Her introduction to the <em>BSC</em> books came in sixth grade in Sydney, when their candy-bright spines lit up the shelf of sensible whites and creams that made up the rest of the class lending library, and the race to beat everyone else through the series was on. Somewhat hilariously for someone who would grow up to be a postcolonialist, as a kid she read much more American literature than Australian — <em>Sweet Valley High</em>, the <em>Ramona</em> books, <em>Little House on the Prairie</em>, <em>Nancy Drew</em>, the <em>Hardy Boys</em>, the <em>Three Investigators</em> — alongside the more normative shelves and shelves full of British English books by the likes of Blyton, Noel Streatfeild, C.S. Lewis, Tolkien, and Douglas Adams. Anouk is probably closest to being a mixture of Mallory’s glasses-wearing awkwardness and Dawn, always figured as geographically other. Her Australian twang has faded after 20-odd years in the UK into a more generic learnt-English-somewhere-other-than-England accent. She can, with effort, code-switch between the different uses of “pants” (US &amp; Australian English = long trousers, British English = underwear), and is gradually adding Scots words to her vocabulary, the most useful so far being “outwith.” She has no hopes of keeping up either with Claudia’s barrette and earring game, or with Quinn’s sartorial creativity in the digital humanities-dress department, but does pull out her beloved Bernina sewing machine from time to time to make things, most recently a black plush Toothless dragon.</p>
+<p>Maria Sachiko Cecire is an Associate Professor of Literature and the Director of the Center for Experimental Humanities at Bard College. I actually went to undergrad with Maria at the University of Chicago, and who would have thought we would end up working together later in life? It’s pretty great. Maria is half-Japanese and half-Italian, and has dark brown hair, brown eyes, and olive skin that turns a deep toast color in the summer. She grew up in the South and absolutely loves the beach. She also loves books and has shelves and shelves of them in her house. She’s so interested in children’s literature that she wrote her own book about it! It’s called <a class="reference external" href="https://www.upress.umn.edu/book-division/books/re-enchanted"><em>Re-Enchanted: The Rise of Children’s Fantasy Literature in the Twentieth Century</em></a>. Now she’s excited about diving back into the <em>BSC</em>.</p>
+<p>But Maria is more than a bookworm: she also loves getting out there and doing stuff, especially with her friends. She can be super social. For example, she started an interdisciplinary curriculum and center in Experimental Humanities at the small liberal arts college where she works. The students, faculty, staff, and community members involved in EH (that’s what they call it for short) use all kinds of tools and methods to think together about how technology mediates what it means to be human. It sounds like heavy stuff, and I guess it is, but they have a ton of fun! Maria is always experimenting with different media and coming up with new projects, and if that can involve group calls with her colleague-friends around the world to talk about children’s lit, all the better!</p>
+<p>It was the day before Halloween when all five of us were finally able to get together. I had subtly raided my kids’ Halloween candy buckets (from trick-or-treating at businesses the weekend before) before leaving for work, swiping a mix of Almond Joys, M&amp;Ms, and Nerds. (What would Claudia Kishi do as a parent?) The biggest downside to virtual meetings is that you can’t share candy with your friends.</p>
+<p>“It’s been really interesting to see how the ideology of the 90’s plays out in these books,” said Anouk.</p>
+<p>“It’s such a period piece of suburban girlhood,” agreed Roopsi. “I moved to the US when I was a kid, and Stonybrook is so much like where I grew up, in ‘post-racial’ DC, where everyone pretended there were no structural differences.”</p>
+<p>“For me, the structures implicit in the books were the implicit structures around me,” added Katia. “Before I moved to the US when I was 12, <em>The Baby-Sitters Club</em> was my primer on how to be a suburban tween.”</p>
+<p>“What I’ve been thinking about has been how <em>The Baby-Sitters Club</em> relates to work on girlhood studies around boarding school books — things like <em>Malory Towers</em>,” mused Maria.</p>
+<p>“I was literally just reading those to my kids!” laughed Anouk.</p>
+<p>“Boarding school books present this low-stakes environment for practicing how to be a — usually — starkly gendered person in the world outside that little world. I’m curious if there’s any computational way to look at whether <em>The Baby-Sitters Club</em> functions as a ‘little world’, where it’s safe to try and fail, in preparation for the outside world,” Maria suggested.</p>
+<p>“Even if some of our questions turn out to not be compatible with computational analysis, it’ll still worth talking about the limits we run into with these methods. Publishing negative results is a good thing!” I replied.</p>
+<p>As we went around, thinking aloud about the directions we could explore together, I was delighted. We could actually do this: kids who once read <em>BSC</em> books in our bedrooms, thousands of miles away from one another, were now grown-ups with faculty or alt-ac jobs. We had the resources to ask and answer the questions we were only dimly aware of then, and make visible all the steps along the way.</p>
+<p>The Data-Sitters Club was going to be a success, and I helped make it work. I hoped Roopsi, Katia, Maria, Anouk, and I – the Data-Sitters Club – would stay together for a long time.</p>
+<div style="text-align:center">
+<img src="_static/images/bscmeeting.png" alt="Photo of the first Data-Sitters Club Zoom meeting with Quinn Dombrowski, Katia Bowers, Maria Cecire, Anouk Lang, and Roopika Risam" />
+</div>
+<div class="section" id="suggested-citation">
+<h2>Suggested citation<a class="headerlink" href="#suggested-citation" title="Permalink to this headline">¶</a></h2>
+<p>Dombrowski, Quinn. “DSC #1: Quinn’s Great Idea.” <em>The Data-Sitters Club.</em> November 7, 2019. https://datasittersclub.github.io/site/dsc1/.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="books" title="previous page">The Data-Sitters Club Books</a>
+    <a class='right-next' id="next-link" href="dsc2" title="next page">DSC #2: Katia and the Phantom corpus</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Data-Sitters Club<br/>
+        
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

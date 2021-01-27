@@ -1,0 +1,1200 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSC #4: AntConc Saves the Day &#8212; Data-Sitters Club Notebook</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/style.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="DSC #5: The DSC and the Impossible TEI Quandaries" href="dsc5.html" />
+    <link rel="prev" title="DSC #3: The Truth About Digital Humanities Collaborations (and Textual Variants!)" href="dsc3.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/DSClogo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Data-Sitters Club Notebook</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <p class="caption collapsible-parent">
+ <span class="caption-text">
+  About
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../chapter-2.html">
+   About the DSC
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Main series
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc1.html">
+   DSC 1: Quinn's Great Idea
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc2.html">
+   DSC 2: Katia and the Phantom Corpus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc3.html">
+   DSC 3: The Truth About DH Collaboration (and Textual Variants!)
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   DSC 4: AntConc Saves the Day
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc5.html">
+   DSC 5: The DSC and the Impossible TEI Quandaries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc6.html">
+   DSC 6: Voyant's Big Day
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc7.html">
+   DSC 7: The DSC and Mean Copyright Law
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc8.html">
+   Dear Reader
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc8.html#a-time-for-tropes">
+   A Time for Tropes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc8.html#comparing-all-the-things">
+   Comparing All The Things
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc8.html#visualizing-the-network">
+   Visualizing the network
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc8.html#a-different-direction">
+   A different direction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc8.html#what-do-we-compare-when-we-compare-texts">
+   What do we compare when we compare texts?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc8.html#euclidean-distance">
+   Euclidean distance
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc8.html#cosine-similarity">
+   Cosine similarity
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc8.html#word-counts-or-word-frequencies">
+   Word counts or word frequencies?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc8.html#tf-idf">
+   TF-IDF
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc8.html#what-does-this-tell-us-about-chapter-2">
+   What does this tell us about chapter 2?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc8.html#acknowledgements">
+   Acknowledgements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc8.html#suggested-citation">
+   Suggested Citation
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Multilingual mysteries
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm1.html">
+   DSCM 1: Lee and the Missing Metadata
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm2.html">
+   Suggested citation:
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm2.html#quinn">
+   Quinn
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm2.html#whats-named-entity-recognition">
+   What’s named-entity recognition?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm2.html#the-tools">
+   The tools
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm2.html#the-texts">
+   The texts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm2.html#getting-started-with-spacy">
+   Getting started with spaCy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm2.html#running-spacy">
+   Running spaCy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm2.html#lets-do-it-all-again-for-english">
+   Let’s do it all again for English
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm2.html#what-now">
+   What now?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm2.html#read-more">
+   Read more
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm3.html">
+   DSCM 3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Fun
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../covid19.html">
+   Important Public Health Messages from the Data-Sitters Club about COVID-19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../dhawards2019.html">
+   DH Awards 2019 Ad Campaign
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/books/dsc4.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#suggested-citation">
+   Suggested Citation
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <img src="../_static/images/DSCLogo.png" />
+<div class="section" id="dsc-4-antconc-saves-the-day">
+<h1>DSC #4: AntConc Saves the Day<a class="headerlink" href="#dsc-4-antconc-saves-the-day" title="Permalink to this headline">¶</a></h1>
+<p>by Anouk Lang, April 10, 2020</p>
+<div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
+<img src="../_static/images/bookcovers/dsc4_cover.jpg" alt="DSC 4 book cover" />
+</div>
+<p>My heart racing, I flipped my laptop open, powered it up and waited with bated breath for the browser to start. This was the moment I’d been waiting for. At last the page loaded and I clicked the link, to get to what I’d been waiting for with such anticipation. Hundreds of beautiful clean text files shone out of the screen at me, carefully labelled, fixed of their OCR errors and culled of their paratexts and their encoding gremlins. It was better than finding a stash of candy in one of Claudia’s pillowcases: it was the corpus of BSC texts, <a class="reference external" href="https://datasittersclub.github.io/site/dsc2/">lovingly curated and cleaned by Quinn and Katia (as described in <em>DSC #2: Katia and the Phantom Corpus</em>)</a>, and all ready to work with. Meanwhile, a thicket of deadlines and disasters had sprung up in front of the other Data-Sitters, which was just the excuse I needed. “I’ll get started with AntConc!” I told them.</p>
+<img src="../_static/images/dsc4_gettingahead.png" alt="AntConc results for 'getting ahead of myself'" />
+<p>But, as BSC narrators like to do, I’m getting ahead of myself. AntConc, for those who’ve not encountered it before, is a concordancer: a piece of software used in the fields of corpus linguistics and natural language processing (NLP) that lets you load a corpus of texts and then search it for words or phrases. You can modify your search terms with a set of customizable wildcards or regular expressions, and AntConc will bring up those words or phrases in what’s known as a key word in context (KWIC) display. You can then sort these KWIC lines to get a sense of the words that precede or follow the words in your query, generate a frequency list of all the words in the corpus, find words which commonly appear (or collocate) together, bring up a visual display of where in each file the words in your query appear, compare the frequency of words in your corpus to their frequency in a reference corpus, and more. AntConc is well regarded in the digital humanities community as it’s well maintained by its creator Laurence Anthony, it’s free to use, and – one of the things I particularly appreciate about it – it’s lightweight and can usually be installed on lab PCs of the type that people teaching digital humanities can find themselves restricted to using. For classes, or DH beginners for whom jumping into NLP with Python is not a realistic option, it is a good way to demonstrate some of the potential of text analysis using a pretty intuitive graphical user interface (GUI). You might see it as the text analysis equivalent of the Kid-Kit, the box of crafty fun things the BSC took to babysitting gigs when they particularly wanted to keep their charges amused.</p>
+<p>I loaded the corpus of BSC books into AntConc (<em>File &gt; Open Dir</em>) and started by generating a word frequency list (<em>Word List</em> tab then <em>Start</em>) and taking a look at the basic stats, which appear at the top of the main white window in the Word List tab once you have clicked Start. The corpus was around 4.7 million words, with around 33 000 different unique words (or types). I then looked at the word frequency list, something which can be an interesting exploratory step, as it lets you see if there are any terms with fairly high frequencies whose presence isn’t immediately explainable by intuition. I was all primed to look up terms relating to the things the other Data-Sitters and I had speculated would make for interesting queries: words around gender, race, consumerism, suburbia and so on. But before any of those appeared on the frequency list, however, I came across the term “little” quite high up. What was even more interesting was that of the 7075 instances of little in the corpus, almost two thirds of them (4653) appeared as part of the bigram “a little”. What could it mean? I decided to investigate further by doing a concordance search for “a little” (<em>Concordance</em> tab, type <code class="docutils literal notranslate"><span class="pre">little</span></code> into the search box and press <em>Start</em>) and sorting the results alphabetically by the word to the right of the search terms (enter <em>1R, 2R</em> and <em>3R</em> into the Kwic Sort boxes then press <em>Sort</em>).</p>
+<p><img alt="AntConc results for 'look a little alike'" src="../_images/dsc4_LookALittleAlike.png" />{:style=”float: right;margin-right: 7px;margin-top: 0px;”}</p>
+<p>The first thing to jump out at me – in light of our discussions about similarities and differences between the books and the logistics of keeping things consistent across the series when a number of ghostwriters were producing the books  – was the way the formula of “look a little alike” recurred in the introductory descriptions of Mary Anne and Kristy. (If you look at the KWIC lines you’ll spot other formulae in there, notably being best friends, being short and having brown hair.) Given what we knew of the ‘BSC Bible’ (as mentioned in <a class="reference external" href="https://datasittersclub.github.io/site/dscm2/">DSC Multilingual Mystery #2: Beware, Lee and Quinn</a>) and its role in guiding the ghostwriters, this wasn’t that surprising. I made a mental note to check, once we got access to the version in the archives, whether “look a little alike” was part of the phraseology it used when describing those two characters.</p>
+<p>As I continued to cast my eye over the KWIC lines for the search query “look a little”, trying different sorting options and looking out for other combinations, a more subtle pattern emerged. The phrase was, it seemed, more likely to modify negatively rather than positively inflected adjectives: terms like <em>downcast, forlorn, guilty, hurt, green, pale, wary</em>, and <em>wistful</em> that encompassed emotional, behavioral or somatic states. Were the BSC books, I wondered idly, offering readers a lesson in the textual regulation of negative feelings or bodily states, by suggesting that the way to express one’s own feelings, or represent someone else’s, was by using the premodifying phrase “a little”?</p>
+<p>This is the dangerous point in corpus analysis: when a potential finding of interest suggests itself to you and – if you are trained as a literary analyst to value this as ‘close reading’, rather than as a statistician to dismiss it as ‘overfitting’ – it is an almost irresistible mental leap to land on an intuitive explanation, and use the KWIC lines that support your theory as evidence, while quietly discarding the ones that complicate it. There could be any number of reasons why the numbers shake out as they do, so what you need to do is park that intuitive explanation and carry out some additional tests. You could, for instance, check if the word or phrase is more or less frequent in your corpus when compared to a reference corpus (a comparable group of texts which is a roughly acceptable match for the genre, historical period, regional variants and so forth of your own corpus). I sighed. It had been enough of an effort getting our own data together. What corpus could I possibly find that would approximate 4.7 million words of 1980/90s young adult fiction in American English?</p>
+<p>In the meantime, though, what I <strong>could</strong> do pretty easily was a comparison of look a little + [negative state] to look + [negative state]. I used the * wildcard (which stands in for zero or more of any character: see <em>Settings &gt; Global settings</em> then the <em>Wildcards</em> tab for more) to pull up all instances of the lemma <em>look</em>, ie. <em>look, looks, looking, looked</em> and so on, and pulled out a few examples to get a sense of how often a term describing a negative state would be preceded by a little:</p>
+<ul class="simple">
+<li><p>8 instances of <em>look* a little surprised</em> vs 82 of <em>look* surprised</em> (10%)</p></li>
+<li><p>8 instances of <em>look* a little puzzled</em> vs 62 of <em>look*</em> puzzled (13%)</p></li>
+<li><p>12 instances of <em>look* a little confused</em> vs 62 of <em>look* confused</em> (19%)</p></li>
+<li><p>12 instances of <em>look* a little embarrassed</em> vs 28 of <em>look* embarrassed</em> (43%)</p></li>
+<li><p>7 instances of <em>look* a little sheepish</em> vs 13 instances of <em>look* sheepish</em> (54%)</p></li>
+</ul>
+<p>Pulling on my amateur sociolinguist’s deerstalker hat (one of which fashion-forward Claudia would undoubtedly own), I noticed that, as the percentages in this short list increased – that is, as the likelihood that one of these states would be qualified by “a little” – so the perceived negative qualities of the emotion seemed also to increase. There’s nothing particularly wrong with or shameful about being surprised, I figured, so perhaps it’s not very important to cushion that judgment of oneself or others with “a little”. But if someone is embarrassed or sheepish, then that’s an unpleasant state for them to be in, and for others to witness them in, so it might become more pressing to modify those descriptors.</p>
+<p>I really wanted the other Data-Sitters to weigh in on this – safety in numbers when you have a potentially dangerous data-sitting job – but I still had some work to do. For a start, I wanted to be sure I had captured all the adjectives describing emotional states that were modified by “a little” in the corpus, rather than relying on those I had identified manually, and see whether my hypothesis still held. The best way to do this was to apply part-of-speech tags, or POS-tags, to every word in the corpus. This is most efficiently done with something like the NLTK’s nltk.pos_tag function. But, as I wanted to use only tools with a GUI, I turned to the<a class="reference external" href="http://ucrel-api.lancaster.ac.uk/claws/free.html">  CLAWS POS-tagger</a>, which allows you to manually paste in plain-text and get back a version that has had parts of speech tags applied to it automatically. A singular noun such as “cat” will be tagged as <code class="docutils literal notranslate"><span class="pre">cat_NN1</span></code>, for instance, while a verb such as “babysit” will be tagged <code class="docutils literal notranslate"><span class="pre">babysit_VV0</span></code> and so forth. The automated tagging isn’t perfect, but as it would take an absurd amount of time to manually assign part-of-speech tags to a corpus this size, it’s a good deal better than not having any pos-tags at all. The<a class="reference external" href="http://ucrel.lancs.ac.uk/claws7tags.html">  C7 tagset</a>, which is the one I was using, has three tags for adjectives: JJ (general adjective), JJR (general comparative adjective and JJT (general superlative adjective), which are appended to the end of each word with an underscore, so you can include all or part of a tag in your search term by using wildcards. AntConc allows you to specify the characters that separate words from their tags, so once I had tagged my corpus and loaded it into AntConc, I set the tag marker to _ (<em>Settings &gt; Global Settings</em> then select <em>Tags</em> and look in the box next to <em>Tag</em> marker). I then typed in the search query <code class="docutils literal notranslate"><span class="pre">a_*</span> <span class="pre">little_*</span> <span class="pre">*_J*</span></code> (meaning “find me all instances of phrases consisting of the word a followed by any tag, then “little” followed by any tag, then any word followed by a tag that starts with J and contains 0 or more other letters, ie. JJ, JJR and JJT”), and hit <em>Start</em>.</p>
+<p>I got back 1271 results, mostly consisting of adjectives of the sort I was looking for, but there were a fair number of errors such a “little stuffed koala bear” (where a “little” denoted size), and “let’s go downtown, shop a little, separate for lunch and then shop some more” (where a tagging error had missed the comma before “separate” and thus miscategorized it as an adjective rather than a noun). I saved the output to a text file, opened that in Excel and manually removed all the false positives, which yielded a list of 1054. I then ran the same search but with a search query string that picked up the past participles of verbs (ie. <code class="docutils literal notranslate"><span class="pre">a_*</span> <span class="pre">little_*</span> <span class="pre">*_VVN</span></code>), so as to return phrases such as “a little carried away” and “a little choked up”. This search produced 353 results which, after removing a few errors (eg. “a little jeweled mirror”), left me with 351. Once that was done, I amalgamated the two lists, copied the column containing “a little” + the descriptor, and pasted it into a new file in the text editor BBEdit. I used regular expressions to strip out the tags and all the words in the sentence except the descriptor (replacing <code class="docutils literal notranslate"><span class="pre">a_.{2}\slittle_.{2}\s</span> </code> with nothing to remove the text that preceded each descriptor, <code class="docutils literal notranslate"><span class="pre">_.{2,3}\s.*</span></code> with nothing to remove the text that followed, and <code class="docutils literal notranslate"><span class="pre">\n[^a-z]*</span></code> with <code class="docutils literal notranslate"><span class="pre">\n</span></code> to clean up any stray non-alphanumeric characters), and was left with a list of 1405 descriptors. (For more on using regular expressions, see <a class="reference external" href="https://datasittersclub.github.io/site/dscm3/">DSC Multilingual Mystery #3</a>.)</p>
+<p>But I wasn’t quite done yet. I had to find out how many of each type of word there were in my list, so I used OpenRefine’s Text Facet function to get a list of the clustered terms (367, as it turns out) with counts. OpenRefine will give you a tab-separated version of this information (if you click ‘367 choices’, just below the words ‘Column 1’ to the left of the screen), so I dumped that into Excel, and added two more columns: the number of times the word appeared in the corpus in total, and the proportion of times the word was modified by a little. (For those seeking a proper tutorial on how to use the power tool that is OpenRefine, Quinn’s got you covered: see <a class="reference external" href="https://datasittersclub.github.io/site/dscm3/">DSC Multilingual Mystery #3</a>.)</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>word</p></th>
+<th class="head"><p>n preceded by a little in BSC corpus</p></th>
+<th class="head"><p>total n in BSC corpus</p></th>
+<th class="head"><p>n preceded by a little in BSC corpus / total n in BSC corpus (%)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>panicky</p></td>
+<td><p>6</p></td>
+<td><p>13</p></td>
+<td><p>46.15384615</p></td>
+</tr>
+<tr class="row-odd"><td><p>straighter</p></td>
+<td><p>8</p></td>
+<td><p>25</p></td>
+<td><p>32</p></td>
+</tr>
+<tr class="row-even"><td><p>slower</p></td>
+<td><p>8</p></td>
+<td><p>28</p></td>
+<td><p>28.57142857</p></td>
+</tr>
+<tr class="row-odd"><td><p>queasy</p></td>
+<td><p>5</p></td>
+<td><p>18</p></td>
+<td><p>27.77777778</p></td>
+</tr>
+<tr class="row-even"><td><p>taken_aback</p></td>
+<td><p>6</p></td>
+<td><p>22</p></td>
+<td><p>27.27272727</p></td>
+</tr>
+<tr class="row-odd"><td><p>choked_up</p></td>
+<td><p>10</p></td>
+<td><p>38</p></td>
+<td><p>26.31578947</p></td>
+</tr>
+<tr class="row-even"><td><p>shaky</p></td>
+<td><p>18</p></td>
+<td><p>82</p></td>
+<td><p>21.95121951</p></td>
+</tr>
+<tr class="row-odd"><td><p>sheepish</p></td>
+<td><p>8</p></td>
+<td><p>40</p></td>
+<td><p>20</p></td>
+</tr>
+<tr class="row-even"><td><p>carried_away</p></td>
+<td><p>8</p></td>
+<td><p>41</p></td>
+<td><p>19.51219512</p></td>
+</tr>
+<tr class="row-odd"><td><p>calmer</p></td>
+<td><p>6</p></td>
+<td><p>31</p></td>
+<td><p>19.35483871</p></td>
+</tr>
+<tr class="row-even"><td><p>overwhelmed</p></td>
+<td><p>9</p></td>
+<td><p>52</p></td>
+<td><p>17.30769231</p></td>
+</tr>
+<tr class="row-odd"><td><p>dazed</p></td>
+<td><p>5</p></td>
+<td><p>32</p></td>
+<td><p>15.625</p></td>
+</tr>
+<tr class="row-even"><td><p>dizzy</p></td>
+<td><p>5</p></td>
+<td><p>40</p></td>
+<td><p>12.5</p></td>
+</tr>
+<tr class="row-odd"><td><p>disappointed</p></td>
+<td><p>29</p></td>
+<td><p>266</p></td>
+<td><p>10.90225564</p></td>
+</tr>
+<tr class="row-even"><td><p>bewildered</p></td>
+<td><p>8</p></td>
+<td><p>74</p></td>
+<td><p>10.81081081</p></td>
+</tr>
+<tr class="row-odd"><td><p>annoyed</p></td>
+<td><p>14</p></td>
+<td><p>142</p></td>
+<td><p>9.85915493</p></td>
+</tr>
+<tr class="row-even"><td><p>jealous</p></td>
+<td><p>15</p></td>
+<td><p>164</p></td>
+<td><p>9.146341463</p></td>
+</tr>
+<tr class="row-odd"><td><p>nervous</p></td>
+<td><p>63</p></td>
+<td><p>709</p></td>
+<td><p>8.885754584</p></td>
+</tr>
+<tr class="row-even"><td><p>guilty</p></td>
+<td><p>24</p></td>
+<td><p>273</p></td>
+<td><p>8.791208791</p></td>
+</tr>
+<tr class="row-odd"><td><p>immature</p></td>
+<td><p>6</p></td>
+<td><p>73</p></td>
+<td><p>8.219178082</p></td>
+</tr>
+<tr class="row-even"><td><p>confused</p></td>
+<td><p>25</p></td>
+<td><p>311</p></td>
+<td><p>8.038585209</p></td>
+</tr>
+<tr class="row-odd"><td><p>distracted</p></td>
+<td><p>8</p></td>
+<td><p>101</p></td>
+<td><p>7.920792079</p></td>
+</tr>
+<tr class="row-even"><td><p>lonely</p></td>
+<td><p>10</p></td>
+<td><p>129</p></td>
+<td><p>7.751937984</p></td>
+</tr>
+<tr class="row-odd"><td><p>embarrassed</p></td>
+<td><p>25</p></td>
+<td><p>332</p></td>
+<td><p>7.530120482</p></td>
+</tr>
+<tr class="row-even"><td><p>uncomfortable</p></td>
+<td><p>12</p></td>
+<td><p>162</p></td>
+<td><p>7.407407407</p></td>
+</tr>
+<tr class="row-odd"><td><p>odd</p></td>
+<td><p>10</p></td>
+<td><p>161</p></td>
+<td><p>6.211180124</p></td>
+</tr>
+<tr class="row-even"><td><p>suspicious</p></td>
+<td><p>10</p></td>
+<td><p>163</p></td>
+<td><p>6.134969325</p></td>
+</tr>
+<tr class="row-odd"><td><p>awkward</p></td>
+<td><p>5</p></td>
+<td><p>82</p></td>
+<td><p>6.097560976</p></td>
+</tr>
+<tr class="row-even"><td><p>puzzled</p></td>
+<td><p>10</p></td>
+<td><p>174</p></td>
+<td><p>5.747126437</p></td>
+</tr>
+<tr class="row-odd"><td><p>louder</p></td>
+<td><p>7</p></td>
+<td><p>123</p></td>
+<td><p>5.691056911</p></td>
+</tr>
+<tr class="row-even"><td><p>surprised</p></td>
+<td><p>42</p></td>
+<td><p>760</p></td>
+<td><p>5.526315789</p></td>
+</tr>
+<tr class="row-odd"><td><p>complicated</p></td>
+<td><p>10</p></td>
+<td><p>183</p></td>
+<td><p>5.464480874</p></td>
+</tr>
+<tr class="row-even"><td><p>easier</p></td>
+<td><p>13</p></td>
+<td><p>240</p></td>
+<td><p>5.416666667</p></td>
+</tr>
+<tr class="row-odd"><td><p>early</p></td>
+<td><p>40</p></td>
+<td><p>805</p></td>
+<td><p>4.968944099</p></td>
+</tr>
+<tr class="row-even"><td><p>embarrassing</p></td>
+<td><p>6</p></td>
+<td><p>138</p></td>
+<td><p>4.347826087</p></td>
+</tr>
+<tr class="row-odd"><td><p>harder</p></td>
+<td><p>8</p></td>
+<td><p>190</p></td>
+<td><p>4.210526316</p></td>
+</tr>
+<tr class="row-even"><td><p>worried</p></td>
+<td><p>26</p></td>
+<td><p>674</p></td>
+<td><p>3.857566766</p></td>
+</tr>
+<tr class="row-odd"><td><p>concerned</p></td>
+<td><p>10</p></td>
+<td><p>263</p></td>
+<td><p>3.802281369</p></td>
+</tr>
+<tr class="row-even"><td><p>closer</p></td>
+<td><p>14</p></td>
+<td><p>389</p></td>
+<td><p>3.598971722</p></td>
+</tr>
+<tr class="row-odd"><td><p>further</p></td>
+<td><p>5</p></td>
+<td><p>141</p></td>
+<td><p>3.546099291</p></td>
+</tr>
+<tr class="row-even"><td><p>scary</p></td>
+<td><p>10</p></td>
+<td><p>286</p></td>
+<td><p>3.496503497</p></td>
+</tr>
+<tr class="row-odd"><td><p>unusual</p></td>
+<td><p>5</p></td>
+<td><p>144</p></td>
+<td><p>3.472222222</p></td>
+</tr>
+<tr class="row-even"><td><p>difficult</p></td>
+<td><p>7</p></td>
+<td><p>233</p></td>
+<td><p>3.004291845</p></td>
+</tr>
+<tr class="row-odd"><td><p>strange</p></td>
+<td><p>13</p></td>
+<td><p>447</p></td>
+<td><p>2.908277405</p></td>
+</tr>
+<tr class="row-even"><td><p>late</p></td>
+<td><p>29</p></td>
+<td><p>1153</p></td>
+<td><p>2.515177797</p></td>
+</tr>
+<tr class="row-odd"><td><p>weird</p></td>
+<td><p>16</p></td>
+<td><p>687</p></td>
+<td><p>2.328966521</p></td>
+</tr>
+<tr class="row-even"><td><p>sad</p></td>
+<td><p>12</p></td>
+<td><p>521</p></td>
+<td><p>2.303262956</p></td>
+</tr>
+<tr class="row-odd"><td><p>bored</p></td>
+<td><p>6</p></td>
+<td><p>263</p></td>
+<td><p>2.281368821</p></td>
+</tr>
+<tr class="row-even"><td><p>shocked</p></td>
+<td><p>5</p></td>
+<td><p>227</p></td>
+<td><p>2.202643172</p></td>
+</tr>
+<tr class="row-odd"><td><p>older</p></td>
+<td><p>19</p></td>
+<td><p>877</p></td>
+<td><p>2.166476625</p></td>
+</tr>
+<tr class="row-even"><td><p>better</p></td>
+<td><p>63</p></td>
+<td><p>2912</p></td>
+<td><p>2.163461538</p></td>
+</tr>
+<tr class="row-odd"><td><p>tired</p></td>
+<td><p>13</p></td>
+<td><p>641</p></td>
+<td><p>2.028081123</p></td>
+</tr>
+<tr class="row-even"><td><p>wild</p></td>
+<td><p>9</p></td>
+<td><p>498</p></td>
+<td><p>1.807228916</p></td>
+</tr>
+<tr class="row-odd"><td><p>afraid</p></td>
+<td><p>10</p></td>
+<td><p>591</p></td>
+<td><p>1.692047377</p></td>
+</tr>
+<tr class="row-even"><td><p>scared</p></td>
+<td><p>7</p></td>
+<td><p>436</p></td>
+<td><p>1.605504587</p></td>
+</tr>
+<tr class="row-odd"><td><p>crazy</p></td>
+<td><p>12</p></td>
+<td><p>845</p></td>
+<td><p>1.420118343</p></td>
+</tr>
+<tr class="row-even"><td><p>hurt</p></td>
+<td><p>11</p></td>
+<td><p>780</p></td>
+<td><p>1.41025641</p></td>
+</tr>
+<tr class="row-odd"><td><p>young</p></td>
+<td><p>8</p></td>
+<td><p>614</p></td>
+<td><p>1.302931596</p></td>
+</tr>
+<tr class="row-even"><td><p>different</p></td>
+<td><p>19</p></td>
+<td><p>1526</p></td>
+<td><p>1.24508519</p></td>
+</tr>
+<tr class="row-odd"><td><p>angry</p></td>
+<td><p>7</p></td>
+<td><p>576</p></td>
+<td><p>1.215277778</p></td>
+</tr>
+<tr class="row-even"><td><p>sick</p></td>
+<td><p>7</p></td>
+<td><p>706</p></td>
+<td><p>0.991501416</p></td>
+</tr>
+<tr class="row-odd"><td><p>funny</p></td>
+<td><p>9</p></td>
+<td><p>1178</p></td>
+<td><p>0.764006791</p></td>
+</tr>
+<tr class="row-even"><td><p>younger</p></td>
+<td><p>6</p></td>
+<td><p>800</p></td>
+<td><p>0.75</p></td>
+</tr>
+<tr class="row-odd"><td><p>hard</p></td>
+<td><p>18</p></td>
+<td><p>2488</p></td>
+<td><p>0.723472669</p></td>
+</tr>
+<tr class="row-even"><td><p>sorry</p></td>
+<td><p>10</p></td>
+<td><p>1773</p></td>
+<td><p>0.564015792</p></td>
+</tr>
+<tr class="row-odd"><td><p>short</p></td>
+<td><p>5</p></td>
+<td><p>1017</p></td>
+<td><p>0.491642085</p></td>
+</tr>
+<tr class="row-even"><td><p>old</p></td>
+<td><p>7</p></td>
+<td><p>3979</p></td>
+<td><p>0.175923599</p></td>
+</tr>
+</tbody>
+</table>
+<p>I sat back and looked at my handiwork with satisfaction: a table of the words in the BSC modified by “a little” 5 times or more, sorted from highest to lowest likelihood of being thus modified. The columns made it easy to see that a word like “panicky”, for instance, was preceded by “a little” over 46% of the time, which looked like an impressively high result, but as “panicky” only made 13 appearances in the corpus in total, this wasn’t a very reliable finding. In comparison, words like “tired” (modified just over 2% of the time) or “sick” (modified just under 1% of the time) had much lower likelihoods of appearing after “a little”, but with a much higher frequency in the corpus (both around 700 instances), the proportions were more reliable. How much more reliable, I couldn’t say: one of the missing things in doctoral training in English literature and the Stoneybrook Middle School curriculum is a proper grounding in statistics. Without that in my own disciplinary background, my best bet was to find another Data-Sitter or perhaps recruit a new associate Data-Sitter with which to collaborate. A book for later in the series, perhaps (drop us a tweet at #DataSittersClub if you’re interested).</p>
+<p>So, some of the terms in the list were more trustworthy than others. But to what extent did that compromise my earlier hypothesis about there being a focus in the books on mitigating unpleasant emotions via the (over)use of the premodifying phrase a little? There were terms towards the top of the list – <em>panicky, queasy, taken aback, choked up, sheepish, carried away</em> – which seemed very much in tune with the intense emotions experienced in teenagerhood: feelings whose distress was multiplied by the mortifying possibility that you would be observed – and judged – for going through them, rather than gliding through them unruffled. But as evocative as they were, these terms were not a reliable basis on which to build an argument, as they each numbered only a few dozen. However, a little further down the list were terms including <em>disappointed, annoyed, jealous, nervous, guilty, confused, embarrassed</em> and <em>uncomfortable</em> that, while denoting feelings that were perhaps less viscerally intense, nonetheless signalled other unpleasant states, and which appeared at least a hundred times in the corpus (nervous, in fact, appeared 709 times). These seemed like more of a solid basis on which to hang an interpretation. And, taking the more and the less reliable terms all together, it did feel like the list moved, roughly, from more intense to less intense, and from more excessive to more reasonable, as the likelihood of modification by “a little” decreased. Describing someone as “carried away” felt to me as if it contained the implication that they were over-excited and unreasonably emotional, as opposed to “worried” or “concerned” which didn’t carry those same overtones of inappropriate excess.</p>
+<p>Pondering the extent to which my British/Australian English would lead my judgments about the positive or negative associations of particular words in 1980s tween American English to differ to those of the rest of the Data-Sitters on the other side of the Atlantic, I went off to search for a reference corpus. The Corpus of Contemporary American English (COCA) presented itself as my best option, as it contains 1 billion words from 1990 to the present, and covers a range of genres, including fiction. It was far from a perfect match, and the interface limited me to an irritatingly low number of queries per 24 hour period, but it was the best thing to hand. I rolled up my sleeves and got searching.</p>
+<p>Querying COCA for all phrases with “a little” + an adjective turned up a list that, sorted by frequency, was also heavy on the negative terms, but didn’t follow quite the same pattern I’d been hypothesizing about:</p>
+<img src="../_static/images/dsc4_COCA_ALittle.png" alt="COCA results for 'a little'" />
+<p>I wasn’t comparing like with like here, of course: I’d selected from the BSC corpus only those adjectives that I interpreted as descriptive of emotional states, and my COCA search had delivered all adjectives, but it nonetheless showed that negatively-inflected words did generally outnumber positively-inflected ones. The most common negative terms, however, weren’t along the lines of the intensely emotional words that had been prominent in the DSC corpus. Terms like <em>scared, disappointed, uncomfortable, worried, awkward</em> and <em>embarrassed</em> were, in fact, less frequent than more prosaic terms like different, extra and higher. In other words, American English of the last four or so decades didn’t seem to be as focused on the discursive cushioning of emotional distress as the BSC books.</p>
+<p>However, when I repeated with COCA what I’d done on the BSC corpus—considering not just the raw frequencies but also the likelihood that a particular word would be modified by a little—the results looked much more like what I’d found earlier. The words “higher” and “different”, prominent in the raw frequencies, retreated further down the list due to their relatively high incidence as unmodified terms, and the words that clustered at the top (all with at least a few hundred appearances in the corpus) were more redolent of the intense-emotions words in the BSC: <em>nervous, awkward, embarrassed, disappointed, uncomfortable</em>. As I went down the list, these words gave way to others that conveyed less intensity: <em>scared</em> and <em>sad</em> yielded to the somewhat more formal worried and concerned, and a little further down more neutral and positive terms began appearing (<em>bigger, easier, better</em>).</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>word</p></th>
+<th class="head"><p>n preceded by a little in COCA</p></th>
+<th class="head"><p>total n in COCA</p></th>
+<th class="head"><p>n preceded by a little in COCA / total n in COCA (%)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>nervous</p></td>
+<td><p>1767</p></td>
+<td><p>33768</p></td>
+<td><p>5.232764748</p></td>
+</tr>
+<tr class="row-odd"><td><p>awkward</p></td>
+<td><p>395</p></td>
+<td><p>14593</p></td>
+<td><p>2.706777222</p></td>
+</tr>
+<tr class="row-even"><td><p>embarrassed</p></td>
+<td><p>387</p></td>
+<td><p>14747</p></td>
+<td><p>2.624262562</p></td>
+</tr>
+<tr class="row-odd"><td><p>extra</p></td>
+<td><p>1687</p></td>
+<td><p>65358</p></td>
+<td><p>2.581168334</p></td>
+</tr>
+<tr class="row-even"><td><p>weird</p></td>
+<td><p>1024</p></td>
+<td><p>41486</p></td>
+<td><p>2.46830256</p></td>
+</tr>
+<tr class="row-odd"><td><p>disappointed</p></td>
+<td><p>498</p></td>
+<td><p>21133</p></td>
+<td><p>2.356504046</p></td>
+</tr>
+<tr class="row-even"><td><p>uncomfortable</p></td>
+<td><p>467</p></td>
+<td><p>20240</p></td>
+<td><p>2.307312253</p></td>
+</tr>
+<tr class="row-odd"><td><p>scary</p></td>
+<td><p>466</p></td>
+<td><p>21383</p></td>
+<td><p>2.179301314</p></td>
+</tr>
+<tr class="row-even"><td><p>rough</p></td>
+<td><p>499</p></td>
+<td><p>27516</p></td>
+<td><p>1.813490333</p></td>
+</tr>
+<tr class="row-odd"><td><p>surprised</p></td>
+<td><p>843</p></td>
+<td><p>47280</p></td>
+<td><p>1.782994924</p></td>
+</tr>
+<tr class="row-even"><td><p>tired</p></td>
+<td><p>869</p></td>
+<td><p>50685</p></td>
+<td><p>1.714511197</p></td>
+</tr>
+<tr class="row-odd"><td><p>odd</p></td>
+<td><p>494</p></td>
+<td><p>29414</p></td>
+<td><p>1.67947236</p></td>
+</tr>
+<tr class="row-even"><td><p>strange</p></td>
+<td><p>789</p></td>
+<td><p>55527</p></td>
+<td><p>1.420930358</p></td>
+</tr>
+<tr class="row-odd"><td><p>crazy</p></td>
+<td><p>1007</p></td>
+<td><p>86075</p></td>
+<td><p>1.169909962</p></td>
+</tr>
+<tr class="row-even"><td><p>scared</p></td>
+<td><p>517</p></td>
+<td><p>44224</p></td>
+<td><p>1.16904848</p></td>
+</tr>
+<tr class="row-odd"><td><p>sad</p></td>
+<td><p>499</p></td>
+<td><p>51799</p></td>
+<td><p>0.963339061</p></td>
+</tr>
+<tr class="row-even"><td><p>older</p></td>
+<td><p>826</p></td>
+<td><p>94860</p></td>
+<td><p>0.870756905</p></td>
+</tr>
+<tr class="row-odd"><td><p>worried</p></td>
+<td><p>462</p></td>
+<td><p>55732</p></td>
+<td><p>0.8289672</p></td>
+</tr>
+<tr class="row-even"><td><p>concerned</p></td>
+<td><p>565</p></td>
+<td><p>74264</p></td>
+<td><p>0.760799311</p></td>
+</tr>
+<tr class="row-odd"><td><p>slow</p></td>
+<td><p>498</p></td>
+<td><p>66674</p></td>
+<td><p>0.746917839</p></td>
+</tr>
+<tr class="row-even"><td><p>late</p></td>
+<td><p>1342</p></td>
+<td><p>187921</p></td>
+<td><p>0.714129874</p></td>
+</tr>
+<tr class="row-odd"><td><p>busy</p></td>
+<td><p>358</p></td>
+<td><p>50183</p></td>
+<td><p>0.713388996</p></td>
+</tr>
+<tr class="row-even"><td><p>bigger</p></td>
+<td><p>384</p></td>
+<td><p>55578</p></td>
+<td><p>0.690920868</p></td>
+</tr>
+<tr class="row-odd"><td><p>easier</p></td>
+<td><p>381</p></td>
+<td><p>60632</p></td>
+<td><p>0.628381053</p></td>
+</tr>
+<tr class="row-even"><td><p>different</p></td>
+<td><p>2456</p></td>
+<td><p>413594</p></td>
+<td><p>0.593819059</p></td>
+</tr>
+<tr class="row-odd"><td><p>higher</p></td>
+<td><p>658</p></td>
+<td><p>145934</p></td>
+<td><p>0.450888758</p></td>
+</tr>
+<tr class="row-even"><td><p>short</p></td>
+<td><p>491</p></td>
+<td><p>151942</p></td>
+<td><p>0.323149623</p></td>
+</tr>
+<tr class="row-odd"><td><p>difficult</p></td>
+<td><p>397</p></td>
+<td><p>136572</p></td>
+<td><p>0.29068916</p></td>
+</tr>
+<tr class="row-even"><td><p>longer</p></td>
+<td><p>416</p></td>
+<td><p>155671</p></td>
+<td><p>0.267230248</p></td>
+</tr>
+<tr class="row-odd"><td><p>hard</p></td>
+<td><p>786</p></td>
+<td><p>308005</p></td>
+<td><p>0.255190662</p></td>
+</tr>
+<tr class="row-even"><td><p>early</p></td>
+<td><p>602</p></td>
+<td><p>262539</p></td>
+<td><p>0.229299266</p></td>
+</tr>
+<tr class="row-odd"><td><p>old</p></td>
+<td><p>736</p></td>
+<td><p>425700</p></td>
+<td><p>0.172891708</p></td>
+</tr>
+<tr class="row-even"><td><p>black</p></td>
+<td><p>367</p></td>
+<td><p>310325</p></td>
+<td><p>0.118263111</p></td>
+</tr>
+<tr class="row-odd"><td><p>white</p></td>
+<td><p>374</p></td>
+<td><p>369206</p></td>
+<td><p>0.101298462</p></td>
+</tr>
+<tr class="row-even"><td><p>better</p></td>
+<td><p>368</p></td>
+<td><p>495459</p></td>
+<td><p>0.074274562</p></td>
+</tr>
+</tbody>
+</table>
+<p>(The lower percentages in the right-most column are explained by the fact that COCA is a great deal bigger than the BSC corpus. The larger the corpus, the larger the number of unique words, so it’s understandable that the number of times any single word occurs in a bigger corpus relative to the total word count will be lower than the same calculation for the same word in a smaller corpus.)</p>
+<p>While I was wondering what to make of the appearance of more objectively descriptive terms such as <em>bigger, easier, better</em>, I made a momentous discovery. There was in fact a decent reference corpus for the BSC, and it had been right in front of my nose all along: COCA’s sub-corpus of Juvenile Fiction! (That’d teach me not to read the documentation properly when taking a new corpus for a ride.) At 3.2 million words it was, size-wise, in the same ballpark as our DSC corpus, and so I wouldn’t even have to do any sampling to bring the two corpora into line. I ran the same “a little” + adjective search that I’d done for the big COCA corpus (including words that were premodified 3 times or more), normalized by the raw frequencies as before, and then, again, sorted the terms by likelihood of being premodified by “a little”.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>word</p></th>
+<th class="head"><p>n preceded by a little in COCA Juv Fic</p></th>
+<th class="head"><p>total n in COCA Juv Fic</p></th>
+<th class="head"><p>n preceded by a little in COCA Juv Fic / total n in COCA Juv Fic (%)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>confusing</p></td>
+<td><p>3</p></td>
+<td><p>17</p></td>
+<td><p>17.64705882</p></td>
+</tr>
+<tr class="row-odd"><td><p>jealous</p></td>
+<td><p>5</p></td>
+<td><p>83</p></td>
+<td><p>6.024096386</p></td>
+</tr>
+<tr class="row-even"><td><p>nervous</p></td>
+<td><p>11</p></td>
+<td><p>247</p></td>
+<td><p>4.453441296</p></td>
+</tr>
+<tr class="row-odd"><td><p>shy</p></td>
+<td><p>3</p></td>
+<td><p>73</p></td>
+<td><p>4.109589041</p></td>
+</tr>
+<tr class="row-even"><td><p>embarrassed</p></td>
+<td><p>4</p></td>
+<td><p>118</p></td>
+<td><p>3.389830508</p></td>
+</tr>
+<tr class="row-odd"><td><p>extra</p></td>
+<td><p>5</p></td>
+<td><p>183</p></td>
+<td><p>2.732240437</p></td>
+</tr>
+<tr class="row-even"><td><p>guilty</p></td>
+<td><p>3</p></td>
+<td><p>126</p></td>
+<td><p>2.380952381</p></td>
+</tr>
+<tr class="row-odd"><td><p>rough</p></td>
+<td><p>3</p></td>
+<td><p>128</p></td>
+<td><p>2.34375</p></td>
+</tr>
+<tr class="row-even"><td><p>higher</p></td>
+<td><p>3</p></td>
+<td><p>152</p></td>
+<td><p>1.973684211</p></td>
+</tr>
+<tr class="row-odd"><td><p>crazy</p></td>
+<td><p>6</p></td>
+<td><p>322</p></td>
+<td><p>1.863354037</p></td>
+</tr>
+<tr class="row-even"><td><p>lower</p></td>
+<td><p>3</p></td>
+<td><p>165</p></td>
+<td><p>1.818181818</p></td>
+</tr>
+<tr class="row-odd"><td><p>weak</p></td>
+<td><p>3</p></td>
+<td><p>184</p></td>
+<td><p>1.630434783</p></td>
+</tr>
+<tr class="row-even"><td><p>older</p></td>
+<td><p>8</p></td>
+<td><p>499</p></td>
+<td><p>1.603206413</p></td>
+</tr>
+<tr class="row-odd"><td><p>weird</p></td>
+<td><p>3</p></td>
+<td><p>195</p></td>
+<td><p>1.538461538</p></td>
+</tr>
+<tr class="row-even"><td><p>pale</p></td>
+<td><p>4</p></td>
+<td><p>269</p></td>
+<td><p>1.486988848</p></td>
+</tr>
+<tr class="row-odd"><td><p>tired</p></td>
+<td><p>6</p></td>
+<td><p>432</p></td>
+<td><p>1.388888889</p></td>
+</tr>
+<tr class="row-even"><td><p>scared</p></td>
+<td><p>5</p></td>
+<td><p>393</p></td>
+<td><p>1.272264631</p></td>
+</tr>
+<tr class="row-odd"><td><p>early</p></td>
+<td><p>6</p></td>
+<td><p>482</p></td>
+<td><p>1.244813278</p></td>
+</tr>
+<tr class="row-even"><td><p>strange</p></td>
+<td><p>6</p></td>
+<td><p>493</p></td>
+<td><p>1.21703854</p></td>
+</tr>
+<tr class="row-odd"><td><p>mad</p></td>
+<td><p>4</p></td>
+<td><p>330</p></td>
+<td><p>1.212121212</p></td>
+</tr>
+<tr class="row-even"><td><p>different</p></td>
+<td><p>6</p></td>
+<td><p>721</p></td>
+<td><p>0.832177531</p></td>
+</tr>
+<tr class="row-odd"><td><p>afraid</p></td>
+<td><p>4</p></td>
+<td><p>556</p></td>
+<td><p>0.71942446</p></td>
+</tr>
+<tr class="row-even"><td><p>sick</p></td>
+<td><p>3</p></td>
+<td><p>418</p></td>
+<td><p>0.717703349</p></td>
+</tr>
+<tr class="row-odd"><td><p>green</p></td>
+<td><p>5</p></td>
+<td><p>785</p></td>
+<td><p>0.636942675</p></td>
+</tr>
+<tr class="row-even"><td><p>longer</p></td>
+<td><p>3</p></td>
+<td><p>502</p></td>
+<td><p>0.597609562</p></td>
+</tr>
+<tr class="row-odd"><td><p>late</p></td>
+<td><p>4</p></td>
+<td><p>737</p></td>
+<td><p>0.542740841</p></td>
+</tr>
+<tr class="row-even"><td><p>brown</p></td>
+<td><p>3</p></td>
+<td><p>648</p></td>
+<td><p>0.462962963</p></td>
+</tr>
+<tr class="row-odd"><td><p>old</p></td>
+<td><p>5</p></td>
+<td><p>2831</p></td>
+<td><p>0.176616037</p></td>
+</tr>
+<tr class="row-even"><td><p>white</p></td>
+<td><p>3</p></td>
+<td><p>1732</p></td>
+<td><p>0.173210162</p></td>
+</tr>
+</tbody>
+</table>
+<p>The raw frequencies were even lower here than in my BSC corpus, so all the same disclaimers applied. But the comparison with the COCA corpus and the COCA Juvenile Fiction sub-corpus did suggest that, while it might be a feature of American English that words or phrases describing unpleasant emotional states would be fairly likely to be modified by “a little”—both in children’s and teen fiction and in language more generally, which is something that I imagine sociolinguists are already well aware of and have explanations for, and perhaps they’d like to weigh in with them on our #DataSittersClub hashtag if they’re reading this—the BSC books had a more intensified version of this discursive formation going on. The terms that topped the COCA and COCA Juvenile Fiction searches – <em>confusing, jealous, nervous, shy, embarrassed, awkward</em> – appeared in the BSC search, but some way down the list (jealous was the highest, coming in at number 17). Above those words (which, to me at least, signalled a moderate level of distress) there were more intensive emotional states, many of which had some kind of somatic dimension to them: <em>panicky, queasy, choked up, shaky, dazed, dizzy</em>. It was as if the BSC books had taken an existing pattern in language and amped it up so as to capture, and foreground, the intimate nexus between bodily and emotional states that is often portrayed as quintessential to the experience of being a teenager.</p>
+<div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
+<img src="../_static/images/dsc4_QuinnGreenScreen.jpg" alt="Quinn on Zoom with a green screen and BSC books" />
+</div>
+By now I was bursting to take all of this to a Data-Sitters Club meeting and to hear what everyone else made of it. We dialled in -- Quinn having rigged up a green screen for her Zoom background so that her head appeared, Cheshire Cat-like, in front of a rainbow of BSC covers -- and I ran everyone through the searches, the word lists, the disclaimers, the reference corpora and all the rest of it. I shared my AntConc screen and ran some searches to illustrate. I finished with my grand unified theory of what it meant for our understanding of the ideological work being done by the books: "... and so it feels to me like the books might be modelling for the reader in a discursive way one of the forms of emotional labor that women are socialized to do in daily life: regulating other people's emotions for them."
+<p>No one was interested in my dumb theory. Everyone was, however, entranced by AntConc. “Hey, I saw ‘happy ending’ a bunch of times!” exclaimed Roopsi. “Can you look that up?”</p>
+<img src="../_static/images/dsc4_HappyEnding.png" alt="AntConc results for 'happy ending'" />
+<p>“Sure,” I said, and did the search. Everyone started to talk at once about why there might be so many mentions of happy endings, and whether this was about the endings of the novels themselves, ways of describing what happened to characters and families, or something else. It was, I had to admit, more interesting than my deep dive into “a little”.</p>
+<p>“I’m sure they start talking about Ronald Reagan at one point”, Katia said, so I looked up <em>reagan</em>.</p>
+<img src="../_static/images/dsc4_Reagan.png" alt="AntConc results for 'Regan'" />
+<p>“Wait, are they talking about <em>Back to the Future</em>? They’re talking about <em>Back to the Future</em>!” Roopsi squealed.</p>
+<p><img alt="AntConc results for 'Back to the Future'" src="../_images/dsc4_BTTF.png" /></p>
+<p>And, before I knew it, we were down a rabbit hole of the movies the BSC characters watched:</p>
+<p><img alt="AntConc results for 'Wizard of Oz'" src="../_images/dsc4_WizOfOz.png" /></p>
+<p>“Um. Guys … guys?” I said, trying to get us back on track by using the term that the BSC overwhelmingly uses to address each other.</p>
+<p><img alt="AntConc results for 'guys'" src="../_images/dsc4_Guys.png" /></p>
+<p>“<em>Guys</em>,” I said more firmly, attempting to channel Kristy bringing a BSC meeting to order. “What do you think about these findings around ‘a little’ and the interpretation I’ve come up with? Is there something there? What have I missed?”</p>
+<p>Gradually, everyone turned their attention back to the searches I’d done. “I think you’d want to look at other kinds of modifying phrases as well”, suggested Quinn. “Like ‘sort of’ and ‘kind of’, and see if the same pattern appeared.”</p>
+<p>“Yeah, I had the same idea,” I said, “but I was running a bit short on time. I’ll give them a go, though. ”</p>
+<p>“You could also look at what comes after those phrases,” Roopsi pointed out. “If they’re followed by the word ‘but’, for instance, that’d change something of the meaning.”</p>
+<p>“OK, cool.” I said. “That’s pretty easy to try out.” And sure enough, a few quick searches pulled up lots of hits where but worked to signal a swerve away from whatever the ‘a little’ + descriptor phrase had been hedging.</p>
+<p><img alt="AntConc results for 'a little, but'" src="../_images/dsc4_ALittleBut.png" />
+<img alt="AntConc results for 'a little, but'" src="../_images/dsc4_ALittleBut2.png" /></p>
+<p>“Does it make a difference who’s talking to who? Or whether the narrator is describing an interaction?” wondered Katia.</p>
+<p>“Yeah, that was one of the things I wanted to look at in more detail too,” I said. “I was curious about whether women and girls were overrepresented as either saying these phrases, or being described by them. I had a quick back-of-the-envelope look at it, but nothing really clear emerged. It’d have to be done properly by, I guess, using the tags to separate out masculine pronouns from feminine pronouns, automating the categorization of names into male and female, and so on. So it’s probably a bigger project for another day.”</p>
+<p>“It’s kind of surprising that ‘scared’ is so frequent,” said Roopsi. “I wonder if that’s the influence of the mysteries? Could you separate out the mysteries and do a search on just those?”</p>
+<p>“Sure,” I said. “You just have to construct a corpus out of just those files, put them in a folder, load that new folder into AntConc and off you go. You could even load the rest of the files into AntConc as your reference corpus, and then see how the mystery novels differed from the other BSC novels.”</p>
+<p>“’Bewildered’” is interesting,” mused Katia. “That doesn’t seem like the kind of word you’d expect to see in teen fiction.”</p>
+<p>“Maybe it’s a pet word for one of the ghostwriters?” Quinn wondered. “Hey, we could cross-reference all the books in which it appears with the list of which ghostwriter wrote what that’s on the fan wiki!”</p>
+<p>“That would be neat,” I agreed. “Maybe we can work towards an authorship attribution book in the future?”</p>
+<p>We talked some more, I took notes as best I could, and then everyone had to go off to other meetings, appointments, and in my case, to sleep.</p>
+<p>The other Data-Sitters had given me a lot to think about, and I was glad to have had their eyes on my methodology and results, such as they were, and their moderating influence on my somewhat premature conclusions. I tried out Quinn’s suggestion of looking for other premodifying phrases: “sort of” came in at 1232 instances, and had the same patterning around “sort of alike” that I’d noticed with “a little alike” in the Mary Anne and Kristy introductions, while “kind of” appeared 1940 time, and at a first glance seemed slightly more likely to collocate with positively inflected terms such as <em>cute, fun and interesting</em>. Following Roopsi’s idea of looking at what followed the words and phrases pre-modified by “a little”, I noticed other features – sometimes punctuation, sometimes the word “well” or “um” – being used to further delay or cushion the descriptors.</p>
+<p><img alt="AntConc results for 'a little, well'" src="../_images/dsc4_ALittleWell.png" />
+<img alt="AntConc results for 'a little...'" src="../_images/dsc4_ALittleDotDotDot.png" /></p>
+<p>These examples felt like they supported my theory: not only did most of them have some kind of negative connotations to them (rooms and houses being untidy; people being displeased; judgments about unpleasant character traits), but they showcased other ways to push back the moment when a negative judgement is voiced (“the script is a little – well, it’s a little boring and it seems a little … I don’t know … a little insulting”). I could see it was going to be hard to give up my theory. I guess close reading habits die hard.</p>
+<p>In the days that followed, I found myself wondering what these findings illuminated of the books more broadly. My thoughts kept returning to the pedagogical imperative of children’s literature that Maria had spoken about in <a class="reference external" href="https://datasittersclub.github.io/site/dsc3/">DSC #3: The Truth About Digital Humanities Collaborations (and Textual Variants!)</a>, and in addition, the socializing function of children’s literature that it is impossible not to notice when you begin reading children’s literature to children when you yourself are an adult. I couldn’t shake the sense that the BSC books were gently modelling to their readers ways to mitigate the emotional distress experienced by people around you, even if those people are characters in a book rather than real people in the real world, in ways that seemed to me remarkably well aligned with concepts of emotional labour that women are disproportionately socialised and expected to perform. Was it taking it too far to draw a conclusion of that sort just from lists of word frequencies? Maybe the other Data-Sitters would take up that question in their own explorations with Voyant. Maybe they’d find much more intriguing, or even contradictory, things. Or maybe they’d just happily fall down a rabbit hole following popular culture references from the 1980s and 1990s, and that’d be the last we ever heard of them.</p>
+<div class="section" id="suggested-citation">
+<h2>Suggested Citation<a class="headerlink" href="#suggested-citation" title="Permalink to this headline">¶</a></h2>
+<p>Lang, Anouk. “DSC #4: AntConc Saves the Day.” <em>The Data-Sitters Club</em>. April 10, 2020. https://datasittersclub.github.io/site/dsc4/.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./books"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="dsc3.html" title="previous page">DSC #3: The Truth About Digital Humanities Collaborations (and Textual Variants!)</a>
+    <a class='right-next' id="next-link" href="dsc5.html" title="next page">DSC #5: The DSC and the Impossible TEI Quandaries</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Data-Sitters Club<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
