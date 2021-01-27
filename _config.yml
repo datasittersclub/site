@@ -1,0 +1,31 @@
+#######################################################################################
+# Book settings
+title : Data-Sitters Club Notebook
+author: The Data-Sitters Club
+logo: 'DSClogo.png'
+
+# Information about where the book exists on the web
+description: >-
+  The 'notebook' version of the Data-Sitters Club, with all the source code inline.
+
+######################################################################################
+#CSS
+sphinx:
+    config:
+        html_css_files: 'custom.css'
+        copyright: '2021'
+        html_show_copyright: false
+
+#######################################################################################
+# Execution settings
+execute:
+  execute_notebooks           : cache
+
+#######################################################################################
+# HTML-specific settings
+html:
+  home_page_in_navbar         : false
+
+# #######################################################################################
+# Interact link settings
+notebook_interface            : "notebook"

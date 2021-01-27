@@ -1,0 +1,42 @@
+# - file: README
+- file: index
+
+- part: About
+  chapters:
+  - file: chapter-2
+    title: 'About the DSC'
+  - file: books
+    title: 'DSC Books'
+
+- part: Main series
+  chapters:
+  - file: dsc1
+    title: "DSC 1: Quinn's Great Idea"
+  - file: dsc2
+    title: 'DSC 2: Katia and the Phantom Corpus'
+  - file: dsc3
+    title: 'DSC 3: The Truth About DH Collaboration (and Textual Variants!)'
+  - file: dsc4
+    title: 'DSC 4: AntConc Saves the Day'
+  - file: dsc5
+    title: 'DSC 5: The DSC and the Impossible TEI Quandaries'
+  - file: dsc6
+    title: "DSC 6: Voyant's Big Day"
+  - file: dsc7
+    title: 'DSC 7: The DSC and Mean Copyright Law'
+  - file: dsc8
+    title: 'DSC 8: Text-Comparison-Algorithm-Crazy Quinn'
+
+- part: Multilingual mysteries
+  chapters:
+  - file: dscm1
+    title: 'DSCM 1: Lee and the Missing Metadata'
+  - file: dscm2
+    title: 'DSCM 2: Beware, Lee and Quinn!'
+  - file: dscm3
+    title: 'DSCM 3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs'
+
+- part: Fun
+  chapters:
+  - file: covid19
+  - file: dhawards2019
