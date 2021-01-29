@@ -110,12 +110,13 @@ Quinn runs another club at Stanford, which she's dubbed the "Danger Noodle Club"
 
 I wrote back right away:
 
-> **From:** Katia Bowers  
-> **To:** Maria Sachiko Cecire, Quinn Dombrowski, Anouk Lang, Roopika Risam  
-> **Date:** 11/7/19 2:58 PM  
-> **Subject:** Re: Amazing discovery for our next volume!
->
-> That's so interesting!!! I had noticed that there were a few weird places where they had updated things - like in one of the first 4 books, one of them (I forget who) mentions spending her baby-sitting $$ on CDs... but that seems like something that would have been a luxury item for suburban tweens of the 80s considering CD players then were _so_ expensive. Interesting to see what things they updated and what they didn't update (I'm not sure this last question is possible to find out digitally). And I wonder if the updates stopped because the books were being written about the same time as the re-releases were coming out?
+<blockquote id="email">
+<p><strong>From:</strong> Katia Bowers<br />
+<strong>To:</strong> Maria Sachiko Cecire, Quinn Dombrowski, Anouk Lang, Roopika Risam<br />
+<strong>Date:</strong> 11/7/19 2:58 PM<br />
+<strong>Subject:</strong> Re: Amazing discovery for our next volume!</p>
+
+<p>That's so interesting!!! I had noticed that there were a few weird places where they had updated things - like in one of the first 4 books, one of them (I forget who) mentions spending her baby-sitting $$ on CDs... but that seems like something that would have been a luxury item for suburban tweens of the 80s considering CD players then were _so_ expensive. Interesting to see what things they updated and what they didn't update (I'm not sure this last question is possible to find out digitally). And I wonder if the updates stopped because the books were being written about the same time as the re-releases were coming out?</p></blockquote>
 
 It wasn't long before everyone weighed in:
 
