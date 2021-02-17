@@ -17,19 +17,53 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply['content'])
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-#Define the file directory here
-filedirectory = '/Users/qad/Documents/dsc/dscm2'
-#Change the working directory to the one you just defined
-os.chdir(filedirectory)
+#Imports spaCy
+import spacy
+#Imports the French model
+import fr_core_news_sm
+#Sets up a function so you can run the French model on texts
+frnlp = fr_core_news_sm.load()
+#Imports the English model
+import en_core_web_sm
+#Sets up a function so you can run the English model on texts
+ennlp = en_core_web_sm.load()
 ------------------
 
 [0;31m---------------------------------------------------------------------------[0m
-[0;31mFileNotFoundError[0m                         Traceback (most recent call last)
-[0;32m<ipython-input-6-3de88d2d88f6>[0m in [0;36m<module>[0;34m[0m
-[1;32m      2[0m [0mfiledirectory[0m [0;34m=[0m [0;34m'/Users/qad/Documents/dsc/dscm2'[0m[0;34m[0m[0;34m[0m[0m
-[1;32m      3[0m [0;31m#Change the working directory to the one you just defined[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
-[0;32m----> 4[0;31m [0mos[0m[0;34m.[0m[0mchdir[0m[0;34m([0m[0mfiledirectory[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;31mOSError[0m                                   Traceback (most recent call last)
+[0;32m<ipython-input-4-d8f464c283b4>[0m in [0;36m<module>[0;34m[0m
+[1;32m      4[0m [0;32mimport[0m [0mfr_core_news_sm[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      5[0m [0;31m#Sets up a function so you can run the French model on texts[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[0;32m----> 6[0;31m [0mfrnlp[0m [0;34m=[0m [0mfr_core_news_sm[0m[0;34m.[0m[0mload[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      7[0m [0;31m#Imports the English model[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      8[0m [0;32mimport[0m [0men_core_web_sm[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/opt/anaconda3/lib/python3.8/site-packages/fr_core_news_sm/__init__.py[0m in [0;36mload[0;34m(**overrides)[0m
+[1;32m     10[0m [0;34m[0m[0m
+[1;32m     11[0m [0;32mdef[0m [0mload[0m[0;34m([0m[0;34m**[0m[0moverrides[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m---> 12[0;31m     [0;32mreturn[0m [0mload_model_from_init_py[0m[0;34m([0m[0m__file__[0m[0;34m,[0m [0;34m**[0m[0moverrides[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 [0m
-[0;31mFileNotFoundError[0m: [Errno 2] No such file or directory: '/Users/qad/Documents/dsc/dscm2'
-FileNotFoundError: [Errno 2] No such file or directory: '/Users/qad/Documents/dsc/dscm2'
+[0;32m/opt/anaconda3/lib/python3.8/site-packages/spacy/util.py[0m in [0;36mload_model_from_init_py[0;34m(init_file, vocab, disable, exclude, config)[0m
+[1;32m    512[0m     [0;32mif[0m [0;32mnot[0m [0mmodel_path[0m[0;34m.[0m[0mexists[0m[0;34m([0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    513[0m         [0;32mraise[0m [0mIOError[0m[0;34m([0m[0mErrors[0m[0;34m.[0m[0mE052[0m[0;34m.[0m[0mformat[0m[0;34m([0m[0mpath[0m[0;34m=[0m[0mdata_path[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 514[0;31m     return load_model_from_path(
+[0m[1;32m    515[0m         [0mdata_path[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    516[0m         [0mvocab[0m[0;34m=[0m[0mvocab[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/opt/anaconda3/lib/python3.8/site-packages/spacy/util.py[0m in [0;36mload_model_from_path[0;34m(model_path, meta, vocab, disable, exclude, config)[0m
+[1;32m    386[0m         [0mmeta[0m [0;34m=[0m [0mget_model_meta[0m[0;34m([0m[0mmodel_path[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    387[0m     [0mconfig_path[0m [0;34m=[0m [0mmodel_path[0m [0;34m/[0m [0;34m"config.cfg"[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 388[0;31m     [0mconfig[0m [0;34m=[0m [0mload_config[0m[0;34m([0m[0mconfig_path[0m[0;34m,[0m [0moverrides[0m[0;34m=[0m[0mdict_to_dot[0m[0;34m([0m[0mconfig[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    389[0m     [0mnlp[0m [0;34m=[0m [0mload_model_from_config[0m[0;34m([0m[0mconfig[0m[0;34m,[0m [0mvocab[0m[0;34m=[0m[0mvocab[0m[0;34m,[0m [0mdisable[0m[0;34m=[0m[0mdisable[0m[0;34m,[0m [0mexclude[0m[0;34m=[0m[0mexclude[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    390[0m     [0;32mreturn[0m [0mnlp[0m[0;34m.[0m[0mfrom_disk[0m[0;34m([0m[0mmodel_path[0m[0;34m,[0m [0mexclude[0m[0;34m=[0m[0mexclude[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/opt/anaconda3/lib/python3.8/site-packages/spacy/util.py[0m in [0;36mload_config[0;34m(path, overrides, interpolate)[0m
+[1;32m    543[0m     [0;32melse[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    544[0m         [0;32mif[0m [0;32mnot[0m [0mconfig_path[0m [0;32mor[0m [0;32mnot[0m [0mconfig_path[0m[0;34m.[0m[0mexists[0m[0;34m([0m[0;34m)[0m [0;32mor[0m [0;32mnot[0m [0mconfig_path[0m[0;34m.[0m[0mis_file[0m[0;34m([0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 545[0;31m             [0;32mraise[0m [0mIOError[0m[0;34m([0m[0mErrors[0m[0;34m.[0m[0mE053[0m[0;34m.[0m[0mformat[0m[0;34m([0m[0mpath[0m[0;34m=[0m[0mconfig_path[0m[0;34m,[0m [0mname[0m[0;34m=[0m[0;34m"config.cfg"[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    546[0m         return config.from_disk(
+[1;32m    547[0m             [0mconfig_path[0m[0;34m,[0m [0moverrides[0m[0;34m=[0m[0moverrides[0m[0;34m,[0m [0minterpolate[0m[0;34m=[0m[0minterpolate[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mOSError[0m: [E053] Could not read config.cfg from /opt/anaconda3/lib/python3.8/site-packages/fr_core_news_sm/fr_core_news_sm-2.2.0/config.cfg
+OSError: [E053] Could not read config.cfg from /opt/anaconda3/lib/python3.8/site-packages/fr_core_news_sm/fr_core_news_sm-2.2.0/config.cfg
 

@@ -1,8 +1,14 @@
 ![DSC logo](_static/images/DSCLogo.png)
 
-# Jupyter notebook for "Data-Sitters Club Multilingual Mystery 2: Beware, Lee and Quinn!"
+# DSC Multilingual Mystery 2: Beware, Lee and Quinn!
 
-Published February 27, 2020
+<div style='float: right; width: 200px;margin-left: 7px;margin-top: 0px;'>
+<img src='_static/images/bookcovers/dscm2_cover.jpg' alt='DSC M2 book cover' />
+</div>
+
+By Lee Skallerup-Bessette and Quinn Dombrowski
+
+February 27, 2020
 
 ## Quinn
 
@@ -568,4 +574,4 @@ I find it tantalizing that my idea about the translators getting sloppy with per
 To be continued...
 
 ## Suggested Citation
-Dombrowski, Quinn. "Jupyter notebook for *Data-Sitters Club Multilingual Mystery 2: Beware, Lee and Quinn!*". February 27, 2020. https://datasittersclub.github.io/site/dscm2.html.
+Skallerup Bessette, Lee and Quinn Quinn. "DSC Multilingual Mystery 2: Beware, Lee and Quinn!". February 27, 2020. https://datasittersclub.github.io/site/dscm2.html.

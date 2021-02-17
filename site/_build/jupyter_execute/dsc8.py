@@ -1,6 +1,9 @@
 ![DSC logo](_static/images/DSCLogo.png)
 # DSC 8: Text-Comparison-Algorithm-Crazy Quinn
 
+<div style='float: right; width: 200px;margin-left: 7px;margin-top: 0px;'>
+<img src='_static/images/bookcovers/dsc8_cover.jpg' alt='DSC 8 book cover' />
+</div>
 by Quinn Dombrowski
 
 October 21, 2020
