@@ -58,7 +58,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="DSC Multilingual Mystery #1: Lee and the Missing metadata" href="dscm1.html" />
+    <link rel="next" title="The Ghost in Anouk’s Laptop" href="dsc9.html" />
     <link rel="prev" title="DSC #7: The DSC and Mean Copyright Law" href="dsc7.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -78,7 +78,7 @@
         <div class="navbar-brand-box">
 <a class="navbar-brand text-wrap" href="index.html">
   
-  <img src="/site/_static/DSClogo.png" class="logo" alt="logo">
+  <img src="_static/DSClogo.png" class="logo" alt="logo">
   
   
   <h1 class="site-logo" id="site-title">Data-Sitters Club Notebook</h1>
@@ -150,6 +150,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    DSC 8: Text-Comparison-Algorithm-Crazy Quinn
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc9.html">
+   DSC 9: The Ghost in Anouk's Laptop
   </a>
  </li>
 </ul>
@@ -259,7 +264,7 @@
         <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/dsc8.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
-                    src="_static/images/logo_binder.svg"
+                    src="_images/logo_binder.svg"
                     alt="Interact on binder">Binder</button></a>
         
         
@@ -466,7 +471,10 @@
   <p><img alt="DSC logo" src="_images/DSCLogo.png" /></p>
 <div class="section" id="dsc-8-text-comparison-algorithm-crazy-quinn">
 <h1>DSC 8: Text-Comparison-Algorithm-Crazy Quinn<a class="headerlink" href="#dsc-8-text-comparison-algorithm-crazy-quinn" title="Permalink to this headline">¶</a></h1>
-<p>by Quinn Dombrowski</p>
+<div style='float: right; width: 200px;margin-left: 7px;margin-top: 0px;'>
+<img src='_images/bookcovers/dsc8_cover.jpg' alt='DSC 8 book cover' />
+</div>
+by Quinn Dombrowski
 <p>October 21, 2020</p>
 <div class="section" id="dear-reader">
 <h2>Dear Reader<a class="headerlink" href="#dear-reader" title="Permalink to this headline">¶</a></h2>
@@ -5983,7 +5991,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 <p>And clearly, even though the chapters are less similar than the books overall using this metric, the chapter 2’s are much more similar than other sets of chapters. So we’ve found the same overall result, but we’ve also saved ourselves from chasing false leads – like the “difference” in Abby’s Portrait Collection book that only really have to do with text length. Not everything is as purple as everything else in this visualization, and there are still things we can follow up on. But we’ve leveled out the differences that are just about difference in length.</p>
 <p>I think we’ve said all we can say about Euclidean and Cosine distance for this book, and how the results you get vary depending on how you count (or ratio) your words. It’s time to move on to a different method.</p>
 <div class="alert alert-block alert-warning">
-<b>Slow down, Quinn:</b> Before moving on to the next text comparison method, it's important to wrap up some loose ends. We wanted to differentiate the effect of the TF-IDF vectorizer from the effect of no longer using the `max_df` setting to drop terms that appear in 70% of texts. So let's compare three visualizations, all showing Euclidean distance, but with different vectorizer settings: from left to right, the <b>count vectorizer</b> that we used when we first ran Euclidaen distance, which drops the terms that appear in 70% in the text. In the middle, the <b>TF-IDF vectorizer</b> that should get us <em>term frequencies</em> instead of counts, and thereby normalize for length. And then finally, the <b>TF-IDF vectorizer</b> without dropping any terms.<img src="_static/images/dsc8_euclidean_comparison.png" />
+<b>Slow down, Quinn:</b> Before moving on to the next text comparison method, it's important to wrap up some loose ends. We wanted to differentiate the effect of the TF-IDF vectorizer from the effect of no longer using the `max_df` setting to drop terms that appear in 70% of texts. So let's compare three visualizations, all showing Euclidean distance, but with different vectorizer settings: from left to right, the <b>count vectorizer</b> that we used when we first ran Euclidaen distance, which drops the terms that appear in 70% in the text. In the middle, the <b>TF-IDF vectorizer</b> that should get us <em>term frequencies</em> instead of counts, and thereby normalize for length. And then finally, the <b>TF-IDF vectorizer</b> without dropping any terms.<img src="_images/dsc8_euclidean_comparison.png" />
 </div><div class="alert alert-block alert-danger">
 <b>Now wait just a minute here.</b>
 <p>Why do the count vectorizer and TF-IDF vectorizer results look identical? <em>Are</em> they actually identical? Shouldn't dropping common words make it even <em>more important</em> to use word frequencies?</p>
@@ -6380,7 +6388,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 </div>
 </div>
 <div class="alert alert-block alert-success">
-<img src="_static/images/dsc8_euclidean_real_freqs.png" />
+<img src="_images/dsc8_euclidean_real_freqs.png" />
 <p><b>Interesting!</b> Similar to what I had before, without the word frequency normalization, but a little lighter in color, meaning less similar. Which sounds better to me, knowing the corpus? Let’s see how cosine distance plays out.</p>
 <p><b>Cosine distance with word frequencies</b></p>
 </div><div class="cell docutils container">
@@ -6724,7 +6732,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 </div>
 </div>
 <div class="alert alert-block alert-success">
-<img src="_static/images/dsc8_cosine_real_freqs.png" />
+<img src="_images/dsc8_cosine_real_freqs.png" />
 <p><b>Very similar!</b> Honestly, there's less difference between cosine distance with word counts and cosine distance with word frequencies... which makes sense, because the cosine distance measure already helps account for different text lengths, at least up to a certain point. Let's try cosine distance on the chapter 2's.</p>
 <p><b>Cosine distance with chapter 2’s</b></p>
 </div><div class="cell docutils container">
@@ -7094,7 +7102,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 </div>
 </div>
 </div>
-<img src="_static/images/dsc8_ch2_cosine_real_freqs.png" />
+<img src="_images/dsc8_ch2_cosine_real_freqs.png" />
 <p><b>It's largely the same as cosine distance using just word counts!</b> With the same questions and disappointments with regard to the similarity of the chapter 2's, compared to the full books, when using cosine distance. We probably don't need to rerun this for chapters 1, 5, 9, and 15; you get the point.</p>
 <p>But now we've found it using code that legitimately works, without any confusions or misunderstandings about what's happening (at least, I hope?). That's satisfying. A satisfying kind of dissatisfying.</p>
 <p><b>Now</b> we can move on to another method.</p>
@@ -8245,7 +8253,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 </div>
 <div class="section" id="suggested-citation">
 <h2>Suggested Citation<a class="headerlink" href="#suggested-citation" title="Permalink to this headline">¶</a></h2>
-<p>Dombrowski, Quinn. “DSC #8: Text-Comparison-Algorithm-Crazy Quinn.” Jupyter Notebook version. <em>The Data-Sitters Club</em>, October 21, 2020. https://datasittersclub.github.io/site/dsc8.</p>
+<p>Dombrowski, Quinn. “DSC #8: Text-Comparison-Algorithm-Crazy Quinn.” Jupyter Notebook version. <em>The Data-Sitters Club</em>, October 21, 2020. https://datasittersclub.github.io/site/dsc8.html.</p>
 </div>
 </div>
 
@@ -8278,7 +8286,7 @@ m02c_beware_dawn_13.txt, 2023, 13
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="dsc7.html" title="previous page">DSC #7: The DSC and Mean Copyright Law</a>
-    <a class='right-next' id="next-link" href="dscm1.html" title="next page">DSC Multilingual Mystery #1: Lee and the Missing metadata</a>
+    <a class='right-next' id="next-link" href="dsc9.html" title="next page">The Ghost in Anouk’s Laptop</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

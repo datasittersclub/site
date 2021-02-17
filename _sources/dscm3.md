@@ -15,7 +15,7 @@ permalink: /dscm3/
 by Lee Skallerup Bessette and Quinn Dombrowski, April 2, 2020
 
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
-<img src="_static/images/bookcovers/dscm3_cover.jpg" alt="DSC M3 book cover" />
+<img src="_images/bookcovers/dscm3_cover.jpg" alt="DSC M3 book cover" />
 </div>
 
 
@@ -78,7 +78,7 @@ I do a lot of web scraping. When I need to do something simple, quick, and relat
 
 Webscraper.io is a plugin for the Chrome browser, so first you need to [install it from the Chrome store](https://webscraper.io/documentation/installation). Next, you need to 1) access it in your browser by opening the *Developer Tools* panel, then 2) choose *Web Scraper* from the tabs at the top of the panel.
 
-![Launching the webscraper plugin](_static/images/dscm3_launchwebscraper.jpg)
+![Launching the webscraper plugin](_images/dscm3_launchwebscraper.jpg)
 
 #### Creating a sitemap
 
@@ -98,7 +98,7 @@ For our first scraper, we're *just* trying to get the URLs of all the links on e
 
 We'll start by hitting the "Add new selector" button, which takes us to a different interface for choosing the selector. You have to give it a unique ID (I chose *pagelink*), then choose a type from the dropdown menu. For now, we just want *Link* for the type. Under the *Selector* header in this interface, check the "multiple" box (there are multiple links on the page), then click the "Select" button. Now the fun begins! Move your mouse back up to the page, and start clicking on the things you want to capture. After you've clicked on 2-3 of them, the scraper usually gets the idea and highlights the rest. In this case, I started clicking in the "A's", and after two clicks it picked up the rest of the entries filed under that letter, but I had to click in the results for a different letter before it picked up *everything*.
 
-![Selecting links for the scraper](_static/images/dscm3_selecting_links.jpg)
+![Selecting links for the scraper](_images/dscm3_selecting_links.jpg)
 
 When everything you want is highlighted in red, click the blue "Done selecting" button. What I then had was `ul:nth-of-type(n+3) a.category-page__member-link`. If you're not comfortable with HTML, you might just be relieved that the computer sorted out all *that* mess. But if you know how to read this, you should be concerned. `<ul>` means "unordered list" (typically, but not always, looks like a bullet point list), and we're grabbing the 3rd &gt;ul&lt; on the page. Which, yes, is what we selected: by starting with A on the [regular book series page](https://babysittersclub.fandom.com/wiki/Category:The_Baby-Sitters_Club_series), we're skipping the list with character-based category pages, and the erroneous list where a wiki page name starts with the number 3. If we were just scraping this one page, it'd be fine: we'd get what we selected, which -- deliberately -- is not *every link on the page*. But what about the Super Specials, Mysteries, Super Mysteries, etc? If we start with the third list, will we be missing things?
 
@@ -106,13 +106,13 @@ Take it from someone who's had to scrape (and re-scrape, and re-re-scrape) a Rus
 
 What to do? Well, `:nth-of-type(n+3)` is a modifier on *ul*, so you can drop it to get ALL THE UNORDERED LISTS. But actually, you can go one step further and even get rid of the *ul* part, because what you're actually grabbing *isn'*t unordered lists, but *links* (in HTML, &lt;a&gt; for anchor) that have the class `category-page__member-link`. The period after the a in the selector indicates a class attribute, which you can see if you switch from the "Web Scraper" tab to the "Elements" tab in the developer toolbar.
 	
-![HTML page view](_static/images/dscm3_html_view.jpg)
+![HTML page view](_images/dscm3_html_view.jpg)
 
 Each link corresponds to HTML that looks something like: `<a href="/wiki/Abby_and_the_Best_Kid_Ever" title="Abby and the Best Kid Ever" class="category-page__member-link">Abby and the Best Kid Ever</a>`. The text *Abby and the Best Kid Ever* (the one that occurs between `>` and `<`) is the text that actually appears on the page. The rest is the HTML instructions used to make that text into a link. But not just any link: a link with the class category-page__member-link, which *only* appears with links that are part of this list of books in the series corresponding to this wiki page (Regular, Mystery, etc.) Those are the links you want. To select &lt;a&gt; tags with the class category-page_member-link, click in the selector text box that reads ul:nth-of-type(n+3) a.category-page_member-link, and delete everything before the *a*.
 
 One good way to make sure you're generally getting what you want is to click the "Data preview" button once you have something in the selection box. What you should see is all the URLs and link titles on the page, along with a _*followSelectorId* field that has the value of pagelink for all the links (i.e. the name you gave the link selector when you created it). What we actually *need* is just the URLs, so the rest is Ghost Cat hairball, but there's no easy way to get *only* what we need using the Webscraper.io plugin, so we'll take it all and clean it up later.
 
-![Previewing data](_static/images/dscm3_data_preview.png)
+![Previewing data](_images/dscm3_data_preview.png)
 
 Click the blue *Save selector* button at the bottom of the interface.
 
@@ -124,7 +124,7 @@ Click the blue "Start scraping" button. A new browser window will pop open with 
 
 When the window closes itself, it'll take you to a page that says "No data scraped"; hit the blue "Refresh" button and your data will appear. Then go to *Sitemap bsc_fan_wiki_link_scraper >  Export data as CSV*. On that page, click the *Download now!* link, and you'll download a CSV file.
 
-![Downloading a CSV](_static/images/dscm3_download_csv.png)
+![Downloading a CSV](_images/dscm3_download_csv.png)
 
 If you want to edit your scraper to include multiple pages, go to *Sitemap bsc_fan_wiki_link_scraper > Edit metadata*. There's a + button on the right side of the URL field, and you can use it to put in more than one page (e.g. adding the URLs for [Mysteries](https://babysittersclub.fandom.com/wiki/Category:Mystery_books), [Super Specials](https://babysittersclub.fandom.com/wiki/Category:Super_Special_books), [Super Mysteries](https://babysittersclub.fandom.com/wiki/Category:Super_mysteries), [Portrait Collection](https://babysittersclub.fandom.com/wiki/Category:Portrait_Collection_books), [California Diaries](https://babysittersclub.fandom.com/wiki/Category:California_Diaries_series), [Reader Requests](https://babysittersclub.fandom.com/wiki/Category:Readers%27_Request_books), and [Friends Forever](https://babysittersclub.fandom.com/wiki/Category:Friends_Forever_series)). Then, just re-scrape and re-download.
 
@@ -144,7 +144,7 @@ A less-dodgy alternative, if you have a GitHub account and are comfortable with 
 
 However you put your list of links online, the next step is to create a new sitemap in webscraper.io, and put the URL *of the page with all your links*, not any of the individual links. Then, the first selector in the sitemap that you create should be set to have multiple values, and what you're selecting for is each of the links on the page.
 
-![Selecting all the links](_static/images/dscm3_linkselector.jpg)
+![Selecting all the links](_images/dscm3_linkselector.jpg)
 
 Once you've saved that selector, click on it in your sitemap. This takes you *inside* that selector, as Webscraper.io structures things. The new selectors you add aren't selectors for your page of links, they're selectors for the *pages whose URLs are on that page of links*. For that reason, it's going to be very helpful if the links in a single list go to pages that are pretty homogenous: you want the nested selectors to be applicable to most or all of those pages. Not all the selectors I created here work for every book (e.g. the California Diaries and Portrait books don't really have book numbers), but most of the fields are relevant across the board.
 
@@ -152,7 +152,7 @@ As an important side note here, wikis hosted on fandom.com are *unusually well-s
 
 Probably the best you could do is capture the whole sidebar table, and try to (as likely as not, manually) extract the number you're looking for. Having an HTML class that says what it is (e.g. class="death-toll" on a <tr> element) isn't the only setup that would let you scrape the data easily; if every pandemic page had a 100% consistent set of metadata, which was always provided in the same order (and listed as "N/A" or something if there was no known value), you might be able to reliably use something like `tr:nth-of-type(n+3)` in your scraper if you could count on the death toll always being the third element in that sidebar. But in reality, very few websites use either totally consistent metadata, or semantic classes on their elements. In most cases, for the results to be usable, web scraping is just a prelude to lots and lots of data cleaning.
 
-![Wikipedia's fake metadata structure](_static/images/dscm3_fake_metadata_structure.png)
+![Wikipedia's fake metadata structure](_images/dscm3_fake_metadata_structure.png)
 
 But fandom.com wikis make our lives easy! Here's the elements I created for all the data I wanted to capture; all of them are *Text* type and only *wikipagetext* (the body text on the wiki page) has the "multiple" boxes selected, because there's usually multiple paragraphs of text on a wiki page:
 
@@ -183,7 +183,7 @@ One funny thing about OpenRefine is that you launch it as an application, but wh
 
 After you upload it, there's a screen where you can configure the import. It makes its best guesses, but those can be hit or miss. If yours looks wonky, make sure that the option is selected for columns to be separated by commas:
 
-![Importing a CSV into OpenRefine](_static/images/dscm3_import_csv.png)
+![Importing a CSV into OpenRefine](_images/dscm3_import_csv.png)
 
 Once you’re happy with the preview, click the “Create project” button in the upper right. This takes us to the regular OpenRefine screen. 
 
@@ -191,7 +191,7 @@ Once you’re happy with the preview, click the “Create project” button in t
 
 You may notice that the lines in the file that you uploaded seem to be in a random order: webscraper.io doesn't scrape in the order you might expect, in alphabetical order like you specified. We'll start by sorting by the URL of each page you scraped data from. Click the downward-facing arrow next to the *bookurl* column header, and choose "Sort" then "OK" in the box that pops up. Now your results are clustering by the book they're associated with (starting with *Abby and the Best Kid Ever*), but if you look at the third column from the left, you can see that this view is just a display for your benefit: the data itself hasn't been re-sorted. We can change that by clicking on the down arrow next to Sort above the cells, and choosing "Reorder rows permanently". This changes the row numbers associated with *Abby and the Best Kid Ever* to 1-7.
 
-![Reordering rows in OpenRefine](_static/images/dscm3_reorder.png)
+![Reordering rows in OpenRefine](_images/dscm3_reorder.png)
 
 Having the data permanently reordered this way makes it possible for us to clean up one part of this hairball: the fact that there's a row for every single paragraph of text on the wiki page, and all of those rows are identical except for the initial web-scraper-order column and the final *wikipagetext* column. What we want here is to merge all of those paragraph-cells into a single cell, with a single row for each book.
 
@@ -231,7 +231,7 @@ For the translator (column 8), use *Edit Cells > Replace* and replace ` , trad.`
 
 Now, we can delete every column except for 1, 3, 5, and 8.
 
-![Missing value in Quebec data](_static/images/dscm3_missing_quebec_value.png)
+![Missing value in Quebec data](_images/dscm3_missing_quebec_value.png)
 
 Notice anything? We've caught a metadata inconsistency on the part of some librarians in Montreal! The translator column is empty for *Les baby-sitters en vacances d'hiver*! Is the data missing, or just misplaced? By going back to the original file that Lee downloaded, I was able to find that the info was present in column 1 before we cleaned it up: the person who "adapted it from the American" was Sylvie Prieur. So let's fill that in manually in the translator column before moving on.
 
@@ -249,7 +249,7 @@ It looks like the *Auteur* column has the translator information. We could try t
 
 For the *Titre* column, go to *Edit column > Split into several columns* using the semicolon as the separator. The resulting "Titre 1" will have the book column and (in most cases) Ann M. Martin. "Titre 2" mostly has translators, with a few illustrators and other kinds of authors (e.g. "a comic strip by Raina Telgemeier"). Only one row in "Titre 3" and two rows in "Titre 4" have a translator. For each of these columns, delete the values that don't include a translator. The easiest way to do this might be to do *Facet > Text facet* for each column, and edit the ones that aren't a translator (by hovering over the value in the sidebar facet, and clicking "edit", and deleting the value). Once *Titre 2-4* are all just translators, go to *Titre 2* and go to *Edit column > Join columns*. Check the boxes for *Titre 3* and *Titre 4*, and choose the semicolon as the separator. Once you've merged all values into *Titre 2*, you can delete Titre 3-4. Next, it's time to clean up *Titre 2*, which now has all the translator information. Do *Facet > Text facet* and use *Edit cells > Replace* to replace all the variations on "translated by" (e.g. "trad. de l'anglais par", "trad. de l'américain par", "traduit de l'anglais (États-Unis) par") along with extraneous punctuation like "]; ;" until the values in that field coalesce (i.e. until you have more rows sharing the same translator value, without extraneous variation like how "translated by" was written). Another way to reduce variation is by going to *Edit cells > Common transforms > Trim leading and trailing whitespace*. One other check you can do is go to *Edit cells > Cluster and edit*. Under the "method" drop-down, choose "nearest neighbor". This may turn up discrepancies, for instance, like the addition of an extra "l" to Camille Weil's name in one record:
 
-![Clustering values](_static/images/dscm3_cluster_and_edit.png)
+![Clustering values](_images/dscm3_cluster_and_edit.png)
 
 Check the box for “Merge”, then choose “Merge selected and close”.
 
@@ -266,21 +266,21 @@ So what gives? Is the data actually not there? Or is it just not in the download
 The *Identificat* column contains the URL of the catalog record, along with the ISBN number. The ISBN number doesn't help us any, so let's go to *Edit cells > Replace*, check the box for regular expression, and put in ` .*`, which will select everything that occurs after the first space (which appears after the catalog record URL. Replace with nothing. This should get you valid, clickable URLs for each of the entries.\
 The records where the description starts with "Collection : (Folio junior" are our problem: no series number, and no other way to try to link back to the original English (like the original English title). Let's check out [Mallory entre en scène](https://catalogue.bnf.fr/ark:/12148/cb367080517)... and there it is. We've got both "Traduction de: Hello, Mallory" and "Titre d'ensemble : (Le club des baby-sitters. ; 14)" in the catalog record.
 
-![BNF catalog record](_static/images/dscm3_bnf_catalog.png)
+![BNF catalog record](_images/dscm3_bnf_catalog.png)
 
 But if you try to export search results from the catalog, those fields aren’t available.
 
-![BNF catalog export](_static/images/dscm3_public_export.png)
+![BNF catalog export](_images/dscm3_public_export.png)
 
 But wait! What about that *paramétrage professionnel* tab?
 
-![BNF professional catalog export](_static/images/dsc_m3_professional_export.png)
+![BNF professional catalog export](_images/dsc_m3_professional_export.png)
 
 Intermarc? Unimarc? I know about the [MARC standards](https://en.wikipedia.org/wiki/MARC_standards) for library cataloging, and I have a piece of paper lying around here saying that I'm officially certified as a Library and Information Scientist, but ... ugh.
 
 But then I thought about Arcadia Falcone, the metadata librarian at work and one of the most quirky-cool people I know. She'd probably know the MARC codes I needed for these records off the top of her head, and could figure out Unimarc with both hands busy crocheting an amazing shawl. I could do this, too. And thanks to the Library of Congress, it wasn't actually too bad; there's a "[UNIMARC to MARC 21 Conversion Specifications](https://www.loc.gov/marc/unimarctomarc21.html)" that was published only 9 months after the last Baby-Sitters Club book. The formatting alone suggests a promising treatment for insomnia-- try it the next time nightmares wake you up in the middle of the night! (I can't be the only one with that problem these days...)
 
-![Unimarc to MARC21](_static/images/dscm3_unimarc_marc21.png)
+![Unimarc to MARC21](_images/dscm3_unimarc_marc21.png)
 
 Searching for "translation" scored me 453 for the field with the English title of the book, and searching for "series" got me 225 for the field with the book number (even better than the English book title). I stuck "225;" into the field, hit Exporter, and held my breath.
 
@@ -291,11 +291,11 @@ What I got was an ExportPro.csv file, with the fields "Identifiant ARK", "N° no
 The first step is to create a new OpenRefine project with our ExportPro.csv that has the series numbers. If you still have the earlier OpenRefine project from the French National Library open, you can open up a new OpenRefine tab by right-clicking on the logo in the upper left, and choosing "Open link in new tab". Import the ExportPro.csv file, and call the new project "ExportPro"; the defaults are mostly fine, but uncheck the "Use character " to enclose cells containing column separators" option. The column that we want to import has a name that might cause some errors (it includes quotation marks, which are often a problem in file and column naming). Rename the last column "value225".\
 Now, go back to the earlier project with the French National Library data. Go to the "N° notice BnF" column and choose *Edit column > Add column* based on this column.
 
-![Adding a column for cell cross](_static/images/dscm3_cell_cross.png)
+![Adding a column for cell cross](_images/dscm3_cell_cross.png)
 
 In the box that pops up, we’ll call the new column “seriesnumber”. The syntax here is a little tricky, but roughly follows the format `cell.cross(“Other-Project”, “Column-to-Match-in-Other-Project”])[0].cells[Column-to-Import-from-Other-Project].value`. So in this case, the other project (the one we just created from ExportPro.csv) is called ExportPro, the column there that we want to match against is “N° notice BnF”, and the column we’re trying to import is called “value225”: `cell.cross("ExportPro", "N° notice BnF")[0].cells["value225"].value`.
 
-![Cell cross data preview](_static/images/dscm3_cell_cross_detail.png)
+![Cell cross data preview](_images/dscm3_cell_cross_detail.png)
 
 Success! Once you've finished the cell cross, you can close the ExportPro OpenRefine project. All we need to do now is clean up the "seriesnumber" field. It's easiest to start by doing *Facet > Text facet* on the "seriesnumber" field, to get a sense of how much progress you're making in your cleaning. Replace `225$aLe club des baby-sitters.$v`, `225$aLe club des baby-sitters.$v`, `225$aLe club des babysitters$v`, and ` &#124; 225\$aFolio junior\$v(.*)` (the broader "Folio junior" publication series) with nothing.
 
@@ -309,7 +309,7 @@ Let's finish cleaning up these BNF records and get ready to import them back int
 
 We also need to make sure there's only one instance of each "seriesnumber" value, otherwise the cell cross won't work. Go to *Facet > Text facet* for "series number", and sort by "count" at the top of the facet list.
 
-![Series number facet](_static/images/dscm3_seriesnumber_facets.png)
+![Series number facet](_images/dscm3_seriesnumber_facets.png)
 
 Uh-oh. We have *up to 5* instances of some of these series numbers. Let's dig into it.
 
@@ -321,7 +321,7 @@ I clicked through the facets; they're already sorted in a way that works out to 
 
 Now, close the "seriesnumber" facet and go to *Facet > Text facet** for the "Editeur" column. Click the "(blank)" facet, and under *All*, choose *Edit rows > Remove matching rows*. If you want to double-check your work, if you click either the "Chantecler (Aartselaar)" or the "Gallimard jeunesse (Paris)" facet, and add the "seriesnumber" facet, each "seriesnumber" facet should only appear with 1 value.
 
-![Clean series number facet](_static/images/dscm3_facets_clean.png)
+![Clean series number facet](_images/dscm3_facets_clean.png)
 
 Close the "seriesnumber" facet, but keep the "Editeur" facet open, and select "Chantecler (Aartselaar)". In the upper right corner of the OpenRefine interface, go to *Export > Comma-separated value*. This will give you a new CSV file with just the Belgian records; you may want to rename it `bnf_records_belgian.csv` just to keep things clear. With that data exported, you can delete the Belgian records from your current OpenRefine project by going to *All > Edit rows > Remove matching rows*.
 
@@ -346,7 +346,7 @@ In Bsc_book_metadata, go to the "booknumber" column and choose *Edit column > Ad
 
 You may see a lot of error messages in the previewed results -- that's okay. We have over 200 rows for metadata scraped from the fan wiki, and only 80 rows from Quebec (and fewer still from Belgium and France). To increase the likelihood that you'll see results, you can re-sort the fan wiki data by the "booknumber" column, since earlier books were more likely to be translated.
 
-![Cell cross missing values](_static/images/dscm3_ultimate_cell_cross_errors.png)
+![Cell cross missing values](_images/dscm3_ultimate_cell_cross_errors.png)
 
 | New column | Cell cross formula |
 |-------------------|-------------------------------------------------------------------------------|
@@ -418,4 +418,4 @@ Bessette, Lee Skallerup and Quinn Dombrowski. "DSC Multilingual Mystery #3: Quin
 <br />
 <br />
 <a name="footnote" />&#42; 
-Am I the only one who's had strange, random music emerging from the corner of their brain after a couple weeks at home? I have no idea why this <a href="https://www.youtube.com/watch?v=4WgT9gy4zQA">12-year-old song</a> has gotten stuck in my head, but working on this final step, I can't help but re-imagine it, subbing out the Baby-Sitters Club, Sweet Valley High, American Girl Dolls, Cabbage Patch Kids, Rainbow Bright, My Little Ponies, and other differently-gendered references. Would Maria from Sesame Street emerge victorious -- perhaps by negotiating with the other iconic characters to work together instead of fighting, in order to ensure everyone has the resources they need to defeat COVID-19, from toilet paper to ventilators?
+Am I the only one who's had strange, random music emerging from the corner of their brain after a couple weeks at home? I have no idea why this <a href="https://www.youtube.com/watch?v=wbKmETVWG64">12-year-old song</a> has gotten stuck in my head, but working on this final step, I can't help but re-imagine it, subbing out the Baby-Sitters Club, Sweet Valley High, American Girl Dolls, Cabbage Patch Kids, Rainbow Bright, My Little Ponies, and other differently-gendered references. Would Maria from Sesame Street emerge victorious -- perhaps by negotiating with the other iconic characters to work together instead of fighting, in order to ensure everyone has the resources they need to defeat COVID-19, from toilet paper to ventilators?

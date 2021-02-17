@@ -78,7 +78,7 @@
         <div class="navbar-brand-box">
 <a class="navbar-brand text-wrap" href="index.html">
   
-  <img src="/site/_static/DSClogo.png" class="logo" alt="logo">
+  <img src="_static/DSClogo.png" class="logo" alt="logo">
   
   
   <h1 class="site-logo" id="site-title">Data-Sitters Club Notebook</h1>
@@ -150,6 +150,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="dsc8.html">
    DSC 8: Text-Comparison-Algorithm-Crazy Quinn
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc9.html">
+   DSC 9: The Ghost in Anouk's Laptop
   </a>
  </li>
 </ul>
@@ -297,7 +302,7 @@
 <h1>DSC #2: Katia and the Phantom corpus<a class="headerlink" href="#dsc-2-katia-and-the-phantom-corpus" title="Permalink to this headline">¶</a></h1>
 <p>by Katherine Bowers, December 12, 2019</p>
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
-<img src="_static/images/bookcovers/dsc2_cover.jpg" alt="DSC 2 book cover" />
+<img src="_images/bookcovers/dsc2_cover.jpg" alt="DSC 2 book cover" />
 </div>
 <p>It was a dark and windy fall night, with rain lashing at the windows, when I settled in to do some reading and began working my way through the Baby-Sitters Club series. This kind of weather is not surprising because I live in Vancouver, Canada, where it rains most of the year. What was surprising was that I was reading Baby-Sitters Club books again. I’m an Assistant Professor of Slavic Studies and a lot of the time you will find me reading long Russian novels, which is what I research and teach for work. I last read a BSC book circa 25 years ago, but I started rereading the series on that rainy night because of the DSC, the Data-Sitters Club, a group I’ve joined that is working on creating a comprehensive, colloquial guide to digital humanities computational text analysis.</p>
 <p>What is the DSC? It all started with <a class="reference internal" href="dsc1.html"><span class="doc std std-doc">Quinn’s great idea</span></a>. The DSC is a group of scholars who are interested in and have varying levels of expertise in digital humanities and computational text analysis, but who have come together to collaborate on a digital humanities guide centered around the Baby-Sitters Club books, which were published by Scholastic from 1986-1999. To learn more about us, <a class="reference internal" href="chapter-2.html"><span class="doc std std-doc">read Chapter 2</span></a>.</p>
@@ -327,7 +332,7 @@ planted to cold, sloppy Connecticut <strong>&lt;BZZT!&gt;</strong>.</p>
 <p>The OCR software that had been used for some of these books wasn’t able to handle the children’s building-block lettering of the chapter headers, or the Baby-Sitters Club notebook entries (or diary entries, or letters) written in the characters’ “handwriting”!</p>
 <p><img alt="Picture of one of Claudia's &quot;handwritten&quot; sections, in sloppy cursive" src="_images/claudia-handwriting.png" /></p>
 <p>(Honestly, I wonder how easy it’d be for young human readers in 2019 to successfully read Mary Anne, Jessi, Kristy, and Claudia’s cursive writing. This is Claudia’s from no. 3, The Truth About Stacey; it takes me a bit to get through it - and I’m used to reading 19th-century Russian cursive!)</p>
-<div style="float: left; width: 175px;margin-right: 7px;margin-top: 0px;"><img src="_static/images/cyber_cafe.jpg" alt="Picture of Quinn and Katia by the Cyber Café sign at the ASEEES Convention" / ></div>
+<div style="float: left; width: 175px;margin-right: 7px;margin-top: 0px;"><img src="_images/cyber_cafe.jpg" alt="Picture of Quinn and Katia by the Cyber Café sign at the ASEEES Convention" / ></div>
 <p>Quinn and I met up at the amusingly retro “Cyber Café” sign at the ASEEES Convention in San Francisco in November. (ASEEES is the Association for Slavic, East European, and Eurasian Studies - the biggest Slavic conference in North America, which happens every November). The Cyber Cafe sign seemed nicely thematic because it looked like it had fallen out of some kind of time warp from the mid- to late-BSC books. We took a selfie to mark what we jokingly called “DSC Slavist Super Special” (obviously) and sat down to talk about the issues I’d been having with the corpus Quinn put together.</p>
 <p>The thing about Quinn’s corpus is that it’s from a lot of different sources. They didn’t all use the same software to digitize the texts, and didn’t have the same post-processing conventions. In some sense, the OCR gibberish was better: you could see that something had gone wrong, and knowing something is wrong is the first step in fixing it. But in some texts, the traces of OCR failure were just erased. Instead of garbage, there was nothing. Sometimes you can’t necessarily tell that anything is missing, like the transition between chapters. Sometimes, there’s a gaping void, like at the end of <em>Baby-Sitters Club Super-Special 9: Starring the Baby-Sitters Club</em>, where the last words in the text file are:</p>
 <blockquote>
@@ -360,13 +365,12 @@ planted to cold, sloppy Connecticut <strong>&lt;BZZT!&gt;</strong>.</p>
 <p>So I was demoing OCR quality evaluation today during my Python working group using “Claudia and Mean Jeanine”, and I discovered THERE ARE CONTENT CHANGES between the clean version and the version I originally found, including both computers and fashion (ie equal attention paid to gendered tech) and removing ableist language. What’s more, there were no changes in “Mystery 29: Stacey and the Fashion Victim” (despite, presumably, including fashion language) so I guess they gave up at some point. But we can find out which point, in our next DSC volume!</p>
 </div></blockquote>
 <p>I wrote back right away:</p>
-<blockquote>
-<div><p><strong>From:</strong> Katia Bowers<br />
+<blockquote id="email">
+<p><strong>From:</strong> Katia Bowers<br />
 <strong>To:</strong> Maria Sachiko Cecire, Quinn Dombrowski, Anouk Lang, Roopika Risam<br />
 <strong>Date:</strong> 11/7/19 2:58 PM<br />
 <strong>Subject:</strong> Re: Amazing discovery for our next volume!</p>
-<p>That’s so interesting!!! I had noticed that there were a few weird places where they had updated things - like in one of the first 4 books, one of them (I forget who) mentions spending her baby-sitting $$ on CDs… but that seems like something that would have been a luxury item for suburban tweens of the 80s considering CD players then were <em>so</em> expensive. Interesting to see what things they updated and what they didn’t update (I’m not sure this last question is possible to find out digitally). And I wonder if the updates stopped because the books were being written about the same time as the re-releases were coming out?</p>
-</div></blockquote>
+<p>That's so interesting!!! I had noticed that there were a few weird places where they had updated things - like in one of the first 4 books, one of them (I forget who) mentions spending her baby-sitting $$ on CDs... but that seems like something that would have been a luxury item for suburban tweens of the 80s considering CD players then were _so_ expensive. Interesting to see what things they updated and what they didn't update (I'm not sure this last question is possible to find out digitally). And I wonder if the updates stopped because the books were being written about the same time as the re-releases were coming out?</p></blockquote>
 <p>It wasn’t long before everyone weighed in:</p>
 <blockquote>
 <div><p><strong>From:</strong> Anouk Lang<br />
@@ -429,7 +433,7 @@ planted to cold, sloppy Connecticut <strong>&lt;BZZT!&gt;</strong>.</p>
 </div>
 <div class="section" id="suggested-citation">
 <h2>Suggested citation<a class="headerlink" href="#suggested-citation" title="Permalink to this headline">¶</a></h2>
-<p>Bowers, Katherine and Quinn Dombrowski. “DSC #2: Katia and the Phantom Corpus.” <em>The Data-Sitters Club.</em> December 12, 2019. https://datasittersclub.github.io/site/dsc2.</p>
+<p>Bowers, Katherine and Quinn Dombrowski. “DSC #2: Katia and the Phantom Corpus.” <em>The Data-Sitters Club.</em> December 12, 2019. https://datasittersclub.github.io/site/dsc2.html.</p>
 </div>
 </div>
 

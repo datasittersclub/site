@@ -254,7 +254,7 @@
         <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/books/dsc8.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
+                    src="../_images/logo_binder.svg"
                     alt="Interact on binder">Binder</button></a>
         
         
@@ -5972,7 +5972,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 <p>And clearly, even though the chapters are less similar than the books overall using this metric, the chapter 2’s are much more similar than other sets of chapters. So we’ve found the same overall result, but we’ve also saved ourselves from chasing false leads – like the “difference” in Abby’s Portrait Collection book that only really have to do with text length. Not everything is as purple as everything else in this visualization, and there are still things we can follow up on. But we’ve leveled out the differences that are just about difference in length.</p>
 <p>I think we’ve said all we can say about Euclidean and Cosine distance for this book, and how the results you get vary depending on how you count (or ratio) your words. It’s time to move on to a different method.</p>
 <div class="alert alert-block alert-warning">
-<b>Slow down, Quinn:</b> Before moving on to the next text comparison method, it's important to wrap up some loose ends. We wanted to differentiate the effect of the TF-IDF vectorizer from the effect of no longer using the `max_df` setting to drop terms that appear in 70% of texts. So let's compare three visualizations, all showing Euclidean distance, but with different vectorizer settings: from left to right, the <b>count vectorizer</b> that we used when we first ran Euclidaen distance, which drops the terms that appear in 70% in the text. In the middle, the <b>TF-IDF vectorizer</b> that should get us <em>term frequencies</em> instead of counts, and thereby normalize for length. And then finally, the <b>TF-IDF vectorizer</b> without dropping any terms.<img src="../_static/images/dsc8_euclidean_comparison.png" />
+<b>Slow down, Quinn:</b> Before moving on to the next text comparison method, it's important to wrap up some loose ends. We wanted to differentiate the effect of the TF-IDF vectorizer from the effect of no longer using the `max_df` setting to drop terms that appear in 70% of texts. So let's compare three visualizations, all showing Euclidean distance, but with different vectorizer settings: from left to right, the <b>count vectorizer</b> that we used when we first ran Euclidaen distance, which drops the terms that appear in 70% in the text. In the middle, the <b>TF-IDF vectorizer</b> that should get us <em>term frequencies</em> instead of counts, and thereby normalize for length. And then finally, the <b>TF-IDF vectorizer</b> without dropping any terms.<img src="../_images/dsc8_euclidean_comparison.png" />
 </div><div class="alert alert-block alert-danger">
 <b>Now wait just a minute here.</b>
 <p>Why do the count vectorizer and TF-IDF vectorizer results look identical? <em>Are</em> they actually identical? Shouldn't dropping common words make it even <em>more important</em> to use word frequencies?</p>
@@ -6369,7 +6369,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 </div>
 </div>
 <div class="alert alert-block alert-success">
-<img src="../_static/images/dsc8_euclidean_real_freqs.png" />
+<img src="../_images/dsc8_euclidean_real_freqs.png" />
 <p><b>Interesting!</b> Similar to what I had before, without the word frequency normalization, but a little lighter in color, meaning less similar. Which sounds better to me, knowing the corpus? Let’s see how cosine distance plays out.</p>
 <p><b>Cosine distance with word frequencies</b></p>
 </div><div class="cell docutils container">
@@ -6713,7 +6713,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 </div>
 </div>
 <div class="alert alert-block alert-success">
-<img src="../_static/images/dsc8_cosine_real_freqs.png" />
+<img src="../_images/dsc8_cosine_real_freqs.png" />
 <p><b>Very similar!</b> Honestly, there's less difference between cosine distance with word counts and cosine distance with word frequencies... which makes sense, because the cosine distance measure already helps account for different text lengths, at least up to a certain point. Let's try cosine distance on the chapter 2's.</p>
 <p><b>Cosine distance with chapter 2’s</b></p>
 </div><div class="cell docutils container">
@@ -7083,7 +7083,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 </div>
 </div>
 </div>
-<img src="../_static/images/dsc8_ch2_cosine_real_freqs.png" />
+<img src="../_images/dsc8_ch2_cosine_real_freqs.png" />
 <p><b>It's largely the same as cosine distance using just word counts!</b> With the same questions and disappointments with regard to the similarity of the chapter 2's, compared to the full books, when using cosine distance. We probably don't need to rerun this for chapters 1, 5, 9, and 15; you get the point.</p>
 <p>But now we've found it using code that legitimately works, without any confusions or misunderstandings about what's happening (at least, I hope?). That's satisfying. A satisfying kind of dissatisfying.</p>
 <p><b>Now</b> we can move on to another method.</p>

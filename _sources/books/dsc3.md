@@ -7,26 +7,26 @@ blurb: 'What do you do when your collaborators are acting like kids in a candy s
 bookseries: regular
 permalink: /dsc3/
 ---
-<img src="../_static/images/DSCLogo.png" />
+<img src="../_images/DSCLogo.png" />
 
 # DSC #3: The Truth About Digital Humanities Collaborations (and Textual Variants!)
 
 by Maria Sachiko Cecire, January 10, 2020
 
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
-<img src="../_static/images/bookcovers/dsc3_cover.jpg" alt="DSC 3 book cover" />
+<img src="../_images/bookcovers/dsc3_cover.jpg" alt="DSC 3 book cover" />
 </div>
 
 I read the email thread again. Then one more time. “Oh my gosh,” I whispered. “What do I say?”
 
 <div style="float: left; width: 175px;margin-right: 7px;margin-top: 0px;">
-<img src="../_static/images/truth-about-stacey-rerelease.jpg" alt="First rerelease cover of The Truth About Stacey" />
+<img src="../_images/truth-about-stacey-rerelease.jpg" alt="First rerelease cover of The Truth About Stacey" />
 </div>
 
 The first message in the thread, titled “Amazing discovery for our next volume!” was from Quinn, who’d had the [great idea](dsc1) to start the Data-Sitters Club in the first place. The DSC is a group of scholars that are creating a digital humanities guide to computational text analysis by building and analyzing a corpus of the Baby-Sitters Club books, and I was the last member to join before we launched a few months ago (there’s more about all the members of the gang and our history in [Chapter 2](../chapter-2/)). Quinn asked me to be part of the DSC because of my background in [children’s literature and childhood studies](https://www.upress.umn.edu/book-division/books/re-enchanted), and because of my digital humanities-friendliness as the director of the [Center for Experimental Humanities](https://eh.bard.edu) at Bard College. But not particularly for my data mining experience, because it’s not something I usually do! Everyone in the DSC was so nice, and I already knew some of the other members from before, but already I was feeling out of place.
 
 <div style="float: left; width: 175px;margin-right: 7px;margin-top: 0px;">
-<img src="../_static/images/truth-about-stacey-2010-reissue.jpg" alt="Cover of the 2010 rerelease of The Truth About Stacey" />
+<img src="../_images/truth-about-stacey-2010-reissue.jpg" alt="Cover of the 2010 rerelease of The Truth About Stacey" />
 </div>
 The emails I was reading were about some findings that Quinn had made when comparing the Baby-Sitters Club books she found online, with the more recently released versions we digitized through scanning and optical character recognition (OCR). These findings showed that the supposedly same books often had a lot of differences. Katia, another DSC member, helped build these two collections of Baby-Sitters Club books, and you can read about the process of corpus-building and some of the discrepancies in [*Katia and the Phantom Corpus*](dsc2). Now everyone in the email thread was gushing about how interesting it was to see content changes that seemed to reflect updated expectations, norms, and day-to-day realities: for example, swapping twenty-first century technologies and fashions for the 80s and 90s ones in the original books. Think “styled” hair instead of “permed” hair, “player” instead of “VCR,” and amounts of money removed or updated to account for inflation. (Granted, the lack of metadata for the versions Quinn found online mean we can’t know conclusively that they’re the originals, or even older than the more recent versions we digitized, but it sure looked that way.) I was happy to see the team so enthusiastic and united, but the problem was…the findings weren’t surprising to me at all.
 
@@ -34,7 +34,7 @@ Children’s publishing has a long history of revising texts to keep up with cha
 
 
 <div style="float: left; width: 175px;margin-right: 7px;margin-top: 0px;">
-<img src="../_static/images/oompaloompa1.jpg" alt="Original illustrations of Oompa Loompas from Roald Dahl's Charlie and the Chocolate Factory" />
+<img src="../_images/oompaloompa1.jpg" alt="Original illustrations of Oompa Loompas from Roald Dahl's Charlie and the Chocolate Factory" />
 </div>
 
 Another children’s lit classic that has gotten this treatment is Roald Dahl’s _Charlie and the Chocolate Factory_; there were some (honestly, reaaaally necessary) [revisions](https://groovyhistory.com/oompa-loompas-the-original-ones) in the 1970s to deal with the fact that the Oompa Loompas were described in the ‘60s original as "amiable black pygmies" from "the very deepest and darkest part of the African jungle where no white man had been before." Ew. (More on these kind of changes at children’s literature scholar [Phil Nel’s blog](http://www.philnel.com/2010/09/19/censoring-ideology/), from which the Oompa Loompa illustrations were taken.)
@@ -69,7 +69,7 @@ There might be some really interesting findings as we dig in deeper, and computa
 
 For now, I’ll leave you with Quinn’s notes on how to computationally work out differences between two versions of a text.
 
-![Spreadsheet reflecting textual variants](../_static/images/spreadsheet-variants.png)
+![Spreadsheet reflecting textual variants](../_images/spreadsheet-variants.png)
 
 > Dear Reader,
 
@@ -85,13 +85,13 @@ For now, I’ll leave you with Quinn’s notes on how to computationally work ou
 
 > Why that tool? Well, our corpus wasn’t that big -- and I suspected that the relevant subset of the corpus would be much smaller. (It didn’t seem likely that the publisher went through all the books to make content edits when the books were re-released as e-books.) The Diff Demo does the comparison really fast (unlike certain other options described below). Because I expected only a few books would show traces of these edits, I suspected it’d be all-around faster and easier to manually copy and paste dirty and clean corpus texts for comparison, review the differences with my own eyeballs, and then copy and paste relevant differences (i.e. ones not resulting from OCR errors) into a Google Sheet. Honestly, even if I thought there would be a lot of books with these changes, I’d probably start with the Diff Demo to first get a sense of what the changes were, how many there tended to be per book, etc., before moving on to trying to write code to scale up the process beyond what I could reasonably do myself.
 
-![Screenshot of Diff Demo](../_static/images/dsc3_diffdemo.png)
+![Screenshot of Diff Demo](../_images/dsc3_diffdemo.png)
 
 > When I first started doing the collation this way, there were a lot of “false alarms”: things flagged as differences that were entirely typographical. Curly instead of straight quotes and apostrophes. Ellipses expressed through a single character instead of three periods. That kind of thing. To minimize the number of things that would catch my eye as I skimmed the results, I did a bit of pre-processing, replacing the quotes and ellipses so they’d be consistent, just using find-and-replace in a plain text editor.
 
 > One handy thing about the Diff Demo is that if you copy the output and paste it into Microsoft Word, the changes will show up formatted as you’d expect from Word’s built-in Track Changes.
 
-![Screenshot of Track Changes](../_static/images/dsc3_trackchanges.png)
+![Screenshot of Track Changes](../_images/dsc3_trackchanges.png)
 
 > **What I tried: Juxta**
 
@@ -125,7 +125,7 @@ For now, I’ll leave you with Quinn’s notes on how to computationally work ou
 
 > For better performance, you could try running the [Juxta Commons source code](https://github.com/performant-software/juxta-service) on your own laptop, but it’s probably more straightforward to [install the desktop software](http://www.juxtasoftware.org/download/). I found it a little counterintuitive -- though to be fair, I’m the type who usually leaps into software without reading the documentation first. The [user manual](https://github.com/performant-software/juxta-desktop/wiki/UserManual) is actually helpful for working through the process of comparing texts.
 
-> ![Screenshot of Juxta Desktop](../_static/images/dsc3_juxtadesktop.png)
+> ![Screenshot of Juxta Desktop](../_images/dsc3_juxtadesktop.png)
 
 > **Do It With Code: CollateX**
 
@@ -137,15 +137,15 @@ For now, I’ll leave you with Quinn’s notes on how to computationally work ou
 
 > Given the much smaller chunk of a few paragraphs (the ones used for the screenshots above), it performed great, and has a couple of nice visualizations, including color-coded lines that split out textual differences, and a graph visualization.
 
-![Screenshot of CollateX Table](../_static/images/dsc3_collatextable.png)
+![Screenshot of CollateX Table](../_images/dsc3_collatextable.png)
 
-![Screenshot of CollateX Graph](../_static/images/dsc3_collatexgraph.png)
+![Screenshot of CollateX Graph](../_images/dsc3_collatexgraph.png)
 
 > Text collation is a relatively easy way to answer some kinds of questions about the editorial history of a text. Whether you’d rather write code, paste things into a browser, or install really old Java software, there are multiple options for exploring text collation. Give it a try -- but always remember to check with a disciplinary expert before you get too excited!
 
 > Happy analyzing,
 
-![Screenshot of Quinn's signature](../_static/images/dsc_quinnsig.png)
+![Screenshot of Quinn's signature](../_images/dsc_quinnsig.png)
 
 ### Suggested Citation
 

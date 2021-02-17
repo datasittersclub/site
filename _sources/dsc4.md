@@ -15,12 +15,12 @@ permalink: /dsc4/
 by Anouk Lang, April 10, 2020
 
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
-<img src="_static/images/bookcovers/dsc4_cover.jpg" alt="DSC 4 book cover" />
+<img src="_images/bookcovers/dsc4_cover.jpg" alt="DSC 4 book cover" />
 </div>
 
 My heart racing, I flipped my laptop open, powered it up and waited with bated breath for the browser to start. This was the moment I'd been waiting for. At last the page loaded and I clicked the link, to get to what I'd been waiting for with such anticipation. Hundreds of beautiful clean text files shone out of the screen at me, carefully labelled, fixed of their OCR errors and culled of their paratexts and their encoding gremlins. It was better than finding a stash of candy in one of Claudia's pillowcases: it was the corpus of BSC texts, [lovingly curated and cleaned by Quinn and Katia (as described in _DSC #2: Katia and the Phantom Corpus_)](https://datasittersclub.github.io/site/dsc2/), and all ready to work with. Meanwhile, a thicket of deadlines and disasters had sprung up in front of the other Data-Sitters, which was just the excuse I needed. "I'll get started with AntConc!" I told them.
 
-<img src="_static/images/dsc4_gettingahead.png" alt="AntConc results for 'getting ahead of myself'" />
+<img src="_images/dsc4_gettingahead.png" alt="AntConc results for 'getting ahead of myself'" />
 
 
 But, as BSC narrators like to do, I’m getting ahead of myself. AntConc, for those who’ve not encountered it before, is a concordancer: a piece of software used in the fields of corpus linguistics and natural language processing (NLP) that lets you load a corpus of texts and then search it for words or phrases. You can modify your search terms with a set of customizable wildcards or regular expressions, and AntConc will bring up those words or phrases in what’s known as a key word in context (KWIC) display. You can then sort these KWIC lines to get a sense of the words that precede or follow the words in your query, generate a frequency list of all the words in the corpus, find words which commonly appear (or collocate) together, bring up a visual display of where in each file the words in your query appear, compare the frequency of words in your corpus to their frequency in a reference corpus, and more. AntConc is well regarded in the digital humanities community as it’s well maintained by its creator Laurence Anthony, it’s free to use, and – one of the things I particularly appreciate about it – it’s lightweight and can usually be installed on lab PCs of the type that people teaching digital humanities can find themselves restricted to using. For classes, or DH beginners for whom jumping into NLP with Python is not a realistic option, it is a good way to demonstrate some of the potential of text analysis using a pretty intuitive graphical user interface (GUI). You might see it as the text analysis equivalent of the Kid-Kit, the box of crafty fun things the BSC took to babysitting gigs when they particularly wanted to keep their charges amused. 
@@ -28,7 +28,7 @@ But, as BSC narrators like to do, I’m getting ahead of myself. AntConc, for th
 
 I loaded the corpus of BSC books into AntConc (*File > Open Dir*) and started by generating a word frequency list (*Word List* tab then *Start*) and taking a look at the basic stats, which appear at the top of the main white window in the Word List tab once you have clicked Start. The corpus was around 4.7 million words, with around 33 000 different unique words (or types). I then looked at the word frequency list, something which can be an interesting exploratory step, as it lets you see if there are any terms with fairly high frequencies whose presence isn't immediately explainable by intuition. I was all primed to look up terms relating to the things the other Data-Sitters and I had speculated would make for interesting queries: words around gender, race, consumerism, suburbia and so on. But before any of those appeared on the frequency list, however, I came across the term "little" quite high up. What was even more interesting was that of the 7075 instances of little in the corpus, almost two thirds of them (4653) appeared as part of the bigram "a little". What could it mean? I decided to investigate further by doing a concordance search for "a little" (*Concordance* tab, type `little` into the search box and press *Start*) and sorting the results alphabetically by the word to the right of the search terms (enter *1R, 2R* and *3R* into the Kwic Sort boxes then press *Sort*).
 
-![AntConc results for 'look a little alike'](_static/images/dsc4_LookALittleAlike.png){:style="float: right;margin-right: 7px;margin-top: 0px;"}
+![AntConc results for 'look a little alike'](_images/dsc4_LookALittleAlike.png){:style="float: right;margin-right: 7px;margin-top: 0px;"}
 
 The first thing to jump out at me -- in light of our discussions about similarities and differences between the books and the logistics of keeping things consistent across the series when a number of ghostwriters were producing the books  -- was the way the formula of "look a little alike" recurred in the introductory descriptions of Mary Anne and Kristy. (If you look at the KWIC lines you'll spot other formulae in there, notably being best friends, being short and having brown hair.) Given what we knew of the 'BSC Bible' (as mentioned in [DSC Multilingual Mystery #2: Beware, Lee and Quinn](https://datasittersclub.github.io/site/dscm2/)) and its role in guiding the ghostwriters, this wasn't that surprising. I made a mental note to check, once we got access to the version in the archives, whether "look a little alike" was part of the phraseology it used when describing those two characters.
 
@@ -131,7 +131,7 @@ Pondering the extent to which my British/Australian English would lead my judgme
 
 Querying COCA for all phrases with "a little" + an adjective turned up a list that, sorted by frequency, was also heavy on the negative terms, but didn't follow quite the same pattern I'd been hypothesizing about:
 
-<img src="_static/images/dsc4_COCA_ALittle.png" alt="COCA results for 'a little'" />
+<img src="_images/dsc4_COCA_ALittle.png" alt="COCA results for 'a little'" />
 
 I wasn't comparing like with like here, of course: I'd selected from the BSC corpus only those adjectives that I interpreted as descriptive of emotional states, and my COCA search had delivered all adjectives, but it nonetheless showed that negatively-inflected words did generally outnumber positively-inflected ones. The most common negative terms, however, weren't along the lines of the intensely emotional words that had been prominent in the DSC corpus. Terms like *scared, disappointed, uncomfortable, worried, awkward* and *embarrassed* were, in fact, less frequent than more prosaic terms like different, extra and higher. In other words, American English of the last four or so decades didn't seem to be as focused on the discursive cushioning of emotional distress as the BSC books.
 
@@ -215,32 +215,32 @@ While I was wondering what to make of the appearance of more objectively descrip
 The raw frequencies were even lower here than in my BSC corpus, so all the same disclaimers applied. But the comparison with the COCA corpus and the COCA Juvenile Fiction sub-corpus did suggest that, while it might be a feature of American English that words or phrases describing unpleasant emotional states would be fairly likely to be modified by "a little"---both in children's and teen fiction and in language more generally, which is something that I imagine sociolinguists are already well aware of and have explanations for, and perhaps they'd like to weigh in with them on our #DataSittersClub hashtag if they're reading this---the BSC books had a more intensified version of this discursive formation going on. The terms that topped the COCA and COCA Juvenile Fiction searches -- *confusing, jealous, nervous, shy, embarrassed, awkward* -- appeared in the BSC search, but some way down the list (jealous was the highest, coming in at number 17). Above those words (which, to me at least, signalled a moderate level of distress) there were more intensive emotional states, many of which had some kind of somatic dimension to them: *panicky, queasy, choked up, shaky, dazed, dizzy*. It was as if the BSC books had taken an existing pattern in language and amped it up so as to capture, and foreground, the intimate nexus between bodily and emotional states that is often portrayed as quintessential to the experience of being a teenager.
 
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
-<img src="_static/images/dsc4_QuinnGreenScreen.jpg" alt="Quinn on Zoom with a green screen and BSC books" />
+<img src="_images/dsc4_QuinnGreenScreen.jpg" alt="Quinn on Zoom with a green screen and BSC books" />
 </div>
 By now I was bursting to take all of this to a Data-Sitters Club meeting and to hear what everyone else made of it. We dialled in -- Quinn having rigged up a green screen for her Zoom background so that her head appeared, Cheshire Cat-like, in front of a rainbow of BSC covers -- and I ran everyone through the searches, the word lists, the disclaimers, the reference corpora and all the rest of it. I shared my AntConc screen and ran some searches to illustrate. I finished with my grand unified theory of what it meant for our understanding of the ideological work being done by the books: "... and so it feels to me like the books might be modelling for the reader in a discursive way one of the forms of emotional labor that women are socialized to do in daily life: regulating other people's emotions for them."
 
 No one was interested in my dumb theory. Everyone was, however, entranced by AntConc. “Hey, I saw ‘happy ending’ a bunch of times!” exclaimed Roopsi. “Can you look that up?”
 
-<img src="_static/images/dsc4_HappyEnding.png" alt="AntConc results for 'happy ending'" />
+<img src="_images/dsc4_HappyEnding.png" alt="AntConc results for 'happy ending'" />
 
 “Sure,” I said, and did the search. Everyone started to talk at once about why there might be so many mentions of happy endings, and whether this was about the endings of the novels themselves, ways of describing what happened to characters and families, or something else. It was, I had to admit, more interesting than my deep dive into "a little".
  
 “I’m sure they start talking about Ronald Reagan at one point”, Katia said, so I looked up *reagan*.
 
-<img src="_static/images/dsc4_Reagan.png" alt="AntConc results for 'Regan'" />
+<img src="_images/dsc4_Reagan.png" alt="AntConc results for 'Regan'" />
 
 “Wait, are they talking about *Back to the Future*? They’re talking about *Back to the Future*!” Roopsi squealed.
 
-![AntConc results for 'Back to the Future'](_static/images/dsc4_BTTF.png)
+![AntConc results for 'Back to the Future'](_images/dsc4_BTTF.png)
 
 And, before I knew it, we were down a rabbit hole of the movies the BSC characters watched:
 
-![AntConc results for 'Wizard of Oz'](_static/images/dsc4_WizOfOz.png)
+![AntConc results for 'Wizard of Oz'](_images/dsc4_WizOfOz.png)
 
 
 “Um. Guys … guys?” I said, trying to get us back on track by using the term that the BSC overwhelmingly uses to address each other.
 
-![AntConc results for 'guys'](_static/images/dsc4_Guys.png)
+![AntConc results for 'guys'](_images/dsc4_Guys.png)
 
 “*Guys*,” I said more firmly, attempting to channel Kristy bringing a BSC meeting to order. “What do you think about these findings around 'a little' and the interpretation I’ve come up with? Is there something there? What have I missed?”
  
@@ -252,8 +252,8 @@ Gradually, everyone turned their attention back to the searches I’d done. “I
  
 “OK, cool.” I said. “That’s pretty easy to try out.” And sure enough, a few quick searches pulled up lots of hits where but worked to signal a swerve away from whatever the 'a little' + descriptor phrase had been hedging.
 
-![AntConc results for 'a little, but'](_static/images/dsc4_ALittleBut.png)
-![AntConc results for 'a little, but'](_static/images/dsc4_ALittleBut2.png)
+![AntConc results for 'a little, but'](_images/dsc4_ALittleBut.png)
+![AntConc results for 'a little, but'](_images/dsc4_ALittleBut2.png)
 
 “Does it make a difference who’s talking to who? Or whether the narrator is describing an interaction?” wondered Katia.
  
@@ -273,8 +273,8 @@ We talked some more, I took notes as best I could, and then everyone had to go o
  
 The other Data-Sitters had given me a lot to think about, and I was glad to have had their eyes on my methodology and results, such as they were, and their moderating influence on my somewhat premature conclusions. I tried out Quinn’s suggestion of looking for other premodifying phrases: "sort of" came in at 1232 instances, and had the same patterning around "sort of alike" that I’d noticed with "a little alike" in the Mary Anne and Kristy introductions, while "kind of" appeared 1940 time, and at a first glance seemed slightly more likely to collocate with positively inflected terms such as *cute, fun and interesting*. Following Roopsi’s idea of looking at what followed the words and phrases pre-modified by "a little", I noticed other features – sometimes punctuation, sometimes the word "well" or "um" – being used to further delay or cushion the descriptors.
 
-![AntConc results for 'a little, well'](_static/images/dsc4_ALittleWell.png)
-![AntConc results for 'a little...'](_static/images/dsc4_ALittleDotDotDot.png)
+![AntConc results for 'a little, well'](_images/dsc4_ALittleWell.png)
+![AntConc results for 'a little...'](_images/dsc4_ALittleDotDotDot.png)
 
 
 These examples felt like they supported my theory: not only did most of them have some kind of negative connotations to them (rooms and houses being untidy; people being displeased; judgments about unpleasant character traits), but they showcased other ways to push back the moment when a negative judgement is voiced ("the script is a little – well, it’s a little boring and it seems a little … I don’t know … a little insulting"). I could see it was going to be hard to give up my theory. I guess close reading habits die hard.

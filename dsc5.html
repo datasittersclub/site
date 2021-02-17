@@ -78,7 +78,7 @@
         <div class="navbar-brand-box">
 <a class="navbar-brand text-wrap" href="index.html">
   
-  <img src="/site/_static/DSClogo.png" class="logo" alt="logo">
+  <img src="_static/DSClogo.png" class="logo" alt="logo">
   
   
   <h1 class="site-logo" id="site-title">Data-Sitters Club Notebook</h1>
@@ -150,6 +150,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="dsc8.html">
    DSC 8: Text-Comparison-Algorithm-Crazy Quinn
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc9.html">
+   DSC 9: The Ghost in Anouk's Laptop
   </a>
  </li>
 </ul>
@@ -389,13 +394,13 @@
 <h1>DSC #5: The DSC and the Impossible TEI Quandaries<a class="headerlink" href="#dsc-5-the-dsc-and-the-impossible-tei-quandaries" title="Permalink to this headline">¶</a></h1>
 <p>by Elisa Beshero-Bondar, Lee Skallerup Bessette, Quinn Dombrowski, and Roopika Risam, June 25, 2020</p>
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
-<img src="_static/images/bookcovers/dsc5_cover.jpg" alt="DSC 5 book cover" />
+<img src="_images/bookcovers/dsc5_cover.jpg" alt="DSC 5 book cover" />
 </div>
 <div class="section" id="quinn">
 <h2>Quinn<a class="headerlink" href="#quinn" title="Permalink to this headline">¶</a></h2>
 <p>In the weeks before the world shut down due to COVID-19, Lee and I got into a <a class="reference external" href="https://twitter.com/quinnanya/status/1232364722604761088">Twitter discussion with folks who work on comic books and computational image analysis</a>, mulling over what we could do with the graphic novels. I’d scanned the English and French versions of “Kristy’s Great Idea”, and had noticed at least one change that went beyond the text bubbles:</p>
 <div style="float: left; width: 300px;margin-right: 7px;margin-top: 0px;">
-<img src="_static/images/dsc5_thank_you_merci.jpg" alt="Chinese take-out containers with text 'thank you' and 'merci' from graphic novels" />
+<img src="_images/dsc5_thank_you_merci.jpg" alt="Chinese take-out containers with text 'thank you' and 'merci' from graphic novels" />
 </div>
 <p>Were there other places in the translations where images had been modified? That’s a harder question than you might think. There’s lots of algorithms for looking at whether an image has been modified – but they all assume that someone <em>took a specific source image file</em>, made modifications to that same file, and then saved the file. What I wanted to do was <em>compare two completely different source image files</em> that show the same page of a comic book in the original, and in translation. Basically the same contents (from the perspective of a human viewer), but totally different image files (from the perspective of the computer). This turns out to be much harder. There’s a lot of exciting work going on in the area of computational analysis of images (see, for instance Taylor Arnold and Lauren Tilton’s <a class="reference external" href="https://distantviewing.org/">Distant Viewing Lab</a>), but on the whole, tools for image analysis have lagged behind tools for textual analysis.</p>
 <p>So how else can we work with the graphic novels, if we’re not working with the images as images? <a class="reference external" href="http://dcl.slis.indiana.edu/cbml/">Comic Book Markup Language (CBML)</a> came to mind. CBML (as written up by John Walsh in the 2012 DH Quarterly article, “<a class="reference external" href="http://www.digitalhumanities.org/dhq/vol/6/1/000117/000117.html">Comic Book Markup Language: An Introduction and Rationale</a>”) is a variant of the Text Encoding Initiative (TEI) conventions, originally developed for marking up different kinds of texts, that adds in elements, attributes, and vocabularies specifically designed for use with comic books.</p>
@@ -406,7 +411,7 @@
 <h2>Lee<a class="headerlink" href="#lee" title="Permalink to this headline">¶</a></h2>
 <p>While I was initially brought into the Data-Sitters Club because of my experience and expertise with French (and specifically Québécois) as well as plumbing the depths of national library databases and used bookstores online, I have a number of “adjacent” areas of expertise that are applicable here, too. I’m “adjacent” to DH in a lot of ways, but I am also “adjacent” to YA graphic novels, as well as adaptations and TEI.</p>
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
-<img src="_static/images/dsc5_lee_tei_dhsi.jpg" alt="Lee's DHSI certificate for a DHSI workshop in 2012" />
+<img src="_images/dsc5_lee_tei_dhsi.jpg" alt="Lee's DHSI certificate for a DHSI workshop in 2012" />
 </div>
 <p>I got interested in YA graphic novels and comics because my kids absolutely adored them, which led me to volunteer to <a class="reference external" href="https://www.comicsgrid.com/articles/10.16995/cg.124/">review a book for Comics Grid on YA graphic novels and comics</a> and then one on <a class="reference external" href="https://www.comicsgrid.com/articles/10.16995/cg.190/">Comic Book Pedagogy</a>. In these, you can read all about my history with the genre. At the same time, I had the pleasure of working alongside <a class="reference external" href="http://www.zachwhalen.net/">Zach Whalen</a>, who is a “real” comics scholar, as well as someone who has <a class="reference external" href="http://www.zachwhalen.net/pg/imj/">more than a passing interest in image visualization</a>. I learned a great deal from him as we talked about his graphic novel class, as well as thinking about DH tools and image visualization.</p>
 <p>In my (previous? Current? On hiatus?) <a class="reference external" href="https://chasinglaferriere.wordpress.com/">research on Dany Laferrière</a>, part of my interest was not only how he was literally translated into English, but how his work was shaped and reshaped across genres, including film, apps, and illustrated/graphic novel editions of his work. Dude rewrote everything he’s ever written so many times and over so many mediums, I had to do the work to research what these changes meant and how the medium may have impacted the decisions behind these changes, and vice versa (because a filmmaker adapted one of his books which led the author to completely revise and rewrite the book under a completely different title and my brain hurts now so let’s just move along).</p>
@@ -487,7 +492,7 @@
 <div class="section" id="graphic-novel-or-chopped-up-text">
 <h3>Graphic novel or chopped-up text?<a class="headerlink" href="#graphic-novel-or-chopped-up-text" title="Permalink to this headline">¶</a></h3>
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
-<img src="_static/images/dsc5_quinn_lee_tei.jpg" alt="Zoom meeting between Quinn and Lee" />
+<img src="_images/dsc5_quinn_lee_tei.jpg" alt="Zoom meeting between Quinn and Lee" />
 </div>
 <p>Lee and I met in the early days of the March COVID-19 lockdown, right after we finished Multilingual Mystery #3, to talk about what we wanted to do for a DSC book on TEI. We’d both assumed that since we’d be working with graphic novels, it would make sense to use CBML – the TEI variant for comic books – but the more we talked, the more we realized that it might not be such an obvious decision after all.</p>
 <p>If the TEI is like the notes from a 30-year brainstorm about text structure, CBML is like what you’d get if comic book people took those notes and wrote fanfic. (I mean that in a good way – fanfic deserves to be taken seriously.) It’s still in the same universe as TEI, but they’ve introduced some new elements (like “&lt;balloon&gt; A single speech, thought, or other type of balloon, commonly found in comics, comic books, and graphic novels”), and created a custom blend of elements drawn from different thematic “chapters” of TEI, including drama, names and dates, and text structure. It’s a blend that has invested a lot of thought in how to capture some of the properties specific to the medium of comics, including things like the nature of the transition between cells, and differentiating text bubbles from caption text from diegetic documents that the character can read in-universe. I can imagine a thorough CBML markup of a particular artist’s graphic novels serving as a basis for a kind of graphic novel stylometric analysis: how often do different artists use these devices, and in what contexts? To what extent are these patterns shaped by the artist vs. conventions defined for a particular series? The Baby-Sitters Club graphic novels are being published with a new artist after every four books (and book #8 is coming out this fall). Especially once there’s a third artist in the mix, the BSC graphic novels could be an interesting corpus for exploring those kinds of graphic novel stylometric questions… if we were interested enough in those questions to invest the time in doing the markup.</p>
@@ -653,7 +658,7 @@ All TEI files start with a &lt;teiHeader&gt; section, where you’re supposed to
 <div class="section" id="the-interview">
 <h2>The interview<a class="headerlink" href="#the-interview" title="Permalink to this headline">¶</a></h2>
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
-<img src="_static/images/dsc5_interview.png" alt="Zoom screenshot from the interview" />
+<img src="_images/dsc5_interview.png" alt="Zoom screenshot from the interview" />
 </div>
 <p>“So, Elisa,” Roopsi began, “An alien lands on earth and you have to explain TEI. How do you explain it?”</p>
 <p>“I find this question vexing,” Elisa responded. “First, I have to find a way to communicate with the alien. But I’m going to presume the alien is looking at our electronic textual records and has some basis for talking.” Katia and Roopsi laughed. “When I was getting my education in TEI,” Elisa continued, “the whole point was long range storage – a way for documents to be transferred sustainability over time. Computers were changing rapidly in the 1980s and 1990s – and they still are, but this is slowing a bit –but the idea is you don’t want electronic documents that are about cultural heritage, that are supposed to be accessible to everyone electronically, subject to code imposed by a particular operating system that determines how the data in the documents is stored. We don’t want different companies competing over how document data is stored – we don’t want proprietary data formats.”</p>
@@ -705,7 +710,7 @@ All TEI files start with a &lt;teiHeader&gt; section, where you’re supposed to
 </div>
 <div class="section" id="suggested-citation">
 <h2>Suggested Citation<a class="headerlink" href="#suggested-citation" title="Permalink to this headline">¶</a></h2>
-<p>Suggested citation: Beshero-Bondar, Elisa, Lee Skallerup Bessette, Quinn Dombrowski, and Roopika Risam. “DSC #5: The DSC and the Impossible TEI Quandaries.” <em>The Data-Sitters Club,</em> June 25, 2020. https://datasittersclub.github.io/site/dsc5.</p>
+<p>Suggested citation: Beshero-Bondar, Elisa, Lee Skallerup Bessette, Quinn Dombrowski, and Roopika Risam. “DSC #5: The DSC and the Impossible TEI Quandaries.” <em>The Data-Sitters Club,</em> June 25, 2020. https://datasittersclub.github.io/site/dsc5.html.</p>
 </div>
 </div>
 

@@ -90,5 +90,11 @@ body {
 	background-color: #f9bbc6 !important;
 }
 
+blockquote #email {
+	font-family:monospace;
+}
 
 
+.float-right {
+	float:right;
+}

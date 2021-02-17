@@ -15,7 +15,7 @@ permalink: /dsc6/
 by Katherine Bowers, September 15, 2020
 
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
-<img src="_static/images/bookcovers/dsc6_cover.jpg" alt="DSC 6 book cover" />
+<img src="_images/bookcovers/dsc6_cover.jpg" alt="DSC 6 book cover" />
 </div>
 
 If you'll pardon my late 90s/early 2000s turn of phrase, I'd describe myself as a DH n00b. In the Data-Sitters Club, my n00bness is helpful in that I'm usually the one that asks for clarification about terms or how to break processes down into smaller tasks or notices when we've missed a step. Long before [Quinn had her great idea](https://datasittersclub.github.io/site/dsc1/) and [Lee, Maria, Quinn, Anouk, Roopsi, and I](https://datasittersclub.github.io/site/chapter-2/) came together to form the Club, my first exposure to DH was [Voyant](https://voyant-tools.org/). I have a lot of affection for Voyant and I think my story is not unique. Voyant has been a first DH step for a lot of people. And so, today, Voyant's Big Day, let's talk about Voyant, what it is, how it works, and what you can do with it as a researcher or as an instructor.
@@ -26,15 +26,15 @@ The visualizations can be roughly categorized as tools that count word frequenci
 
 When you go to [voyant-tools.org](https://voyant-tools.org/), the first thing you will see is this:
 
-![Landing page for Voyant](_static/images/dsc6-voyant-landing.png)
+![Landing page for Voyant](_images/dsc6-voyant-landing.png)
 
 That's it. It's simple, clean, and intuitive. What's the first thing you do when you want to work with Voyant? Well, obviously you feed some text into it: you can copy/paste whatever text or links to texts into the text box, click "open" which gives you the option to choose preloaded corpora (either Shakespeare or Austen), or upload your own files.
 
 Now I love Jane Austen, but today we're going to see what Voyant can tell us about the Baby-Sitters Club books, so I click upload. Voyant will accept a lot of different kinds of files: plain text, MS Word, .pdf, .rtf, .html, and .xml. I select the individual files of our cleaned up .txt Baby-Sitters Club corpus (to learn about how we created our corpus and how you can create your own, read my previous BSC opus, [DSC #2: Katia and the Phantom Corpus](https://datasittersclub.github.io/site/dsc2/)), hit open... and then I wait. It takes some time to upload a corpus as large as ours!
 
-![Uploading corpus](_static/images/dsc6_upload.png)
+![Uploading corpus](_images/dsc6_upload.png)
 
-![Upload 15% complete](_static/images/dsc6_uploading15.png)
+![Upload 15% complete](_images/dsc6_uploading15.png)
 
 When we were talking about this book in our last Data-Sitters Club meeting, Maria mentioned that she does an assignment in her LIT 135 class "Falling in Love" that incorporates Voyant. First, Maria asks her students to collect personal ad texts from various sources and clean them up. Then she assembles a corpus of them. Next she asks students to do a close reading of the corpus. And, finally, she asks them to use Voyant to do a distant reading of the corpus. I think this project is great in that it walks students through building a corpus, thinking about data, practicing both close and distant reading, and analyzing visualizations.
 
@@ -46,9 +46,9 @@ Maria's students are able to consider the advantages and disadvantages of close 
 
 Forming and articulating these questions and then analyzing the resulting visualizations can be really helpful for students' critical thinking.
 
-![Uploading corpus](_static/images/dsc6_upload.png)
+![Uploading corpus](_images/dsc6_upload.png)
 
-![Upload 68% complete](_static/images/dsc6_uploading68.png)
+![Upload 68% complete](_images/dsc6_uploading68.png)
 
 As the "uploading corpus" circle slowly circles around, I start thinking about the kinds of questions that Voyant can help answer:
 
@@ -59,14 +59,14 @@ As the "uploading corpus" circle slowly circles around, I start thinking about t
 
 What you'll notice if you're familiar with AntConc (throwback to [DSC #4](https://datasittersclub.github.io/site/dsc4/)) is that many of these questions are similar to things you can learn by using AntConc or another concordancer. Voyant in fact includes a concordancer, but also has a number of other tools that visualize the text's word frequencies and contexts in ways that AntConc can't. What questions do I want to ask Voyant?
 
-![Uploading corpus](_static/images/dsc6_upload.png)
+![Uploading corpus](_images/dsc6_upload.png)
 
-![Upload 89% complete](_static/images/dsc6_uploading89.png)
+![Upload 89% complete](_images/dsc6_uploading89.png)
 
 
 Suddenly the box changes to “fetching your corpus.” Finally! My corpus upload has finished and a colorful, crowded, and admittedly pretty overwhelming page featuring five default visualization tools opens. 
 
-![Default Voyant interface with corpus](_static/images/dsc6_voyant-tools-1.png)
+![Default Voyant interface with corpus](_images/dsc6_voyant-tools-1.png)
 
 Going clockwise, we have Cirrus, a word frequency cloud; Reader, which displays the searchable full text of any one text in the corpus; Trends, a line graph that shows the distribution of words across the corpus; Contexts, a concordancer; and Summary, which gives helpful details about the corpus.
 
@@ -74,15 +74,15 @@ First I look down at **Summary**. I can see here that all 225 of our BSC corpus 
 
 Each tool slot has some other options for what you can display in it -- these are the other options on the tool header bars. If I select **Documents**, I get a chart that shows the stats for the individual texts in the corpus:
 
-![Document stats table in Voyant](_static/images/dsc6_documents.png)
+![Document stats table in Voyant](_images/dsc6_documents.png)
 
 In the Cirrus slot, for example, you can choose to display the Terms tool or the Links tool instead by selecting the appropriate tool name in the header: 
 
-![Cirrus header](_static/images/dsc6_cirrus-header.png)
+![Cirrus header](_images/dsc6_cirrus-header.png)
 
 You can select other tools to add by clicking on the windows icon that appears third from the right when you mouse over the header of a tool. (At the time of writing, Voyant included [24 different tools](https://voyant-tools.org/docs/#!/guide/tools)):
 
-![Documents header](_static/images/dsc6_documents-header.png)
+![Documents header](_images/dsc6_documents-header.png)
 
 Those other menu options are (from left to right): embed/export (the open mark), other tools (the windows mark), options (the toggle mark), and help (the question mark).
 
@@ -94,17 +94,17 @@ Voyant automatically filters out "stopwords" from its visualizations. What are t
 
 For example, here, on the left, is the word cloud Voyant created by auto-detecting and filtering stopwords, and on the right is the word cloud with the stopword filtering switched off.
 
-![Cirrus with automatic stopwords](_static/images/dsc6_cirrus-autostopwords.png)![Cirrus with no stopwords](_static/images/dsc6_cirrus-nostopwords.png)
+![Cirrus with automatic stopwords](_images/dsc6_cirrus-autostopwords.png)![Cirrus with no stopwords](_images/dsc6_cirrus-nostopwords.png)
 
 That’s a pretty big difference! One difference between AntConc and Voyant is that AntConc doesn’t filter stopwords. You can customize Voyant to add more nuance to the visualizations and one thing you can do is edit the stopword list. When is it useful to edit the stopword list? For example, if you’re looking for the most frequent words in the BSC Mystery series, you might want to add the character names to the stopword list so you can more easily surface things like GHOSTS or JEWEL THIEVES without Kristy, Mary Anne, and Claudia getting in the way (as adept at sleuthing as they are). 
 
 If you mouse over the Cirrus header, some additional menu items will appear:
 
-![Cirrus header with menu items](_static/images/dsc6_cirrus-header.png)
+![Cirrus header with menu items](_images/dsc6_cirrus-header.png)
 
 Clicking the toggle icon on the right next to the question mark will open a window that gives you a lot of different options to make adjustments to what Cirrus is displaying:
 
-![Cirrus configuration options](_static/images/dsc6_cirrus-options.png)
+![Cirrus configuration options](_images/dsc6_cirrus-options.png)
 
 Here you have the option to use the auto-detected stopwords, change the language to a different one (with a preloaded set of stopwords), edit the stopwords list, turn off stopwords, or add your own list of stopwords. Next to the stopwords menu options is a check box next to the words “apply globally.” Checking this box tells Voyant that you want to use your stopwords selection in all the tools for your session. Unchecking it will mean you can set each individual tool’s stopwords list to be different.
 
@@ -112,7 +112,7 @@ In addition, from this pop up you can make some aesthetic adjustments, like chan
 
 I click “edit list” next to White List to add a custom white list of just the names of the BSC members and my Cirrus visualization changes to show just these words, sized by frequency of appearance in the corpus. Note that Cirrus won’t recognize blank spaces, so “Mary Anne” won’t register as a white list term and must be entered as two: “Mary” and “Anne.”
 
-![Cirrus configuration options](_static/images/dsc6_whitelist-names.png)
+![Cirrus configuration options](_images/dsc6_whitelist-names.png)
 
 This view basically confirms what the non-white listed word cloud showed. Compared with the other BSC members, Kristy and Mary Anne appear slightly more often than Claudia, Stacey, and Dawn do. And the others who hadn't even registered on the first word cloud definitely appear less often. At the end of the day, though, the fact that Abby (who first appears in BSC #89 *Kristy and the Dirty Diapers*) or Shannon (an associate member who rarely appears in the series) don't appear as often as the others isn't that surprising or interesting.
 
@@ -124,11 +124,11 @@ The first word of BSC slang ("fresh") doesn't even appear until BSC #36 *Jessi's
 
 In the BSC bible, the guide that collects BSC facts to make sure all the series' ghostwriters are on the same page and the books stay consistent, only two slang words are mentioned. The bible states: "Club uses the word 'dibble' to mean cool (#54-p.17). 'Chilly' means mega-cool (M#8-p.37)." I've been keeping a list of the words as I read through the series, though. They include a bunch of synonyms for varying degrees of cool ("fresh," "distant," "dibble," "acute," "chilly") and the word "stale" as a synonym for uncool. There are more, but these six are a good place to start.
 
-![Stop trying to make 'fetch' happen](_static/images/dsc6_fetch.gif)
+![Stop trying to make 'fetch' happen](_images/dsc6_fetch.gif)
 
 Taking a note from *Mean Girls*, I refine my question. What I’d like to know is whether the BSC (or, more accurately, Ann M. Martin and the BSC ghostwriters) actually made any of these slang words happen. And, if so, which and how often? Can Voyant help me find the answers?
 
-![Slang whitelist](_static/images/dsc6_whitelist-slang.png)
+![Slang whitelist](_images/dsc6_whitelist-slang.png)
 
 Adding the slang words to the white list, I can already see the first problem I'm going to have to address. "Dibble" and "dibbly" appear so small here because they are *only* used as slang words, whereas the other words on the list are most frequently used outside of a slang context. For example, when Dawn is talking about fresh seeds, or Claudia is chilly and puts on a sweater, or Stacey feels like someone close to her is acting distant.
 
@@ -136,22 +136,22 @@ Cirrus is clearly not the best tool for this, so it's time to move on.
 
 I click on **Terms**, another tool available in the Cirrus slot, and a table of term frequencies across the entire corpus appears. This tool uses the same auto-list of stopwords as Cirrus and has the same options for white listing, modifying, etc. 
 
-![Terms table](_static/images/dsc6_terms-default.png)
+![Terms table](_images/dsc6_terms-default.png)
 
 The terms are listed in descending relative frequency order. The next column shows the total count of appearance. The final column shows a line graph of relative frequency across each book with highest and lowest frequency marked. 
 
 Clicking on the question mark in the upper right corner opens a help window that describes the features of the tool, how it can be customized, and what additional columns are possible. 
 
-![Terms help page](_static/images/dsc6_terms-help.png)
+![Terms help page](_images/dsc6_terms-help.png)
 
 I type the six slang terms I’m curious about in the box at the bottom of the Terms window and now things start getting interesting as the visualization populates with the data. I notice that, when I start to type “dibble,” several other variants come up: “dibb\*,” “dibbly,” “dibbleness.” These are clearly all slang terms, so I add all of them. I also add “freshly” for good measure. Technically I could have just added “dibb\*” since that final asterisk denotes that this will bring up all things “dibb” (anything beginning with “dibb”), but I was curious about how the various manifestations of “dibbly” appear in the text.
 
-![Term count](_static/images/dsc6_terms-dibble.png)
+![Term count](_images/dsc6_terms-dibble.png)
 
 I also notice that some of the other visualizations have been updated to focus on the six slang terms. **Contexts**, the concordancer, has pulled up the in-text contexts for each use of the terms. 
 
 
-![Contexts for fresh](_static/images/dsc6_contexts-fresh.png)
+![Contexts for fresh](_images/dsc6_contexts-fresh.png)
 
 Contexts is kind of like a lite version of AntConc. It can’t do all the things AntConc can do, but as a tool that works harmoniously in tandem with the other Voyant tools, Contexts is really helpful. It shows the term, the stuff that appears to the left and right of it in the text, and which text it appears in.
 
@@ -161,7 +161,7 @@ But I really should get back to the BSC and their slang! In Terms, I can see tha
 
 I can’t quite see the full context for this last one, but I assume it’s slang (unless they’re talking about her new deodorant or something, but that doesn’t seem likely). If I click on the expander sign in Contexts, a snippet of the full text appears.
 
-![Reader interface with 'fresh' examples](_static/images/dsc6_reader-fresh.png)
+![Reader interface with 'fresh' examples](_images/dsc6_reader-fresh.png)
 
 But! When I highlight that line in Contexts with my mouse and click, the **Reader** tool goes right to the exact place in the corpus and shows the full text. This way I can check out more of what’s around the term. This is definitely BSC slang, and you can see that it includes the kind of planted definition and history of the term when it is introduced. “Fresh” here means “so cool” and this is something Claudia has been saying for awhile. 
 
@@ -171,20 +171,20 @@ One thing that’s interesting in Terms is the line graph that shows where in th
 
 Now I’m curious: are these instances of the slang use of “fresh” or does Kristy just have a lot to say about fruit in this book? I select “fresh” in Terms, go down to Documents, find BSC #38, and select it. Suddenly all of the tools are focused on “fresh” in this particular book.
 
-![Reader interface with 'fresh' examples](_static/images/dsc6_mystery-admirer-fresh.png)
+![Reader interface with 'fresh' examples](_images/dsc6_mystery-admirer-fresh.png)
 
 And I can see there precisely two instances of fresh in BSC #38 and neither of them is slang. Well, that wasn’t that helpful. What might be a better approach here is to look at all the slang terms relative to the books they appear in and see what patterns emerge. I click the boxes next to all the words in Terms and they appear one by one at the top of the Trends window and now I can see this visualization:
 
 
-![Trends interface for slang terms](_static/images/dsc6_trends-slang.png)
+![Trends interface for slang terms](_images/dsc6_trends-slang.png)
 
 It’s pretty cramped and cuts off a bit, so I drag the edges of the tool and resize so I can see more of it. 
 
-![Resized trends interface for slang terms](_static/images/dsc6_trends-resized.png)
+![Resized trends interface for slang terms](_images/dsc6_trends-resized.png)
 
 Now that’s more like it! And here I can see some weird things going on, namely that huge spike of “dibb\*” that towers above all the other words. What IS that? Hovering over it with the mouse lets me know that this is BSC #39 *Poor Mallory*. Notably, this is the book that introduces the slang word “dibble” and I can see from this that Martin (this book wasn’t ghostwritten) goes a little wild with it. Isolating just the “dibb\*” words makes it even easier to see where it is. I click on each of the non-”dibb\*” words in the top boxes and one by one their lines disappear from the graph.
 
-![Usage trends for 'dibble' words](_static/images/dsc6_dibble-trends.png)
+![Usage trends for 'dibble' words](_images/dsc6_dibble-trends.png)
 
 Words in the “dibb\*” family crop up in a few other books (#41, #47, #54, and Super Special #5) and then it disappears. Notably, 3 of these 5 books are narrated by Mallory. I wonder: is Mallory also the main source of “dibble”-speak in #41 *Mary Anne vs. Logan* and in Super Special #5 *California Girls*? To find out, let’s check with **Contexts**. I go back to Contexts, click “scale” at the bottom, and tick all 5 dibble-heavy books. Then I enter “dibb\*” in the bottom box and the visualization populates.
 
@@ -192,7 +192,7 @@ Reading through the context for the first four uses of “dibble” in #39, we l
 
 But what about the later books? There are 19 total instances of “dibb\*” in the corpus, and of them, I can see that 12 are from #39. Of the others, going in chronological order by publication date, 3 instances appear in Super Special #5 *California Girls*: 2 of these are narrated by Mary Anne (1 use of the word and 1 definition of it) and last is narrated by Claudia. In #41, the next instance is narrated by Mary Anne (she mentions “dibble” as a slang word used by the BSC members - see the text below, which I include because the 1991 fashion descriptions are ahem *dibbly distant*):
 
-![Fashion description with 'dibble'](_static/images/dsc6_dibble-contexts-41.png)
+![Fashion description with 'dibble'](_images/dsc6_dibble-contexts-41.png)
 
 I also find it really funny that the only time “dibble” appears in #41 is when it is defined. Then it’s dropped like it’s stale. The next instance of “dibble” is in Claudia’s reported speech in #47 *Mallory on Strike*, and a second instance appears in the same sentence as Mallory defines what “dibble” means: ""'Chez Maurice has the most dibble food.' (Dibble is a word we made up that means incredible)."" The final instance is Mallory again reporting on Claudia’s nickname for Stacey (“the Queen of Dibbleness”) in #54 *Mallory and the Dream Horse* - although, suspiciously, the only time we hear this nickname is when Mallory mentions it. Claudia never does. Can we trust Mallory as a narrator?
 
@@ -200,26 +200,26 @@ Looking at the evidence, I’d argue that Mallory tries and fails to make “dib
 
 So dibble didn’t happen, but what about the other slang words? Acute, distant, stale, fresh, chilly? What of them? First I click on **Links** in the upper left tool space. This is a collocates graph, a network graph that shows links between keywords and the words that appear in close proximity to them in the text. Maybe this will help me visualize how the BSC slang words cluster together. I add my words one at a time to the word box in the lower left… and the visualization that pops up hits me over the head with a super obvious thing that I had overlooked. 
 
-![Links showing 'cool' in the center of the network diagram](_static/images/dsc6_links-cool.png)
+![Links showing 'cool' in the center of the network diagram](_images/dsc6_links-cool.png)
 
 Yeah, I am clearly dibbly forgetful. The thing that unites all of these slang words is that they are synonyms or antonyms for “cool” and are usually defined by the word “cool” in context. Cool *also* appears much more frequently in the corpus than all of the other slang words combined. 
 
 When I add “cool” to the **Trends** window, I get this:
-![Frequency visualization with "cool" bigger than all other slang terms](_static/images/dsc6_cool-trends.png)
+![Frequency visualization with "cool" bigger than all other slang terms](_images/dsc6_cool-trends.png)
 
 It's true that "cool" can mean emotionally reserved or a temperature, but a substantial number of instances of "cool" in the series just mean "cool" in the slang sense. It seems to me that in 1990-92, there was a push to try to make BSC-specific slang words happen, and this push failed. They were incorporated a little into the series, but mostly the BSC members just use the word "cool" to mean "cool" - although they profess to use "distant," "acute," "chilly," "dibble," and "fresh" - and they DO use these words occasionally. In the end, the coolest option is just cool.
 
 I head to the Voyant [List of Tools](https://voyant-tools.org/docs/#!/guide/tools) to see what kinds of tools might work for doing something that looks at word clusters and frequencies and see if I can figure out how often these definitional word clusters appear in the corpus and when they fade out... The List of Tools has a few things that sound promising:
 
-![Description of Scatterplot tool](_static/images/dsc6_scatterplot.png)
-![Description of terms radio tool](_static/images/dsc6_terms-radio.png)
-![Description of topics tool](_static/images/dsc6_topics.png)
+![Description of Scatterplot tool](_images/dsc6_scatterplot.png)
+![Description of terms radio tool](_images/dsc6_terms-radio.png)
+![Description of topics tool](_images/dsc6_topics.png)
 
 But this book is already creeping up in length and I am not sure these visualizations will do more than give me the same answer with more nuance. I think I’ll end here. But I hope this has demonstrated that Voyant includes a rich collection of tools and there is really so much more to explore on the site! I didn’t even get to the tools involving BUBBLES! 
 
 Once you’ve imported your corpus or text, used the visualizations to address your research questions, and done your analysis, you might want to export or embed your Voyant Tools session. If you mouse over any tool header, the extra options will appear. The fourth from the right is the export/embed option. If you click it, a window pops up with a lot of different options:
 
-![Voyant export options](_static/images/dsc6_export-option.png)
+![Voyant export options](_images/dsc6_export-option.png)
 
 You can generate a URL that anyone can use to look at and engage with your dataset and the tools you used; export tools and data either as an iframe HTML snippet, a bibliographic reference, or a Spyral notebook; or export just the data (current or all) as HTML, tab separated values, or JSON. These options give you a lot of choice as to what you do with your data and are aimed at preserving and creating a record that can be used in scholarship, journalism, or other fields. You can embed interactive evidence in an article, blog post, journal, or other website to demonstrate your results, include a reference in an article or book as a source, or just send users/readers to Voyant to play with your data themselves. 
 
