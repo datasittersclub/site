@@ -254,7 +254,7 @@
         <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/books/dsc8.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
-                    src="../_images/logo_binder.svg"
+                    src="_images/logo_binder.svg"
                     alt="Interact on binder">Binder</button></a>
         
         
@@ -453,7 +453,7 @@
         
               <div>
                 
-  <p><img alt="DSC logo" src="../_images/DSCLogo.png" /></p>
+  <p><img alt="DSC logo" src="_images/DSCLogo.png" /></p>
 <div class="section" id="dsc-8-text-comparison-algorithm-crazy-quinn">
 <h1>DSC 8: Text-Comparison-Algorithm-Crazy Quinn<a class="headerlink" href="#dsc-8-text-comparison-algorithm-crazy-quinn" title="Permalink to this headline">¶</a></h1>
 <p>by Quinn Dombrowski</p>
@@ -680,7 +680,7 @@
 <div class="section" id="aggregating-results-from-the-fandom-search-code">
 <h3>Aggregating results from the fandom-search code<a class="headerlink" href="#aggregating-results-from-the-fandom-search-code" title="Permalink to this headline">¶</a></h3>
 <p>The CSVs you get out of this aren’t the easiest to make sense of at first. Here’s an example for BSC #60: <em>Mary Anne’s Makeover</em>.</p>
-<p><img alt="Spreadsheet of results from Mary Anne's Makeover" src="../_images/dsc8_spreadsheet_distance_results.png" /></p>
+<p><img alt="Spreadsheet of results from Mary Anne's Makeover" src="_images/dsc8_spreadsheet_distance_results.png" /></p>
 <p>The way I generated the fake “script” format for each book, the name of the book used as the basis of comparison goes in column H (ORIGINAL_SCRIPT_CHARACTER), and the books it’s being compared to show up in FAN_WORK_FILENAME. So here we’re seeing Mary Anne’s Makeover (by Peter Lerangis) vs BSC #59 Mallory Hates Boys (and Gym) (by ghostwriter Suzanne Weyn). Columns B and E are the indices for the words that are being matched– i.e. where those words occur within the text file. Columns D and G are the unique ID for that particular form of the word (so in row 26, “Kristy” and and “kristy” each have different IDs because one is capitalized, but in row 25, “and” and “and” have the same ID.) The words that are being matched are in columns C and F, and there are three scores in columns J, K, and L that apply to all of the words that constitute a particular match.)</p>
 <p>This is definitely pulling out some of the tropes. Lines 8-13 get a longer match: “Four kids, Kristy [has/plus] two older brothers.” Lines 15-20 get “Can you imagine?” – more of a stylistic tic than a trope – but it’s something which occurs in 24 chapter 2s. Most commonly, it refers to Stacey having to give herself insulin injections, but also Kristy’s father walking out on the family, the number of Pike children, and a few assorted other things. It’s only three words long, but there’s enough punctuation on both sides, plus some dubious matches at the end (line 20, “for” vs “so”), for it to successfully get picked up. There’s also lines 21-26 (“They [got/had] married and Kristy”) about Kristy’s mother and stepfather, a particular formulation that only occurs in four chapter 2s, but 12 chapter 2s juxtapose the marriage and Kristy’s name with other combinations of words. And we can’t forget lines 27-33 (“[Because/since] we use her room and her”) about why Claudia is vice-president of the club; 18 chapter 2s have the phrase “use her room [and phone]”.</p>
 </div>
@@ -691,7 +691,7 @@
 </div>
 <div class="section" id="evaluating-closeness">
 <h3>Evaluating closeness<a class="headerlink" href="#evaluating-closeness" title="Permalink to this headline">¶</a></h3>
-<p><img alt="Individual example from the spreadsheet" src="../_images/dsc8_spreadsheet_example.png" /></p>
+<p><img alt="Individual example from the spreadsheet" src="_images/dsc8_spreadsheet_example.png" /></p>
 <p>As I dug further into my spreadsheet, I came across some “matches” that… didn’t really work. Like lines 1656-1661: “I didn’t want to” vs “I didn’t tell you”. Yeah, no. And even 1662-1668: “[need/trying] to line up a sitter”. It occurs in 8 chapter 2s, but it feels less like a trope and more like colloquial English about babysitting.</p>
 <p>This is where the last three columns – J, K, and L – come in. Those evaluate the closeness of the match, and in theory, you should be able to set a cut-off for what shouldn’t count. Column J is “best match distance”. You want this number to be <strong>low</strong>, so from the algorithm’s point of view, “we use her room and her” in rows 28-33 is <strong>almost certainly</strong> a match. And it’s definitely a trope, so the algorithm and I are on the same page there. Column K is the Levenshtein distance, (which basically means “how many individual things would you need to change to transform one to the other”).  And the combined distance tries to… well, combine the two approaches.</p>
 <p>The “match” that I rate as a failure as a human reader, “I didn’t want to / I didn’t tell you”, has a match distance of .08 – so should that be the cutoff? Except one of the tropes, “Four kids, Kristy [has/plus] two older brothers.” has a distance of .09. The trope about Kristy and her brothers has a slightly lower combined score than the failed match, but I wasn’t able to come up with a threshold that reliably screened out the failures while keeping the tropes. So I didn’t – I kept everything. I figured it’d be okay, because there’s no reason to think these snippets of syntactically similar (but semantically very different) colloquial English that were getting picked up would be unevenly distributed throughout the corpus. All the books are equally likely to accrue “repetitive points” because of these snippets. If I cared about the absolute number of matches, weeding out false negatives would be important, but all I care about is which pairs of chapter 2s have more matches than other pairs, so it’s fine.</p>
@@ -776,51 +776,51 @@
 <p>The most common network visualization and analysis software used in DH is Gephi. Gephi and I have never gotten along. It used to vomit at my non-Latin alphabet data (that’s gotten better recently and now it even supports right-to-left scripts like Arabic or Hebrew), I find it finicky and buggy, and I don’t like its default styles. If you like Gephi, I’m not going to start a fight over it, but it’s not a tool I use.</p>
 <p>Instead, Miriam Posner’s Cytoscape tutorials (<a class="reference external" href="http://miriamposner.com/classes/dh201w19/tutorials-guides/network-analysis/create-a-network-graph-with-cytoscape/">Create a network graph with Cytoscape</a> and <a class="reference external" href="http://miriamposner.com/classes/dh201w19/tutorials-guides/network-analysis/cytoscape-working-with-attributes/">Cytoscape: working with attributes</a>) were enough to get me started with <a class="reference external" href="https://cytoscape.org/">Cytoscape</a>, another cross-platform, open-source network visualization software package. The update to 3.8 changed around the interface a bit (notably, analyzing the network is no longer buried like three layers deep in the menu, under Network Analyzer → Network Analysis → Analyze Network – which I’d always joke about when teaching Cytoscape workshops), but it’s still a great and very readable tutorial, and I won’t duplicate it here.</p>
 <p>Import the 6gram_finaldata.csv file as a network and… hello blue blob!
-<img alt="A blue blob resulting from a default visualization of a too-dense network" src="../_images/dsc8_blue_blob.png" /></p>
+<img alt="A blue blob resulting from a default visualization of a too-dense network" src="_images/dsc8_blue_blob.png" /></p>
 <p>Or, as <a class="reference external" href="https://twitter.com/DHPeloton">Your Digital Humanities Peloton Instructor</a> would put it:
-<img alt="A tweet: The beauty of uncertainty is that there's so much possibility. So don't think of your network graph as a hairball, think of it as a possibilities ball." src="../_images/dsc8_dh_peloton.png" /></p>
+<img alt="A tweet: The beauty of uncertainty is that there's so much possibility. So don't think of your network graph as a hairball, think of it as a possibilities ball." src="_images/dsc8_dh_peloton.png" /></p>
 <p>Still, there’s just <strong>too much stuff</strong> there in this particular possibilities ball. <em>Everything</em> is connected to <em>everything else</em> – at least a little bit. We need to prune this tangle down to the connections that are big enough to maybe mean something.</p>
 <p>There’s a <em>Filter</em> vertical tab on the left side of the Cytoscape interface; let’s add a <em>Column filter</em>. Choose “Edges: matches_count” and set the range to be between 60 (remember, this counts tokens, so 60 = 10 matches) and 400. The max value is 4,845, but these super-high numbers aren’t actually interesting because they represent a chapter matched to itself. Then click “apply”.</p>
 <p>If you’re working with a network as big as this one, it will look like nothing happened– this possibilities ball is so dense you can’t tell. But at the bottom of the filter window, it should say that it’s selected some large number of edges:</p>
-<p><img alt="Adding a filter" src="../_images/dsc8_cytoscape_filter.png" /></p>
+<p><img alt="Adding a filter" src="_images/dsc8_cytoscape_filter.png" /></p>
 <p>Now we want to move the things we’ve selected to a new network that’s less crowded.</p>
 <p>Choose the “New network from Selection” button in the top toolbar:</p>
-<p><img alt="New network from selection icon" src="../_images/dsc8_new_network_from_selection.png" /></p>
+<p><img alt="New network from selection icon" src="_images/dsc8_new_network_from_selection.png" /></p>
 <p>And choose “selected nodes, selected edges”.</p>
 <p>If you go to Layout → Apply preferred layout for the new network, you can start to see it as something more than a blob.</p>
-<p><img alt="A more refined blob" src="../_images/dsc8_blob_refined.png" /></p>
-<p><img alt="Zooming in on the more refined blob" src="../_images/dsc8_blob_refined_zoomed.png" /></p>
+<p><img alt="A more refined blob" src="_images/dsc8_blob_refined.png" /></p>
+<p><img alt="Zooming in on the more refined blob" src="_images/dsc8_blob_refined_zoomed.png" /></p>
 <p>Zooming in to the isolated cluster, we see that chapter 2 of book 000 (BSC #0: <em>The Summer Before</em>, which was written last by Ann M. Martin as a prequel) is linked to 004 (BSC #4: <em>Mary Anne Saves the Day</em>) and 064 (BSC #64: <em>Dawn’s Family Feud</em>), which aren’t linked to anything else. Chapter 2s of BSC #15: <em>Little Miss Stoneybrook… and Dawn</em> and BSC #28: <em>Welcome Back, Stacey!</em> form a dyad.</p>
 <p>Chapter 2 of BSC #7: <em>Claudia and Mean Janine</em>, is linked to many other chapter 2s, but is the only connection of BSC #8: <em>Boy-Crazy Stacey</em> and Mystery #28: <em>Abby and the Mystery Baby</em>, and one of two connections for BSC #6: <em>Kristy’s Big Day</em>. What’s up with books 6, 7, and 8 (written in sequence in 1987) being so closely linked to mystery 28, written in 1997? Personally, I find it easy to get pulled too far into the world of network analysis once I’ve imported my data, losing sight of what it means for some nodes to be connected and others not. To meaningfully interpret your network, though, you can’t forget about this. What does it mean that chapter 2 of BSC #7: <em>Claudia and Mean Janine</em> is connected to many other chapter 2s? It means that the same text repetitions (at least some of which are probably tropes) appear in all those books. With <em>Boy-Crazy Stacey</em> and <em>Abby and the Mystery Baby</em>, respectively, it shares tropes that are different tropes than those shared with other books – otherwise <em>Boy-Crazy Stacey</em> and <em>Abby and the Mystery Baby</em> would be connected to those other books, too. This is a moment where it’s really helpful to recall previous decisions you made in the workflow. Remember how we didn’t set a cut-off value in Scott’s text comparison output, in order to not lose tropes, with the consequence of some colloquial English phrases being included? If you wanted to make any sort of claim about the significance of <em>Claudia and Mean Janine</em> being the only connection for <em>Boy-Crazy Stacey</em>, this is the moment where you’d need to open up the spreadsheets for those books and look at what those matches are. Maybe BSC #6, #8, and Mystery #28 are ones where chapter 3 has all the intro prose, but they happened to have 10 “colloquial English” matches with BSC #7. That’s not where I want to take this right now, though – but don’t worry, I’m sure the Data-Sitters will get to network analysis and its perils and promises one of these days.</p>
 <p>(By the way, if you’re getting the impression from this book that DH research is kind of like one of those <em>Choose Your Own Adventure</em> books with lots of branching paths and things you can decide to pursue or not – and sometimes you end up falling off a cliff or getting eaten by a dinosaur and you have to backtrack and make a different choice… you would not be wrong.)</p>
 <p>Instead, I want to prune this down to clusters of very high repetition. Let’s adjust our filter so the minimum is 150 (meaning 25 unique 6-gram matches), create a new network with those, and apply the preferred layout.</p>
 <p>Instead, I want to prune this down to clusters of <strong>very high repetition</strong>. Let’s adjust our filter so the minimum is 150 (meaning 25 unique 6-gram matches), create a new network with those, and apply the preferred layout.</p>
-<p><img alt="Clearer network of high repetition" src="../_images/dsc8_better_network.png" /></p>
+<p><img alt="Clearer network of high repetition" src="_images/dsc8_better_network.png" /></p>
 <p>This is getting a little more legible! But everything is still linked together in the same network except for BSC #17: <em>Mary Anne’s Bad Luck Mystery</em> and BSC #21: <em>Mallory and the Trouble with Twins</em> off in the corner.</p>
 <p>Let’s add in some attributes to see if that helps us understand what’s going on here. There are two theories we can check out easily with attributes: one is that the narrator might matter (“Does a particular character talk about herself and her friends in particular ways that lead to more repetitions?”), and the other is that the author might matter (“Is a particular author/ghostwriter more likely to reuse phrases they’ve used before?”)</p>
 <p>The DSC Metadata Spreadsheet has columns for the character who narrates each book, “narrator”, for the ghostwriter, “bookauthor”, along with a column with just the book number, “booknumber” that we can use to link this additional data to our original network sheet. In OpenRefine (see <a class="reference external" href="https://datasittersclub.github.io/site/dscm3/">Lee and Quinn Clean Up Ghost Cat Hairballs</a> for more about OpenRefine), I opened the metadata spreadsheet, went to Export → Custom tabular exporter, selected only those three column, specified it should be saved as a CSV, and hit the “Download” button.</p>
 <p>Back in Cytoscape, I hit the “Import table from file” button in the top toolbar:</p>
-<p><img alt="Cytoscape icon for importing a table from a file" src="../_images/dsc8_import_table_from_file.png" /></p>
+<p><img alt="Cytoscape icon for importing a table from a file" src="_images/dsc8_import_table_from_file.png" /></p>
 <p>And selected the CSV file I’d just exported from OpenRefine. I set the “booknumber” column to be the key for linking the new data with the existing nodes.</p>
 <p>Now that we have this additional information, we can go to the <em>Style</em> tab, choose “Node” at the bottom of that window, and toggle open “Fill color”. For the “Column” value, choose “Narrator”, and for “mapping type” choose “Discrete mapping”. Now for the fun part: assigning colors to baby-sitters! (Alas, the Baby-Sitters Club fandom wiki doesn’t list the characters’ favorite colors.)</p>
-<p><img alt="Mapping each book in the network to a color based on the narrator of the book" src="../_images/dsc8_character_color_mapping.png" /></p>
+<p><img alt="Mapping each book in the network to a color based on the narrator of the book" src="_images/dsc8_character_color_mapping.png" /></p>
 <p>The default blue gets applied to nodes that don’t have a value in the “narrator” column (e.g. super-specials).</p>
 <p>And here’s what we get:</p>
-<p><img alt="Network colored by narrator" src="../_images/dsc8_narrator_network.png" /></p>
+<p><img alt="Network colored by narrator" src="_images/dsc8_narrator_network.png" /></p>
 <p>Colored by narrator, this network diagram looks kind of like a fruit salad – a well-mixed fruit salad, not one where you dump a bunch of grapes in at the end or something. It doesn’t look like we’re going to get much insight here.</p>
 <p>But what if we replace “narrator” with “bookauthor” and re-assign all the colors?</p>
-<p><img alt="Network colored by author" src="../_images/dsc8_author_network.png" /></p>
+<p><img alt="Network colored by author" src="_images/dsc8_author_network.png" /></p>
 <p>Now we’re on to something! There’s <strong>definitely</strong> some clustering by ghostwriter here.</p>
 <p>What if we turn up the threshold to 200 repeated tokens?</p>
 <p>Some of the authors disappear altogether, and the clusters break off:</p>
-<p><img alt="Author-colored network with 200 repeating tokens" src="../_images/dsc8_author_network_200.png" /></p>
+<p><img alt="Author-colored network with 200 repeating tokens" src="_images/dsc8_author_network_200.png" /></p>
 <p>What if we keep going? Turning the threshold up to 250 gets us this:</p>
-<p><img alt="Author-colored network with 250 repeating tokens" src="../_images/dsc8_author_network_250.png" /></p>
+<p><img alt="Author-colored network with 250 repeating tokens" src="_images/dsc8_author_network_250.png" /></p>
 <p>And once you hit 300, you’re left with:</p>
-<p><img alt="Author-colored network with 300 repeating tokens" src="../_images/dsc8_author_network_300.png" /></p>
+<p><img alt="Author-colored network with 300 repeating tokens" src="_images/dsc8_author_network_300.png" /></p>
 <p>It looks like 200 was our sweet spot. Let’s do one more thing to enhance that network to surface some of the even more intense overlaps.</p>
 <p>Back in the “Style” panel for the network of books that share 200 or more matched tokens, toggle open “Stroke color” and choose “matches_count” as the column. This time, choose “continuous” for the mapping type. It will automatically show a gradient where bright yellow indicates 200 matched tokens, and dark purple indicates 330 (the maximum). Now we can see most of the connections skew towards the lower end of this range (though Suzanne Weyn, in turquoise, leans more heavy on text reuse).</p>
-<p><img alt="Author-colored network with color-coded edges" src="../_images/dsc8_color_coding_author_edges.png" /></p>
+<p><img alt="Author-colored network with color-coded edges" src="_images/dsc8_color_coding_author_edges.png" /></p>
 <p>So I started wondering if I had stumbled over the beginning to a new Multilingual Mystery: what does this look like in French? If you look at chapter 2 in translation, are they <strong>less repetitive</strong>? If I ran the same code on the translations that co-exist in a text-repetition cluster, would there be a similar amount of repetition? Or might the translator be a mitigating factor – where there might be a sub-cluster of the translator directly copying text they’d previously translated from another novel in the cluster?</p>
 </div>
 <div class="section" id="a-different-direction">
@@ -1269,7 +1269,7 @@
 </div>
 </div>
 </div>
-<p><img alt="Euclidean distance with count vectorizer" src="../_images/dsc8_euclidean_count_maxdf7.png" /></p>
+<p><img alt="Euclidean distance with count vectorizer" src="_images/dsc8_euclidean_count_maxdf7.png" /></p>
 <p>The output of the heatmap visualization I used to get a sense of the results is a little dazzling. It looks more like one of Mary Anne’s plaid dresses than something you could make sense out of. Each book (in numerical order) is along the vertical and horizontal axes, so you have a black line running diagonally showing that every book is identical to itself.</p>
 <p>If you zoom in enough to read the labels (you can save the images from this Jupyter notebook by ctrl+clicking on them, or you can find them in the GitHub repo), you can start to pick out patterns. <em>California Diaries: Dawn 1</em> is one of the bright light-colored lines, meaning it’s very different from the other books. That’s not too surprising, though it’s more surprising that it also looks different from the other <em>California Diaries</em> books. <em>Abby’s Book</em> from the Portrait Collection (that character’s “autobiography”) is very different from the other Portrait Collection books. There are also a few clusters of noticeably different books scattered throughout the corpus: Mystery #32: <em>Claudia and the Mystery in the Painting</em> and Mystery #34: <em>Mary Anne and the Haunted Bookstore</em> were about as distinct as California Diaries #1. BSC #103: <em>Happy Holidays, Jessi</em>, BSC #73: <em>Mary Anne and Miss Priss</em>, and BSC #62: <em>Kristy and the Worst Kid Ever</em> also jump out as visibly distinct. There’s also a band of higher general similarity ranging from books #83-101.</p>
 <p>It was one of those classic DH moments where I now had a bunch of data, and no idea where to start on interpreting it. 🤯</p>
@@ -4113,7 +4113,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 </div>
 <p>I put the output files into Tableau (Gantt visualization, configuring length as a dimension under “rows”) after running the code on the full text of all the series, and the chapter length of the main and mystery series (remember, each of those books has 15 chapters).</p>
 <p>The books range from around 12,600 words (California Diaries: <em>Amalia 3</em>, which is shorter than this DSC book!), to nearly 45,000 words (Super Mystery #1: <em>Baby-Sitters’ Haunted House</em>). On the chapter level, there’s not a ton of variation in word length between chapters, though chapter 15 tends to be a bit shorter, and chapter 2 tends to be longer – there’s a lot of tropes to pack in!</p>
-<p><img alt="Gantt chart of book and chapter lengths" src="../_images/dsc8_length_measurements.png" /></p>
+<p><img alt="Gantt chart of book and chapter lengths" src="_images/dsc8_length_measurements.png" /></p>
 <p>But if we’re using Euclidean distance to compare even chapter 2s, BSC #75: <em>Jessi’s Horrible Prank</em> is 1,266 words and BSC #99: <em>Stacey’s Broken Heart</em> is 4,293 words. That alone is going to lead to a big difference in the word-count values.</p>
 <p>When I first started playing with these text-comparison metrics (before taking the care to properly clean the data and ensure there weren’t problems with my chapter-separating code), I first tried Euclidean distance, and was fascinated by the apparent similarity of chapter 2 in the first Baby-Sitters Club book and a chapter in a California Diaries book. “What,” I wondered, “does wholesome <em>Kristy’s Great Idea</em> have to do with salacious <em>California Diaries?</em>”</p>
 <p>I laughed out loud when I opened the text files containing the text of those chapters, and immediately saw the answer: what they had in common was data cleaning problems that led to their truncation after a sentence or two. As a Choose Your Own Adventure book might put it, <em>“You realize that your ‘findings’ are nothing more than your own mistakes in preparing your data set. You sigh wearily. The end.”</em> Hopefully you, like childhood me, left a bookmark that last decision point you were unsure of, and you can go back and make a different choice. But even if you have to start over from the beginning, you can almost try again when doing DH.</p>
@@ -4467,7 +4467,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 </div>
 </div>
 </div>
-<p><img alt="Cosine distance with count vectorizer" src="../_images/dsc8_cosine_count_maxdf7.png" /></p>
+<p><img alt="Cosine distance with count vectorizer" src="_images/dsc8_cosine_count_maxdf7.png" /></p>
 <p>A sort of light salmon in the Euclidean distance visualization represented a value of 500, and the same color represents .8 in the cosine distance visualization. To my mind, the overall impression is less of Mary Anne’s classic plaid, and more like a dirty Kristy’s Krushers baseball jersey with flecks and blobs of spaghetti sauce here and there. (I’ll note that there’s some disagreement here within the DSC; Katia’s reaction was “Plaid in salmon and pink? Sickening, but still something Mary Anne’s dad would make her wear.”)</p>
 <p>It’s not pretty, but it’s clarifying.</p>
 <p>First, those super-light bands that are quite similar to one another (where they intersect in a box around the black diagonal line), but quite dissimilar from everything else? That’s the California Diaries series. And California Diaries: <em>Dawn 1</em> is still a little lighter than all the rest of that sub-series, but not so much so. This visualization makes it easier to see that the California Diaries are much more similar to regular-series books set in California, like BSC #23: <em>Dawn on the Coast</em> and BSC #72: <em>Dawn and the We ♥️ Kids Club</em>. It’s not a groundbreaking discovery, but it immediately makes sense! And honestly, “boring” DH results are often a sign that you’ve done something right.</p>
@@ -4840,11 +4840,11 @@ m02c_beware_dawn_13.txt, 2023, 13
 </div>
 </div>
 </div>
-<p><img alt="Cosine distance for chapter 2 with count vectorizer" src="../_images/dsc8_ch2_cosine_count_maxdf7.png" /></p>
+<p><img alt="Cosine distance for chapter 2 with count vectorizer" src="_images/dsc8_ch2_cosine_count_maxdf7.png" /></p>
 <p>I did a double-take when I saw it, and went back to check the code and make sure I hadn’t accidentally run Euclidean distance again. The chapter 2s are <em>a lot</em> closer than the books overall. Which makes sense – the reason we’re looking at chapter 2 is because we know it’s repetitive. This is a smaller data set than what we used for the full book comparison, including only chapter 2s from the main and mystery series (which follow the 15-chapter structure). Even the chapter 2s show the pattern of similarity for books #83-101 and temporally-similar mysteries, and there’s another cluster from books #30-48. The light-colored lines reflect another known phenomenon about chapter 2, where sometimes the typical “chapter 2” content actually appears in chapter 3.</p>
 <p>To drive home the point that there’s something different going on here with chapter 2, I re-ran cosine distance on four other chapters: 1, 5 (top row), 9, and 15.</p>
 <p>(I’m not going to repeat the code for calculating these here; it’s the same as the chapter 2 code above, with different source folders.)</p>
-<p><img alt="Cosine distance for chapters 1, 5, 9, and 15" src="../_images/dsc8_ch_1_5_9_15.png" /></p>
+<p><img alt="Cosine distance for chapters 1, 5, 9, and 15" src="_images/dsc8_ch_1_5_9_15.png" /></p>
 <p>There are some interesting things that we could dig into here! It looks like there’s more overlap in how the books end (ch. 15, bottom right) than how the middle of the book goes, though there are lots of individual speckles of high similarity for the middle chapters. Chapter 1 starts similarly in the early books, but is pretty dispersed by the end. The cluster in books #83-101 isn’t really visible in these chapters. But the crucial thing we’re seeing is just that chapter 2s are <strong>much more similar</strong> to one another than other chapters.</p>
 </div>
 <div class="section" id="word-counts-or-word-frequencies">
@@ -5235,7 +5235,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 </div>
 </div>
 </div>
-<p><img alt="Euclidean distance using term frequency" src="../_images/dsc8_euclidean_freqs.png" /></p>
+<p><img alt="Euclidean distance using term frequency" src="_images/dsc8_euclidean_freqs.png" /></p>
 <p>Oh.</p>
 <p>Once you normalize for length, all the Baby-Sitters Club books look… mostly the same. Even with Euclidean distance. So what am I even going to get for Cosine distance using term frequencies?</p>
 </div>
@@ -5582,7 +5582,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 </div>
 </div>
 </div>
-<p><img alt="Cosine distance using term frequency" src="../_images/dsc8_cosine_freqs.png" /></p>
+<p><img alt="Cosine distance using term frequency" src="_images/dsc8_cosine_freqs.png" /></p>
 <p>We’ve gone from Mary Anne Plaid to a sort of Claudia Eggplant. Could that be right? Is most of the difference really attributable to length? Even the clear-as-day California Diaries cluster has mostly washed out, except for those shining lights of difference: Ducky, and to a lesser extent, Amalia. (I guess after normalizing for length, what really makes a difference in this corpus is East Coast people vs. West Coast people… and Dawn has assimilated to Connecticut more than she realizes.)</p>
 <p>This is something that we can check pretty easily! We already wrote up some code to do word counts for all the books. Are the books that stood out before, and have now disappeared into the purple morass, particularly long or short? That does turn out to be the answer with the California Diaries cluster: all of them are shorter than your average BSC book. And it’s also the answer with Abby’s Portrait Collection looking different than the other Portrait Collection books, coming in at only 78% of the length of Stacey’s Portrait Collection book.</p>
 <div class="alert alert-block alert-info">
@@ -5957,7 +5957,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 </div>
 </div>
 </div>
-<p><img alt="Cosine distance for chapter 2 using term frequency" src="../_images/dsc8_ch2_cosine_freqs.png" /></p>
+<p><img alt="Cosine distance for chapter 2 using term frequency" src="_images/dsc8_ch2_cosine_freqs.png" /></p>
 <p>Now <strong>wait a minute!!</strong> Why on earth do the full books look so much more similar than the chapter 2’s?! We <strong>know</strong> the chapter 2’s are more similar than the full books! <em>WTF is going wrong?!</em></p>
 <p>I was so irked at the direction this had gone that I entirely forgot about the typical mutual inquiry about well-being and all those social conventions at my next meeting with Mark. The first words out of my mouth, flying forth as soon as his audio connected on Zoom, were, “I tried to normalize the word counts and now the novels are more similar than the chapter 2’s <strong>WHAT IS EVEN GOING ON HERE?!?!</strong>”</p>
 <p>And then I remembered–  as Kristy’s teacher, Mr. Redmont, would put it– “<em>decorum</em>”, and managed to collect myself. “Also, hello! How are you?”</p>
@@ -5968,11 +5968,11 @@ m02c_beware_dawn_13.txt, 2023, 13
 <p>“Wait, what? If you randomly grab, say, 2,500 words from a novel, you’d be comparing chapter 2 vs. a text that doesn’t make any sense!”</p>
 <p>Mark shrugged. “I mean, you could generate a text of chapter 2 length using a Markov chain if that would make you feel better,” he said, referencing a text-generation model where the probability of each word occurring depends only on the previous word generated. It’d probably have basically the same effect overall, but would be likely to make more sense to the human reader.</p>
 <p>But that seemed like a task for a future BSC book. For now, though, a better point of comparison would be comparing how similar the chapter 2’s were, vs. other chapters, just like what we’d done earlier for cosine distance using word counts:</p>
-<p><img alt="Cosine distance using word frequency for chapters 1, 5, 9, and 15" src="../_images/dsc8_ch_1_5_9_15_freqs.png" /></p>
+<p><img alt="Cosine distance using word frequency for chapters 1, 5, 9, and 15" src="_images/dsc8_ch_1_5_9_15_freqs.png" /></p>
 <p>And clearly, even though the chapters are less similar than the books overall using this metric, the chapter 2’s are much more similar than other sets of chapters. So we’ve found the same overall result, but we’ve also saved ourselves from chasing false leads – like the “difference” in Abby’s Portrait Collection book that only really have to do with text length. Not everything is as purple as everything else in this visualization, and there are still things we can follow up on. But we’ve leveled out the differences that are just about difference in length.</p>
 <p>I think we’ve said all we can say about Euclidean and Cosine distance for this book, and how the results you get vary depending on how you count (or ratio) your words. It’s time to move on to a different method.</p>
 <div class="alert alert-block alert-warning">
-<b>Slow down, Quinn:</b> Before moving on to the next text comparison method, it's important to wrap up some loose ends. We wanted to differentiate the effect of the TF-IDF vectorizer from the effect of no longer using the `max_df` setting to drop terms that appear in 70% of texts. So let's compare three visualizations, all showing Euclidean distance, but with different vectorizer settings: from left to right, the <b>count vectorizer</b> that we used when we first ran Euclidaen distance, which drops the terms that appear in 70% in the text. In the middle, the <b>TF-IDF vectorizer</b> that should get us <em>term frequencies</em> instead of counts, and thereby normalize for length. And then finally, the <b>TF-IDF vectorizer</b> without dropping any terms.<img src="../_images/dsc8_euclidean_comparison.png" />
+<b>Slow down, Quinn:</b> Before moving on to the next text comparison method, it's important to wrap up some loose ends. We wanted to differentiate the effect of the TF-IDF vectorizer from the effect of no longer using the `max_df` setting to drop terms that appear in 70% of texts. So let's compare three visualizations, all showing Euclidean distance, but with different vectorizer settings: from left to right, the <b>count vectorizer</b> that we used when we first ran Euclidaen distance, which drops the terms that appear in 70% in the text. In the middle, the <b>TF-IDF vectorizer</b> that should get us <em>term frequencies</em> instead of counts, and thereby normalize for length. And then finally, the <b>TF-IDF vectorizer</b> without dropping any terms.<img src="_images/dsc8_euclidean_comparison.png" />
 </div><div class="alert alert-block alert-danger">
 <b>Now wait just a minute here.</b>
 <p>Why do the count vectorizer and TF-IDF vectorizer results look identical? <em>Are</em> they actually identical? Shouldn't dropping common words make it even <em>more important</em> to use word frequencies?</p>
@@ -6369,7 +6369,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 </div>
 </div>
 <div class="alert alert-block alert-success">
-<img src="../_images/dsc8_euclidean_real_freqs.png" />
+<img src="_images/dsc8_euclidean_real_freqs.png" />
 <p><b>Interesting!</b> Similar to what I had before, without the word frequency normalization, but a little lighter in color, meaning less similar. Which sounds better to me, knowing the corpus? Let’s see how cosine distance plays out.</p>
 <p><b>Cosine distance with word frequencies</b></p>
 </div><div class="cell docutils container">
@@ -6713,7 +6713,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 </div>
 </div>
 <div class="alert alert-block alert-success">
-<img src="../_images/dsc8_cosine_real_freqs.png" />
+<img src="_images/dsc8_cosine_real_freqs.png" />
 <p><b>Very similar!</b> Honestly, there's less difference between cosine distance with word counts and cosine distance with word frequencies... which makes sense, because the cosine distance measure already helps account for different text lengths, at least up to a certain point. Let's try cosine distance on the chapter 2's.</p>
 <p><b>Cosine distance with chapter 2’s</b></p>
 </div><div class="cell docutils container">
@@ -7083,7 +7083,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 </div>
 </div>
 </div>
-<img src="../_images/dsc8_ch2_cosine_real_freqs.png" />
+<img src="_images/dsc8_ch2_cosine_real_freqs.png" />
 <p><b>It's largely the same as cosine distance using just word counts!</b> With the same questions and disappointments with regard to the similarity of the chapter 2's, compared to the full books, when using cosine distance. We probably don't need to rerun this for chapters 1, 5, 9, and 15; you get the point.</p>
 <p>But now we've found it using code that legitimately works, without any confusions or misunderstandings about what's happening (at least, I hope?). That's satisfying. A satisfying kind of dissatisfying.</p>
 <p><b>Now</b> we can move on to another method.</p>
@@ -7494,7 +7494,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 </div>
 </div>
 </div>
-<p><img alt="Euclidean distance using TF-IDF" src="../_images/dsc8_tfidf_euclidean.png" /></p>
+<p><img alt="Euclidean distance using TF-IDF" src="_images/dsc8_tfidf_euclidean.png" /></p>
 <p>Okay. Now let’s try cosine distance with the TF-IDF vectorizer!</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -7836,7 +7836,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 </div>
 </div>
 </div>
-<p><img alt="Cosine distance using TF-IDF" src="../_images/dsc8_tfidf_cosine.png" /></p>
+<p><img alt="Cosine distance using TF-IDF" src="_images/dsc8_tfidf_cosine.png" /></p>
 <p>There’s less difference between the Euclidean and cosine distance when using a TF-IDF vectorizer (that actually uses the “-IDF” in “TF-IDF”) than the word count vectorizer. So what happens when we try to run cosine distance using TF-IDF on chapter 2’s?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -8204,7 +8204,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 </div>
 </div>
 </div>
-<p><img alt="Cosine distance for chapter 2 using TF-IDF" src="../_images/dsc8_ch2_tfidf_cosine.png" /></p>
+<p><img alt="Cosine distance for chapter 2 using TF-IDF" src="_images/dsc8_ch2_tfidf_cosine.png" /></p>
 <p>Differences in chapter length do still matter (longer chapters probably have more distinct words, each of which will have a value that will go into the calculation of the overall score for that chapter). That said, length matters lot less than with the word count vectorizer… and a lot more than when you’re using word <em>frequencies</em>. What this gets us, mostly, is a fairly clear picture of when chapter 2s morph into the Home of the Tropes, and a very clear picture of when those tropes occur in chapter 3 rather than chapter 2 (the super-light lines in the otherwise-dark visualization).</p>
 </div>
 </div>

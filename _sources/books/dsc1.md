@@ -7,14 +7,14 @@ blurb: 'A colloquial, collaborative guide to computational text analysis for dig
 bookseries: regular
 permalink: /dsc1/
 ---
-<img src="../_images/DSCLogo.png" />
+<img src="_images/DSCLogo.png" />
 
 ## DSC #1 - Quinn's Great idea
 
 by Quinn Dombrowski, November 7, 2019
 
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
-<img src="../_images/bookcovers/dsc1_cover.jpg" alt="DSC 1 book cover" />
+<img src="_images/bookcovers/dsc1_cover.jpg" alt="DSC 1 book cover" />
 </div>
 
 It doesn’t really matter that it was my idea. I don’t really care about credit— I’ve got what's half-jokingly been called "the world’s best dead-end job," and credit doesn’t buy me anything. What matters to me is that good things happen, and this project is a very good thing.
@@ -30,7 +30,7 @@ I'm short (about the size of a 10-year-old), with short brown hair, glasses, and
 At least in English, I identify as non-binary, but I have no preference whatsoever about pronouns. Grow up in the 1990s with a name like Quinn, and you get used to lots of different pronouns. I do care about nouns (person not woman, parent not mother), but explaining all that is an awful lot to stick in an email signature or on a conference name tag. My kids call me “PG,” short for “progenitor/progenitrix.” I sew all my own clothes — everything (and I do mean everything), except socks. Dressing in bright colors and interesting prints (Eyeballs! Dinosaur-Unicorns! People being tormented by demons in illustrations from Russian folk tales!) is more important to me than androgyny, so when I’m at work, I only wear dresses with enormous pockets. Even in formal contexts like Stanford’s literature departments, you can wear absolutely anything if it’s in the shape of a dress. At home in Berkeley, it’s all pants and sweatshirts — always in colorful prints (Sailor Moon! Fraggle Rock! Octopi!).
 
 <div style="float: left; width: 175px;margin-right: 7px;margin-top: 0px;">
-<img src="../_images/babyquinn.jpg" alt="Picture of a young Quinn, reading a Baby-Sitters Club book" />
+<img src="_images/babyquinn.jpg" alt="Picture of a young Quinn, reading a Baby-Sitters Club book" />
 <p><em>(Here I am, reading a Baby-Sitters Club book in my backyard, c. 1992!)</em></p>
 </div>
 
@@ -80,7 +80,7 @@ As we went around, thinking aloud about the directions we could explore together
 The Data-Sitters Club was going to be a success, and I helped make it work. I hoped Roopsi, Katia, Maria, Anouk, and I -- the Data-Sitters Club -- would stay together for a long time.
 
 <div style="text-align:center">
-<img src="../_images/bscmeeting.png" alt="Photo of the first Data-Sitters Club Zoom meeting with Quinn Dombrowski, Katia Bowers, Maria Cecire, Anouk Lang, and Roopika Risam" />
+<img src="_images/bscmeeting.png" alt="Photo of the first Data-Sitters Club Zoom meeting with Quinn Dombrowski, Katia Bowers, Maria Cecire, Anouk Lang, and Roopika Risam" />
 </div>
 
 ### Suggested citation

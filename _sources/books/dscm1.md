@@ -9,14 +9,14 @@ bookseries: mystery
 permalink: /dscm1/
 ---
 
-<img src="../_images/DSCLogo.png" />
+<img src="_images/DSCLogo.png" />
 
 # DSC Multilingual Mystery #1: Lee and the Missing metadata
 
 by Lee Skallerup Bessette and Quinn Dombrowski, January 24, 2020
 
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
-<img src="../_images/bookcovers/dscm1_cover.jpg" alt="DSC M1 book cover" />
+<img src="_images/bookcovers/dscm1_cover.jpg" alt="DSC M1 book cover" />
 </div>
 
 ### Quinn
