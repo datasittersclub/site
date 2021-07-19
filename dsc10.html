@@ -422,11 +422,6 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#prettier-biplots">
-     Prettier biplots
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#interpretation-help-from-tf-idf">
      Interpretation Help from TF-IDF
     </a>
@@ -1268,6 +1263,7 @@ corpusTypicalityBiplotZscore &lt;- function(corpus.dir, meta.data.file, output.d
   dtm.scale &lt;- text.dtm/rowSums(text.dtm)
   #Reshapes the document/term matrix to just columns with frequencies for the top words
   dtm.mfw &lt;- dtm.scale[,which(colnames(dtm.scale) %in% top.terms)]
+  rownames(meta.data.file)&lt;-data[,1]
   row.names &lt;- meta.data.file[Title]
   #Computes PCA coordinates using the words in the range you specified for analysis
   #LITERALLY JUST ADD &#39;scale=T&#39; TO THIS LINE TO SCALE IT USING Z-SCORES
@@ -1404,99 +1400,6 @@ means.text&lt;-corpusTypicalityBiplotZscore(&#39;dsc_nouns&#39;, dsc.meta, &quot
 </div>
 <p>This time the biplot looked like some kind of funky hair accessory that Claudia might wear.
 <img alt="Scaled biplot of the PCA of the Baby-Sitters Club book using top 1k nouns" src="_images/dsc10_biplot_scaled.png" /></p>
-<p>But it was hard to interpret because the dots were somewhat arbitrary numbers for texts, rather than the filenames I could interpret. I asked Mark if we could label the dots somehow – given what he’d done to rescale it so fast, I was expecting we could just say, like <em>labels = T</em> or something.</p>
-<p>Little did I realize what I’d done.</p>
-<img alt="One does not simply label the text points in the default R biplot viz" src="_images/dsc10_onedoesnotsimply.jpg" />
-</div>
-<div class="section" id="prettier-biplots">
-<h3>Prettier biplots<a class="headerlink" href="#prettier-biplots" title="Permalink to this headline">¶</a></h3>
-<p>Biplots are all well and good, but wouldn’t they be better with a couple of extra G’s? And I’m not talking multi-thousand-dollar grant funds. I’m talking ggplot.</p>
-<p>Wikipedia tells me that the “GG” stands for “Grammar of Graphics”, but basically it’s the go-to R package for souped-up viz. You can install it from RStudio like any other package (over in the <em>Packages</em> right sidebar tab, like we covered earlier in this book). It does all kinds of things. What it does not do is biplots. For <em>that</em>, you get the pleasure of installing another R package, <em>Devtools</em>, because the ggbiplot package</p>
-<p>install devtools
-instasll ggplot2</p>
-<p>Be sure to load package ggbiplot
-library(devtools)
-install_github(‘vqv/ggbiplot’, force=TRUE)
-agree to whatever it says</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">R</span>
-#Sets up what the function expects as its inputs &amp; outputs
-corpusTypicalityGGBiplot &lt;-function(corpus.dir, meta.data.file, output.dir, top.words = evaluated.words, corpus.name){
-  #Loads the text mining package
-  library(tm)
-  #Sets up a path for each file, with the corpus directory + filename
-  all.files&lt;-paste(corpus.dir, meta.data.file$Filename, sep=&quot;/&quot;)
-  #Extracts text from the text files
-  all.texts&lt;-lapply(all.files, function(x) scan(x, what=&quot;character&quot;, sep=&quot;/&quot;, quiet=T))
-  #Removes tabs
-  all.texts&lt;-lapply(all.texts, function(x) paste(x, collapse=&quot; &quot;))
-  #Applies Mark&#39;s special cleaning function
-  all.texts&lt;-lapply(all.texts, function(x) cleanChunk(x))
-  #???
-  all.texts&lt;-lapply(all.texts, function(x) paste(x, collapse=&quot; &quot;))
-  #???
-  all.texts&lt;-unlist(all.texts)
-  #Defines text.corpus as a vectorization of all the texts
-  text.corpus&lt;-Corpus(VectorSource(all.texts))
-  #Creates a document-term matrix from the vectorization
-  text.dtm&lt;-DocumentTermMatrix(text.corpus)
-  #Sets the document-term matrix as a matrix
-  text.dtm&lt;-as.matrix(text.dtm)
-  #Defines word frequency by sorting the words in order of occurrence
-  word.freqs&lt;-sort(colSums(text.dtm), decreasing=T)
-  #Defines top terms as being the # of terms that you specify when you run the code
-  #The &quot;starts.with&quot;, which you also specify when you run the code, lets you exclude the most-frequent terms
-  #This might be useful if you&#39;re using all words (e.g. not just nouns) and want to
-  #exclude the highest-frequency words that are mostly indicative of author signal (e.g. &#39;the&#39;, &#39;a&#39;, &#39;and&#39;)
-  top.terms&lt;-names(word.freqs[starts.with:top.words])
-  #Writes a CSV with the top terms that it&#39;s using for its analysis
-  write.csv(x = top.terms, file = paste(c(output.dir, &#39;/&#39;, &#39;top_terms_&#39;, corpus.name,&#39;.csv&#39;), collapse = &#39;&#39;))
-  #????
-  dtm.scale&lt;-text.dtm/rowSums(text.dtm)
-  #???
-  dtm.mfw&lt;-dtm.scale[,which(colnames(dtm.scale) %in% top.terms)]
-  #Computes PCA coordinates using the words in the range you specified for analysis
-  pca.coords&lt;-prcomp(dtm.mfw)
-  #Creates a PDF output for the biplot
-  library(ggbiplot)
-  pdf(&#39;bsc_topnouns_ggbiplot.pdf&#39;, height=50, width=50)
-  bsctopnouns.ggplot&lt;-ggbiplot(pca.coords, labels=list.files(&#39;dsc_nouns&#39;, pattern=&#39;.txt&#39;))
-  print(bsctopnouns.ggplot)
-  dev.off()
-  print(bsctopnouns.ggplot)
-  bsc.names&lt;-list.files(corpus.dir, pattern=&#39;.txt&#39;)
-  bsc.names&lt;-lapply(bsc.names, function(x) unlist(strsplit(x, &#39;.txt&#39;)))
-}
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">R</span>
-#How many top words should it use?
-evaluated.words=1000
-#How many of the very most frequent words should it skip? To skip 0, starts.with = 1.
-#To skip 50, starts.with = 51
-starts.with=1
-#Put the path to the folder containing the folder with your texts here
-setwd(&#39;~/Documents&#39;)
-#Put the name of the folder with your texts here
-Filename&lt;-list.files(&#39;dsc_nouns&#39;)
-#If you want to strip anything off the text filename for the title besides .txt you can change this
-Title&lt;-unlist(strsplit(Filename, &quot;.txt&quot;))
-#Creates the metadata table
-dsc.meta&lt;-data.frame(Filename, Title, stringsAsFactors = FALSE)
-#Runs the Typicality code
-means.text&lt;-corpusTypicalityGGBiplot(&#39;dsc_nouns&#39;, dsc.meta, &quot;.&quot;, corpus.name=&quot;dsc_nouns&quot;)
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<img alt="_images/dsc10_41_0.png" src="_images/dsc10_41_0.png" />
-</div>
-</div>
 <img src='_static/images/dsc10_scaled_biplot.jpg' alt='Scaled biplot of the PCA of the Baby-Sitters Club book using top 1k nouns with mysteries circled' />
 This time the biplot looked like some kind of funky hair accessory that Claudia might wear. The California Diaries and Friends Forever series were still in the upper right quadrant, but something happened to the Mysteries. Instead of being fairly evenly distributed throughout the chart, most of them were pushed all the way to the bottom, thanks to the scaled effect of words like “mystery”, “clues”, “somebody”, “everybody”, “anybody”, “fact”, and “example”.
 <p>“Well, look at that,” Mark remarked. “The mystery words weren’t frequent enough to have much of an impact in the first version, but when we scale it by the z-score, the mysteries cluster together.” That also made sense, and it was a great sanity check for us about what was going on. This version had a big impact on the mysteries, but the other high-level stuff mostly stayed the same. That said, scaling the nouns by z-score had a major impact on our most “average” texts; the only one left near the center was <em>BSC #103: Happy Holidays Jessi</em>, a space it shared with <em>BSC #84: Dawn and the School Spirit War</em>.</p>
