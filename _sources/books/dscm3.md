@@ -8,14 +8,14 @@ bookseries: mystery
 permalink: /dscm3/
 ---
 
-<img src="_images/DSCLogo.png" />
+<img src="../_static/images/DSCLogo.png" />
 
 # DSC Multilingual Mystery #3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs
 
 by Lee Skallerup Bessette and Quinn Dombrowski, April 2, 2020
 
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
-<img src="_images/bookcovers/dscm3_cover.jpg" alt="DSC M3 book cover" />
+<img src="../_static/images/bookcovers/dscm3_cover.jpg" alt="DSC M3 book cover" />
 </div>
 
 

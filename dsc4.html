@@ -5,9 +5,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DSC #4: AntConc Saves the Day &#8212; Data-Sitters Club Notebook</title>
+    <title>DSC #4: AntConc Saves the Day &#8212; Data-Sitters Club</title>
     
-  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -19,24 +20,20 @@
 
     
       
-  <link rel="stylesheet"
-    href="_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="_static/style.css" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
 
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -46,9 +43,7 @@
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -60,14 +55,14 @@
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="DSC #5: The DSC and the Impossible TEI Quandaries" href="dsc5.html" />
     <link rel="prev" title="DSC #3: The Truth About Digital Humanities Collaborations (and Textual Variants!)" href="dsc3.html" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-
-
-
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -76,25 +71,25 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="index.html">
-  
-  <img src="_static/DSClogo.png" class="logo" alt="logo">
-  
-  
-  <h1 class="site-logo" id="site-title">Data-Sitters Club Notebook</h1>
-  
-</a>
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/DSClogo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Data-Sitters Club</h1>
+      
+    </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <p class="caption collapsible-parent">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <p class="caption">
  <span class="caption-text">
   About
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="chapter-2.html">
    About the DSC
@@ -106,12 +101,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Main series
  </span>
 </p>
-<ul class="current nav sidenav_l1">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="dsc1.html">
    DSC 1: Quinn's Great Idea
@@ -157,13 +152,18 @@
    DSC 9: The Ghost in Anouk's Laptop
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc10.html">
+   DSC 10: Heather Loves PCA
+  </a>
+ </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Multilingual mysteries
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="dscm1.html">
    DSCM 1: Lee and the Missing Metadata
@@ -180,12 +180,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Fun
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="covid19.html">
    Important Public Health Messages from the Data-Sitters Club about COVID-19
@@ -198,6 +198,7 @@
  </li>
 </ul>
 
+    </div>
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
@@ -213,21 +214,21 @@
           
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="row topbar fixed-top container-xl">
-    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
-    </div>
-    <div class="col pl-2 topbar-main">
-        
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        
-        
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
@@ -245,27 +246,27 @@
     </div>
 </div>
 
-        <!-- Source interaction buttons -->
+            <!-- Source interaction buttons -->
 
+            <!-- Full screen (wrap in <a> to have style consistency -->
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
-        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                title="Fullscreen mode"><i
-                    class="fas fa-expand"></i></button></a>
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
-        <!-- Launch buttons -->
+            <!-- Launch buttons -->
 
-    </div>
-
-    <!-- Table of contents -->
-    <div class="d-none d-md-block col-md-2 bd-toc show">
-        
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i> Contents
         </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#suggested-citation">
    Suggested Citation
@@ -273,8 +274,8 @@
  </li>
 </ul>
 
-        </nav>
-        
+            </nav>
+        </div>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -282,15 +283,15 @@
         
               <div>
                 
-  <img src="_images/DSCLogo.png" />
+  <img alt="_images/DSCLogo.png" src="_images/DSCLogo.png" />
 <div class="section" id="dsc-4-antconc-saves-the-day">
 <h1>DSC #4: AntConc Saves the Day<a class="headerlink" href="#dsc-4-antconc-saves-the-day" title="Permalink to this headline">¶</a></h1>
 <p>by Anouk Lang, April 10, 2020</p>
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
-<img src="_images/bookcovers/dsc4_cover.jpg" alt="DSC 4 book cover" />
+<img src="_static/images/bookcovers/dsc4_cover.jpg" alt="DSC 4 book cover" />
 </div>
 <p>My heart racing, I flipped my laptop open, powered it up and waited with bated breath for the browser to start. This was the moment I’d been waiting for. At last the page loaded and I clicked the link, to get to what I’d been waiting for with such anticipation. Hundreds of beautiful clean text files shone out of the screen at me, carefully labelled, fixed of their OCR errors and culled of their paratexts and their encoding gremlins. It was better than finding a stash of candy in one of Claudia’s pillowcases: it was the corpus of BSC texts, <a class="reference external" href="https://datasittersclub.github.io/site/dsc2/">lovingly curated and cleaned by Quinn and Katia (as described in <em>DSC #2: Katia and the Phantom Corpus</em>)</a>, and all ready to work with. Meanwhile, a thicket of deadlines and disasters had sprung up in front of the other Data-Sitters, which was just the excuse I needed. “I’ll get started with AntConc!” I told them.</p>
-<img src="_images/dsc4_gettingahead.png" alt="AntConc results for 'getting ahead of myself'" />
+<img alt="AntConc results for 'getting ahead of myself'" src="_images/dsc4_gettingahead.png" />
 <p>But, as BSC narrators like to do, I’m getting ahead of myself. AntConc, for those who’ve not encountered it before, is a concordancer: a piece of software used in the fields of corpus linguistics and natural language processing (NLP) that lets you load a corpus of texts and then search it for words or phrases. You can modify your search terms with a set of customizable wildcards or regular expressions, and AntConc will bring up those words or phrases in what’s known as a key word in context (KWIC) display. You can then sort these KWIC lines to get a sense of the words that precede or follow the words in your query, generate a frequency list of all the words in the corpus, find words which commonly appear (or collocate) together, bring up a visual display of where in each file the words in your query appear, compare the frequency of words in your corpus to their frequency in a reference corpus, and more. AntConc is well regarded in the digital humanities community as it’s well maintained by its creator Laurence Anthony, it’s free to use, and – one of the things I particularly appreciate about it – it’s lightweight and can usually be installed on lab PCs of the type that people teaching digital humanities can find themselves restricted to using. For classes, or DH beginners for whom jumping into NLP with Python is not a realistic option, it is a good way to demonstrate some of the potential of text analysis using a pretty intuitive graphical user interface (GUI). You might see it as the text analysis equivalent of the Kid-Kit, the box of crafty fun things the BSC took to babysitting gigs when they particularly wanted to keep their charges amused.</p>
 <p>I loaded the corpus of BSC books into AntConc (<em>File &gt; Open Dir</em>) and started by generating a word frequency list (<em>Word List</em> tab then <em>Start</em>) and taking a look at the basic stats, which appear at the top of the main white window in the Word List tab once you have clicked Start. The corpus was around 4.7 million words, with around 33 000 different unique words (or types). I then looked at the word frequency list, something which can be an interesting exploratory step, as it lets you see if there are any terms with fairly high frequencies whose presence isn’t immediately explainable by intuition. I was all primed to look up terms relating to the things the other Data-Sitters and I had speculated would make for interesting queries: words around gender, race, consumerism, suburbia and so on. But before any of those appeared on the frequency list, however, I came across the term “little” quite high up. What was even more interesting was that of the 7075 instances of little in the corpus, almost two thirds of them (4653) appeared as part of the bigram “a little”. What could it mean? I decided to investigate further by doing a concordance search for “a little” (<em>Concordance</em> tab, type <code class="docutils literal notranslate"><span class="pre">little</span></code> into the search box and press <em>Start</em>) and sorting the results alphabetically by the word to the right of the search terms (enter <em>1R, 2R</em> and <em>3R</em> into the Kwic Sort boxes then press <em>Sort</em>).</p>
 <p><img alt="AntConc results for 'look a little alike'" src="_images/dsc4_LookALittleAlike.png" />{:style=”float: right;margin-right: 7px;margin-top: 0px;”}</p>
@@ -659,7 +660,7 @@
 <p>So, some of the terms in the list were more trustworthy than others. But to what extent did that compromise my earlier hypothesis about there being a focus in the books on mitigating unpleasant emotions via the (over)use of the premodifying phrase a little? There were terms towards the top of the list – <em>panicky, queasy, taken aback, choked up, sheepish, carried away</em> – which seemed very much in tune with the intense emotions experienced in teenagerhood: feelings whose distress was multiplied by the mortifying possibility that you would be observed – and judged – for going through them, rather than gliding through them unruffled. But as evocative as they were, these terms were not a reliable basis on which to build an argument, as they each numbered only a few dozen. However, a little further down the list were terms including <em>disappointed, annoyed, jealous, nervous, guilty, confused, embarrassed</em> and <em>uncomfortable</em> that, while denoting feelings that were perhaps less viscerally intense, nonetheless signalled other unpleasant states, and which appeared at least a hundred times in the corpus (nervous, in fact, appeared 709 times). These seemed like more of a solid basis on which to hang an interpretation. And, taking the more and the less reliable terms all together, it did feel like the list moved, roughly, from more intense to less intense, and from more excessive to more reasonable, as the likelihood of modification by “a little” decreased. Describing someone as “carried away” felt to me as if it contained the implication that they were over-excited and unreasonably emotional, as opposed to “worried” or “concerned” which didn’t carry those same overtones of inappropriate excess.</p>
 <p>Pondering the extent to which my British/Australian English would lead my judgments about the positive or negative associations of particular words in 1980s tween American English to differ to those of the rest of the Data-Sitters on the other side of the Atlantic, I went off to search for a reference corpus. The Corpus of Contemporary American English (COCA) presented itself as my best option, as it contains 1 billion words from 1990 to the present, and covers a range of genres, including fiction. It was far from a perfect match, and the interface limited me to an irritatingly low number of queries per 24 hour period, but it was the best thing to hand. I rolled up my sleeves and got searching.</p>
 <p>Querying COCA for all phrases with “a little” + an adjective turned up a list that, sorted by frequency, was also heavy on the negative terms, but didn’t follow quite the same pattern I’d been hypothesizing about:</p>
-<img src="_images/dsc4_COCA_ALittle.png" alt="COCA results for 'a little'" />
+<img alt="COCA results for 'a little'" src="_images/dsc4_COCA_ALittle.png" />
 <p>I wasn’t comparing like with like here, of course: I’d selected from the BSC corpus only those adjectives that I interpreted as descriptive of emotional states, and my COCA search had delivered all adjectives, but it nonetheless showed that negatively-inflected words did generally outnumber positively-inflected ones. The most common negative terms, however, weren’t along the lines of the intensely emotional words that had been prominent in the DSC corpus. Terms like <em>scared, disappointed, uncomfortable, worried, awkward</em> and <em>embarrassed</em> were, in fact, less frequent than more prosaic terms like different, extra and higher. In other words, American English of the last four or so decades didn’t seem to be as focused on the discursive cushioning of emotional distress as the BSC books.</p>
 <p>However, when I repeated with COCA what I’d done on the BSC corpus—considering not just the raw frequencies but also the likelihood that a particular word would be modified by a little—the results looked much more like what I’d found earlier. The words “higher” and “different”, prominent in the raw frequencies, retreated further down the list due to their relatively high incidence as unmodified terms, and the words that clustered at the top (all with at least a few hundred appearances in the corpus) were more redolent of the intense-emotions words in the BSC: <em>nervous, awkward, embarrassed, disappointed, uncomfortable</em>. As I went down the list, these words gave way to others that conveyed less intensity: <em>scared</em> and <em>sad</em> yielded to the somewhat more formal worried and concerned, and a little further down more neutral and positive terms began appearing (<em>bigger, easier, better</em>).</p>
 <table class="colwidths-auto table">
@@ -1008,14 +1009,14 @@
 </table>
 <p>The raw frequencies were even lower here than in my BSC corpus, so all the same disclaimers applied. But the comparison with the COCA corpus and the COCA Juvenile Fiction sub-corpus did suggest that, while it might be a feature of American English that words or phrases describing unpleasant emotional states would be fairly likely to be modified by “a little”—both in children’s and teen fiction and in language more generally, which is something that I imagine sociolinguists are already well aware of and have explanations for, and perhaps they’d like to weigh in with them on our #DataSittersClub hashtag if they’re reading this—the BSC books had a more intensified version of this discursive formation going on. The terms that topped the COCA and COCA Juvenile Fiction searches – <em>confusing, jealous, nervous, shy, embarrassed, awkward</em> – appeared in the BSC search, but some way down the list (jealous was the highest, coming in at number 17). Above those words (which, to me at least, signalled a moderate level of distress) there were more intensive emotional states, many of which had some kind of somatic dimension to them: <em>panicky, queasy, choked up, shaky, dazed, dizzy</em>. It was as if the BSC books had taken an existing pattern in language and amped it up so as to capture, and foreground, the intimate nexus between bodily and emotional states that is often portrayed as quintessential to the experience of being a teenager.</p>
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
-<img src="_images/dsc4_QuinnGreenScreen.jpg" alt="Quinn on Zoom with a green screen and BSC books" />
+<img src="_static/images/dsc4_QuinnGreenScreen.jpg" alt="Quinn on Zoom with a green screen and BSC books" />
 </div>
 By now I was bursting to take all of this to a Data-Sitters Club meeting and to hear what everyone else made of it. We dialled in -- Quinn having rigged up a green screen for her Zoom background so that her head appeared, Cheshire Cat-like, in front of a rainbow of BSC covers -- and I ran everyone through the searches, the word lists, the disclaimers, the reference corpora and all the rest of it. I shared my AntConc screen and ran some searches to illustrate. I finished with my grand unified theory of what it meant for our understanding of the ideological work being done by the books: "... and so it feels to me like the books might be modelling for the reader in a discursive way one of the forms of emotional labor that women are socialized to do in daily life: regulating other people's emotions for them."
 <p>No one was interested in my dumb theory. Everyone was, however, entranced by AntConc. “Hey, I saw ‘happy ending’ a bunch of times!” exclaimed Roopsi. “Can you look that up?”</p>
-<img src="_images/dsc4_HappyEnding.png" alt="AntConc results for 'happy ending'" />
+<img alt="AntConc results for 'happy ending'" src="_images/dsc4_HappyEnding.png" />
 <p>“Sure,” I said, and did the search. Everyone started to talk at once about why there might be so many mentions of happy endings, and whether this was about the endings of the novels themselves, ways of describing what happened to characters and families, or something else. It was, I had to admit, more interesting than my deep dive into “a little”.</p>
 <p>“I’m sure they start talking about Ronald Reagan at one point”, Katia said, so I looked up <em>reagan</em>.</p>
-<img src="_images/dsc4_Reagan.png" alt="AntConc results for 'Regan'" />
+<img alt="AntConc results for 'Regan'" src="_images/dsc4_Reagan.png" />
 <p>“Wait, are they talking about <em>Back to the Future</em>? They’re talking about <em>Back to the Future</em>!” Roopsi squealed.</p>
 <p><img alt="AntConc results for 'Back to the Future'" src="_images/dsc4_BTTF.png" /></p>
 <p>And, before I knew it, we were down a rabbit hole of the movies the BSC characters watched:</p>
@@ -1070,15 +1071,15 @@ By now I was bursting to take all of this to a Data-Sitters Club meeting and to 
 
               </div>
               
-        </div>
-    </div>
-    
-    
-    <div class='prev-next-bottom'>
         
+        <div class='prev-next-bottom'>
+            
     <a class='left-prev' id="prev-link" href="dsc3.html" title="previous page">DSC #3: The Truth About Digital Humanities Collaborations (and Textual Variants!)</a>
     <a class='right-next' id="next-link" href="dsc5.html" title="next page">DSC #5: The DSC and the Impossible TEI Quandaries</a>
 
+        </div>
+        
+        </div>
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">
@@ -1094,11 +1095,9 @@ By now I was bursting to take all of this to a Data-Sitters Club meeting and to 
 
       </div>
     </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-    
-  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
-
-
-    
+  
   </body>
 </html>

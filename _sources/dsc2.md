@@ -9,14 +9,14 @@ bookseries: regular
 permalink: /dsc2/
 ---
 
-<img src="_images/DSCLogo.png" />
+<img src="_static/images/DSCLogo.png" />
 
 # DSC #2: Katia and the Phantom corpus
 
 by Katherine Bowers, December 12, 2019
 
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
-<img src="_images/bookcovers/dsc2_cover.jpg" alt="DSC 2 book cover" />
+<img src="_static/images/bookcovers/dsc2_cover.jpg" alt="DSC 2 book cover" />
 </div>
 
 It was a dark and windy fall night, with rain lashing at the windows, when I settled in to do some reading and began working my way through the Baby-Sitters Club series. This kind of weather is not surprising because I live in Vancouver, Canada, where it rains most of the year. What was surprising was that I was reading Baby-Sitters Club books again. I'm an Assistant Professor of Slavic Studies and a lot of the time you will find me reading long Russian novels, which is what I research and teach for work. I last read a BSC book circa 25 years ago, but I started rereading the series on that rainy night because of the DSC, the Data-Sitters Club, a group I've joined that is working on creating a comprehensive, colloquial guide to digital humanities computational text analysis.
@@ -53,15 +53,15 @@ And it got worse. Sometimes, there would be a wall of gibberish, with faint trac
 
 When I was browsing in Lawrence Books later that week, I found an old paperback copy of no. 16, _Jessi's Secret Language_, and flipping through it, the answer jumped out at me:
 
-![Picture of the header for chapter 1, with letters in 3D blocks](_images/bsc-ch1.jpg)
+![Picture of the header for chapter 1, with letters in 3D blocks](_static/images/bsc-ch1.jpg)
 
 The OCR software that had been used for some of these books wasn't able to handle the children's building-block lettering of the chapter headers, or the Baby-Sitters Club notebook entries (or diary entries, or letters) written in the characters' "handwriting"!
 
-![Picture of one of Claudia's "handwritten" sections, in sloppy cursive](_images/claudia-handwriting.png)
+![Picture of one of Claudia's "handwritten" sections, in sloppy cursive](_static/images/claudia-handwriting.png)
 
 (Honestly, I wonder how easy it'd be for young human readers in 2019 to successfully read Mary Anne, Jessi, Kristy, and Claudia's cursive writing. This is Claudia's from no. 3, The Truth About Stacey; it takes me a bit to get through it - and I'm used to reading 19th-century Russian cursive!)
 
-<div style="float: left; width: 175px;margin-right: 7px;margin-top: 0px;"><img src="_images/cyber_cafe.jpg" alt="Picture of Quinn and Katia by the Cyber Café sign at the ASEEES Convention" / ></div>
+<div style="float: left; width: 175px;margin-right: 7px;margin-top: 0px;"><img src="_static/images/cyber_cafe.jpg" alt="Picture of Quinn and Katia by the Cyber Café sign at the ASEEES Convention" / ></div>
 
 Quinn and I met up at the amusingly retro "Cyber Café" sign at the ASEEES Convention in San Francisco in November. (ASEEES is the Association for Slavic, East European, and Eurasian Studies - the biggest Slavic conference in North America, which happens every November). The Cyber Cafe sign seemed nicely thematic because it looked like it had fallen out of some kind of time warp from the mid- to late-BSC books. We took a selfie to mark what we jokingly called "DSC Slavist Super Special" (obviously) and sat down to talk about the issues I'd been having with the corpus Quinn put together.
 

@@ -7,19 +7,19 @@ blurb: 'Copyright law makes life harder for the DSC! Can fair use save the day?'
 bookseries: regular
 permalink: /dsc7/
 ---
-<img src="_images/DSCLogo.png" />
+<img src="../_static/images/DSCLogo.png" />
 
 # DSC #7: The DSC and Mean Copyright Law
 
 by Quinn Dombrowski and Matthew Sag, September 22, 2020
 
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
-<img src="_images/bookcovers/dsc7_cover.jpg" alt="DSC 7 book cover" />
+<img src="../_static/images/bookcovers/dsc7_cover.jpg" alt="DSC 7 book cover" />
 </div>
 
 It all started with a comment on the draft of [DSC #5: The DSC and the Impossible TEI Quandaries](https://datasittersclub.github.io/site/dsc5/).
 
-![Question about the copyright-legality of including a panel from a Baby-Sitters Club graphic novel](_images/dsc07_katia_comment.png)
+![Question about the copyright-legality of including a panel from a Baby-Sitters Club graphic novel](../_static/images/dsc07_katia_comment.png)
 
 That's how we do things in the Data-Sitters Club: we each write things, and we all edit together. (What's the Data-Sitters Club, you may be wondering? You can get all caught up in [Chapter 2](https://datasittersclub.github.io/site/chapter-2/).) This time I was pretty confident that our use of a couple panels from the graphic novels was legit, and didn't need any special annotation or justification. But I could see where Katia was coming from. Ever since I started the Data-Sitters Club, copyright has been an issue that's haunted us like the ghost of Old Ben Brewer in Karen Brewer's attic. We thought we understood it well enough to stay out of trouble, but it still made us uneasy.
 
@@ -28,7 +28,7 @@ Luckily, I was on my way to [Building LLTDM (Legal Literacies for Text Data Mini
 I've been a copyright nerd since college (in the 2000's), counting down the years until 2019, when the evil spell of the Sonny Bono Copyright Extension Act would be broken and new things would enter the public domain. And I was there at the Internet Archive, wearing a dress made of newly public-domain images from 1924, when that day came.
 
 
-![Quinn in 1924 public domain dress](_images/quinn_publicdomain.jpg)
+![Quinn in 1924 public domain dress](../_static/images/quinn_publicdomain.jpg)
 
 In the spirit of the Data-Sitters Club, I'll start from the beginning. But first I need to introduce a special guest data-sitter for this book: Matthew Sag. Matthew is a law professor at Loyola University Chicago School of Law and a leading expert on copyright law and fair use. Matthew has friendly blue eyes, a diamond shaped face, and an Australian accent smoothed over from 20 years living in the United States. He had blonde floppy hair like John Denver when he was a kid, but now he looks more like a clean shaven Jude Law.
 
@@ -166,7 +166,7 @@ My copyright nerd inclinations were getting the better of me. "Wait a sec, we've
 
 "Oooh, good point. So if the Data-Sitters want to dig into the fact that the cover art of the Baby-Sitters Club, and the fact that the style has evolved over the last 20+ years to keep up with contemporary design trends (even if the actual text hasn't changed much, if at all), it'd be totally legitimate to show the full covers of all the editions of the books, that'd be legit, right? I get it."
 
-![Different covers for Baby-Sitters Club book 7: Claudia and Mean Janine](_images/dsc7_covers.jpg)
+![Different covers for Baby-Sitters Club book 7: Claudia and Mean Janine](../_static/images/dsc7_covers.jpg)
 
 “Yes, that’s a pretty good example ... and why is the mean one always wearing a dress?” Matt asked, catching something I'd never noticed before. Maybe Janine's fashion choices across time and medium needed to go on our list of topics to explore.
 
@@ -234,14 +234,14 @@ Every three years, the Librarian of Congress gets to issue specific exemptions f
 Anyhow, another one of these rulemaking events will happen in 2021. And the organizers of the "Building LLTDM" NEH-funded workshop I attended include folks associated with the [Samuelson Law, Technology & Public Policy Clinic](https://www.law.berkeley.edu/experiential/clinics/samuelson-law-technology-public-policy-clinic/) at UC Berkeley, who are filing an amicus brief to support a new exemption from the DMCA that would enable legal ebook cracking for research purposes. Fingers crossed!
 
 ## Acting boldly
-<img src="_images/dsc07_quinn_buildinglltdm.jpg" alt="Quinn with Building LLTDM logo COVID-19 mask" height="600px"/>
+<img src="../_static/images/dsc07_quinn_buildinglltdm.jpg" alt="Quinn with Building LLTDM logo COVID-19 mask" height="600px"/>
 
 So this brings us back to the Building LLTDM workshop where I met Matt. The biggest take-away point for me was that the standard advice on copyright doled out by libraries (sometimes with backing from the university’s general counsel, whose job is to keep the university out of hot water, not figure out a way to make your project possible) really tends to be conservative, even when it’s not transparently so. Getting the copyright door slammed in your face is an invitation to dig deeper, because it can’t possibly be that simple. But the “fair use is a gray area” dance is just plausible enough to believe. “It’s complicated” is too often short for “It’s too complicated for you to understand and you don’t want to risk making a mistake.” But talking to Matt helped me see the other side of it: “It’s complicated enough that what might look like a smooth surface of prohibition at first glance actually has grooves and wrinkles where you can get a handhold for doing more things than you might imagine, in a legally defensible way.”
 
 This got me thinking. I’d spent a ton of time transcribing the dialogue and sound effects from the Baby-Sitters Club graphic novels -- not just in English, but also in French. It wasn’t just a plain-text transcript, even: I’d put in the time to mark the speaker of each piece of dialogue. And when Lee did her sample of TEI markup, she took it even further by describing the visuals of the graphic novels themselves. 
 
 
-![Lee's markup of Mary Anne Saves the Day using CBML](_images/dsc5_mary_anne_cbml.png)
+![Lee's markup of Mary Anne Saves the Day using CBML](../_static/images/dsc5_mary_anne_cbml.png)
 
 We'd resigned ourselves to all that work having a limited pay-off -- limited only to the Data-Sitters Club. We hadn't dared dream of what it might look like to take more of a proactive fair use stance... until now. I had to run this idea by Matt.
 

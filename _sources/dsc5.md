@@ -7,14 +7,14 @@ blurb: 'What are these angled brackets and why are they cluttering up my text?'
 bookseries: regular
 permalink: /dsc5/
 ---
-<img src="_images/DSCLogo.png" />
+<img src="_static/images/DSCLogo.png" />
 
 # DSC #5: The DSC and the Impossible TEI Quandaries
 
 by Elisa Beshero-Bondar, Lee Skallerup Bessette, Quinn Dombrowski, and Roopika Risam, June 25, 2020
 
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
-<img src="_images/bookcovers/dsc5_cover.jpg" alt="DSC 5 book cover" />
+<img src="_static/images/bookcovers/dsc5_cover.jpg" alt="DSC 5 book cover" />
 </div>
 
 ## Quinn
@@ -23,7 +23,7 @@ In the weeks before the world shut down due to COVID-19, Lee and I got into a [T
 
 
 <div style="float: left; width: 300px;margin-right: 7px;margin-top: 0px;">
-<img src="_images/dsc5_thank_you_merci.jpg" alt="Chinese take-out containers with text 'thank you' and 'merci' from graphic novels" />
+<img src="_static/images/dsc5_thank_you_merci.jpg" alt="Chinese take-out containers with text 'thank you' and 'merci' from graphic novels" />
 </div>
 
 Were there other places in the translations where images had been modified? That's a harder question than you might think. There's lots of algorithms for looking at whether an image has been modified -- but they all assume that someone _took a specific source image file_, made modifications to that same file, and then saved the file. What I wanted to do was _compare two completely different source image files_ that show the same page of a comic book in the original, and in translation. Basically the same contents (from the perspective of a human viewer), but totally different image files (from the perspective of the computer). This turns out to be much harder. There's a lot of exciting work going on in the area of computational analysis of images (see, for instance Taylor Arnold and Lauren Tilton's [Distant Viewing Lab](https://distantviewing.org/)), but on the whole, tools for image analysis have lagged behind tools for textual analysis.
@@ -39,7 +39,7 @@ But before we dive into the tech, you might want to [read Chapter 2](chapter-2/)
 While I was initially brought into the Data-Sitters Club because of my experience and expertise with French (and specifically Québécois) as well as plumbing the depths of national library databases and used bookstores online, I have a number of “adjacent” areas of expertise that are applicable here, too. I’m “adjacent” to DH in a lot of ways, but I am also “adjacent” to YA graphic novels, as well as adaptations and TEI.
 
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
-<img src="_images/dsc5_lee_tei_dhsi.jpg" alt="Lee's DHSI certificate for a DHSI workshop in 2012" />
+<img src="_static/images/dsc5_lee_tei_dhsi.jpg" alt="Lee's DHSI certificate for a DHSI workshop in 2012" />
 </div>
 
 I got interested in YA graphic novels and comics because my kids absolutely adored them, which led me to volunteer to [review a book for Comics Grid on YA graphic novels and comics](https://www.comicsgrid.com/articles/10.16995/cg.124/) and then one on [Comic Book Pedagogy](https://www.comicsgrid.com/articles/10.16995/cg.190/). In these, you can read all about my history with the genre. At the same time, I had the pleasure of working alongside [Zach Whalen](http://www.zachwhalen.net/), who is a "real" comics scholar, as well as someone who has [more than a passing interest in image visualization](http://www.zachwhalen.net/pg/imj/). I learned a great deal from him as we talked about his graphic novel class, as well as thinking about DH tools and image visualization.
@@ -66,19 +66,19 @@ A lot of the methods the Data-Sitters Club has used so far have been compatible 
 
 The analogy with highlighting a paper book also works from another angle. The more highlighting and underlining you add to a book, the harder it can be to _just read the text_ without getting distracted by all the overlapping colors that each signify something meaningful, but can dissolve into a rainbow jumble (like my high school International Baccalaureate English copy of _When Rain Clouds Gather_).
 
-![When Rain Clouds Gather, marked up too much with pen and highlighter, and a legend explaining what color means what](_images/dsc5_when_rain_clouds_gather_markup.jpg)
+![When Rain Clouds Gather, marked up too much with pen and highlighter, and a legend explaining what color means what](_static/images/dsc5_when_rain_clouds_gather_markup.jpg)
 
 TEI can get like that, too. You start off with a plain text file that you can easily read:
 
-![Plain-text transcription of the beginning of the Kristy's Great Idea graphic novel.](_images/dsc5_tei_plaintext.png)
+![Plain-text transcription of the beginning of the Kristy's Great Idea graphic novel.](_static/images/dsc5_tei_plaintext.png)
 
 And then you add markup:
 
-![Transcription of the beginning of the Kristy's Great Idea graphic novel with paragraph and speaker markup.](_images/dsc5_tei_basicmarkup.png)
+![Transcription of the beginning of the Kristy's Great Idea graphic novel with paragraph and speaker markup.](_static/images/dsc5_tei_basicmarkup.png)
 
 And then some more:
 
-![Transcription of the beginning of the Kristy's Great Idea graphic novel with paragraph and speaker markup and lots of attributes.](_images/dsc5_tei_moremarkup.png)
+![Transcription of the beginning of the Kristy's Great Idea graphic novel with paragraph and speaker markup and lots of attributes.](_static/images/dsc5_tei_moremarkup.png)
 
 And soon you realize you’ve spent a lot of time making a file that’s _much less readable_ than what you started with. The only way out of this mess is to keep going and learn how to write XSLT (we’ll get to that shortly), in order to transform your text cluttered up with angled brackets back into something that’s readable -- and/or something that can count, compare, and make use of all the annotations you’ve made.
 
@@ -153,7 +153,7 @@ Even once you've chosen which flavor of TEI you'll use -- whether it's the full 
 ### Graphic novel or chopped-up text?
 
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
-<img src="_images/dsc5_quinn_lee_tei.jpg" alt="Zoom meeting between Quinn and Lee" />
+<img src="_static/images/dsc5_quinn_lee_tei.jpg" alt="Zoom meeting between Quinn and Lee" />
 </div>
 
 Lee and I met in the early days of the March COVID-19 lockdown, right after we finished Multilingual Mystery #3, to talk about what we wanted to do for a DSC book on TEI. We’d both assumed that since we’d be working with graphic novels, it would make sense to use CBML -- the TEI variant for comic books -- but the more we talked, the more we realized that it might not be such an obvious decision after all.
@@ -192,22 +192,22 @@ This is not the "right" way to do TEI markup. Ideally, you would not only have r
 
 But instead, I decided I'd figure everything out on the way, and I'd add a custom schema once I had a better sense of what I was working with.
 
-![Blank TEI Lite header](_images/dsc5_default_tei_lite_template.png)
+![Blank TEI Lite header](_static/images/dsc5_default_tei_lite_template.png)
 All TEI files start with a &lt;teiHeader&gt; section, where you’re supposed to put in a &lt;publicationStmt&gt; (with information about the publication of this electronic edition) and a &lt;sourceDesc&gt; (with information about the source). Again, counter to best practice, I skipped it -- all the source info I needed was stored in the file name (Kristys_Great_Idea_Graphic_Novel.xml), and and a &lt;publicationStmt&gt; didn’t seem worthwhile, because this file will never be published because copyright. So I moved on to the &lt;text&gt; section, and the &lt;body&gt; section within that. I deleted the sample content between the &lt;body&gt; and &lt;/body&gt; tags, and started typing.
 
-![Beginning of Kristy's Great Idea graphic novel with simple TEI Lite markup](_images/dsc5_tei_lite_intro_markup.jpg)
+![Beginning of Kristy's Great Idea graphic novel with simple TEI Lite markup](_static/images/dsc5_tei_lite_intro_markup.jpg)
 
 TEI has a [&lt;div&gt; element](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-div.html) defined as follows: "(text division) contains a subdivision of the front, body, or back of a text". It's pretty broad... broad enough to cover chapters, narrative bits, and scenes. There's an [attribute, type](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.typed.html), which "provides attributes which can be used to classify or subclassify elements in any way" that I could use to differentiate the &lt;div&gt;s. Using an [n attribute](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.global.html), which "gives a number (or other label) for an element, which is not necessarily unique within the document", seemed like a good option for keeping track of the chapter number. I also wanted to give a unique ID (attribute [xml:id](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.global.html), "provides a unique identifier for the element bearing the attribute") to each chapter and each scene, as a precursor to looking at the extent to which chapters and scenes can be directly mapped from the original books to the graphic novels. For scenes, I wanted somewhere to store the information about _where_ the scene takes place. The best option I could find was another very general [attribute, subtype](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.typed.html), which "provides a sub-categorization of the element, if needed".
 
 You can't just type text within the divisions and sub-divisions: you need some sort of container for it. That's where the [&lt;p&gt; element](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-p.html) comes in -- it "marks paragraphs in prose." We're just going to treat every text bubble or block as a paragraph.
 
-![Speech bubbles from the beginning of Kristy's Great Idea graphic novel](_images/dsc5_speechbubble_example.jpg)
+![Speech bubbles from the beginning of Kristy's Great Idea graphic novel](_static/images/dsc5_speechbubble_example.jpg)
 
 Things got dicey as soon as I hit speech bubbles. I wanted to be able to specify who was doing the speaking. There _is_ a TEI [element &lt;said&gt;](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-said.html#:~:text=may%20be%20used%20to%20indicate,having%20been%20vocalized%20or%20signed.&text=may%20be%20used%20to%20indicate%20whether%20the%20quoted%20matter,as%20direct%20or%20indirect%20speech.), which "indicates passages thought or spoken aloud, whether explicitly indicated in the source or not, whether directly or indirectly reported, whether by real people or fictional characters." It has some convenient attributes, like [who](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.ascribed.html) ("provides attributes for elements representing speech or action that can be ascribed to a specific individual"), and aloud ("may be used to indicate whether the quoted matter is regarded as having been vocalized or signed").
 
 But the &lt;said&gt; element isn't part of TEI-Lite. And I wanted to dive into the text, not work on modifying the TEI-Lite schema. So I copied what I'd written so far, opened another new text file -- this one using the full TEI schema -- pasted it into the &lt;body&gt; element, and kept working my way through the text.
 
-![TEI markup of speech bubbles from Kristy's Great Idea graphic novel](_images/dsc5_tei_with_text.png)
+![TEI markup of speech bubbles from Kristy's Great Idea graphic novel](_static/images/dsc5_tei_with_text.png)
 
 Weeks passed.
 
@@ -219,13 +219,13 @@ In-between tucking the kids in for the second, third, fourth time? Can probably 
 
 There were moments I despaired, letting technological temptation lure me down alternate paths. Would the default line-detection algorithm in [Transkribus](https://transkribus.eu/), a piece of software that does miracles with handwritten text recognition, work on comic books?
 
-![Failed layout analysis for HTR in Mary Anne Saves the Day graphic novel](_images/dsc5_transkribus_layout.jpg)
+![Failed layout analysis for HTR in Mary Anne Saves the Day graphic novel](_static/images/dsc5_transkribus_layout.jpg)
 
 The answer: not so much. Claudia's eyes and nose and the long tail of that speech bubble and Stacey's whole face are not, in fact, text regions or anything close. But perhaps the algorithm can be trained to work. You may hear more about Transkribus in a future DSC book.
 
 Eventually, I came to realize that the way I started doing the encoding wasn't working well for everything I wanted it to cover. Sound effects, especially, were getting short shrift. So I started using the [rend attribute](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.global.rendition.html), which "indicates how the element in question was rendered or presented in the source text". I decided to use that both for sound effects and to specify other distinctive kinds of text, like narration and written text (e.g. text depicted almost scrapbook-like in the later comic books.)
 
-![Simple TEI markup of sound effects in Mary Anne Saves the Day](_images/dsc5_soundeffect_example1.jpg)
+![Simple TEI markup of sound effects in Mary Anne Saves the Day](_static/images/dsc5_soundeffect_example1.jpg)
 
 I kept going with these new conventions; I'd fix the earlier transcriptions later. It took until BSC #5 _Dawn and the Impossible Three_ for it to leap out at me that even as no one ever talked about Claudia as being Japanese-American, she was _literally colored yellow_. And Jessi, the only Black member of the BSC, was missing, even as book #14, _Hello Mallory_, which introduces the character, was mashed up with _Dawn and the Impossible Three_ in the graphic novels. Maybe there was something to follow up on there? Should we start capturing character traits somewhere?
 
@@ -299,13 +299,13 @@ Let's take a look at one of the examples here that Quinn has already shown. One 
 
 The example I am instead going to focus on is from "Mary Anne Saves the Day", where Mary Anne is in the kitchen with her father getting ready for the pizza party.
 
-![Simple TEI markup of sound effects in Mary Anne Saves the Day](_images/dsc5_soundeffect_example1.jpg)
+![Simple TEI markup of sound effects in Mary Anne Saves the Day](_static/images/dsc5_soundeffect_example1.jpg)
 
 With just the transcription marked-up like Quinn did here, you don't know that her dad is in the kitchen with her in one panel, and that she falls over a chair and spills the soda bottle in her rush to get the door. It also doesn't encode that she is now wearing her hair down, instead of in her usual braids. And, should we note what is being served (salad, soda)? Or go beyond that it is Mary Anne's house, but specifically the kitchen, with a table and six chairs, with a checked-pattern backsplash, or the bag of tortilla chips in the background on the counter? Especially in comics, it is as much what is shown in the panel as what is said/written that communicates meaning to the reader.
 
 So, I took the short snipped of TEI that Quinn had written for those three panels, and decided to see how much I could encode using CBML before going cross-eyed and giving up. I printed Walsh's essay [Comic Book Markup Language: An Introduction and Rationale](http://www.digitalhumanities.org/dhq/vol/6/1/000117/000117.html) (all 49 pages of it) in part because I already had too many windows open on my computer, but also because in printing it, it had been set up so that the markup example of any image was on the next page, so you could look at the image and the markup on the image side-by-side. I had read through the essay a number of times, and with the book open on the page, I quickly went through and found the examples of markup that I needed, pulled them out, and got started.
 
-![CBML markup of the sound effect scene used above, from Mary Anne Saves the Day](_images/dsc5_mary_anne_cbml.png)
+![CBML markup of the sound effect scene used above, from Mary Anne Saves the Day](_static/images/dsc5_mary_anne_cbml.png)
 
 A couple of things. I added a <div> category, since this page could be considered a panel group. I would have ended the panel group once they changed locations or the action shifted away from the meal to a different topic. Often panel groups are just pages, but they can also span pages. I added the "bubble" for speech bubbles and "narration" for the text at the top of each panel, as that is the CBML way to do it, as well as <sound> for the sound effects. Most notably, I added notes to each panel describing the scene and what was going on. I felt a little like the audio description of movies and TV shows that you can turn on.
 
@@ -317,7 +317,7 @@ Now that I'm into it, I think it's kinda fun and I might not mind doing more...
 
 We can also compare differences between similar scenes within the graphic novels, especially once you start changing illustrators. Note this similar but not exactly the same scene from "Mary Anne Saves the Day" and "Dawn and the Impossible Three", about the first day they met in the cafeteria, each by a different author.
 
-![Comparison of cafeteria scenes from Mary Anne Saves the Day and Dawn and the Impossible Three](_images/dsc5_msd_vs_dit.jpg)
+![Comparison of cafeteria scenes from Mary Anne Saves the Day and Dawn and the Impossible Three](_static/images/dsc5_msd_vs_dit.jpg)
 
 You could just put the setting down as "cafeteria_middle_school" but you would be missing a lot of potentially important visual information. When you're setting up the panel, when listing the characters, you could use "anon_student_1" and so on, but you also might want to code in some more data on race, religion, or gender. So we could go "anon_student_girl_one" or "anon_girl_1" if we take it on face value that because they are in a middle school that they are all students. But what about the handful of "brown" students, or the student wearing the hijab? You could also link the two panels across the series using markup, linking the two scenes to each other. I could make a descriptive note with the demographic data rather than using tags, but it wouldn't be as searchable later.
 
@@ -353,7 +353,7 @@ I told the other Data-Sitters about the email exchanges I've been having with El
 
 
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
-<img src="_images/dsc5_interview.png" alt="Zoom screenshot from the interview" />
+<img src="_static/images/dsc5_interview.png" alt="Zoom screenshot from the interview" />
 </div>
 
 

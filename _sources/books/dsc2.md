@@ -9,14 +9,14 @@ bookseries: regular
 permalink: /dsc2/
 ---
 
-<img src="_images/DSCLogo.png" />
+<img src="../_static/images/DSCLogo.png" />
 
 # DSC #2: Katia and the Phantom corpus
 
 by Katherine Bowers, December 12, 2019
 
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
-<img src="_images/bookcovers/dsc2_cover.jpg" alt="DSC 2 book cover" />
+<img src="../_static/images/bookcovers/dsc2_cover.jpg" alt="DSC 2 book cover" />
 </div>
 
 It was a dark and windy fall night, with rain lashing at the windows, when I settled in to do some reading and began working my way through the Baby-Sitters Club series. This kind of weather is not surprising because I live in Vancouver, Canada, where it rains most of the year. What was surprising was that I was reading Baby-Sitters Club books again. I'm an Assistant Professor of Slavic Studies and a lot of the time you will find me reading long Russian novels, which is what I research and teach for work. I last read a BSC book circa 25 years ago, but I started rereading the series on that rainy night because of the DSC, the Data-Sitters Club, a group I've joined that is working on creating a comprehensive, colloquial guide to digital humanities computational text analysis.
