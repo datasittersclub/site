@@ -2,9 +2,11 @@
 
 # About The Data-Sitters Club
 
-![Photo of the first Data-Sitters Club Zoom meeting with Quinn Dombrowski, Katia Bowers, Maria Cecire, Anouk Lang, and Roopika Risam](_static/images/bscmeeting.png)
+<div style="float:right; margin-left:10px;"><img src="_images/dsc_book_cover.jpg" width="400px" /></div>
 
 First, we should tell you about The Data-Sitters Club, how it works, and who we are. It all started one day when Quinn Dombrowski was on vacation in Las Vegas and started getting nostalgic about Ann M. Martin’s iconic series about girlhood in the upper-middle-class American suburbs of the 1990s. There’s been very little scholarship written on the series, and Quinn started wondering what she might find by applying digital humanities computational text analysis tools and methods to that corpus. And it’d be even better to share those findings alongside a detailed description of how she went about the process of doing the text analysis, spelling out all the steps and decisions along the way! Quinn found some friends on DH (digital humanities) Twitter who wanted to join her, and together, we started The Data-Sitters Club.
+
+## The Data-Sitters (Main Series)
 
 <div style="float: left; margin-right: 5px;margin-top: 0px;">
 	<img src="_static/images/leepic.jpg" alt="Photo of Lee Skallerup Bessette" />
@@ -16,7 +18,7 @@ First, we should tell you about The Data-Sitters Club, how it works, and who we 
 	<img src="_static/images/katiapic.jpg" alt="Photo of Katia Bowers" />
 </div>
 
-**Katia Bowers** (University of British Columbia) has wavy-curly light brown hair that’s often out of the way in a bun, brown eyes, and glasses. She is an Assistant Professor at the University of British Columbia, and her research focus is on nineteenth-century Russian literature, particularly Dostoevsky. She’s interested in questions about genre, narrative, and authorship. Katia most readily identifies as a kind of Mary Anne-Stacey hybrid. Like Mary Anne, she is quiet and shy, likes genre fiction and classical music, prefers listening to others to speaking herself, and didn’t own jeans until she was 12, but like Stacey she feels most comfortable in an urban setting.
+**Katia Bowers** (University of British Columbia) has wavy-curly light brown hair, brown eyes, and glasses. She is an Associate Professor at the University of British Columbia, and her research focus is on nineteenth-century Russian literature, particularly Dostoevsky. She’s interested in questions about genre, narrative, and authorship. Katia most readily identifies as a kind of Mary Anne-Stacey hybrid. Like Mary Anne, she is quiet and shy, likes genre fiction and classical music, prefers listening to others to speaking herself, and didn’t own jeans until she was 12, but like Stacey she feels most comfortable in an urban setting.
 
 <div style="float: left; margin-right: 5px;margin-top: 0px;">
 	<img src="_static/images/mariapic.jpeg" alt="Photo of Maria Sachiko Cecire" />
@@ -28,7 +30,7 @@ First, we should tell you about The Data-Sitters Club, how it works, and who we 
 	<img src="_static/images/quinnpic.jpg" alt="Photo of Quinn Dombrowski" />
 </div>
 
-**Quinn Dombrowski** (Stanford University) is short (about the size of a 10-year-old), with short brown hair, glasses, and light-blue eyes that match her three kids’. Quinn works as an Academic Technology Specialist in the Division of Literatures, Cultures, and Languages at Stanford University, supporting non-English DH scholarship. She identifies as non-binary in English, but doesn’t have any preferences about pronouns (just gender-neutral nouns, like “person” and “parent”). The Data-Sitters Club is Quinn’s first and only text analysis project in English. Usually, “not English” is the one major unifying thread in the projects she works on, which range from comparative multilingual Harry Potter fanfic, to machine learning models for transcribing Spanish and Nahuatl manuscripts, to working on improving natural-language processing resources for Russian. Quinn is something like a profoundly unathletic Kristy, if you substitute computers for sports, and add Claudia's fashion sense.
+**Quinn Dombrowski** (Stanford University) is short (about the size of a 10-year-old), with short blue and purple hair (since the pandemic), off-the-wall glasses, and light-blue eyes that match her three kids’. Quinn works as an Academic Technology Specialist in the Division of Literatures, Cultures, and Languages at Stanford University, supporting non-English DH scholarship. She identifies as non-binary in English, but doesn’t have any preferences about pronouns (just gender-neutral nouns, like “person” and “parent”). The Data-Sitters Club is Quinn’s first and only text analysis project in English. Usually, “not English” is the one major unifying thread in the projects she works on, which range from comparative multilingual Harry Potter fanfic, to machine learning models for transcribing Spanish and Nahuatl manuscripts, to working on improving natural-language processing resources for Russian. Quinn is something like a profoundly unathletic Kristy, if you substitute computers for sports, and add Claudia's fashion sense.
 
 <div style="float: left; margin-right: 5px;margin-top: 0px;">
 	<img src="_static/images/anoukpic.jpg" alt="Photo of Anouk Lang" />
@@ -46,7 +48,14 @@ First, we should tell you about The Data-Sitters Club, how it works, and who we 
 	<img src="_static/images/markpic.jpg" alt="Photo of Mark Algee-Hewitt" />
 </div>
 
-**Mark Algee-Hewitt** (Stanford University) is an Associate Member of the Data-Sitters Club, just like Logan Bruno. He has a goatee, red hair that he wears in a ponytail, and sense for fashion that makes him the Claudia Kishi of male academics. Mark has an amazing assortment of colorful and interesting sports coats, and a penchant for creative cowboy boots. He's an Assistant professor of English at Stanford University and Director of the Stanford Literary Lab. Mark babysat growing up in Nova Scotia, with an hourly rate that would’ve worked out to $3.50 USD.
+**Mark Algee-Hewitt** (Stanford University) is an Associate Member of the Data-Sitters Club, just like Logan Bruno. He has a goatee, red hair that he wears in a ponytail, and sense for fashion that makes him the Claudia Kishi of male academics. Mark has an amazing assortment of colorful and interesting sports coats, and a penchant for creative cowboy boots. He's an Assistant professor of English at Stanford University and Director of the Stanford Literary Lab. Mark babysat growing up in Nova Scotia, with an hourly rate that would’ve worked out to $\3.50 USD.
+
+
+## Multilingual Mystery Data-Sitters
+<div style="float: left; margin-right: 5px;margin-top: 0px;"><img src="_static/images/isabellepic.jpg" alt="Photo of Isabelle Gribomont" /></div>
+
+**Isabelle Gribomont** (University of Liverpool) grew up in Belgium and is our Belgian / French Data-Sitter. Isabelle has long, untidy, light-brown hair and green-ish eyes. She aspires to Claudia’s fashion sense but is most often found in lounge clothes and sporting a ginormous top-knot. 
+
 
 ## Guest Data-Sitters
 
@@ -54,19 +63,28 @@ First, we should tell you about The Data-Sitters Club, how it works, and who we 
 	<img src="_static/images/elisapic.jpg" alt="Photo of Elisa Beshero-Bondar" />
 </div>
 
-**Elisa Beshero-Bondar** (Penn State University, the Behrend Campus) is 3/4s Lebanese and 1/4 Irish. She has thick wavy black hair that she usually pulls back from her face, and looks very Mediterranean with an olive complexion and big brown eyes behind spectacles. Like Jessi in Jessi’s Secret Language, she started learning as much as she could about text encoding after working with a student who couldn’t see and needed to read poetry with her fingers on a fascinating braille monitor.  Elisa loves all things geeky about electronic documents and the Text Encoding Initiative because it’s a super supportive community that works together around the world and cares deeply about curating metadata and document data modeling. She tends to get involved in lots of projects at once and enjoys hanging out as a consultant with the Data-Sitters Club; read more in <a href="dsc5">DSC #5: The DSC and the Impossible TEI Quandaries</a>. 
+**Elisa Beshero-Bondar** (Penn State University, the Behrend Campus) is 3/4s Lebanese and 1/4 Irish. She has thick wavy black hair that she usually pulls back from her face, and looks very Mediterranean with an olive complexion and big brown eyes behind spectacles. Like Jessi in Jessi’s Secret Language, she started learning as much as she could about text encoding after working with a student who couldn’t see and needed to read poetry with her fingers on a fascinating braille monitor.  Elisa loves all things geeky about electronic documents and the Text Encoding Initiative because it’s a super supportive community that works together around the world and cares deeply about curating metadata and document data modeling. She tends to get involved in lots of projects at once and enjoys hanging out as a consultant with the Data-Sitters Club; read more in <a href="dsc5.html">DSC #5: The DSC and the Impossible TEI Quandaries</a>. 
 
+<div style="float: left; margin-right: 5px;margin-top: 0px;">
+	<img src="_static/images/hgf.jpg" alt="Image of Heather Froehlich... or close enough" />
+</div>
+
+**Heather Froehlich** (Penn State University) has wavy-curly red hair and a more than passing similarity in style to the famed missing Waldo. She has an affinity for stripes, and like the babysitters spent her tween years in New England. She spends a lot of time pondering computers and how they understand language. She spends even more time thinking about what people’s brains can do with the resulting data, because as she will be the first to tell you, “computers are dumb boxes of plastic and metal”. In her position as Literary Informatics Librarian at Penn State University, she has the opportunity to consult with a range of scholars in diffuse fields about all the ways people can work smartly with the data computers give us and how to get them to give it to us. She loves a good corpus. Read more in <a href="dsc10.html">DSC #10: Heather Loves Principal Component Analysis</a>!
 
 <div style="float: left; margin-right: 5px;margin-top: 0px;">
 	<img src="_static/images/anniepic.png" alt="Photo of Annie K. Lamar" />
 </div>
 
-**Annie K. Lamar** (Stanford University) has warm gray eyes and an affinity for purple clothing. She has long hair that is almost always twisted and copiously pinned on the top of her head. She studies ancient languages and artificial intelligence, which-- although it sounds quite serious-- often results in the creation of chat bots so she can talk to her favorite ancient authors. Read more about what we learned from Annie about machine learning in <a href="dsc9">DSC #9: The Ghost in Anouk's Laptop</a>.
+**Annie K. Lamar** (Stanford University) has warm gray eyes and an affinity for purple clothing. She has long hair that is almost always twisted and copiously pinned on the top of her head. She studies ancient languages and artificial intelligence, which-- although it sounds quite serious-- often results in the creation of chat bots so she can talk to her favorite ancient authors. Read more about what we learned from Annie about machine learning in <a href="dsc9.html">DSC #9: The Ghost in Anouk's Laptop</a>.
 
-**Matthew Sag** (Loyola University Chicago) has friendly blue eyes, a diamond shaped face, and an Australian accent smoothed over from 20 years living in the United States. He had blonde floppy hair like John Denver when he was a kid, but now he looks more like a clean shaven Jude Law. He is a law professor at Loyola University Chicago School of Law and a leading expert on copyright law and fair use -- just the guest data-sitter we needed in <a href="dsc7">DSC #7: The DSC and Mean Copyright Law</a>!
+**Matthew Sag** (Loyola University Chicago) has friendly blue eyes, a diamond shaped face, and an Australian accent smoothed over from 20 years living in the United States. He had blonde floppy hair like John Denver when he was a kid, but now he looks more like a clean shaven Jude Law. He is a law professor at Loyola University Chicago School of Law and a leading expert on copyright law and fair use -- just the guest data-sitter we needed in <a href="dsc7.html">DSC #7: The DSC and Mean Copyright Law</a>!
 
 <div style="float: left; margin-right: 5px;margin-top: 0px;">
 	<img src="_static/images/jeffpic.png" alt="Photo of Jeff Tharsen" />
 </div>
 
 **Jeff Tharsen** (University of Chicago) is like a cross between a Viking and a Confucian scholar. He's tall, with dark eyes and a long beard that once was blond and is now turning an off-white color like Mary Anne's blouses. He's the University of Chicago's resident expert in humanities-based research computing but spends much of his time thinking about sound systems in premodern rhetoric and poetry, social justice and savage inequities, playing guitar like Rico from the California Diaries series, Minecraft mods, and finding infinite combos for his *Magic: the Gathering* deck builds. Read more about what he's been up to with machine learning in  <a href="dsc9">DSC #9: The Ghost in Anouk's Laptop</a>.
+
+```python
+
+```

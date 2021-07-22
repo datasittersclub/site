@@ -1,6 +1,6 @@
 #######################################################################################
 # Book settings
-title : Data-Sitters Club Notebook
+title : Data-Sitters Club
 author: The Data-Sitters Club
 logo: 'DSClogo.png'
 
@@ -25,7 +25,14 @@ execute:
 # HTML-specific settings
 html:
   home_page_in_navbar         : false
+  show_navbar_depth: 2
 
 # #######################################################################################
 # Interact link settings
 notebook_interface            : "notebook"
+
+parse:
+  myst_enable_extensions:
+    # don't forget to list any other extensions you want enabled,
+    # including those that are enabled by default!
+    - html_image

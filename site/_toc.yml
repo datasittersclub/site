@@ -1,17 +1,16 @@
-# - file: README
-- file: index
-
-- part: About
+format: jb-book
+root: index
+parts:
+- caption: About
   chapters:
   - file: chapter-2
-    title: 'About the DSC'
+    title: About the DSC
   - file: books
-    title: 'DSC Books'
-
-- part: Main series
+    title: DSC Books
+- caption: Main series
   chapters:
   - file: dsc1
-    title: "DSC 1: Quinn's Great Idea"
+    title: 'DSC 1: Quinn''s Great Idea'
   - file: dsc2
     title: 'DSC 2: Katia and the Phantom Corpus'
   - file: dsc3
@@ -21,15 +20,16 @@
   - file: dsc5
     title: 'DSC 5: The DSC and the Impossible TEI Quandaries'
   - file: dsc6
-    title: "DSC 6: Voyant's Big Day"
+    title: 'DSC 6: Voyant''s Big Day'
   - file: dsc7
     title: 'DSC 7: The DSC and Mean Copyright Law'
   - file: dsc8
     title: 'DSC 8: Text-Comparison-Algorithm-Crazy Quinn'
   - file: dsc9
-    title: "DSC 9: The Ghost in Anouk's Laptop"
-
-- part: Multilingual mysteries
+    title: 'DSC 9: The Ghost in Anouk''s Laptop'
+  - file: dsc10
+    title: 'DSC 10: Heather Loves PCA'
+- caption: Multilingual mysteries
   chapters:
   - file: dscm1
     title: 'DSCM 1: Lee and the Missing Metadata'
@@ -37,8 +37,9 @@
     title: 'DSCM 2: Beware, Lee and Quinn!'
   - file: dscm3
     title: 'DSCM 3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs'
-
-- part: Fun
+  - file: dscm4
+    title: "DSCM 4: Isabelle and the Missing Spaghetti-O's"
+- caption: Fun
   chapters:
   - file: covid19
   - file: dhawards2019

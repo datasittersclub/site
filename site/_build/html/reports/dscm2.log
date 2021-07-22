@@ -1,69 +1,39 @@
 Traceback (most recent call last):
-  File "/opt/anaconda3/lib/python3.8/site-packages/jupyter_cache/executors/utils.py", line 51, in single_nb_execution
+  File "/Users/qad/anaconda3/lib/python3.8/site-packages/nbclient/client.py", line 622, in _async_poll_for_reply
+    msg = await ensure_async(self.kc.shell_channel.get_msg(timeout=new_timeout))
+  File "/Users/qad/anaconda3/lib/python3.8/site-packages/nbclient/util.py", line 85, in ensure_async
+    result = await obj
+  File "/Users/qad/anaconda3/lib/python3.8/site-packages/jupyter_client/asynchronous/channels.py", line 48, in get_msg
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/qad/anaconda3/lib/python3.8/site-packages/jupyter_cache/executors/utils.py", line 51, in single_nb_execution
     executenb(
-  File "/opt/anaconda3/lib/python3.8/site-packages/nbclient/client.py", line 1087, in execute
+  File "/Users/qad/anaconda3/lib/python3.8/site-packages/nbclient/client.py", line 1112, in execute
     return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
-  File "/opt/anaconda3/lib/python3.8/site-packages/nbclient/util.py", line 74, in wrapped
+  File "/Users/qad/anaconda3/lib/python3.8/site-packages/nbclient/util.py", line 74, in wrapped
     return just_run(coro(*args, **kwargs))
-  File "/opt/anaconda3/lib/python3.8/site-packages/nbclient/util.py", line 53, in just_run
+  File "/Users/qad/anaconda3/lib/python3.8/site-packages/nbclient/util.py", line 53, in just_run
     return loop.run_until_complete(coro)
-  File "/opt/anaconda3/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
+  File "/Users/qad/anaconda3/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
     return future.result()
-  File "/opt/anaconda3/lib/python3.8/site-packages/nbclient/client.py", line 540, in async_execute
+  File "/Users/qad/anaconda3/lib/python3.8/site-packages/nbclient/client.py", line 553, in async_execute
     await self.async_execute_cell(
-  File "/opt/anaconda3/lib/python3.8/site-packages/nbclient/client.py", line 832, in async_execute_cell
-    self._check_raise_for_error(cell, exec_reply)
-  File "/opt/anaconda3/lib/python3.8/site-packages/nbclient/client.py", line 740, in _check_raise_for_error
-    raise CellExecutionError.from_cell_and_msg(cell, exec_reply['content'])
-nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
-------------------
-#Imports spaCy
-import spacy
-#Imports the French model
-import fr_core_news_sm
-#Sets up a function so you can run the French model on texts
-frnlp = fr_core_news_sm.load()
-#Imports the English model
-import en_core_web_sm
-#Sets up a function so you can run the English model on texts
-ennlp = en_core_web_sm.load()
-------------------
-
-[0;31m---------------------------------------------------------------------------[0m
-[0;31mOSError[0m                                   Traceback (most recent call last)
-[0;32m<ipython-input-4-d8f464c283b4>[0m in [0;36m<module>[0;34m[0m
-[1;32m      4[0m [0;32mimport[0m [0mfr_core_news_sm[0m[0;34m[0m[0;34m[0m[0m
-[1;32m      5[0m [0;31m#Sets up a function so you can run the French model on texts[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
-[0;32m----> 6[0;31m [0mfrnlp[0m [0;34m=[0m [0mfr_core_news_sm[0m[0;34m.[0m[0mload[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m      7[0m [0;31m#Imports the English model[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
-[1;32m      8[0m [0;32mimport[0m [0men_core_web_sm[0m[0;34m[0m[0;34m[0m[0m
-
-[0;32m/opt/anaconda3/lib/python3.8/site-packages/fr_core_news_sm/__init__.py[0m in [0;36mload[0;34m(**overrides)[0m
-[1;32m     10[0m [0;34m[0m[0m
-[1;32m     11[0m [0;32mdef[0m [0mload[0m[0;34m([0m[0;34m**[0m[0moverrides[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
-[0;32m---> 12[0;31m     [0;32mreturn[0m [0mload_model_from_init_py[0m[0;34m([0m[0m__file__[0m[0;34m,[0m [0;34m**[0m[0moverrides[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m
-[0;32m/opt/anaconda3/lib/python3.8/site-packages/spacy/util.py[0m in [0;36mload_model_from_init_py[0;34m(init_file, vocab, disable, exclude, config)[0m
-[1;32m    512[0m     [0;32mif[0m [0;32mnot[0m [0mmodel_path[0m[0;34m.[0m[0mexists[0m[0;34m([0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
-[1;32m    513[0m         [0;32mraise[0m [0mIOError[0m[0;34m([0m[0mErrors[0m[0;34m.[0m[0mE052[0m[0;34m.[0m[0mformat[0m[0;34m([0m[0mpath[0m[0;34m=[0m[0mdata_path[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0;32m--> 514[0;31m     return load_model_from_path(
-[0m[1;32m    515[0m         [0mdata_path[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
-[1;32m    516[0m         [0mvocab[0m[0;34m=[0m[0mvocab[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
-
-[0;32m/opt/anaconda3/lib/python3.8/site-packages/spacy/util.py[0m in [0;36mload_model_from_path[0;34m(model_path, meta, vocab, disable, exclude, config)[0m
-[1;32m    386[0m         [0mmeta[0m [0;34m=[0m [0mget_model_meta[0m[0;34m([0m[0mmodel_path[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[1;32m    387[0m     [0mconfig_path[0m [0;34m=[0m [0mmodel_path[0m [0;34m/[0m [0;34m"config.cfg"[0m[0;34m[0m[0;34m[0m[0m
-[0;32m--> 388[0;31m     [0mconfig[0m [0;34m=[0m [0mload_config[0m[0;34m([0m[0mconfig_path[0m[0;34m,[0m [0moverrides[0m[0;34m=[0m[0mdict_to_dot[0m[0;34m([0m[0mconfig[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m    389[0m     [0mnlp[0m [0;34m=[0m [0mload_model_from_config[0m[0;34m([0m[0mconfig[0m[0;34m,[0m [0mvocab[0m[0;34m=[0m[0mvocab[0m[0;34m,[0m [0mdisable[0m[0;34m=[0m[0mdisable[0m[0;34m,[0m [0mexclude[0m[0;34m=[0m[0mexclude[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[1;32m    390[0m     [0;32mreturn[0m [0mnlp[0m[0;34m.[0m[0mfrom_disk[0m[0;34m([0m[0mmodel_path[0m[0;34m,[0m [0mexclude[0m[0;34m=[0m[0mexclude[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-
-[0;32m/opt/anaconda3/lib/python3.8/site-packages/spacy/util.py[0m in [0;36mload_config[0;34m(path, overrides, interpolate)[0m
-[1;32m    543[0m     [0;32melse[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
-[1;32m    544[0m         [0;32mif[0m [0;32mnot[0m [0mconfig_path[0m [0;32mor[0m [0;32mnot[0m [0mconfig_path[0m[0;34m.[0m[0mexists[0m[0;34m([0m[0;34m)[0m [0;32mor[0m [0;32mnot[0m [0mconfig_path[0m[0;34m.[0m[0mis_file[0m[0;34m([0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
-[0;32m--> 545[0;31m             [0;32mraise[0m [0mIOError[0m[0;34m([0m[0mErrors[0m[0;34m.[0m[0mE053[0m[0;34m.[0m[0mformat[0m[0;34m([0m[0mpath[0m[0;34m=[0m[0mconfig_path[0m[0;34m,[0m [0mname[0m[0;34m=[0m[0;34m"config.cfg"[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m    546[0m         return config.from_disk(
-[1;32m    547[0m             [0mconfig_path[0m[0;34m,[0m [0moverrides[0m[0;34m=[0m[0moverrides[0m[0;34m,[0m [0minterpolate[0m[0;34m=[0m[0minterpolate[0m[0;34m[0m[0;34m[0m[0m
-
-[0;31mOSError[0m: [E053] Could not read config.cfg from /opt/anaconda3/lib/python3.8/site-packages/fr_core_news_sm/fr_core_news_sm-2.2.0/config.cfg
-OSError: [E053] Could not read config.cfg from /opt/anaconda3/lib/python3.8/site-packages/fr_core_news_sm/fr_core_news_sm-2.2.0/config.cfg
+  File "/Users/qad/anaconda3/lib/python3.8/site-packages/nbclient/client.py", line 841, in async_execute_cell
+    exec_reply = await self.task_poll_for_reply
+  File "/Users/qad/anaconda3/lib/python3.8/site-packages/nbclient/client.py", line 646, in _async_poll_for_reply
+    await self._async_handle_timeout(timeout, cell)
+  File "/Users/qad/anaconda3/lib/python3.8/site-packages/nbclient/client.py", line 696, in _async_handle_timeout
+    raise CellTimeoutError.error_from_timeout_and_cell(
+nbclient.exceptions.CellTimeoutError: A cell timed out while it was being executed, after 30 seconds.
+The message was: Cell execution timed out.
+Here is a preview of the cell contents:
+-------------------
+['#Sort all the files in the directory you specified above, alphabetically.', '#For each of those files...', 'for filename in sorted(os.listdir(filedirectory)):', "    #If the filename ends with .txt (i.e. if it's actually a text files)", "    if filename.endswith('.txt'):"]
+...
+['                        print(ent.text, ent.label_)', '                        #Write the entity to the output file', '                        out.write(ent.text)', '                        #Write a newline character to the output file', "                        out.write('\\n')"]
+-------------------
 

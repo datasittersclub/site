@@ -1,0 +1,1468 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heather Likes Principal Component Analysis &#8212; Data-Sitters Club</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/style.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="DSC Multilingual Mystery #1: Lee and the Missing metadata" href="dscm1.html" />
+    <link rel="prev" title="The Ghost in Anouk’s Laptop" href="dsc9.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/DSClogo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Data-Sitters Club</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <p class="caption">
+ <span class="caption-text">
+  About
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter-2.html">
+   About the DSC
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="books.html">
+   DSC Books
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Main series
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc1.html">
+   DSC 1: Quinn's Great Idea
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc2.html">
+   DSC 2: Katia and the Phantom Corpus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc3.html">
+   DSC 3: The Truth About DH Collaboration (and Textual Variants!)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc4.html">
+   DSC 4: AntConc Saves the Day
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc5.html">
+   DSC 5: The DSC and the Impossible TEI Quandaries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc6.html">
+   DSC 6: Voyant's Big Day
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc7.html">
+   DSC 7: The DSC and Mean Copyright Law
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc8.html">
+   DSC 8: Text-Comparison-Algorithm-Crazy Quinn
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc9.html">
+   DSC 9: The Ghost in Anouk's Laptop
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   DSC 10: Heather Loves PCA
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Multilingual mysteries
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm1.html">
+   DSCM 1: Lee and the Missing Metadata
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm2.html">
+   DSCM 2: Beware, Lee and Quinn!
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm3.html">
+   DSCM 3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Fun
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="covid19.html">
+   Important Public Health Messages from the Data-Sitters Club about COVID-19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dhawards2019.html">
+   DH Awards 2019 Ad Campaign
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/dsc10.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/dsc10.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quinn">
+   Quinn
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#meet-heather">
+     Meet Heather
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#katia">
+   Katia
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Heather Likes Principal Component Analysis
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pca-for-pets">
+     PCA for Pets
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#counting-language">
+     Counting Language
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#counting-claudia-kishis-snacks">
+     Counting Claudia Kishi’s Snacks
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interpreting-typicality">
+     Interpreting Typicality
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pca-across-series">
+     PCA Across Series
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Quinn
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-high-level-look-at-typicality">
+     A High-Level Look at Typicality
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#extracting-all-nouns">
+       Extracting All Nouns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#what-typicality-does">
+       What Typicality Does
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#fitting-an-r-shaped-peg-into-a-jupyter-shaped-hole">
+       Fitting an R-shaped Peg into a Jupyter-shaped Hole
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#running-typicality">
+     Running Typicality
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mark-s-special-cleaning-code">
+       Mark’s Special Cleaning Code
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-typicality-function">
+       The Typicality function
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Running Typicality
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visualizing-the-typicality-output">
+     Visualizing the Typicality Output
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#making-sense-of-features">
+     Making Sense of Features
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   Katia
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#finding-the-closest-points-to-0-0">
+     Finding the Closest Points to 0,0
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   Quinn
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mark-and-biplots-save-the-day">
+     Mark and Biplots Save the Day
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#biplot-time">
+     Biplot time
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interpretation-help-from-tf-idf">
+     Interpretation Help from TF-IDF
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id7">
+   Katia
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#acknowledgements">
+   Acknowledgements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#suggested-citation">
+   Suggested citation
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><img alt="DSC logo" src="_images/DSCLogo.png" /></p>
+<div class="section" id="heather-likes-principal-component-analysis">
+<h1>Heather Likes Principal Component Analysis<a class="headerlink" href="#heather-likes-principal-component-analysis" title="Permalink to this headline">¶</a></h1>
+<div style='float: right; width: 200px;margin-left: 7px;margin-top: 0px;'>
+<img src='_static/images/bookcovers/dsc10_cover.jpg' alt='DSC 10 book cover' />
+</div>
+<p>by Mark Algee-Hewitt, Katherine Bowers, Quinn Dombrowski, and Heather Froehlich</p>
+<p>July 20, 2021</p>
+<div class="section" id="quinn">
+<h2>Quinn<a class="headerlink" href="#quinn" title="Permalink to this headline">¶</a></h2>
+<p>Have you ever been to one of those DH talks that involved dazzling graphs, showing some aspect of literature at a scale way bigger than you can imagine, and thought to yourself, “Wow… I wonder <em>how they did that</em>?” These slides usually whiz by at a brisk clip, appearing just long enough for you to marvel at the nicely-clustered bunches of colorful dots with a brief explanation from the speaker, before moving on to the next thing. I don’t think there’s some kind of conspiracy afoot here – like most DH work, there’s just <em>so much</em> you want to share, especially with a DH-friendly audience, and only so much you can pack into 20 or even 40 minutes. But one side effect of the quick pace of these talks is that they rarely stay on one colorful visualization long enough for the sense of unease to sink in. There are some visualizations that the audience knows how to read. Comparing the number of occurrences for different character names? Yup, no problem, that’s the stuff of first grade math.</p>
+<img alt="A DH bar chart with character names vs an excerpt from a 1st grade math worksheet" src="_images/dsc10_barchart.png" />
+<p>But how do you grapple with something like this?</p>
+<img alt="A slide from Mark Algee-Hewitt with a PCA graph" src="_images/dsc10_mark_typicality.png" />
+<p>This was a slide from a talk that Associate Data-Sitter Mark Algee-Hewitt gave at <em>DARIAH Beyond Europe</em>, a conference at Stanford a few weeks before I started working there in fall 2018. He was speaking about a project in the Stanford Literary Lab called “Typicality”, or “Typicality as Mean”. This chart shows American fiction– specifically, the Gale American Fiction corpus. My fellow Data-Sitter Roopsi critiqued that corpus in our recent LitLab talk, on account of all the American fiction that gets left out – significantly, non-English fiction and fiction by people who were not white men with access to mainstream commercial publishing channels. Anyhow, with those caveats in place, it takes this corpus of (a subset of) American fiction and looks for the “most average” one – the one that is closest to the middle. Not one off in the romance cluster, not one over by the mysteries. Just… totally average for this corpus, or as close to it as you can get.</p>
+<p>That book, by the way, is “The Dragon’s Daughter” by Clyde C. Westover. In his talk, Mark noted that he’s probably one of the only people to have read it all the way through in the last 50 years – which immediately prompted me to download it from Project Gutenberg and attempt the slog myself. But boy, is it ever a slog. A hackneyed plot, liberally sprinkled with jaw-dropping racism, applied to everyone from an Irish policeman to the protagonists who are implicated in the Chinese mafia of San Francisco. I gave up halfway through, so I guess Mark can legitimately keep saying he’s the only one who’s read it. (In Russian there’s a handy set of verbal prefixes you can use to differentiate “read some of” and “read all the way to the end”. I miss having those in English.)</p>
+<p>But even as I’ve tried to put “The Dragon’s Daughter” out of my mind, I haven’t forgotten about that visualization. I wanted to understand what he did to make it – and even more importantly, I wanted to <em>actually</em> understand how to read it, beyond smiling and nodding along with the explanation.</p>
+<p>One of the cool things about the Data-Sitters Club being part of the LitLab is that it makes it easy to build on work that’s been done for other projects. (And all the other Lab members have been super nice about answering my questions and helping me wrangle their code.) The Typicality code is Mark’s, and Mark primarily works in R. I don’t know how to explain this to a monolingual English speaker, but dealing with R code when you’re … let’s call it an “intermediate” Python user is kind of like trying to read Italian with high-school Spanish. (Or, if I’m having a bad day, like trying to read <em>Romanian</em> with high-school Spanish.) Most of the high-level structure of the language is comparable, and a lot of the roots are recognizable, but I wouldn’t claim it’s something I’m exactly comfortable doing.</p>
+<p>On one hand, it would make sense to show you the Typicality code next, then talk about how to interpret it. On the other hand, the Typicality code is going to make a lot more sense after we talk, conceptually, about what it’s doing. (Trust me on this, as someone who ran the Typicality code blindly for a while before understanding it.) So for the moment, let’s just say I ran some code and visualized the output and it looked something like Mark’s all-the-dots viz, but with the Baby-Sitters Club books. All we needed was someone to help interpret it. And I knew just the person.</p>
+<div class="section" id="meet-heather">
+<h3>Meet Heather<a class="headerlink" href="#meet-heather" title="Permalink to this headline">¶</a></h3>
+<p>Heather Froehlich (Penn State University) has wavy-curly red hair and a more-than-passing similarity in style to the famed missing Waldo. She has an affinity for stripes, and like the Baby-Sitters Club members spent her tween years in New England. She spends a lot of time pondering computers and how they understand language. She spends even more time thinking about what people’s brains can do with the resulting data, because as she will be the first to tell you, “computers are dumb boxes of plastic and metal”. In her position as Literary Informatics Librarian at Penn State University, she has the opportunity to consult with a range of scholars in diffuse fields about all the ways people can work smartly with the data computers give us and how to get them to give it to us. She loves a good corpus.</p>
+<p>Heather is the author of such DH hits as “<a class="reference external" href="https://hfroehli.ch/2019/09/27/moby-dick-is-about-whales-or-why-should-we-count-words/">Moby Dick is About Whales, or Why Should We Count Words?</a>”, as well as the Programming Historian tutorial on <a class="reference external" href="https://programminghistorian.org/en/lessons/corpus-analysis-with-antconc">Corpus Analysis with AntConc</a>, which Anouk referenced in <a class="reference external" href="https://datasittersclub.github.io/site/dsc4.html">DSC #4: AntConc Saves the Day</a>. Heather likes math – and even better, she likes explaining how various computational methods actually work, and was kind enough to give me and Katia a crash course on PCA.</p>
+</div>
+</div>
+<div class="section" id="katia">
+<h2>Katia<a class="headerlink" href="#katia" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Heather Likes Principal Component Analysis<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>It was March 2021 when we spoke with Heather. We were both in the busy part of the term, and overwhelmed with Zooms, but it was enjoyable to spend a couple of hours with Heather and her spreadsheets. And oh were there spreadsheets! But more on that in a bit.</p>
+<p>As usual, Quinn was overwhelmed with enthusiasm for the topic at hand, and it took some effort to pause for introductions first. (You, too, can pause for introductions by checking out the <a class="reference external" href="https://datasittersclub.github.io/site/chapter-2">Data-Sitters Club Chapter 2 page</a>.) Quinn and Heather knew each other, but Heather and I didn’t, so introductions were needed!</p>
+<p>“Okay, so my name is Katia and I’m an Associate Professor of Slavic Studies at the University of British Columbia, and I work on 19th-century Russian lit. My research expertise is in genre and narrative theory.” I explained. “Also, I am fascinated by the Baby-Sitters Club books, which was true when I was eight and apparently it’s still true, and I’ve read a lot of them. I’m relatively new to DH, and so I usually have a lot of questions about how we do things.”</p>
+<p>“What I really do is, I’ve worked on a lot of projects, including a very big project called Visualizing English Print (1472-1700) where we did a lot of work using Principal Component Analysis as a way to kind of get into texts as a process,” said Heather. “I’ve spent a lot of time working both with computer scientists and people like Katia who are close enough to DH to be, like, ‘We have maybe heard of these things.’ As for myself, my background is in corpus linguistics– language and sort of stylistics as a whole– and I’m really interested in language variation and change as the sort of underlying feature of all this.”</p>
+<p>Not unlike Stacey McGill, Heather really does love math and, in the absence of a whiteboard and shared space, she sent us searching for our own pen and paper so we could draw some graphs of our own. Old school style.</p>
+<p>“So we’re first going to talk a little bit about what the graph is and what we’re doing with these graphs. Then, we’ll cover what PCA is and how it works, what we’re thinking when we talk about PCA which might be a better version of the same idea as graphs. Then we’ll dive into a couple of these examples as a way to kind of get thinking about the relationship between different texts.”</p>
+<p>Quinn and I nodded, pens at the ready.</p>
+<p>First, Heather had us draw a giant plus-sign in the middle of our paper.</p>
+<img alt="A piece of paper with a giant plus sign." src="_images/dsc10_plussign.jpg" />
+<p>“This is a graph,” Heather reminded us. “We learned about this in grade school and then promptly forgot about it as quickly as possible because we hated it.” Quinn nodded enthusiastically.</p>
+<p>“We’re going to call each of these little sections a quadrant. So, we are familiar with some of these and…” Heather wrestled with the pen, her laptop webcam, and Zoom lighting. “This is why God invented whiteboards…” she muttered.</p>
+<p>“Okay, so if you can do me a favor, and on your papers follow this labeling system: so you say, 2-1-3-4.” Heather held up her paper.</p>
+<img alt="A piece of paper with a giant plus sign and quadrant labels." src="_images/dsc10_quadrantlabels.jpg" />
+<p>“And you may be going, ‘That’s wrong, this should be 1234,’” Heather suggested, but I knew better.</p>
+<p>“No, yes. I actually started a computer science degree in undergrad,” I chimed in, impressed with myself for remembering something from such a long time ago in the misty past. Most of the things I learned during those three semesters have entirely been replaced by Russian grammar.</p>
+<p>Heather smiled. “Okay, good, you guys actually remember something from math class. Not everyone does, so that is going to help us today.”</p>
+<p>“Um, math class did not go well for me, so I will be the person who’s confused now,” admitted Quinn.</p>
+<p>“Okay,” Heather revised. “So this is the X-axis, this is the Y-axis, and you can label those accordingly on your own pieces of paper.”</p>
+<img alt="A piece of paper with a giant plus sign and quadrant labels and x and y axes labeled." src="_images/dsc10_xyaxes.jpg" />
+<p>“So usually, when we talk about graphs, one of the first blockers is that often all we see is where the X-axis and the Y-axis intersect on a graph. But if we keep drawing these lines, when the Y-axis goes further down, that shows that there’s a negative element to this graph. The ones on the bottom are all negative, the ones on the top are all positive, and this little dot right here in the middle is zero, where the two lines cross.”</p>
+<img alt="A piece of paper with a giant plus sign and quadrant labels and x and y axes labeled and 0,0 labeled." src="_images/dsc10_zero.jpg" />
+<p>“It’s more rare, but you might find that you have negative things on the X-axis too, on the left, though most graphs you encounter in the world tend to be on the positive side of things. Thinking about this as a larger whole requires thinking about the relationship between each of these boxes with the other boxes,” explained Heather. “We’re going to be talking about this as a <em>whole space</em>, as opposed to just the one space with only positive numbers that we’re most used to seeing on graphs.”</p>
+<p>Heather went around each quadrant of the graph, jotting down whether each axis was positive or negative.</p>
+<img alt="A piece of paper with a giant plus sign and quadrant labels and x and y axes labeled and 0,0 labeled." src="_images/dsc10_posneg.jpg" />
+<p>“Graphing generally is trying to find relationships between multiple points of stuff,” said Heather, before pausing to reconsider. “Well, my computer scientists are going to tell me something else, but most people commonly look at relationships between different kinds of stuff in graph spaces. Principal component analysis, or PCA, is a way of taking lots of data and condensing it into something that is more human readable.”</p>
+</div>
+<div class="section" id="pca-for-pets">
+<h3>PCA for Pets<a class="headerlink" href="#pca-for-pets" title="Permalink to this headline">¶</a></h3>
+<p>The graphs that immediately leapt to all of our minds were COVID-related, those charts of daily positive tests, hospitalizations, deaths that had dominated the news and social media. But learning PCA using people’s suffering and death didn’t feel right for the Data-Sitters Club. So instead, let’s talk pets. In <em>BSC #22: Jessi Ramsey, Pet-Sitter</em>, the Mancusi family has a ridiculous number of pets:</p>
+<ul class="simple">
+<li><p>Cheryl - Great Dane</p></li>
+<li><p>Jacques - Golden Retriever</p></li>
+<li><p>Pooh Bear - poodle who eats low-cal chow</p></li>
+<li><p>Powder - kitten</p></li>
+<li><p>Crosby - orange-striped cat</p></li>
+<li><p>Ling-ling - Siamese cat</p></li>
+<li><p>Tom - gray cat</p></li>
+<li><p>Rosie - cat</p></li>
+<li><p>Lucy - Guinea Pig</p></li>
+<li><p>Ricky - Guinea Pig</p></li>
+<li><p>Fluffer-Nut - rabbit</p></li>
+<li><p>Cindy - rabbit</p></li>
+<li><p>Toto - rabbit</p></li>
+<li><p>Robert - rabbit</p></li>
+<li><p>Snicklefritz - hamster</p></li>
+<li><p>Frank - bird</p></li>
+<li><p>Annabelle - parrot</p></li>
+<li><p>Barney - Snake</p></li>
+<li><p>Various turtles and fish</p></li>
+</ul>
+<p>Let’s imagine that the Mancusis are also eccentric data scientists, and instead of just telling Jessi what she’s in for with pet-sitting for them, they give Jessi a spreadsheet with data about the pets. If they only give her one parameter, like weight, she might consider graphing it.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Pet</strong></p></th>
+<th class="head"><p><strong>Weight</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Cheryl</p></td>
+<td><p>105 lbs</p></td>
+</tr>
+<tr class="row-odd"><td><p>Jacques</p></td>
+<td><p>70 lbs</p></td>
+</tr>
+<tr class="row-even"><td><p>Pooh Bear</p></td>
+<td><p>50 lbs</p></td>
+</tr>
+<tr class="row-odd"><td><p>Powder</p></td>
+<td><p>1.5 lbs</p></td>
+</tr>
+<tr class="row-even"><td><p>Crosby</p></td>
+<td><p>15 lbs</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ling-ling</p></td>
+<td><p>5 lbs</p></td>
+</tr>
+<tr class="row-even"><td><p>Tom</p></td>
+<td><p>18 lbs</p></td>
+</tr>
+<tr class="row-odd"><td><p>Rosie</p></td>
+<td><p>12 lbs</p></td>
+</tr>
+<tr class="row-even"><td><p>Lucy</p></td>
+<td><p>1.8 lbs</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ricky</p></td>
+<td><p>2.1 lbs</p></td>
+</tr>
+<tr class="row-even"><td><p>Fluffer-Nutter</p></td>
+<td><p>2.6 lbs</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cindy</p></td>
+<td><p>6 lbs</p></td>
+</tr>
+<tr class="row-even"><td><p>Toto</p></td>
+<td><p>5.7 lbs</p></td>
+</tr>
+<tr class="row-odd"><td><p>Robert</p></td>
+<td><p>6.2 lbs</p></td>
+</tr>
+<tr class="row-even"><td><p>Snickelfritz</p></td>
+<td><p>.13 lbs</p></td>
+</tr>
+<tr class="row-odd"><td><p>Frank</p></td>
+<td><p>.09 lbs</p></td>
+</tr>
+<tr class="row-even"><td><p>Anabelle</p></td>
+<td><p>.6 lbs</p></td>
+</tr>
+<tr class="row-odd"><td><p>Barney</p></td>
+<td><p>0.3 lbs</p></td>
+</tr>
+<tr class="row-even"><td><p>Unnamed Turtle 1</p></td>
+<td><p>3 lbs</p></td>
+</tr>
+<tr class="row-odd"><td><p>Unnamed Turtle 2</p></td>
+<td><p>3.7 lbs</p></td>
+</tr>
+<tr class="row-even"><td><p>Unnamed Fish 1</p></td>
+<td><p>.5 lbs</p></td>
+</tr>
+<tr class="row-odd"><td><p>Unnamed Fish 2</p></td>
+<td><p>.17 lbs</p></td>
+</tr>
+<tr class="row-even"><td><p>Unnamed Fish 3</p></td>
+<td><p>.19 lbs</p></td>
+</tr>
+<tr class="row-odd"><td><p>Unnamed Fish 4</p></td>
+<td><p>.3 lbs</p></td>
+</tr>
+<tr class="row-even"><td><p>Unnamed Fish 5</p></td>
+<td><p>.21 lbs</p></td>
+</tr>
+</tbody>
+</table>
+<p>In addition to weight, imagine all the other data you could assemble on your pets! Length, number of teeth, number of legs, number of claws, number of scales, approximate number of hairs, how loud the pet is. You might be wondering, “Why are we ignoring the elephant in the room and not using something like ‘species’ or ‘color’?” (Thankfully, the Mancusi menagerie does not include an actual elephant.) PCA works with <em>continuous</em> data, and it’s not intended for data that codes categories with 1’s and 0’s (e.g. if there were a “dog” column), or other arbitrary marks intended to designate categories (e.g. if there were a “species” column where 1 = “dog”, 2 = “cat”, etc.)<a class="footnote-reference brackets" href="#id8" id="id2">1</a></p>
+<p>Jessi might try a bar graph on the pets’ weight to get a sense of what she’s dealing with, and if she has weight + length, she might try a line graph. But once we start throwing in teeth and legs and hairs and average decibels, it’s more than Jessi can possibly keep in her head, and the usual graphing software wouldn’t be much happier about it than she is. That said, there is some relationship between all those different traits: longer animals tend to have more hairs (unless they don’t have any). Heavier animals tend to be louder (except for the annoying parakeet). If Jessi were to take the spreadsheet and use PCA on it, odds are that the pets of the same species would cluster together in the resulting chart – but <strong>not</strong> because PCA somehow “guessed” the species. PCA takes all the data and creates <strong>new</strong> parameters – called principal components – that by themselves are uninterpretable numbers, but in their relationship to one another, they capture something meaningful about the relationships between points of the original data.</p>
+<p>“I’m going to say, roughly over 6 variables is going to get complicated,” said Heather. “And it depends on what the data looks like, but in general PCA is used for lots of data that intersects in ways that are somewhat meaningful together, like the physical properties of pets or… words in a book.”</p>
+<p>Suddenly, we were back to books and word counts.</p>
+</div>
+<div class="section" id="counting-language">
+<h3>Counting Language<a class="headerlink" href="#counting-language" title="Permalink to this headline">¶</a></h3>
+<p>“Books, as a whole, have lots of words in them. We’re all comfortable with that idea, yes?” asked Heather. Quinn and I nodded, sure that someone in DH would find something to object to there, but we’d already <a class="reference external" href="https://datasittersclub.github.io/site/dsc8.html#counting-words">counted the number of words in our Baby-Sitters Club corpus in DSC #8</a>, and it seemed fair to say it was a lot.</p>
+<p>“Books that are written in various styles and formats, they all have lots of words in them, and you can trace them in lots of different ways, right?” Heather continued. “When we think about categories for counting words, there are lots of ways to do it, like only counting words from a certain part of speech. Or, with certain languages, you could get very specific about the different kinds of words you want to count.”</p>
+<p>“Like perfective vs. imperfective verbs in Slavic!” I offered.</p>
+<p>“Sure!” said Heather. “You guys are language people, and you’re used to thinking about things like categories, so I won’t belabor the point! But it doesn’t just have to be grammatical categories! This kind of quantitative approach can look very daunting.”</p>
+<p>To illustrate her point, she opened a <a class="reference external" href="https://graphics.cs.wisc.edu/WP/vep/vep-early-modern-drama-collection/">ginormous spreadsheet</a>, which she affectionately called her SPREADSHEET OF DOOM, explaining, “This is all of the plays in Early English Books Online, 1472-1700. There are 544 of them, and the spreadsheet has categories that are designed to kind of cover different <strong>kinds</strong> of words. Not, like, parts of speech, but more semantic. Things like abstract words, acknowledgement, anger, apology…”</p>
+<p>Her columns scrolled on and on, a blur of numbers. Quinn squinted at the screen, puzzled. “So, how did you get those categories?”</p>
+<p>“These are a bunch of categories related to how language functions, using string matching for individual words we’ve grouped into these categories. So things like ‘sorry’, or ‘I apologize’ for the apology category. Not super relevant to what you’re doing right now with PCA, but you can <a class="reference external" href="https://vep.cs.wisc.edu/ubiq/">try it out online if you’d like</a>. The point, though, is that this is, like, <em>way too much information</em> to make sense of, right? Like, our puny human mind sucks at this.”</p>
+<img alt="Quinn, Katia, and Heather looking at the giant spreadsheet of doom." src="_images/dsc10_spreadsheet_screenshot.jpg" />
+<p>“Like, if we were to think about this, this is a way of almost vectorizing language, right? You’ve already written a <a class="reference external" href="https://datasittersclub.github.io/site/dsc8.html#what-do-we-compare-when-we-compare-texts">DSC book that talks about vectorization (DSC #8)</a>, and what this is doing is grouping word frequencies for the different categories you’re seeing here. Now if you could keep this all in your mind, you could use this kind of number system to say, ‘okay, what percentage of each book is made up of nouns, verbs, or adjectives, or semantic categories like apology or anger?’ But the thing is, at this scale, this is <em>way the f*** too much information</em>!” Heather threw her hands up at the impossibility. “Trying to calculate it all goes off the paper, somewhere outside my window, past the snow, and sleet, and hail, and everything else that’s going on out there – <em>This. Is. A. Lot.</em>” Heather took a deep breath. “It’s too complicated to keep track of all these individual pieces and the relationships between variables. So PCA is there to help us make sense of all this data at a scale we can handle.”</p>
+<p>No objections from us! So we scaled things back.</p>
+</div>
+<div class="section" id="counting-claudia-kishis-snacks">
+<h3>Counting Claudia Kishi’s Snacks<a class="headerlink" href="#counting-claudia-kishis-snacks" title="Permalink to this headline">¶</a></h3>
+<p>“I want you to draw 5 columns on your paper for me,” said Heather. “And label them BSC #1-#5. And our rows will be red, yellow, brown, and black. We’re going to make up some percentages for the colors of Claudia Kishi’s snacks mentioned in the books.”</p>
+<p>“How much space should we put between the columns?” I asked, and we held our pieces of paper up to Zoom to try to come up with roughly-comparable tables.</p>
+<p>We worked out a table, laughing and flinging random percentages into our hand-written cells, trying to ensure our entirely-fictional numbers didn’t add up to something so big that it would exclude the possibility of other categories, like orange Doritos or green M&amp;Ms.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Snack color</p></th>
+<th class="head"><p>BSC 1</p></th>
+<th class="head"><p>BSC 2</p></th>
+<th class="head"><p>BSC 3</p></th>
+<th class="head"><p>BSC 4</p></th>
+<th class="head"><p>BSC5</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>red</p></td>
+<td><p>10%</p></td>
+<td><p>35%</p></td>
+<td><p>15%</p></td>
+<td><p>17%</p></td>
+<td><p>20%</p></td>
+</tr>
+<tr class="row-odd"><td><p>yellow</p></td>
+<td><p>50%</p></td>
+<td><p>30%</p></td>
+<td><p>20%</p></td>
+<td><p>25%</p></td>
+<td><p>27%</p></td>
+</tr>
+<tr class="row-even"><td><p>brown</p></td>
+<td><p>20%</p></td>
+<td><p>10%</p></td>
+<td><p>30%</p></td>
+<td><p>35%</p></td>
+<td><p>24%</p></td>
+</tr>
+<tr class="row-odd"><td><p>black</p></td>
+<td><p>10%</p></td>
+<td><p>20%</p></td>
+<td><p>15%</p></td>
+<td><p>10%</p></td>
+<td><p>10%</p></td>
+</tr>
+</tbody>
+</table>
+<p>“Okay, in our hypothetical version of what our spreadsheet is looking like, we’re beginning to see that relationships exist across these categories that are relevant to each individual item, yes?” said Heather. I nodded. “That giant spreadsheet I showed you before shows you what it looks like to aggregate your data at a scale that offers a ton of information. This one is a little bit more reasonable to kind of deal with, right? Like, we can kind of talk around this one in ways that feel more accessible. But, imagine that you were to do this for all – how many Baby-Sitters Club books? You have what, like 60?”</p>
+<p>“225 or so,” Quinn deadpanned.</p>
+<p>Heather blinked. “Yeah, if you did this with 225, you’d have numbers down to the floor. And that’s, again, too much to keep in your head. So let’s go back to this simpler table. So instead of plotting each of these things on a graph, what we want to do is <em>draw the line that covers the most amount of variation that covers this axis</em>.”</p>
+<p>She gestured towards the grid she had drawn earlier. “I know my hand is making this hard on Zoom. We want to use the X-axis to capture the most variation in the data. So we’re going to look at all the data in the table and condense it into something that is more human-friendly. What value for each book captures the most amount of variation across those books? 250 books x 4 dimensions – red, yellow, brown, black – isn’t so big for me to do in my head, but we want the end result to be set into two dimensions so we can graph it.”</p>
+<p>“With this Typicality code, there are like 1,000 dimensions because each of the overall most common nouns has a word-count for each book. How do you squish that into two dimensions?” asked Quinn.</p>
+<p>“So, crucially, we don’t work well in 1,000 dimensions, right? We struggle after, like, three dimensions most of the time. Even encountering four dimensions in college, it’s like, ‘I don’t know how to do this’. We as humans like to see things visually in two dimensions – sometimes we can handle three, but we do really well in two dimensions. So that’s what PCA’s trying to do,” explained Heather. “But to get there, we have to flatten the variation in our data a whole bunch. And this comes into play when you’re trying to interpret it.”</p>
+</div>
+<div class="section" id="interpreting-typicality">
+<h3>Interpreting Typicality<a class="headerlink" href="#interpreting-typicality" title="Permalink to this headline">¶</a></h3>
+<p>Heather pulled up the graph that Quinn had generated, running Mark’s Typicality code on the BSC corpus using the top 1,000 nouns.</p>
+<img alt="PCA of BSC books using top 1k nouns" src="_images/dsc10_bsc_nouns.png" />
+<p>“Everything in quadrant 1 is somehow related. Everything in quadrant 2 is also somehow related. Somewhere in the middle of the graph is (0,0) and this is the most ‘average’ BSC book. Hopefully these are color-coded in some sensible way…” We explained that turquoise was the main series. “Got it,” said Heather. “It looks like the turquoise x’s are distributed throughout all four quadrants, and so are the green asterisks – those are mysteries, right? But some of the other series cluster more clearly. What do you see with the distribution of the colors? Let’s start with orange – and use your quadrant names, please.”</p>
+<p>“Orange is almost entirely in quadrant one,” I said. “Red, too.”</p>
+<img alt="PCA of BSC books using top 1k nouns with orange and red highlighted" src="_images/dsc10_bsc_orangered.png" />
+<p>“Okay, what about brown?”</p>
+<p>“Mostly quadrant two, but a few are scattered elsewhere.”</p>
+<p>“There’s not a ton of yellows that I see,” Heather noted.</p>
+<p>“Yeah, there’s not many of those, they’re the ‘profile collection’, which is basically character autobiographies,” said Quinn.</p>
+<p>“So you see where I’m going with this?” asked Heather. “We can see that some of these things are clustered together, and when we think about the genres of these things it often makes sense that genre and series might be related.” Heather squinted at the diagram. “What’s ‘CD’, those orange ones?”</p>
+<p>“It’s the California Diaries, which was an edgier spin-off series with Dawn and her friends in California,” I explained.</p>
+<p>“Ahh, so it would make sense if those were unlike mysteries, which don’t go near that part of quadrant 1” noted Heather. “The other thing that’s really useful about these kinds of graphs and PCA as a whole is that it helps you think about some of these quadrants or spaces as diametrically opposed. So something that happens in quadrant 1 cannot be pulled by something happening in quadrant 3. What happens above the X-axis is typically lacking something that’s below it, or vice versa. And the other thing I want you to think about is not just on the X- and Y-axes, but also on the quadrant. So something that happens in quadrant one is unlikely to also be happening in quadrant three because those things are pulling in opposite directions,” explained Heather.</p>
+<p>“So the books in quadrant 3 keep the teen drama to a minimum,” Quinn laughed.</p>
+<p>“That makes sense!” I said, looking at the individual book titles.</p>
+<img alt="PCA of BSC books using top 1k nouns with Kristy and the Walking Disaster highlighted" src="_images/dsc10_walkingdisaster.png" />
+<p>“See how <em>BSC #20 Kristy and the Walking Disaster</em> is all the way over there? Both its plot and subplot revolve around taking care of kids. The main plot is about the kids’ softball team Kristy coaches and the subplot is about a new baby-sitting client whose son is very accident prone. Teen drama is at a minimum in this book!”</p>
+</div>
+<div class="section" id="pca-across-series">
+<h3>PCA Across Series<a class="headerlink" href="#pca-across-series" title="Permalink to this headline">¶</a></h3>
+<p>“Should we try another example?” asked Heather. “How about the series one, I saw that and it was fascinating!”</p>
+<p>Since late last summer, Quinn had been working on building a bigger corpus called YAMS (for Young Adult and Middle-School), of books we might use as a comparison with the Baby-Sitters Club. This was the first time we’d tried to use it for anything.</p>
+<img alt="PCA of series books using top 1k nouns" src="_images/dsc10_yams_nouns.png" />
+<p>“This PCA uses only the nouns, just like the BSC graph we were just looking at,” said Quinn.</p>
+<p>“Even though it’s not quite apples-to-apples, this is fascinating for several good reasons. Who wants to give me one?” asked Heather.</p>
+<p>“The books cluster together based on their series,” I said. “And the boy books and girl books mostly split on the Y axis… or maybe that’s a mystery/non-mystery split, and the BSC mysteries – in light green – are more BSC than mystery.”</p>
+<img alt="PCA of series books using top 1k nouns with BSC mysteries highlighted" src="_images/dsc10_yams_mysteries.png" />
+<p>“And check this out,” said Heather, pulling up another version of the PCA that Quinn had made using <strong>all</strong> the most frequent words – even the boring ones like ‘the’, ‘and’, and ‘a’ – and placing it to the right of the version we had been looking at.</p>
+<img alt="PCA of series books using top 1k nouns and top 1k total words" src="_images/dsc10_yams_2versions.png" />
+<p>“There’s this really <a class="reference external" href="https://litlab.stanford.edu/distributions-of-function-words/">nice piece from David McClure and the LitLab on style more generally</a>, which is that style can exist at the level of those small, boring words that we don’t tend to care about very often, but here they are fully driving the relationships,” said Heather. “When you just look at the nouns, Hardy Boys in red and Nancy Drew in pink completely overlap, and Boxcar Children is up in its own quadrant. But once you let in words that relate to the author signal, suddenly Nancy Drew separates out, and there’s overlap between the Hardy Boys and Boxcar Children. Maybe they had some of the same ghostwriters? Or there’s something else linking those series together beyond the subject? Like, if there’s a group of books where things unexpectedly turn green, you’re going to see that in the adjectives, and it could show up here.”</p>
+<p>“It’s funny,” said Quinn, “When people casually reference girls’ series in the 90’s, the Baby-Sitters Club and Sweet Valley often get mentioned together – and I remember them being in the same section of the library, and I read some of both. But both on the noun-level and the style-level, there really is something different going on. They’re mostly from different time periods, but there’s a lot more overlap between Sweet Valley and Gossip Girl. Only California Diaries even inches close to Sweet Valley.”</p>
+<img alt="PCA of series books with Sweet Valley and California Diaries highlighted" src="_images/dsc10_yams_cd_sweetvalley.png" />
+<p>“That makes sense to me,” I said, “because here we aren’t looking at Sweet Valley Twins (the series where the twins are in middle school that seems more like the BSC). SVT are the ones I remember being in the same section of the library. Here we’re looking at Sweet Valley High, the original series, and that one really is more like Gossip Girl and California Diaries. The girls in SVH and CD are older, they’re sometimes dealing with the same kind of edgier issues (like drug addiction, sex, etc.). The BSC books in the original series are focused on younger protagonists: middle schoolers. And their emphasis is different.”</p>
+<p>I was really impressed with what PCA could do with a large corpus like YAMS! I couldn’t wait to look at our BSC corpus in more depth using PCA.</p>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>Quinn<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>I had thoughts (and feelings!) after talking with Heather about PCA, but before I get into those, it’s finally time to look at how these visualizations come into being to begin with.</p>
+<div class="section" id="a-high-level-look-at-typicality">
+<h3>A High-Level Look at Typicality<a class="headerlink" href="#a-high-level-look-at-typicality" title="Permalink to this headline">¶</a></h3>
+<p>For the Typicality code to do what it’s supposed to do, it’s designed to take as its input all the <em>nouns</em> in a series of texts. Since I’m more comfortable working with Python, I used that to prepare the text by extracting all the nouns first. There are more recent and sophisticated natural language processing (NLP) packages that you can use to extract nouns, but it felt like overkill for this task, especially since we were just looking at English here. So I used the NLTK package.</p>
+<div class="section" id="extracting-all-nouns">
+<h4>Extracting All Nouns<a class="headerlink" href="#extracting-all-nouns" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#NLTK is the NLP package we&#39;re using</span>
+<span class="kn">import</span> <span class="nn">nltk</span>
+<span class="c1">#OS is for navigating directories on the computer</span>
+<span class="kn">import</span> <span class="nn">os</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Put in the full path to the directory with all your texts</span>
+<span class="c1">#On Mac it looks like what you see below</span>
+<span class="c1">#On Windows it looks more like &#39;C:\\Users\\YOUR-USER-NAME\\Documents&#39;</span>
+<span class="n">textdir</span> <span class="o">=</span> <span class="s1">&#39;/Users/qad/Documents/dsc_corpus_clean&#39;</span>
+<span class="c1">#Change directories to the one you specified</span>
+<span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">textdir</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#For each filename in the directory you listed...</span>
+<span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">textdir</span><span class="p">):</span>
+    <span class="c1">#If the filename ends with .txt...</span>
+    <span class="k">if</span> <span class="n">filename</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.txt&#39;</span><span class="p">):</span>
+        <span class="c1">#Create an output name that adds &#39;-nouns&#39; to the filename</span>
+        <span class="n">outname</span> <span class="o">=</span> <span class="n">filename</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;.txt&#39;</span><span class="p">,</span><span class="s1">&#39;-nouns.txt&#39;</span><span class="p">)</span>
+        <span class="c1">#Open the file</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="c1">#Open the output file</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">outname</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">out</span><span class="p">:</span>
+                <span class="c1">#Read the text from the file</span>
+                <span class="n">text</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+                <span class="c1">#Split the text into a list of sentences</span>
+                <span class="n">sentences</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">sent_tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+                <span class="c1">#For each sentence in the list of sentences...</span>
+                <span class="k">for</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="n">sentences</span><span class="p">:</span>
+                    <span class="c1">#For each word and each part-of-speech tag that you get</span>
+                    <span class="c1">#When NLTK tokenizes the sentence (splitting words from punctuation, etc.)</span>
+                    <span class="k">for</span> <span class="n">word</span><span class="p">,</span><span class="n">pos</span> <span class="ow">in</span> <span class="n">nltk</span><span class="o">.</span><span class="n">pos_tag</span><span class="p">(</span><span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">sentence</span><span class="p">))):</span>
+                        <span class="c1">#If the part-of-speech is noun</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="n">pos</span> <span class="o">==</span> <span class="s1">&#39;NN&#39;</span> <span class="ow">or</span> <span class="n">pos</span> <span class="o">==</span> <span class="s1">&#39;NNS&#39;</span><span class="p">):</span>
+                        <span class="c1">#You can sub in other parts of speech, too</span>
+                        <span class="c1">#Just comment out the noun code, and uncomment one of these</span>
+                        <span class="c1">#Adverbs</span>
+                        <span class="c1">#if (pos == &#39;RB&#39; or pos == &#39;RBR&#39; or pos == &#39;RBS&#39;):</span>
+                        <span class="c1">#Adjectives</span>
+                        <span class="c1">#if (pos == &#39;JJ&#39; or pos == &#39;JJR&#39; or pos == &#39;JJS&#39;):</span>
+                        <span class="c1">#Verbs</span>
+                        <span class="c1">#if (pos == &#39;VB&#39; or pos == &#39;VBD&#39; or pos == &#39;VBG&#39; or pos == &#39;VBN&#39; or pos == &#39;VBP&#39; or pos == &#39;VBZ&#39;):</span>
+                            <span class="c1">#Write the word (which should be a noun) to the output file</span>
+                            <span class="n">out</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+                            <span class="c1">#Write a space so the words don&#39;t smush together</span>
+                            <span class="n">out</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="what-typicality-does">
+<h4>What Typicality Does<a class="headerlink" href="#what-typicality-does" title="Permalink to this headline">¶</a></h4>
+<p>The Typicality code takes the most frequent nouns across all the texts, and then uses the frequencies of those nouns in each text to plot a location for that text in multi-dimensional space – meaning that if you go with the default of 1,000 nouns, you get coordinates for the text in 1,000-dimensional space. We’ve talked a little bit about <a class="reference external" href="https://datasittersclub.github.io/site/dsc8.html#what-do-we-compare-when-we-compare-texts">grappling with mega-dimensional space before in DSC #8</a> in the context of <em>vectorizing texts</em>, and that’s what we’re doing here, too: turning each text into a <em>vector</em> consisting of 1,000 coordinates based on the frequency of each of the top 1,000 nouns. But in DSC #8, we were measuring the distance between the vectors as one way of looking at text similarity. Here, we’re using PCA to generate principal component values for each of the texts, and then we’ll plot the first two principal components (which account for the greatest variation in the data) as the X- and Y-values in an easier-to-understand 2-dimensional space. You could make other choices about how to visualize the data, like graphing PC1 vs PC2 vs PC3 in 3-dimensional space (in case you want a graph that looks even more baffling to people who aren’t used to interpreting PCA visualizations)! There’s no single “right” next step once you have your PC values, though – it’s an interpretive decision, and PC1 on the X-axis and PC2 on the Y-axis is just something that people often go with. The interpretive spin on all this that Mark’s Typicality  approach offers is that the concept that the most “typical” text is the one that’s closest to (0,0) or the <em>center</em> of the grid: not too far up, not too far down. Not too far left, not too far right. Just… average.</p>
+</div>
+<div class="section" id="fitting-an-r-shaped-peg-into-a-jupyter-shaped-hole">
+<h4>Fitting an R-shaped Peg into a Jupyter-shaped Hole<a class="headerlink" href="#fitting-an-r-shaped-peg-into-a-jupyter-shaped-hole" title="Permalink to this headline">¶</a></h4>
+<p>You may have noticed that all the code we’ve used in the Data-Sitters Club to date has been Python. Or maybe you haven’t noticed, and that’s fine too! When you’re not familiar with coding, looking at any code is like when the TV closed captions just show something like <em>&gt;speaking quickly in a foreign language&lt;</em> instead of the actual words the person is saying in Spanish.</p>
+<p>If you’re interested in understanding more about PCA but don’t want to get into the code, feel free to skip ahead! If you’re curious about how to run code in R (maybe even alongside Python code), or the details of how the Typicality code works, read on!</p>
+<p>We ran into some problems displaying large code blocks and their outputs after <a class="reference external" href="https://datasittersclub.github.io/site/dsc8.html">DSC #8: Text-Comparison-Algorithm-Crazy Quinn</a>, and, inspired by Melanie Walsh’s <a class="reference external" href="https://melaniewalsh.github.io/Intro-Cultural-Analytics/welcome.html">Introduction to Cultural Analytics and Python</a> (an awesome resource if you want to learn Python by doing things that you might find interesting, rather than just printing stuff like “Hello World” and making inane lists of things), we switched the Data-Sitters Club website to something called <a class="reference external" href="https://jupyterbook.org/intro.html">Jupyter Book</a>. Jupyter Book lets you turn <a class="reference external" href="https://programminghistorian.org/en/lessons/jupyter-notebooks">Jupyter Notebooks</a> (which let you combine human-readable text and computer-readable code in a single document) into websites, and gives you nice features like sidebar navigation and such. (Ours is the only Jupyter Book in the <a class="reference external" href="https://executablebooks.org/en/latest/gallery.html">gallery of examples</a> that eschewed the default color scheme for something with a 90’s girl series vibe.)</p>
+<p>In theory you can write and run R code in Jupyter notebooks, but you have to do some additional configuration beyond what you get with the default installation of the Jupyter Notebook software. For starters, you need to <a class="reference external" href="https://cran.rstudio.com/">download and install R</a>. Then you probably should <a class="reference external" href="https://www.rstudio.com/products/rstudio/download/">download and install R Studio</a>, which gives you a graphical user interface for doing things like installing packages (add-on libraries). But you’re not done yet! From RStudio, you need to install the <a class="reference external" href="https://irkernel.github.io/installation/">IRkernel</a> package, and then open up a command line, type <code class="docutils literal notranslate"><span class="pre">R</span></code> and press enter to get to somewhere you can run R commands, then type  <code class="docutils literal notranslate"><span class="pre">IRkernel::installspec(user</span> <span class="pre">=</span> <span class="pre">FALSE)</span></code> and press enter which will let your Jupyter notebook environment know that an R kernel (a kernel lets you run code in a particular language) exists. Once you’ve done that, you should be able to create new Jupyter notebooks using the R kernel, which can make use of any of the packages that you’ve installed using R Studio.</p>
+<p>(I’ll confess, this didn’t work for me at all the first three times I tried it, which led to months of delay in writing this book because it reached the point where I’d open the draft, see ‘FIGURE OUT HOW TO MAKE R WORK IN JUPYTER NOTEBOOKS’ at the top, panic, and close the draft. What worked, in the end, was totally uninstalling both R and Jupyter Notebook from my laptop, reinstalling everything, and voila!)</p>
+<p>There is still one more catch, though: when you create a Jupyter notebook, you have to choose between a Python kernel and an R kernel. If you want to have a notebook that has both programming languages in it, the easiest solution I found was to use the <a class="reference external" href="https://rpy2.github.io/">rpy2</a> Python package, which lets you run R code cells in an otherwise-Python notebook as long as you prefix the R cell with <code class="docutils literal notranslate"><span class="pre">%%R</span></code>. (There’s a package for running Python in an otherwise-R notebook, <a class="reference external" href="https://rstudio.github.io/reticulate/">reticulate</a>, but it kept crashing the Jupyter kernel when I tried it.)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Imports the sys module in order to install a package in your Jupyter notebook</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="c1">#Installs rpy2 (you only need to do this the first time you run the notebook)</span>
+<span class="o">!{</span>sys.executable<span class="o">}</span> -m pip install rpy2
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Load the rpy2 extension so you can run R code</span>
+<span class="o">%</span><span class="k">load_ext</span> rpy2.ipython
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="running-typicality">
+<h3>Running Typicality<a class="headerlink" href="#running-typicality" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="mark-s-special-cleaning-code">
+<h4>Mark’s Special Cleaning Code<a class="headerlink" href="#mark-s-special-cleaning-code" title="Permalink to this headline">¶</a></h4>
+<p>Most text analysis people have their own routine when it comes to how to clean text. Especially when you’re doing something based on word counts, you want to make sure that the words you’re counting are actually consistently formatted! That means things like no capitalization (because the computer thinks ‘cat’ and ‘Cat’ are two different words), and getting rid of punctuation.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">R</span>
+#A function that takes a text chunk as an input
+cleanChunk &lt;- function(text.chunk){
+  #Removes tabs
+  text.chunk &lt;- paste(text.chunk, collapse=&quot; &quot;)
+  #Splits the text into individual characters
+  text.chunk &lt;- unlist(strsplit(text.chunk, &quot;&quot;))
+  #Makes all text lower-case
+  text.chunk &lt;- tolower(text.chunk)
+  #Throws out any character that isn&#39;t considered a letter by R
+  text.chunk &lt;- text.chunk[which(text.chunk %in% c(letters, &quot; &quot;))]
+  #Pastes the vector of individual letters back together to form one giant string
+  text.chunk &lt;- paste(text.chunk, collapse=&quot;&quot;)
+  #Splits everything based on spaces so we have a vector of words instead of letters
+  text.clean &lt;- unlist(strsplit(text.chunk, &quot; &quot;))
+  #Returns the clean text chunk
+  return(text.clean)
+}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="the-typicality-function">
+<h4>The Typicality function<a class="headerlink" href="#the-typicality-function" title="Permalink to this headline">¶</a></h4>
+<p>The Typicality code takes a directory with your corpus (plain text files, and only the plain text files you want it to analyze), a metadata table (the code for running this function, below, includes steps for creating a basic metadata table with filename and title), the number of most-frequent words you want it to use for its analysis, and a corpus name (to use for the output files).</p>
+<p>It then cleans all the text (using Mark’s special cleaning function, above), puts all the texts into a vector in order to identify the top words, then writes those to the top_terms_[your-corpus-name].csv file.</p>
+<p>It sets up a document-term matrix, which is just a big table where each row has the filename of one file, and the frequency of each of the most-frequent words in the columns. (Think something like what Heather had us create when we were <em>counting Claudia Kishi’s snacks</em>.) Then it calculates the first two principal components (PC1 and PC2) for each of your texts.</p>
+<p>And then, in an act of middle-school math, it calculates the mean and the median for PC1 and PC2, and writes these mean and median coordinates to an output CSV!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">R</span>
+#Sets up what the function expects as its inputs &amp; outputs
+corpusTypicality&lt;-function(corpus.dir, meta.data.file, output.dir, top.words = evaluated.words, corpus.name){
+  #Loads the text mining package
+  library(tm)
+  #Sets up a path for each file, with the corpus directory + filename
+  all.files&lt;-paste(corpus.dir, meta.data.file$Filename, sep=&quot;/&quot;)
+  #Extracts text from the text files
+  all.texts&lt;-lapply(all.files, function(x) scan(x, what=&quot;character&quot;, sep=&quot;\n&quot;, quiet=T))
+  #Pastes everything back together in a single string
+  all.texts&lt;-lapply(all.texts, function(x) paste(x, collapse=&quot; &quot;))
+  #Applies Mark&#39;s special cleaning function
+  all.texts&lt;-lapply(all.texts, function(x) cleanChunk(x))
+  #Pastes all texts back together in a single string
+  all.texts&lt;-lapply(all.texts, function(x) paste(x, collapse=&quot; &quot;))
+  #Returns a list, changing the text strings into a vector
+  all.texts&lt;-unlist(all.texts)
+  #Defines text.corpus as a vectorization of all the texts
+  text.corpus&lt;-Corpus(VectorSource(all.texts))
+  #Creates a document-term matrix from the vectorization
+  text.dtm&lt;-DocumentTermMatrix(text.corpus)
+  #Sets the document-term matrix as a matrix
+  text.dtm&lt;-as.matrix(text.dtm)
+  #Defines word frequency by sorting the words in order of occurrence
+  word.freqs&lt;-sort(colSums(text.dtm), decreasing=T)
+  #Defines top terms as being the # of terms that you specify when you run the code
+  #The &quot;starts.with&quot;, which you also specify when you run the code, lets you exclude the most-frequent terms
+  #This might be useful if you&#39;re using all words (e.g. not just nouns) and want to
+  #exclude the highest-frequency words that are mostly indicative of author signal (e.g. &#39;the&#39;, &#39;a&#39;, &#39;and&#39;)
+  top.terms&lt;-names(word.freqs[starts.with:top.words])
+  #Writes a CSV with the top terms that it&#39;s using for its analysis
+  write.csv(x = top.terms, file = paste(c(output.dir, &#39;/&#39;, &#39;top_terms_&#39;, corpus.name,&#39;.csv&#39;), collapse = &#39;&#39;))
+  #Converts word counts to frequencies, dividing by book length
+  #Otherwise, books would look different from one another just because of different length
+  dtm.scale&lt;-text.dtm/rowSums(text.dtm)
+  #Reshapes the document/term matrix to just columns with frequencies for the top words
+  dtm.mfw&lt;-dtm.scale[,which(colnames(dtm.scale) %in% top.terms)]
+  #Computes PCA coordinates using the words in the range you specified for analysis
+  pca.coords&lt;-prcomp(dtm.mfw)
+  #Specififes that the coordinates should be PC1 and PC2
+  pca.coords&lt;-pca.coords$x[,1:2]
+  #Names the columns in your output file
+  colnames(pca.coords)&lt;-c(&quot;PC1&quot;, &quot;PC2&quot;)
+  #Creates a dataframe (R spreadsheet) with the coordinates plus the info from the metadata file in the input
+  final.table&lt;-data.frame(pca.coords, meta.data.file)
+  #Calculates the mean X value
+  x.mean&lt;-mean(pca.coords[,1])
+  #Calculates the median X value
+  x.median&lt;-median(pca.coords[,1])
+  #Calculates the mean Y value
+  y.mean&lt;-mean(pca.coords[,2])
+  #Calculates the median Y value
+  y.median&lt;-median(pca.coords[,2])
+  #Creates 2 empty rows
+  empty.rows&lt;-matrix(rep(NA, (ncol(meta.data.file)*2)), nrow=2)
+  #Fills the empty rows with the x-mean and x-median
+  x.add&lt;-c(x.mean, x.median)
+  #Fills the empty rows with the y-mean and y-median
+  y.add&lt;-c(y.mean, y.median)
+  #Adds the rows with the calculated mean and median values to the final dataframe
+  add.table&lt;-data.frame(x.add, y.add, empty.rows)
+  colnames(add.table)&lt;-colnames(final.table)
+  final.table&lt;-rbind(final.table, add.table)
+  #Puts the value &#39;text&#39; for all your original text files in the final dataframe
+  type.vector&lt;-rep(&quot;text&quot;, nrow(final.table))
+  #Puts the values &#39;mean&#39; and &#39;median&#39; in the final dataframe for your calculated values
+  type.vector[c(length(type.vector)-1, length(type.vector))]&lt;-c(&quot;mean&quot;, &quot;median&quot;)
+  #Sets the final table to be a vector
+  final.table$Type&lt;-type.vector
+  #Defines the filename for the PCA output
+  out.filename&lt;-paste(corpus.name, &quot;_pca.csv&quot;, sep=&quot;&quot;)
+  #Defines the path for the PCA output
+  out.filename&lt;-paste(output.dir, out.filename, sep=&quot;/&quot;)
+  #Writes the final dataframe to your output file
+  write.csv(final.table, out.filename, row.names=F)
+}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id4">
+<h4>Running Typicality<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<p>The code cell below is what you use to actually run Typicality. You’ll need to edit it first your own data, as described here.</p>
+<p>(If you’ve <a class="reference external" href="https://github.com/datasittersclub/dsc10">downloaded the R script from this book’s GitHub repo</a> and open it in RStudio, you can run each line of code below, one at a time, in the R console, after setting the R script to be the ‘source’. Or if you’re using the Jupyter notebook, you should be able to just run the code cell below once you’ve installed the <code class="docutils literal notranslate"><span class="pre">tm</span></code> package in RStudio.)</p>
+<ul class="simple">
+<li><p>Set your working directory to the parent folder of the folder containing all your text files (and only your text files). In my case, this is the Documents folder.
+<code class="docutils literal notranslate"><span class="pre">setwd('~/Documents')</span></code></p></li>
+<li><p>List the filenames in your folder (which, remember, should only be your text files). My folder is named dsc_corpus_clean:
+<code class="docutils literal notranslate"><span class="pre">Filename&lt;-list.files('dsc_corpus_clean')</span></code></p></li>
+<li><p>Create titles for each text file by removing the ‘txt’:
+<code class="docutils literal notranslate"><span class="pre">Title&lt;-unlist(strsplit(Filename,</span> <span class="pre">&quot;.txt&quot;))</span></code></p></li>
+<li><p>Create a dataframe (which is like a spreadsheet in R) with the filenames and titles; you can call yours whatever you want, mine is called <code class="docutils literal notranslate"><span class="pre">dsc.meta</span></code>:
+<code class="docutils literal notranslate"><span class="pre">dsc.meta&lt;-data.frame(Filename,</span> <span class="pre">Title,</span> <span class="pre">stringsAsFactors</span> <span class="pre">=</span> <span class="pre">FALSE)</span></code></p></li>
+</ul>
+<p>Run the means.text function to calculate the mean along with the PCA values.</p>
+<ul class="simple">
+<li><p>The first thing in quotes should be the name of the folder with your text files</p></li>
+<li><p>The second thing is the name of the dataframe you just created</p></li>
+<li><p>The third thing is where the output CSVs will be created (‘.’ means “the current folder”, which in my case is the Documents folder)</p></li>
+<li><p>The fourth thing is the corpus name, which can be whatever you choose. I went with “dsc_corpus”
+<code class="docutils literal notranslate"><span class="pre">means.text&lt;-corpusTypicality(&quot;dsc_corpus_clean&quot;,</span> <span class="pre">dsc.meta,</span> <span class="pre">&quot;.&quot;,</span> <span class="pre">corpus.name=&quot;dsc_corpus&quot;)</span></code></p></li>
+</ul>
+<p>You’ll probably see multiple of these error messages, which just have something inconsequential to do with your text formatting, nothing problematic:
+<code class="docutils literal notranslate"><span class="pre">Warning</span> <span class="pre">message</span> <span class="pre">in</span> <span class="pre">scan(x,</span> <span class="pre">what</span> <span class="pre">=</span> <span class="pre">&quot;character&quot;,</span> <span class="pre">sep</span> <span class="pre">=</span> <span class="pre">&quot;/&quot;,</span> <span class="pre">quiet</span> <span class="pre">=</span> <span class="pre">T):</span> <span class="pre">“EOF</span> <span class="pre">within</span> <span class="pre">quoted</span> <span class="pre">string”</span></code></p>
+<p>With any luck, you’ll get two CSVs of results! (If you don’t, and you get an error about something unexpected being 0, double-check that there’s no stray non-text files in the folder with your text files.)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">R</span>
+#How many top words should it use?
+evaluated.words=1000
+#How many of the very most frequent words should it skip? To skip 0, starts.with = 1.
+#To skip 50, starts.with = 51
+starts.with=1
+#Put the path to the folder containing the folder with your texts here
+setwd(&#39;~/Documents&#39;)
+#Put the name of the folder with your texts here
+Filename&lt;-list.files(&#39;dsc_pca_all_words&#39;)
+#If you want to strip anything off the text filename for the title besides .txt you can change this
+Title&lt;-unlist(strsplit(Filename, &quot;.txt&quot;))
+#Creates the metadata table
+dsc.meta&lt;-data.frame(Filename, Title, stringsAsFactors = FALSE)
+#Runs the Typicality code
+means.text&lt;-corpusTypicality(&#39;dsc_pca_all_words&#39;, dsc.meta, &quot;.&quot;, corpus.name=&quot;dsc_pca_all_words&quot;)
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>R[write to console]: Loading required package: NLP
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="visualizing-the-typicality-output">
+<h3>Visualizing the Typicality Output<a class="headerlink" href="#visualizing-the-typicality-output" title="Permalink to this headline">¶</a></h3>
+<p>After running the Typicality code, you should now have two CSV files:</p>
+<ul class="simple">
+<li><p>Top_terms_[your-corpus-name].txt: a list of all the terms that Typicality used for its calculation; they’re listed in an arbitrary order, not in terms of frequency</p></li>
+<li><p>[your-corpus-name]_pca.csv: the file we use to generate these visualizations, which has the filename for each of the files it analyzed, the text title (generated by removing ‘.txt’ from the filename), the “type” (is it a text, or the calculated mean/median) and two numeric scores: PC1 and PC2.</p></li>
+</ul>
+<p>I manually edited the dsc_nouns_tsneplot.csv file to add a new column, Series, which had the sub-series info for all our books (e.g. whether they’re part of the main Baby-Sitters Club series, the Mysteries, the Super Specials, etc.)<br />
+Then, I started up the Tableau visualization software, which <a class="reference external" href="https://www.tableau.com/academic/students">students</a> and <a class="reference external" href="https://www.tableau.com/academic/teaching">teachers</a> can get for free. (Miriam Posner also has a <a class="reference external" href="http://miriamposner.com/classes/dh201w19/tutorials-guides/data-visualization/getting-started-with-tableau-public/">great tutorial for getting started with Tableau</a>.) After “connecting to data” – a fancy way to say “load the spreadsheet” – I could see the PCA CSV that the Typicality code generated.</p>
+<img alt="Loading data into Tableau" src="_images/dsc10_load_tableau.png" />
+<p>Then, I took it up on its suggestion to “Go to Worksheet”. I dragged PC1 from the left sidebar into the “Columns” section, and PC2 into the “Rows” section. Tableau tried to be helpful, and instead of giving me all the values from my spreadsheet as individual data points, it added them together and gave me a single dot. 🤦 I hovered over PC1 under “Columns”, clicked the down arrow, and in the dropdown changed it to Dimension.</p>
+<img alt="Setting the value to be a dimension in Tableau" src="_images/dsc10_tableau_dimension.png" />
+<p>This turned the graph until a wild squiggly line until I did the same for PC2, and Tableau finally displayed bunch of circles that look something like Mark’s graph of the Gale corpus:</p>
+<img alt="Successfully displaying dots in Tableau" src="_images/dsc10_tableau_dots.png" />
+<p>There were still a few more things to do.</p>
+<ul class="simple">
+<li><p>I dragged “Title” to the “Tooltip” button under “Marks” in the second toolbar to get labels on at least the points that aren’t too clustered together.</p></li>
+<li><p>I dragged “Series” to the “Color” button under “Marks” (Series was the column I added manually with information about what BSC sub-series each book belonged to, it’s not something the Typicality code can generate for you.)</p></li>
+<li><p>I also dragged “Series” to the “Shape” button under “Marks”. (This is because when there are two marks of the same shape that overlap with each other, one obscures the other. Having different shapes for different series makes it easier to see.)</p></li>
+</ul>
+<img alt="Final configuration in Tableau" src="_images/dsc10_tableau_configured.png" />
+<p>Then I clicked on the title (“Sheet 1”) to label the graph, and went to <em>Worksheet &gt; Export &gt; Image</em> to save the graph as an image.</p>
+<p>I made graphs like this for two variations of the BSC texts: one using the top 1,000 nouns in the whole corpus, and one using the top 1,000 words of any type. Then I did the same thing using a handful of different kids’ series at the same time: the BSC, Sweet Valley High, Gossip Girl, Nancy Drew, and a few others.</p>
+<p>And that’s how we got our graphs. But before we could feel good about it, first we needed to make sense of these coordinates, and how PCA manages to squish 1,000 dimensions down to 2, and what it means for things to not be in the middle, because without that, we didn’t have a lot of hope of interpreting what the middle means. And that’s what led to the conversation with Heather that you just read about.</p>
+</div>
+<div class="section" id="making-sense-of-features">
+<h3>Making Sense of Features<a class="headerlink" href="#making-sense-of-features" title="Permalink to this headline">¶</a></h3>
+<p>I was grateful for the conversation with Heather; I felt like I had a better sense of how to start interpreting a PCA graph, but some things were still troubling me. The Typicality code was how I stumbled into this world of PCA, so I figured it was time to go to the source: it was time for a conversation with Mark Algee-Hewitt, Director of the Stanford Literary Lab and Associate Data Sitter (just like Logan Bruno in the Baby-Sitters Club.)</p>
+<p>“Heather explained how PCA ends up looking– with principal component 1 on the X-axis, and principal component 2 on the Y-axis. But how many principal components <strong>are</strong> there?” I asked.</p>
+<p>“As many as the things in your corpus,” said Mark. “So if you’ve got 250 Baby-Sitters Club books, there could be 250 principal components. But in practice, it’s not worth it to do the math for all 250 because there are diminishing returns. You can calculate the percentage of the variation that each principal component covers. PC1 always covers the most variation – it depends on your data, but 25% is a plausible number for what PC1 might cover. And it all goes downhill from there, so by the time you get to PCA 200, it’s not explaining a whole lot. Plus, keep in mind that we’re trying to flatten everything down to 2 dimensions using values that summarize the biggest range of variation. And if that’s our end-goal, PCA 200 really isn’t of any use here.”</p>
+<p>That was reassuring. But I was still vexed about what we were supposed to be measuring here anyways. The PCA results looked so different when we looked at all the words vs. just the nouns – to say nothing of the time I tried adjectives. And then there was Heather’s approach, to create buckets of word-counts based on semantically-connected words, which got us another, different visualization when we ran it on the BSC (though this was dubious for anything other than lulz, because it included lots of Early Modern English words and omitted some salient BSC vocab like “distant” and “fresh” like Katia described in <a class="reference external" href="https://datasittersclub.github.io/site/dsc6.html">DSC #6: Voyant’s Big Day</a>.) So, what? Do you just choose a bunch of stuff to measure until you find a visualization that you like the look of? That’s really not what I’d hoped to do with this PCA thing.</p>
+<p>So I poured my guts out to Mark, all my angst and doubt about how meaningful any of these measures were. He smiled. “This isn’t any different than in traditional literary scholarship. If I’m doing a Marxist reading of a text, everything will be linked to the economy.”</p>
+<p>“Um, okay…” I said. “Maybe the problem is me. I’m not a literary scholar, maybe I just don’t get what you guys do.”</p>
+<p>Mark tried another tack. “Think of it this way: your choice of a feature set is a function of the thing you want to measure in the novel.”</p>
+<p>That seemed reasonable to me, but I felt like there was some secret mapping that no one had ever told me between the kinds of things you want to look at and how you actually go about doing that computationally.</p>
+<p>“If you want to know how novels are the same or different based on their ‘about-ness’, maybe a topic model is the right thing to use to create a feature set,” Mark went on. “If you want to know differences related to who wrote it, you could try stylometry or most frequent words.”</p>
+<p>The mention of “most frequent words” lit off sparks in my brain: the top-1,000-word PCA model for the series books! Maybe that’s why the series were so strongly delineated! I mean, yes, there were ghostwriters involved for most or all of the series, but if they were trying to write in a consistent voice and style, maybe that attenuated some of the “author signal” from the ghostwriters. What would happen if we color-coded the BSC chart with the top-1,000 words by ghostwriter? And were there any ghostwriters who wrote for more than one of the series we had in our corpora?! But I tried to not get too distracted by the new rabbit holes forming in my brain because Mark had other pointers.</p>
+<p>“To differentiate individual texts, you can look at the most distinctive words.” (<a class="reference external" href="https://datasittersclub.github.io/site/books/dsc8.html#tf-idf">We tried that in DSC #8: Text-Comparison-Algorithm-Crazy Quinn!</a>) “For genre, you can try a topic model. If you’re interested in dialogue, that has a lot to do with verb tenses, and you can try part-of-speech. We used part-of-speech in the Lab’s Microgenres project because we were interested in grammatical similarities across texts rather than semantics. The Lab’s Personhood project, on the other hand, used syntactical features – we were less into looking at words, and more into the relationships between words. Who or what is ‘owned’, vs. ‘put’, vs. ‘does’?”</p>
+<p>I nodded. I really liked what the Lab had done with Microgenres, looking at moments in novels that shifted into a kind of narration style more reminiscent of a different genre of writing. My kingdom for a corpus of real teenage girl diaries or letters to use as something to compare grammatically against the Baby-Sitters Club, especially the parts where they’re writing letters or in the BSC club notebook! Maybe my fellow Data-Sitters would be willing to digitize theirs… or maybe we could try this approach to see if detective fiction (like Nancy Drew) has a narration style that crops up here and there in the BSC Mysteries? I’d been thinking about Personhood too, especially whether there were syntactic features that clearly distinguished between children and the teenage protagonists, or teenage protagonists vs. adults.</p>
+<p>But Mark wasn’t finished. “There are lots of different possible feature sets, and choosing one is a statement about what you care about. Noun-ness of a corpus – its ‘object world’ – is a better representation of a certain kind of about-ness than verbs, adjectives, or more frequent verbs. The choice of nouns was a hypothesis of the Typicality project, baked into the feature set we chose. You can do that with part-of-speech, or you can look at ranges within the overall word frequency. It’s really well established at this point that the highest-frequency words are useful for author signal, but that’s not the only range that gives us something valuable. The 150-300th most common words are another range that can get at the ‘about-ness’ of the text,” he said.</p>
+<p>But just as I was feeling happy that I finally got some answers about the “right” way to go about investigating different kinds of questions, Mark turned everything upside down. “But all these things are, of course, proxies for different apparatuses of a textual theory that is both complex and abstract. When we pick a proxy and it ‘doesn’t work’ for what we expect it to show us, sometimes it’s not something to ‘fix.’ Maybe it’s a moment for us to re-evaluate what we think we know about authorship, themes, characters, or whatever else we’re trying to pin down computationally.”</p>
+<p>As he put it in a forthcoming chapter, “Computing Criticism: Humanities Concepts and Digital Methods” in <em>Debates in Digital Humanities: Computation</em>:</p>
+<blockquote>
+<div><p>“Not only does this approach give us new purchase on the ways in which computational text analysis can be of use in the humanities, it also restores a crucial potential of the Digital Humanities. By being guided by the methods that we adopt, by paying attention to how we approximate textual phenomena through quantification and by taking the results of our clusters and models as reflexively interpretable objects themselves (rather than simply as proxies for the true objects that we seek to study), we can use the methods and strategies of the Digital Humanities to put pressure on our received theoretical and historical objects to and uncover alternative ways of thinking about the material that we study.”</p>
+</div></blockquote>
+<p>As someone whose academic background involved receiving pretty much zero theoretical or historical objects relevant to literary theory, this definitely wasn’t work that I could do – at least, not alone. But that’s why we collaborate! Most of the DSC is literary scholars, and I loved the idea that there might actually be some literary-critical value to the computational things I can conjure up with our corpus.</p>
+<p>I grabbed my phone and texted Katia, “You’ve got to read this…”</p>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>Katia<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>Quinn sent me Mark’s chapter and I got excited and read it. And Mark’s chapter is great! It gave me so much food for thought for my Dostoevsky project and for the Data-Sitters Club. But then Quinn asked me to use my literature scholar skills to conclude this book… and I had no idea what to say. The fact is, I understood what we’re doing with PCA and I understood what Mark’s saying in his chapter, but what I didn’t understand is how to put those things together in a way that says something conclusive or meaningful. Now, it’s true that concluding a Data-Sitters Club book is lower stakes and more relaxed than concluding a monograph or even a journal article. But I still felt like the pieces weren’t coming together for me well enough to write anything yet.</p>
+<p>So Quinn and I jumped on Zoom and talked through the data again.</p>
+<p>“So, here’s the visualization of the BSC using the top 1,000 nouns,” Quinn said.</p>
+<img alt="PCA of the Baby-Sitters Club corpus using the top 1k nouns." src="_images/dsc10_bsc_nouns.png" />
+<p>“Right,” I said, “So, I understand what we’re doing, but what I don’t get is why some of these books in particular are towards the edge. Some of them seem like they should be closer to the mean. Let’s see what is closest to  the middle to see what the more ‘typical’ books are. What would be the most average BSC book?”</p>
+<p>“I checked with Roopsi about this,” said Quinn, referring to Roopika Risam, the Data-Sitter with the most encyclopedic knowledge of the series. “She argued that there is no such thing as a ‘typical’ BSC book because ‘they all are somewhere on the spectrum of afterschool special or Something Happens’. She broke the books down into the categories of ‘Family drama’, ‘Someone leaves/returns’, ‘Mysteries (in the regular series)’, ‘Boy trouble’, and ‘Very Special Episode (anorexia, racism, domestic abuse)’. But she also acknowledged a few with ‘banal plots’ like <em>BSC #22: Jessi Ramsey, Pet-Sitter</em>, and <em>BSC #21: Mallory and the Trouble with Twins</em>.”</p>
+<p>“What do you think it is?” Quinn asked.</p>
+<p>“Maybe the ones with banal plots are ‘average’? I’ve got one for that list: <em>BSC #45: Kristy and the Baby Parade</em>.” I said. “An average BSC book for me would have a plot that focuses on the baby-sitting, would be set in Connecticut, and would have a lot of typical club meetings.”</p>
+<img alt="PCA of the Baby-Sitters Club corpus using the top 1k nouns with the &quot;banal books&quot; highlighted." src="_images/dsc10_banal_books.png" />
+<p>“Those banal books are all fairly close together in quadrant 4,” observed Quinn. “But none are all that close to the mean. Honestly, I think Roopsi might be on to something – there’s not actually a lot of stuff clustered around the mean. Let me write some code to pull out the ten books that are actually closest to the mean.”</p>
+<p>“Ooh, I get to watch you write some code? Fun!” I said.</p>
+<p>“Ehhhh, don’t get too excited,” Quinn laughed. “I don’t actually know how to do this. But I bet the internet does.”</p>
+<div class="section" id="finding-the-closest-points-to-0-0">
+<h3>Finding the Closest Points to 0,0<a class="headerlink" href="#finding-the-closest-points-to-0-0" title="Permalink to this headline">¶</a></h3>
+<p>And sure enough, <a class="reference external" href="https://www.geeksforgeeks.org/find-k-closest-points-to-the-origin/">the internet did</a>. Quinn took the coordinates of each book from the CSV that the Typicality code generated, and used some regular expressions in a plain text file to reformat it into a list:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Defines a function that takes in a list of points and a number labeled K</span>
+<span class="c1">#K is just the number of closest points to 0,0 that you want</span>
+<span class="c1">#Because there&#39;s a pseudo-point at 0,0 you need to add 1 to the number of results you want</span>
+<span class="k">def</span> <span class="nf">pClosest</span><span class="p">(</span><span class="n">points</span><span class="p">,</span> <span class="n">K</span><span class="p">):</span>
+    <span class="c1">#Mary had a little lambda?</span>
+    <span class="c1">#TBH I struggle to wrap my head around lambda stuff</span>
+    <span class="c1">#It works, though</span>
+    <span class="n">points</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">K</span><span class="p">:</span> <span class="n">K</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">K</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="c1">#Returns K number points</span>
+    <span class="k">return</span> <span class="n">points</span><span class="p">[:</span><span class="n">K</span><span class="p">]</span>
+ 
+<span class="c1">#I created this list by copying and pasting the PC1 and PC2 columns</span>
+<span class="c1">#from the CSV generated by Typicality, into a plain text file</span>
+<span class="c1">#Then I used regular expressions to put all the values on a single line</span>
+<span class="c1">#And surround each set of values with square brackets</span>
+<span class="c1">#Then I pasted that list between the first set of brackets</span>
+<span class="n">points</span> <span class="o">=</span> <span class="p">[[</span><span class="mf">0.00469161</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.001991805</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.009683978</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.008615327</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.008572655</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.001824667</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.003675937</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.011829725</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.011229949</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.00992014</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.005954947</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.010017583</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.004476714</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.01351926</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.002374966</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.00757018</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.008789731</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.003048114</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.01216702</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.004200922</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.003722121</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.006907427</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.00769834</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.008655584</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.002334449</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.003363331</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.004529415</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.012335336</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.003864004</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.013008246</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.00435057</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.004221983</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.004951219</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.008742653</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.002067941</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.001514505</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.004736377</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.009282298</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.004368298</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.007480759</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.029222638</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.005909872</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.002068301</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.008848089</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.003693331</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.006555199</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.00411114</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.003276592</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.011580047</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.021221971</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.008307237</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.003467732</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.005365445</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.01388096</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.005972513</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.005758532</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.011382165</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.011022268</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.010832945</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.011559693</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.014017606</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.011837172</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.016100764</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.014274526</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.00731022</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.011255925</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.003028445</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.008666056</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.003230194</span><span class="p">,</span> <span class="mf">0.002504059</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.012346846</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.005404243</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.004239089</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.007702936</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.00419579</span><span class="p">,</span> <span class="mf">0.003379739</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.00741384</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.002815382</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.001717428</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.016452399</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.002336378</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.000895452</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.011563584</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.006602793</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.001320436</span><span class="p">,</span> <span class="mf">0.002626512</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.012051506</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.005411988</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.019932552</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.01264996</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.001227889</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.004654948</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.00266858</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.007009829</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.001563455</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.006563461</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.01458836</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.022989674</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.00080952</span><span class="p">,</span> <span class="mf">0.002674865</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.004850349</span><span class="p">,</span> <span class="mf">0.000553782</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.001138218</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.004883547</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.00295566</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.009086473</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.006439591</span><span class="p">,</span> <span class="mf">0.007926304</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.006096543</span><span class="p">,</span> <span class="mf">0.001602647</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.010709235</span><span class="p">,</span> <span class="mf">0.0067662</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.01830948</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.019530052</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.011294579</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.006774717</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.004138995</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.011339406</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.004755756</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.001694357</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.002336382</span><span class="p">,</span> <span class="mf">0.005766334</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.015953166</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.005859408</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.003469975</span><span class="p">,</span> <span class="mf">0.004515667</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.002782578</span><span class="p">,</span> <span class="mf">0.003146166</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.005057231</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.001876251</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.002433529</span><span class="p">,</span> <span class="mf">0.005469585</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.00479866</span><span class="p">,</span> <span class="mf">0.002788323</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.005007354</span><span class="p">,</span> <span class="mf">0.002511677</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.001730607</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.010251528</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.002083167</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.004600916</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.003478521</span><span class="p">,</span> <span class="mf">0.009355717</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.005567839</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.001020918</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.006126912</span><span class="p">,</span> <span class="mf">0.000761974</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.005477061</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.001228646</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.011217858</span><span class="p">,</span> <span class="mf">0.015344681</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.012396735</span><span class="p">,</span> <span class="mf">0.00269082</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.003959916</span><span class="p">,</span> <span class="mf">0.00701705</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.004070298</span><span class="p">,</span> <span class="mf">0.001824347</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.001692785</span><span class="p">,</span> <span class="mf">0.000870467</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.000318332</span><span class="p">,</span> <span class="mf">0.001547991</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.00697194</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.00442188</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.001555259</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.006890195</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.007690274</span><span class="p">,</span> <span class="mf">0.001026254</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.000877743</span><span class="p">,</span> <span class="mf">0.002933271</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.01740308</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.012584651</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.007681429</span><span class="p">,</span> <span class="mf">0.002597892</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.006255462</span><span class="p">,</span> <span class="mf">0.002287488</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.001601807</span><span class="p">,</span> <span class="mf">0.00326431</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.00099986</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.00619557</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.011019061</span><span class="p">,</span> <span class="mf">0.004453192</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.000440062</span><span class="p">,</span> <span class="mf">0.003726049</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.007006778</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.002461165</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.003062121</span><span class="p">,</span> <span class="mf">0.000208577</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.004434383</span><span class="p">,</span> <span class="mf">0.002612386</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.005557097</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.006909485</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.007126046</span><span class="p">,</span> <span class="mf">0.004257314</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.001582076</span><span class="p">,</span> <span class="mf">0.001893182</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.005853964</span><span class="p">,</span> <span class="mf">0.007973258</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.002583916</span><span class="p">,</span> <span class="mf">0.001821899</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.001925526</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.001745704</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.000528997</span><span class="p">,</span> <span class="mf">0.000988793</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.00906454</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.002320243</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.002288717</span><span class="p">,</span> <span class="mf">0.008179182</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.001072654</span><span class="p">,</span> <span class="mf">0.001148261</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.006881697</span><span class="p">,</span> <span class="mf">0.000643985</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.003972353</span><span class="p">,</span> <span class="mf">0.011186226</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.003218817</span><span class="p">,</span> <span class="mf">0.005512333</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.012851412</span><span class="p">,</span> <span class="mf">0.008641159</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.014770899</span><span class="p">,</span> <span class="mf">0.000375218</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.003848227</span><span class="p">,</span> <span class="mf">0.009104553</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.01544207</span><span class="p">,</span> <span class="mf">0.017326715</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.009265123</span><span class="p">,</span> <span class="mf">0.00187548</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.005045982</span><span class="p">,</span> <span class="mf">0.003727476</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.008747113</span><span class="p">,</span> <span class="mf">0.01135271</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.004690856</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.001217952</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.002234854</span><span class="p">,</span> <span class="mf">0.005470105</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.001935213</span><span class="p">,</span> <span class="mf">0.000868962</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.003565061</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.005405885</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.00277459</span><span class="p">,</span> <span class="mf">0.009971733</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.002803215</span><span class="p">,</span> <span class="mf">0.004841541</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.004941038</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.003273866</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.000189547</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.000237985</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.030116569</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.004371898</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.011480428</span><span class="p">,</span> <span class="mf">0.002074561</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.003407392</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.010078104</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.005161328</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.008442468</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.009710449</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.011331549</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.001861404</span><span class="p">,</span> <span class="mf">0.008892</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.003292164</span><span class="p">,</span> <span class="mf">0.000176213</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.007856082</span><span class="p">,</span> <span class="mf">0.012355752</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.010922237</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.001119533</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.010231453</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.004426342</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.00156204</span><span class="p">,</span> <span class="mf">0.002406567</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.005624661</span><span class="p">,</span> <span class="mf">0.014677844</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.001555394</span><span class="p">,</span> <span class="mf">0.01631771</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.001483046</span><span class="p">,</span> <span class="mf">0.014346892</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.009109574</span><span class="p">,</span> <span class="mf">0.014295803</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.011900749</span><span class="p">,</span> <span class="mf">0.009787263</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.019760064</span><span class="p">,</span> <span class="mf">0.000107728</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.008921484</span><span class="p">,</span> <span class="mf">0.007658414</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.003170581</span><span class="p">,</span> <span class="mf">0.016751233</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.004796574</span><span class="p">,</span> <span class="mf">0.012823444</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.014521908</span><span class="p">,</span> <span class="mf">0.005004447</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.017448747</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.002471576</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.004690886</span><span class="p">,</span> <span class="mf">0.013678724</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.007671858</span><span class="p">,</span> <span class="mf">0.015052376</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.007775464</span><span class="p">,</span> <span class="mf">0.012239997</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.005974707</span><span class="p">,</span> <span class="mf">0.008708258</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.005910541</span><span class="p">,</span> <span class="mf">0.00634788</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.005887654</span><span class="p">,</span> <span class="mf">0.004801132</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.005234945</span><span class="p">,</span> <span class="mf">0.005199604</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.000384196</span><span class="p">,</span> <span class="mf">0.002336877</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.001403685</span><span class="p">,</span> <span class="mf">0.006222739</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.002063593</span><span class="p">,</span> <span class="mf">0.010695518</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.010148192</span><span class="p">,</span> <span class="mf">0.011815938</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.000342095</span><span class="p">,</span> <span class="mf">0.01598559</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.00791066</span><span class="p">,</span> <span class="mf">0.005526686</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.014481919</span><span class="p">,</span> <span class="mf">0.005500372</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.003914503</span><span class="p">,</span> <span class="mf">0.000788317</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.007918963</span><span class="p">,</span> <span class="mf">0.004980043</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.005013202</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.00634705</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.013641678</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0087342</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.002236322</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.007810783</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.012818793</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.002390494</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.007197174</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.004887106</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.010277143</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.003656188</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.007382163</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.00559317</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.008926255</span><span class="p">,</span> <span class="mf">0.003682763</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.000317981</span><span class="p">,</span> <span class="mf">0.004758479</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.002973747</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.009079573</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.002845861</span><span class="p">,</span> <span class="mf">0.004316752</span><span class="p">],</span> <span class="p">[</span><span class="mf">5.12E-05</span><span class="p">,</span> <span class="mf">0.001014361</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.007731514</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.000235443</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.008898852</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.012512811</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.01206524</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.007011903</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.00023655</span><span class="p">,</span> <span class="mf">0.011240322</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.001588484</span><span class="p">,</span> <span class="mf">0.001445216</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.008266009</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.004680667</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.00307885</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.003371266</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.000912399</span><span class="p">,</span> <span class="mf">0.003776058</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.006292082</span><span class="p">,</span> <span class="mf">0.006241512</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.009667708</span><span class="p">,</span> <span class="mf">0.003702167</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.008344899</span><span class="p">,</span> <span class="mf">0.002691967</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.003024284</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.002433902</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.001326754</span><span class="p">,</span> <span class="mf">0.001980956</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.008992753</span><span class="p">,</span> <span class="mf">0.008488592</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.007901606</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.009318342</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.003162828</span><span class="p">,</span> <span class="mf">0.003753576</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.012340701</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.006548767</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.002462029</span><span class="p">,</span> <span class="mf">0.002719182</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.005245633</span><span class="p">,</span> <span class="mf">0.011166358</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.001122942</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.004325161</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.007885139</span><span class="p">,</span> <span class="mf">3.80E-05</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.005447609</span><span class="p">,</span> <span class="mf">0.004278499</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.002932201</span><span class="p">,</span> <span class="mf">0.000646119</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.000974077</span><span class="p">,</span> <span class="mf">0.003803959</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.005905315</span><span class="p">,</span> <span class="mf">0.004991715</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.008084161</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.002333118</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.00359464</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.000344437</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.012753753</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.007773522</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.009082452</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.000682023</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.003643154</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.000731967</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.00532418</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.002176075</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.006365006</span><span class="p">,</span> <span class="mf">0.005248339</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.004233163</span><span class="p">,</span> <span class="mf">0.009463866</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.002898313</span><span class="p">,</span> <span class="o">-</span><span class="mf">5.87E-05</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.003666059</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.004650337</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.006001644</span><span class="p">,</span> <span class="mf">0.007078763</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.00160294</span><span class="p">,</span> <span class="mf">0.007807623</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.006898097</span><span class="p">,</span> <span class="mf">0.007918056</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.001876034</span><span class="p">,</span> <span class="mf">0.007227341</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.004919251</span><span class="p">,</span> <span class="mf">0.009637717</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.019849637</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.002769239</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.003061415</span><span class="p">,</span> <span class="mf">0.001588581</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.005411868</span><span class="p">,</span> <span class="mf">0.005390671</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.001663993</span><span class="p">,</span> <span class="mf">0.002204526</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.006599563</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.003209579</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.000430911</span><span class="p">,</span> <span class="mf">0.00798643</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.017295061</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.003548918</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.008748826</span><span class="p">,</span> <span class="mf">0.003822645</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.010859657</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.00694325</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.000636576</span><span class="p">,</span> <span class="mf">0.001555386</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.005728491</span><span class="p">,</span> <span class="mf">0.008800884</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.001519371</span><span class="p">,</span> <span class="mf">0.013963409</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.003264341</span><span class="p">,</span> <span class="mf">0.009046577</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">1.12E-18</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.38E-19</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.001326754</span><span class="p">,</span> <span class="mf">0.000643985</span><span class="p">]]</span>
+
+<span class="c1">#How many values you want back, plus 1 if you&#39;re using Typicality</span>
+<span class="c1">#Because Typicality has a pseudo-point that&#39;s basically at 0,0</span>
+<span class="n">K</span> <span class="o">=</span> <span class="mi">21</span>
+
+<span class="c1">#Prints the closest points</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pClosest</span><span class="p">(</span><span class="n">points</span><span class="p">,</span> <span class="n">K</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Then Quinn went back to the Typicality output CSV and searched for the coordinates for the closest points to figure out what books they corresponded to. “I bet I could do something with a dictionary in Python to make this nicer, so it spits out titles instead of coordinates you have to look up,” said Quinn. “But this does what we need, it’s faster to just look up 20 results really quick, and I don’t want to derail the conversation about interpreting our results by trying to optimize it.”</p>
+<ul class="simple">
+<li><p>121c_abby_in_wonderland.txt</p></li>
+<li><p>m11c_claudia_and_the_mystery_at_the_museum.txt</p></li>
+<li><p>100c_kristys_worst_idea.txt</p></li>
+<li><p>m24c_mary_anne_and_the_silent_witness.txt</p></li>
+<li><p>103c_happy_holidays_jessi.txt</p></li>
+<li><p>079c_mary_anne_breaks_the_rules.txt</p></li>
+<li><p>ss12_here_come_the_bridesmaids.txt</p></li>
+<li><p>078c_claudia_and_crazy_peaches.txt</p></li>
+<li><p>116c_abby_and_the_best_kid_ever.txt</p></li>
+<li><p>m16c_claudia_and_the_clue_in_the_photograph.txt</p></li>
+</ul>
+<img alt="PCA of the Baby-Sitters Club corpus using the top 1k nouns with the books closest to 0,0 highlighted." src="_images/dsc10_bsc_mean.png" />
+<p>“<em>Kristy and the Baby Parade</em> is close to the mean, but it isn’t even in the list of top 20 books,” I said. I explained to Quinn that <em>Kristy and the Baby Parade</em> had stood out to me on my analog reread of the series because it is the one book I’ve been stuck on for months. I’m reading in chronological order and this book is just so boring. I can’t do it. Books that are more boring seem to me to be more typical, or average, for the series. Books where there is romance, drama, or some kind of special topic focus, or the BSC girls travel somewhere that isn’t Connecticut seem like outliers.</p>
+<p>The more we stared, the more puzzled we were. We had a sense of what was going on in each of the quadrants: quadrant 1 was teen drama, quadrant 2 had sporty things, quadrant 3 had a lot of the Very Special Episodes, and quadrant 4 was more domestic stuff. But it was hard to try to calculate what the mean of those squishy interpretive feelings would be, to make sense of why our top-10 most average list looked the way it did.</p>
+<p>In his chapter, Mark points out that when things go wrong, “they provide unexpected answers.”  Quinn and I can speak Russian, but we clearly didn’t speak whatever language this model was using to provide its answers.</p>
+<p>We needed help. It was time for Quinn to have a follow-up meeting with Mark.</p>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>Quinn<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="mark-and-biplots-save-the-day">
+<h3>Mark and Biplots Save the Day<a class="headerlink" href="#mark-and-biplots-save-the-day" title="Permalink to this headline">¶</a></h3>
+<p>“Hi, we’re stuck.”</p>
+<p>It always feels like a kinda embarrassing way to start a conversation, even though it’s not like there’s anything at stake. I’ve got nothing to prove here – Mark is our Associate Data-Sitter and has been nothing but patient and generous with our questions. And the whole point of the <em>Data-Sitters Club</em> is that we explore and learn stuff and write it up so other people can learn, too. But I won’t lie, the visceral awkwardness is still there sometimes.</p>
+<p>“We’re trying to do what your article suggested,” I told Mark. “We don’t get what’s going on with the 20 most ‘typical’ books. And that’s an opportunity for us to learn something from how the model is looking at it. But… <em>how do we know what the model is seeing?</em>” I asked.</p>
+<p>We pulled up the PCA of the BSC corpus, using the top 1,000 nouns and I walked him through what we were seeing. Mark paused to think for a minute. “One of the things that’s helpful for trying to interpret PCA is to use diagonal lines through the axes and see how that lines up with where the variation is occurring. If we draw the line this way, we get a preponderance of Super Specials and ‘sporty stuff’…”</p>
+<img alt="PCA of the Baby-Sitters Club corpus using the top 1k nouns with a diagonal line going up and to the right." src="_images/dsc10_arrow1.jpg" />
+<p>“And on the other side, we see more that relates to … age? But maybe also publication history.”</p>
+<img alt="PCA of the Baby-Sitters Club corpus using the top 1k nouns with a diagonal line going up and to the right." src="_images/dsc10_arrow2.jpg" />
+<p>“Have you tried a biplot analysis?”</p>
+<p>I looked at him blankly. “Um, I don’t know how to do that.”</p>
+<p>“Do you have the feature table as an output?” he asked.</p>
+<p>“Nope.”</p>
+<p>So we set about building one as he explained how biplot analysis works.</p>
+</div>
+<div class="section" id="biplot-time">
+<h3>Biplot time<a class="headerlink" href="#biplot-time" title="Permalink to this headline">¶</a></h3>
+<p>“In the PCA you did, each of the top 1,000 nouns in your corpus is a feature. And each principal component in a PCA is made up of a different mix of features. How important each feature is for a given principal component is called that feature’s loading. A biplot analysis shows which features – or in your case, nouns – will have the biggest loading, or the most influence on shaping PC1 and PC2.”</p>
+<p>“So for interpreting your PCA, doing a biplot analysis will get you… a list of words?” I asked.</p>
+<p>“Joy,” replied Mark with a smile. “But, yes, also words.”</p>
+<p>This biplot function is exactly the same as the PCA code we’ve already gone through, up until the final steps (starting with <code class="docutils literal notranslate"><span class="pre">#THIS</span> <span class="pre">IS</span> <span class="pre">THE</span> <span class="pre">NEW</span> <span class="pre">PART!</span></code>). What it does then is create a PDF file, create a biplot of the PCA coordinates we’ve already calculated (which is <em>ridiculously</em> easy in R – literally, the code is <code class="docutils literal notranslate"><span class="pre">biplot(pca.coords)</span></code>). Then there’s <code class="docutils literal notranslate"><span class="pre">dev.off()</span></code> which saves the PDF file for the output.</p>
+<p>You run it the same way as Typicality, with the same inputs.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">R</span>
+#Sets up what the function expects as its inputs &amp; outputs
+corpusTypicalityBiplot &lt;- function(corpus.dir, meta.data.file, output.dir, top.words = evaluated.words, corpus.name){
+  #Loads the text mining package
+  library(tm)
+  #Sets up a path for each file, with the corpus directory + filename
+  all.files &lt;- paste(corpus.dir, meta.data.file$Filename, sep=&quot;/&quot;)
+  #Extracts text from the text files
+  all.texts &lt;- lapply(all.files, function(x) scan(x, what=&quot;character&quot;, sep=&quot;\n&quot;, quiet=T))
+  #Pastes everything back together in a single string
+  all.texts &lt;- lapply(all.texts, function(x) paste(x, collapse=&quot; &quot;))
+  #Applies Mark&#39;s special cleaning function
+  all.texts &lt;- lapply(all.texts, function(x) cleanChunk(x))
+  #Pastes all texts back together in a single string
+  all.texts &lt;- lapply(all.texts, function(x) paste(x, collapse=&quot; &quot;))
+  #Returns a list, changing the text strings into a vector
+  all.texts &lt;- unlist(all.texts)
+  #Defines text.corpus as a vectorization of all the texts
+  text.corpus &lt;- Corpus(VectorSource(all.texts))
+  #Creates a document-term matrix from the vectorization
+  text.dtm &lt;- DocumentTermMatrix(text.corpus)
+  #Sets the document-term matrix as a matrix
+  text.dtm &lt;- as.matrix(text.dtm)
+  #Defines word frequency by sorting the words in order of occurrence
+  word.freqs &lt;- sort(colSums(text.dtm), decreasing=T)
+  #Defines top terms as being the # of terms that you specify when you run the code
+  #The &quot;starts.with&quot;, which you also specify when you run the code, lets you exclude the most-frequent terms
+  #This might be useful if you&#39;re using all words (e.g. not just nouns) and want to
+  #exclude the highest-frequency words that are mostly indicative of author signal (e.g. &#39;the&#39;, &#39;a&#39;, &#39;and&#39;)
+  top.terms &lt;- names(word.freqs[starts.with:top.words])
+  #Writes a CSV with the top terms that it&#39;s using for its analysis
+  write.csv(x = top.terms, file = paste(c(output.dir, &#39;/&#39;, &#39;top_terms_&#39;, corpus.name,&#39;.csv&#39;), collapse = &#39;&#39;))
+  #Converts word counts to frequencies, dividing by book length
+  #Otherwise, books would look different from one another just because of different length
+  dtm.scale &lt;- text.dtm/rowSums(text.dtm)
+  #Reshapes the document/term matrix to just columns with frequencies for the top words
+  dtm.mfw &lt;- dtm.scale[,which(colnames(dtm.scale) %in% top.terms)]
+  #Computes PCA coordinates using the words in the range you specified for analysis
+  pca.coords &lt;- prcomp(dtm.mfw)
+  #THIS IS THE NEW PART!
+  #Creates a PDF output for the biplot
+  pdf(&#39;bsc_topnouns_biplot.pdf&#39;, height=100, width=100)
+  #Creates the biplot
+  biplot(pca.coords)
+  dev.off()
+}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">R</span>
+#How many top words should it use?
+evaluated.words=1000
+#How many of the very most frequent words should it skip? To skip 0, starts.with = 1.
+#To skip 50, starts.with = 51
+starts.with=1
+#Put the path to the folder containing the folder with your texts here
+setwd(&#39;~/Documents&#39;)
+#Put the name of the folder with your texts here
+Filename&lt;-list.files(&#39;dsc_nouns&#39;)
+#If you want to strip anything off the text filename for the title besides .txt you can change this
+Title&lt;-unlist(strsplit(Filename, &quot;.txt&quot;))
+#Creates the metadata table
+dsc.meta&lt;-data.frame(Filename, Title, stringsAsFactors = FALSE)
+#Runs the Typicality code
+means.text&lt;-corpusTypicalityBiplot(&#39;dsc_nouns&#39;, dsc.meta, &quot;.&quot;, corpus.name=&quot;dsc_nouns&quot;)
+</pre></div>
+</div>
+</div>
+</div>
+<p>I watched in anticipation as he typed out the code. I had no idea what to imagine this would look like. He generated the output PDF, opened the file, and … it was some kind of pink 4th of July sparkler surrounded by specks of dust. It was enough to make me want to burst into the chorus of Katy Perry’s “Firework.”
+<img alt="Biplot of the PCA of the Baby-Sitters Club book using top 1k nouns, which looks like Katy Perry and her sparkler from the song &quot;Firework&quot;" src="_images/dsc10_biplot_sparkler_katyperry.jpg" /></p>
+<p><em>🎵’Cause biplots are a firework… come on show me what they’re worth… 🎵</em></p>
+<p>I was perplexed. But then Mark started zooming in, and soon I could see that the specks of dust were numbers corresponding to each of the books, and at the end of each pink line was a word. Mark was right. It was joy in a weird puff-ball of data.</p>
+<img alt="Zoomed in biplot of the PCA of the Baby-Sitters Club book using top 1k nouns" src="_images/dsc10_biplot_sports.png" />
+<p>“The longer the line is, the bigger the loading for that word is,” explained Mark. “So in the upper left, ‘team’ and ‘class’ are doing a lot.”</p>
+<p>That made sense! We’d interpreted that as the “sports” quadrant, and other leading terms in that quadrant (Q2) included “ball”, “game”, “field”, and “practice”. And it was like what Heather had told us: however you want to go about making sense of ‘team’, ‘class’, and the other major words in Q2, the important thing is that they’re pulling in the same direction. And that means that Q4 comes up short on those things.</p>
+<p>Meanwhile, the upper right quadrant (Q1) had words like “night”, “friend”, “date”, and “movie”. Sounds like the making of teen drama to me.</p>
+<p>Bottom right (Q4) was our “meh” quadrant of “general stuff”, but the biplot analysis did a better job of articulating “general stuff” than we were able to. It was tons of domestic words: room, house, door, bed, kitchen, mom, father. Those were pretty common words in any book in this series.</p>
+<p>And the bottom left (Q3) had one word stealing the whole show: the giant handle on our sparkler was “kids”. “Children” had a smaller impact, but this is <em>literally the one about babysitting</em>. And while we identified this as the “very special episode” quadrant, the vehicle for all that very-special-episode-ness is babysitting (i.e. they babysit a kid with some particular issue).</p>
+<p>Now we had what we needed to read the PCA like the computer. But Mark had one more trick up his sleeve. “Doing PCA with a regular biplot analysis is great because it gives you the magnitude– you can see <strong>how</strong> significant the really significant words are. But you might also want to run it scaled according to the zeta score.”</p>
+<p>“The what now?” I asked.</p>
+<p>“Hrm, this is slightly more math than I’m really up for this early in the morning,” grumbled Mark. “It’d involve taking the frequency of a term in a book, subtracting the mean frequency, and then dividing by the standard deviation. Basically, it shows you how far away the frequency is from the corpus norm. It’s less of a big deal when you’re looking at only nouns, but especially if you’re looking at the top terms overall, this will dampen down the function words that occur everywhere, and bring out the effect of words that are occurring an unusual amount in specific texts. It’s used a lot when <a class="reference external" href="https://programminghistorian.org/en/lessons/introduction-to-stylometry-with-python">doing stylometry</a>.”</p>
+<p>He tweaked the code and re-ran the biplot analysis with the frequencies scaled using the z-score. I’m not even exaggerating by calling it a tweak. Literally he just added <em>scale=T</em>, turning <code class="docutils literal notranslate"><span class="pre">pca.coords</span> <span class="pre">&lt;-</span> <span class="pre">prcomp(dtm.mfw)</span></code> into <code class="docutils literal notranslate"><span class="pre">pca.coords</span> <span class="pre">&lt;-</span> <span class="pre">prcomp(dtm.mfw,</span> <span class="pre">scale=T)</span></code>. Blink and you could miss it.</p>
+<p>Labeling the points turned out to be similarly easy: just add <code class="docutils literal notranslate"><span class="pre">xlabs</span> <span class="pre">=</span> <span class="pre">meta.data.file$Title</span></code> to the biplot command.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">R</span>
+#Sets up what the function expects as its inputs &amp; outputs
+corpusTypicalityBiplotZscore &lt;- function(corpus.dir, meta.data.file, output.dir, top.words = evaluated.words, corpus.name){
+  #Loads the text mining package
+  library(tm)
+  #Sets up a path for each file, with the corpus directory + filename
+  all.files &lt;- paste(corpus.dir, meta.data.file$Filename, sep=&quot;/&quot;)
+  #Extracts text from the text files
+  all.texts &lt;- lapply(all.files, function(x) scan(x, what=&quot;character&quot;, sep=&quot;\n&quot;, quiet=T))
+  #Pastes everything back together in a single string
+  all.texts &lt;- lapply(all.texts, function(x) paste(x, collapse=&quot; &quot;))
+  #Applies Mark&#39;s special cleaning function
+  all.texts &lt;- lapply(all.texts, function(x) cleanChunk(x))
+  #Pastes all texts back together in a single string
+  all.texts &lt;- lapply(all.texts, function(x) paste(x, collapse=&quot; &quot;))
+  #Returns a list, changing the text strings into a vector
+  all.texts &lt;- unlist(all.texts)
+  #Defines text.corpus as a vectorization of all the texts
+  text.corpus &lt;- Corpus(VectorSource(all.texts))
+  #Creates a document-term matrix from the vectorization
+  text.dtm &lt;- DocumentTermMatrix(text.corpus)
+  #Sets the document-term matrix as a matrix
+  text.dtm &lt;- as.matrix(text.dtm)
+  #Defines word frequency by sorting the words in order of occurrence
+  word.freqs &lt;- sort(colSums(text.dtm), decreasing=T)
+  #Defines top terms as being the # of terms that you specify when you run the code
+  #The &quot;starts.with&quot;, which you also specify when you run the code, lets you exclude the most-frequent terms
+  #This might be useful if you&#39;re using all words (e.g. not just nouns) and want to
+  #exclude the highest-frequency words that are mostly indicative of author signal (e.g. &#39;the&#39;, &#39;a&#39;, &#39;and&#39;)
+  top.terms &lt;- names(word.freqs[starts.with:top.words])
+  #Writes a CSV with the top terms that it&#39;s using for its analysis
+  write.csv(x = top.terms, file = paste(c(output.dir, &#39;/&#39;, &#39;top_terms_&#39;, corpus.name,&#39;.csv&#39;), collapse = &#39;&#39;))
+  #Converts word counts to frequencies, dividing by book length
+  #Otherwise, books would look different from one another just because of different length
+  dtm.scale &lt;- text.dtm/rowSums(text.dtm)
+  #Reshapes the document/term matrix to just columns with frequencies for the top words
+  dtm.mfw &lt;- dtm.scale[,which(colnames(dtm.scale) %in% top.terms)]
+  row.names &lt;- meta.data.file[,1]
+  #Computes PCA coordinates using the words in the range you specified for analysis
+  #LITERALLY JUST ADD &#39;scale=T&#39; TO THIS LINE TO SCALE IT USING Z-SCORES
+  pca.coords &lt;- prcomp(dtm.mfw, scale=T)
+  #Creates a PDF output for the biplot
+  pdf(&#39;bsc_topnouns_biplot_scaled.pdf&#39;, height=100, width=100)
+  #Creates the biplot
+  biplot(pca.coords, xlabs = meta.data.file$Title)
+  dev.off()
+}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">R</span>
+#How many top words should it use?
+evaluated.words=1000
+#How many of the very most frequent words should it skip? To skip 0, starts.with = 1.
+#To skip 50, starts.with = 51
+starts.with=1
+#Put the path to the folder containing the folder with your texts here
+setwd(&#39;~/Documents&#39;)
+#Put the name of the folder with your texts here
+Filename&lt;-list.files(&#39;dsc_nouns&#39;)
+#If you want to strip anything off the text filename for the title besides .txt you can change this
+Title&lt;-unlist(strsplit(Filename, &quot;.txt&quot;))
+#Creates the metadata table
+dsc.meta&lt;-data.frame(Filename, Title, stringsAsFactors = FALSE)
+#Runs the Typicality code
+means.text&lt;-corpusTypicalityBiplotZscore(&#39;dsc_nouns&#39;, dsc.meta, &quot;.&quot;, corpus.name=&quot;dsc_nouns&quot;)
+</pre></div>
+</div>
+</div>
+</div>
+<img src='_static/images/dsc10_biplot_scaled.png' alt='Scaled biplot of the PCA of the Baby-Sitters Club book using top 1k nouns' />
+This time the biplot looked like some kind of funky hair accessory that Claudia might wear. The California Diaries and Friends Forever series were still in the upper right quadrant, but something happened to the Mysteries. <img src='_static/images/dsc10_scaled_biplot_mysteries.png' alt='Scaled biplot of the PCA of the Baby-Sitters Club book using top 1k nouns, zoomed in on mysteries' />
+Instead of being fairly evenly distributed throughout the chart, most of them were pushed all the way to the bottom, thanks to the scaled effect of words like “mystery”, “clues”, “somebody”, “everybody”, “anybody”, “fact”, and “example”.
+<p>“Well, look at that,” Mark remarked. “The mystery words weren’t frequent enough to have much of an impact in the first version, but when we scale it by the z-score, the mysteries cluster together.” That also made sense, and it was a great sanity check for us about what was going on. This version had a big impact on the mysteries, but the other high-level stuff mostly stayed the same. That said, scaling the nouns by z-score had a major impact on our most “average” texts; the only one left near the center was <em>BSC #103: Happy Holidays Jessi</em>, a space it shared with <em>BSC #84: Dawn and the School Spirit War</em>.</p>
+<p>“Oh, cool – I get it now!” I exclaimed. “Once you have the feature loadings from the biplot analysis, you can use TF-IDF to look at how significantly the major features for that part of the graph appear in a given text, to get a sense of why it’s located there and not somewhere else.”</p>
+</div>
+<div class="section" id="interpretation-help-from-tf-idf">
+<h3>Interpretation Help from TF-IDF<a class="headerlink" href="#interpretation-help-from-tf-idf" title="Permalink to this headline">¶</a></h3>
+<p>I pulled up the top terms in the TF-IDF analysis of just the nouns in the books. (TF-IDF, or Term Frequency-Inverse Document Frequency, is a way to get at the distinctive terms in a text. You can read more about it in <a class="reference external" href="https://datasittersclub.github.io/site/dsc8.html#tf-idf">DSC #8</a>.):</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>BSC #103: Happy Holidays, Jessi</p></th>
+<th class="head"><p>BSC #84: Dawn and the School Spirit War</p></th>
+<th class="head"><p>BSC #121: Abby in Wonderland</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>room</p></td>
+<td><p>kids</p></td>
+<td><p>beach</p></td>
+</tr>
+<tr class="row-odd"><td><p>day</p></td>
+<td><p>school</p></td>
+<td><p>party</p></td>
+</tr>
+<tr class="row-even"><td><p>family</p></td>
+<td><p>spirit</p></td>
+<td><p>kids</p></td>
+</tr>
+<tr class="row-odd"><td><p>kids</p></td>
+<td><p>room</p></td>
+<td><p>time</p></td>
+</tr>
+<tr class="row-even"><td><p>holiday</p></td>
+<td><p>time</p></td>
+<td><p>family</p></td>
+</tr>
+<tr class="row-odd"><td><p>time</p></td>
+<td><p>way</p></td>
+<td><p>vacation</p></td>
+</tr>
+<tr class="row-even"><td><p>hospital</p></td>
+<td><p>things</p></td>
+<td><p>everyone</p></td>
+</tr>
+<tr class="row-odd"><td><p>kitchen</p></td>
+<td><p>students</p></td>
+<td><p>house</p></td>
+</tr>
+<tr class="row-even"><td><p>car</p></td>
+<td><p>locker</p></td>
+<td><p>way</p></td>
+</tr>
+<tr class="row-odd"><td><p>home</p></td>
+<td><p>house</p></td>
+<td><p>room</p></td>
+</tr>
+</tbody>
+</table>
+<p>The first term in the TF-IDF for <em>Dawn and the School Spirit War</em> was “kids” – which is what dragged it off to Q3 in the original PCA:
+<img alt="Biplot of the PCA of the Baby-Sitters Club book using top 1k nouns with Dawn and the School Spirit War highlighted" src="_images/dsc10_school_spirit_war.png" />
+But we also see sports words (like “locker”) and domestic words (“room”, “house”) in the mix, so once the effect of “kids” was dampened down a bit with the z-score, <em>Dawn and the School Spirit War</em> became “average” through its combination of multiple words that pull in different directions.</p>
+<p>For <em>Happy Holidays Jessi</em>, “kids” isn’t quite as prominent (so it doesn’t get pulled into Q3 in the original PCA)
+<img alt="Biplot of the PCA of the Baby-Sitters Club book using top 1k nouns with Happy Holidays Jessi highlighted" src="_images/dsc10_happy_holidays_jessi.png" /></p>
+<p>Everything seemed to be making a lot of sense! But I still didn’t understand why BSC #103 <em>Happy Holidays, Jessi</em> would be so central like that. So I sent Katia the biplots and some texts.</p>
+<p>“Ok, so I don’t have answers exactly but I have information,” I texted. “The magic word is biplot! Check your email!”</p>
+<p>Katia texted back, “I looked at the biplots on my phone, but I have no idea what I am looking at? They sure are pointy, though!”</p>
+<p>“I put everything in the draft!” I replied.</p>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>Katia<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>I opened up the draft of DSC #10 that Quinn and I had been working on and read through the biplot material.</p>
+<p>“Biplots are really, really cool!” I texted Quinn. “This all makes so much sense now!” And then I got to this graphic:</p>
+<img alt="Biplot of the PCA of the Baby-Sitters Club book using top 1k nouns with Happy Holidays Jessi highlighted" src="_images/dsc10_happy_holidays_jessi.png" />
+<p>Below it the book abruptly ended with Quinn’s bracketed comment:</p>
+<p><code class="docutils literal notranslate"><span class="pre">[ARGH</span> <span class="pre">WHY</span> <span class="pre">IS</span> <span class="pre">THE</span> <span class="pre">HOLIDAY</span> <span class="pre">BOOK</span> <span class="pre">THE</span> <span class="pre">MOST</span> <span class="pre">TYPICAL?!?!]</span></code></p>
+<p>What was Happy Holidays, Jessi doing there so centrally? Quinn was right. It had seemed like we had all the answers and biplots had solved the mystery of the PCA, but this book’s placement seemed odd. After all, a holiday special book didn’t seem like it should be typical.</p>
+<p>I thought about Happy Holidays, Jessi, a book I hadn’t yet gotten to on my analog reread, but which I remembered from my original read in the 90s. A quick search for a plot summary confirmed what I remembered: the book has “Happy Holidays” in the title and Jessi and her family do celebrate Christmas and Kwanzaa in it, but most of the plot is about her younger brother’s injury in a car accident. The plot centers on family, the hospital, and childcare.</p>
+<p>I texted all this to Quinn and added, “What if we tested it with something else to see what the words in the book are doing?”</p>
+<p>I put the corpus file for BSC #103 into <a class="reference external" href="https://voyant-tools.org/">Voyant Tools</a>, and with even the first visualization, Cirrus the word cloud, I could see what was happening. I expanded the word count as high as it would go, to 500:
+<img alt="Wordcloud of Happy Holidays Jessi from Voyant" src="_images/dsc10_cirrus-103.png" /></p>
+<p>I sent the cloud to Quinn and texted, “Look! The words are mostly just average, typical words! Kwanzaa is there and some names, but otherwise it’s all family words, home, kitchen, room, etc. What you’d expect for a series about teenage girls babysitting, I guess.”</p>
+<p>“Oooh,” texted Quinn. “This is good! This is good! But one catch is that we’re only doing nouns. Do you want me to share the nouns only corpus with you?”</p>
+<p>“Yes, please!”</p>
+<p>I restarted Voyant and uploaded the nouns-only file of <em>Happy Holidays, Jessi</em>… And we got joy!
+<img alt="Nouns-only wordcloud of Happy Holidays Jessi from Voyant" src="_images/dsc10_cirrus-103nouns.png" /></p>
+<p>“Look!” I texted Quinn, “Look at this!” I sent the word cloud of the top 500 nouns. “This is completely what I would expect in a typical book! Kwanzaa and the names were proper nouns, not regular nouns, so they weren’t even part of the nouns-only files we analyzed for the PCA! What’s left is just…. everyday life for the Baby-Sitters Club.”</p>
+<p>“Now that’s an ending,” Quinn replied. “And isn’t it cool that we’re starting to have a suite of tools at our disposal to investigate things with?”</p>
+<p>The interesting thing I realized through doing this is that when I think about a Baby-Sitters Club book’s plot, I think about the things that happen. But a plot isn’t just nouns. Or adjectives. Or even words. It’s the combination of those things. You can have a bunch of mentions of “beach” in a beach novel, but it doesn’t make all beach novels seem all that similar to the reader. As a reader, you think about similarity and typicality as two sides of the same coin. But the computer hasn’t read any of the Baby-Sitters Club books in the same sense that you have. The computer only counts nouns, or words, or whatever you give it. BSC #103: <em>Happy Holidays, Jessi</em> doesn’t seem like it should be typical, but when you look at what the computer is processing, all the nouns that make it more of a stand-out are stripped away. The results can be counterintuitive on a corpus like ours, a small one where there isn’t necessarily a lot of diversity of vocabulary.</p>
+<p>An important take-away from DSC #10 is that you need to know your corpus and also know what you’re looking for before you try to draw conclusions! Some might say we’re way too familiar with the specifics of the books’ plots, but one of the key areas of expertise that Roopsi and I bring to the DSC is our knowledge of the BSC corpus. For PCA, this is crucial. Over the course of this book, I’ve had so many texts from Quinn asking me about why this book appears there, or what the specifics are with that book, in order to figure out what it is doing. PCA is counting words, extracting data, and creating visualizations, but in order to interpret the results you get, you need to know both what the computer is reading and what is in your corpus.</p>
+<p>On the YAMS corpus, PCA can show us that the Baby-Sitters Mystery series is more similar to the regular BSC books than other YA mysteries. And it can show us that Gossip Girl and Sweet Valley High are similar to one another. And that there’s a more complicated relationship between the Hardy Boys, Nancy Drew, and Boxcar Children that gives you different results depending on whether you’re looking at nouns or all words. But it isn’t going into the specifics in a thorough way. It is counting nouns or words or whatever and munging parts of it together in a graph so that we can understand what’s happening better than we could on a SPREADSHEET OF DOOM. That can be really useful, but it’s important to remember that, as with any of these tools, it can’t tell you everything.</p>
+</div>
+<div class="section" id="acknowledgements">
+<h2>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permalink to this headline">¶</a></h2>
+<p>Special thanks to Josh Quan for helping Quinn sort out point labeling in the biplot visualization. We’ll be talking more about the pros and cons and options of different R visualization packages in a future book.</p>
+</div>
+<div class="section" id="suggested-citation">
+<h2>Suggested citation<a class="headerlink" href="#suggested-citation" title="Permalink to this headline">¶</a></h2>
+<p>Algee-Hewitt, Mark, Katherine Bowers, Quinn Dombrowski, and Heather Froehlich. “Heather Loves Principal Component Analysis”. <em>The Data-Sitters Club</em>. July 20, 2021. https://datasittersclub.github.io/site/dsc10.html</p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id8"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
+<dd><p>‘That said, there’s a workaround! As Mark pointed out to us, “Multiple Correspondence Analysis (or MCA) is effectively PCA with categorical data. It’s pretty big in European sociology - Gisèle Sapiro uses it a lot.”’</p>
+</dd>
+</dl>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="dsc9.html" title="previous page">The Ghost in Anouk’s Laptop</a>
+    <a class='right-next' id="next-link" href="dscm1.html" title="next page">DSC Multilingual Mystery #1: Lee and the Missing metadata</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Data-Sitters Club<br/>
+        
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
