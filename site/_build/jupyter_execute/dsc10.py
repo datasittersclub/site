@@ -747,3 +747,9 @@ get_ipython().run_cell_magic('R', '', '#How many top words should it use?\nevalu
 
 # ## Suggested citation
 # Algee-Hewitt, Mark, Katherine Bowers, Quinn Dombrowski, and Heather Froehlich. "Heather Loves Principal Component Analysis". *The Data-Sitters Club*. July 20, 2021. https://datasittersclub.github.io/site/dsc10.html
+
+# In[ ]:
+
+
+
+

@@ -29,6 +29,8 @@ parts:
     title: 'DSC 9: The Ghost in Anouk''s Laptop'
   - file: dsc10
     title: 'DSC 10: Heather Loves PCA'
+  - file: dsc11
+    title: 'DSC 11: Katia and the Sentiment Snobs'
 - caption: Multilingual mysteries
   chapters:
   - file: dscm1
