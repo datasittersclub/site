@@ -8,7 +8,7 @@ permalink: /dsc12
 ---
 <img src="_static/images/DSCLogo.png" />
 <div style="float: right; width: 200px;margin-left: 7px;margin-top: 0px;">
-<img src="_static/images/bookcovers/dsc12_cover.jpg" alt="DSC 12 book cover" />
+<img src="images/bookcovers/dsc12_cover.jpg" alt="DSC 12 book cover" />
 </div>
 
 # DSC #12: The DSC and the New Programming Language
