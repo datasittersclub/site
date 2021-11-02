@@ -7,7 +7,7 @@
 
 **Need a fun way to learn about computational text analysis for digital humanities?**
 
-The Data-Sitters Club has you covered with [11 main books and 4 multilingual mysteries](books)!
+The Data-Sitters Club has you covered with [12 main books and 4 multilingual mysteries](books)!
 
 <img src="_static/images/wearethebsc.jpg" width="200px">
 
