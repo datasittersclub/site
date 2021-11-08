@@ -8,7 +8,7 @@ permalink: /dsc12
 ---
 <img src="_static/images/DSCLogo.png" />
 <div style="float: right; width: 200px;margin-left: 7px;margin-top: 0px;">
-<img src="images/bookcovers/dsc12_cover.jpg" alt="DSC 12 book cover" />
+<img src="_images/bookcovers/dsc12_cover.jpg" alt="DSC 12 book cover" />
 </div>
 
 # DSC #12: The DSC and the New Programming Language
@@ -22,7 +22,7 @@ We need to talk about coding.
 
 Ever since [DSC 7: The DSC and Mean Copyright Law](https://datasittersclub.github.io/site/dsc7.html), we've been putting an awful lot of code in these books. [Text comparison algorithms](https://datasittersclub.github.io/site/dsc8.html), [machine-generated text](https://datasittersclub.github.io/site/dsc9.html), [principal component analysis](https://datasittersclub.github.io/site/dsc10.html), [sentiment analysis](https://datasittersclub.github.io/site/dsc11.html).
 
-But we've never had The Talk about Coding and DH and honestly, it's overdue, because we don't want you guys to get the idea that we're assuming that *of course you, dear reader, are comfortable with code*. (What's next, providing a properly LaTeX-formatted PDF download so the Data-Sitters Club might fit in with the computer scientist?)
+But we've never had The Talk about Coding and DH and honestly, it's overdue, because we don't want you guys to get the idea that we're assuming that *of course you, dear reader, are comfortable with code*. (What's next, providing a properly LaTeX-formatted PDF download[^*] so the Data-Sitters Club might fit in with the computer scientist?)
 
 It's hard to do DH for long without running into code and programming languages that you don't know. This is true whether you're new to DH, or built a whole career on it. Turns out it's even hard to watch the new Netflix "Baby-Sitters Club" series for long without a casual mention that Claudia's sister Janine is learning Python. Janine is a genius, but does it take a tech genius to learn Python? Most of the Data-Sitters Club books have been in Python, but we've recently started branching out into R.
 
@@ -289,7 +289,16 @@ And that's totally okay. DH coding skills aren't like Pokémon: you don't have t
 
 ![Animated GIF of Pikachu holding up Togepi](_static/images/dsc12_pikachu.gif)
 
-
 ## Suggested Citation
 
 Suggested citation: Bowers, Katherine, Quinn Dombrowski, and Roopika Risam. "DSC #12: The DSC and the New Coding Language." _The Data-Sitters Club,_ November 2, 2021. https://datasittersclub.github.io/site/dsc12.html.
+
+[^*]: No shade meant towards LaTeX (which, heads-up, is pronounced **LAH**-tek) as such: if your scholarship regularly involves complex formulas, syntax trees for linguistics, or other gnarly layout things, you've got to learn it, and it's a game-changer for publishing that kind of work! But as we've been saying across multiple books now, technology is social. It's not just the tech, it's the context. LaTeX has a distinctive and immediately-recognizable look. It's also ubiquitous in some of the "harder" technical fields adjacent to and intersecting with DH. So in practice, it can end up being like Esprit:
+    ![90's ad for Esprit with teenagers with solid colored sweatshirts with ESPRIT written on them](_static/images/dsc12_esprit.jpg)
+
+    It's a visible and unmistakable symbol of being part of an "in-group" of cool kids. And even if your mom bought you a near-identical solid-colored sweatshirt from K-Mart and you accessorized it to perfection, your outfit still wouldn't get you the same social credit in the middle-school cafeteria as if you'd worn a sweatshirt with ESPRIT emblazoned on the front.
+
+    Some people, particularly on the more computational side of DH, will take your scholarship more seriously if you use LaTeX. Some venues, like the [Computational Humanities](https://computational-humanities-research.org/)  conference, flat-out require submissions in LaTeX. I'm not a fan, in the same way that I didn't appreciate the "Esprit or get out" attitude among middle-school cliques. It imposes a barrier that discourages or downright keeps out people who have worked hard to learn the computational skills they *actually* need to do this kind of scholarship, and can't *additionally* invest the time to learn how to wrangle an unfamiliar publication format on top of it.
+
+    So, yeah, we've been writing a lot of code-centric books lately for the *Data-Sitters Club*. But LaTeX is the wrong medium for what we're doing here with our project. The vibes are all wrong. But don't take my word for it: Philip Allfrey went ahead and created [a properly LaTeX-formatted PDF download of this book](dsc12_latex.pdf). Thanks, I hate it! 😂 And even [Philip noted that "it looks so much more unfriendly/boring when presented like that"](https://twitter.com/dr_pda/status/1457487936266530816). So we're not doing that. But carry on, non-judgemental LaTeX users who work in fields where LaTeX is widespread and/or who just happen to like it, and who can appreciate that it's not the only medium for legitimate DH work! I have no beef with you. (Thank you to [@latex_ninja for the provocation to spell out my snark more clearly](https://twitter.com/latex_ninja/status/1457253598388269058).)
+
