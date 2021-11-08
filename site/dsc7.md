@@ -5,11 +5,11 @@ booktitle: 'The DSC and Mean Copyright Law'
 coverart: 'dsc7_cover.jpg'
 blurb: 'Copyright law makes life harder for the DSC! Can fair use save the day?'
 bookseries: regular
-permalink: /dsc7/
+permalink: /dsc7
 ---
 <img src="_static/images/DSCLogo.png" />
 <div style="float: right; width: 200px;margin-left: 7px;margin-top: 0px;">
-<img src="_static/images/bookcovers/dsc7_cover.jpg" alt="DSC 7 book cover" />
+<img src="images/bookcovers/dsc7_cover.jpg" alt="DSC 7 book cover" />
 </div>
 
 # DSC #7: The DSC and Mean Copyright Law
