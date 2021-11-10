@@ -293,6 +293,80 @@ And that's totally okay. DH coding skills aren't like Pokémon: you don't have t
 
 Suggested citation: Bowers, Katherine, Quinn Dombrowski, and Roopika Risam. "DSC #12: The DSC and the New Coding Language." _The Data-Sitters Club,_ November 2, 2021. https://datasittersclub.github.io/site/dsc12.html.
 
+## Dear Reader: More Coding Stories
+
+We were caught by surprise to see how many people shared their own coding stories in response to this *Data-Sitters Club* book. With permission, we're including them here to add more voices to this conversation. If you'd like to share your story, too, (regardless of where you started or where your journey has led!) reach out to Quinn (@quinnanya on Twitter, or qad@stanford.edu).
+
+### Philip Allfrey
+
+([via a Twitter thread](https://twitter.com/dr_pda/status/1456074863823577089))
+
+This latest episode of the #DataSittersClub has provoked lots of thoughts, the first being that, now that I stop and think about it, I have been coding on an almost daily basis for the past 20 years! Over that time I've used BASIC, Matlab, LaTeX, C++, Fortran, Linux shell scripts, Awk, PHP, Javascript, Typescript, as well as various tools/libraries/frameworks written in these languages (and HTML/XML and CSS, but those aren't really programming languages). But for all that, I have never had formal instruction in "how to code", everything has been self-taught (despite some of these skills being necessary for my masters/PhD). As Katia alludes to in DSC#12, I think there are strong parallels with language learning. The first time you learn a language other than your mother tongue, you need to learn grammar. The first time you learn a programming language you need to learn the "grammar of code". (Aside: in addition to grammar, you need logic to correctly structure your code, and that gives us two of the three parts of the trivium. What would correspond to rhetoric – documentation?) Human languages have parts of speech: nouns, verbs, pronouns, adjectives. Programming languages have types of variables: strings, floats, arrays, objects. Human languages have clauses: relative, indirect speech, purpose, etc. Programming languages have control structures: conditionals, for loops, while loops. And so on. Once you have pigeonholes for these concepts in your brain, then learning the next (human or programming) language is easier – you learn the specific vocabulary, alphabet, and syntax of the language on top of these basic concepts. A nice demonstration of how these coding concepts are independent of the language-specific implementation is the [LOLCODE language](https://en.wikipedia.org/wiki/LOLCODE), based on the lolcatz memes of a few years ago. E.g. a basic loop printing the numbers from 1 to 10 is
+
+`HAI 1.0`
+
+`CAN HAS STDIO?`
+
+`I HAS A VAR`
+
+`IM IN YR LOOP`
+
+`	UP VAR!!1`
+
+`	VISIBLE VAR`
+
+`	IZ VAR BIGGER THAN 10? KTHX`
+
+`IM OUTTA YR LOOP`
+
+`KTHXBYE`
+
+
+On a side-note, [Eve](http://witheve.com) provides an interesting new human-centred take on programming. Similar to Jupyter notebooks, text and code are intermingled, and order of code blocks doesn't matter. This discussion has made me wonder if I should write a language-learning textbook for programmers! Which reminds me of being in my teens, teaching myself Latin (from a book), and wanting to write a Latin parser in BASIC. I got as far as a name (TransLatin) and a logo...
+
+I also enjoyed reading about the Data Sitters' early experiences with computing, particularly as a few days ago I came across a bag of stuff (ephemera? paraphernalia?) relating to my first childhood computer, a Commodore 64
+![Commodore 64](_static/images/dsc12_philip_games.jpg)
+
+I had forgotten that a) 5.25" floppy disks came in plastic cases like CDs b) I had made an inventory of all my games c) I had written instructions for my parents (with ASCII art!) for how to use the computer d) I had helped a stegosaurus & a brontosaurus survive through five eras. Also, I wonder what that program was. Looks like music of some sort. I might have to fire up an emulator and type it in!
+
+### Sharon Goetz
+(via email)
+
+Most kids at my school had more discretionary money than I did, and most didn't have a computer. The high school taught a secretarial skills class with boxy IBM typewriters; I hid the (forbidden) games I played on the household computer. Neither my father nor my high-school guidance counselor thought I should go to college—girl, and not white. Flip that around, however, and I was a geek who liked <em>Zork II</em> and learned how to program an HP 28S calculator to play simple tunes and draw fractals on its little four-line screen ... then majored in English, thanks to impostor syndrome. The only computer class for non-majors taught Scheme, but after figuring out how to use my university-provided Unix shell account, I taught myself TeX and HTML: they seemed useful.
+
+By then, parts of the humanities computing community had become web-visible. Aside from a two-year break to document software professionally and squint at Lisp a bit, I figured out emacs on Windows (thanks, Markus Hoenicka) for TEI-SGML with DTD, then TEI-XML and XSLT. TEI and an understanding of software-development cycles kept me out of debt across my doctoral work in medieval manuscripts, via part-time gigs. I still wasn't a programmer/coder, right, because coders used C++ or that new thing called Java. There seemed no way to assess objectively what I knew or didn't, since with some quiet minutes I could teach myself more; there weren't "real" jobs for XML yet, e.g. structured text in publishing. I was alt-ac before we called it that, a bit too early for DH postdocs, and a local bafflement for trying to combine computing and multilingual manuscripts. Apparently, both were a distraction from looking ready to teach Chaucer.
+
+There seemed little way to appreciate what I knew or didn't, whether objectively or for myself. I taught myself more XSLT, for once with support (thanks, Kirk Hastings). I taught myself enough PHP, then enough JavaScript, to work around XSLT's limitations for transforming epub XML to TEI-XML, since XSLT didn't like 3-4 MB files; that's ~1200 pages of printed scholarly edition with all the trimmings. Python wasn't so popular then, but later, I taught myself enough to convert dozens of Ghost blog entries to Confluence wiki pages. Still not a coder, perhaps—those aren't uses that most software engineers would recognize as professional, non-hobbyist (despite two solid decades of TEI). But I've been here all these years, writing code.
+
+### Jacqui Sahagian
+
+([via the Scholars Lab blog](https://scholarslab.lib.virginia.edu/blog/the-romantics-didnt-want-me-to-code/), excerpted with permission)
+
+I have always been a creative person, an artist even. In undergrad I majored in creative writing and was in a punk band. I hated anything to do with numbers, science, computers, or making money. I saw myself as “not like other girls.” I read books like The Catcher in the Rye and On the Road and believed I identified with the male protagonists. I thought being suicidal made me an interesting person. I never thought I would do anything “digital” or learn to code. 
+
+(Read the rest of "[The Romantics Didn't Want Me To Code](https://scholarslab.lib.virginia.edu/blog/the-romantics-didnt-want-me-to-code/)" at the *Scholars Lab* blog)
+
+###  Heidi Tebbe
+
+([via a Twitter thread](https://twitter.com/ideaofhappiness/status/1455989766722314242))
+
+Really enjoyed this one! Like @roopikarisam, I first learned to code in the 80s w/ BASIC and Logo (LOL at "sham turtle") & like @kab3d I watched college professors in the late 90s lecture from slides about how to code while I took handwritten notes (C instead of C++ for me). Reading your thoughts on R were an interesting counterpoint to how I first started using R... I had a hard time when I tried to learn Python b/c it's just different enough from other languages I knew that the differences were grating; I picked up R more quickly *because* the syntax was so different. But now I use Python for work, so the danger noodle got me in the end.
+
+### Jeff Tharsen
+
+([via a Twitter thread](https://twitter.com/thars3n/status/1455579872911364097))
+
+I teach R and Python (& a couple of other programming languages) in my courses, but I've been writing code since the age of 7. The most important point is that computer languages are stupidly easy (imho) compared to human languages, which contain nuance and slang, and poetry. 
+
+### Paul Vierthaler
+
+([via a Twitter thread](https://twitter.com/pvierth/status/1455550139825721352))
+
+An excellent reflection on coding and DH! My own coding journey started in 2011 (ignoring an abandoned attempt at Perl and some BASIC dabbling in my youth) was Ruby -> R -> Python (with ventures into JavaScript and C land when fancy viz or speed are of the essence). I'm thoroughly a Python partisan these days, but I've never been fully satisfied with viz options. Matplotlib works but feels very dated. More recently I've been experimenting with plotly, but sometimes shoehorning my data into it can be a hassle. I kind of wonder if I'd be more of an R partisan if I hadn't left before the advent of the tidyverse. But I made the switch because I was doing all of my text cleaning in Python and then analysis in R, and I just needed a simpler workflow. At the time R was not great with Chinese. But the key to getting programming to stick for me was simply finding a problem that required I learn. I bailed on Perl because I didn't really have a goal. Once I had a question I wanted answered, the rest fell into place. Well, that and having the flexibility that comes with early dissertation work (and having an advisor who looked the other way for the six month trail-by-fire in which I banged my head against the wall trying to figure out the basics)
+
+
+
+
 [^*]: No shade meant towards LaTeX (which, heads-up, is pronounced **LAH**-tek) as such: if your scholarship regularly involves complex formulas, syntax trees for linguistics, or other gnarly layout things, you've got to learn it, and it's a game-changer for publishing that kind of work! But as we've been saying across multiple books now, technology is social. It's not just the tech, it's the context. LaTeX has a distinctive and immediately-recognizable look. It's also ubiquitous in some of the "harder" technical fields adjacent to and intersecting with DH. So in practice, it can end up being like Esprit:
     ![90's ad for Esprit with teenagers with solid colored sweatshirts with ESPRIT written on them](_static/images/dsc12_esprit.jpg)
 
