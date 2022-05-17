@@ -33,6 +33,8 @@ parts:
     title: 'DSC 11: Katia and the Sentiment Snobs'
   - file: dsc12
     title: 'DSC 12: The DSC and the New Programming Language'
+  - file: dsc14
+    title: 'DSC 14: Hello, DMCA Exemption!'
 - caption: Multilingual mysteries
   chapters:
   - file: dscm1

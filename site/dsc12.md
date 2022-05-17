@@ -346,7 +346,8 @@ I have always been a creative person, an artist even. In undergrad I majored in 
 
 (Read the rest of "[The Romantics Didn't Want Me To Code](https://scholarslab.lib.virginia.edu/blog/the-romantics-didnt-want-me-to-code/)" at the *Scholars Lab* blog)
 
-###  Heidi Tebbe
+
+### Heidi Tebbe
 
 ([via a Twitter thread](https://twitter.com/ideaofhappiness/status/1455989766722314242))
 

@@ -56,6 +56,9 @@ First, we should tell you about The Data-Sitters Club, how it works, and who we 
 
 **Isabelle Gribomont** (University of Liverpool) grew up in Belgium and is our Belgian / French Data-Sitter. Isabelle has long, untidy, light-brown hair and green-ish eyes. She aspires to Claudia’s fashion sense but is most often found in lounge clothes and sporting a ginormous top-knot. 
 
+<br />
+<br />
+
 
 ## Guest Data-Sitters
 
@@ -79,12 +82,22 @@ First, we should tell you about The Data-Sitters Club, how it works, and who we 
 
 **Matthew Sag** (Loyola University Chicago) has friendly blue eyes, a diamond shaped face, and an Australian accent smoothed over from 20 years living in the United States. He had blonde floppy hair like John Denver when he was a kid, but now he looks more like a clean shaven Jude Law. He is a law professor at Loyola University Chicago School of Law and a leading expert on copyright law and fair use -- just the guest data-sitter we needed in <a href="dsc7.html">DSC #7: The DSC and Mean Copyright Law</a>!
 
+
+<div style="float: left; margin-right: 5px;margin-top: 0px;">
+	<img src="_static/images/rachaelpic.jpg" alt="Photo of Rachael Samberg" />
+</div>
+
+**Rachael Samberg** (UC Berkeley Library) has brown hair, some of which she occasionally bleaches and dips in her favorite color (which is purple). She can have a basic conversation in Finnish. And she is perpetually covered in cat fur because she has the sweetest and funniest kitty, and Rachael and her kitty practice nightly gene-splicing…I mean, er… are best friends. Rachael uses her law degree to promote justice (!!!) and innovation (!!!) as the director of UC Berkeley Library’s Office of Scholarly Communication Services. Confused? Basically, if anyone on the UC Berkeley campus has questions about copyright, licenses, privacy, or ethics in their research, scholarship, or teaching, Rachael’s office can help. Learn more in <a href="dsc14.html">DSC #14: Hello, DMCA Exemption</a>!
+
+<div style="float: left; margin-right: 5px;margin-top: 0px;">
+	<img src="_static/images/erikpic.jpg" alt="Photo of Erik Stallman" />
+</div>
+
+**Erik Stallman** (Berkeley Law) has brown hair that is turning gray and brown eyes that are mostly staying brown. He wears an assortment of drugstore reading glasses because he loses his glasses a lot. He is the Associate Director of the Samuelson Law, Technology & Public Policy Clinic at Berkeley Law. He works with law students to help researchers and other folks because copyright law sometimes solves a problem for some people by creating problems for other people. Learn more in <a href="dsc14.html">DSC #14: Hello, DMCA Exemption</a>!
+
+
 <div style="float: left; margin-right: 5px;margin-top: 0px;">
 	<img src="_static/images/jeffpic.png" alt="Photo of Jeff Tharsen" />
 </div>
 
 **Jeff Tharsen** (University of Chicago) is like a cross between a Viking and a Confucian scholar. He's tall, with dark eyes and a long beard that once was blond and is now turning an off-white color like Mary Anne's blouses. He's the University of Chicago's resident expert in humanities-based research computing but spends much of his time thinking about sound systems in premodern rhetoric and poetry, social justice and savage inequities, playing guitar like Rico from the California Diaries series, Minecraft mods, and finding infinite combos for his *Magic: the Gathering* deck builds. Read more about what he's been up to with machine learning in  <a href="dsc9">DSC #9: The Ghost in Anouk's Laptop</a>.
-
-```python
-
-```
