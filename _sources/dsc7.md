@@ -9,7 +9,7 @@ permalink: /dsc7
 ---
 <img src="_static/images/DSCLogo.png" />
 <div style="float: right; width: 200px;margin-left: 7px;margin-top: 0px;">
-<img src="images/bookcovers/dsc7_cover.jpg" alt="DSC 7 book cover" />
+<img src="_images/bookcovers/dsc7_cover.jpg" alt="DSC 7 book cover" />
 </div>
 
 # DSC #7: The DSC and Mean Copyright Law
