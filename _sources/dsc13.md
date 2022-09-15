@@ -7,7 +7,7 @@ blurb: 'How do you say goodbye forever to your collaborators and friends?'
 bookseries: regular
 permalink: /dsc13
 ---
-<img src="/site/_static/images/DSCLogo.png" />
+<img src="https://datasittersclub.github.io/site/_static/DSClogo.png" />
 <div style="float: right; width: 200px;margin-left: 7px;margin-top: 0px;">
 <img src="_images/bookcovers/dsc13_cover.jpg" alt="DSC 13 book cover" />
 </div>

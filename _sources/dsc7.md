@@ -7,7 +7,7 @@ blurb: 'Copyright law makes life harder for the DSC! Can fair use save the day?'
 bookseries: regular
 permalink: /dsc7
 ---
-<img src="/site/_static/images/DSCLogo.png" />
+<img src="https://datasittersclub.github.io/site/_static/DSClogo.png" />
 <div style="float: right; width: 200px;margin-left: 7px;margin-top: 0px;">
 <img src="_images/bookcovers/dsc7_cover.jpg" alt="DSC 7 book cover" />
 </div>

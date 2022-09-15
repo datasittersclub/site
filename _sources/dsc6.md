@@ -8,7 +8,7 @@ bookseries: regular
 permalink: /dsc6/
 ---
 
-<img src="/site/_static/images/DSCLogo.png" />
+<img src="https://datasittersclub.github.io/site/_static/DSClogo.png" />
 
 # DSC #6: Voyant's Big Day
 

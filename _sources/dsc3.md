@@ -7,7 +7,7 @@ blurb: 'What do you do when your collaborators are acting like kids in a candy s
 bookseries: regular
 permalink: /dsc3/
 ---
-<img src="/site/_static/images/DSCLogo.png" />
+<img src="https://datasittersclub.github.io/site/_static/DSClogo.png" />
 
 # DSC #3: The Truth About Digital Humanities Collaborations (and Textual Variants!)
 

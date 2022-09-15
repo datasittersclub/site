@@ -8,7 +8,7 @@ bookseries: regular
 permalink: /dsc4/
 ---
 
-<img src="/site/_static/images/DSCLogo.png" />
+<img src="https://datasittersclub.github.io/site/_static/DSClogo.png" />
 
 # DSC #4: AntConc Saves the Day
 

@@ -9,7 +9,7 @@ bookseries: regular
 permalink: /dsc2/
 ---
 
-<img src="/site/_static/images/DSCLogo.png" />
+<img src="https://datasittersclub.github.io/site/_static/DSClogo.png" />
 
 # DSC #2: Katia and the Phantom corpus
 

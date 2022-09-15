@@ -1,4 +1,4 @@
-<img src="/site/_static/images/DSCLogo.png" />
+<img src="https://datasittersclub.github.io/site/_static/DSClogo.png" />
 
 # DH Awards 2019 Ad Campaign
 
