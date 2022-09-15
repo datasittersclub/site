@@ -19,6 +19,7 @@ First, we should tell you about The Data-Sitters Club, how it works, and who we 
 </div>
 
 **Katia Bowers** (University of British Columbia) has wavy-curly light brown hair, brown eyes, and glasses. She is an Associate Professor at the University of British Columbia, and her research focus is on nineteenth-century Russian literature, particularly Dostoevsky. She’s interested in questions about genre, narrative, and authorship. Katia most readily identifies as a kind of Mary Anne-Stacey hybrid. Like Mary Anne, she is quiet and shy, likes genre fiction and classical music, prefers listening to others to speaking herself, and didn’t own jeans until she was 12, but like Stacey she feels most comfortable in an urban setting.
+<br /><br /><br />
 
 <div style="float: left; margin-right: 5px;margin-top: 0px;">
 	<img src="_static/images/mariapic.jpeg" alt="Photo of Maria Sachiko Cecire" />
@@ -63,6 +64,13 @@ First, we should tell you about The Data-Sitters Club, how it works, and who we 
 ## Guest Data-Sitters
 
 <div style="float: left; margin-right: 5px;margin-top: 0px;">
+	<img src="_static/images/dainypic.png" alt="Photo of Dainy Bernstein" />
+</div>
+
+**Dainy Bernstein** (University of Pittsburgh) has short, dark brown hair and brown eyes. Ey bounces back and forth between big-picture ideas and detail-focused ideas, sometimes writing about an entire collection of books and sometimes writing three pages about a single paragraph. Eir childhood and adolescence was spent in Brooklyn, New York, reading as many books a week as the public library let er borrow. Dainy writes about ultra-Orthodox Jewish children's literature and is the editor of the recently-published collection of essays *[Artifacts of Orthodox Jewish Childhoods](https://www.benyehudapress.com/books/artifacts-of-orthodox-childhoods/)*. Read more in <a href="dsc15.html">DSC #15: Little Miss California Stereotype... and the BY Times</a>. 
+
+
+<div style="float: left; margin-right: 5px;margin-top: 0px;">
 	<img src="_static/images/elisapic.jpg" alt="Photo of Elisa Beshero-Bondar" />
 </div>
 
@@ -88,6 +96,8 @@ First, we should tell you about The Data-Sitters Club, how it works, and who we 
 </div>
 
 **Rachael Samberg** (UC Berkeley Library) has brown hair, some of which she occasionally bleaches and dips in her favorite color (which is purple). She can have a basic conversation in Finnish. And she is perpetually covered in cat fur because she has the sweetest and funniest kitty, and Rachael and her kitty practice nightly gene-splicing…I mean, er… are best friends. Rachael uses her law degree to promote justice (!!!) and innovation (!!!) as the director of UC Berkeley Library’s Office of Scholarly Communication Services. Confused? Basically, if anyone on the UC Berkeley campus has questions about copyright, licenses, privacy, or ethics in their research, scholarship, or teaching, Rachael’s office can help. Learn more in <a href="dsc14.html">DSC #14: Hello, DMCA Exemption</a>!
+<br />
+<br />
 
 <div style="float: left; margin-right: 5px;margin-top: 0px;">
 	<img src="_static/images/erikpic.jpg" alt="Photo of Erik Stallman" />

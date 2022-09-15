@@ -5,10 +5,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DSC #7: The DSC and Mean Copyright Law &#8212; Data-Sitters Club</title>
+    <title>DSC #7: The DSC and Mean Copyright Law &#8212; The Data-Sitters Club</title>
     
-  <link href="_static/css/theme.css" rel="stylesheet" />
-  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,48 +19,63 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="_static/style.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="DSC 8: Text-Comparison-Algorithm-Crazy Quinn" href="dsc8.html" />
     <link rel="prev" title="DSC #6: Voyant’s Big Day" href="dsc6.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -68,23 +84,36 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
       
       <img src="_static/DSClogo.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">Data-Sitters Club</h1>
+      <h1 class="site-logo" id="site-title">The Data-Sitters Club</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
+                    <no title>
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   About
  </span>
@@ -101,7 +130,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Main series
  </span>
@@ -154,7 +183,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="dsc10.html">
-   DSC 10: Heather Loves PCA
+   DSC 10: Heather Likes PCA
   </a>
  </li>
  <li class="toctree-l1">
@@ -167,8 +196,23 @@
    DSC 12: The DSC and the New Programming Language
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc13.html">
+   DSC 13: Goodbye, Friends, Goodbye
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc14.html">
+   DSC 14: Hello, DMCA Exemption!
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc15.html">
+   DSC 15: Little Miss California Stereotype... and the BY Times
+  </a>
+ </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Multilingual mysteries
  </span>
@@ -195,7 +239,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Fun
  </span>
@@ -214,12 +258,17 @@
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
 </div>
 
 
@@ -227,61 +276,130 @@
 
 
           
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
     
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
+    <div class="header-article row sticky-top noprint">
         
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/dsc7.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/datasittersclub/site"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/dsc7.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
     </div>
 </div>
 
-            <!-- Source interaction buttons -->
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav">
-                <ul class="visible nav section-nav flex-column">
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#what-exactly-is-copyright">
    What exactly is copyright?
@@ -393,21 +511,148 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>DSC #7: The DSC and Mean Copyright Law</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-exactly-is-copyright">
+   What exactly is copyright?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#as-a-creator-you-have-exclusive-rights">
+   As a creator, you have exclusive rights
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#copyright-feels-like-it-lasts-forever-less-one-day">
+   Copyright feels like it lasts forever less one day
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-limits-of-copyright">
+   The limits of copyright
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-s-fair-use">
+   What’s fair use?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-factors-of-fair-use">
+   The factors of fair use
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#promoting-progress">
+   “Promoting progress”
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#purpose-and-character-of-use">
+     Purpose and character of use
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nature-of-the-copyrighted-work">
+     Nature of the copyrighted work
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#amount-and-substantiality-of-the-portion-used">
+     Amount and substantiality of the portion used
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#effect-of-the-use-upon-the-potential-market-value-of-the-copyrighted-work">
+     Effect of the use upon the potential market/value of the copyrighted work
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-truth-about-licensing">
+   The truth about licensing
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dmca-as-buzzkill">
+   DMCA as Buzzkill
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#acting-boldly">
+   Acting boldly
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Purpose and character of use
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Nature of the copyrighted work
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Amount and substantiality of the portion used
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Effect of the use upon the potential market/value of the copyrighted work
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-non-conclusion">
+   A non-conclusion
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#to-learn-more">
+   To learn more…
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#suggested-citation">
+   Suggested Citation
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
               <div>
                 
   <img src="_static/images/DSCLogo.png" />
 <div style="float: right; width: 200px;margin-left: 7px;margin-top: 0px;">
 <img src="_images/bookcovers/dsc7_cover.jpg" alt="DSC 7 book cover" />
 </div>
-<div class="section" id="dsc-7-the-dsc-and-mean-copyright-law">
-<h1>DSC #7: The DSC and Mean Copyright Law<a class="headerlink" href="#dsc-7-the-dsc-and-mean-copyright-law" title="Permalink to this headline">¶</a></h1>
+<div class="tex2jax_ignore mathjax_ignore section" id="dsc-7-the-dsc-and-mean-copyright-law">
+<h1>DSC #7: The DSC and Mean Copyright Law<a class="headerlink" href="#dsc-7-the-dsc-and-mean-copyright-law" title="Permalink to this headline">#</a></h1>
 <p>by Quinn Dombrowski and Matthew Sag, September 22, 2020</p>
 <p>It all started with a comment on the draft of <a class="reference external" href="https://datasittersclub.github.io/site/dsc5/">DSC #5: The DSC and the Impossible TEI Quandaries</a>.</p>
 <p><img alt="Question about the copyright-legality of including a panel from a Baby-Sitters Club graphic novel" src="_images/dsc07_katia_comment.png" /></p>
@@ -419,14 +664,14 @@
 <p>Let’s face it: being a copyright nerd helps when it comes to doing DH, but when I got to talking with Matt about our copyright uncertainties while I was at the Building LLTDM workshop and he offered to help out, I started jumping up and down with joy. When he even read some of the Baby-Sitters Club books to get up to speed on our subject matter, I knew I’d found the right law professor for the job!</p>
 <p>So let’s dive in together, me and Matt.</p>
 <div class="section" id="what-exactly-is-copyright">
-<h2>What exactly is copyright?<a class="headerlink" href="#what-exactly-is-copyright" title="Permalink to this headline">¶</a></h2>
+<h2>What exactly is copyright?<a class="headerlink" href="#what-exactly-is-copyright" title="Permalink to this headline">#</a></h2>
 <p>Most people, if asked casually, would probably say they know what copyright is. But then there are moments when cracks begin to show. If you read fanfic, for example, you’ll likely come across disclaimers like “no copyright infringement intended” – almost like some legalistic twist on “no offense intended”.</p>
 <p>Here’s the deal: <em>anyone</em> who makes almost any type of creative work immediately has a set of <em>exclusive</em> rights pertaining to that work.</p>
 <p>The “creative” part is important: you can’t copyright facts. Fan wikis (like the one we scraped for metadata about the BSC books in <a class="reference external" href="https://datasittersclub.github.io/site/dscm3/">DSC Multilingual Mystery #3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs</a>) depend on this: there’s nothing copyrightable about the fact that Ann M. Martin wrote Kristy’s Great Idea in 1986, it was narrated by a teenage girl named Kristy Thomas, and she refers to her friends Claudia Kishi, Mary Anne Spier, and Stacey McGill. So all that information, plus a plot synopsis, the ISBN number, publication date, and various other details can be included on fan wiki pages. But the fan wiki can’t post the full text of the book, because <em>that’s</em> the creative work <em>itself</em>.</p>
 <p>Similarly, a simple list of ingredients and preparation instructions isn’t copyrightable, but the further the recipe skews towards personal narrative, the more likely it is to be eligible for copyright. But even then, copyright would protect only the narrative parts (the original expression) and people would still be free to copy the fact and instruction parts.</p>
 </div>
 <div class="section" id="as-a-creator-you-have-exclusive-rights">
-<h2>As a creator, you have exclusive rights<a class="headerlink" href="#as-a-creator-you-have-exclusive-rights" title="Permalink to this headline">¶</a></h2>
+<h2>As a creator, you have exclusive rights<a class="headerlink" href="#as-a-creator-you-have-exclusive-rights" title="Permalink to this headline">#</a></h2>
 <p>We think of copyright most often in the context of formally published works (e.g. books, songs, movies), but it applies equally to, for instance, the first scene of a play that you scrawled in the margins of a course reading while you’re bored in class.</p>
 <p>Copyright does not give the creator total control over every conceivable use of a work. It gives creators the right to:
 Reproduce (i.e., making copies of) the work: if your roommate finds your class notes and types up the script without your permission, they’ve violated your copyright.*
@@ -439,13 +684,13 @@ Create derivative works based on the work (i.e., to alter, remix, or build upon 
 <p>* Matt made me add “subject to any applicable defenses.” Of course.</p>
 </div>
 <div class="section" id="copyright-feels-like-it-lasts-forever-less-one-day">
-<h2>Copyright feels like it lasts forever less one day<a class="headerlink" href="#copyright-feels-like-it-lasts-forever-less-one-day" title="Permalink to this headline">¶</a></h2>
+<h2>Copyright feels like it lasts forever less one day<a class="headerlink" href="#copyright-feels-like-it-lasts-forever-less-one-day" title="Permalink to this headline">#</a></h2>
 <p>How long do these exclusive rights last? Well, if you’re Alexander Hamilton, working under the <a class="reference external" href="https://en.wikipedia.org/wiki/Copyright_Act_of_1790">Copyright Act of 1790 in the United States</a>, you get 14 years – and if you’re still alive at the end of those 14 years (sorry, Hamilton) you can apply for one copyright extension of an additional 14 years. After that, your work is in the <em>public domain</em>, meaning that it’s unencumbered by copyright and people can use it however they like, without even having to credit you. (Like me, printing all those 1924 magazine covers on fabric and sewing them into a dress.)</p>
 <p>In the US in 2020, copyright applies to anything created after 1978 for the lifetime of the creator – plus 70 years. (For things created before 1978, it can get a little messy, but is similarly a very long time.) So, maybe your roommate’s grandchildren or great-grandchildren could do whatever they want with your script, depending on when you die. (The EU has the same copyright term, 70 years after the death of the creator, and in Mexico, it’s life plus 100 years! Katia gets off easy in Canada, with a term of just 50 years after the death of the creator.)</p>
 <p>If you’re doing the math and realizing that this means that something you scribbled down in college would, automatically, have restrictions placed on its use for 140 years or more (assuming you have a long life), which all but guarantees it won’t be reused and adapted in creative ways by anyone, ever: congratulations, you’ve found what many people (including yours truly) see as a problem with modern copyright law! In fact, a <a class="reference external" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1436186">2009 paper by economist Rufus Pollock</a> suggests that the optimal copyright term for maximizing economic benefit to both the creator (payoff for creating the work) and society (because society does benefit from others’ creative reinterpretations of works) is… about 15 years, very similar to what was codified in the Copyright Act of 1790. Imagine a world where anyone would have the legal freedom to turn <em>Kristy’s Great Idea</em> into a hit Broadway musical in 2001. Under current law, that’s not possible until after 2090 at the <em>earliest</em>. (And that’s with a <em>bad outcome</em>, like if Ann M. Martin were to fall victim to COVID-19 this year.)</p>
 </div>
 <div class="section" id="the-limits-of-copyright">
-<h2>The limits of copyright<a class="headerlink" href="#the-limits-of-copyright" title="Permalink to this headline">¶</a></h2>
+<h2>The limits of copyright<a class="headerlink" href="#the-limits-of-copyright" title="Permalink to this headline">#</a></h2>
 <p>A work being in copyright means that there’s very little you can legally <em>just do with no questions asked</em>.</p>
 <p>“I would say ‘limits what’ because saying ‘very little’ only increases the struggle to get people to embrace the full scope of their fair use rights,” Matt interjected. “If we are in the world of pure personal non-public uses, there is <em>a lot</em> you can do without further permission. Non-public performances, silent reading, partial copying for critical or educational purposes…”</p>
 <p>I rolled my eyes. “Silent reading? I mean, duh, you can read silently, but is that even worth counting? That’s like, if my kids complain they’re bored, and I’m like, ‘well, you can breathe air’. It’s not even worth enumerating!”</p>
@@ -456,7 +701,7 @@ Create derivative works based on the work (i.e., to alter, remix, or build upon 
 <p>Anyhow, on the other hand, work being in the public domain means you can <em>legally do basically anything</em> with no questions asked. But what about the space in the middle, where the legality depends on the details of what, exactly, you’re doing, why you’re doing it, and how? Under US copyright law, we’re getting into the gray zone of fair use.</p>
 </div>
 <div class="section" id="what-s-fair-use">
-<h2>What’s fair use?<a class="headerlink" href="#what-s-fair-use" title="Permalink to this headline">¶</a></h2>
+<h2>What’s fair use?<a class="headerlink" href="#what-s-fair-use" title="Permalink to this headline">#</a></h2>
 <p>The UK (where my fellow Data-Sitter Anouk Lang lives) and former British colonies (e.g. Canada, Australia, New Zealand, India, Singapore) have as part of their copyright law something called “fair dealing” – which enumerates a specific and finite list of uses of in-copyright works that <strong>do not</strong> count as copyright infringement. What, exactly, makes it onto that list varies from country to country, but common examples include:</p>
 <ul class="simple">
 <li><p>Research (like the Data-Sitters Club)</p></li>
@@ -473,7 +718,7 @@ Create derivative works based on the work (i.e., to alter, remix, or build upon 
 <p>I was taken aback. I’d heard the “gray zone” framing so often that I’d assumed that was an uncontroversial shorthand for the situation with fair use. It was even kind of reassuring: the unavoidable ambiguity meant that what might look like a “no” could actually be a “maybe” – even if it also meant that there also was never quite a “yes”, and it all came down to telling a good story. But what Matt was saying was that some stories had been told and validated enough times that they had become truth. I wanted to know more.</p>
 </div>
 <div class="section" id="the-factors-of-fair-use">
-<h2>The factors of fair use<a class="headerlink" href="#the-factors-of-fair-use" title="Permalink to this headline">¶</a></h2>
+<h2>The factors of fair use<a class="headerlink" href="#the-factors-of-fair-use" title="Permalink to this headline">#</a></h2>
 <p>Like a lot of copyright law, the fair use doctrine began with judges filling in the blank spaces in the vaguely worded early copyright acts in England and then in the United States. In 1976, the US Congress finally got around to recognizing fair use in the text of the Copyright Act, in Section 107. That section was meant to restate and continue the common law tradition of fair use, but it also included four “factors” to be considered in applying the doctrine.</p>
 <p>Those factors are:</p>
 <ol class="simple">
@@ -484,7 +729,7 @@ Create derivative works based on the work (i.e., to alter, remix, or build upon 
 </ol>
 </div>
 <div class="section" id="promoting-progress">
-<h2>“Promoting progress”<a class="headerlink" href="#promoting-progress" title="Permalink to this headline">¶</a></h2>
+<h2>“Promoting progress”<a class="headerlink" href="#promoting-progress" title="Permalink to this headline">#</a></h2>
 <p>“There is SO MUCH CONFUSION about the four fair use factors. Let me see if I can help,” said Matt. “I don’t think people can understand fair use without trying to wrap their heads around the question of ‘what is copyright really for?’ Luckily, I think I have some answers. Copyright is meant to ‘promote progress’ (it’s there in the Constitution), but the question is how?”</p>
 <p>“Yeah, there’s a lot you could problematize there…” I mused.</p>
 <p>“At its heart, copyright law is concerned with the communication of an author’s original expression to the public. Original expression is what makes something copyrightable in the first place, and the bundle of rights that copyright gives you are all concerned with the communication of original expression to the public. So, authors don’t get total control over every aspect of the work, they get to control when and how their original expression is communicated to the public.”</p>
@@ -512,7 +757,7 @@ Create derivative works based on the work (i.e., to alter, remix, or build upon 
 <p>“Putting it all together: the Copyright Act has a list of four factors to consider when deciding whether a use is fair, but don’t think of this as a scorecard or a check-list. The factors are all interrelated. If you think about the <strong>purpose</strong>, <strong>proportionality</strong>, and <strong>likely effect</strong> of the use and you shouldn’t go too far wrong. But if you start off thinking that non-commercial use is always good or that full copies are always bad you will get a lot of things wrong.”</p>
 <p>It was pretty clear now that when I assured Katia that including a couple panels from a graphic novel in our TEI book was fine on the basis of fair use, I was right. (Phew!) But let’s work through it:</p>
 <div class="section" id="purpose-and-character-of-use">
-<h3>Purpose and character of use<a class="headerlink" href="#purpose-and-character-of-use" title="Permalink to this headline">¶</a></h3>
+<h3>Purpose and character of use<a class="headerlink" href="#purpose-and-character-of-use" title="Permalink to this headline">#</a></h3>
 <p>The Data-Sitters Club is a non-commercial activity with educational and research aims.</p>
 <p>“Okay, that’s a good start, but what really matters is that you didn’t just display the original work so that people could enjoy or appreciate the author’s original expression,” added Matt. “You combined it with a whole new layer of analysis, the TEI markup, that added a new layer of meaning and used the original in a totally different way. This is classic transformative use.”</p>
 <p>He had a point. It was <em>quite literally</em> transformative, because I’d combined the panels from the graphic novel with a screenshot of the TEI markup, and saved them together as a single image. I could’ve used two images (one with the panels, one with the markup) for the same effect, but making it impossible to download one without the other was one more thing that cemented the ‘transformation’.</p>
@@ -520,21 +765,21 @@ Create derivative works based on the work (i.e., to alter, remix, or build upon 
 <p>It’s true, it was hard to imagine how someone would get back to the original work with its intended purpose, from what we’ve put together. As if a parent would point their kid to the Data-Sitters Club and say, “Here, sweetie, enjoy some stories about intrepid girl baby-sitters, just don’t mind all the other text mixed in about digital humanities.” Not happening.</p>
 </div>
 <div class="section" id="nature-of-the-copyrighted-work">
-<h3>Nature of the copyrighted work<a class="headerlink" href="#nature-of-the-copyrighted-work" title="Permalink to this headline">¶</a></h3>
+<h3>Nature of the copyrighted work<a class="headerlink" href="#nature-of-the-copyrighted-work" title="Permalink to this headline">#</a></h3>
 <p>Matt already dispelled this one. It’s “bone-headed” as a separate factor.</p>
 <p>(Fun fact: “bone-headed” appears exactly once in the Baby-Sitters Club corpus, in #107 <em>Mind Your Own Business, Kristy!</em>: “Hey, once in awhile we all do something really bone-headed. Even the great Kristy Thomas.”)</p>
 </div>
 <div class="section" id="amount-and-substantiality-of-the-portion-used">
-<h3>Amount and substantiality of the portion used<a class="headerlink" href="#amount-and-substantiality-of-the-portion-used" title="Permalink to this headline">¶</a></h3>
+<h3>Amount and substantiality of the portion used<a class="headerlink" href="#amount-and-substantiality-of-the-portion-used" title="Permalink to this headline">#</a></h3>
 <p>We used less than a full page from the graphic novel: just a couple of panels. You couldn’t even figure out the basic plot based on those panels. Which demonstrates that we really did have an entirely different purpose in mind (transformative use ✅) and also leads directly to …</p>
 </div>
 <div class="section" id="effect-of-the-use-upon-the-potential-market-value-of-the-copyrighted-work">
-<h3>Effect of the use upon the potential market/value of the copyrighted work<a class="headerlink" href="#effect-of-the-use-upon-the-potential-market-value-of-the-copyrighted-work" title="Permalink to this headline">¶</a></h3>
+<h3>Effect of the use upon the potential market/value of the copyrighted work<a class="headerlink" href="#effect-of-the-use-upon-the-potential-market-value-of-the-copyrighted-work" title="Permalink to this headline">#</a></h3>
 <p>It’s inconceivable that anyone would say, after seeing those couple panels in our TEI book, “Cool, that saves me from having to buy this graphic novel!” Those couple panels are no substitute for reading the graphic novel, for people who would want to read it already. If anything, I can imagine the work of the Data-Sitters Club – which combines tutorials for DH methods with the Baby-Sitters Club corpus – potentially creating a market of readers for the Baby-Sitters Club series (in its various manifestations) who would not have otherwise considered it. You know, readers like our guest data-sitter, Matt!</p>
 </div>
 </div>
 <div class="section" id="the-truth-about-licensing">
-<h2>The truth about licensing<a class="headerlink" href="#the-truth-about-licensing" title="Permalink to this headline">¶</a></h2>
+<h2>The truth about licensing<a class="headerlink" href="#the-truth-about-licensing" title="Permalink to this headline">#</a></h2>
 <p>So, we’re good, right? There’s no problem for the Data-Sitters Club to include a few graphic novel panels in our books, and we should be free to use the Baby-Sitters Club novels for our research. Thanks, fair use doctrine!</p>
 <p>But, of course, it’s not so simple. Fair use isn’t the end of the conversation, particularly with <em>text corpora your university has licensed</em>.</p>
 <p>If you’re at a university, you’re probably vaguely aware of the fact that your library pays some kind of subscription fee to publishers for journal access, and may have also paid some one-time and/or subscription fee to publishers for access to licensed corpora – things like the historical archives of the New York Times. You <em>might</em> know that some of these corpora come with terms and conditions like <em>not scraping them</em> (which can strain a provider’s servers); if you’re ever thinking about scraping a resource your university has licensed, please please please go talk to your librarians beforehand. Your librarians aren’t there to police you, they’re there to help you do what you need to do, in a way that won’t lead to the whole university getting their access to these resources shut off. (They’re also often cool people you should get to know anyway, regardless of their utility for your research goals.) When it comes to corpora like <em>Gale Primary Sources</em> that your library may have purchased, all the text files you need might be sitting on a library server somewhere, and all you need to do is talk to your friendly local librarian to get access – much easier than trying to scrape online resources.</p>
@@ -548,7 +793,7 @@ Create derivative works based on the work (i.e., to alter, remix, or build upon 
 <p>Okay, moving on.</p>
 </div>
 <div class="section" id="dmca-as-buzzkill">
-<h2>DMCA as Buzzkill<a class="headerlink" href="#dmca-as-buzzkill" title="Permalink to this headline">¶</a></h2>
+<h2>DMCA as Buzzkill<a class="headerlink" href="#dmca-as-buzzkill" title="Permalink to this headline">#</a></h2>
 <p>Licensed corpora aren’t the only complication you can face when applying computational methods to text corpora. The copyright experts at the Building LLTDM Institute were fairly confident that copying for text mining purposes would be fair use, even if the material was copied from somewhere a little bit sketchy, like SciHub.This is different from EU copyright law, which requires you to acquire your corpus by legal means. If you’re in the US, you can freely avail yourself of torrents, Russian pirate websites, or mysterious USB drives full of in-copyright literary texts that happen to be left on your porch. As long as you didn’t participate in or encourage the original illegal copying, there should be no problem, no questions asked.</p>
 <p>But of course, there’s one crucial exception: You. Cannot. Legally. Crack. Ebooks. (This again differs from the EU, where it will soon be legal to crack ebooks for legitimate computational research purposes. The EU passed a new directive on copyright law in 2019 that comes into effect in 2021.) I cannot begin to tell you how much easier my life would be if it were legal to crack ebooks. For starters, <a class="reference external" href="https://datasittersclub.github.io/site/dsc2/">DSC #2: Katia and the Phantom Corpus</a> would’ve been a lot shorter: we could’ve just included some instructions for how to crack ebooks, instead of all that prose about how to scan and OCR paper copies of books (Not to mention, it would have saved us a lot of time not to have to order, wait for the mail, scan, OCR, and clean 225 texts in the BSC corpus!).</p>
 <p>Even if your use of those cracked ebooks is totally legit under fair use, it remains <em>illegal to circumvent access control technologies</em> (e.g. cracking ebooks) in the US thanks to the Digital Millennium Copyright Act (DMCA) of 1998.</p>
@@ -557,8 +802,8 @@ Create derivative works based on the work (i.e., to alter, remix, or build upon 
 <p>Anyhow, another one of these rulemaking events will happen in 2021. And the organizers of the “Building LLTDM” NEH-funded workshop I attended include folks associated with the <a class="reference external" href="https://www.law.berkeley.edu/experiential/clinics/samuelson-law-technology-public-policy-clinic/">Samuelson Law, Technology &amp; Public Policy Clinic</a> at UC Berkeley, who are filing an amicus brief to support a new exemption from the DMCA that would enable legal ebook cracking for research purposes. Fingers crossed!</p>
 </div>
 <div class="section" id="acting-boldly">
-<h2>Acting boldly<a class="headerlink" href="#acting-boldly" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="_images/dsc07_quinn_buildinglltdm.jpg"><img alt="Quinn with Building LLTDM logo COVID-19 mask" src="_images/dsc07_quinn_buildinglltdm.jpg" style="height: 600px;" /></a>
+<h2>Acting boldly<a class="headerlink" href="#acting-boldly" title="Permalink to this headline">#</a></h2>
+<img src="_static/images/dsc07_quinn_buildinglltdm.jpg" alt="Quinn with Building LLTDM logo COVID-19 mask" height="600px"/>
 <p>So this brings us back to the Building LLTDM workshop where I met Matt. The biggest take-away point for me was that the standard advice on copyright doled out by libraries (sometimes with backing from the university’s general counsel, whose job is to keep the university out of hot water, not figure out a way to make your project possible) really tends to be conservative, even when it’s not transparently so. Getting the copyright door slammed in your face is an invitation to dig deeper, because it can’t possibly be that simple. But the “fair use is a gray area” dance is just plausible enough to believe. “It’s complicated” is too often short for “It’s too complicated for you to understand and you don’t want to risk making a mistake.” But talking to Matt helped me see the other side of it: “It’s complicated enough that what might look like a smooth surface of prohibition at first glance actually has grooves and wrinkles where you can get a handhold for doing more things than you might imagine, in a legally defensible way.”</p>
 <p>This got me thinking. I’d spent a ton of time transcribing the dialogue and sound effects from the Baby-Sitters Club graphic novels – not just in English, but also in French. It wasn’t just a plain-text transcript, even: I’d put in the time to mark the speaker of each piece of dialogue. And when Lee did her sample of TEI markup, she took it even further by describing the visuals of the graphic novels themselves.</p>
 <p><img alt="Lee's markup of Mary Anne Saves the Day using CBML" src="_images/dsc5_mary_anne_cbml.png" /></p>
@@ -574,19 +819,19 @@ Create derivative works based on the work (i.e., to alter, remix, or build upon 
 <p>“Exactly!” I exclaimed. “There’s <em>so much work</em> that goes into putting together text corpora – even just finding and OCRing books takes a long, long time. I want as many people to benefit from that work as possible, especially when it involves <em>another</em> layer of tedium like doing TEI markup.”</p>
 <p>“Okay. Now that we’re clear on the reason for sharing, we can dig into the fair use question,” Matt replied.</p>
 <div class="section" id="id1">
-<h3>Purpose and character of use<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<h3>Purpose and character of use<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
 <p>“The Data-Sitters Club is STILL a non-commercial activity with educational and research aims. Our TEI markup of the dialogue is transformative – and it’s <em>even more transformative</em> if it were to include a layer of interpretation, like what Lee offered in her CBML-flavored markup of the graphic novels. In this scenario, <em>more transformative</em> is a good thing,” I proposed.</p>
 <p>“Exactly! The TEI markup of the dialogue is transformative because it takes part of an existing work and fundamentally changes it through the addition of multiple layers of interpretation, commentary and classification. These new layers of meaning are important because they show that although in a very literal sense you are still communicating part of the original expression to the public, you aren’t using it for its expressive value or effect. In fact, you are using it for a completely different purpose, namely analysis of the original. I don’t want people to get the impression that transformative use is limited to criticism and analysis of the original work. It’s just that when we see criticism and analysis it is very easy to see that the purpose of the original and the purpose of the second use are intrinsically different.”</p>
 <p>“So it’s really the purpose, more than the educational and non-profit context, that matters here?”</p>
 <p>“Yes! The fact that the DSC is educational and noncommercial certainly doesn’t hurt, but it really just underscores the strength of your transformative use argument,” Matt added.</p>
 </div>
 <div class="section" id="id2">
-<h3>Nature of the copyrighted work<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<h3>Nature of the copyrighted work<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
 <p>I initially shrugged this off since Matt dismissed it as “bone-headed” as an independent factor. But even still, he was able to use this angle to shed some more light on the situation:</p>
 <p>“Even if the “nature of the copyrighted work” is not a factor at all, it is still an essential input into any fair use analysis. Actually, if this case ever came to trial, we would want the court to really think hard about the nature of the work. The whole reason that you wanted to do this TEI markup in the first place is because a lot of the computational analysis that we apply to text doesn’t work very well for a story told in pictures. We would also want the court to see that even though the markup contains all of the text of the graphic novel, the text by itself is essentially worthless to the books’ intended audience, or pretty much any audience.”</p>
 </div>
 <div class="section" id="id3">
-<h3>Amount and substantiality of the portion used<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<h3>Amount and substantiality of the portion used<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
 <p>From the perspective of the text, this factor would seem to not help at all. Our TEI markup includes <em>all the text</em> – and this factor favors the use of exemplars, rather than the full thing. But if we’re talking about graphic novels, where the visual element is so important, how much does that change things? 100% of the text means what percent of the work overall? An <em>amount</em> of 100% of the text might still mean considerably less on the <em>substantiality</em> front.</p>
 <p>Matt agreed that the graphic novel context was key. “The pictures in a graphic novel are not simply illustrations that complement a story told in words. In a graphic novel, the text is typically just a thin slice of a story that is primarily told in pictures. So even though the markup is a literal copy of all of the text, it’s actually only a partial copy of the integrated work that is the graphic novel. It’s true that the markup contains annotations that relate to the story the non-textual elements are telling, but those annotations are still merely a shadow of the graphics.”</p>
 <p>Score! Even 100% of the text of a graphic novel still amounted to a smaller percentage of the overall work.</p>
@@ -597,7 +842,7 @@ Create derivative works based on the work (i.e., to alter, remix, or build upon 
 <p>It was an awkward way to put it, but I saw what he meant. And working with literature for children made it even clearer. Would our TEI transcription satisfy children to the point where they wouldn’t want to see the graphic novels? Nostalgic fans of the Baby-Sitters Club are another audience, but the first time I opened one of these graphic novels, it was the images that propelled me through the text. I wanted to see what the artists had done to bring the world of Stoneybrook to life. If I wanted the text, I could just read the novels for a richer experience.</p>
 </div>
 <div class="section" id="id4">
-<h3>Effect of the use upon the potential market/value of the copyrighted work<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<h3>Effect of the use upon the potential market/value of the copyrighted work<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
 <p>So it seems pretty clear that a TEI/XML file is a very different thing than a graphic novel. Particularly for the juvenile target audience, TEI is no substitute for the original work.</p>
 <p>Even for myself, as a DH person used to dealing with text in various odd formats, I find TEI files to be a huge pain to read – even separate from the question of what you lose by replacing the drawings in the graphic novel with a written description (what Lee did), or nothing at all (as I did). If a reader of these files knew XSLT, they could strip out the tags, and replace them with some annotation for who’s doing the speaking – turn our TEI into a script of sorts. If you take my approach to doing markup (just the text), you end up with something significantly less than the graphic novel, which helps with regard to “amount and substantiality”. If you take Lee’s approach, and describe the illustrations, you get something that includes a lot more analysis of the graphic novel and so rates higher on “transformative”.</p>
 <p>That transformation, Matt noted, is still not something that most people would consider to be a substitute for the original work. “I don’t even think that these annotations would be a workable substitute for alt-text used to provide audio descriptions for the visually impaired. Even if the annotations did provide this function, that market is so poorly served at the moment that this will just lead us into a whole new fair use analysis on the issue of disability access.”</p>
@@ -616,7 +861,7 @@ Create derivative works based on the work (i.e., to alter, remix, or build upon 
 </div>
 </div>
 <div class="section" id="a-non-conclusion">
-<h2>A non-conclusion<a class="headerlink" href="#a-non-conclusion" title="Permalink to this headline">¶</a></h2>
+<h2>A non-conclusion<a class="headerlink" href="#a-non-conclusion" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><p>“Time is change,” Mimi told me importantly.</p>
 </div></blockquote>
@@ -642,17 +887,17 @@ Create derivative works based on the work (i.e., to alter, remix, or build upon 
 <p>But for today, I’ll wrap up with the thought that copyright law is, indeed, complicated. Seize it by its complexity and use it!</p>
 </div>
 <div class="section" id="to-learn-more">
-<h2>To learn more…<a class="headerlink" href="#to-learn-more" title="Permalink to this headline">¶</a></h2>
+<h2>To learn more…<a class="headerlink" href="#to-learn-more" title="Permalink to this headline">#</a></h2>
 <p>There’s so much to learn about copyright, fair use (and similar provisions in other countries), licensing, and how to push those boundaries without putting yourself or your institution at too much risk. While, luckily, it’s not a problem for Anouk, our Scotland-based Data-Sitter, to share our corpus or do computational text analysis work, the same isn’t true for everywhere in the world. Before getting too deep into computational text analysis, and certainly before undertaking international collaborations, check out the following resources:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://buildinglltdm.org/">Building LLTDM materials on copyright, fair use, international law, and ethics</a></p></li>
 <li><p>Sag, Matthew, <a class="reference external" href="https://ssrn.com/abstract=3331606">The New Legal Landscape for Text Mining and Machine Learning</a>, Journal of the Copyright Society of the USA, Vol. 66 p.291 (2019)</p></li>
 </ul>
-<p><a name="1"/><sup>1</sup> For some examples of just a few issues, see Blake Ellis Reid, Copyright and Disability (May 1, 2019). U of Colorado Law Legal Studies Research Paper No. 19-16, Available at SSRN: https://ssrn.com/abstract=3381201</p>
+<p><a name="1"/><sup>1</sup> For some examples of just a few issues, see Blake Ellis Reid, Copyright and Disability (May 1, 2019). U of Colorado Law Legal Studies Research Paper No. 19-16, Available at SSRN: <a class="reference external" href="https://ssrn.com/abstract=3381201">https://ssrn.com/abstract=3381201</a></p>
 </div>
 <div class="section" id="suggested-citation">
-<h2>Suggested Citation<a class="headerlink" href="#suggested-citation" title="Permalink to this headline">¶</a></h2>
-<p>Suggested citation: Dombrowski, Quinn and Matthew Sag. “DSC #7: The DSC and Mean Copyright Law.” <em>The Data-Sitters Club,</em> September 22, 2020. https://datasittersclub.github.io/site/dsc7.html.</p>
+<h2>Suggested Citation<a class="headerlink" href="#suggested-citation" title="Permalink to this headline">#</a></h2>
+<p>Suggested citation: Dombrowski, Quinn and Matthew Sag. “DSC #7: The DSC and Mean Copyright Law.” <em>The Data-Sitters Club,</em> September 22, 2020. <a class="reference external" href="https://datasittersclub.github.io/site/dsc7.html">https://datasittersclub.github.io/site/dsc7.html</a>.</p>
 </div>
 </div>
 
@@ -678,33 +923,48 @@ Create derivative works based on the work (i.e., to alter, remix, or build upon 
 
               </div>
               
-        
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="dsc6.html" title="previous page">DSC #6: Voyant’s Big Day</a>
-    <a class='right-next' id="next-link" href="dsc8.html" title="next page">DSC 8: Text-Comparison-Algorithm-Crazy Quinn</a>
-
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="dsc6.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">DSC #6: Voyant’s Big Day</p>
         </div>
-        
+    </a>
+    <a class='right-next' id="next-link" href="dsc8.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">DSC 8: Text-Comparison-Algorithm-Crazy Quinn</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
-    <div class="container">
-      <p>
-        
-          By The Data-Sitters Club<br/>
-        
-      </p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By The Data-Sitters Club<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
     </div>
-  </footer>
-</main>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 
-  
+
   </body>
 </html>
