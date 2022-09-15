@@ -1,3 +1,6 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
 format: jb-book
 root: index
 parts:
@@ -20,7 +23,7 @@ parts:
   - file: dsc5
     title: 'DSC 5: The DSC and the Impossible TEI Quandaries'
   - file: dsc6
-    title: 'DSC 6: Voyant''s Big Day'
+    title: "DSC 6: Voyant's Big Day"
   - file: dsc7
     title: 'DSC 7: The DSC and Mean Copyright Law'
   - file: dsc8
@@ -28,13 +31,17 @@ parts:
   - file: dsc9
     title: 'DSC 9: The Ghost in Anouk''s Laptop'
   - file: dsc10
-    title: 'DSC 10: Heather Loves PCA'
+    title: 'DSC 10: Heather Likes PCA'
   - file: dsc11
     title: 'DSC 11: Katia and the Sentiment Snobs'
   - file: dsc12
     title: 'DSC 12: The DSC and the New Programming Language'
+  - file: dsc13
+    title: 'DSC 13: Goodbye, Friends, Goodbye'
   - file: dsc14
     title: 'DSC 14: Hello, DMCA Exemption!'
+  - file: dsc15
+    title: 'DSC 15: Little Miss California Stereotype... and the BY Times'
 - caption: Multilingual mysteries
   chapters:
   - file: dscm1

@@ -5,10 +5,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DSC #12: The DSC and the New Programming Language &#8212; Data-Sitters Club</title>
+    <title>DSC #12: The DSC and the New Programming Language &#8212; The Data-Sitters Club</title>
     
-  <link href="_static/css/theme.css" rel="stylesheet" />
-  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,48 +19,63 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="_static/style.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="DSC Multilingual Mystery #1: Lee and the Missing metadata" href="dscm1.html" />
+    <link rel="next" title="DSC #13: Goodbye, Friends, Goodbye" href="dsc13.html" />
     <link rel="prev" title="Katia and the Sentiment Snobs" href="dsc11.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -68,23 +84,36 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
       
       <img src="_static/DSClogo.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">Data-Sitters Club</h1>
+      <h1 class="site-logo" id="site-title">The Data-Sitters Club</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
+                    <no title>
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   About
  </span>
@@ -101,7 +130,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Main series
  </span>
@@ -154,7 +183,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="dsc10.html">
-   DSC 10: Heather Loves PCA
+   DSC 10: Heather Likes PCA
   </a>
  </li>
  <li class="toctree-l1">
@@ -167,8 +196,23 @@
    DSC 12: The DSC and the New Programming Language
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc13.html">
+   DSC 13: Goodbye, Friends, Goodbye
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc14.html">
+   DSC 14: Hello, DMCA Exemption!
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc15.html">
+   DSC 15: Little Miss California Stereotype... and the BY Times
+  </a>
+ </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Multilingual mysteries
  </span>
@@ -195,7 +239,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Fun
  </span>
@@ -214,12 +258,17 @@
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
 </div>
 
 
@@ -227,61 +276,130 @@
 
 
           
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
     
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
+    <div class="header-article row sticky-top noprint">
         
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/dsc12.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/datasittersclub/site"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/dsc12.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
     </div>
 </div>
 
-            <!-- Source interaction buttons -->
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav">
-                <ul class="visible nav section-nav flex-column">
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#coding-stories">
    Coding stories
@@ -429,21 +547,184 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>DSC #12: The DSC and the New Programming Language</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#coding-stories">
+   Coding stories
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#quinn">
+     Quinn
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#roopsi">
+     Roopsi
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#katia">
+     Katia
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Quinn
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#danger-noodle-club">
+     Danger Noodle Club
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q-learns-some-r">
+     Q Learns some R
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sneakers-shoelaces-and-code">
+     Sneakers, shoelaces, and code
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#surveying-dh-twitter">
+     Surveying DH Twitter
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#preferred-programming-language">
+       Preferred programming language
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#programming-vs-human-languages">
+       Programming vs. human languages
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#we-prefer-what-we-know">
+       We prefer what we know
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#likes-and-dislikes">
+       Likes and dislikes
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#python-s-strengths">
+       Python’s strengths
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#r-s-strengths">
+       R’s strengths
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#python-s-weaknesses">
+       Python’s weaknesses
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#r-s-weaknesses">
+       R’s weaknesses
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conclusion">
+     Conclusion
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#choosing-a-programming-language">
+       Choosing a programming language
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#suggested-citation">
+   Suggested Citation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dear-reader-more-coding-stories">
+   Dear Reader: More Coding Stories
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#philip-allfrey">
+     Philip Allfrey
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sharon-goetz">
+     Sharon Goetz
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jacqui-sahagian">
+     Jacqui Sahagian
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#heidi-tebbe">
+     Heidi Tebbe
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jeff-tharsen">
+     Jeff Tharsen
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#paul-vierthaler">
+     Paul Vierthaler
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
               <div>
                 
   <img src="https://datasittersclub.github.io/site/_images/DSCLogo.png" />
 <div style="float: right; width: 200px;margin-left: 7px;margin-top: 0px;">
 <img src="_images/bookcovers/dsc12_cover.jpg" alt="DSC 12 book cover" />
 </div>
-<div class="section" id="dsc-12-the-dsc-and-the-new-programming-language">
-<h1>DSC #12: The DSC and the New Programming Language<a class="headerlink" href="#dsc-12-the-dsc-and-the-new-programming-language" title="Permalink to this headline">¶</a></h1>
+<div class="tex2jax_ignore mathjax_ignore section" id="dsc-12-the-dsc-and-the-new-programming-language">
+<h1>DSC #12: The DSC and the New Programming Language<a class="headerlink" href="#dsc-12-the-dsc-and-the-new-programming-language" title="Permalink to this headline">#</a></h1>
 <p>by Katherine Bowers, Quinn Dombrowski, and Roopika Risam</p>
 <p>November 2, 2021</p>
 <p>We need to talk about coding.</p>
@@ -452,9 +733,9 @@
 <p>It’s hard to do DH for long without running into code and programming languages that you don’t know. This is true whether you’re new to DH, or built a whole career on it. Turns out it’s even hard to watch the new Netflix “Baby-Sitters Club” series for long without a casual mention that Claudia’s sister Janine is learning Python. Janine is a genius, but does it take a tech genius to learn Python? Most of the Data-Sitters Club books have been in Python, but we’ve recently started branching out into R.</p>
 <p>What’s the difference between a programming language, a library / package, and a model? If you’re going to dive into learning to code, what language should you choose? What’s it like to work with more than one? “The DSC and the New Coding Language” has got you covered – with some help from DH Twitter folks who answered our survey about all this.</p>
 <div class="section" id="coding-stories">
-<h2>Coding stories<a class="headerlink" href="#coding-stories" title="Permalink to this headline">¶</a></h2>
+<h2>Coding stories<a class="headerlink" href="#coding-stories" title="Permalink to this headline">#</a></h2>
 <div class="section" id="quinn">
-<h3>Quinn<a class="headerlink" href="#quinn" title="Permalink to this headline">¶</a></h3>
+<h3>Quinn<a class="headerlink" href="#quinn" title="Permalink to this headline">#</a></h3>
 <p>I spent 15 years “doing DH” – and even got hired for my dream job, supporting non-English DH at Stanford – before I meaningfully learned to code.</p>
 <p>Sure, one of the very first technical things I learned in becoming a DH person was XSLT (thanks, David Birnbaum!) in 2006, but “learn some XSLT to generate some meaningful output from the XML you’ve painstakingly marked up” isn’t usually what people mean when they say you should “learn to code”. (Not familiar with XML, XSLT, or TEI? Check out <a class="reference external" href="https://datasittersclub.github.io/site/dsc5.html">DSC #5: The DSC and the Impossible TEI Quandaries</a>.)</p>
 <p>Many times, I had tried to follow that clichéd “learn to code” advice. I took Python in library school at UIUC in 2008! I got nothing at all out of it – granted, the course was taught by a grad student who confessed on the first day that she only knew the older programming language Perl, which operates using a very different kind of logic. The Python textbook for that class felt like one of the most insulting things I’d ever encountered:</p>
@@ -470,7 +751,7 @@
 <p>But you can only get there by practicing. And you’ll only practice if it’s worth it. And it’s only worth it if it’s the only way you, as a humanist, can do the things you want to do. I’m not the only Data-Sitter to have that experience, either…</p>
 </div>
 <div class="section" id="roopsi">
-<h3>Roopsi<a class="headerlink" href="#roopsi" title="Permalink to this headline">¶</a></h3>
+<h3>Roopsi<a class="headerlink" href="#roopsi" title="Permalink to this headline">#</a></h3>
 <p>Somewhere in the late 1980s, as hunched over an Apple IIe as an eight-year old could hunch, I dutifully typed in a sequence of letters and numbers that—voila!—could deduce how old someone was by entering the year of their birth. Our next act was to type in a string of commands to make the “turtle” (protip: it looked nothing like a turtle) create lines on the screen. [REPEAT 10 [REPEAT 5 [FD 2 RT 3] RT 20] Woo. Lines on the screen.</p>
 <p><img alt="The dubious turtle drawing lines on the screen" src="_images/dsc12_logo.gif" /></p>
 <p>Not sure who had the bright idea to teach BASIC and Logo to elementary school students who would much rather be playing <em>Oregon Trail</em> (the 8 bit version, thank you very much) but that was a thing. In the early 1990s, my parents gave me a Mac LC that became my prized possession. They weren’t the kind to give extravagant gifts, so clearly this was a ploy to position me for an inevitable future as a South Asian in STEM. Naturally, they were thrilled when I used it to play <em>Oregon Trail</em> (<em>Oregon Trail Deluxe</em>, to be exact—I’d leveled up in the world) and <em>Where in the World is Carmen Sandiego</em>? To counteract the stultifying effects of such recreation, I was forced to play <em>The Castle of Dr. Brain</em>, because science.</p>
@@ -484,7 +765,7 @@
 <p>Having learned how to code in JavaScript, I’ve been able to make relatively easy leaps to Python when the situation requires it. But, more importantly, being able to code has opened up a new world of possibilities, for new levels of control that I can have over my data and over data visualization that I’m now implementing in a project on <a class="reference external" href="http://www.roopikarisam.com/global-du-bois/">W.E.B. Du Bois</a>. I am free from the constraints I was encountering with my Neatline prototype, and this “non-coder” has built a backend for a progressive webapp using Node.js, Babel, and Webpack. A few years ago, I didn’t even know what those words meant. I still use out-of-the-box tools when the situation calls for it, like for workshops on data visualization, working with students, and more recently when I chose to build a WordPress page (ugh) rather than a Jekyll site to make life easier for a group of collaborators. But the difference is, I now have choices.</p>
 </div>
 <div class="section" id="katia">
-<h3>Katia<a class="headerlink" href="#katia" title="Permalink to this headline">¶</a></h3>
+<h3>Katia<a class="headerlink" href="#katia" title="Permalink to this headline">#</a></h3>
 <p>Like Roopsi, I always preferred Oregon Trail to that turtle, but nevertheless, when I was in high school in the 90s, I signed up for a class called “Business Computer Programming” because it sounded “useful.” I had always been good at math and I had taught myself HTML a year or two before so I could build Geocities websites with my friends, and I thought, well, why not. In the class, we learned database programming with Microsoft Access and something called Visual Basic. I was pretty good at it, but I didn’t really understand the point of it. How did any of this relate to business? Business also seemed kind of vague. But all of this was part of this equally vague to me adult world where people did things with computers in professional ways.</p>
 <div style="float: right; width: 200px;margin-left: 7px;margin-top: 0px;"><img src="_static/images/dsc12_katia_button.jpg" alt="Katia's C++ I can hack it button" /></div>
 <p>When I went away to university, I signed up for computer classes. I started by taking CS 101, where we learned C++. CS 101 was kind of fun. It was doing things with math and code and making cute games. I was not especially good at it, but I liked it. I even signed up to be an undergrad teaching assistant for it so I could do it again. I was an undergrad TA for the university equivalent of my high school Visual Basic class, CS 110, too. And I took more computing classes. I learned PerlScript. And Java. And I thought, maybe I could even get a degree in this. I started doing the sequence to do a degree… but as the programming classes got more advanced and as I struggled to keep up, I realized that the parts of programming I liked were by far in the minority to the parts of it that I just wasn’t good at. The way the classes were taught was antithetical to actually learning something so hands-on as programming for me. Hardly anyone had a laptop in the late 90s and early 2000s, so we all sat in large lecture halls with hundreds of other students watching the professor lecture to us from slides about how to do code while taking handwritten notes in our notebooks. Then, because our own late 90s computers were too slow to actually run the compilers in most cases, we would have to check in for a timed slot at a computer lab to do the homework. Also, everyone else in these classes seemed to have a clear vision of why they were doing this or how it could be useful, and it just didn’t seem all that useful to me. Like, I could see that they were becoming programmers, but how you get from doing these cutesy games we were doing where triangles moved around to doing something useful was a mystery.</p>
@@ -499,11 +780,11 @@
 </div>
 </div>
 <div class="section" id="id2">
-<h2>Quinn<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2>Quinn<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
 <p>Remember how in DSC #10 I wrote about how working with R when you only know Python is <a class="reference external" href="https://datasittersclub.github.io/site/dsc10.html#quinn">like trying to read Italian – or Romanian – when you only have high-school Spanish</a>? One goal I set for myself for summer 2021 was to actually learn some R. <em>Io programmo, tu programmi, lei programma…  Programez, programezi, programează…</em></p>
 <p>But before I tell you about that, I should probably start with a few words on Python.</p>
 <div class="section" id="danger-noodle-club">
-<h3>Danger Noodle Club<a class="headerlink" href="#danger-noodle-club" title="Permalink to this headline">¶</a></h3>
+<h3>Danger Noodle Club<a class="headerlink" href="#danger-noodle-club" title="Permalink to this headline">#</a></h3>
 <p>In the Before-Times, I ran something I called “Danger Noodle Club”, after one of many internet memes / nicknames for snakes. In theory it was a Python co-working/co-learning group; in practice, half the time it was a group of DH folks strategizing about ways to get things done that didn’t require busting out code. Nonetheless, it was helpful to have a place to share the things I was learning, and get help debugging some of the workflows I was trying to figure out how to translate into code.</p>
 <p>Do you ever have trouble viscerally summoning up the memories of what day-to-day Old Normal used to be like? I do. And the early stages of when I started actually learning Python are on the other side of that gulf. As we’ve talked about in DSC #8, DH Twitter is a thing. It’s where I often go for help with my coding problems, and I try to pay it forward (especially with multilingual stuff) where I can. But I also use it when I’m trying to work through stuff, even when I don’t need help as such, and I can reconstruct some of the process through old tweets:</p>
 <p><img alt="Quinn's tweets from 2020: &quot;My goal for this week is to d something that makes Future Quinn as happy as the thoroughly commented Jupyter notebook of text analysis code from last April made Today's Quinn. It's such a cliche, but the extra hour cleaning up &amp; explaining everything paid off beyond measure.&quot;, 2019: &quot;The best Christmas present ofa ll has bene a blank Jupyter notebook, and a few hours without obligations. I've missed using my brain, even if the task at hand is restarting multilingual fanfic metadata cleaning, from scratch. &quot;" src="_images/dsc12_jupyter_tweets.png" /></p>
@@ -516,7 +797,7 @@
 <p>But it turned out I was wrong: for some things in the R universe, they’ve invented Star Trek-style transporters.</p>
 </div>
 <div class="section" id="q-learns-some-r">
-<h3>Q Learns some R<a class="headerlink" href="#q-learns-some-r" title="Permalink to this headline">¶</a></h3>
+<h3>Q Learns some R<a class="headerlink" href="#q-learns-some-r" title="Permalink to this headline">#</a></h3>
 <p>I started trying to learn R the way one often starts learning a language, human or otherwise. I acquired some books.</p>
 <p>My first stop was <em>Humanities Data in R</em>, by Taylor Arnold and Lauren Tilton. I had humanities data! It was novel-shaped. But I should’ve been a better close-reader here: the first sentence in the book’s blurb reads as follows: “​This pioneering book teaches readers to use R within four core analytical areas applicable to the Humanities: networks, text, geospatial data, and images.” Okay, yes, it mentions “text” as one of the four areas. But my interest in networks, geospatial data, and images is much more limited – not least because I don’t have a lot of that kind of data, at least, not compared to my mountains of novels. And if this book teaches R with the goal of segueing into each of those areas, that’s a sign that it’s more general than I’m looking for. Because, to be honest, I’m not actually looking to “learn R”, even to the (far from “fluent”) extent that I “know Python”. I just want to be less confused when confronted with the computational text analysis code that Mark writes. (Mark Algee-Hewitt is the Director of the Stanford Literary Lab and our Associate Data-Sitter. If I’m getting code from him, odds are it’s going to be in R.)</p>
 <p>And, as I should have suspected, this book didn’t really work for me. After a chapter on installing R, it set about demonstrating R for calculations that were at first way too easy (like how to add 1+2), but quickly became way too confusing (logical vectors). I seriously struggled to connect any of this to <em>anything I wanted to do with R</em>, which is more of a challenge common to programming textbooks than a particular flaw with this one. Please do check out this book if you actually want to learn R!</p>
@@ -537,7 +818,7 @@
 <p>I’m glad I’m getting to the point where I can start to make sense of other people’s R code, and implement it a little bit myself when there’s an R-only package I need. But I don’t think  it’s a bandwagon I’ll be jumping on anytime soon.</p>
 </div>
 <div class="section" id="sneakers-shoelaces-and-code">
-<h3>Sneakers, shoelaces, and code<a class="headerlink" href="#sneakers-shoelaces-and-code" title="Permalink to this headline">¶</a></h3>
+<h3>Sneakers, shoelaces, and code<a class="headerlink" href="#sneakers-shoelaces-and-code" title="Permalink to this headline">#</a></h3>
 <p>Katia and I are the only two Data-Sitters on the west coast, which is cool because it means I can blow up her phone with text messages when I’m playing around with DSC stuff at 9 or 10 PM Pacific. While working on DSC #11, we got to talking about packages one night.</p>
 <p>My phone beeped in rapid succession.</p>
 <blockquote>
@@ -560,58 +841,58 @@
 <p>All of which is to say, even though there’s packages for Python where there’s no good equivalent in R (and vice-versa), the answer might not always be that you have to learn both. At least for major, widely-used packages, you can start by looking for a wrapper – or a few cotton balls to shove in the toes of shoes that don’t quite fit.</p>
 </div>
 <div class="section" id="surveying-dh-twitter">
-<h3>Surveying DH Twitter<a class="headerlink" href="#surveying-dh-twitter" title="Permalink to this headline">¶</a></h3>
+<h3>Surveying DH Twitter<a class="headerlink" href="#surveying-dh-twitter" title="Permalink to this headline">#</a></h3>
 <p>We’re not shy about the Data-Sitters Club being an <em>opinionated</em> project. We pour our emotions, our struggles – and, yes, our opinions – into these books. But when it comes to coding languages for computational text analysis, we don’t want you to just take our word for it. So in July 2021, we threw together a short survey about programming languages for DH computational text analysis, and shared it (and re-shared it) on Twitter.</p>
 <p>Here’s what we found out from the 64 responses.</p>
 <div class="section" id="preferred-programming-language">
-<h4>Preferred programming language<a class="headerlink" href="#preferred-programming-language" title="Permalink to this headline">¶</a></h4>
+<h4>Preferred programming language<a class="headerlink" href="#preferred-programming-language" title="Permalink to this headline">#</a></h4>
 <p><img alt="Preferred programming language pie chart, 2/3 Python, almost 1/3 R" src="_images/dsc12_favorite.png" /></p>
 <p>2/3 of the respondents preferred to use Python for computational text analysis. Other than one very R-happy afternoon when the responses were 50/50 (and yes, watching the responses come in was how I kept myself entertained in early July), this was more or less the ratio throughout the survey.</p>
 <p>Going into the survey, I assumed that there would be a connection between the languages people worked with and the programming language they preferred. At least, that’s a big part of my personal rationale for why I do Python.</p>
 </div>
 <div class="section" id="programming-vs-human-languages">
-<h4>Programming vs. human languages<a class="headerlink" href="#programming-vs-human-languages" title="Permalink to this headline">¶</a></h4>
+<h4>Programming vs. human languages<a class="headerlink" href="#programming-vs-human-languages" title="Permalink to this headline">#</a></h4>
 <p><img alt="Preferred programming language pie charts for Python and R, using the languages that people work on. English is about 50% for both; the rest is a mix." src="_images/dsc12_humanlang.png" /></p>
 <p>But that theory didn’t really work out. For both R and Python, half the respondents said they work with English (sometimes along with other languages). But I’m pretty sure the distribution beyond that is pretty random; I don’t think there’s anything inherently Estonian-friendly about R or Italian-friendly about Python. I know for a fact that there’s a lot of useful Python packages for Russian (like <a class="reference external" href="https://pypi.org/project/rupo/">this one for Russian poetry analysis</a>) that don’t exist for R, and yet there’s twice as many respondents who say they work on Russian who prefer R over Python. 🤷🏼‍♂️</p>
 </div>
 <div class="section" id="we-prefer-what-we-know">
-<h4>We prefer what we know<a class="headerlink" href="#we-prefer-what-we-know" title="Permalink to this headline">¶</a></h4>
+<h4>We prefer what we know<a class="headerlink" href="#we-prefer-what-we-know" title="Permalink to this headline">#</a></h4>
 <p>So why <strong>do</strong> people prefer one language over the other? It turns out that the adage “familiarity breeds contempt” doesn’t apply at all to programming languages. For most people, there’s a discrepancy between how well they know Python and how well they know R. People who know R better prefer it, and the same for Python. And that makes sense: after all, people learn programming languages to use them, and a language you know better lets you do more things.</p>
 <p><img alt="Chart showing that people's favorite language tends to be the one they know best" src="_images/dsc12_r_python_proficiency.png" /></p>
 <p>Of the people who said that Python was their preferred language, 58% said they were “extremely comfortable with Python”, vs. the 50% of people who preferred R who claimed the same level of proficiency.</p>
 </div>
 <div class="section" id="likes-and-dislikes">
-<h4>Likes and dislikes<a class="headerlink" href="#likes-and-dislikes" title="Permalink to this headline">¶</a></h4>
+<h4>Likes and dislikes<a class="headerlink" href="#likes-and-dislikes" title="Permalink to this headline">#</a></h4>
 <p>The survey also asked what people liked and disliked about each language, regardless of what their preference was. While I was a little disappointed at the shortage of snarky responses (how is it that, out of 64 people, not a single one mentioned the – especially pirate-themed – pun affordances of R!?), the picture these responses painted gestures towards a state of affairs where Python and R are far from distinct, entrenched camps (like TEI vs computational text analysis can feel like sometimes– see the <a class="reference external" href="https://datasittersclub.github.io/site/dsc5.html#the-interview">discussion of TEI as a cult in DSC #5</a>) but something more like an interoperable continuum, with people tending to favor one or the other, but venturing between them as needed. And there’s not much difference between what the people who prefer Python and the people who prefer R see as the strengths and weaknesses of each language.</p>
 <p>(If you don’t know Python or R yet, don’t worry if the details below don’t make a lot of sense. The tl;dr is that both languages have their strengths and weaknesses.)</p>
 </div>
 <div class="section" id="python-s-strengths">
-<h4>Python’s strengths<a class="headerlink" href="#python-s-strengths" title="Permalink to this headline">¶</a></h4>
+<h4>Python’s strengths<a class="headerlink" href="#python-s-strengths" title="Permalink to this headline">#</a></h4>
 <p>Across the programming language preference spectrum, people appreciate the community, libraries, and tutorials available for Python, especially NLP libraries where “new stuff [is] implemented there first”. (We talked about this a little in DSC #11: The DSC and the Sentiment Snobs.) I’m not the only one to feel like you can easily find the answers to your Python problems online; someone else noted “basically all my problems have been solved on <a class="reference external" href="https://stackoverflow.com/questions/tagged/python">Stack Overflow</a>”.</p>
 <p>Multiple people also mentioned Python syntax as an upside; one respondent explained, “It’s very close to how one would describe a routine in natural language,” which was echoed by comments like “The code feels ‘readable’ so it’s not too bad to pick up an old program,” and “The proper way to do something is usually exactly what you expect; it’s hard to mess up.”</p>
 <p>Many respondents referred to Python as “fast” compared to R, and a few packages that got specific shout-outs were Beautiful Soup (for dealing with XML and HTML), machine learning and deep learning libraries, and NLTK (Natural Language Toolkit, which we’ve used parts of for various DSC books).</p>
 </div>
 <div class="section" id="r-s-strengths">
-<h4>R’s strengths<a class="headerlink" href="#r-s-strengths" title="Permalink to this headline">¶</a></h4>
+<h4>R’s strengths<a class="headerlink" href="#r-s-strengths" title="Permalink to this headline">#</a></h4>
 <p>Across the board, people agreed that R’s strengths lay in visualization (especially the ggplot package) and statistical methods – which makes a lot of sense, since R’s origins are in another statistical programming language, S. (Does anyone else ever feel like they’ve fallen into an episode of <em>Sesame Street</em>, through a lens darkly, when talking about R?)</p>
 <p>Lots of people also mention the “Tidyverse” (a set of R packages with similar syntax and philosophy that are designed for data wrangling and data science methods). Pipes get multiple mentions, and lots of people like R’s native vectorization.</p>
 <p>The people who prefer R tend to say that there’s a huge community, but since Python people say that too, I suspect it’s mostly a matter of whether you know your way around the places where you can find the information you need.</p>
 </div>
 <div class="section" id="python-s-weaknesses">
-<h4>Python’s weaknesses<a class="headerlink" href="#python-s-weaknesses" title="Permalink to this headline">¶</a></h4>
+<h4>Python’s weaknesses<a class="headerlink" href="#python-s-weaknesses" title="Permalink to this headline">#</a></h4>
 <p>Reading through the survey results, one gets the sense that Python’s weaknesses are most evident in the context of R’s strengths. One respondent who cited R’s ggplot visualization package as their favorite thing about R also referenced Python’s (roughly equivalent, but not exactly) matplotlib visualization package as their least favorite thing about Python. People who prefer R (especially the tidyverse) tend to dislike Python’s pandas package (which has some features similar to core R and the tidyverse, but not quite the same).</p>
 <p>People are dissatisfied with package installation and managing dependencies (like when you want to install two packages, and they each require a different version of another package). Respondents also complained about the lack of backwards compatibility between Python 3 and Python 2. And Python can be a real pain to install on Windows.</p>
 </div>
 <div class="section" id="r-s-weaknesses">
-<h4>R’s weaknesses<a class="headerlink" href="#r-s-weaknesses" title="Permalink to this headline">¶</a></h4>
+<h4>R’s weaknesses<a class="headerlink" href="#r-s-weaknesses" title="Permalink to this headline">#</a></h4>
 <p>Similarly, the weaknesses identified for R are the inverse of Python’s strength. Multiple respondents complained about R being slow with large data sets. There were also lots of complaints about the syntax, which I found vindicating: “Syntax is too much black magic and doesn’t port well to learning concepts for other languages imho”, “The syntax and programming paradigm is just unintuitive and too much a mix of everything”, “Messy, confusing syntax; idiosyncratic approach to data types and structures”, “From my few encounters, it not only feels syntactically quite different from Python, Java, and other popular languages, but it feels grammatically different as well. In other words, I feel like I need to think completely differently when using it, beyond superficial differences in syntax.”</p>
 </div>
 </div>
 <div class="section" id="conclusion">
-<h3>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h3>
+<h3>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">#</a></h3>
 <p>Do you need to learn to code? I dunno, you tell me! Do you actually have a problem where there’s no other practical way to solve it? Or can you get the answers you need with a little bit of Microsoft Excel? If you want to level up, maybe what you need is a browser plug-in for web scraping and OpenRefine for data wrangling. Just because you could do those things using a programming language doesn’t mean you have to… or even that you should. Data-wrangling skills are valuable, in and out of academia – but learning to code is not a prerequisite. And honestly? Don’t let the drum beat of “YOU SHOULD LEARN TO CODE” get into your head. Because if you’re a humanities scholar, odds are that you don’t actually want to “learn to code” as such. Not really. What you might actually want is to be able to do things you couldn’t otherwise do – and that doesn’t necessarily involve coding. The process of actually learning to code is stressful, frustrating, and time-consuming. It can be worth it if you’re getting something you want out of it (being able to do a concrete thing that you weren’t able to do before)… but quite another if you’re doing it out of a sense of pressure, guilt, or insecurity. “Learning to code” is a straight-up miserable path to walk down if you’re doing it mostly because you feel like you have to in order to be a “real digital humanist”. There are so many other things you could put your time and effort towards, like improving your project management, people management, project budgeting, or even paleography skills!</p>
 <div class="section" id="choosing-a-programming-language">
-<h4>Choosing a programming language<a class="headerlink" href="#choosing-a-programming-language" title="Permalink to this headline">¶</a></h4>
+<h4>Choosing a programming language<a class="headerlink" href="#choosing-a-programming-language" title="Permalink to this headline">#</a></h4>
 <p>If you do reach the point where you’ve concluded that learning to code is the best path for being able to do what you want to be able to do, how do you pick which language to learn?</p>
 <p><strong>Step 0</strong>. Don’t stress. Once you’ve learned one programming language well, it’s easier to learn other ones if it turns out you didn’t pick the “ideal” one the first time around.</p>
 <p><strong>Step 1</strong>. Look around in the communities that you’re part of. Ask around in your department, your library, your DH center. What programming languages– if any– do people use? Don’t forget your virtual communities! Who’s in your circles on DH Twitter (if you use it), or what mailing lists are you part of?</p>
@@ -627,14 +908,14 @@
 </div>
 </div>
 <div class="section" id="suggested-citation">
-<h2>Suggested Citation<a class="headerlink" href="#suggested-citation" title="Permalink to this headline">¶</a></h2>
-<p>Suggested citation: Bowers, Katherine, Quinn Dombrowski, and Roopika Risam. “DSC #12: The DSC and the New Coding Language.” <em>The Data-Sitters Club,</em> November 2, 2021. https://datasittersclub.github.io/site/dsc12.html.</p>
+<h2>Suggested Citation<a class="headerlink" href="#suggested-citation" title="Permalink to this headline">#</a></h2>
+<p>Suggested citation: Bowers, Katherine, Quinn Dombrowski, and Roopika Risam. “DSC #12: The DSC and the New Coding Language.” <em>The Data-Sitters Club,</em> November 2, 2021. <a class="reference external" href="https://datasittersclub.github.io/site/dsc12.html">https://datasittersclub.github.io/site/dsc12.html</a>.</p>
 </div>
 <div class="section" id="dear-reader-more-coding-stories">
-<h2>Dear Reader: More Coding Stories<a class="headerlink" href="#dear-reader-more-coding-stories" title="Permalink to this headline">¶</a></h2>
-<p>We were caught by surprise to see how many people shared their own coding stories in response to this <em>Data-Sitters Club</em> book. With permission, we’re including them here to add more voices to this conversation. If you’d like to share your story, too, (regardless of where you started or where your journey has led!) reach out to Quinn (&#64;quinnanya on Twitter, or qad&#64;stanford.edu).</p>
+<h2>Dear Reader: More Coding Stories<a class="headerlink" href="#dear-reader-more-coding-stories" title="Permalink to this headline">#</a></h2>
+<p>We were caught by surprise to see how many people shared their own coding stories in response to this <em>Data-Sitters Club</em> book. With permission, we’re including them here to add more voices to this conversation. If you’d like to share your story, too, (regardless of where you started or where your journey has led!) reach out to Quinn (&#64;quinnanya on Twitter, or <a class="reference external" href="mailto:qad&#37;&#52;&#48;stanford&#46;edu">qad<span>&#64;</span>stanford<span>&#46;</span>edu</a>).</p>
 <div class="section" id="philip-allfrey">
-<h3>Philip Allfrey<a class="headerlink" href="#philip-allfrey" title="Permalink to this headline">¶</a></h3>
+<h3>Philip Allfrey<a class="headerlink" href="#philip-allfrey" title="Permalink to this headline">#</a></h3>
 <p>(<a class="reference external" href="https://twitter.com/dr_pda/status/1456074863823577089">via a Twitter thread</a>)</p>
 <p>This latest episode of the #DataSittersClub has provoked lots of thoughts, the first being that, now that I stop and think about it, I have been coding on an almost daily basis for the past 20 years! Over that time I’ve used BASIC, Matlab, LaTeX, C++, Fortran, Linux shell scripts, Awk, PHP, Javascript, Typescript, as well as various tools/libraries/frameworks written in these languages (and HTML/XML and CSS, but those aren’t really programming languages). But for all that, I have never had formal instruction in “how to code”, everything has been self-taught (despite some of these skills being necessary for my masters/PhD). As Katia alludes to in DSC#12, I think there are strong parallels with language learning. The first time you learn a language other than your mother tongue, you need to learn grammar. The first time you learn a programming language you need to learn the “grammar of code”. (Aside: in addition to grammar, you need logic to correctly structure your code, and that gives us two of the three parts of the trivium. What would correspond to rhetoric – documentation?) Human languages have parts of speech: nouns, verbs, pronouns, adjectives. Programming languages have types of variables: strings, floats, arrays, objects. Human languages have clauses: relative, indirect speech, purpose, etc. Programming languages have control structures: conditionals, for loops, while loops. And so on. Once you have pigeonholes for these concepts in your brain, then learning the next (human or programming) language is easier – you learn the specific vocabulary, alphabet, and syntax of the language on top of these basic concepts. A nice demonstration of how these coding concepts are independent of the language-specific implementation is the <a class="reference external" href="https://en.wikipedia.org/wiki/LOLCODE">LOLCODE language</a>, based on the lolcatz memes of a few years ago. E.g. a basic loop printing the numbers from 1 to 10 is</p>
 <p><code class="docutils literal notranslate"><span class="pre">HAI</span> <span class="pre">1.0</span></code></p>
@@ -652,30 +933,30 @@
 <p>I had forgotten that a) 5.25” floppy disks came in plastic cases like CDs b) I had made an inventory of all my games c) I had written instructions for my parents (with ASCII art!) for how to use the computer d) I had helped a stegosaurus &amp; a brontosaurus survive through five eras. Also, I wonder what that program was. Looks like music of some sort. I might have to fire up an emulator and type it in!</p>
 </div>
 <div class="section" id="sharon-goetz">
-<h3>Sharon Goetz<a class="headerlink" href="#sharon-goetz" title="Permalink to this headline">¶</a></h3>
+<h3>Sharon Goetz<a class="headerlink" href="#sharon-goetz" title="Permalink to this headline">#</a></h3>
 <p>(via email)</p>
 <p>Most kids at my school had more discretionary money than I did, and most didn’t have a computer. The high school taught a secretarial skills class with boxy IBM typewriters; I hid the (forbidden) games I played on the household computer. Neither my father nor my high-school guidance counselor thought I should go to college—girl, and not white. Flip that around, however, and I was a geek who liked <em>Zork II</em> and learned how to program an HP 28S calculator to play simple tunes and draw fractals on its little four-line screen … then majored in English, thanks to impostor syndrome. The only computer class for non-majors taught Scheme, but after figuring out how to use my university-provided Unix shell account, I taught myself TeX and HTML: they seemed useful.</p>
 <p>By then, parts of the humanities computing community had become web-visible. Aside from a two-year break to document software professionally and squint at Lisp a bit, I figured out emacs on Windows (thanks, Markus Hoenicka) for TEI-SGML with DTD, then TEI-XML and XSLT. TEI and an understanding of software-development cycles kept me out of debt across my doctoral work in medieval manuscripts, via part-time gigs. I still wasn’t a programmer/coder, right, because coders used C++ or that new thing called Java. There seemed no way to assess objectively what I knew or didn’t, since with some quiet minutes I could teach myself more; there weren’t “real” jobs for XML yet, e.g. structured text in publishing. I was alt-ac before we called it that, a bit too early for DH postdocs, and a local bafflement for trying to combine computing and multilingual manuscripts. Apparently, both were a distraction from looking ready to teach Chaucer.</p>
 <p>There seemed little way to appreciate what I knew or didn’t, whether objectively or for myself. I taught myself more XSLT, for once with support (thanks, Kirk Hastings). I taught myself enough PHP, then enough JavaScript, to work around XSLT’s limitations for transforming epub XML to TEI-XML, since XSLT didn’t like 3-4 MB files; that’s ~1200 pages of printed scholarly edition with all the trimmings. Python wasn’t so popular then, but later, I taught myself enough to convert dozens of Ghost blog entries to Confluence wiki pages. Still not a coder, perhaps—those aren’t uses that most software engineers would recognize as professional, non-hobbyist (despite two solid decades of TEI). But I’ve been here all these years, writing code.</p>
 </div>
 <div class="section" id="jacqui-sahagian">
-<h3>Jacqui Sahagian<a class="headerlink" href="#jacqui-sahagian" title="Permalink to this headline">¶</a></h3>
+<h3>Jacqui Sahagian<a class="headerlink" href="#jacqui-sahagian" title="Permalink to this headline">#</a></h3>
 <p>(<a class="reference external" href="https://scholarslab.lib.virginia.edu/blog/the-romantics-didnt-want-me-to-code/">via the Scholars Lab blog</a>, excerpted with permission)</p>
 <p>I have always been a creative person, an artist even. In undergrad I majored in creative writing and was in a punk band. I hated anything to do with numbers, science, computers, or making money. I saw myself as “not like other girls.” I read books like The Catcher in the Rye and On the Road and believed I identified with the male protagonists. I thought being suicidal made me an interesting person. I never thought I would do anything “digital” or learn to code.</p>
 <p>(Read the rest of “<a class="reference external" href="https://scholarslab.lib.virginia.edu/blog/the-romantics-didnt-want-me-to-code/">The Romantics Didn’t Want Me To Code</a>” at the <em>Scholars Lab</em> blog)</p>
 </div>
 <div class="section" id="heidi-tebbe">
-<h3>Heidi Tebbe<a class="headerlink" href="#heidi-tebbe" title="Permalink to this headline">¶</a></h3>
+<h3>Heidi Tebbe<a class="headerlink" href="#heidi-tebbe" title="Permalink to this headline">#</a></h3>
 <p>(<a class="reference external" href="https://twitter.com/ideaofhappiness/status/1455989766722314242">via a Twitter thread</a>)</p>
 <p>Really enjoyed this one! Like &#64;roopikarisam, I first learned to code in the 80s w/ BASIC and Logo (LOL at “sham turtle”) &amp; like &#64;kab3d I watched college professors in the late 90s lecture from slides about how to code while I took handwritten notes (C instead of C++ for me). Reading your thoughts on R were an interesting counterpoint to how I first started using R… I had a hard time when I tried to learn Python b/c it’s just different enough from other languages I knew that the differences were grating; I picked up R more quickly <em>because</em> the syntax was so different. But now I use Python for work, so the danger noodle got me in the end.</p>
 </div>
 <div class="section" id="jeff-tharsen">
-<h3>Jeff Tharsen<a class="headerlink" href="#jeff-tharsen" title="Permalink to this headline">¶</a></h3>
+<h3>Jeff Tharsen<a class="headerlink" href="#jeff-tharsen" title="Permalink to this headline">#</a></h3>
 <p>(<a class="reference external" href="https://twitter.com/thars3n/status/1455579872911364097">via a Twitter thread</a>)</p>
 <p>I teach R and Python (&amp; a couple of other programming languages) in my courses, but I’ve been writing code since the age of 7. The most important point is that computer languages are stupidly easy (imho) compared to human languages, which contain nuance and slang, and poetry.</p>
 </div>
 <div class="section" id="paul-vierthaler">
-<h3>Paul Vierthaler<a class="headerlink" href="#paul-vierthaler" title="Permalink to this headline">¶</a></h3>
+<h3>Paul Vierthaler<a class="headerlink" href="#paul-vierthaler" title="Permalink to this headline">#</a></h3>
 <p>(<a class="reference external" href="https://twitter.com/pvierth/status/1455550139825721352">via a Twitter thread</a>)</p>
 <p>An excellent reflection on coding and DH! My own coding journey started in 2011 (ignoring an abandoned attempt at Perl and some BASIC dabbling in my youth) was Ruby -&gt; R -&gt; Python (with ventures into JavaScript and C land when fancy viz or speed are of the essence). I’m thoroughly a Python partisan these days, but I’ve never been fully satisfied with viz options. Matplotlib works but feels very dated. More recently I’ve been experimenting with plotly, but sometimes shoehorning my data into it can be a hassle. I kind of wonder if I’d be more of an R partisan if I hadn’t left before the advent of the tidyverse. But I made the switch because I was doing all of my text cleaning in Python and then analysis in R, and I just needed a simpler workflow. At the time R was not great with Chinese. But the key to getting programming to stick for me was simply finding a problem that required I learn. I bailed on Perl because I didn’t really have a goal. Once I had a question I wanted answered, the rest fell into place. Well, that and having the flexibility that comes with early dissertation work (and having an advisor who looked the other way for the six month trail-by-fire in which I banged my head against the wall trying to figure out the basics)</p>
 <hr class="footnotes docutils" />
@@ -714,33 +995,48 @@
 
               </div>
               
-        
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="dsc11.html" title="previous page">Katia and the Sentiment Snobs</a>
-    <a class='right-next' id="next-link" href="dscm1.html" title="next page">DSC Multilingual Mystery #1: Lee and the Missing metadata</a>
-
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="dsc11.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Katia and the Sentiment Snobs</p>
         </div>
-        
+    </a>
+    <a class='right-next' id="next-link" href="dsc13.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">DSC #13: Goodbye, Friends, Goodbye</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
-    <div class="container">
-      <p>
-        
-          By The Data-Sitters Club<br/>
-        
-      </p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By The Data-Sitters Club<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
     </div>
-  </footer>
-</main>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 
-  
+
   </body>
 </html>

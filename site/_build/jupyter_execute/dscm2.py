@@ -53,7 +53,7 @@
 import sys
 
 
-# In[20]:
+# In[2]:
 
 
 #Installs the French spaCy model

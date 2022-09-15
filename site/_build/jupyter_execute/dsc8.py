@@ -99,7 +99,7 @@
 # 
 # If you've downloaded his [code from GitHub](https://github.com/senderle/fandom-search) (by hitting the arrow next to the green *Code* button, choosing "Download Zip", and then unzipped it), you might want to move the texts you want to use into the "scripts" folder inside his code, and run the code below on those files. (Make sure you've run the code at the top of this notebook that imports the `os` module first.)
 
-# In[ ]:
+# In[1]:
 
 
 #os module is used for navigating the filesystem
@@ -117,7 +117,7 @@ cwd = os.getcwd()
 # 
 # The code below clears out some punctuation and newlines that might otherwise lead to false matches, and then writes out the file with a fake "scene number", a "character name" that consists of the filename, and the full text as a "line".
 
-# In[ ]:
+# In[2]:
 
 
 #For each file in the current directory

@@ -124,7 +124,7 @@ from nltk.stem import WordNetLemmatizer
 # #### Choose the directory
 # Specify the full path to the directory with the files you want to work with, then navigate to that directory.
 
-# In[6]:
+# In[2]:
 
 
 #Specify the full path to the directory with the files you want to work with.
@@ -138,7 +138,7 @@ os.chdir(textdir)
 # #### Find the nouns
 # The following code creates a list (called *bscnouns*), opens each text file in the folder you specified, reads the text of each file, separates out the sentences, and for each sentence, checks each word in the sentence to see if it's a noun. If it's a noun, that word gets written to the *bscnouns* list.
 
-# In[4]:
+# In[3]:
 
 
 #Creates the bscnouns list

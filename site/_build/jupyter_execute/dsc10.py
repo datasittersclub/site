@@ -236,7 +236,7 @@
 # ### PCA Across Series
 # “Should we try another example?” asked Heather. “How about the series one, I saw that and it was fascinating!”
 # 
-# Since late last summer, Quinn had been working on building a bigger corpus called YAMS (for Young Adult and Middle-School), of books we might use as a comparison with the Baby-Sitters Club. This was the first time we’d tried to use it for anything.
+# Since late last summer, Quinn had been working with [Nichole Nomura](https://nicholenomura.com) on building a bigger corpus called YAMS (for Young Adult and Middle-School), of books we might use as a comparison with the Baby-Sitters Club. This was the first time we’d tried to use it for anything.
 # 
 # <img src='_static/images/dsc10_yams_nouns.png' alt='PCA of series books using top 1k nouns' />
 # 
@@ -270,7 +270,7 @@
 # 
 # #### Extracting All Nouns
 
-# In[ ]:
+# In[1]:
 
 
 #NLTK is the NLP package we're using
@@ -279,7 +279,7 @@ import nltk
 import os
 
 
-# In[ ]:
+# In[2]:
 
 
 #Put in the full path to the directory with all your texts
@@ -290,7 +290,7 @@ textdir = '/Users/qad/Documents/dsc_corpus_clean'
 os.chdir(textdir)
 
 
-# In[ ]:
+# In[3]:
 
 
 #For each filename in the directory you listed...

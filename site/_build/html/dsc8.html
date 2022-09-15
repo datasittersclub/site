@@ -5,10 +5,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DSC 8: Text-Comparison-Algorithm-Crazy Quinn &#8212; Data-Sitters Club</title>
+    <title>DSC 8: Text-Comparison-Algorithm-Crazy Quinn &#8212; The Data-Sitters Club</title>
     
-  <link href="_static/css/theme.css" rel="stylesheet" />
-  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,48 +19,63 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="_static/style.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="The Ghost in Anouk’s Laptop" href="dsc9.html" />
     <link rel="prev" title="DSC #7: The DSC and Mean Copyright Law" href="dsc7.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -68,23 +84,36 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
       
       <img src="_static/DSClogo.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">Data-Sitters Club</h1>
+      <h1 class="site-logo" id="site-title">The Data-Sitters Club</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
+                    <no title>
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   About
  </span>
@@ -101,7 +130,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Main series
  </span>
@@ -154,7 +183,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="dsc10.html">
-   DSC 10: Heather Loves PCA
+   DSC 10: Heather Likes PCA
   </a>
  </li>
  <li class="toctree-l1">
@@ -167,8 +196,23 @@
    DSC 12: The DSC and the New Programming Language
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc13.html">
+   DSC 13: Goodbye, Friends, Goodbye
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc14.html">
+   DSC 14: Hello, DMCA Exemption!
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc15.html">
+   DSC 15: Little Miss California Stereotype... and the BY Times
+  </a>
+ </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Multilingual mysteries
  </span>
@@ -195,7 +239,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Fun
  </span>
@@ -214,91 +258,177 @@
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/dsc8.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/dsc8.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
-            <nav id="bd-toc-nav">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/datasittersclub/site/master?urlpath=tree/site/dsc8.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/datasittersclub/site"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/dsc8.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#dear-reader">
    Dear Reader
@@ -475,25 +605,217 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>DSC 8: Text-Comparison-Algorithm-Crazy Quinn</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dear-reader">
+   Dear Reader
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-time-for-tropes">
+   A Time for Tropes
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#enter-jupyter-notebooks">
+     Enter Jupyter Notebooks
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exit-jupyter-notebooks">
+     Exit Jupyter Notebooks?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#wrangling-the-data">
+     Wrangling the Data
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#changing-to-the-right-directory">
+       Changing to the right directory
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#reformatting-texts">
+       Reformatting texts
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#cleanup">
+       Cleanup
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comparing-all-the-things">
+   Comparing All The Things
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dependencies-for-the-fandom-search-code">
+     Dependencies for the fandom-search code
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#running-the-fandom-search-code">
+     Running the fandom-search code
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aggregating-results-from-the-fandom-search-code">
+     Aggregating results from the fandom-search code
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#workflows-that-work-for-you">
+     Workflows that work for you
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#evaluating-closeness">
+     Evaluating closeness
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-do-you-do-with-157-spreadsheets">
+     What do you do with 157 spreadsheets?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visualizing-the-network">
+   Visualizing the network
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-different-direction">
+   A different direction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-do-we-compare-when-we-compare-texts">
+   What do we compare when we compare texts?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#euclidean-distance">
+   Euclidean distance
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#counting-words">
+     Counting words
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#counting-words-in-full-books">
+       Counting words in full books
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#counting-words-by-chapter">
+       Counting words by chapter
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cosine-similarity">
+   Cosine similarity
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#word-counts-or-word-frequencies">
+   Word counts or word frequencies?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#euclidean-distance-with-word-frequencies">
+     Euclidean distance with word frequencies
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cosine-distance-with-word-frequencies">
+     Cosine distance with word frequencies
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tf-idf">
+   TF-IDF
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tf-idf-for-text-comparison">
+     TF-IDF for text comparison
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-does-this-tell-us-about-chapter-2">
+   What does this tell us about chapter 2?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#read-until-the-very-end">
+   Read until the very end
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#acknowledgements">
+   Acknowledgements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#suggested-citation">
+   Suggested Citation
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
               <div>
                 
   <p><img alt="DSC logo" src="_images/DSCLogo.png" /></p>
-<div class="section" id="dsc-8-text-comparison-algorithm-crazy-quinn">
-<h1>DSC 8: Text-Comparison-Algorithm-Crazy Quinn<a class="headerlink" href="#dsc-8-text-comparison-algorithm-crazy-quinn" title="Permalink to this headline">¶</a></h1>
+<div class="tex2jax_ignore mathjax_ignore section" id="dsc-8-text-comparison-algorithm-crazy-quinn">
+<h1>DSC 8: Text-Comparison-Algorithm-Crazy Quinn<a class="headerlink" href="#dsc-8-text-comparison-algorithm-crazy-quinn" title="Permalink to this headline">#</a></h1>
 <div style='float: right; width: 200px;margin-left: 7px;margin-top: 0px;'>
 <img src='_static/images/bookcovers/dsc8_cover.jpg' alt='DSC 8 book cover' />
 </div>
 by Quinn Dombrowski
 <p>October 21, 2020</p>
 <div class="section" id="dear-reader">
-<h2>Dear Reader<a class="headerlink" href="#dear-reader" title="Permalink to this headline">¶</a></h2>
+<h2>Dear Reader<a class="headerlink" href="#dear-reader" title="Permalink to this headline">#</a></h2>
 <p>This <em>Data-Sitters Club</em> book is a little different: it’s meant to be read as a Jupyter notebook. Congratulations, you’re in the right place!</p>
 <p>Jupyter notebooks are a way of presenting text and code together, as equal parts of a narrative. (To learn more about them, how they work, and how you can use them, check out <a class="reference external" href="https://programminghistorian.org/en/lessons/jupyter-notebooks">this Introduction to Jupyter Notebooks</a> at Programming Historian that I wrote last year with some colleagues.)</p>
 <p>I tried to write it as a typical prose DSC book, and in doing so, I managed to create a subplot involving a code mistake that significantly impacted a whole section of this book. But instead of rewriting the narrative, fixing the mistake, and covering up the whole thing, I started adding comment boxes</p>
@@ -511,7 +833,7 @@ by Quinn Dombrowski
 <p>… until I realized how many <strong>different</strong> ones there were.</p>
 </div>
 <div class="section" id="a-time-for-tropes">
-<h2>A Time for Tropes<a class="headerlink" href="#a-time-for-tropes" title="Permalink to this headline">¶</a></h2>
+<h2>A Time for Tropes<a class="headerlink" href="#a-time-for-tropes" title="Permalink to this headline">#</a></h2>
 <p>One of my favorite DH projects for illustrating what DH methods can offer is Ryan Cordell et al.’s <a class="reference external" href="https://viraltexts.org/">Viral Texts</a>, which maps networks of reprinting in 19th-century newspapers. Sure, people knew that reprinting happened, but being able to identify what got reprinted where, and what trends there were in those reprintings would be nearly impossible to do if you were trying it without computational methods.</p>
 <p><a class="reference external" href="https://viraltexts.org/">Viral Texts</a> uses n-grams (groups of words of arbitrary length – with “n” being used as a variable) to detect reuse. It’s a pretty common approach, but one that takes a lot of computational power to do. (Imagine how long it’d take if you were trying to create a list of every sequence of six words in this paragraph, let alone a book!) In some fields that use computational methods, almost everyone uses the same programming language. Computational linguists mostly work in Python; lots of stats people work in R. In DH, both R and Python are common, but plenty of other languages are also actively used. <a class="reference external" href="https://datasittersclub.github.io/site/dsc4/">AntConc</a> is written in Perl, <a class="reference external" href="https://datasittersclub.github.io/site/dsc6/">Voyant</a> is written in Java, and Palladio (a <a class="reference external" href="http://hdlab.stanford.edu/palladio/">mapping/visualization software developed at Stanford</a>) is written in Javascript. As it happens, the code that Lincoln Mullen <a class="reference external" href="https://lincolnmullen.com/software/textreuse/">put together</a> for detecting n-grams is written in R. The Python vs. R vs. something else debates in DH are the topic for a future DSC book, but suffice it to say, just because I have beginner/intermediate Python skills, it doesn’t mean I can comfortably pick up and use R libraries. Trying to write R, as someone who only knows Python, is kind of like a monolingual Spanish-speaker trying to speak French. On a grammatical level, they’re very similar languages, but that fact isn’t much comfort if a tourist from Mexico is lost in Montreal.</p>
 <p>Luckily, one of my favorite DH developers had almost exactly what I needed. When it comes to DH tool building, my hat goes off to Scott Enderle. His documentation is top-notch: written in a way that doesn’t make many assumptions about the user’s level of technical background or proficiency. Sure, there are things you can critique (like the default, English-centric tokenization rules in his <a class="reference external" href="https://github.com/senderle/topic-modeling-tool">Topic Modeling Tool</a>), but the things he builds are very <em>usable</em> and, on the whole, fairly <em>understandable</em>, without asking an unrealistic amount from users upfront. I wish I could say the same many other DH tools… but that’s a topic for a future DSC book.</p>
@@ -527,17 +849,17 @@ by Quinn Dombrowski
 </ul>
 <p>Add that to the fuzzy-matching in the code (so that the insertion of an adverb or a slight change in adjective wouldn’t throw off an otherwise-matching segment), and you can see how this might pick some things up that we as readers would not consider real matches.</p>
 <div class="section" id="enter-jupyter-notebooks">
-<h3>Enter Jupyter Notebooks<a class="headerlink" href="#enter-jupyter-notebooks" title="Permalink to this headline">¶</a></h3>
+<h3>Enter Jupyter Notebooks<a class="headerlink" href="#enter-jupyter-notebooks" title="Permalink to this headline">#</a></h3>
 <p>We’ve used Jupyter notebooks in <a class="reference internal" href="dscm2.html"><span class="doc std std-doc">Multilingual Mystery #2: Beware, Lee and Quinn</span></a>, but if you haven’t come across them before, they’re a way of writing code (most often Python, but also R and other languages) where the code can be inter-mixed with human-readable text. You read the text blocks, you run the code blocks. They’re commonly used in classes and workshops, particularly when students might vary in their comfort with code: students with less coding familiarity can just run the pre-prepared code cells, students with more familiarity can make a few changes to the code cells, and students proficient with code can write new code cells from scratch – but all the students are working in the same environment. Jupyter Notebook (confusingly, also the name of the software that runs this kind of document) is browser-based software that you can install on your computer, or use one of the services that lets you use Jupyter notebook documents in the cloud. I’ve written up a <a class="reference external" href="https://programminghistorian.org/en/lessons/jupyter-notebooks">much longer introduction to Jupyter notebooks over on Programming Historian</a> if you’d like to learn more. Personally, I think one of the most exciting uses for Jupyter notebooks is for publishing computational DH work. Imagine if you could write a paper that uses computational methods, and instead of having a footnote that says “All the code for this paper is available at some URL”, you just <em>embedded</em> the code you used in the paper itself. Readers could skip over the code cells if they wanted to read it like a traditional article, but for people interested in understanding exactly how you did the things you’re describing in the paper, they could just see it <em>right there</em>. As of late 2020, there aren’t any journals accepting Jupyter notebooks as a submission format (though <a class="reference external" href="https://culturalanalytics.org/">Cultural Analytics</a> might humor you if you also send the expected PDF), but that’s one of the great things about working on the Data-Sitters Club: we can publish in whatever format we want! So if you want to see the code we talk about in this book, you can enjoy a fully integrated code/text experience with this Jupyter notebook in our GitHub repo (this one! that you’re reading right now!)… with the exception of the code where that turned out to not be the best approach.</p>
 </div>
 <div class="section" id="exit-jupyter-notebooks">
-<h3>Exit Jupyter Notebooks?<a class="headerlink" href="#exit-jupyter-notebooks" title="Permalink to this headline">¶</a></h3>
+<h3>Exit Jupyter Notebooks?<a class="headerlink" href="#exit-jupyter-notebooks" title="Permalink to this headline">#</a></h3>
 <p>Dreaming of <em>actually</em> putting <em>all</em> the code for this book in a single Jupyter notebook along with the text, I downloaded the <a class="reference external" href="https://github.com/senderle/fandom-search">code for Scott’s text comparison tool</a> from his GitHub repo. Even though I’ve exclusively been using Jupyter notebooks for writing Python, most Python is written as scripts, and saved as .py files. Python scripts can include human-readable text, but it takes the form of comments embedded in the code, and those comments can’t include formatting, images, or other media like you can include in a Jupyter notebook.</p>
 <p>My thought was that I’d take the .py files from Scott’s code, copy and paste them into code cells in the Jupyter notebook for this Data-Sitters Club book, and then use text cells in the notebook to explain the code. When I actually took a look at the .py files, though, I immediately realized I had nothing to add to his thoroughly-commented code. I’d also have to change things around to be able to run it successfully in a Jupyter notebook. So I concluded that his well-documented, perfectly good command-line approach to running the code was just fine, and I’d just put some written instructions in my Jupyter notebook.</p>
 <p>But before I could run Scott’s code, I needed to get our data into the format his code was expecting.</p>
 </div>
 <div class="section" id="wrangling-the-data">
-<h3>Wrangling the Data<a class="headerlink" href="#wrangling-the-data" title="Permalink to this headline">¶</a></h3>
+<h3>Wrangling the Data<a class="headerlink" href="#wrangling-the-data" title="Permalink to this headline">#</a></h3>
 <p>First, I had to split our corpus into individual chapters. (Curious about how we went about digitizing the corpus? Check out <a class="reference internal" href="dsc2.html"><span class="doc std std-doc">DSC #2: Katia and the Phantom Corpus</span></a>!) This would be agonizing to do manually, but my developer colleague at work, Simon Wiles, helped me put together some code that splits our plain-text files for each book every time it comes across a blank line, then the word ‘Chapter’. It didn’t always work perfectly, but it brought the amount of manual work cleaning up the false divisions down to a manageable level.</p>
 <p>After talking with Scott, he seemed pretty sure that we could hack his “script” format by just treating the entire chapter as a “line”, given dummy data for the “scene” and “character”. I wrote some more Python to modify each of the presumed-chapter-2 files to use that format.</p>
 <p>The output looks something like this (for the chapter 2 file of BSC #118: <em>Kristy Thomas, Dog Trainer</em>):</p>
@@ -546,7 +868,7 @@ by Quinn Dombrowski
 <p><code class="docutils literal notranslate"><span class="pre">LINE&lt;&lt;</span> <span class="pre">&quot;Tell</span> <span class="pre">me</span> <span class="pre">tell</span> <span class="pre">me</span> <span class="pre">tell</span> <span class="pre">me&quot;</span> <span class="pre">Claudia</span> <span class="pre">Kishi</span> <span class="pre">begged. </span> <span class="pre">&quot;Not</span> <span class="pre">until</span> <span class="pre">everyone</span> <span class="pre">gets</span> <span class="pre">here&quot;</span> <span class="pre">I</span> <span class="pre">answered. </span> <span class="pre">&quot;These</span> <span class="pre">cookies&quot;</span> <span class="pre">said</span> <span class="pre">Claudia</span> <span class="pre">&quot;are</span> <span class="pre">homebaked</span> <span class="pre">chocolatechip</span> <span class="pre">cookies.</span> <span class="pre">My</span> <span class="pre">mother</span> <span class="pre">brought</span> <span class="pre">them</span> <span class="pre">home</span> <span class="pre">from</span> <span class="pre">the</span> <span class="pre">library</span> <span class="pre">fundraiser.</span> <span class="pre">Her</span> <span class="pre">assistant</span> <span class="pre">made</span> <span class="pre">them.&quot; </span> <span class="pre">Mrs.</span> <span class="pre">Kishi</span> <span class="pre">is</span> <span class="pre">the</span> <span class="pre">head</span> <span class="pre">librarian</span> <span class="pre">at</span> <span class="pre">the</span> <span class="pre">Stoneybrook</span> <span class="pre">Public</span> <span class="pre">Library.</span> <span class="pre">Her</span> <span class="pre">assistant's</span> <span class="pre">chocolatechip</span> <span class="pre">cookies</span> <span class="pre">were</span> <span class="pre">famous</span> <span class="pre">all</span> <span class="pre">over</span> <span class="pre">town.</span> <span class="pre">[lots</span> <span class="pre">more</span> <span class="pre">text,</span> <span class="pre">until</span> <span class="pre">the</span> <span class="pre">end</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">chapter...])&gt;&gt;</span></code></p>
 <p>My Python code assigns everything to “scene number 1”, and puts the filename for each book used as the point of comparison as the “character”. Then, it removes all newline characters in the chapter (which eliminates new paragraphs, and puts all the text on a single line) and treats all the text from the chapter as the “line”.</p>
 <div class="section" id="changing-to-the-right-directory">
-<h4>Changing to the right directory<a class="headerlink" href="#changing-to-the-right-directory" title="Permalink to this headline">¶</a></h4>
+<h4>Changing to the right directory<a class="headerlink" href="#changing-to-the-right-directory" title="Permalink to this headline">#</a></h4>
 <p>First, put the full path to the directory with the text that you want to treat as the “script” (i.e. the thing you’re comparing from) in the code cell below.</p>
 <p>If you’ve downloaded his <a class="reference external" href="https://github.com/senderle/fandom-search">code from GitHub</a> (by hitting the arrow next to the green <em>Code</em> button, choosing “Download Zip”, and then unzipped it), you might want to move the texts you want to use into the “scripts” folder inside his code, and run the code below on those files. (Make sure you’ve run the code at the top of this notebook that imports the <code class="docutils literal notranslate"><span class="pre">os</span></code> module first.)</p>
 <div class="cell docutils container">
@@ -565,7 +887,7 @@ by Quinn Dombrowski
 </div>
 </div>
 <div class="section" id="reformatting-texts">
-<h4>Reformatting texts<a class="headerlink" href="#reformatting-texts" title="Permalink to this headline">¶</a></h4>
+<h4>Reformatting texts<a class="headerlink" href="#reformatting-texts" title="Permalink to this headline">#</a></h4>
 <p>For texts to work with Scott’s code, they need to be formatted like the excerpt shown above.</p>
 <p>The code below clears out some punctuation and newlines that might otherwise lead to false matches, and then writes out the file with a fake “scene number”, a “character name” that consists of the filename, and the full text as a “line”.</p>
 <div class="cell docutils container">
@@ -610,20 +932,34 @@ by Quinn Dombrowski
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">OSError</span><span class="g g-Whitespace">                                   </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="mi">9</span><span class="n">c9f1526596e</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">22</span>             <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">23</span>             <span class="c1">#Create a new text file with the output filename</span>
+<span class="ne">---&gt; </span><span class="mi">24</span>             <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">newname</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">out</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">25</span>                 <span class="c1">#Write the syntax for scene number to the new file</span>
+<span class="g g-Whitespace">     </span><span class="mi">26</span>                 <span class="n">out</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;SCENE_NUMBER&lt;&lt;1&gt;&gt;&#39;</span><span class="p">)</span>
+
+<span class="ne">OSError</span>: [Errno 63] File name too long: &quot;EZ-2021-05-04-Cnews-Face-à-l&#39;info-4-mai-script-script-script-script-script-script-script-script-script-script-script-script-script-script-script-script-script-script-script-script-script-script-script-script-script-script-script-script-script-script-script.txt&quot;
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="cleanup">
-<h4>Cleanup<a class="headerlink" href="#cleanup" title="Permalink to this headline">¶</a></h4>
+<h4>Cleanup<a class="headerlink" href="#cleanup" title="Permalink to this headline">#</a></h4>
 <p>Before you run Scott’s code, the only files that should be in the <code class="docutils literal notranslate"><span class="pre">scripts</span></code> folder of the <code class="docutils literal notranslate"><span class="pre">fandom-search</span></code> folder should be the ones in the correct format. If you’re trying to compare a set of text files to themselves, take the original text files (the ones that don’t have <code class="docutils literal notranslate"><span class="pre">-script.txt</span></code> as part of their name), and move them into the <code class="docutils literal notranslate"><span class="pre">fanworks</span></code> folder. Keep the <code class="docutils literal notranslate"><span class="pre">-script.txt</span></code> files in the <code class="docutils literal notranslate"><span class="pre">scripts</span></code> folder.</p>
 </div>
 </div>
 </div>
 <div class="section" id="comparing-all-the-things">
-<h2>Comparing All The Things<a class="headerlink" href="#comparing-all-the-things" title="Permalink to this headline">¶</a></h2>
+<h2>Comparing All The Things<a class="headerlink" href="#comparing-all-the-things" title="Permalink to this headline">#</a></h2>
 <p>“You should be able to put together a bash script to run through all the documents,” Scott told me in haste at the end of our call; his toddler was waking up from a nap and needed attention. (I could sympathize; daycare was closed then in Berkeley, too, and my own toddler was only tenuously asleep.)</p>
 <p>Well, maybe <strong>he</strong> could put together a bash script, but my attempts in May only got as far as “almost works” – and “almost works” is just a euphemism for “doesn’t work”. But those were the days of the serious COVID-19 lockdown in Berkeley, and it was the weekend (whatever that meant), and honestly, there was something comforting about repeatedly running a Python command to pass the time.  Again and again I entered <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">ao3.py</span> <span class="pre">search</span> <span class="pre">fanworks</span> <span class="pre">scripts/00n_some_bsc_book_title_here.txt</span></code>, in order to compare one book after another to the whole corpus. Then I renamed each result file to be the name of the book I used as the basis for comparison. As the files piled up, I marveled at the different file sizes. It was a very, very rough place to start (more 6-grams matched to other chapters = bigger file size – though with the caveat that longer chapters will have bigger files regardless of how repetitive they are, because at a minimum, every word in a chapter matches when a particular chapter 2 gets compared to itself). Honestly, it was one of the most exciting things I’d done in a while. (Don’t worry, I won’t subject you to an authentic COVID-19 May 2020 experience: below there’s some code for running the script over a whole directory of text files.)</p>
 <div class="section" id="dependencies-for-the-fandom-search-code">
-<h3>Dependencies for the fandom-search code<a class="headerlink" href="#dependencies-for-the-fandom-search-code" title="Permalink to this headline">¶</a></h3>
+<h3>Dependencies for the fandom-search code<a class="headerlink" href="#dependencies-for-the-fandom-search-code" title="Permalink to this headline">#</a></h3>
 <p>There’s more than a few dependencies that you need to install, at least the first time you run this notebook. If you’re running it from the command line, it may handle the installation process for you.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -682,7 +1018,7 @@ by Quinn Dombrowski
 </div>
 </div>
 <div class="section" id="running-the-fandom-search-code">
-<h3>Running the fandom-search code<a class="headerlink" href="#running-the-fandom-search-code" title="Permalink to this headline">¶</a></h3>
+<h3>Running the fandom-search code<a class="headerlink" href="#running-the-fandom-search-code" title="Permalink to this headline">#</a></h3>
 <p>First, set the full path to the <code class="docutils literal notranslate"><span class="pre">fandom-search-master</span></code> folder (downloaded and extracted from <a class="reference external" href="https://github.com/senderle/fandom-search">Scott’s GitHub page for the code</a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -713,26 +1049,26 @@ by Quinn Dombrowski
 </div>
 </div>
 <div class="section" id="aggregating-results-from-the-fandom-search-code">
-<h3>Aggregating results from the fandom-search code<a class="headerlink" href="#aggregating-results-from-the-fandom-search-code" title="Permalink to this headline">¶</a></h3>
+<h3>Aggregating results from the fandom-search code<a class="headerlink" href="#aggregating-results-from-the-fandom-search-code" title="Permalink to this headline">#</a></h3>
 <p>The CSVs you get out of this aren’t the easiest to make sense of at first. Here’s an example for BSC #60: <em>Mary Anne’s Makeover</em>.</p>
 <p><img alt="Spreadsheet of results from Mary Anne's Makeover" src="_images/dsc8_spreadsheet_distance_results.png" /></p>
 <p>The way I generated the fake “script” format for each book, the name of the book used as the basis of comparison goes in column H (ORIGINAL_SCRIPT_CHARACTER), and the books it’s being compared to show up in FAN_WORK_FILENAME. So here we’re seeing Mary Anne’s Makeover (by Peter Lerangis) vs BSC #59 Mallory Hates Boys (and Gym) (by ghostwriter Suzanne Weyn). Columns B and E are the indices for the words that are being matched– i.e. where those words occur within the text file. Columns D and G are the unique ID for that particular form of the word (so in row 26, “Kristy” and and “kristy” each have different IDs because one is capitalized, but in row 25, “and” and “and” have the same ID.) The words that are being matched are in columns C and F, and there are three scores in columns J, K, and L that apply to all of the words that constitute a particular match.)</p>
 <p>This is definitely pulling out some of the tropes. Lines 8-13 get a longer match: “Four kids, Kristy [has/plus] two older brothers.” Lines 15-20 get “Can you imagine?” – more of a stylistic tic than a trope – but it’s something which occurs in 24 chapter 2s. Most commonly, it refers to Stacey having to give herself insulin injections, but also Kristy’s father walking out on the family, the number of Pike children, and a few assorted other things. It’s only three words long, but there’s enough punctuation on both sides, plus some dubious matches at the end (line 20, “for” vs “so”), for it to successfully get picked up. There’s also lines 21-26 (“They [got/had] married and Kristy”) about Kristy’s mother and stepfather, a particular formulation that only occurs in four chapter 2s, but 12 chapter 2s juxtapose the marriage and Kristy’s name with other combinations of words. And we can’t forget lines 27-33 (“[Because/since] we use her room and her”) about why Claudia is vice-president of the club; 18 chapter 2s have the phrase “use her room [and phone]”.</p>
 </div>
 <div class="section" id="workflows-that-work-for-you">
-<h3>Workflows that work for you<a class="headerlink" href="#workflows-that-work-for-you" title="Permalink to this headline">¶</a></h3>
+<h3>Workflows that work for you<a class="headerlink" href="#workflows-that-work-for-you" title="Permalink to this headline">#</a></h3>
 <p>For someone like myself, from the “do-all-the-things” school of DH, it’s pretty common to end up using a workflow that involves multiple tools, not even in a linear sequence, but in a kind of dialogue with one another. The output of one tool (Scott’s text comparison) leaves me wondering how often certain phrases occur, so I follow up in <a class="reference external" href="https://datasittersclub.github.io/site/dsc4/">AntConc</a>. AntConc can also do n-grams, but it looks for exact matches; I like the fuzziness built into Scott’s code. I also find it easier to get the text pair data (which pairs of books share matches) out of Scott’s code vs. AntConc. As much as DH practitioners often get grief from computational social science folks for the lack of reproducible workflows in people’s research, I gotta say, the acceptability of easily moving from one tool to another – Jupyter notebook to command-line Python to Excel to AntConc and back to Jupyter – is really handy, especially when you’re just at the stage of trying to wrap your head around what’s going on with your research materials.</p>
 <p>Not that everyone works this way; when I’ve described these workflows to Associate Data-Sitter (and director of the Stanford Literary Lab) Mark Algee-Hewitt, he looks at me wide-eyed and says it makes his head hurt. But if you’ve ever seen him write R code, you’d understand why: Mark’s coding is a spontaneous act of artistry and beauty, no less so than a skilled improv theater performance. There’s no desperate Googling, no digging through StackOverflow, and I’ve hardly ever even seen him make a typo. Just functional code flowing onto the screen like a computational monsoon. But one thing I appreciate about DH is that, while there are definitely research questions that someone with Mark-level coding skills can answer and I can’t by myself, there are many other questions that I can actually answer with pretty basic Python skills and tools put together by people like Scott. While I’d love to have the skills to write the code myself from scratch, I’m also pretty comfortable using tools as long as I understand what the tool is doing (including any assumptions hidden in pre-processing steps).</p>
 </div>
 <div class="section" id="evaluating-closeness">
-<h3>Evaluating closeness<a class="headerlink" href="#evaluating-closeness" title="Permalink to this headline">¶</a></h3>
+<h3>Evaluating closeness<a class="headerlink" href="#evaluating-closeness" title="Permalink to this headline">#</a></h3>
 <p><img alt="Individual example from the spreadsheet" src="_images/dsc8_spreadsheet_example.png" /></p>
 <p>As I dug further into my spreadsheet, I came across some “matches” that… didn’t really work. Like lines 1656-1661: “I didn’t want to” vs “I didn’t tell you”. Yeah, no. And even 1662-1668: “[need/trying] to line up a sitter”. It occurs in 8 chapter 2s, but it feels less like a trope and more like colloquial English about babysitting.</p>
 <p>This is where the last three columns – J, K, and L – come in. Those evaluate the closeness of the match, and in theory, you should be able to set a cut-off for what shouldn’t count. Column J is “best match distance”. You want this number to be <strong>low</strong>, so from the algorithm’s point of view, “we use her room and her” in rows 28-33 is <strong>almost certainly</strong> a match. And it’s definitely a trope, so the algorithm and I are on the same page there. Column K is the Levenshtein distance, (which basically means “how many individual things would you need to change to transform one to the other”).  And the combined distance tries to… well, combine the two approaches.</p>
 <p>The “match” that I rate as a failure as a human reader, “I didn’t want to / I didn’t tell you”, has a match distance of .08 – so should that be the cutoff? Except one of the tropes, “Four kids, Kristy [has/plus] two older brothers.” has a distance of .09. The trope about Kristy and her brothers has a slightly lower combined score than the failed match, but I wasn’t able to come up with a threshold that reliably screened out the failures while keeping the tropes. So I didn’t – I kept everything. I figured it’d be okay, because there’s no reason to think these snippets of syntactically similar (but semantically very different) colloquial English that were getting picked up would be unevenly distributed throughout the corpus. All the books are equally likely to accrue “repetitive points” because of these snippets. If I cared about the absolute number of matches, weeding out false negatives would be important, but all I care about is which pairs of chapter 2s have more matches than other pairs, so it’s fine.</p>
 </div>
 <div class="section" id="what-do-you-do-with-157-spreadsheets">
-<h3>What do you do with 157 spreadsheets?<a class="headerlink" href="#what-do-you-do-with-157-spreadsheets" title="Permalink to this headline">¶</a></h3>
+<h3>What do you do with 157 spreadsheets?<a class="headerlink" href="#what-do-you-do-with-157-spreadsheets" title="Permalink to this headline">#</a></h3>
 <p>Those spreadsheets had a <em><strong>ton</strong></em> of data – data I could use later to find the most common tropes, distribution of individual tropes across ghostwriters, tropes over time, and things like that – but I wanted to start with something simpler: finding out how much overlap there is between individual books. Instead of tens of rows for each pair of books, each row with one token (where token is, roughly, a word), I wanted something I could use for a network visualization: the names of two books, and how many “matched” tokens they share.</p>
 <p>I knew how to use Python to pull CSV files into pandas dataframes, which are basically spreadsheets, but in Python, and they seemed like a tool that could do the job. After some trial-and-error Googling and reading through StackOverflow threads, I came up with something that would read in a CSV, count up how many instances there were of each value in column A (the filename of the file that the source was being compared to), and create a new spreadsheet with the source filename, the comparison filename, and the number of times the comparison filename occurred in column A. Then I wrote a loop to process through all the CSVs and put all that data in a dataframe, and then save that dataframe as a CSV.</p>
 <p>Be warned, this next step takes a long time to run!</p>
@@ -807,7 +1143,7 @@ by Quinn Dombrowski
 </div>
 </div>
 <div class="section" id="visualizing-the-network">
-<h2>Visualizing the network<a class="headerlink" href="#visualizing-the-network" title="Permalink to this headline">¶</a></h2>
+<h2>Visualizing the network<a class="headerlink" href="#visualizing-the-network" title="Permalink to this headline">#</a></h2>
 <p>The most common network visualization and analysis software used in DH is Gephi. Gephi and I have never gotten along. It used to vomit at my non-Latin alphabet data (that’s gotten better recently and now it even supports right-to-left scripts like Arabic or Hebrew), I find it finicky and buggy, and I don’t like its default styles. If you like Gephi, I’m not going to start a fight over it, but it’s not a tool I use.</p>
 <p>Instead, Miriam Posner’s Cytoscape tutorials (<a class="reference external" href="http://miriamposner.com/classes/dh201w19/tutorials-guides/network-analysis/create-a-network-graph-with-cytoscape/">Create a network graph with Cytoscape</a> and <a class="reference external" href="http://miriamposner.com/classes/dh201w19/tutorials-guides/network-analysis/cytoscape-working-with-attributes/">Cytoscape: working with attributes</a>) were enough to get me started with <a class="reference external" href="https://cytoscape.org/">Cytoscape</a>, another cross-platform, open-source network visualization software package. The update to 3.8 changed around the interface a bit (notably, analyzing the network is no longer buried like three layers deep in the menu, under Network Analyzer → Network Analysis → Analyze Network – which I’d always joke about when teaching Cytoscape workshops), but it’s still a great and very readable tutorial, and I won’t duplicate it here.</p>
 <p>Import the 6gram_finaldata.csv file as a network and… hello blue blob!
@@ -859,7 +1195,7 @@ by Quinn Dombrowski
 <p>So I started wondering if I had stumbled over the beginning to a new Multilingual Mystery: what does this look like in French? If you look at chapter 2 in translation, are they <strong>less repetitive</strong>? If I ran the same code on the translations that co-exist in a text-repetition cluster, would there be a similar amount of repetition? Or might the translator be a mitigating factor – where there might be a sub-cluster of the translator directly copying text they’d previously translated from another novel in the cluster?</p>
 </div>
 <div class="section" id="a-different-direction">
-<h2>A different direction<a class="headerlink" href="#a-different-direction" title="Permalink to this headline">¶</a></h2>
+<h2>A different direction<a class="headerlink" href="#a-different-direction" title="Permalink to this headline">#</a></h2>
 <p>I was so very delighted with my little color-coded network visualization and my plans to extend it to the French that I was caught off-guard when I met with Mark and he seemed less than sanguine about it all. He pointed out (and I should’ve thought of this) that French inflection would probably add some further noise to the results of Scott’s comparison tool, and I should probably lemmatize the text too (change all the words to their dictionary form to get around word-count related problems caused by inflection). And even with the English, he seemed a bit quizzical that this sort of n-gram comparison was where I started with text comparison. He suggested that I might check out other distance metrics, like cosine distance or TF-IDF, if I hadn’t yet.</p>
 <p>“One of the things that I find a bit frustrating about off-the-shelf methods is that a lot of DH people hear words that are similar and so think that they can mean the same thing. Just because there’s a statistical method called ‘innovation’ (which measures how much word usage changes over the course of a document from beginning to end), that doesn’t mean that it’s a statistical method that can measure literary innovation. To bridge that gap, you have to either adapt the method or adapt your definition of literary innovation,” cautioned Mark. “Now, your logic goes: people talk about chapter two being similar across books, similarity can imply a kind of repetition, repetition can manifest in a re-use  of specific language between texts, Scott’s method measures re-use of language, therefore you’re thinking you can use Scott’s method to measure similarity. But there is a LOT of translation going on there: similarity → repetition → re-use → common 6-grams. Were someone to do this unthinkingly, they could very easily miss this chain of reasoning and think that common 6-grams is measuring textual similarity.”</p>
 <p>(Dear readers, please don’t make that mistake! We’ve got, admittedly, a very specific situation that justifies using it with the Baby-Sitters Club corpus, but please make sure you’ve got a similarly well-justified situation before trying it.)</p>
@@ -868,7 +1204,7 @@ by Quinn Dombrowski
 <p>I’d never run the more common text similarity metrics that Mark had mentioned, but I knew just where to start. <em>The Programming Historian</em> had just published a new <a class="reference external" href="https://programminghistorian.org/en/lessons/common-similarity-measures">lesson by John R. Ladd on common similarity measures</a> that covered distance metrics, and I’d been a reviewer on <a class="reference external" href="https://programminghistorian.org/en/lessons/analyzing-documents-with-tfidf">Matthew J. Lavin’s lesson on TF-IDF</a> before starting the Data-Sitters Club. Both those lessons are worth reading through if you’re interested in trying out these techniques yourself, but I’ll cover them here, Data-Sitters Club style.</p>
 </div>
 <div class="section" id="what-do-we-compare-when-we-compare-texts">
-<h2>What do we compare when we compare texts?<a class="headerlink" href="#what-do-we-compare-when-we-compare-texts" title="Permalink to this headline">¶</a></h2>
+<h2>What do we compare when we compare texts?<a class="headerlink" href="#what-do-we-compare-when-we-compare-texts" title="Permalink to this headline">#</a></h2>
 <p>But before getting into the difference distance metrics, let’s talk about what we actually measure when we measure “text similarity” computationally. If you ask someone how similar two books, or two series are, the metrics they use are probably going to depend on the pair you present them with. How similar are BSC #10: <em>Logan Likes Mary Anne</em> and Charlotte Brontë’s <em>Jane Eyre</em>? Well, they both involve the first-person narration of a teenage female protagonist, a romance subplot, and childcare-based employment – but probably no one would think of these books as being all that similar, due to the difference in setting and vastly different levels of cultural prestige, if nothing else. What about Logan Likes Mary Anne compared to Sweet Valley High #5: <em>All Night Long</em>, where teenage bad-twin Jessica starts dating a college boy, stays out all night with him, and asks good-twin Liz to take a test for her? The setting is a lot more similar (1980’s affluent suburban United States) and there’s also a romance subplot, but SVH #5 is written in the third person, the series is for a much edgier audience than the Baby-Sitters Club, and the character of Mary Anne is probably more similar to Jane Eyre than Jessica Wakefield.</p>
 <p>It’s easy for a human reader to evaluate book similarity more holistically, comparing different aspects of the book and combining them for an overall conclusion that takes them all into consideration. And if you’ve never actually tried computational text similarity methods but hear DH people talking about “measuring text similarity”, you might get the idea that computers are able to measure the similarity of texts roughly the way that humans do. Let me assure you: they cannot.</p>
 <p>No human would compare texts the way computers compare texts. That doesn’t mean the way computers do it is wrong – if anything, critics of computational literary analysis have complained about how computational findings are things people already know. Which suggests that even though computers go about it differently, the end result can be similar to human evaluation. But it’s important to keep in mind that your results are going to vary so much based on what you measure.</p>
@@ -886,7 +1222,7 @@ by Quinn Dombrowski
 <p>With that big-picture view in mind, let’s take a look at some of the distance measures.</p>
 </div>
 <div class="section" id="euclidean-distance">
-<h2>Euclidean distance<a class="headerlink" href="#euclidean-distance" title="Permalink to this headline">¶</a></h2>
+<h2>Euclidean distance<a class="headerlink" href="#euclidean-distance" title="Permalink to this headline">#</a></h2>
 <p>One of the things that I find striking about using Euclidean distance to measure the distance between text-points is that it <em>actually involves measuring distance</em>. Just like you did between points on your classic X, Y axis graph from high school math. (Hello, trigonometry! I have not missed you or needed you at all until now.)</p>
 <p>The output of Scott’s tool is more intuitively accessible than running Euclidean distance on text-points in 1000-dimensional space. His tool takes in text pairs, and spits out 6-grams of (roughly) overlapping text. With Euclidean and cosine distance, what you get back is a number. You can compare that number to numbers you get back for other pairs of texts, but the best way to make sure that you’re getting sensible results is to be familiar with the texts in question, and draw upon that knowledge for your evaluation. What I’m really interested in is the “chapter 2” question, but I don’t have a good sense of the content of all the books’ chapter 2s. So instead, we’ll start exploring these analyses on full books, and once we understand what’s going on, we can apply it to the chapter 2s.</p>
 <div class="cell docutils container">
@@ -1310,11 +1646,11 @@ by Quinn Dombrowski
 <p>It was one of those classic DH moments where I now had a bunch of data, and no idea where to start on interpreting it. 🤯</p>
 <p>But then I started to wonder about how good my data even was. Like I mentioned earlier, Euclidean distance is very sensitive to the length of the texts I was comparing. Was it a fair assumption that the books would all be the same length? DH methods make it easy to put our assumptions to the test.</p>
 <div class="section" id="counting-words">
-<h3>Counting words<a class="headerlink" href="#counting-words" title="Permalink to this headline">¶</a></h3>
+<h3>Counting words<a class="headerlink" href="#counting-words" title="Permalink to this headline">#</a></h3>
 <p>To see if Euclidean distance is a good metric, we need to find out how much variation there is in the text length. For Euclidean distance to work well, we need the input text to be close to the same length.</p>
 <p>The first way we’ll count is based on BSC sub-sesries. The code below depends on some DSC-specific file-naming conventions, where each file is named with an abbeviation representing the series, followed by the book number.</p>
 <div class="section" id="counting-words-in-full-books">
-<h4>Counting words in full books<a class="headerlink" href="#counting-words-in-full-books" title="Permalink to this headline">¶</a></h4>
+<h4>Counting words in full books<a class="headerlink" href="#counting-words-in-full-books" title="Permalink to this headline">#</a></h4>
 <p>We’ve already specified above that <em>filedir</em> is where all our full-text files are, and we should already be in that directory in order to run Euclidean distance. So we can just run this code on the files in our current directory, which should be the full-text files.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1570,7 +1906,7 @@ m18c_stacey_and_the_mystery_at_the_empty_house.txt, 29174, m
 </div>
 </div>
 <div class="section" id="counting-words-by-chapter">
-<h4>Counting words by chapter<a class="headerlink" href="#counting-words-by-chapter" title="Permalink to this headline">¶</a></h4>
+<h4>Counting words by chapter<a class="headerlink" href="#counting-words-by-chapter" title="Permalink to this headline">#</a></h4>
 <p>Now, enter the full path to the directory with your individual-chapter files.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -4156,7 +4492,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 </div>
 </div>
 <div class="section" id="cosine-similarity">
-<h2>Cosine similarity<a class="headerlink" href="#cosine-similarity" title="Permalink to this headline">¶</a></h2>
+<h2>Cosine similarity<a class="headerlink" href="#cosine-similarity" title="Permalink to this headline">#</a></h2>
 <p>Cosine similarity offers a workaround for the text-scale problems we encountered with Euclidean distance. Instead of trying to measure the <strong>distance</strong> between two points (which can be thrown off due to issues of magnitude, when one point represents a text that’s much longer than the other), it measures the cosine of the angle between them and calls it <em>similarity</em>. You may have also filed “cosine” away under “high school math I hoped to never see again”, but don’t panic! As trigonometry starts to flood back at you, you might find yourself wondering, “Why cosine similarity, and not any of its little friends, like sine or tangent?” After all, wouldn’t it be fun to burst into the chorus of Ace of Base’s “I Saw the Sine” whenever you worked out the text similarity?</p>
 <p>Mostly it works out to a matter of numerical convenience in setting up the framing for measuring similarity: If the angle between two points is 0, then that means any difference is just one of <em>magnitude</em> (which we don’t worry about with cosine similarity) and you can say the texts are extremely similar. If the angle is 90 degrees, which is as far as you can get while staying in all-positive numbers (we don’t have any negative word counts), then there’s a huge difference. Cos(0) = 1, and cos(90) = 0, so with cosine similarity, you want <strong>larger</strong> numbers for more similarity. Which is the opposite of Euclidean distance, where you want <strong>smaller</strong> numbers for more similarity (because using that measure, 0 means “there’s no distance between these things and they are the same”). I’ve screwed this up more than once, getting excited about large numbers when using an algorithm where you want smaller numbers, and vice versa. Always double-check the scale you’re using and what counts as “similar” if you’re not sure. Or, as you might find in a Choose Your Own Adventure book: <em>“The tweet was written, delayed only by the search for the perfect celebratory emoji to decorate its conclusion, when a small voice echoes in the back of your head. ‘Should these be large numbers? What algorithm did you use?’ You pause and think for a moment… then sigh, delete the tweet, and return to your code to start over. The end.”</em></p>
 <p>But before you start writing “<strong>EUCLIDEAN = SMALL, COSINE = BIG</strong>” in sharpie on a sticky note and putting it on your wall with extra tape for reinforcement, the people who write Python packages realized it’s going to be a problem if they write a package where you can easily swap in different metrics, but some of them use large numbers for similarity, while others use small numbers. So what you’ll see in the Jupyter notebook is that it’s calculating cosine <em>distance</em> – which is just (1 - cosine similarity). After that bit of subtraction, “exactly the same” has a value of 0, just like you’d get in Euclidean distance.</p>
@@ -4883,7 +5219,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 <p>There are some interesting things that we could dig into here! It looks like there’s more overlap in how the books end (ch. 15, bottom right) than how the middle of the book goes, though there are lots of individual speckles of high similarity for the middle chapters. Chapter 1 starts similarly in the early books, but is pretty dispersed by the end. The cluster in books #83-101 isn’t really visible in these chapters. But the crucial thing we’re seeing is just that chapter 2s are <strong>much more similar</strong> to one another than other chapters.</p>
 </div>
 <div class="section" id="word-counts-or-word-frequencies">
-<h2>Word counts or word frequencies?<a class="headerlink" href="#word-counts-or-word-frequencies" title="Permalink to this headline">¶</a></h2>
+<h2>Word counts or word frequencies?<a class="headerlink" href="#word-counts-or-word-frequencies" title="Permalink to this headline">#</a></h2>
 <p>I ran this part by Mark, pleased with myself for having worked through a tutorial, modified it to fit what I wanted to work on, and come up with a largely interpretable result that was brimming with possibilities for things to explore next.</p>
 <p>His response caught me completely off-guard: “You scaled, or otherwise normalized, your word counts, right? RIGHT? RIGHT?!?!? I only ask because you don’t mention it anywhere, and if you don’t normalize your word counts by turning them into word frequencies, you are only really going to ever find out about what texts are longer than others.”</p>
 <p>Uh-oh. That <em>Programming Historian</em> tutorial hadn’t said anything about word <strong>frequencies</strong>. In fact, it’d used the word <em>count</em> vectorizer in its code. I knew that would be a problem for Euclidean distance, but I’d hoped that cosine distance would… solve it?</p>
@@ -4892,7 +5228,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 <p>And to my delight, it did! The TF-IDF vectorizer was there to save the day. Now, TF-IDF (term frequency - inverse document frequency, which tries to get at <em>distinctive words</em> in each text) wasn’t what I wanted – not yet. (We’ll get to that soon enough; it’s a very different method for evaluating similarity.) But you can’t spell TF-IDF without TF, and since TF is “term frequency”, it’s exactly the thing I was looking for!</p>
 <p>If using term frequency helps accounting for differences in length, I expected that running Euclidean distance on a matrix of word frequencies should look something like the Cosine distance on a matrix of word counts, right? Let’s compare the first version and the normalized version comparing the full books using Euclidean distance!</p>
 <div class="section" id="euclidean-distance-with-word-frequencies">
-<h3>Euclidean distance with word frequencies<a class="headerlink" href="#euclidean-distance-with-word-frequencies" title="Permalink to this headline">¶</a></h3>
+<h3>Euclidean distance with word frequencies<a class="headerlink" href="#euclidean-distance-with-word-frequencies" title="Permalink to this headline">#</a></h3>
 <p>Because we were in the directory with the chapter 2’s, we need to go back to the directory with the full text.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -5275,7 +5611,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 <p>Once you normalize for length, all the Baby-Sitters Club books look… mostly the same. Even with Euclidean distance. So what am I even going to get for Cosine distance using term frequencies?</p>
 </div>
 <div class="section" id="cosine-distance-with-word-frequencies">
-<h3>Cosine distance with word frequencies<a class="headerlink" href="#cosine-distance-with-word-frequencies" title="Permalink to this headline">¶</a></h3>
+<h3>Cosine distance with word frequencies<a class="headerlink" href="#cosine-distance-with-word-frequencies" title="Permalink to this headline">#</a></h3>
 <p>We’ve already used the TF-IDF vectorizer, so now we just need to do a different distance calculation.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -7125,7 +7461,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 </div>
 </div>
 <div class="section" id="tf-idf">
-<h2>TF-IDF<a class="headerlink" href="#tf-idf" title="Permalink to this headline">¶</a></h2>
+<h2>TF-IDF<a class="headerlink" href="#tf-idf" title="Permalink to this headline">#</a></h2>
 <p>As I mentioned before, TF-IDF stands for term frequency - inverse document frequency. TF-IDF tries to get at <strong>distinctive</strong> words. For each text, what are the words that set it apart from all the other texts you’re comparing against? To calculate TF-IDF, you don’t have to imagine 1000-dimensional space or anything like that. Term frequency is just how often the word occurs, divided by the total number of words in the text. Inverse document frequency is a way to reduce the importance of words that are high-frequency everywhere (like “the”) in order to surface the words that are high frequency in a particular text because they’re important. You calculate it using another concept from high school math: your old pal logarithm. The inverse document frequency for a word is: log_e(Total number of documents / Number of documents with term t in it).</p>
 <p>The TF-IDF calculation is inherently comparative: it doesn’t make sense to run it on just one text, if you’re looking for what’s unique about a text in relation to other texts. But the output we get from TF-IDF is a list of words and numerical values, which isn’t something we can use to visualize a comparison of the texts, the way we could with the output of the vectorizer we used to plot points in 1000-dimensional space. We <em>can</em> use the TF-IDF calculations for each word in our vectorizer instead of simple word counts, which will generate a different set of points for each text, and from there we can use Euclidean or Cosine distance. But before we go there, let’s take a look at what we get out of the TF-IDF calculation, using our full-text corpus (not just the chapter 2s).</p>
 <p>The word “baby-sitters” is going to appear in most or all of the books (maybe not California Diaries). On the other hand, the word “Lowell” (the surname of the racist family in BSC #56: <em>Keep Out, Claudia!</em>) only occurs in two books: <em>Keep Out, Claudia!</em> and BSC #3: <em>The Truth About Stacey</em> (where “Lowell” actually refers to a different person, Lowell Johnston). Lowell Johnston is only mentioned twice in <em>The Truth About Stacey</em>, so it’s still not going to get a high TF-IDF score in that book (it comes in #103 with a score of 10.64). But in <em>Keep Out, Claudia!</em>, Lowell appears a lot, and that number isn’t scaled down much at all because it only occurs in two books. So it ends up getting the highest TF-IDF score for that book, 707.82. This is a large score, more similar to characters in “very special episodes” who appear in just one book, like Whitney (the girl with Down’s Syndrome who Dawn babysits in BSC #77: <em>Dawn and Whitney, Friends Forever</em>).</p>
@@ -7183,7 +7519,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 <p>If I were thinking of some distinctive words for BSC #87: <em>Stacey and the Bad Girls</em>, what would come to mind would be “shoplifting”, “concert”, “alcohol”, and “wine”. But the top 25 terms are almost all names – including the band whose concert they go see (#7 U4Me) and the department store where the shoplifting takes place (#10 Bellair). There are also trains (#19) and escalator (#24). “Concert” does the best of my terms at #40. “Alcohol” is #80, between “camera” and “rosebud”. “Shoplift” is #118, between “bikes” and “creature”. And “wine” is down at #1002, in the company of “sniffle” and “bees”. So don’t get too comfortable with the assumption that TF-IDF will get you to basically the same set of terms that a human would think of. Plot salience and distinctive content aren’t the same as distinctive frequency distribution.</p>
 <p>BSC #83: <em>Stacey vs. the BSC</em> features Stacey being duplicitous, along with the inter-babysitter drama that ultimately leads to the misbehavior described above for BSC #87, but you can’t see it in the top 25 terms, which feature a lot of names, various instances of onomatopoeia (“clack”, “clomp”, and “plink”), piano, fiesta, talent, twinkle, recital, cheese, and jukebox. There’s something to this: Dawn hides behind a jukebox spying on Stacey after she sneaks out on a date. And Charlotte plays the piano at the BSC talent show. Score three for TF-IDF! Even if it’s fixating on objects, at least they’re plot-significant objects. So what’s up with the cheese? I don’t have a good explanation, but it comes up a lot, between Jamie’s macaroni and cheese, extra pepperoni and cheese on a pizza, multiple references to cream cheese, cheese and crackers, a fiesta burger (there’s the “fiesta” from our TF-IDF results) with melted cheese… maybe ghostwriter Peter Lerangis had a cheese craving while writing it?</p>
 <div class="section" id="tf-idf-for-text-comparison">
-<h3>TF-IDF for text comparison<a class="headerlink" href="#tf-idf-for-text-comparison" title="Permalink to this headline">¶</a></h3>
+<h3>TF-IDF for text comparison<a class="headerlink" href="#tf-idf-for-text-comparison" title="Permalink to this headline">#</a></h3>
 <p>Close-reading a distant reading method as a proxy for looking at the “topic” of individual texts is one way you can use the TF-IDF output. But you can also use it to compare texts at scale. You can also substitute in the TF-IDF vectorizer (with the IDF turned <strong>on</strong> this time) as your vectorizer of choice when trying out the Euclidean and cosine distance.</p>
 <p>The TF-IDF vectorizer has some optional parameters for dropping words. You can drop words that appear in too many documents with max_df. So <code class="docutils literal notranslate"><span class="pre">max_df</span> <span class="pre">=</span> <span class="pre">0.9</span></code> means “ignore all words that appear in more than 90% of the documents”, or you can give it a specific number of documents with <code class="docutils literal notranslate"><span class="pre">max_df</span> <span class="pre">=</span> <span class="pre">100</span></code>, for “ignore all words that appear in more than 100 documents”. You can get rid of words that appear too infrequently with min_df (e.g. <code class="docutils literal notranslate"><span class="pre">min_df</span> <span class="pre">=</span> <span class="pre">0.1</span></code> means “ignore all words that appear in less than 10% of the documents”.) In this case, we’ll keep everything by not using those parameters, but you can play with them with your own corpora to see how it impacts your result to remove super-high frequency words (which, in the Baby-Sitters Club corpus, would get rid of both words like “the” and “a”, and the main characters’ names) or super-low frequency words (like the names of characters in the “very special episode” books.)</p>
 <div class="alert alert-block alert-warning">
@@ -8244,14 +8580,14 @@ m02c_beware_dawn_13.txt, 2023, 13
 </div>
 </div>
 <div class="section" id="what-does-this-tell-us-about-chapter-2">
-<h2>What does this tell us about chapter 2?<a class="headerlink" href="#what-does-this-tell-us-about-chapter-2" title="Permalink to this headline">¶</a></h2>
+<h2>What does this tell us about chapter 2?<a class="headerlink" href="#what-does-this-tell-us-about-chapter-2" title="Permalink to this headline">#</a></h2>
 <p>Text distance metrics and things like TF-IDF are at their most useful when you’ve got a very large corpus, and/or one that you don’t know well. Imagine you’ve never read a Baby-Sitters Club book (perhaps that’s not hard for some of you!) and someone hands you a corpus of 250 text files and tells you to go find something interesting about them. Without having to read them at all, you could discover the things we’ve talked about here. The California Diaries sub-series is really different! There’s something weird going on with these super-repetitive chapter 2s!</p>
 <p>But before you get too excited, it’s worth checking with someone who <strong>does</strong> know the corpus well, if such a person exists. (With something like Twitter data, there probably isn’t anyone who’s read every tweet in the corpus you’ve collected, but if your data is collected based on a hashtag, you might be able to find someone to talk to from the community that uses that hashtag.) In the case of the Baby-Sitters Club, anyone who’s read the books can tell you that the chapter 2 phenomenon is well-known. So what new insights are these distance metrics providing?</p>
 <p>To be honest, in the case of chapter 2s, I think the answer is “not much”. As much as I love trying new methods to see what will happen, I should’ve seen where this was going and been more confident in the choice I’d made to use Scott’s 6-gram tool as the way to tackle the chapter 2 question. <em>That</em> approach got us something new, surfacing (albeit with some noise) a set of tropes repeated through the corpus, and showing that the highest amounts of repetition tend to happen among the works of a single ghostwriter. It’s not a shock, but it feels like some kind of contribution – and more of a contribution than just quantifying how much more similar the chapter 2s are compared to the other chapters.</p>
 <p>We might be able to do something with these text comparison methods in the future – like using them as a jumping-off point for exploring the clusters around books 30-48 and 83-101. But sometimes you discover that you’ve spent a lot of time trying something that’s the wrong tool for the job. Or, as this DH choose-your-own adventure book might conclude, “<em>You close the Jupyter notebook. You may not have any meaningful results, but you’ve written some code that works, and you can use it another day, for another project. To be continued…</em>”</p>
 </div>
 <div class="section" id="read-until-the-very-end">
-<h2>Read until the very end<a class="headerlink" href="#read-until-the-very-end" title="Permalink to this headline">¶</a></h2>
+<h2>Read until the very end<a class="headerlink" href="#read-until-the-very-end" title="Permalink to this headline">#</a></h2>
 <p>You probably close the book at that point, feeling dissatisfied with your reading experience.</p>
 <p>But sometimes, in frustration and annoyance, you keep flipping pages even after the book ends. And sometimes, in those very last pages of your choose-your-own-adventure book, there’s an advertisement for a forthcoming book that catches your eye with promises of future adventures. And the same thing can happen in DH, when a collaborator points out something you’ve missed.</p>
 <p>I wasn’t happy with how this DSC book ended, but I was resigned to ending it with a shrug. Sometimes projects work out that way. But when I ran it by our Associate Data-Sitter to make sure I hadn’t missed anything, Mark managed to convince me to keep turning pages: “Look, this is really the point before things get interesting: you’ve established a baseline that shows computational methods, based only on relative word frequency, can replicate an important aspect of the book that is evident at the level of reading, the ‘chapter 2 phenomenon’.”</p>
@@ -8260,7 +8596,7 @@ m02c_beware_dawn_13.txt, 2023, 13
 <p>And so the very last page of this DH choose-your-own-adventure book reads: <em>You add a handful of new research questions to your list of ideas for your corpus. They already number too many for you to get through in a decade, even with the help of six friends. But it doesn’t matter. Your brain is whirring away at trying to piece together the code for how to tackle this one. You know it’ll fuel your insomnia, but for this moment, you don’t mind. Your research question is fun again!</em></p>
 </div>
 <div class="section" id="acknowledgements">
-<h2>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permalink to this headline">¶</a></h2>
+<h2>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permalink to this headline">#</a></h2>
 <p>This book has been a journey spanning more than six months, and not one I could’ve done alone.</p>
 <p>First, I’m grateful to Scott Enderle for sharing the code from the ill-fated project. It’s great code, for what it does, and it <em>works</em>. And his patience for all my questions and confusion was incredibly generous.</p>
 <p>Similarly, a special thanks to our Associate Data-Sitter, Mark Algee-Hewitt, for answering random questions from me throughout the summer, and his incredibly thorough and thoughtful read of the draft of this piece.</p>
@@ -8268,8 +8604,8 @@ m02c_beware_dawn_13.txt, 2023, 13
 <p>And finally, thank you to Zoe LeBlanc and John R. Ladd for saving the day when I was stumped with vectorizer problems that brought the publication of this book to a screeching halt. I never would have figured it out alone.</p>
 </div>
 <div class="section" id="suggested-citation">
-<h2>Suggested Citation<a class="headerlink" href="#suggested-citation" title="Permalink to this headline">¶</a></h2>
-<p>Dombrowski, Quinn. “DSC #8: Text-Comparison-Algorithm-Crazy Quinn.” Jupyter Notebook version. <em>The Data-Sitters Club</em>, October 21, 2020. https://datasittersclub.github.io/site/dsc8.html.</p>
+<h2>Suggested Citation<a class="headerlink" href="#suggested-citation" title="Permalink to this headline">#</a></h2>
+<p>Dombrowski, Quinn. “DSC #8: Text-Comparison-Algorithm-Crazy Quinn.” Jupyter Notebook version. <em>The Data-Sitters Club</em>, October 21, 2020. <a class="reference external" href="https://datasittersclub.github.io/site/dsc8.html">https://datasittersclub.github.io/site/dsc8.html</a>.</p>
 </div>
 </div>
 
@@ -8295,33 +8631,48 @@ m02c_beware_dawn_13.txt, 2023, 13
 
               </div>
               
-        
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="dsc7.html" title="previous page">DSC #7: The DSC and Mean Copyright Law</a>
-    <a class='right-next' id="next-link" href="dsc9.html" title="next page">The Ghost in Anouk’s Laptop</a>
-
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="dsc7.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">DSC #7: The DSC and Mean Copyright Law</p>
         </div>
-        
+    </a>
+    <a class='right-next' id="next-link" href="dsc9.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">The Ghost in Anouk’s Laptop</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
-    <div class="container">
-      <p>
-        
-          By The Data-Sitters Club<br/>
-        
-      </p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By The Data-Sitters Club<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
     </div>
-  </footer>
-</main>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 
-  
+
   </body>
 </html>

@@ -5,10 +5,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DSC Multilingual Mystery 2: Beware, Lee and Quinn! &#8212; Data-Sitters Club</title>
+    <title>DSC Multilingual Mystery 2: Beware, Lee and Quinn! &#8212; The Data-Sitters Club</title>
     
-  <link href="_static/css/theme.css" rel="stylesheet" />
-  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,48 +19,63 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="_static/style.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="DSC Multilingual Mystery #3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs" href="dscm3.html" />
     <link rel="prev" title="DSC Multilingual Mystery #1: Lee and the Missing metadata" href="dscm1.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -68,23 +84,36 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
       
       <img src="_static/DSClogo.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">Data-Sitters Club</h1>
+      <h1 class="site-logo" id="site-title">The Data-Sitters Club</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
+                    <no title>
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   About
  </span>
@@ -101,7 +130,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Main series
  </span>
@@ -154,7 +183,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="dsc10.html">
-   DSC 10: Heather Loves PCA
+   DSC 10: Heather Likes PCA
   </a>
  </li>
  <li class="toctree-l1">
@@ -167,8 +196,23 @@
    DSC 12: The DSC and the New Programming Language
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc13.html">
+   DSC 13: Goodbye, Friends, Goodbye
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc14.html">
+   DSC 14: Hello, DMCA Exemption!
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc15.html">
+   DSC 15: Little Miss California Stereotype... and the BY Times
+  </a>
+ </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Multilingual mysteries
  </span>
@@ -195,7 +239,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Fun
  </span>
@@ -214,91 +258,177 @@
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/dscm2.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/dscm2.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
-            <nav id="bd-toc-nav">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/datasittersclub/site/master?urlpath=tree/site/dscm2.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/datasittersclub/site"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/dscm2.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#quinn">
    Quinn
@@ -451,47 +581,215 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>DSC Multilingual Mystery 2: Beware, Lee and Quinn!</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quinn">
+   Quinn
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#whats-named-entity-recognition">
+     What’s named-entity recognition?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-tools">
+     The tools
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-texts">
+     The texts
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getting-started-with-spacy">
+     Getting started with spaCy
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#downloading-spacy-models">
+       1. Downloading spaCy models
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#importing-spacy-and-setting-up-nlp">
+       2. Importing spaCy and setting up NLP
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#importing-other-modules">
+       3. Importing other modules
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#diretory-setup">
+       4. Diretory setup
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#running-spacy">
+     Running spaCy
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#french-ner-first-try">
+       5. French NER, first try
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#data-cleaning">
+       6. Data cleaning
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#french-ner-second-try">
+       7. French NER, second try
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#french-ner-for-places">
+       8. French NER for places
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#french-ner-for-orgs">
+       9. French NER for orgs
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#french-ner-for-misc">
+       10. French NER for misc
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lets-do-it-all-again-for-english">
+     Let’s do it all again for English
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#english-ner-for-people">
+       11. English NER for people
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#english-ner-for-places">
+       12. English NER for places
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#english-ner-for-organizations">
+       13. English NER for organizations
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#english-ner-for-works-of-art">
+       14. English NER for works of art
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-now">
+     What now?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lee">
+   Lee
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Quinn
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rethinking-ner">
+     Rethinking NER
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#close-reading-some-distant-reading-outputs">
+     Close-reading some distant-reading outputs
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#where-to-next">
+     Where to next?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#suggested-citation">
+   Suggested Citation
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
               <div>
                 
   <p><img alt="DSC logo" src="_images/DSCLogo.png" /></p>
-<div class="section" id="dsc-multilingual-mystery-2-beware-lee-and-quinn">
-<h1>DSC Multilingual Mystery 2: Beware, Lee and Quinn!<a class="headerlink" href="#dsc-multilingual-mystery-2-beware-lee-and-quinn" title="Permalink to this headline">¶</a></h1>
+<div class="tex2jax_ignore mathjax_ignore section" id="dsc-multilingual-mystery-2-beware-lee-and-quinn">
+<h1>DSC Multilingual Mystery 2: Beware, Lee and Quinn!<a class="headerlink" href="#dsc-multilingual-mystery-2-beware-lee-and-quinn" title="Permalink to this headline">#</a></h1>
 <div style='float: right; width: 200px;margin-left: 7px;margin-top: 0px;'>
 <img src='_static/images/bookcovers/dscm2_cover.jpg' alt='DSC M2 book cover' />
 </div>
 <p>By Lee Skallerup-Bessette and Quinn Dombrowski</p>
 <p>February 27, 2020</p>
 <div class="section" id="quinn">
-<h2>Quinn<a class="headerlink" href="#quinn" title="Permalink to this headline">¶</a></h2>
+<h2>Quinn<a class="headerlink" href="#quinn" title="Permalink to this headline">#</a></h2>
 <p>The differences leap out at you before you even open any of the books. “<strong>Christine</strong> a une idée géniale”. Or was the Baby-Sitters Club “L’idée géniale de <strong>Valérie</strong>:? Does “<strong>Bruno</strong> aime <strong>Mélanie</strong>”, or is he instead “Un amoureux pour <strong>Anne-Marie</strong>”? There’s a case study on the Dutch translation of the Baby-Sitters Club books in <a class="reference external" href="https://www.worldcat.org/title/babysitting-the-reader-translating-english-narrative-fiction-for-girls-into-dutch-1946-1995/oclc/230991531&amp;referer=brief_results">Babysitting the reader: translating English narrative fiction for girls into Dutch (1946-1995</a>) by Mieke K T Desmet that gets into strategies for localizing a story that takes place in a different cultural context, and the article “<a class="reference external" href="http://paradigma.ui.ac.id/index.php/paradigma/article/view/159">Cultural Understanding in the Indonesian Translation of The Baby-sitters Club</a>” by Halida Aisyah talk about how the Indonesian translation took a different approach, maintaining the protagonists’ foreign names and locations, and only adopting Indonesian cultural references when the American equivalent would’ve been incomprehensible without some kind of extensive explanation. But I hadn’t come across any scholarly literature on translation strategies for The Baby-Sitters Club in French (in any of the translations: Québécois, Belgian, or French from France).</p>
 <p>I had questions, and not just “what did they decide to call Mallory?” (Spoiler alert: in Québécois it’s Marjorie, and just like in English, it’s the most frequently screwed up name when OCRing the books.) The ghostwriters in the US were working with an extensive “BSC Bible” that had the description and background of every character in Stoneybrook, and further afield in the BSC universe. (This was adapted and published as <a class="reference external" href="https://www.worldcat.org/title/complete-guide-to-the-baby-sitters-club/oclc/35328788&amp;referer=brief_results">The complete guide to The Baby-sitters Club</a>.) But in <a class="reference external" href="https://datasittersclub.github.io/site/dscm1/">DSC Mystery #1: Lee and the Missing Metadata</a>, Lee discovered that at least in Quebec, they were throwing Baby-Sitters Club books at multiple translators, who turned them around in no time at all. How careful were the translators about consistency, in terms of what they called various peripheral characters and places? This was the making of another Data-Sitters Club Multilingual Mystery. (Who are the data-sitters? So glad you asked. Check out <a class="reference external" href="https://datasittersclub.github.io/site/chapter-2/">Chapter 2</a>.)</p>
 <p>Lee and I put our heads together about how we’d start looking into this mystery. We needed a book that we had on hand in all the translations: Québécois, Belgian, French from France (the last of these being the source of the recent French re-releases). We settled on Jessi’s Secret Language, on the thought that all the major characters had been established by that point, as well as many peripheral ones. We’d need to compare with some of the other translations, but that would be our starting point.</p>
 <p>Here’s the thing, though: Lee reads French. I don’t. I mean, I could probably pick my way through the text and come up with a list of characters and places, but I had other ideas. I wanted to see how French named-entity recognition performed compared to English, when applied to The Baby-Sitters Club.</p>
 <div class="section" id="whats-named-entity-recognition">
-<h3>What’s named-entity recognition?<a class="headerlink" href="#whats-named-entity-recognition" title="Permalink to this headline">¶</a></h3>
+<h3>What’s named-entity recognition?<a class="headerlink" href="#whats-named-entity-recognition" title="Permalink to this headline">#</a></h3>
 <p>Named-entity recognition (often abbreviated NER) is a kind of information extraction task – basically, trying to identify particular things (like names of people, places, and organizations) in unstructured text, like a novel. (Yeah, I know that novels have structure, but your average plain-text file of a novel’s text – even if it maintains chapter headers and such – doesn’t have the kind of structure that a computer can easily read. I mean, it’s not like it’s a spreadsheet or something.) There are two major technical approaches: one uses grammar-based rules to identify the things of interest, and the other uses statistical models like machine learning, and requires a ton of labeled data (e.g. texts where a human has already gone through and correctly identified all the things of interest) upfront. Particularly for statistical models, the more your texts resemble the example texts that the model was trained on, the better the NER will perform. These models are most commonly trained on news corpora, or Wikipedia – not 80’s and 90’s girls’ literature. This sort of thing is a problem in DH more broadly, not just for us Data-Sitters. David Bamman’s <a class="reference external" href="https://github.com/dbamman/litbank">LitBank project</a> (a dataset of annotated excerpts from public domain literature) is one example of how DH scholars can significantly improve the effectiveness of natural-language processing (NLP) by training models on data that looks more like what we’re trying to apply it to. But I’ll save the question of how, exactly, one goes about training a model for a future Data-Sitters Club Multilingual Mystery. For the moment, let’s see how some commonly-used tools perform “out of the box”.</p>
 </div>
 <div class="section" id="the-tools">
-<h3>The tools<a class="headerlink" href="#the-tools" title="Permalink to this headline">¶</a></h3>
+<h3>The tools<a class="headerlink" href="#the-tools" title="Permalink to this headline">#</a></h3>
 <p>The two major NLP tools with multilingual coverage are <a class="reference external" href="https://spacy.io/">spaCy</a> and <a class="reference external" href="https://nlp.stanford.edu/software/">Stanford NLP</a>. To use spaCy, you load it into Python and run it that way. While there’s a Python version of Stanford NLP, as of February 2020 it doesn’t cover everything – and entities are one thing that’s currently left out. To get entities with Stanford NLP, you have to run a memory-hungry Java program from the command line, with all the joy that comes from setting that up. To make matters worse, Stanford NLP doesn’t have an NER model for French: just English, Spanish, German, and Chinese. It’s a better comparison to look at English vs. French with the same tool, rather than English with one and French with the other, so for this mystery, we’ll be using spaCy.</p>
 </div>
 <div class="section" id="the-texts">
-<h3>The texts<a class="headerlink" href="#the-texts" title="Permalink to this headline">¶</a></h3>
+<h3>The texts<a class="headerlink" href="#the-texts" title="Permalink to this headline">#</a></h3>
 <p>To make it easier to compare the entities from each text, I split up each translation plus the English original into 15 plain text files, one from every chapter. Everything else I left as I got it from ABBYY FineReader (as discussed in <a class="reference external" href="https://datasittersclub.github.io/site/dsc2/">DSC #2: Katia and the Phantom Corpus</a>), plus the corrections to my (often bad) attempt to transcribe the “handwritten text” portions. I didn’t appreciate some implications of that – I’ll get back to it in a bit.</p>
 </div>
 <div class="section" id="getting-started-with-spacy">
-<h3>Getting started with spaCy<a class="headerlink" href="#getting-started-with-spacy" title="Permalink to this headline">¶</a></h3>
+<h3>Getting started with spaCy<a class="headerlink" href="#getting-started-with-spacy" title="Permalink to this headline">#</a></h3>
 <p>SpaCy is run via Python, so it can seem a little intimidating if you’ve never worked with a programming language before. For this mystery, I set up a Jupyter notebook in the Data-Sitters Club GitHub repo that you can download and use for your own texts. (If you’re not familiar with Jupyter notebooks, <a class="reference external" href="https://programminghistorian.org/en/lessons/jupyter-notebooks">here’s a Programming Historian tutorial</a>.)</p>
 <p>You can’t run the exact same experiment I did without access to the same texts I have (which I can’t share for copyright reasons), but the Jupyter notebook on GitHub has all the output I got running it on the Baby-Sitters Club corpus, so you can see the results of the process one step at a time.</p>
 <div class="section" id="downloading-spacy-models">
-<h4>1. Downloading spaCy models<a class="headerlink" href="#downloading-spacy-models" title="Permalink to this headline">¶</a></h4>
+<h4>1. Downloading spaCy models<a class="headerlink" href="#downloading-spacy-models" title="Permalink to this headline">#</a></h4>
 <p>The first step is to download the spaCy models; this notebook has been updated for spaCy 3. These models have been pre-trained on annotated French and English corpora, respectively. You only have to run these code cells below the first time you run the notebook; after that, you can skip right to step 2 and carry on from there. (If you run them again later, nothing bad will happen; it’ll just download again.) You can also run spaCy in other notebooks on your computer in the future, and you’ll be able to skip the step of downloading the models.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -510,46 +808,146 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting fr-core-news-sm==3.0.0
-  Downloading https://github.com/explosion/spacy-models/releases/download/fr_core_news_sm-3.0.0/fr_core_news_sm-3.0.0-py3-none-any.whl (17.2 MB)
-     |████████████████████████████████| 17.2 MB 8.2 MB/s eta 0:00:01
-?25hRequirement already satisfied: spacy&lt;3.1.0,&gt;=3.0.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from fr-core-news-sm==3.0.0) (3.0.6)
-Requirement already satisfied: pydantic&lt;1.8.0,&gt;=1.7.1 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (1.7.4)
-Requirement already satisfied: packaging&gt;=20.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (20.9)
-Requirement already satisfied: setuptools in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (52.0.0.post20210125)
-Requirement already satisfied: wasabi&lt;1.1.0,&gt;=0.8.1 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (0.8.2)
-Requirement already satisfied: srsly&lt;3.0.0,&gt;=2.4.1 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (2.4.1)
-Requirement already satisfied: catalogue&lt;2.1.0,&gt;=2.0.3 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (2.0.4)
-Requirement already satisfied: jinja2 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (2.11.3)
-Requirement already satisfied: spacy-legacy&lt;3.1.0,&gt;=3.0.4 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (3.0.6)
-Requirement already satisfied: preshed&lt;3.1.0,&gt;=3.0.2 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (3.0.5)
-Requirement already satisfied: thinc&lt;8.1.0,&gt;=8.0.3 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (8.0.7)
-Requirement already satisfied: murmurhash&lt;1.1.0,&gt;=0.28.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (1.0.5)
-Requirement already satisfied: typer&lt;0.4.0,&gt;=0.3.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (0.3.2)
-Requirement already satisfied: pathy&gt;=0.3.5 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (0.6.0)
-Requirement already satisfied: numpy&gt;=1.15.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (1.20.1)
-Requirement already satisfied: blis&lt;0.8.0,&gt;=0.4.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (0.7.4)
-Requirement already satisfied: tqdm&lt;5.0.0,&gt;=4.38.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (4.59.0)
-Requirement already satisfied: cymem&lt;2.1.0,&gt;=2.0.2 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (2.0.5)
-Requirement already satisfied: requests&lt;3.0.0,&gt;=2.13.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (2.25.1)
-Requirement already satisfied: pyparsing&gt;=2.0.2 in /Users/qad/anaconda3/lib/python3.8/site-packages (from packaging&gt;=20.0-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (2.4.7)
-Requirement already satisfied: smart-open&lt;6.0.0,&gt;=5.0.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from pathy&gt;=0.3.5-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (5.1.0)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /Users/qad/anaconda3/lib/python3.8/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (2020.12.5)
-Requirement already satisfied: idna&lt;3,&gt;=2.5 in /Users/qad/anaconda3/lib/python3.8/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (2.10)
-Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /Users/qad/anaconda3/lib/python3.8/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (1.26.4)
-Requirement already satisfied: chardet&lt;5,&gt;=3.0.2 in /Users/qad/anaconda3/lib/python3.8/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (4.0.0)
-Requirement already satisfied: click&lt;7.2.0,&gt;=7.1.1 in /Users/qad/anaconda3/lib/python3.8/site-packages (from typer&lt;0.4.0,&gt;=0.3.0-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (7.1.2)
-Requirement already satisfied: MarkupSafe&gt;=0.23 in /Users/qad/anaconda3/lib/python3.8/site-packages (from jinja2-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (1.1.1)
-Installing collected packages: fr-core-news-sm
-  Attempting uninstall: fr-core-news-sm
-    Found existing installation: fr-core-news-sm 2.2.0
-    Uninstalling fr-core-news-sm-2.2.0:
-      Successfully uninstalled fr-core-news-sm-2.2.0
-Successfully installed fr-core-news-sm-3.0.0
-<span class=" -Color -Color-C2">✔ Download and installation successful</span>
-You can now load the package via spacy.load(&#39;fr_core_news_sm&#39;)
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;tags&#39;: [&#39;hide-output&#39;]}
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading https://github.com/explosion/spacy-models/releases/download/fr_core_news_sm-3.0.0/fr_core_news_sm-3.0.0-py3-none-any.whl (17.2 MB)
+?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/17.2 MB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/17.2 MB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/17.2 MB</span> <span class=" -Color -Color-Red">511.7 kB/s</span> eta <span class=" -Color -Color-Cyan">0:00:34</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/17.2 MB</span> <span class=" -Color -Color-Red">511.7 kB/s</span> eta <span class=" -Color -Color-Cyan">0:00:34</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.1/17.2 MB</span> <span class=" -Color -Color-Red">651.2 kB/s</span> eta <span class=" -Color -Color-Cyan">0:00:27</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.1/17.2 MB</span> <span class=" -Color -Color-Red">641.1 kB/s</span> eta <span class=" -Color -Color-Cyan">0:00:27</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.2/17.2 MB</span> <span class=" -Color -Color-Red">831.3 kB/s</span> eta <span class=" -Color -Color-Cyan">0:00:21</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.3/17.2 MB</span> <span class=" -Color -Color-Red">1.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:17</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.3/17.2 MB</span> <span class=" -Color -Color-Red">1.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:17</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.5/17.2 MB</span> <span class=" -Color -Color-Red">1.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:13</span>
+     ━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.5/17.2 MB</span> <span class=" -Color -Color-Red">1.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:13</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.7/17.2 MB</span> <span class=" -Color -Color-Red">1.7 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:10</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.9/17.2 MB</span> <span class=" -Color -Color-Red">1.8 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:10</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">1.0/17.2 MB</span> <span class=" -Color -Color-Red">2.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:08</span>
+     ━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">1.3/17.2 MB</span> <span class=" -Color -Color-Red">2.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:07</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">1.5/17.2 MB</span> <span class=" -Color -Color-Red">2.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:07</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">1.7/17.2 MB</span> <span class=" -Color -Color-Red">2.8 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:06</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">2.1/17.2 MB</span> <span class=" -Color -Color-Red">3.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:05</span>
+     ━━━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">2.8/17.2 MB</span> <span class=" -Color -Color-Red">3.9 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:04</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">3.3/17.2 MB</span> <span class=" -Color -Color-Red">4.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:04</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">3.8/17.2 MB</span> <span class=" -Color -Color-Red">4.9 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:03</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">4.1/17.2 MB</span> <span class=" -Color -Color-Red">5.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:03</span>
+     ━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">4.2/17.2 MB</span> <span class=" -Color -Color-Red">5.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:03</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">4.8/17.2 MB</span> <span class=" -Color -Color-Red">5.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:03</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">5.7/17.2 MB</span> <span class=" -Color -Color-Red">6.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:02</span>
+     ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">6.7/17.2 MB</span> <span class=" -Color -Color-Red">6.9 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:02</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">7.7/17.2 MB</span> <span class=" -Color -Color-Red">7.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:02</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">8.3/17.2 MB</span> <span class=" -Color -Color-Red">7.9 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:02</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">8.6/17.2 MB</span> <span class=" -Color -Color-Red">7.9 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:02</span>
+     ━━━━━━━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">9.3/17.2 MB</span> <span class=" -Color -Color-Red">8.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">10.4/17.2 MB</span> <span class=" -Color -Color-Red">11.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━ <span class=" -Color -Color-Green">11.5/17.2 MB</span> <span class=" -Color -Color-Red">15.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━━━━━━━━━ <span class=" -Color -Color-Green">12.3/17.2 MB</span> <span class=" -Color -Color-Red">17.8 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━━━━━━━ <span class=" -Color -Color-Green">13.4/17.2 MB</span> <span class=" -Color -Color-Red">18.9 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━━━━━ <span class=" -Color -Color-Green">14.2/17.2 MB</span> <span class=" -Color -Color-Red">20.7 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━━ <span class=" -Color -Color-Green">15.3/17.2 MB</span> <span class=" -Color -Color-Red">23.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━ <span class=" -Color -Color-Green">16.8/17.2 MB</span> <span class=" -Color -Color-Red">24.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸ <span class=" -Color -Color-Green">17.2/17.2 MB</span> <span class=" -Color -Color-Red">24.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">17.2/17.2 MB</span> <span class=" -Color -Color-Red">20.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: spacy&lt;3.1.0,&gt;=3.0.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from fr-core-news-sm==3.0.0) (3.0.6)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: murmurhash&lt;1.1.0,&gt;=0.28.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (1.0.5)
+Requirement already satisfied: pydantic&lt;1.8.0,&gt;=1.7.1 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (1.7.4)
+Requirement already satisfied: jinja2 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (2.11.3)
+Requirement already satisfied: cymem&lt;2.1.0,&gt;=2.0.2 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (2.0.5)
+Requirement already satisfied: requests&lt;3.0.0,&gt;=2.13.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (2.27.1)
+Requirement already satisfied: preshed&lt;3.1.0,&gt;=3.0.2 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (3.0.5)
+Requirement already satisfied: blis&lt;0.8.0,&gt;=0.4.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (0.7.4)
+Requirement already satisfied: catalogue&lt;2.1.0,&gt;=2.0.3 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (2.0.4)
+Requirement already satisfied: typer&lt;0.4.0,&gt;=0.3.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (0.3.2)
+Requirement already satisfied: spacy-legacy&lt;3.1.0,&gt;=3.0.4 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (3.0.6)
+Requirement already satisfied: wasabi&lt;1.1.0,&gt;=0.8.1 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (0.8.2)
+Requirement already satisfied: srsly&lt;3.0.0,&gt;=2.4.1 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (2.4.1)
+Requirement already satisfied: pathy&gt;=0.3.5 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (0.6.0)
+Requirement already satisfied: numpy&gt;=1.15.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (1.19.5)
+Requirement already satisfied: setuptools in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (52.0.0.post20210125)
+Requirement already satisfied: packaging&gt;=20.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (20.9)
+Requirement already satisfied: thinc&lt;8.1.0,&gt;=8.0.3 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (8.0.7)
+Requirement already satisfied: tqdm&lt;5.0.0,&gt;=4.38.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (4.64.0)
+Requirement already satisfied: pyparsing&gt;=2.0.2 in /Users/qad/anaconda3/lib/python3.8/site-packages (from packaging&gt;=20.0-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (2.4.7)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: smart-open&lt;6.0.0,&gt;=5.0.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from pathy&gt;=0.3.5-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (5.1.0)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /Users/qad/anaconda3/lib/python3.8/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (2020.12.5)
+Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /Users/qad/anaconda3/lib/python3.8/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (1.26.4)
+Requirement already satisfied: idna&lt;4,&gt;=2.5 in /Users/qad/anaconda3/lib/python3.8/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (2.10)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (2.0.11)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: click&lt;7.2.0,&gt;=7.1.1 in /Users/qad/anaconda3/lib/python3.8/site-packages (from typer&lt;0.4.0,&gt;=0.3.0-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (7.1.2)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: MarkupSafe&gt;=0.23 in /Users/qad/anaconda3/lib/python3.8/site-packages (from jinja2-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;fr-core-news-sm==3.0.0) (1.1.1)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-C2">✔ Download and installation successful</span>
+You can now load the package via spacy.load(&#39;fr_core_news_sm&#39;)
 </pre></div>
 </div>
 </div>
@@ -563,36 +961,129 @@ You can now load the package via spacy.load(&#39;fr_core_news_sm&#39;)
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting en-core-web-sm==3.0.0
-  Downloading https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.0.0/en_core_web_sm-3.0.0-py3-none-any.whl (13.7 MB)
-     |████████████████████████████████| 13.7 MB 6.3 MB/s eta 0:00:01
-?25hRequirement already satisfied: spacy&lt;3.1.0,&gt;=3.0.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from en-core-web-sm==3.0.0) (3.0.6)
-Requirement already satisfied: preshed&lt;3.1.0,&gt;=3.0.2 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (3.0.5)
-Requirement already satisfied: catalogue&lt;2.1.0,&gt;=2.0.3 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (2.0.4)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.0.0/en_core_web_sm-3.0.0-py3-none-any.whl (13.7 MB)
+?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/13.7 MB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.4/13.7 MB</span> <span class=" -Color -Color-Red">11.2 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:02</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">1.3/13.7 MB</span> <span class=" -Color -Color-Red">16.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">1.7/13.7 MB</span> <span class=" -Color -Color-Red">14.8 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">2.8/13.7 MB</span> <span class=" -Color -Color-Red">17.5 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+     ━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">3.3/13.7 MB</span> <span class=" -Color -Color-Red">18.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">4.2/13.7 MB</span> <span class=" -Color -Color-Red">18.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">4.3/13.7 MB</span> <span class=" -Color -Color-Red">15.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">5.3/13.7 MB</span> <span class=" -Color -Color-Red">16.7 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+     ━━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">5.7/13.7 MB</span> <span class=" -Color -Color-Red">16.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">6.4/13.7 MB</span> <span class=" -Color -Color-Red">16.5 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">7.3/13.7 MB</span> <span class=" -Color -Color-Red">16.5 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">7.6/13.7 MB</span> <span class=" -Color -Color-Red">15.9 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">8.4/13.7 MB</span> <span class=" -Color -Color-Red">16.8 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">8.5/13.7 MB</span> <span class=" -Color -Color-Red">15.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━ <span class=" -Color -Color-Green">9.2/13.7 MB</span> <span class=" -Color -Color-Red">16.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━━━ <span class=" -Color -Color-Green">9.7/13.7 MB</span> <span class=" -Color -Color-Red">15.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━━━ <span class=" -Color -Color-Green">9.7/13.7 MB</span> <span class=" -Color -Color-Red">15.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━━━━━━━━ <span class=" -Color -Color-Green">10.3/13.7 MB</span> <span class=" -Color -Color-Red">14.7 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━ <span class=" -Color -Color-Green">10.4/13.7 MB</span> <span class=" -Color -Color-Red">14.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━━━━━━ <span class=" -Color -Color-Green">10.8/13.7 MB</span> <span class=" -Color -Color-Red">14.2 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━ <span class=" -Color -Color-Green">11.4/13.7 MB</span> <span class=" -Color -Color-Red">13.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━ <span class=" -Color -Color-Green">11.4/13.7 MB</span> <span class=" -Color -Color-Red">13.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━━━ <span class=" -Color -Color-Green">11.9/13.7 MB</span> <span class=" -Color -Color-Red">13.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━━━ <span class=" -Color -Color-Green">11.9/13.7 MB</span> <span class=" -Color -Color-Red">13.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━ <span class=" -Color -Color-Green">12.5/13.7 MB</span> <span class=" -Color -Color-Red">12.2 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━ <span class=" -Color -Color-Green">12.6/13.7 MB</span> <span class=" -Color -Color-Red">11.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━ <span class=" -Color -Color-Green">12.6/13.7 MB</span> <span class=" -Color -Color-Red">11.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━ <span class=" -Color -Color-Green">13.1/13.7 MB</span> <span class=" -Color -Color-Red">10.9 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━ <span class=" -Color -Color-Green">13.1/13.7 MB</span> <span class=" -Color -Color-Red">10.9 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸ <span class=" -Color -Color-Green">13.7/13.7 MB</span> <span class=" -Color -Color-Red">10.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸ <span class=" -Color -Color-Green">13.7/13.7 MB</span> <span class=" -Color -Color-Red">10.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">13.7/13.7 MB</span> <span class=" -Color -Color-Red">9.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: spacy&lt;3.1.0,&gt;=3.0.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from en-core-web-sm==3.0.0) (3.0.6)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: preshed&lt;3.1.0,&gt;=3.0.2 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (3.0.5)
+Requirement already satisfied: requests&lt;3.0.0,&gt;=2.13.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (2.27.1)
 Requirement already satisfied: setuptools in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (52.0.0.post20210125)
-Requirement already satisfied: srsly&lt;3.0.0,&gt;=2.4.1 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (2.4.1)
-Requirement already satisfied: tqdm&lt;5.0.0,&gt;=4.38.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (4.59.0)
-Requirement already satisfied: pydantic&lt;1.8.0,&gt;=1.7.1 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (1.7.4)
-Requirement already satisfied: numpy&gt;=1.15.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (1.20.1)
 Requirement already satisfied: cymem&lt;2.1.0,&gt;=2.0.2 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (2.0.5)
-Requirement already satisfied: requests&lt;3.0.0,&gt;=2.13.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (2.25.1)
-Requirement already satisfied: wasabi&lt;1.1.0,&gt;=0.8.1 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (0.8.2)
-Requirement already satisfied: pathy&gt;=0.3.5 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (0.6.0)
-Requirement already satisfied: jinja2 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (2.11.3)
-Requirement already satisfied: blis&lt;0.8.0,&gt;=0.4.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (0.7.4)
-Requirement already satisfied: spacy-legacy&lt;3.1.0,&gt;=3.0.4 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (3.0.6)
-Requirement already satisfied: thinc&lt;8.1.0,&gt;=8.0.3 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (8.0.7)
 Requirement already satisfied: murmurhash&lt;1.1.0,&gt;=0.28.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (1.0.5)
-Requirement already satisfied: packaging&gt;=20.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (20.9)
+Requirement already satisfied: thinc&lt;8.1.0,&gt;=8.0.3 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (8.0.7)
+Requirement already satisfied: tqdm&lt;5.0.0,&gt;=4.38.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (4.64.0)
+Requirement already satisfied: pydantic&lt;1.8.0,&gt;=1.7.1 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (1.7.4)
+Requirement already satisfied: blis&lt;0.8.0,&gt;=0.4.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (0.7.4)
+Requirement already satisfied: srsly&lt;3.0.0,&gt;=2.4.1 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (2.4.1)
 Requirement already satisfied: typer&lt;0.4.0,&gt;=0.3.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (0.3.2)
+Requirement already satisfied: numpy&gt;=1.15.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (1.19.5)
+Requirement already satisfied: spacy-legacy&lt;3.1.0,&gt;=3.0.4 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (3.0.6)
+Requirement already satisfied: wasabi&lt;1.1.0,&gt;=0.8.1 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (0.8.2)
+Requirement already satisfied: catalogue&lt;2.1.0,&gt;=2.0.3 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (2.0.4)
+Requirement already satisfied: packaging&gt;=20.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (20.9)
+Requirement already satisfied: jinja2 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (2.11.3)
+Requirement already satisfied: pathy&gt;=0.3.5 in /Users/qad/anaconda3/lib/python3.8/site-packages (from spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (0.6.0)
 Requirement already satisfied: pyparsing&gt;=2.0.2 in /Users/qad/anaconda3/lib/python3.8/site-packages (from packaging&gt;=20.0-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (2.4.7)
 Requirement already satisfied: smart-open&lt;6.0.0,&gt;=5.0.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from pathy&gt;=0.3.5-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (5.1.0)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: certifi&gt;=2017.4.17 in /Users/qad/anaconda3/lib/python3.8/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (2020.12.5)
 Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /Users/qad/anaconda3/lib/python3.8/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (1.26.4)
-Requirement already satisfied: chardet&lt;5,&gt;=3.0.2 in /Users/qad/anaconda3/lib/python3.8/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (4.0.0)
-Requirement already satisfied: idna&lt;3,&gt;=2.5 in /Users/qad/anaconda3/lib/python3.8/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (2.10)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /Users/qad/anaconda3/lib/python3.8/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (2020.12.5)
-Requirement already satisfied: click&lt;7.2.0,&gt;=7.1.1 in /Users/qad/anaconda3/lib/python3.8/site-packages (from typer&lt;0.4.0,&gt;=0.3.0-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (7.1.2)
+Requirement already satisfied: idna&lt;4,&gt;=2.5 in /Users/qad/anaconda3/lib/python3.8/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (2.10)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (2.0.11)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: click&lt;7.2.0,&gt;=7.1.1 in /Users/qad/anaconda3/lib/python3.8/site-packages (from typer&lt;0.4.0,&gt;=0.3.0-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (7.1.2)
 Requirement already satisfied: MarkupSafe&gt;=0.23 in /Users/qad/anaconda3/lib/python3.8/site-packages (from jinja2-&gt;spacy&lt;3.1.0,&gt;=3.0.0-&gt;en-core-web-sm==3.0.0) (1.1.1)
-<span class=" -Color -Color-C2">✔ Download and installation successful</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-C2">✔ Download and installation successful</span>
 You can now load the package via spacy.load(&#39;en_core_web_sm&#39;)
 </pre></div>
 </div>
@@ -600,7 +1091,7 @@ You can now load the package via spacy.load(&#39;en_core_web_sm&#39;)
 </div>
 </div>
 <div class="section" id="importing-spacy-and-setting-up-nlp">
-<h4>2. Importing spaCy and setting up NLP<a class="headerlink" href="#importing-spacy-and-setting-up-nlp" title="Permalink to this headline">¶</a></h4>
+<h4>2. Importing spaCy and setting up NLP<a class="headerlink" href="#importing-spacy-and-setting-up-nlp" title="Permalink to this headline">#</a></h4>
 <p>Run the code cell below to import the spaCy module, and create two functions: one which loads the French model and runs the NLP algorithms ( includes named-entity recognition), and one which does the same for the English.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -620,7 +1111,7 @@ You can now load the package via spacy.load(&#39;en_core_web_sm&#39;)
 </div>
 </div>
 <div class="section" id="importing-other-modules">
-<h4>3. Importing other modules<a class="headerlink" href="#importing-other-modules" title="Permalink to this headline">¶</a></h4>
+<h4>3. Importing other modules<a class="headerlink" href="#importing-other-modules" title="Permalink to this headline">#</a></h4>
 <p>There’s various other modules that will be useful in this notebook. The code comments explain what each one is for. This code cell imports all of those.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -636,7 +1127,7 @@ You can now load the package via spacy.load(&#39;en_core_web_sm&#39;)
 </div>
 </div>
 <div class="section" id="diretory-setup">
-<h4>4. Diretory setup<a class="headerlink" href="#diretory-setup" title="Permalink to this headline">¶</a></h4>
+<h4>4. Diretory setup<a class="headerlink" href="#diretory-setup" title="Permalink to this headline">#</a></h4>
 <p>Assuming you’re running Jupyter Notebook from your computer’s home directory, this code cell gives you the opportunity to change directories, into the directory where you’re keeping your French text files. (This notebook is designed to deal with one language at a time, and assumes your French text files are in one folder, and English are in another.)</p>
 <p>Replace <code class="docutils literal notranslate"><span class="pre">/Users/qad/Documents/dsc/dscm2</span></code> with the full path to the directory with your files.</p>
 <p>For instance, the default path to the Documents directory is (substituting your user name on the computer for YOUR-USER-NAME):</p>
@@ -657,9 +1148,9 @@ You can now load the package via spacy.load(&#39;en_core_web_sm&#39;)
 </div>
 </div>
 <div class="section" id="running-spacy">
-<h3>Running spaCy<a class="headerlink" href="#running-spacy" title="Permalink to this headline">¶</a></h3>
+<h3>Running spaCy<a class="headerlink" href="#running-spacy" title="Permalink to this headline">#</a></h3>
 <div class="section" id="french-ner-first-try">
-<h4>5. French NER, first try<a class="headerlink" href="#french-ner-first-try" title="Permalink to this headline">¶</a></h4>
+<h4>5. French NER, first try<a class="headerlink" href="#french-ner-first-try" title="Permalink to this headline">#</a></h4>
 <p>The code cell in step 5 in the Jupyter notebook iterates through the files in the folder you specified up in step 4, after sorting them alphabetically. For every file that ends in .txt (an important limitation – you’ll get an error if you try to have Python open a file that isn’t a text file, including those pesky invisible .DS_STORE files in just about every Mac folder), the code defines an output file name that involves appending ‘_ner_per.txt’ to the end of the input filename.</p>
 <p>Opening the input file (i.e. each file in turn, one at a time) and the newly-created, empty output file, the code reads in the text of the input file, and runs the spaCy French NLP. Then, for every word recognized as an entity, as long as it’s an entity labeled ‘PER’ (a person), the entity is written to the screen (with a print command) and to the output file. I thought it’d be easiest to work through the entities one type at a time, starting just with the character names.<br />
 I wrote this code, a couple times pulling up previous notebooks I’d written that did similar things, and consulting the <a class="reference external" href="https://spacy.io/usage/linguistic-features#named-entities">spaCy documentation and examples</a> for how to display the entities.</p>
@@ -698,7 +1189,9 @@ I wrote this code, a couple times pulling up previous notebooks I’d written th
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>016_01_bg.txt
-Maman PER
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Maman PER
 Roseline PER
 Victor PER
 Gringalet PER
@@ -706,13 +1199,19 @@ Justine Victoire PER
 Johanna PER
 Marjorie Levêque PER
 Johanna PER
+Marjorie PER
 Roseline PER
 Roseline PER
 Gringalet PER
+J&#39; PER
 Justine PER
+J&#39; PER
+Coppélia PER
+J&#39; PER
 Coppélia PER
 Roseline PER
 Coppélius PER
+Coppélia PER
 Franz PER
 Roseline PER
 Franz PER
@@ -720,2354 +1219,54 @@ Coppélia PER
 Coppé PER
 Franz PER
 Roseline PER
-Peut PER
 Allez PER
 Roseline PER
 Maman PER
 Roseline PER
 Roseline PER
-016_01_frmod.txt
-Stonebrook PER
-Stonebrook PER
-John Philip Ramsey Junior PER
-P&#39;tit Bout PER
-Jessica Ramsey PER
-Bout PER
-Keisha PER
-Mes PER
-Stonebrook PER
-Heureusement PER
-Mallory Pike PER
-P&#39;tit Bout PER
-Bout PER
-Bout PER
-P&#39;tit Bout PER
-Jessica PER
-Coppélia PER
-Coppélia PER
-Coppélius PER
-Coppélia PER
-Franz PER
-Franz PER
-Coppélia PER
-Coppélius PER
-Franz PER
-Maman PER
-Mme Noelle PER
-Maman PER
-016_01_qu.txt
-Jaja PER
-Jessica Raymond PER
-Jaja PER
-Noirs PER
-Kara PER
-Oakley PER
-Marjorie Picard PER
-Kara PER
-Marjorie PER
-Jaja PER
-Jaja PER
-Coppélia PER
-Coppélia PER
-Coppélia PER
-Franz PER
-Franz PER
-Coppélia PER
-Franz PER
-016_02_bg.txt
-Valérie PER
-Marjorie Levêque PER
-Valérie PER
-Valérie PER
-Marjorie PER
-Valérie PER
-Madame Demoulin PER
-Valérie PER
-Mélanie Moreau PER
-Julie Kishi PER
-Sophie Lambert PER
-Sophie PER
-Carole Leroy PER
-Valérie PER
-Valérie PER
-Valérie PER
-Valérie PER
-Stéphane PER
-Valérie PER
-Yvan Arnould PER
-Arnaud PER
-Valérie PER
-Valérie PER
-Julie Kishi PER
-Yvan PER
-Demoulin PER
-Yvan PER
-Yvan PER
-Valérie PER
-Valérie PER
-Julie Kishi PER
-Marjorie PER
-Julie PER
-Julie PER
-Laurence PER
-Julie PER
-Mimi PER
-Carole PER
-Mélanie PER
-Valérie PER
-Valérie PER
-Mélanie PER
-Valérie PER
-Mélanie PER
-Moreau PER
-Sophie Lambert PER
-Sophie PER
-Carole PER
-Valérie PER
-Mélanie PER
-Marjorie PER
-David PER
-David PER
-Marjorie PER
-Marjorie C’ PER
-Marjorie PER
-Bruno Lejeune PER
-Cécile Gauthier PER
-Valérie PER
-Marjorie PER
-Valérie PER
-Valérie PER
-Mélanie PER
-Carole PER
-Marjorie PER
-Valérie PER
-Laissez PER
-Valérie PER
-Agnès PER
-Mathieu PER
-Mathieu PER
-Carole PER
-Mélanie PER
-Valérie PER
-Marjorie PER
-Marjorie PER
-Garder PER
-Marjorie PER
-Justine PER
-016_02_frmod.txt
-Stonebrook PER
-Laissez PER
-David Michael PER
-Mme Parker PER
-Mary PER
-Anne Cook PER
-Claudia Koshi PER
-Carla Schafer PER
-Claudia PER
-Mary Anne PER
-Samuel PER
-David Michael PER
-Jim Lelland PER
-Karen PER
-Claudia Koshi PER
-Claudia PER
-Mary PER
-Anne PER
-Jim PER
-Parker PER
-Jim PER
-Samuel PER
-Claudia PER
-Stonebrook PER
-Mary Anne PER
-Claudia Koshi PER
-Claudia PER
-Claudia PER
-Claudia PER
-Mary PER
-Anne PER
-Claudia PER
-Claudia PER
-Jane PER
-Claudia PER
-Claudia PER
-Mimi PER
-Mary PER
-Anne Cook PER
-Carla PER
-Mary PER
-Anne PER
-Mary PER
-Anne PER
-Mary Anne PER
-Claudia PER
-Mary PER
-Anne PER
-M. Cook PER
-Lucy MacDouglas PER
-Ramsey PER
-Mary PER
-Anne PER
-Carla PER
-Claudia PER
-David PER
-David PER
-Mary PER
-Anne PER
-Louisa Kilbourne PER
-Laissez PER
-Mme Braddock PER
-Helen PER
-Mme Braddock PER
-Carla PER
-Mary PER
-Anne PER
-Claudia PER
-Mallory PER
-Mallory PER
-Garder PER
-016_02_qu.txt
-Christine Thomas PER
-Marjorie Picard PER
-Christine Thomas PER
-II PER
-Marjorie PER
-David PER
-Sophie Ménard PER
-Anne PER
-Marie Lapierre PER
-Claudia Kishi PER
-Sophie PER
-Marjorie PER
-Diane Dubreuil PER
-Claudia PER
-Anne-Marie PER
-Diane PER
-Marjorie PER
-Pourquoi PER
-Charles PER
-David PER
-Guillaume PER
-Karen PER
-Claudia PER
-Anne PER
-Marie PER
-Guillaume PER
-Guillaume PER
-Charles PER
-Anne-Marie PER
-Claudia Kishi PER
-Marjo PER
-Claudia PER
-Claudia PER
-Claudia PER
-Claudia PER
-Marjorie PER
-Anne PER
-Marie PER
-Claudia PER
-Claudia PER
-Josée PER
-Claudia PER
-Mimi PER
-Anne PER
-Diane PER
-Anne PER
-Marie PER
-Anne PER
-Marie PER
-Claudia PER
-Anne PER
-Marie PER
-Tigrou PER
-Monsieur Lapierre PER
-Sophie Ménard PER
-Diane PER
-Diane PER
-Anne PER
-Marie PER
-Diane PER
-Julien PER
-Julien PER
-Diane PER
-Marjorie PER
-Louis Brunet PER
-Anne PER
-Marie PER
-Chantal Chrétien PER
-Diane PER
-Claudia PER
-Anne-Marie PER
-Diane PER
-Marjorie PER
-madame Biron PER
-Matthieu PER
-Madame Biron PER
-Matthieu PER
-Madame Biron PER
-Diane PER
-Anne PER
-Marie PER
-Claudia PER
-Marjorie PER
-madame Biron PER
-Marjorie PER
-016_03_bg.txt
-Jacqué PER
-Pliez PER
-Coppélia PER
-Maman PER
-Madame Dillon PER
-Hélène PER
-Catherine PER
-Hélène PER
-Catherine PER
-Victor PER
-Victoire PER
-Catherine PER
-Madame Dillon PER
-Hélène PER
-Catherine PER
-Madame Dillon PER
-Coppélia PER
-Madame Dillon PER
-Hélène PER
-Catherine PER
-Madame Dillon PER
-Marie Bernstein PER
-Lise Jacqué PER
-Carine Schmitt PER
-Catherine PER
-Coppélia PER
-Madame Dillon PER
-Hélène PER
-Catherine PER
-Coppélia PER
-Coppélia PER
-Justine Victor PER
-Justine Victor PER
-Justine Victoire PER
-Justine PER
-Justine PER
-Justine PER
-Marie Bernstein PER
-Lise Jacqué PER
-Justine PER
-Marie PER
-Lise PER
-Catherine PER
-Coppélia PER
-Catherine PER
-Catherine PER
-Coppélia PER
-Catherine PER
-Hélène PER
-Hélène PER
-Catherine PER
-Catherine PER
-Hélène PER
-Avais PER
-Coppélia PER
-016_03_frmod.txt
-mademoiselle Jones PER
-Pliez PER
-Mme Noelle PER
-Mme Noelle PER
-Coppélia PER
-Maman PER
-Mme Noelle PER
-Mlle Romsey PER
-Ramsey PER
-Mme Noelle PER
-Mme Noelle PER
-Mme Noelle PER
-Allez PER
-Sachant PER
-Coppélia PER
-Mme Noelle PER
-Mme Noelle PER
-Mary Bramstedt PER
-Lisa Jones PER
-Carrie Steinfeld PER
-Hilary PER
-Coppélia PER
-Mme Noelle PER
-Coppélia PER
-Coppélia PER
-Mme Noelle PER
-Jessica Romsey PER
-Jessica Ramsey PER
-Mme Noelle PER
-Mary Bramstedt PER
-Lisa Jones PER
-Mary PER
-Hilary PER
-Coppélia PER
-Coppélia PER
-Mme Noelle PER
-Avais PER
-Mme Noelle PER
-016_03_qu.txt
-Marcil PER
-Pliez PER
-Mademoiselle PER
-Catherine PER
-Élizabeth PER
-Raymond! PER
-Catherine PER
-Élizabeth PER
-Mademoiselle PER
-Catherine PER
-Élizabeth PER
-Mademoiselle Noëlle PER
-Coppélia PER
-Mademoiselle Noëlle PER
-Catherine PER
-Élizabeth PER
-Marie Brazeau PER
-Lise Jordan PER
-Catherine PER
-Coppélia PER
-Catherine PER
-Coppélia PER
-Jessica Raymond PER
-Jessica Raymond PER
-Ton PER
-Marie PER
-Marie PER
-Catherine PER
-Élizabeth PER
-Coppélia PER
-Allez PER
-Élizabeth PER
-Coppélia PER
-Catherine PER
-Catherine PER
-016_04_bg.txt
-Hélène PER
-Catherine PER
-Mathieu Brinbeuf PER
-Mathieu PER
-Agnès PER
-Justine PER
-Agnès PER
-madame Brinbeuf PER
-Agnès PER
-Mathieu PER
-Mathieu PER
-Agnès PER
-Agnès PER
-Agnès PER
-Mathieu PER
-Agnès PER
-Justine PER
-“ Agnès PER
-Mathieu PER
-Mathieu PER
-Mathieu PER
-Mathieu PER
-Mathieu PER
-Agnès PER
-C. Le PER
 Roseline PER
-Brinbeuf PER
-Mathieu PER
-Mathieu PER
-Mathieu PER
-Agnès PER
-Madame Brinbeuf PER
-Mathieu PER
-Mathieu PER
-Madame Brinbeuf PER
-Mathieu PER
-Mathieu PER
-Justine PER
-Mathieu PER
-Madame Brinbeuf PER
-Mathieu PER
-Mathieu PER
-Madame Brinbeuf PER
-Agnès PER
-Mathieu PER
-Agnès PER
-Mathieu PER
-Demande PER
-Mathieu PER
-Agnès PER
-Agnès PER
-Mathieu PER
-Agnès PER
-Mathieu PER
-Agnès PER
-Mathieu PER
-Agnès PER
-madame Brinbeuf PER
-Madame Brinbeuf PER
-016_04_frmod.txt
-Coppélia PER
-Bout PER
-Mme Noelle PER
-– Y PER
-Ben PER
-Helen PER
-Helen PER
-Mme Braddock PER
-Mme Braddock PER
-Helen PER
-Helen PER
-Mme Braddock PER
-Helen PER
-Matthew grandira PER
-Helen PER
-C. Le PER
-Mme Braddock PER
-Mme Braddock PER
-Mme Braddock PER
-Mme Braddock PER
-Matthew PER
-Sa mère PER
-Helen PER
-Demande PER
-Helen PER
-Helen PER
-Heureusement PER
-Mme Braddock PER
-Mme Braddock PER
-016_04_qu.txt
-Jaja PER
-Catherine PER
-Élizabeth PER
-madame Biron PER
-Matthieu PER
-Lundi PER
-Jessica PER
-madame Biron PER
-madame Biron PER
-Matthieu PER
-madame Biron PER
-Matthieu PER
-Matthieu PER
-Matthieu PER
-madame Biron PER
-Matthieu PER
-Matthieu PER
-Imagine PER
-madame Biron PER
-Matthieu PER
-Matthieu PER
-Madame Biron PER
-Matthieu PER
-madame Biron PER
-madame Biron PER
-Madame Biron PER
-Matthieu PER
-madame Biron PER
-Matthieu PER
-Madame Biron PER
-Hélène PER
-madame Biron PER
-Madame Biron PER
-Matthieu PER
-Matthieu PER
-Hélène PER
-Matthieu PER
-Matthieu PER
-Hélène PER
-Matthieu PER
-madame Biron PER
-Fais PER
-Madame Biron PER
-016_05_bg.txt
-Mercredi PER
-Justine PER
-Mélanie Moreau PER
-Aurélie Precisio PER
-Mélanie PER
-Madame Precisio PER
-Mélanie PER
-Aurélie PER
-Roseline PER
-Roseline PER
-Aurélie PER
-Madame Precisio PER
-Mélanie PER
-Aurélie PER
-Termine PER
-Aurélie PER
-Mélanie PER
-Piqu&#39; PER
-Mélanie PER
-Ricky PER
-Aurélie PER
-Mélanie PER
-Mélanie PER
-Aurélie PER
-Veux PER
-Aurélie PER
-Aurélie PER
-Aurélie PER
-Mélanie PER
-Mathieu PER
-Agnès PER
-Brinbeuf PER
-Mathieu PER
-Agnès PER
-Agnès PER
-Mathieu PER
-Aurélie PER
-Agnès PER
-Mathieu PER
-Mathieu PER
-Mathieu PER
-Agnès PER
-Mathieu PER
-Agnès PER
-Mathieu PER
-Agnès PER
-Agnès PER
-Justine PER
-Mélanie PER
-Agnès PER
-Mathieu PER
-Mathieu PER
-Mathieu PER
-Agnès PER
-Agnès PER
-Mathieu PER
-Agnès PER
-Mathieu PER
-016_05_frmod.txt
-Mary PER
-Anne Cook PER
-Jenny Prezzioso PER
-Mary PER
-Anne PER
-Jenny PER
-Mary Anne PER
-Mme Prezzioso PER
-Jenny PER
-Mme Prezzioso PER
-Mary Anne PER
-Jenny PER
-Termine PER
-Jen PER
-Mary PER
-Anne PER
-Mary PER
-Anne PER
-Jenny PER
-Mary Anne PER
-Mary Anne PER
-Jenny PER
-Mary Anne PER
-Mary PER
-Anne PER
-Jenny PER
-Mary Anne PER
-Mary Anne PER
-Jenny PER
-Mary PER
-Anne PER
-Mme Braddock PER
-Helen PER
-Mary Anne PER
-Helen PER
-Jenny PER
-Jenny PER
-Helen PER
-Jenny PER
-Helen PER
-Jenny PER
-Mary PER
-Anne PER
-Helen PER
-Helen PER
-Jessica PER
-Mary Anne PER
-Helen PER
-016_05_qu.txt
+016_01_bg_ner_loc.txt
+016_01_bg_ner_loc_ner_loc.txt
+016_01_bg_ner_loc_ner_loc_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt
+016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Mercredi PER
-Jeanne PER
-Jeanne PER
-Anne PER
-Marie PER
-Jeanne Prieur PER
-Anne PER
-Marie PER
-Jeanne PER
-Anne PER
-Marie PER
-madame Prieur PER
-Jeanne PER
-Connaissez PER
-Jeanne PER
-Anne PER
-Marie PER
-Prieur PER
-Jeanne PER
-Jeanne PER
-madame Prieur PER
-Anne-Marie PER
-Jeanne PER
-Jeanne PER
-Jeanne PER
-Pensez PER
-Anne PER
-Marie PER
-Jeanne PER
-Anne PER
-Marie PER
-Jeanne PER
-Anne PER
-Marie PER
-Jeanne PER
-Jeanne PER
-Anne PER
-Marie PER
-Anne-Marie PER
-Jeanne PER
-Anne-Marie PER
-Anne PER
-Marie PER
-Jeanne PER
-Anne PER
-Marie PER
-Anne PER
-Marie PER
-Anne PER
-Marie PER
-Jeanne PER
-Jeanne PER
-Anne PER
-Marie PER
-Anne-Marie PER
-Jeanne PER
-Anne-Marie PER
-Matthieu PER
-madame Biron PER
-Anne PER
-Marie PER
-Jeanne PER
-Anne PER
-Marie PER
-Jeanne PER
-Jeanne PER
-Anne-Marie PER
-Jeanne PER
-Jeanne PER
-Matthieu PER
-Matthieu PER
-Hélène PER
-Jeanne PER
-Jeanne PER
-Jeanne PER
-Hélène PER
-Matthieu PER
-Jeanne PER
-Anne-Marie PER
-Hélène PER
-Anne-Marie PER
-Hélène PER
-Matthieu PER
-Matthieu PER
-Matthieu PER
-016_06_bg.txt
-Agnès PER
-Mathieu PER
-Coppélia PER
-Ordinairement PER
-Mathieu PER
-Agnès PER
-Agnès PER
-Mathieu PER
-Mathieu PER
-Madame Brinbeuf PER
-V PER
-Mathieu PER
-Agnès PER
-Agnès PER
-Madame Brinbeuf PER
-Mathieu PER
-Mathieu PER
-Agnès PER
-Justine PER
-Madame Brinbeuf PER
-Agnès PER
-Mathieu PER
-Mathieu PER
-Mathieu PER
-Mathieu PER
-Agnès PER
-Mathieu PER
-Mathieu PER
-Mathieu PER
-Agnès PER
-Mélanie PER
-Aurélie Precisio PER
-Agnès PER
-Mathieu PER
-Charlotte Cuvelier PER
-Roseline PER
-Mathieu PER
-Agnès PER
-Agnès PER
-Agnès PER
-Mathieu PER
-Agnès PER
-Agnès PER
-Mathieu PER
-Vanessa PER
-Mathieu PER
-Agnès PER
-Mathieu PER
-Agnès PER
-Mathieu PER
-Dis PER
-Agnès PER
-Mathieu PER
-Mathieu PER
-Marjorie PER
-Antoine PER
-Agnès PER
-Mathieu PER
-Agnès PER
-Marjorie PER
-Mathieu PER
-Pensez PER
-Laurent PER
-Vanessa PER
-Agnès PER
-Juliette PER
-Mathieu PER
-Juliette PER
-Agnès PER
-Juliette PER
-Mathieu PER
-Agnès PER
-Mathieu PER
-Antoine Godefroid PER
-Agnès PER
-Mathieu PER
-Antoine PER
-Mathieu PER
-Marjorie PER
-Brinbeuf PER
-Agnès PER
-Mathieu PER
-Mathieu PER
-Agnès PER
-016_06_frmod.txt
-Coppélia PER
-Helen PER
-Helen PER
-Mme Braddock PER
-Mme Braddock PER
-Helen PER
-Helen PER
-Mme Braddock PER
-Helen PER
-Helen PER
-Mme Braddock PER
-Manger PER
-Mary Anne PER
-Jenny Prezzioso PER
-Helen PER
-Charlotte Johanssen PER
-Helen PER
-Helen PER
-Helen PER
-Vanessa PER
-Helen PER
-Helen PER
-Dis PER
-K PER
-Barrett PER
-Buddy PER
-Barrett PER
-Helen PER
-Margot PER
-Helen PER
-Claire PER
-Helen PER
-Helen PER
-Buddy Barrett PER
-Helen PER
-Buddy PER
-Mme Braddock PER
-Helen PER
-016_06_qu.txt
-Hélène PER
-Coppélia PER
-Matthieu PER
-Matthieu PER
-Matthieu PER
-madame Biron PER
-Rappelle PER
-Matthieu PER
-Madame Biron PER
-madame Biron PER
-madame Biron PER
-Matthieu PER
-Hélène PER
-madame Biron PER
-Matthieu PER
-madame Biron PER
-Matthieu PER
-Matthieu PER
-madame Biron PER
-Matthieu PER
-Matthieu PER
-Jeanne Prieur PER
-Matthieu PER
-Charlotte PER
-Picard PER
-Matthieu PER
-Hélène PER
-Vanessa PER
-Matthieu PER
-Matthieu PER
-Hélène PER
-Matthieu PER
-Picard PER
-Matthieu PER
-Matthieu PER
-Marjorie PER
-Picard PER
-Matthieu PER
-Margot PER
-Matthieu PER
-Claire PER
-Picard PER
-Claire PER
-Hélène PER
-Bruno Barrette PER
-Bruno PER
-Matthieu PER
-madame Biron PER
-Matthieu PER
-016_07_bg.txt
-Justine PER
-Marjorie PER
-Justine PER
-Monsieur PER
-Levêque PER
-Marjorie PER
-Alain PER
-Loïc PER
-Samuel PER
-Laurent PER
-Levêque PER
-Marjorie PER
-Marjorie PER
-Carole PER
-Alain PER
-Alain PER
-Hé PER
-Hé PER
-Juliette PER
-Alain PER
-Alain PER
-Loïc PER
-Samuel PER
-Carole PER
-Alain PER
-Marjorie PER
-Laurent PER
-Laurent PER
-Laurent PER
-Carole PER
-Samuel PER
-Vanessa PER
-Alain PER
-Anaïs PER
-Laurent PER
-Marjorie PER
-Laurent PER
-Carole PER
-Peut PER
-Laurent PER
-Samuel PER
-Juliette PER
-Marjorie PER
-Vanessa PER
-Marjorie PER
-Carole PER
-Marjorie PER
-Carole PER
-Marjorie PER
-Agnès PER
-Mathieu PER
-Mathieu PER
-Marjorie PER
-Mathieu PER
-Agnès PER
-Agnès PER
-016_07_frmod.txt
-Mallory PER
-Peut PER
-Peut PER
-Laissez PER
-Mme Pike PER
-Mallory PER
-Byron PER
-Adam PER
-Vanessa PER
-Margot PER
-Claire PER
-M. PER
-Mme Pike PER
-Mme Pike PER
-Carla PER
-Mallory PER
-Adam PER
-Adam PER
-Claire PER
-Adam PER
-Adam PER
-Byron PER
-Carla PER
-Adam PER
-Mallory PER
-Carla PER
-Byron PER
-Margot PER
-Vanessa PER
-Adam PER
-Margot PER
-Carla PER
-Vanessa PER
-Claire PER
-Vanessa PER
-Mallory PER
-Mallory PER
-Helen PER
-Helen PER
-016_07_qu.txt
-Marjorie PER
-Picard PER
-Diane PER
-Monsieur PER
-Picard PER
-Diane PER
-Marjorie PER
-Picard PER
-Claire PER
-Diane PER
-Picard PER
-Picard PER
-Diane PER
-Picard PER
-Marjorie PER
-Diane PER
-Picard PER
-Diane PER
-Antoine PER
-Antoine PER
-Claire PER
-Antoine PER
-Antoine PER
-Antoine PER
-Donne PER
-Diane PER
-Antoine PER
-Marjorie PER
-Antoine PER
-Diane PER
-Marjorie PER
-Marjorie PER
-Diane PER
-Diane PER
-Vanessa PER
-Antoine PER
-Margot PER
-Diane PER
-Marjorie PER
-Diane PER
-Diane PER
-Allez PER
-Picard PER
-Diane PER
-Diane PER
-Margot PER
-Claire PER
-Diane PER
-Marjorie PER
-Marjorie PER
-Vanessa PER
-Cerveau PER
-Diane PER
-Marjorie PER
-Diane PER
-Diane PER
-Diane PER
-Matthieu PER
-Marjorie PER
-Picard PER
-Hélène PER
-Hélène PER
-016_08_bg.txt
-Mes PER
-Interpréter PER
-Mademoiselle Perron PER
-OK PER
-Mademoiselle Bersnstein PER
-Prochaine PER
-Catherine PER
-Catherine PER
-Hélène PER
-Catherine PER
-Catherine PER
-Catherine PER
-Agnès PER
-Catherine PER
-Roseline PER
-Catherine PER
-Adeline PER
-Catherine PER
-Adeline PER
-Catherine PER
-Mes PER
-Catherine PER
-Adeline PER
-Catherine PER
-Catherine PER
-Catherine PER
-Adeline PER
-Catherine PER
-Catherine PER
-Catherine PER
-Catherine PER
-Mathieu PER
-Mathieu PER
-Mathieu PER
-Adeline PER
-Catherine PER
-Catherine PER
-Regarde PER
-Catherine PER
-Catherine PER
-Adeline PER
-Catherine PER
-Adeline PER
-Catherine PER
-Mes PER
-Johanna PER
-Marjorie PER
-Justine PER
-Coraline PER
-Valérie PER
-Valérie PER
-Stéphane PER
-016_08_frmod.txt
-Mes PER
-Interpréter PER
-Coppélia PER
-Mme Noelle PER
-Mademoiselle Parson PER
-Mademoiselle Bramstedt PER
-Prochaine PER
-Mme Noelle PER
-Était PER
-Adèle PER
-Mme Noelle PER
-Adèle PER
-Adèle PER
-Adèle PER
-Adèle PER
-Adèle PER
-Adèle PER
-Adèle PER
-Adèle PER
-Regarde PER
-Adèle PER
-Adèle PER
-Adèle PER
-Adèle PER
-Mes PER
-016_08_qu.txt
-Coppélia PER
-Mademoiselle Croteau PER
-Mademoiselle Raymond PER
-Catherine PER
-Catherine PER
-Élizabeth PER
-Élizabeth PER
-Hélène PER
-Adèle PER
-Adèle PER
-Adèle PER
-Mes PER
-Essaye PER
-Adèle PER
-Adèle PER
-Élizabeth PER
-Adèle PER
-Adèle PER
-Adèle PER
-Adèle PER
-Matthieu PER
-Matthieu PER
-Adèle PER
-Matthieu PER
-Matthieu PER
-Adèle PER
-Regarde PER
-Élizabeth PER
-Adèle PER
-Élizabeth PER
-Adèle PER
-Élizabeth PER
-Adèle PER
-Adèle PER
-Adèle PER
-Kara PER
-Marjorie PER
-016_09_bg.txt
-Justine PER
-Valérie PER
-Valérie PER
-Stéphane PER
-Mathieu PER
-Arnaud PER
-Valérie PER
-Arnould PER
-Julie PER
-Yvan PER
-Arnaud PER
-Arnaud PER
-Benoît Arnould PER
-Arnaud PER
-Valérie PER
-Stéphane PER
-Valérie PER
-Valérie PER
-Stéphane PER
-Valérie PER
-Valérie PER
-madame Arnaud PER
-Monsieur Arnaud PER
-Arnaud PER
-Arnaud PER
-Valérie PER
-Julie PER
-Arnaud PER
-Arnaud PER
-Arnaud PER
-Arnaud PER
-Veux PER
-Arnaud PER
-Julie PER
-Arnaud PER
-Arnould PER
-Arnaud PER
-Aimeriez PER
-Hum PER
-Arnaud PER
-Julie PER
-Justine Victoire PER
-Roseline PER
-Julie PER
-Marjorie PER
-Arnaud PER
-Julie PER
-Arnaud PER
-Arnaud PER
-Arnaud PER
-Arnaud PER
-Arnaud PER
-Arnaud PER
-Arnaud PER
-Mademoiselle Minet PER
-Julie PER
-Julie PER
-Justine PER
-Arnaud PER
-Arnaud PER
-016_09_frmod.txt
-Karen PER
-Andrew PER
-David Michael PER
-Samuel PER
-Karen PER
-Claudia PER
-Claudia PER
-Claudia PER
-Karen PER
-Claudia PER
-Claudia PER
-Claudia PER
-Jim PER
-Karen PER
-Karen PER
-Mme Porter PER
-Morbidda Destiny PER
-Ben Lelland PER
-Karen PER
-Claudia PER
-Karen PER
-Andrew PER
-David Michael PER
-Charlie PER
-Samuel PER
-Claudia PER
-Claudia PER
-Karen PER
-Claudia PER
-Karen PER
-Claudia PER
-Claudia PER
-Mme Lelland PER
-Karen PER
-Mme Lelland PER
-Claudia PER
-Andrew PER
-Karen PER
-David Michael PER
-Karen PER
-Claudia PER
-Karen PER
-David Michael PER
-Andrew PER
-Mme Lelland PER
-Claudia PER
-Karen PER
-Claudia PER
-Andrew PER
-David Michael PER
-Claudia PER
-Claudia PER
-Karen PER
-Claudia PER
-Lego PER
-Karen PER
-David Michael PER
-Claudia PER
-Calmez PER
-– Karen PER
-Claudia PER
-Claudia PER
-Karen PER
-Claudia PER
-Karen PER
-David Michael PER
-Karen PER
-David Michael PER
-Claudia PER
-Karen PER
-Karen PER
-Jessica Ramsey PER
-Claudia PER
-Claudia PER
-Attends PER
-Claudia PER
-Karen PER
-Karen PER
-Karen PER
-Claudia PER
-Karen PER
-Claudia PER
-Karen PER
-Karen PER
-Claudia PER
-Karen PER
-– Écoute PER
-Karen PER
-Claudia PER
-Claudia PER
-Claudia PER
-Claudia PER
-Karen PER
-Tickly PER
-Claudia PER
-Karen PER
-Claudia PER
-Karen PER
-Claudia PER
-Karen PER
-Claudia PER
-Karen PER
-Claudia PER
-Karen PER
-Claudia PER
-David Michael PER
-016_09_qu.txt
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Samedi PER
-Karen PER
-Charles PER
-Karen PER
-Matthieu PER
-Claudia PER
-Karen PER
-Karen PER
-Laissez PER
-Claudia PER
-La mère PER
-Claudia PER
-Karen PER
-Karen PER
-Portai PER
-Destinée Morbide PER
-Karen PER
-Claudia PER
-Karen PER
-Karen PER
-Karen PER
-Claudia PER
-Karen PER
-Karen PER
-Claudia PER
-Claudia PER
-madame Marchand PER
-Guillaume PER
-Ah PER
-Karen PER
-Karen PER
-Karen PER
-Claudia PER
-Guillaume PER
-Papadakis PER
-Karen PER
-Claudia PER
-Claudia PER
-David PER
-Karen PER
-Claudia PER
-Lego PER
-Claudia PER
-David PER
-Claudia PER
-Karen PER
-Claudia PER
-Claudia PER
-Karen PER
-Claudia PER
-Karen PER
-David PER
-Claudia PER
-Claudia PER
-Karen PER
-Karen PER
-Claudia PER
-Jessie Raymond PER
-Claudia PER
-Claudia PER
-Karen PER
-Mimer PER
-Karen PER
-Claudia PER
-Karen PER
-Claudia PER
-Claudia PER
-Karen PER
-Karen PER
-Claudia PER
-Claudia PER
-Claudia PER
-Claudia PER
-Karen PER
-Claudia PER
-Karen PER
-Karen PER
-Karen PER
-Claudia PER
-Karen PER
-Claudia PER
-Claudia PER
-Karen PER
-Claudia PER
-David PER
-Claudia PER
-016_10_bg.txt
-Mathieu PER
-Agnès PER
-Agnès PER
-Agnès PER
-Mathieu PER
-Aurélie Precisio PER
-Mathieu PER
-Apprendre PER
-Vanessa Levêque PER
-Vanessa PER
-Agnès PER
-Laurent PER
-Mathieu PER
-Antoine Godefroid PER
-Agnès PER
-Mathieu PER
-Mathieu PER
-Antoine Godefroid PER
-Mathieu PER
-Agnès PER
-Laurent PER
-Agnès PER
-Agnès PER
-Antoine PER
-Laurent PER
-Mathieu PER
-Mathieu PER
-Loïc PER
-Agnès PER
-Mathieu PER
-Agnès PER
-Mathieu PER
-Mathieu PER
-Agnès PER
-Mathieu PER
-Agnès PER
-Gringalet PER
-Agnès PER
-Mathieu PER
-Agnès PER
-Agnès PER
-Mathieu PER
-Mathieu PER
-Mathieu PER
-Laurent PER
-Alain PER
-Agnès PER
-Justine PER
-Agnès PER
-Roseline PER
-Roseline PER
-Agnès PER
-Regarde PER
-Mathieu PER
-Mathieu PER
-Roseline PER
-Roseline PER
-Agnès PER
-Agnès PER
-Mathieu PER
-Mathieu PER
-Agnès PER
-Mathieu PER
-Agnès PER
-Mathieu PER
-Agnès PER
-Agnès PER
-Coppélia PER
-Agnès PER
-016_10_frmod.txt
-Mme Braddock PER
-Helen PER
-Mme Braddock PER
-Jenny Prezzioso PER
-Apprendre PER
-Vanessa Pike PER
-Vanessa PER
-Helen PER
-Buddy Barrett PER
-Helen PER
-Buddy Barrett PER
-Helen PER
-Helen PER
-Buddy PER
-Hors-jeu PER
-Helen PER
-Helen PER
-Helen PER
-Helen PER
-P&#39;tit Bout PER
-Helen PER
-Byron PER
-Adam PER
-Helen PER
-Helen PER
-Helen PER
-Stonebrook PER
-Stamford PER
-Regarde PER
-Helen PER
-H PER
-P&#39;tit Bout PER
-Dada PER
-Helen PER
-Helen Keller PER
-Matthew PER
-Helen PER
-Adèle PER
-Mme Noelle PER
-Coppélia PER
-Mme Noelle PER
-016_10_qu.txt
-Madame Biron PER
-Hélène PER
-Madame Biron PER
-Matthieu PER
-Matthieu PER
-Picard PER
-Jeanne Prieur PER
-Matthieu PER
-Apprendre PER
-Hélène PER
-Bruno Barrette PER
-Hélène PER
-Matthieu PER
-Matthieu PER
-Bruno Barrette PER
-Matthieu PER
-Vanessa PER
-Bruno PER
-Matthieu PER
-Matthieu PER
-Joël PER
-Hélène PER
-Matthieu PER
-Sinon PER
-Matthieu PER
-Matthieu PER
-Matthieu PER
-Hélène PER
-Regarde Matthieu PER
-Matthieu PER
-Jaja PER
-Jaja PER
-Regarde PER
-H PER
-Matthieu PER
-Jaja PER
-Jaja PER
-Matthieu PER
-Helen Keller PER
-Hélène PER
-Hélène PER
-Adèle PER
-016_11_bg.txt
-madame Brinbeuf PER
-Mes PER
-Valérie PER
-Valérie PER
-Mélanie PER
-Carole PER
-Marjorie PER
-Julie PER
-Julie PER
-Valérie PER
-Valérie PER
-Valérie PER
-Valérie PER
-Valérie PER
-Mélanie PER
-Valérie PER
-Mélanie PER
-Valérie PER
-Justine PER
-Mathieu PER
-Mathieu PER
-Agnès PER
-Agnès PER
-Mathieu PER
-Exact PER
-Valérie PER
-Carole PER
-Hé PER
-Bruno PER
-Bruno PER
-Mélanie PER
-Bruno PER
-Justine PER
-Julie PER
-Valérie PER
-Avez PER
-Mélanie PER
-Bruno PER
-Valérie PER
-Valérie PER
-Julie PER
-Valérie PER
-Carole PER
-Hum PER
-Hé PER
-Valérie PER
-Bonjour madame Brinbeuf PER
-“ Marjorie PER
-Mathieu PER
-Vas PER
-Valérie PER
-Mélanie PER
-Marjorie PER
-Coppélia PER
-Aller PER
-016_11_frmod.txt
-Mme Noelle PER
-Mme Braddock PER
-Claudia PER
-Mes PER
-Mme Noelle PER
-Mary Anne PER
-Carla PER
-Claudia PER
-Mallory PER
-Claudia PER
-Claudia PER
-Claudia PER
-Claudia PER
-Samuel PER
-Claudia PER
-Heureusement PER
-Mary Anne PER
-Helen PER
-Claudia PER
-– Hé PER
-Mary Anne PER
-Mary PER
-Anne PER
-Mary Anne PER
-Claudia PER
-Là PER
-Mary Anne PER
-Carla PER
-Mary PER
-Anne PER
-Mary PER
-Anne PER
-Savez PER
-Claudia PER
-Samuel PER
-Claudia PER
-Mallory PER
-Bonjour PER
-Mallory PER
-Vas PER
-Mary Anne PER
-Coppélia PER
-Aller PER
-016_11_qu.txt
-madame Biron PER
-Claudia PER
-Anne PER
-Marie PER
-Claudia PER
-Diane PER
-Claudia PER
-Claudia PER
-Claudia PER
-Claudia PER
-Claudia PER
-Claudia PER
-Diane PER
-Charles PER
-Charles PER
-Trousses PER
-Trousses PER
-Diane PER
-Claudia PER
-Diane PER
-Anne PER
-Marie PER
-Matthieu PER
-Anne PER
-Claudia PER
-Marjorie PER
-Diane PER
-Claudia PER
-Matthieu PER
-Anne PER
-Marie PER
-Claudia PER
-Louis! PER
-Louis PER
-Anne PER
-Marie PER
-Anne PER
-Marie PER
-Claudia PER
-Anne PER
-Marie PER
-Diane PER
-Diane PER
-Jaja PER
-Anne PER
-Marie PER
-Avez PER
-Diane PER
-Louis PER
-Anne-Marie PER
-Claudia PER
-Charles PER
-Diane PER
-Marjorie PER
-Claudia PER
-madame Biron PER
-Matthieu PER
-Marjorie PER
-Aller PER
-016_12_bg.txt
-madame Brinbeuf PER
-Prête PER
-Madame Brinbeuf PER
-Mathieu PER
-Mathieu PER
-Mathieu PER
-Mathieu PER
-Madame Brinbeuf PER
-Justine PER
-professeur de Mathieu PER
-Madame Brinbeuf PER
-Justine PER
-madame Franck PER
-Brinbeuf PER
-madame Franck PER
-classe de Mathieu PER
-Madame Franck PER
-Madame Brinbeuf PER
-Franck PER
-Assieds PER
-Franck PER
-Madame Franck PER
-Franck PER
-Justine Victoire PER
-E V PER
-Franck PER
-Madame Franck PER
-Justine PER
-Mathieu Brinbeuf PER
-Franck PER
-Coppélia PER
-Brinbeuf PER
-Coppélia PER
-Voulez PER
-Mathieu PER
-Madame Franck PER
-Coppélia PER
-Mathieu PER
-madame Franck PER
-Madame Franck PER
-Franck PER
-madame Brinbeuf PER
-Mathieu PER
-Mathieu PER
-Mathieu PER
-Mathieu PER
-016_12_frmod.txt
-Mme Braddock PER
-Mme Braddock PER
-Mme Braddock PER
-Mme Braddock PER
-Bonjour PER
-Mme Franck PER
-Mme Braddock PER
-Mme Franck PER
-Assieds PER
-Jessica Ramsey PER
-Mme Franck PER
-Matthew Braddock PER
-Mme Franck PER
-Coppélia PER
-Mme Braddock PER
-Coppélia PER
-Voulez PER
-Mme Franck PER
-Coppélia PER
-Mme Franck PER
-Mme Franck PER
-Mme Braddock PER
-016_12_qu.txt
-Ma mère PER
-madame Biron PER
-madame Biron PER
-Madame Biron PER
-madame Biron PER
-Matthieu PER
-madame Biron PER
-Matthieu PER
-Matthieu PER
-Matthieu PER
-professeur de Matthieu PER
-Madame Biron PER
-madame Biron PER
-Matthieu PER
-madame Biron PER
-Madame Biron PER
-Madame Biron PER
-Jessie Raymond PER
-M PER
-N PER
-Matthieu Biron PER
-Jessie PER
-Coppélia PER
-Coppélia PER
-Voulez PER
-Coppélia PER
-Matthieu PER
-Matthieu PER
-016_13_bg.txt
-Mercredi PER
-Justine PER
-Gringalet PER
-Roseline PER
-Justine PER
-Roseline PER
-Charlotte Cuvelier PER
-Roseline PER
-Charlotte PER
-Valérie PER
-Roseline PER
-Sophie Lambert PER
-Roseline PER
-Roseline PER
-Roseline PER
-Valérie PER
-Roseline PER
-Roseline PER
-Valérie PER
-Gringalet PER
-Roseline PER
-Hé PER
-Roseline PER
-Valérie PER
-Roseline PER
-Gringalet PER
-Roseline PER
-Valérie PER
-Valérie PER
-Valérie PER
-Valérie PER
-Roseline PER
-Roseline PER
-Valérie PER
-Mathieu PER
-Roseline PER
-Ma mère PER
-Mettre PER
-Valérie PER
-Valérie PER
-Charlotte PER
-Roseline PER
-Charlotte Cuvelier PER
-Roseline PER
-Charlotte PER
-Roseline PER
-Charlotte PER
-Sophie PER
-Roseline PER
-maison de Sophie PER
-Charlotte PER
-Roseline PER
-Charlotte PER
-Roseline PER
-Charlotte PER
-Charlotte PER
-Roseline PER
-Charlotte PER
-Charlotte PER
-Charlotte PER
-Bonjour Charlotte PER
-Roseline PER
-Charlotte PER
-Justine PER
-Roseline PER
-Charlotte PER
-Justine PER
-Roseline PER
-Justine PER
-Valérie PER
-Coppernicus PER
-Coppélia PER
-Valérie PER
-Justine PER
-Roseline PER
-Charlotte PER
-Valérie PER
-Valérie PER
-Gringalet PER
-Valérie PER
-Roseline PER
-Charlotte PER
-Justine PER
-Roseline PER
-Valérie PER
-Valérie PER
-Charlotte PER
-Roseline PER
-Charlotte PER
-Valérie PER
-Valérie Demoulin PER
-016_13_frmod.txt
-Jessica PER
-Jessica PER
-Charlotte PER
-P&#39;tit Bout PER
-Bout PER
-P&#39;tit Bout PER
-Bout PER
-Bout PER
-Bout PER
-Stonebrook PER
-Stonebrook PER
-Ma mère PER
-Charlotte PER
-Charlotte Johanssen PER
-Ma sœur PER
-Charlotte PER
-Charlotte PER
-Charlotte PER
-Stonebrook PER
-Charlotte PER
-Charlotte PER
-Charlotte PER
-Charlotte PER
-Coppernicus PER
-Coppélia PER
-Bout PER
-Charlotte PER
-P&#39;tit Bout PER
-Bout PER
-Charlotte PER
-Ma sœur PER
-Charlotte PER
-Charlotte PER
-Mme Braddock PER
-Kristy Parker PER
-016_13_qu.txt
-Jaja PER
-Charlotte Jasmin PER
-Sophie PER
-Jaja PER
-Jaja PER
-Jaja PER
-Montre PER
-Jaja PER
-Jaja PER
-Ma mère PER
-Charlotte Jasmin PER
-Charlotte PER
-Sophie PER
-Sophie PER
-Charlotte PER
-Charlotte PER
-Charlotte PER
-Charlotte PER
-Charlotte PER
-Christinel PER
-Charlotte PER
-Polanski PER
-Copemicus PER
-Coppélia PER
-Jaja PER
-Jaja PER
-Polanski PER
-Charlotte PER
-madame Biron PER
-Christine Thomas PER
-016_14_bg.txt
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Coppélia PER
-Brinbeuf PER
-Franck PER
-Mathieu PER
-Roseline PER
-Charlotte PER
-Valérie PER
-Mathieu PER
-Mélanie PER
-Valérie PER
-Roseline PER
-Bruno Lejeune PER
-Mélanie PER
-Mathieu PER
-Brinbeuf PER
-Agnès PER
-Coppélia PER
-Coppélius PER
-Prête PER
-Prête PER
-Justine PER
-Agnès PER
-Allez PER
-Agnès PER
-Agnès PER
-madame Brinbeuf PER
-Madame Brinbeuf PER
-Caroline Brinbeuf PER
-Agnès PER
-Agnès PER
-Coppélia PER
-Agnès PER
-Agnès PER
-Mathieu PER
-Catherine PER
-Catherine PER
-Mathieu PER
-Catherine PER
-Mathieu PER
-Maman PER
-Adeline PER
-Catherine PER
-II PER
-Agnès PER
-Coppelius PER
-Franz PER
-Coppélia PER
-Coppélius PER
-Franz PER
-Agnès PER
-Agnès PER
-madame Brinbeuf PER
-Agnès PER
-Christophe Gélin PER
-Franz PER
-Mathieu PER
-Mathieu PER
-Mathieu PER
-Mathieu PER
-Christophe PER
-Mathieu PER
-Catherine PER
-Catherine PER
-Catherine PER
-Adeline PER
-Christophe PER
-Catherine PER
-Mathieu PER
-Adeline PER
-016_14_frmod.txt
-Mme Braddock PER
-Mme Noelle PER
-Mme Franck PER
-Charlotte PER
-Mary PER
-Anne PER
-Mary Anne PER
-Claudia PER
-P&#39;tit Bout PER
-Logan Rinaldi PER
-Mary PER
-Anne PER
-Mme Braddock PER
-Helen PER
-Coppélia PER
-Coppélius PER
-Mme Noelle PER
-Mme Braddock PER
-Helen PER
-Helen PER
-Bonsoir PER
-Mme Braddock PER
-Mme Braddock PER
-Carolyn Braddock PER
-Helen PER
-Helen PER
-Coppélia PER
-Helen PER
-Helen PER
-Mme Noelle PER
-Maman PER
-Adèle PER
-Helen PER
-Mme Braddock PER
-Coppélius PER
-Franz PER
-Coppélia PER
-Coppélius PER
-Franz PER
-Helen PER
-Helen PER
-Mme Braddock PER
-Helen PER
-Christopher Gerber PER
-Franz PER
-Christopher PER
-Adèle PER
-Christopher PER
-Adèle PER
-016_14_qu.txt
-Matthieu PER
-Charlotte PER
-Louis Brunet PER
-Jaja PER
-Matthieu PER
-madame Biron PER
-Coppélia PER
-madame Biron PER
-madame Biron PER
-Madame Biron PER
-Caroline Biron PER
-Adèle PER
-Matthieu PER
-Adèle PER
-II PER
-Franz PER
-Coppélia PER
-Christophe Baril PER
-Franz PER
-Matthieu PER
-Matthieu PER
-Matthieu PER
-Matthieu PER
-Adèle PER
-Christophe PER
-Matthieu PER
-Adèle PER
-016_15_bg.txt
-Catherine PER
-Adeline PER
-Catherine PER
-Catherine PER
-Adeline PER
-Justine PER
-Catherine PER
-Catherine PER
-Dis PER
-Justine PER
-Justine PER
-Roseline PER
-Brinbeuf PER
-Agnès PER
-Valérie PER
-Mathieu PER
-Justine PER
-Marjorie PER
-Marjorie PER
-Justine PER
-Johanna PER
-Johanna PER
-Johanna PER
-Johanna PER
-Johanna PER
-Johanna PER
-Catherine PER
-Adeline PER
-Johanna PER
-Mathieu PER
-Agnès PER
-Catherine PER
-Johanna PER
-Johanna PER
-Marjorie PER
-Justine PER
-Marjorie PER
-Marjorie PER
-Johanna PER
-Johanna PER
-Johanna PER
-Johanna PER
-Justine PER
-Johanna PER
-Marjorie PER
-Mathieu PER
-Johanna PER
-Catherine PER
-Adeline PER
-Johanna PER
-Adeline PER
-Mathieu PER
-Catherine PER
-Catherine PER
-Johanna PER
-Justine PER
-Franz PER
-Catherine PER
-Catherine PER
-Catherine PER
-Catherine PER
-Mathieu PER
-Justine PER
-Maman PER
-Roseline PER
-Johanna PER
-Marjorie PER
-Brinbeuf PER
-Mathieu PER
-Agnès PER
-Agnès PER
-Melba PER
-Pêche Melba PER
-Justine PER
-Julie PER
-Mélanie PER
-Mathieu PER
-Agnès PER
-Mathieu PER
-Mathieu PER
-Agnès PER
-Mathieu PER
-Mathieu PER
-016_15_frmod.txt
-Adèle PER
-Adèle PER
-Adèle PER
-Adèle PER
-Ah PER
-Carla PER
-Mary Anne PER
-Matthew PER
-Mallory PER
-Keisha PER
-Adèle PER
-Mme Braddock PER
-Mallory » PER
-Maman PER
-Mes PER
-Adèle PER
-Keisha PER
-Adèle PER
-Mme Noelle PER
-Franz PER
-Bêbête PER
-Adèle PER
-Adèle PER
-Maman PER
-Mary Anne PER
-Claudia PER
-M. PER
-Mme Braddock PER
-Helen PER
-Claudia PER
-Claudia PER
-Claudia PER
-Claudia PER
-Mary PER
-Anne PER
-Helen PER
-Helen PER
-016_15_qu.txt
-Adèle PER
-Adèle PER
-Adèle PER
-Adèle PER
-Élizabeth PER
-Kara PER
-Kara PER
-Kara PER
-Marjorie PER
-Kara PER
-Kara PER
-Élizabeth PER
-Kara PER
-Kara PER
-Kara PER
-Marjorie PER
-Marjorie PER
-Marjorie PER
-Kara PER
-Kara PER
-Marjorie PER
-Kara PER
-Kara PER
-Marjorie PER
-Adèle PER
-Kara PER
-Matthieu PER
-Adèle PER
-Élizabeth PER
-Franz PER
-Adèle PER
-Matthieu PER
-Viens PER
-Gaston PER
-Hélène PER
-Claudia PER
-Claudia PER
-Anne-Marie PER
-Claudia PER
-Hélène PER
-Matthieu PER
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">OSError</span><span class="g g-Whitespace">                                   </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">7</span><span class="o">-</span><span class="n">a9f4cbae4497</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span>         <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span>             <span class="c1">#Create and open the output filename</span>
+<span class="ne">---&gt; </span><span class="mi">13</span>             <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">outfilename</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">out</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">14</span>                 <span class="c1">#Read the contents of the input file</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span>                 <span class="n">chaptertext</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+<span class="ne">OSError</span>: [Errno 63] File name too long: &#39;016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt&#39;
 </pre></div>
 </div>
 </div>
@@ -3076,7 +1275,7 @@ Matthieu PER
 <p><em>(Note from July 19, 2021: these were errors that the spaCy 2 French model made. Almost all disappeared by spaCy 3, which is the source of the results you see above.)</em></p>
 </div>
 <div class="section" id="data-cleaning">
-<h4>6. Data cleaning<a class="headerlink" href="#data-cleaning" title="Permalink to this headline">¶</a></h4>
+<h4>6. Data cleaning<a class="headerlink" href="#data-cleaning" title="Permalink to this headline">#</a></h4>
 <p>Time for some data cleaning! When Lee brought the ABBYY FineReader output .txt files into Word to correct my bad transcriptions, Word “helpfully” replaced all the regular, straight single and double quotes with their curly equivalents.</p>
 <p>I wrote some code that opened every text file in my folder, searched for opening and closing curly quotes and replaced them with the “straight quote” character (a quotation mark that doesn’t differentiate opening and closing quotes). While I was at it, I saw that some of the texts weren’t using the straight single quote for the apostrophe, so I put that in there, too. This code overwrites the text files in the folder (rather than creating a new version) so if you want to keep your originals, make sure you have a copy elsewhere.</p>
 <div class="cell docutils container">
@@ -3104,7 +1303,7 @@ Matthieu PER
 </div>
 </div>
 <div class="section" id="french-ner-second-try">
-<h4>7. French NER, second try<a class="headerlink" href="#french-ner-second-try" title="Permalink to this headline">¶</a></h4>
+<h4>7. French NER, second try<a class="headerlink" href="#french-ner-second-try" title="Permalink to this headline">#</a></h4>
 <p>I didn’t make any changes to the code from step 5, but check out the difference in the results. Gone are those quotation marks as so-called entities – along with all the examples of j’ai, c’, etc. All of those were showing up because they were using the curly single quote character, and that was messing up spaCy’s model.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -5571,7 +3770,7 @@ Matthieu PER
 <p>It’s not perfect: chapter 1 of the Quebec translation flags “mange Julie” (Julie eats) as a person instead of a name and noun. But it’s a lot better.</p>
 </div>
 <div class="section" id="french-ner-for-places">
-<h4>8. French NER for places<a class="headerlink" href="#french-ner-for-places" title="Permalink to this headline">¶</a></h4>
+<h4>8. French NER for places<a class="headerlink" href="#french-ner-for-places" title="Permalink to this headline">#</a></h4>
 <p>I moved all the _ner_per.txt files into their own folder, so that spaCy wouldn’t try to run NER on text files of its own NER results, and would instead just use the files with the chapter texts as the objects of investigation.</p>
 <p>I changed the code from step 7 (and 5) to replace PER with LOC and ran it again to get location entities.</p>
 <div class="cell docutils container">
@@ -6763,7 +4962,7 @@ Noëlle LOC
 <p>Skimming the results, it was interesting to see how much worse it performed than the person entity recognition. It feels like a minority of the results are legit places, and most of the results are people’s names.</p>
 </div>
 <div class="section" id="french-ner-for-orgs">
-<h4>9. French NER for orgs<a class="headerlink" href="#french-ner-for-orgs" title="Permalink to this headline">¶</a></h4>
+<h4>9. French NER for orgs<a class="headerlink" href="#french-ner-for-orgs" title="Permalink to this headline">#</a></h4>
 <p>I was curious what I’d get by looking for entities flagged as organizations. I mean, this entire book series is about an organization: would that get flagged correctly? (Once again, I moved the _ner_loc.txt files into their own folder first.)</p>
 <p>The verdict: <em>Club des Baby</em> (France-French translation) and Club des baby (Quebec translation) get marked as organizations; the “sitters” gets lost when “Baby-sitters” gets separated at the hyphen. There’s also various things that are most definitely not organizations that get tagged, like “Bonjour!” in Belgian ch. 10, or “PLIÉ” in Quebec ch. 3 (maybe spaCy thought it was an acronym and not a yelling dance teacher?)</p>
 <div class="cell docutils container">
@@ -6963,7 +5162,7 @@ Fleur bleue ORG
 </div>
 </div>
 <div class="section" id="french-ner-for-misc">
-<h4>10. French NER for misc<a class="headerlink" href="#french-ner-for-misc" title="Permalink to this headline">¶</a></h4>
+<h4>10. French NER for misc<a class="headerlink" href="#french-ner-for-misc" title="Permalink to this headline">#</a></h4>
 <p>The French entity model also has a “MISC” type, so for the sake of completeness, I couldn’t not try it. And the results are as advertised. Lots of names. Lots of “Ça”. There’s a “Tu es atroce” (You’re excruciating) from Ch. 5 of the France French version. “Le Langage Secret” in Ch. 6 of the Belgian translation gets flagged, and “P’tit” makes an appearance more than once. Only in the France French version do “Noirs” (Black people) and “Noire de mon école” (Black person in my school) get flagged.</p>
 <p><em>(July 19, 2021 note: this is clearly another area where there’s been a lot of improvement between spaCy 2 and spaCy 3. There’s still some weird stuff, like “Oh!” and “Salut”, but overall a lot fewer results and a lot less garbage.)</em></p>
 <div class="cell docutils container">
@@ -8242,7 +6441,7 @@ Jessie MISC
 </div>
 </div>
 <div class="section" id="lets-do-it-all-again-for-english">
-<h3>Let’s do it all again for English<a class="headerlink" href="#lets-do-it-all-again-for-english" title="Permalink to this headline">¶</a></h3>
+<h3>Let’s do it all again for English<a class="headerlink" href="#lets-do-it-all-again-for-english" title="Permalink to this headline">#</a></h3>
 <p>The steps below in the notebook basically repeat the process described above, but using the spaCy model for English instead of French. At first, I just copied over the code cells from the French section (switching out <code class="docutils literal notranslate"><span class="pre">enfiledirectory</span></code> for <code class="docutils literal notranslate"><span class="pre">filedirectory</span></code> in the first line so it looked in the right place for the English files), but kept getting some bizarre output: namely, it wasn’t able to find any entities labeled PER or LOC.</p>
 <p>To figure out what was going on, I removed the line <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">ent.label_</span> <span class="pre">==</span> <span class="pre">'PER':</span></code>
 and un-indented the code nested inside it, to avoid Python indentation errors, then commented-out the following out.write lines by putting a # in front of them. I didn’t want to write any results, I just wanted to see what entities it found.</p>
@@ -8258,7 +6457,7 @@ and un-indented the code nested inside it, to avoid Python indentation errors, t
 </div>
 </div>
 <div class="section" id="english-ner-for-people">
-<h4>11. English NER for people<a class="headerlink" href="#english-ner-for-people" title="Permalink to this headline">¶</a></h4>
+<h4>11. English NER for people<a class="headerlink" href="#english-ner-for-people" title="Permalink to this headline">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Sort all the files in the directory you specified above, alphabetically.</span>
@@ -9196,7 +7395,7 @@ Matt PERSON
 </div>
 </div>
 <div class="section" id="english-ner-for-places">
-<h4>12. English NER for places<a class="headerlink" href="#english-ner-for-places" title="Permalink to this headline">¶</a></h4>
+<h4>12. English NER for places<a class="headerlink" href="#english-ner-for-places" title="Permalink to this headline">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Sort all the files in the directory you specified above, alphabetically.</span>
@@ -9449,7 +7648,7 @@ Ambrosia GPE
 </div>
 </div>
 <div class="section" id="english-ner-for-organizations">
-<h4>13. English NER for organizations<a class="headerlink" href="#english-ner-for-organizations" title="Permalink to this headline">¶</a></h4>
+<h4>13. English NER for organizations<a class="headerlink" href="#english-ner-for-organizations" title="Permalink to this headline">#</a></h4>
 <p>I think my favorite entity type is ORG, which gets you everything from Oakley Elementary to Swanilda to Mama. (Yes, friends, “Daddy” is a PERSON but “Mama” is an ORG.)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -9689,7 +7888,7 @@ Kristy ORG
 </div>
 </div>
 <div class="section" id="english-ner-for-works-of-art">
-<h4>14. English NER for works of art<a class="headerlink" href="#english-ner-for-works-of-art" title="Permalink to this headline">¶</a></h4>
+<h4>14. English NER for works of art<a class="headerlink" href="#english-ner-for-works-of-art" title="Permalink to this headline">#</a></h4>
 <p>That said, there’s also a rare WORK_OF_ART entity type, exemplified by “Morning, Squirts”, “Hey, Jessi”, “On Top of Old Smoky” (depends on how you feel about folk music, I guess), and, my very favorite work of art, “Nope”.
 <img alt="Grumpy Cat says nope" src="_images/dscm2_nope.jpg" /></p>
 <p><em>(July 19, 2021 note: Alas, spaCy 3 has learned that ‘nope’ isn’t a work of art. 😔 It was fun while it lasted.)</em></p>
@@ -9763,7 +7962,7 @@ Opening night WORK_OF_ART
 </div>
 </div>
 <div class="section" id="what-now">
-<h3>What now?<a class="headerlink" href="#what-now" title="Permalink to this headline">¶</a></h3>
+<h3>What now?<a class="headerlink" href="#what-now" title="Permalink to this headline">#</a></h3>
 <p>I reran the notebook for English, reluctantly limiting myself to the entity types held in common between the English and French models. So now I had, chapter-by-chapter, translation-by-translation (plus original English), all the person, location, and organization type entities.</p>
 <p>That’s nice.</p>
 <p>But that wasn’t my question: what I wanted to know was how the translators adapted people and place names. I had to figure out what to do with all these text files to get me closer to an answer.</p>
@@ -9771,7 +7970,7 @@ Opening night WORK_OF_ART
 </div>
 </div>
 <div class="section" id="lee">
-<h2>Lee<a class="headerlink" href="#lee" title="Permalink to this headline">¶</a></h2>
+<h2>Lee<a class="headerlink" href="#lee" title="Permalink to this headline">#</a></h2>
 <p>So, before getting into the finer differences between the various translations and the approaches taken by the translators, can we just take a second to appreciate the narrative of this BSC story? Now, far from perfect as a disability narrative -  for instance, the main deaf character never gets to “speak” for himself, with instead his older sister “speaking” both for him and for herself - this is a really nuanced portrayal of difference and empathy. All I remember from when I read the book (sigh) 30 years ago was the dancing J sign for Jessi’s name, but now I’m struck by how Jessi/Jessie/Justine/Jessica is wise beyond her years, a reflection of her own experiences with being different in her new hometown. I got a little choked up as I read (at least the first of the four different times I read it) her efforts to bring the deaf schoolkids to the show, and how her frenemy at ballet finally connects with her own deaf sister.</p>
 <p>And when Jessi said that her performance could never be perfect because “There was no way Swanilda could have been black, so I wasn’t perfect, but I knew I was dancing very well”? Gutted. In every French version(s).</p>
 <p>There’s another layer to this discussion of translation as there is another language in the text: sign language. As pointed out in the narrative(s), there are many different variations of sign language, which means that the translators had to accurately “translate” the signs that were being done, as it wasn’t the same in the various French dialects.</p>
@@ -9792,18 +7991,18 @@ Opening night WORK_OF_ART
 <p>So that France goes all-in on the Americanness of the series isn’t surprising. That Quebec didn’t go more all-in in the adaptation to a local audience was, but given the limitations due to pressures to produce, it is understandable.</p>
 </div>
 <div class="section" id="id1">
-<h2>Quinn<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>Quinn<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
 <p>Lee’s take on BSC names in translation had got me thinking. For starters, score one for close reading! If you’ve got four variations of a children’s novel, and want to say something about some aspect of that novel, you should not start by opening a Jupyter notebook. Put down your laptop, find a comfy chair, and just read the books with your own eyeballs. It definitely took Lee less time to do that than it took me to scan and OCR the books, reformat them into individual chapters, clean up the punctuation characters, and write some Python code. And by the end, she could sit down and write something. I, on the other hand, had 180 additional small text files on my laptop to show for it, and nothing new to say yet. Woot.</p>
 <p>But then I thought about what Lee didn’t do there. Knowledgeable humans are great at providing a synthesis of the interesting things they’ve noticed in a text. What they’re less great at is being comprehensive, pulling out details that aren’t individually interesting, but may become interesting in the aggregate. It’s tedious work, and it’s only possible with a lot of manual labor – unless you use digital tools. (And even still, let’s face it, there’s a lot of manual work that goes into getting your text ready for digital tools.)</p>
 <p><img alt="BSC Bible cover" src="_images/bsc_bible.jpg" /></p>
 <p>In my moment of doubt, I turned to the Bible – the BSC Bible, that is. Smith College’s Special Collections finding aid for the Ann M. Martin papers actually <a class="reference external" href="https://findingaids.smith.edu/repositories/3/archival_objects/331319">includes that as an alternate title for The Complete Guide to The Baby-Sitters Club</a>, the complete (through 1996) compendium of all information about all people (my PER/PERSON entities), places (LOC/GPE), and things (including ORGs) in the Baby-Sitters Club universe. And by all, I mean all. Find any arbitrary character, however niche, and this book has all the information in the canon. Does anyone remember Nicole Lavista, one of the “Battle of the Bakers” daycare kids in BSC Mystery #21: Claudia and the Recipe for Danger? Me, neither. But she’s six years old, has “hair in black curls”, is “full of tricks”, and “loves to draw and paint”. There’s even page-level citations, though they do me no good since we chose to remove page numbers from the text file output of our OCR. All this information is already compiled for the English series through the BSC Bible, originally as a resource for the ghostwriters. But what might we learn from trying to recreate something similar from the ground up, for the universe of each of the French translations? In addition to the question of how much localization has been done, the question of consistency intrigues me. If you’re not localizing much of anything, it’s less of an issue, but was the pool of translators in Montreal comparing notes about how they adapted the names of peripheral but at least occasionally-recurring characters?</p>
 <div class="section" id="rethinking-ner">
-<h3>Rethinking NER<a class="headerlink" href="#rethinking-ner" title="Permalink to this headline">¶</a></h3>
+<h3>Rethinking NER<a class="headerlink" href="#rethinking-ner" title="Permalink to this headline">#</a></h3>
 <p>I wanted to write up NER for this book because, hey, names! And I’ve done it before, and it seemed like a fun opportunity to compare the performance of spaCy’s French and English models. Ultimately, though, NER makes more sense as the primary method of finding names and places when you’re dealing with a much larger corpus, and/or a much more heterogenous one than Baby-Sitters Club books. It’s feasible to make a list of characters and places within a single fictional universe, like what you can find in the BSC Bible, even if you have all 200ish novels in translation. It’s much less feasible if you have 200 novels, each in its own universe – let alone 2,000 or more.</p>
 <p>So where to go from here? It’d be fun to try to annotate some texts and see if I can train a better NER model for the Baby-Sitters Club (especially the French), but that’s a topic for another DSC Multilingual Mystery. Instead, what I have now for locations, I can use to cross-check with the English, for an easy and interesting source of likely localizations and differences. With names, I can hopefully use NER to identify characters that are newly-introduced in each book (or perhaps re-introduced under a different localized name?), and then add those names to the list of known characters in that translated universe. That curated list, rather than NER itself, will be the basis for checking translations for references to characters. And another thing: for best chances of identifying new characters, I think I’ll stop limiting the NER results to just the entities flagged PER. Too many character names are showing up as LOC or ORG to trust the classification. As for the ORG entities specifically, they’re almost all errors of one sort or another. I can’t think of any good research questions offhand that deal with organizations in this universe, so I think I won’t worry about them.</p>
 </div>
 <div class="section" id="close-reading-some-distant-reading-outputs">
-<h3>Close-reading some distant-reading outputs<a class="headerlink" href="#close-reading-some-distant-reading-outputs" title="Permalink to this headline">¶</a></h3>
+<h3>Close-reading some distant-reading outputs<a class="headerlink" href="#close-reading-some-distant-reading-outputs" title="Permalink to this headline">#</a></h3>
 <p>For lulz, I threw the location NER per-chapter output for the Belgian corpus into Voyant, and even the word cloud was mostly a testament to how badly the model performed at classifying entities as locations.</p>
 <p><img alt="Voyant visualization of allegedly location named entities, but it's mostly names" src="_images/dscm2_ner_voyant.png" /></p>
 <p>So in the end, I deleted all those little NER output files I’d generated with the Jupyter notebook, with aspirations of somehow comparing them programmatically. Instead, those Python print() statements in the notebook were what I consulted – using my own eyeballs. Because the chapters are so short, it’s not hard to trace place names back to the context, and then find that same context in the original. I’m about halfway there to imagining how I’d implement something more scalable in Python for checking at least the entities that refer to people (whether or not they’re tagged that way). But honestly, for my own process, I find that I need to spend time cleaning data manually before I feel like I understand it well enough to come up with a workable programmatic approach.</p>
@@ -10079,14 +8278,14 @@ Opening night WORK_OF_ART
 </table>
 </div>
 <div class="section" id="where-to-next">
-<h3>Where to next?<a class="headerlink" href="#where-to-next" title="Permalink to this headline">¶</a></h3>
+<h3>Where to next?<a class="headerlink" href="#where-to-next" title="Permalink to this headline">#</a></h3>
 <p>I find it tantalizing that my idea about the translators getting sloppy with peripheral character names already seems to be playing out even over the course of a single book. The risks are biggest for the Belgian and Quebec translations, which do more by way of localization, and we know that at least in Quebec they had multiple different translators. Lee made some progress in <a class="reference external" href="https://datasittersclub.github.io/site/dscm1/">DSC Multilingual Mystery #1</a> on identifying the translators of all the French translations, using national library metadata. I think it’s time we clean up the metadata mess and make a clean spreadsheet we can use to support further inquiry.</p>
 <p>To be continued…</p>
 </div>
 </div>
 <div class="section" id="suggested-citation">
-<h2>Suggested Citation<a class="headerlink" href="#suggested-citation" title="Permalink to this headline">¶</a></h2>
-<p>Skallerup Bessette, Lee and Quinn Dombrowski. “DSC Multilingual Mystery 2: Beware, Lee and Quinn!”. February 27, 2020. https://datasittersclub.github.io/site/dscm2.html.</p>
+<h2>Suggested Citation<a class="headerlink" href="#suggested-citation" title="Permalink to this headline">#</a></h2>
+<p>Skallerup Bessette, Lee and Quinn Dombrowski. “DSC Multilingual Mystery 2: Beware, Lee and Quinn!”. February 27, 2020. <a class="reference external" href="https://datasittersclub.github.io/site/dscm2.html">https://datasittersclub.github.io/site/dscm2.html</a>.</p>
 </div>
 </div>
 
@@ -10112,33 +8311,48 @@ Opening night WORK_OF_ART
 
               </div>
               
-        
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="dscm1.html" title="previous page">DSC Multilingual Mystery #1: Lee and the Missing metadata</a>
-    <a class='right-next' id="next-link" href="dscm3.html" title="next page">DSC Multilingual Mystery #3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs</a>
-
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="dscm1.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">DSC Multilingual Mystery #1: Lee and the Missing metadata</p>
         </div>
-        
+    </a>
+    <a class='right-next' id="next-link" href="dscm3.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">DSC Multilingual Mystery #3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
-    <div class="container">
-      <p>
-        
-          By The Data-Sitters Club<br/>
-        
-      </p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By The Data-Sitters Club<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
     </div>
-  </footer>
-</main>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 
-  
+
   </body>
 </html>

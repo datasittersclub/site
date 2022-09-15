@@ -428,7 +428,7 @@ samplename = 'sample_'+ch2name.replace('.txt','_')+str(start)+'.txt'
 
 # Once I got all that working, I looked up the syntax for doing a loop a specific number of times, and ran the code cell. 50 GPT-2-sized samples suddenly appeared on my laptop. And you know what? That felt really good. 
 
-# In[ ]:
+# In[5]:
 
 
 #Iterates 50 times
@@ -453,7 +453,7 @@ for i in range(50):
 # 
 # I downloaded the GPT-2 samples from Google Colab for each run in a zip file, and they didn’t have a file extension. So I wrote a little Python to add `.txt` plus a prefix indicating which run it was from.
 
-# In[ ]:
+# In[6]:
 
 
 #Define directory for a single run's samples from the Google Colab notebook

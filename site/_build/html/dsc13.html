@@ -1,0 +1,755 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSC #13: Goodbye, Friends, Goodbye &#8212; The Data-Sitters Club</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/style.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="DSC #14: Hello, DMCA Exemption" href="dsc14.html" />
+    <link rel="prev" title="DSC #12: The DSC and the New Programming Language" href="dsc12.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/DSClogo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">The Data-Sitters Club</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
+                    <no title>
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  About
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter-2.html">
+   About the DSC
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="books.html">
+   DSC Books
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Main series
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc1.html">
+   DSC 1: Quinn's Great Idea
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc2.html">
+   DSC 2: Katia and the Phantom Corpus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc3.html">
+   DSC 3: The Truth About DH Collaboration (and Textual Variants!)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc4.html">
+   DSC 4: AntConc Saves the Day
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc5.html">
+   DSC 5: The DSC and the Impossible TEI Quandaries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc6.html">
+   DSC 6: Voyant's Big Day
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc7.html">
+   DSC 7: The DSC and Mean Copyright Law
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc8.html">
+   DSC 8: Text-Comparison-Algorithm-Crazy Quinn
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc9.html">
+   DSC 9: The Ghost in Anouk's Laptop
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc10.html">
+   DSC 10: Heather Likes PCA
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc11.html">
+   DSC 11: Katia and the Sentiment Snobs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc12.html">
+   DSC 12: The DSC and the New Programming Language
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   DSC 13: Goodbye, Friends, Goodbye
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc14.html">
+   DSC 14: Hello, DMCA Exemption!
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc15.html">
+   DSC 15: Little Miss California Stereotype... and the BY Times
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Multilingual mysteries
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm1.html">
+   DSCM 1: Lee and the Missing Metadata
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm2.html">
+   DSCM 2: Beware, Lee and Quinn!
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm3.html">
+   DSCM 3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm4.html">
+   DSCM 4: Isabelle and the Missing Spaghetti-O's
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Fun
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="covid19.html">
+   Important Public Health Messages from the Data-Sitters Club about COVID-19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dhawards2019.html">
+   DH Awards 2019 Ad Campaign
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/datasittersclub/site"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/dsc13.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction-roopsi">
+   Introduction (Roopsi)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stefan-sinclair">
+   Stéfan Sinclair
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-nicest-person-in-dh-ever-lee">
+     The Nicest Person in DH, Ever (Lee)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#my-dh-pin-up-calendar-star-roopsi">
+     My DH Pin-up Calendar Star (Roopsi)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#scott-enderle">
+   Scott Enderle
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#digital-avatars-remain-quinn">
+     Digital Avatars Remain (Quinn)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#if-only-he-knew-roopsi">
+     If Only He Knew (Roopsi)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rebecca-munson">
+   Rebecca Munson
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-power-of-purple-quinn">
+     The Power of Purple (Quinn)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#this-is-what-a-feminist-looks-like-maria">
+     This is What a Feminist Looks Like (Maria)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion-quinn">
+   Conclusion (Quinn)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#suggested-citation">
+   Suggested citation
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>DSC #13: Goodbye, Friends, Goodbye</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction-roopsi">
+   Introduction (Roopsi)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stefan-sinclair">
+   Stéfan Sinclair
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-nicest-person-in-dh-ever-lee">
+     The Nicest Person in DH, Ever (Lee)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#my-dh-pin-up-calendar-star-roopsi">
+     My DH Pin-up Calendar Star (Roopsi)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#scott-enderle">
+   Scott Enderle
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#digital-avatars-remain-quinn">
+     Digital Avatars Remain (Quinn)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#if-only-he-knew-roopsi">
+     If Only He Knew (Roopsi)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rebecca-munson">
+   Rebecca Munson
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-power-of-purple-quinn">
+     The Power of Purple (Quinn)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#this-is-what-a-feminist-looks-like-maria">
+     This is What a Feminist Looks Like (Maria)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion-quinn">
+   Conclusion (Quinn)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#suggested-citation">
+   Suggested citation
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <img src="_static/images/DSCLogo.png" />
+<div style="float: right; width: 200px;margin-left: 7px;margin-top: 0px;">
+<img src="_images/bookcovers/dsc13_cover.jpg" alt="DSC 13 book cover" />
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="dsc-13-goodbye-friends-goodbye">
+<h1>DSC #13: Goodbye, Friends, Goodbye<a class="headerlink" href="#dsc-13-goodbye-friends-goodbye" title="Permalink to this headline">#</a></h1>
+<p>by Lee Skallerup Bessette, Maria Sachiko Cecire, Quinn Dombrowski, and Roopika Risam</p>
+<div class="section" id="introduction-roopsi">
+<h2>Introduction (Roopsi)<a class="headerlink" href="#introduction-roopsi" title="Permalink to this headline">#</a></h2>
+<p>I literally hate this. “How’s <em>DSC 13</em>?” has been the perennial question in my emails and DMs with Quinn. For months, Quinn has gently nudged me to finish this book because we have others in the pipeline and we’d agreed that we wouldn’t put them out before we paused to do the important work of remembering friends and colleagues that we have lost recently.</p>
+<p>There has been so much loss. For all of us. I don’t really want to stop and think about it.</p>
+<p>While the DSC has been committed to sharing our forays into quantitative textual analysis in an accessible way, what’s really at the heart of the DSC is relationships. We all came to the DSC with various relationships (or not!) with each other. Lee and I go way back to the early days of DH Twitter. I admired Quinn from afar for years before we bonded over a mutual love for <em>Rent</em> (and <em>Baby-Sitters Club</em> books!). For a long time (unbeknownst to her until recently), I have referred to Maria as “my Cecire,” because my bestie and I are each close to one of the brilliant Cecire sisters and regularly argue about whose Cecire is better. While I knew Anouk’s work, I met her through the DSC and have learned so much from both her expertise and her ways of thinking and being. I met Katia through the DSC as well, but we bonded over our knowledge of the corpus—and because the DSC is about relationships, Katia has already connected me to a friend at my new job.</p>
+<p>At the heart of digital humanities are people. Every tool, every project, every book, every article, every Twitter account (bots notwithstanding). These are not techno-social abstractions — they’re people and their relationships with each other.</p>
+<p>In this book, we honor Stéfan Sinclair, Scott Enderle, and Rebecca Munson, people we have lost in digital humanities and deeply miss.</p>
+</div>
+<div class="section" id="stefan-sinclair">
+<h2>Stéfan Sinclair<a class="headerlink" href="#stefan-sinclair" title="Permalink to this headline">#</a></h2>
+<div class="section" id="the-nicest-person-in-dh-ever-lee">
+<h3>The Nicest Person in DH, Ever (Lee)<a class="headerlink" href="#the-nicest-person-in-dh-ever-lee" title="Permalink to this headline">#</a></h3>
+<p>When we all met to discuss this book, Roopsi lamented that every time she opens this document, she gets stuck, not knowing what to say, or how to even begin. I have that same feeling right now, trying to find the words to talk about Stéfan. All I can think of is his overwhelming generosity, maybe the nicest person in DH, ever.</p>
+<p>He co-built and supported (oh how he supported, even at the end), the text analysis tool, Voyant (originally they were going to call it “Voyeur” but thought better of it). It was the intro to DH tool, one that made DH accessible to anyone, to everyone, freely available for you to plug in your text(s) and see what came out.</p>
+<p>The building and maintenance of that tool for our community was a supremely generous act. But his generosity extended beyond DH tools and techniques. He was also generous with his time, expertise, and support of whoever asked for it in the DH community. When I was teaching contingently and on the literal and figurative fringes of DH, trying to find a way in, to develop my skills and knowledge, I mused on Twitter about possible summer internships for contingent faculty at DH centers. Stéfan reached out to me immediately and said, if I was interested, I could come and work with him over the summer in Montreal. While it never worked out, me spending the summer at my mom’s with the kids, with her taking the kids to the pool during the day while I worked on DH stuff with Stéfan, just that he offered was a sign of just how generous and supportive he was.</p>
+<p>He was also playful, and there was a joy in his work. When Voyant unexpectedly updated WHILE WE WERE TRYING TO TEACH IT, my colleague Zach Whalen and I, with our Digital Studies classes, explored the new, added features of Voyant and were struck by one new visualization: the word knot. WTF was a word knot and what did it tell me about my text? It was mesmerizing to watch it twist and turn and develop, but Zach and I could not make heads nor tails of what we were seeing. When asked what the word knot represented, I could almost hear Stéfan winking through Twitter when he answered, well, what do YOU think it means?</p>
+<p>Stéfan also pulled off the monumental task of literally bringing the entire world of DH to Montreal when he was one of the co-organizers of the 2017 International DH Conference. It was a celebration, a party (as all things are in the summer in Montreal), a large feather in Stéfan’s already-full cap. I remember seeing him at one point during the conference, finally having a chance to say hi to him, to praise his work in putting the conference together, to thank him for bringing the conference to Montreal. The first time Stéfan and I met in person was at the Nebraska DH conference, when at the opening reception he spotted me, raced up to me, exclaiming my name, and immediately embraced me in the standard Québécois greeting of giving a quick kiss on each cheek. I didn’t recognize him immediately, and it showed on my face. He rushed off to greet someone else, but almost immediately DM’ed me, “You didn’t know who I was, did you?” and we both laughed about it. This time, he looked tired, which I chalked up to him organizing an international conference.</p>
+<p>Little did I know. Little did any of us know.</p>
+<p>Few of us knew until the end, until he was gone. The shock of it was overwhelming. I got the news from my podcast co-host, who I didn’t even realize was close to Stéfan, but she was best friends with his wife, having met all those years ago at the University of Alberta. The DH community lost an invaluable builder, but a wife also lost a husband, kids lost a father, students lost a supervisor and mentor, and people lost their best friend. I didn’t know him in those ways, but to hear my friend’s deep-seeded grief over his loss drove home just what kind of all-around good, nay great, person Stéfan was.</p>
+<p>He was, shit, he still <strong>is</strong>, beloved by so many. We learned from and were inspired by his generosity, his playfulness, his spirit. I know he loved the DSC, and I think this whole project is, in part, a reflection of the influence he had on me, on all of us. DH was fun for Stéfan, and that spirit never seemed to have disappeared or dissipated, even after all those years in academia. He wanted to make it accessible, to make it available. I’d like to think that there is a little bit of Stéfan in every single “DH for Fun” project that gets cooked up and unleashed in the world.</p>
+<p>At least, there should be.</p>
+</div>
+<div class="section" id="my-dh-pin-up-calendar-star-roopsi">
+<h3>My DH Pin-up Calendar Star (Roopsi)<a class="headerlink" href="#my-dh-pin-up-calendar-star-roopsi" title="Permalink to this headline">#</a></h3>
+<p>I used to joke that if I had a digital humanities pin-up calendar, Stéfan would appear in all 12 months. This was <strong>not</strong> objectification of him for being a handsome man (which he was) but because he was one of those people who simply radiated kindness — how could you not want that on your wall from January to December?</p>
+<p>Like Lee and many others, I first came to know Stéfan as a creator of Voyant Tools (along with Geoffrey Rockwell). Playing around with Voyant, as a graduate student at the time, I wondered about its creators — who were the people who had an idea for a tool, thought to share it with all of us, and actually found a way to do it? This was not simply about admiration for the tool but for the people behind the tool and their ways of being scholars. While I had no idea how one would actually do that, the tool — and the people behind it — showed me a way of being an academic that was far more expansive than I could have dreamed as that graduate student poking around Voyant. We could take our ideas and find ways to build the tools and the infrastructures that support the research of others’ in our fields. That was the kind of scholar I wanted to be.</p>
+<p>The first time I met Stéfan was at Congress in Ottawa in 2015. The Association for Computers and the Humanities (ACH) and the Canadian Society of Digital Humanities/La société canadienne des humanités numériques (CSDH/SCHN) were holding their first joint conference. Stéfan was outgoing chair of ACH and the incoming chair of CSDH/SCHN. At the ACH executive meeting held at the conference, we joked about Stéfan leaving the presidency of one organization to take up another. This was another Stéfan-related moment of revelation: leadership and building relationships was another way of building a field and supporting colleagues. That was the kind of scholar I wanted to be.</p>
+<p>After a long conference day, I was sitting on a bench somewhere on the University of Ottawa campus, and Stéfan came over and sat down next to me. We had, of course, met through ACH but most of our interactions were mediated from afar through social media. This was the first time we just sat down to chat. I was coming off a tough several years of my early career. I’d made a poor choice of a collaborator because while our values for promoting attention to colonialism in digital humanities aligned, our strategies for doing so did not. Because my collaborator was far better known than I was, a lot of the senior folks in digital humanities assumed that I was party to their actions, which I wasn’t. Many were ready to write me off. Stéfan wasn’t.</p>
+<p>We talked seriously about what it meant — and what it would take — to realize a vision of digital humanities that was globally, linguistically, and intellectually expansive, that would be more welcoming and be open to the kinds of critiques for which I and the others with whom I was still working were advocating. Stéfan shared his approach — the one I’d observed through his work and leadership — and offered his advice and insights.</p>
+<p>At a difficult time professionally, having the chance to have that conversation with someone I admired and who was so well-respected in the field helped me regroup and to orient my professional identity towards a series of actions that continue to guide my work today. I will forever be grateful to Stéfan for that.</p>
+<p>The irony isn’t lost on me that we are publishing this DSC book during the second joint conference of ACH and CSDH/SCHN, which also includes a partnership with Humanistica, the francophone organization that Stéfan was instrumental in founding. And, at the same time, I’m about to become co-President of ACH along with Quinn. I’m grateful to be doing this in the tradition that Stéfan, star of my DH pin-up calendar, set for the field.</p>
+</div>
+</div>
+<div class="section" id="scott-enderle">
+<h2>Scott Enderle<a class="headerlink" href="#scott-enderle" title="Permalink to this headline">#</a></h2>
+<div class="section" id="digital-avatars-remain-quinn">
+<h3>Digital Avatars Remain (Quinn)<a class="headerlink" href="#digital-avatars-remain-quinn" title="Permalink to this headline">#</a></h3>
+<p>If you’ve been following along with the <em>Data-Sitters Club</em> series, you’ve already met Scott Enderle in <a class="reference external" href="https://datasittersclub.github.io/site/dsc8.html#a-time-for-tropes">DSC 8: Text-Comparison-Algorithm-Crazy Quinn</a>. He was the developer of amazing and usable things like the Topic Modeling Tool, and a nifty script for doing fuzzy comparison of 6-word sequences in different texts. Scott sat down with me in April 2020, answered my million questions, and helped me work through the problems I ran into. When I got stuck later, he was just an email away.</p>
+<p>A really great thing about the collaborative nature of DH is that it generates all these connections between people. They’re not the closest relationships — I don’t go through my mental rolodex of past project collaborators when I need to celebrate some victory or vent some frustration — but they’re surprisingly durable. Right now, as of March 2022, my life is consumed by emergency web archiving in Ukraine through a project called Saving Ukrainian Cultural Heritage Online (SUCHO). We’ve got over 1,300 volunteers who’ve signed up to help — and among them, I’ve seen the names of people I’ve met at DH conferences, workshops, and events. People I’ve chatted with at coffee breaks, maybe grabbed a drink or dinner, gotten into a debate about technology choices. People I hadn’t seen or talked to in years, in some cases — even for years — pre-pandemic. But they saw this emergency effort, and they showed up.</p>
+<p>I was going to be that person, popping back into Scott’s life with tales of how I’d used his code in cool ways to do interesting things, and maybe a few more small questions. Because I had more questions for him. I still do. I can think of other projects where I could use that 6-gram comparison code.</p>
+<p>Except I logged onto Twitter on September 14, 2021 and saw this:</p>
+<p><img alt="A tweet from the UPenn Price Lab for DH: &quot;We are shattered by the loss of our friend and colleague Scott Enderle, who passed away on Saturday. Even as he battled against cancer, Scott continued to work as our leading expert in DH. We will miss his keen skills and intellect, his humor, and his boundless good will.&quot;" src="_images/dsc13_penntweet.jpg" /></p>
+<p>I was on some other Zoom call at the time, thankfully on mute, but I remember the word I spoke aloud when I saw what Nikki had just tweeted, alone in my office at work. <em>“OH! …. Oh.”</em></p>
+<p>On that call for DSC 8, Scott mentioned, casually, that he had cancer. But it seemed pretty clear that he’d rather talk code than cancer, and I didn’t want to pry. I asked after his health a few times since, with folks I knew who worked more closely with him, but I’d never heard anything that made me think things were especially bad. And life carried on and I meant to follow up with those questions but every day ended without me getting to the bottom of the to-do list and I pushed it off another day, another week.</p>
+<p>There’s always time until there isn’t. There are always ties until they’re severed. But are they severed, really? Ben Schmidt’s <a class="reference external" href="https://benschmidt.org/post/2021-09-15-increasingly-stealthy/">blog post tribute to Scott, “Increasingly Stealthy,”</a> is one of the most beautiful tributes I’ve read. And I’ve had that same experience since Scott died — Googling my way into random corners of the internet, only to find him there with a helpful answer. And there’ve been other moments when I’ve felt like Scott was there with me saying, “You’ve got this.” Like the time I got an urgent request to compare French far-right political books, looking for repetitions of similar — but non-identical — phrases. Once again, his code was there to save the day.</p>
+<p>I meant to pop back into Scott’s life; instead, now he pops back into mine virtually. I’d been watching his <a class="reference external" href="https://github.com/senderle/topic-modeling-tool">Topic Modeling Tool repo</a> on GitHub forever, getting emails about all new activity. So sometimes Scott — or at least his digital avatars — appears in my inbox. The first time was a couple months after he died, someone having problems with the download link. The second time was in February this year, when Shawn Graham posted the ultimate bug report.</p>
+<p><img alt="A bug report labeled &quot;Sad news&quot; from Shawn Graham, &quot;I realized this morning that many people who might find their way to this repo, and perhaps leave an issue or request a clarification, might not have heard the news. Scott passed away last November. He was a tremendously generous colleague. I did not know him personally, but his work made a difference for my own.&quot;" src="_images/dsc13_github.jpg" /></p>
+<p>I miss Scott. But I’m grateful for the ways he was so very online and connected. I know I’ll run into him again — be it in my inbox, or my browser, in the nooks and crannies of the internet. And every time it makes me smile.</p>
+</div>
+<div class="section" id="if-only-he-knew-roopsi">
+<h3>If Only He Knew (Roopsi)<a class="headerlink" href="#if-only-he-knew-roopsi" title="Permalink to this headline">#</a></h3>
+<p>How can someone you met once be so influential for your work? That’s a question I think about when I remember Scott. We met once, never really spoke beyond that, perhaps we corresponded by email a few times, but Scott’s work and mentorship of students played a crucial role in the work I have done in postcolonial digital humanities — and he might never have known.</p>
+<p>When I was writing <em><a class="reference external" href="https://nupress.northwestern.edu/9780810138858/new-digital-worlds/">New Digital Worlds</a></em>, I was trying to articulate the various ways that coloniality permeates the practice of digital humanities — and, in turn, how we might use digital humanities methods to undo it. The one place I was stuck, apropos of our work with the Data-Sitters Club, was quantitative textual analysis. I had the critiques down. That was the easy part. (Astute readers will recognize that I’m a quantitative textual analysis curmudgeon of the DSC.) What I couldn’t figure out was how it could be used in powerful ways to critique colonialism.</p>
+<p>Enter Scott Enderle and Mae Capozzi, one of his students.</p>
+<p>I had the good fortune to come across their research on “<a class="reference external" href="https://readingfromadistance.wordpress.com/">A Distant Reading of Empire</a>,” which applied the ideas that colleagues and I had been articulating at the intersections of postcolonial studies and digital humanities specifically to quantitative textual analysis. For the project, they used MALLETT (Machine Learning for Language Toolkit) to topic model a corpus of 18th century British literature to study how India was represented in the corpus. That’s to say, what can reading 3,000 colonial texts tell us about how the British Empire constructed colonial subjectivity? Among their results, they identified a trend consistent with critiques of colonial discourse in postcolonial theory — representation of colonized people as objects of knowledge not active agents — through their topic modeling work, which revealed that the corpus is more engaged with British colonial investments in India than it is with actual people in India.</p>
+<p>Scott and Mae’s work was a final puzzle piece that I needed to finish New Digital Worlds. Their work ensured that my treatment of literary studies in the book wasn’t simply criticism but could also shed light on the powerful interventions that are possible when we combine digital methods with postcolonial theory.</p>
+<p>I wish I’d had a chance to tell Scott and to thank him.</p>
+</div>
+</div>
+<div class="section" id="rebecca-munson">
+<h2>Rebecca Munson<a class="headerlink" href="#rebecca-munson" title="Permalink to this headline">#</a></h2>
+<div class="section" id="the-power-of-purple-quinn">
+<h3>The Power of Purple (Quinn)<a class="headerlink" href="#the-power-of-purple-quinn" title="Permalink to this headline">#</a></h3>
+<p>Imagine someone so charismatic that when they ask their large social media following to “pick up the purple” after a breast cancer treatment finally claims their purple-dyed hair, your response is, “Absolutely” … even though you’ve never met them in person.</p>
+<p>Imagine if you read something this person <a class="reference external" href="https://startwords.cdh.princeton.edu/issues/1/their-data-ourselves/">wrote in a new journal</a>, touching on a childhood author that you, too, were fond of — much fonder of, in fact, than Ann M. Martin’s <em>Baby-Sitters Club</em> books. And your reaction is to reach out to them via Twitter DMs, and have a long conversation about this author, and mull over a future project: what if we could extract dialog from these books uttered by doctors, those adjudicators of the continuum between life and death? What do doctors look like in these books? What do they sound like? How does that compare to the actual experience of being a cancer patient? And this is how you discover that “imperfect” isn’t close to being the word for computational quote attribution. And it’s impossible, but you can’t bring yourself to face giving up, because this is a collaboration you want to make happen somehow, because your internet friend is into it so you’re into it too.</p>
+<p>Imagine seeing the news from this person’s blog that it’s over, the treatments aren’t working, they’re going home to their parents’ house to die. A sunny day out at a baseball game suddenly turns dark. And when the news comes that they have maybe a month left, you light up Slack. What can we do? A month. A month is enough. What about a festschrift? Let’s pull something together so she can see it.</p>
+<p>We didn’t have a month. We didn’t have weeks. I didn’t know Rebecca when I did DH the first time (2004-2017); I met her on the internet when I came back to DH in late 2018.</p>
+<p>Her last blog, “Pitiless Achilles Wept”, <a class="reference external" href="https://shxperienced.blogspot.com/2019/04/">starts with a dump of CareBridge updates</a> in April 2019. Six month after I came back to DH. Not long after I started following her on Twitter. In retrospect, Rebecca was dying the whole time I knew her. Slowly, then quickly at the end.</p>
+<p>We cared about some of the same things. Not just 90’s YA dying-girl books (Lurlene McDaniel FTW), but project management and grad students. She came to DH late in her education; I came to it early. She left Berkeley not long after I arrived. We were both at ACH 2019, but never spoke. We were together on a handful of Princeton-based Zoom calls, when it was already near the end, when my hair was purple and so was her scarf and we laughed about it.</p>
+<p>Rebecca didn’t do the kind of computational text analysis we explore in the Data-Sitters Club. She managed projects, and people, and helped run a center. That work is harder to quantify, harder to point to and say “this, THIS was Rebecca’s contribution to DH” like we do with Stéfan and Scott. But I have nothing but strong words for anyone who dares to even imply that her contribution was any less for not being code or tools.</p>
+<p>If you talk to her colleagues at Princeton, they’ll tell you she was great at what she did. That it made a difference.</p>
+<p>If you talk to anyone who considered her a friend, you’ll also quickly see that what she did, as such, in DH wasn’t the point. It wasn’t about what she did — though God knows we could use more people in the field who care so deeply about helping grad students find a good path for themselves. It was about who she was.</p>
+<p>I’m not the person to <a class="reference external" href="https://matthewlincoln.net/2021/08/15/rebecca-munson.html">tell that story</a>; there are so many more people, from her grad school colleagues to her in-person friends like Maria, and Matt Lincoln, who were her friends in a way where they can tell that story. What can I add here? Except, perhaps, that as a grizzled aging DH person, I can say with some perspective on the matter that Rebecca was special. Her unflinching honesty and forthrightness, her devotion to work she saw as meaningful, her whimsy, her refusal to cede cancer any more ground than she absolutely had to. Your eyebrows fall out due to treatment? If you’re Rebecca, you go get them tattooed right back on and post selfies about how awesome they came out (and, really, they did.)</p>
+<p>Before I knew how close the end was, when I thought maybe it’d be okay, that a treatment would work for her, that Rebecca would make it, I planned to dye my hair back to brown when I started going back to campus regularly. My colorful dresses were one thing to wear to Stanford; blue and purple hair felt like a level of provocation beyond what I dared. Maybe it was safe via Zoom, but walking through those Spanish-style arcades felt like another thing altogether. Those plans went out the window when Rebecca died. I had just re-dyed my hair, making it particularly day-glo blue in back and purple in front, one afternoon when I was having lunch with a friend at a spot near campus. It was the day I heard that Scott had died. Out of nowhere, unprovoked, an old woman walked up to me, gestured towards my hair, and said, “Does THAT wash out?” In my fresh grief and general disorientation around being back on campus, I was befuddled for a moment. And then I answered, “I hope not.”</p>
+<div style="float: right; width: 600px;margin-left: 7px;margin-top: 0px;"><img src="_static/images/dsc13_purple.jpg" alt="A box of purple hair dye and a used container of the dye." /></div>
+Rebecca died in August 2021. It’s been nine months without her, as we write this book. Dying my hair odd colors started out as a first-pandemic-birthday whim: my laptop didn’t yet support virtual backgrounds, but it could do green screens, so I sewed neon-green clothes and dyed my hair to match, in order to be able to make myself mostly-disappear on the screen. Except I discovered that Zoom-background green fades to highlighter-yellow, so I switched to blue. Always thought it’d be cool for my hair to match my eyes. And then I picked up the purple. But after Rebecca’s death, the bathtub hair-dying task has taken on a different weight and meaning. It’s not just a cosmetic ritual, it’s a ritual of remembering. As purple dye ran through my fingers and down the drain tonight, I thought of Rebecca, and how I wished we could have met in person. I imagine what it’d be like to run into her at the next conference, and be up late drinking with her at the hotel bar. I’ll carry her memory with me, in a tangible falling-into-my-eyes kind of way, until it’s time to repeat the ritual in another couple months.
+</div>
+<div class="section" id="this-is-what-a-feminist-looks-like-maria">
+<h3>This is What a Feminist Looks Like (Maria)<a class="headerlink" href="#this-is-what-a-feminist-looks-like-maria" title="Permalink to this headline">#</a></h3>
+<div style="float: left; width: 600px;margin-right: 7px;margin-top: 0px;"><img src="_static/images/dsc13_rebecca1.jpg" alt="Rebecca and Maria at a bar in grad school" /></div> 
+In my first year of grad school, a group of us ordered t-shirts with the phrase “this is what a feminist looks like” emblazoned across the front of them. Rebecca may have even organized the order; I can’t remember now. We were an interdisciplinary bunch of women, brought together by the college system at the University of Oxford. Unlike the undergrads, whose educations take place primarily within one of Oxford’s 40+ colleges and halls, our college affiliation was mostly a housing and social affair; graduate coursework and research is handled at the university department level. But since we lived together, often ate together, and went out together, we quickly developed friendships — our fields of study were incidental, though we loved getting each other to hold forth on our nerddoms of choice. Early modern literature (Rebecca). Medievalisms in children’s culture (me). Comparative theology. Physical geography. Archeological science. Neuroscience. Psychology. Law. Animal sex habits (everyone’s favorite, really). Rebecca and I were friends in this context: not best friends, but friends, part of a group. She lived in the room above mine; we talked shit and Shakespeare and borrowed each other’s clothes, we dissected dates and raged against inequality and hung out in our pajamas.
+<p>Our Victorian red-brick college, Keble, sat close to many of Oxford’s main science buildings at the time and so the graduate community was full of scientists — including several of us, see above. And men. In our incoming year, we estimated that the ratio of men to women at Keble was something around 5:1. I won’t hazard a guess at the racial breakdown but suffice to say it was, like the university in general, a Predominantly White Situation. We were friends with many of those men, laughed with them and made memories with them, and some of those guys remain among my dearest friends today. We had a LOT of fun. But in that first year, suddenly surrounded by deep leather couches and dreaming spires and a startling number of official events that involved port and formal attire, having a group of smart feminist women friends turned out to be essential.</p>
+<div style="float: right; width: 600px;margin-left: 7px;margin-top: 0px;"><img src="_static/images/dsc13_rebecca2.jpg" alt="Rebecca and Maria, dressed up. Rebecca has her arm around Maria." /></div> 
+All of us had dreamed of Oxford, were pinching ourselves to be there, and embarking on the intellectual and personal times of our lives — and that made the institutional sexism (and racism and elitism, though it was the sexism that drew us together first) that we walked into there especially jarring. This was probably doubly true for those of us, like Rebecca and me, who had come from the US, where the discourse was a little further along at the time. Anyone who knew Rebecca knows that she spoke her mind, and was committed to justice with a passion. How many times and for how many reasons did we shout “That is *fucked up*!” as a form of agreement over the course of our friendship? There’s a power in solidarity, in hearing your own suspicions confirmed and echoed by someone you respect. “Fuck that” can become “That can’t continue,” and it’s not far from there to “So what should we do?”
+<p>Frankly, a lot of stuff was fucked up. It was the little things, like being called “scary” or jokingly told to “go iron something” when we called people out for sexist and homophobic language or behavior. The bigger things, like being violently cursed out and called lesbians (as if it were a slur) for not accepting drinks from men at bars, or the months-long campaign to take away the £3 cookie budget for our weekly “Ladies’ Tea” because a group of male peers didn’t like communal funds going to a women-only space. The crushing, impossible things, like the stories we traded (often at those tea breaks) of professors and advisers who sexually harassed and assaulted women students, but who continued in their positions unchecked even when administrators were well-aware of the patterns. Who to avoid, who it was safe to talk to, what to do in case.</p>
+<p><img alt="Maria, Rebecca, and another friend at a bar, laughing." src="_images/dsc13_rebecca3.jpg" /></p>
+<p>Rebecca went as hard for the feminism as she did for the fun, and was as likely to sport her “this is what a feminist looks like” t-shirt around Oxford as a sexy pirate costume at one of the seemingly innumerable “fancy dress” parties. She was frank, proud, and unapologetic of who she was in a way that I found impressive then and I still find impressive today. I was quick to verbally tangle with a peer and up to challenge a professor or institutional leader when I felt it important in context, but my upbringing and personality made me shy to walk around wearing a slogan that could invite controversy. I think my feminist t-shirt mostly made appearances at bedtime and the gym; not Rebecca, who sported hers for years. Maybe she already understood how an unrepentant slogan can be a solidarity-forming “<em>Fuck that</em>!”; and that it takes a critical mass of that kind of discontent to make inequitable norms stop seeming so normal.</p>
+<p>She wasn’t superhuman; in fact she was intensely, vibrantly human, with as many insecurities, fears, and flaws as the rest of us. She was as likely to be giddy in love, high on her achievements, crushed with disappointment, or flattened with exhaustion as anyone, and maybe her openness made her seem even more so. But Rebecca was self-esteeming: she <em>esteemed herself</em>, rightly believed that she deserved good things, and was happy to accept praise where it was given. She moved back to the US for her PhD after completing her MA that year and I continued on at Oxford; we stayed in touch in the sporadic, mostly-digital way that many of us do after distance puts us on divergent life paths from our friends. Since we both did our degrees in English we saw each other a couple times at MLA, but it wasn’t until we both ended up doing DH-related work that we started to see each other more often again.</p>
+<p>She landed at the Center for Digital Humanities at Princeton (CDH), and her colleagues there have <a class="reference external" href="https://cdh.princeton.edu/updates/2021/08/15/rebecca-munson/">written movingly</a> about all that she brought to that center and community. Rebecca was profoundly scholarly and truly believed in work, as one of our close Oxford friends reminded me after reading a draft of this piece.* Even when she was drained for personal, professional, or health-related reasons, she was tireless in her intellectual efforts. Unsurprisingly, her sense of justice infused that work, and she was part of the larger shift in the field towards a critical, self-reflective digital humanities that embraces feminism and rethinks its methods, approaches to data, and outputs according to more inclusive visions of what the humanities can and should be. I had founded the Center for Experimental Humanities at Bard, and we vibed about the wide world of potential that feminist, anti-colonial perspectives and histories could bring to humanities projects. I remember her showing me a <a class="reference external" href="https://cdh.princeton.edu/projects/data-beyond-vision/">CDH textile project</a> that I absolutely fell all over at ACH2019 in Pittsburgh — and the next semester I found a way to integrate a weaving data assignment into a Woman as Cyborg course I taught for EH.</p>
+<div style="float: left; width: 600px;margin-right: 7px;margin-top: 0px;"><img src="_static/images/dsc13_rebecca4.jpg" alt="Rebecca and Maria selfie, making kissy-faces" /></div> 
+By then we’d known of her stage IV diagnosis for some time. We messaged after she found out and sporadically through the years after; we still met up at conferences and got drinks and dinner and barely discussed DH at all. We talked about love and sex and workplace dynamics and TV and old friends. We laughed loudly in public places and took selfies and promised to get together next time. Through all the hope and disappointments, she kept working and living; I of course followed her blog, and like so many of us in the DH community I was awed and moved by her insistence on the unvarnished truth of her own humanity. She deserved respect, due consideration, and a chance — and she knew it. In telling her own story every step of the way, she brought home how much others in her and similar situations deserve these things, too. But she didn’t feel like she had to point to other people’s experiences to be in a position to say “fuck this!” To me, it was a revelation.
+<p>In spring of 2021 one of our Keble friends, a Brit (the one who studied animal sex habits, she still kicks ass) posted on Twitter that the UK’s <a class="reference external" href="https://www.vaginamuseum.co.uk/">Vagina Museum</a> had “Fuck the Patriarchy” jewelry for sale. I clicked, I looked, I was in love. I immediately thought of Rebecca, who still turned up in social media posts in her “this is what a feminist looks like” t-shirt years after I’d forgotten what even happened to mine. I ordered two necklaces, one for me and one for her. They took a while to arrive, and then life happened — hers sat in a pink box on my dresser for months, and between the fact that the continuing pandemic had sharply curtailed my going-out opportunities and the fact that my second child was a very grabby 10-12 months old at the time, I barely wore mine, either. Life is change, is churn, is motion: New York started to open up, and I moved my partner and kids from the Hudson Valley to NYC for a job I’d started virtually. Before one of our last big carloads to the city, I finally cleared my dresser and messaged Rebecca to ask for her address. She gave it to me but told me she’d soon be at her parents’ for a while, so sent me that address too. I grabbed a vintage postcard of a classic Barbie and scrawled something on the back about icons of femininity and how the necklace had reminded me of her, sent my love, and put it with the pink box in a padded envelope that I mailed to her parents’ address just before we drove out of town.</p>
+<p>Three weeks later, one of her friends posted that she’d died. I don’t know whether or not Rebecca saw the necklace, but I hope that she did and it made her smile. After she passed, the Keble women gathered on a group chat — the first time we’d all convened in that way — and then on Zoom, and cried together. Some of us hadn’t spoken to her in years; some were in touch irregularly, like me; one was a best friend to her through it all. We pooled our money and made a donation to her breast cancer charity of choice — we thought about leaving something to Keble in her name (an endowed cookie fund for graduate Womxn’s Tea came under discussion) but we ultimately agreed that Rebecca knew what she wanted and was not shy about saying it. So <a class="reference external" href="https://www.metavivor.org/">METAvivor</a> (Metastatic Breast Cancer Research, Support, and Awareness) it was.</p>
+<div style="float: right; width: 600px;margin-right: 7px;margin-top: 0px;"><img src="_static/images/dsc13_rebecca5.jpg" alt="Maria wearing the 'fuck the patriarchy' necklace" /></div> 
+With her purple hair and passion for justice — justice for all people but also, crucially, *including* herself — Rebecca was one beautiful, much-loved example of what a feminist looks like. I think of her whenever I wear my “fuck the patriarchy” necklace; I still get shy, especially since I’m pushing 40 and most likely to be wearing it to a playground on a weekend these days (Hi, other parents! Hi kids!). But I try to remember how proudly Rebecca displayed her beliefs, and to esteem my own values enough to wear them shining around my neck. And I recall that a middle finger to a system that oppresses people of all genders is both a shout of solidarity to whomever may need to see it that day and a statement of my own worth, and that I deserve that, too.
+<p>Rebecca was a digital humanist, but we are all so much more than the jobs we do, even as all we are inflects our work and vice versa. The outpouring of grief from the DH community at her death was a reflection of how widely her intellect and spirit were felt, both by people who knew her well and by those who encountered her primarily through her work. She and I were friends, and I am deeply grateful for the time we spent together. The things I learned and the people she touched aren’t some silver lining to her loss, though. It’s not alright that she died so young; that shit is <em>fucked up</em>. Sometimes it’s good, and right, to say so. And it can be in those states of shared outrage that we find our people and connect with our best selves.</p>
+<p>* Special thanks to Anbara Khalidi, a best friend to us both, for reading and offering feedback on this piece. Anbara is pictured in the third photo, above, taken in the early years of our friendship.</p>
+</div>
+</div>
+<div class="section" id="conclusion-quinn">
+<h2>Conclusion (Quinn)<a class="headerlink" href="#conclusion-quinn" title="Permalink to this headline">#</a></h2>
+<p>And that’s it. Whether or not you ever met Stéfan, Scott, or Rebecca yourself, what we hope is that you remember them. The stories we’ve shared here, and the stories you may hear from others. We have lost too many people recently. And while I’m usually the one to roll their eyes and insist that “DH is such a new field” is too frequently a cop-out for people who don’t want to face hard realities around things like labor or institutional credit, the fact of the matter is that a lot of how DH came to be what it is lives inside the heads of people who are alive today. (“But only for now,” as the deranged Muppets would note in the musical “Avenue Q”.) DH is people. DH is relationships. DH is tools, but no less is it people, and narratives, and t-shirts that mean so much regardless of whether they’re worn at the gym or every possible occasion.</p>
+<p>We knit together “digital humanities” through these small exchanges and moments of connection, be they in person, in GitHub issues, on Twitter. One of the first times Roopsi and I talked, before the <em>Data-Sitters Club</em>, before any of this, was over the fact that the live TV broadcast of the musical “Rent” changed some of the lyrics that both of us knew by heart.</p>
+<p>And so it seems fitting to end my piece of this book with lyrics from another musical, “Into the Woods”:</p>
+<blockquote>
+<div><p>Sometimes people leave you, halfway through the wood.</p>
+<p>Do not let it grieve you.</p>
+<p>No one leaves for good.</p>
+<p>You are not alone.</p>
+<p>No one is alone.</p>
+</div></blockquote>
+</div>
+<div class="section" id="suggested-citation">
+<h2>Suggested citation<a class="headerlink" href="#suggested-citation" title="Permalink to this headline">#</a></h2>
+<p>Suggested citation: Bessette, Lee Skallerup, Quinn Dombrowski, Maria Sachiko Cecire, and Roopika Risam. “DSC #13: Goodbye, Friends, Goodbye.” <em>The Data-Sitters Club,</em> May 18, 2022. <a class="reference external" href="https://datasittersclub.github.io/site/dsc13.html">https://datasittersclub.github.io/site/dsc13.html</a>.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="dsc12.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">DSC #12: The DSC and the New Programming Language</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="dsc14.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">DSC #14: Hello, DMCA Exemption</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By The Data-Sitters Club<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

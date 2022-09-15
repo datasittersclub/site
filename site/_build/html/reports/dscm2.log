@@ -56,6 +56,6 @@ for filename in sorted(os.listdir(filedirectory)):
 [0m[1;32m     14[0m                 [0;31m#Read the contents of the input file[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
 [1;32m     15[0m                 [0mchaptertext[0m [0;34m=[0m [0mf[0m[0;34m.[0m[0mread[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 
-[0;31mOSError[0m: [Errno 63] File name too long: '016_01_bg_ner_loc_ner_misc_ner_per_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt'
-OSError: [Errno 63] File name too long: '016_01_bg_ner_loc_ner_misc_ner_per_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt'
+[0;31mOSError[0m: [Errno 63] File name too long: '016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt'
+OSError: [Errno 63] File name too long: '016_01_bg_ner_loc_ner_loc_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per_ner_per.txt'
 

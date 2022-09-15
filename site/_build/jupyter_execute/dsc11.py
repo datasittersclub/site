@@ -114,7 +114,7 @@
 # ### Trying Textblob and VADER
 # To get started, let's install Textblob and VADER. (You only have to run this cell the first time you run this code on a particular Python environment.)
 
-# In[ ]:
+# In[1]:
 
 
 #Import the system module to be able to install other libraries
@@ -127,7 +127,7 @@ get_ipython().system('{sys.executable} -m pip install vaderSentiment')
 
 # Next, we import the libraries we need.
 
-# In[1]:
+# In[2]:
 
 
 import os
@@ -143,7 +143,7 @@ import pandas as pd
 
 # Then, we'll put those emphatically positive and negative sentences from above into a list:
 
-# In[5]:
+# In[3]:
 
 
 sentences = ["What I meant was that it was chilling, horrible, disgusting, and the meanest thing in the world -- only I couldn’t say that in front of a little baby.", "Something cold and slimy and disgusting and icky touched my neck and then wriggled beneath the collar of my shirt and down my spine.", "I was expecting some disgusting vegetarian substitute.", "As bad as Saturday night was, Sunday morning was just awful.", "He looked awful, as if he’d been crying for hours.", "Isn’t prejudice awful?", "It’s just that I found out the most terrible thing.", "I felt terrible: terrible about the lie, terrible about how badly I had handled the whole thing.", "Playing Monopoly with anybody can be a slow and torturous experience, but with Charlotte it’s the absolute worst.", "It was her worst baby-sitting experience ever.", "We made an awesome pasta dish, with sun-dried tomatoes and basil.", "The show is going to be awesome.", "You’re a wonderful big sister and a big help to your mommy and daddy.", "Richard is a wonderful stepdad, and Mary Anne is the best.", "When I got to California, I had an absolutely fantastic time.", "And Logan scored a touchdown, which was so fantastic.", "This is the best job in the world.", "She is the best listener and the most loyal friend.", "Suddenly I had a great stepmom, a great stepsister, and a great new house.", "We can get great ice-cream sundaes at Friendly's."]
@@ -151,7 +151,7 @@ sentences = ["What I meant was that it was chilling, horrible, disgusting, and t
 
 # Then we'll create a table using that list, and display the table:
 
-# In[6]:
+# In[4]:
 
 
 sentencesdf = pd.DataFrame(sentences, columns =['sentence'])
@@ -163,7 +163,7 @@ sentencesdf
 
 # We'll add columns with the sentiment scores from both Textblob and VADER, then display the updated table:
 
-# In[7]:
+# In[5]:
 
 
 sentencesdf['tbsentiment'] = sentencesdf['sentence'].apply(lambda sentence: TextBlob(sentence).sentiment[0])
@@ -181,7 +181,7 @@ sentencesdf
 # 
 # TextBlob is sure that “Isn’t prejudice awful?” also deserves a -1, whereas VADER gives it a score of 86% neutral. This brings us into some interesting questions of perspective that I hadn’t necessarily considered as I was grabbing sentences with the word “awful” in them using AntConc (check out DSC #4: AntConc Saves the Day). Prejudice is awful. Even without the word “awful” in the sentence, “prejudice” alone should be a sign that there’s some negativity in this sentence (assuming there’s no negation, like, “I dream of a world without prejudice.”) I’d be inclined to score it negatively. But is the *statement* that prejudice is awful inherently *negative*? Or is it, as VADER evaluates it to be, more of a *neutral* statement about a *negative* thing? What if I try the sentence “I think it’s prejudice.”
 
-# In[5]:
+# In[6]:
 
 
 prejudice = "I think it's prejudice."
@@ -190,7 +190,7 @@ print(blob.sentiment)
 print(vaderanalyzer.polarity_scores(prejudice))
 
 
-# In[6]:
+# In[7]:
 
 
 potato = "The teenagers around here get their own cars (fancy ones) as soon as they’re able to drive."
@@ -217,7 +217,7 @@ print(vaderanalyzer.polarity_scores(potato))
 # 
 # Do you see why I feel squeamish about sentiment analysis? All the pretty visualizations and analysis has those lexicon scores as a foundation. And, frankly, these scores -- when they get added together for a sentence-- give you garbage. Before we get too excited about VADER as the less-smelly garbage, I had to run one last test, as a tribute to Annie Swafford:
 
-# In[7]:
+# In[8]:
 
 
 potato = "Well, it's like a potato."
@@ -239,20 +239,20 @@ print(vaderanalyzer.polarity_scores(potato))
 # 
 # 
 
-# In[8]:
+# In[9]:
 
 
 snobpara1 = ["If there’s one thing I can’t stand, it’s a snob.",  "Well, actually, there are a lot of other things I can’t stand.", "Cabbage, blood, people who chew with their mouths open, and squirrels are a few of them.", "But snobs are way up there on the list."]
 
 
-# In[9]:
+# In[10]:
 
 
 snobpara1df = pd.DataFrame(snobpara1, columns =['sentence'])
 snobpara1df
 
 
-# In[10]:
+# In[11]:
 
 
 snobpara1df['tbsentiment'] = snobpara1df['sentence'].apply(lambda sentence: TextBlob(sentence).sentiment[0])
@@ -272,7 +272,7 @@ snobpara1df
 # 
 # >Anyway, to get back to the snobs — I’m surrounded. They’re everywhere in Watson’s neighborhood. The teenagers around here get their own cars (fancy ones) as soon as they’re able to drive. They spin along with the radios blaring, looking fresh and sophisticated. I am so glad my big brothers, Sam and Charlie, aren’t like that. Charlie can drive now, but the only thing he drives is Mom’s beat-up station wagon. And my brothers and I still go to public school, not to snobby private schools. Guess what most families on our street have: (a) a swimming pool (b) tennis courts (c) a cook named Agnes (d) all of the above. The answer is (d) all of the above.
 
-# In[11]:
+# In[12]:
 
 
 snobpara2 = ["Anyway, to get back to the snobs — I’m surrounded.", "They’re everywhere in Watson’s neighborhood.", "The teenagers around here get their own cars (fancy ones) as soon as they’re able to drive.", "They spin along with the radios blaring, looking fresh and sophisticated.", "I am so glad my big brothers, Sam and Charlie, aren’t like that.", "Charlie can drive now, but the only thing he drives is Mom’s beat-up station wagon.", "And my brothers and I still go to public school, not to snobby private schools.", "Guess what most families on our street have: (a) a swimming pool (b) tennis courts (c) a cook named Agnes (d) all of the above.", "The answer is (d) all of the above."]
@@ -329,7 +329,7 @@ snobpara2df
 # 
 # First, I need to load the extension that lets me run R code in a Python Jupyter notebook.
 
-# In[12]:
+# In[13]:
 
 
 get_ipython().run_line_magic('load_ext', 'rpy2.ipython')
@@ -499,7 +499,7 @@ get_ipython().run_cell_magic('R', '', "setwd('/Users/qad/Documents/dsc_just_the_
 
 # Next, I took the code example in Jockers's [Syuzhet vignette](https://cran.r-project.org/web/packages/syuzhet/vignettes/syuzhet-vignette.html) and adapted it to iterate over all the text files in the directory with the Data-Sitters Club corpus, first outputting the simple visualization of all the sentiment scores.
 
-# In[29]:
+# In[25]:
 
 
 get_ipython().run_cell_magic('R', '', 'library(syuzhet)\n\nfiles <- list.files(\'.\', pattern = "txt")\nfor (file in files) {\nbook <- get_text_as_string(file)\nbooksentences <- get_sentences(book)\n#Other methods are \'syuzhet\', \'bing\', \'afinn\', \'nrc\'\nsyuzhet_vector <- get_sentiment(booksentences, method="syuzhet")\noutputname <- paste(file, "-plotonly.jpg")\njpeg(file=outputname)\nplot(syuzhet_vector, type = "h", main=file, xlab = \'time\', ylab = \'emotion\', col = \'red\')\ndev.off()\n}')
@@ -614,7 +614,7 @@ with open('bsc-sentences.csv', 'w') as out:
 # 
 # <img src='_static/images/dsc11_sentence_scoring.png' alt="Five sets of sentence scores, mostly blue for neutral." />
 # 
-# Was the whole *Baby-Sitters Club* series a whole lot more level-headed than I thought? What point of comparison could I use to investigate this? In DSC #10, [we mentioned YAMS, the Young Adult and Middle-School corpus](https://datasittersclub.github.io/site/dsc10.html#pca-across-series) I’ve been working on. Since then, it’s been renamed YRDL (Young Readers Database of Literature -- pronounced like the megalomaniac turtle who tried to stack his subjects), and my starting point was the *Sweet Valley* series, which I remember being often shelved near the Baby-Sitters Club and similarly dismissed as vacuous books for teenage girls. But unlike the Baby-Sitters Club, it was explicitly soap opera-ish, complete with dramatic cliffhangers that explicitly invited readers to “read on to book \[whatever\]” to learn how whatever shocking situation was resolved. (It’s kinda funny that this rhetorical twist contributed to *Sweet Valley* being dismissed as fundamentally unserious; Katia points out that this soap opera-ish, dramatic cliffhanger method was also Dostoevsky’s for attracting readers to later installments of his serialized novels.) I ran the random-sentence grabber, found 1000 random sentences, and started tagging -- and found my suspicions confirmed, that *Sweet Valley High* seems to be more emotive. 
+# Was the whole *Baby-Sitters Club* series a whole lot more level-headed than I thought? What point of comparison could I use to investigate this? In DSC #10, [we mentioned YAMS, the Young Adult and Middle-School corpus](https://datasittersclub.github.io/site/dsc10.html#pca-across-series) I’ve been working on. Since then, it’s been renamed [YRDL](https://yrdl.org/) (Young Readers Database of Literature -- pronounced like the megalomaniac turtle who tried to stack his subjects), and my starting point was the *Sweet Valley* series, which I remember being often shelved near the Baby-Sitters Club and similarly dismissed as vacuous books for teenage girls. But unlike the Baby-Sitters Club, it was explicitly soap opera-ish, complete with dramatic cliffhangers that explicitly invited readers to “read on to book \[whatever\]” to learn how whatever shocking situation was resolved. (It’s kinda funny that this rhetorical twist contributed to *Sweet Valley* being dismissed as fundamentally unserious; Katia points out that this soap opera-ish, dramatic cliffhanger method was also Dostoevsky’s for attracting readers to later installments of his serialized novels.) I ran the random-sentence grabber, found 1000 random sentences, and started tagging -- and found my suspicions confirmed, that *Sweet Valley High* seems to be more emotive. 
 # 
 # But was that a fair comparison? Realistic fiction with female protagonists that didn’t sell itself as a soap opera for middle-school kids would be a better parallel for the Baby-Sitters Club. So I started pulling other series-- *Sisterhood of the Traveling Pants*, *Allergic To*, *Anastasia*, *Boys vs. Girls*, *Dear Dumb Diary* -- grabbing examples, and tagging them.
 # 
