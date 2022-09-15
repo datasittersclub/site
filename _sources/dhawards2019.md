@@ -1,4 +1,4 @@
-<img src="_static/images/DSCLogo.png" />
+<img src="/site/_static/images/DSCLogo.png" />
 
 # DH Awards 2019 Ad Campaign
 

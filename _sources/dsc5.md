@@ -7,7 +7,7 @@ blurb: 'What are these angled brackets and why are they cluttering up my text?'
 bookseries: regular
 permalink: /dsc5/
 ---
-<img src="_static/images/DSCLogo.png" />
+<img src="/site/_static/images/DSCLogo.png" />
 
 # DSC #5: The DSC and the Impossible TEI Quandaries
 

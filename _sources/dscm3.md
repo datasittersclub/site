@@ -8,7 +8,7 @@ bookseries: mystery
 permalink: /dscm3/
 ---
 
-<img src="_static/images/DSCLogo.png" />
+<img src="/site/_static/images/DSCLogo.png" />
 
 # DSC Multilingual Mystery #3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs
 

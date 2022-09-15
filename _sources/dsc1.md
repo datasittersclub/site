@@ -7,7 +7,7 @@ blurb: 'A colloquial, collaborative guide to computational text analysis for dig
 bookseries: regular
 permalink: /dsc1/
 ---
-<img src="_static/images/DSCLogo.png" />
+<img src="/site/_static/images/DSCLogo.png" />
 
 ## DSC #1 - Quinn's Great idea
 

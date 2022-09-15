@@ -4,7 +4,7 @@ title: covid19
 permalink: /covid19/
 ---
 
-<img src="_static/images/DSCLogo.png" />
+<img src="/site/_static/images/DSCLogo.png" />
 
 # Important Public Health Messages from the Data-Sitters Club about COVID-19
 

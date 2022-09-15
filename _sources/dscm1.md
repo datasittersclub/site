@@ -9,7 +9,7 @@ bookseries: mystery
 permalink: /dscm1/
 ---
 
-<img src="_static/images/DSCLogo.png" />
+<img src="/site/_static/images/DSCLogo.png" />
 
 # DSC Multilingual Mystery #1: Lee and the Missing metadata
 
