@@ -7,10 +7,9 @@ blurb: 'What do you do when your collaborators are acting like kids in a candy s
 bookseries: regular
 permalink: /dsc3/
 ---
-<img src="https://datasittersclub.github.io/site/_static/DSClogo.png" />
-
-# DSC #3: The Truth About Digital Humanities Collaborations (and Textual Variants!)
-
+# DSC \#3: The Truth About Digital Humanities Collaborations (and Textual Variants!)
+```{index} single: *Book Topics ; Collaboration (DSC 3)
+```
 by Maria Sachiko Cecire, January 10, 2020
 
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
@@ -26,8 +25,16 @@ The first message in the thread, titled “Amazing discovery for our next volume
 </div>
 The emails I was reading were about some findings that Quinn had made when comparing the Baby-Sitters Club books she found online, with the more recently released versions we digitized through scanning and optical character recognition (OCR). These findings showed that the supposedly same books often had a lot of differences. Katia, another DSC member, helped build these two collections of Baby-Sitters Club books, and you can read about the process of corpus-building and some of the discrepancies in [*Katia and the Phantom Corpus*](dsc2). Now everyone in the email thread was gushing about how interesting it was to see content changes that seemed to reflect updated expectations, norms, and day-to-day realities: for example, swapping twenty-first century technologies and fashions for the 80s and 90s ones in the original books. Think “styled” hair instead of “permed” hair, “player” instead of “VCR,” and amounts of money removed or updated to account for inflation. (Granted, the lack of metadata for the versions Quinn found online mean we can’t know conclusively that they’re the originals, or even older than the more recent versions we digitized, but it sure looked that way.) I was happy to see the team so enthusiastic and united, but the problem was…the findings weren’t surprising to me at all.
 
+```{index} single: Children's literature ; social norms
+```
+
+```{index} single: Brothers' Grimm
+```
+
 Children’s publishing has a long history of revising texts to keep up with changing social norms, especially since books for kids have always been seen as instructional (even didactic and, some claim, “civilizing”), as well as entertaining. And since children’s books are overwhelmingly written, published, and bought by adults – most of whom care a LOT about what kids are reading and thinking about – there have always been adult eyeballs on children’s literature and calls to take out or change “inappropriate” material. One old-school version of this is the [differences](https://www.neh.gov/humanities/2015/marchapril/feature/how-the-grimm-brothers-saved-the-fairy-tale) between the first edition of the Brothers Grimm's _Children's and Household Tales in 1812_ and the "definitive" version in 1857, where the stories were dramatically edited to make them more "suitable" (less violent, sexual, and pagan) for children. They did this even though the original project was supposed to be a folk record of deep-rooted national tales, not necessarily an influence on modern youth! But from the late eighteenth century on, if you say any cultural object is “for children,” it automatically sets off all kinds of appropriateness radars.
 
+```{index} single: Charlie and the Chocolate Factory
+```
 
 <div style="float: left; width: 175px;margin-right: 7px;margin-top: 0px;">
 <img src="_static/images/oompaloompa1.jpg" alt="Original illustrations of Oompa Loompas from Roald Dahl's Charlie and the Chocolate Factory" />
@@ -35,8 +42,12 @@ Children’s publishing has a long history of revising texts to keep up with cha
 
 Another children’s lit classic that has gotten this treatment is Roald Dahl’s _Charlie and the Chocolate Factory_; there were some (honestly, reaaaally necessary) [revisions](https://groovyhistory.com/oompa-loompas-the-original-ones) in the 1970s to deal with the fact that the Oompa Loompas were described in the ‘60s original as "amiable black pygmies" from "the very deepest and darkest part of the African jungle where no white man had been before." Ew. (More on these kind of changes at children’s literature scholar [Phil Nel’s blog](http://www.philnel.com/2010/09/19/censoring-ideology/), from which the Oompa Loompa illustrations were taken.)
 
+```{index} single: Children's literature ; cultural adaptations
+```
 But the changes Quinn was seeing didn’t seem to be at the level of social lessons (unless you mean the lesson that the perm craze is better off left in the past) – they were more about making the books, as the kids say, “relatable” to modern readers. That felt pretty normal given what I knew about children’s literature too. Books for young people have been commercial products basically since they became A Thing in the mid- to late eighteenth century. Ever heard of the prestigious Newbery Medal for children’s literature? [John Newbery](https://en.wikipedia.org/wiki/John_Newbery), the “Father of Children’s Literature,” was the English publisher and merchant who got the whole shebang started…by printing and selling books. Children’s presses are always looking for ways to make the same books more exciting for new markets – this results in things like the [Americanizations](https://www.hp-lexicon.org/2001/08/25/differences-between-british-and-us-versions-of-ps/) when _Harry Potter and the Philosopher's Stone_ was first sold as _Harry Potter and the Sorcerer's Stone_ in the US (they stopped doing this after Book 1 though, because everyone knows a [Weasley jumper](https://harrypotter.fandom.com/wiki/Weasley_jumper) is way cozier than a Weasley sweater). Children’s publishing also relies a lot more on nostalgia sales than adult books do, since all those grown-up buyers of children’s literature often want to pass down their old faves to the next generation. So it’s not uncommon for presses to re-release classics with hipper cover art and contemporary updates to the text itself. This happened with bestselling British author [Enid Blyton’s books](https://www.theguardian.com/books/2010/jul/23/enid-blyton-famous-five-makeover) in 2010 and (a later google search revealed)…[_The Baby-Sitters Club_ books](https://www.nytimes.com/2009/12/31/books/31babysitters.html) in the same year. And most of the changes the team was discussing were the kinds of ones the BSC publisher, Scholastic, had openly announced they planned to make! (Interestingly, they [reversed the changes](https://www.theguardian.com/books/2016/sep/16/famous-five-go-back-to-original-language-after-update-flops) to the Blyton books in 2016 due to lack of interest; and we found that the _BSC_ changes petered out after the first 10 volumes or so.)
 
+```{index} single: Collaboration; awkward conversations
+```
 So there I was, a font of possibly unwanted information. I didn't want to rain on everyone’s parade: one of the awesome things about computational text analysis is supposed to be its ability to reveal information that humans wouldn’t be able to detect on their own or, in some cases, even think to ask about. And everyone else was fired up about what the digital comparisons had shown. So it felt like a big party pooper move – and not an awesome collaborator move – to respond by saying that the changes were not really a major discovery after all.
 
 Meanwhile, after a ton of techie back-and-forth over the last few weeks that I couldn’t add much to, and as the least text-analysis-savvy member of the DSC, I was already feeling like my input wasn’t as valuable as other members of the team. I mean, the Center and program I founded at Bard is called “Experimental Humanities” instead of “Digital Humanities” because our crew tends to be more interested in the questions we ask, people we work with, and the methods we use in the humanities than anything digital per se (though digital projects do happen!). [Was I about to be too much “yack” in a moment of excited “hack”?](https://dhdebates.gc.cuny.edu/read/untitled/section/a5a2c3f4-65ca-4257-a8bb-6618d635c49f#ch07) Maybe I had missed some key element of what make these findings thrilling because of my lack of experience with corpus-building? Shouldn’t feminist collaboration always be supportive instead of contradicting, like a scholarly version of the [“yes, and” game](https://www.dramanotebook.com/drama-games/yes-and/)? I sat there, doubting myself.
@@ -57,6 +68,8 @@ I definitely buried the lede, hoping that the rest of the DSC would figure out t
 
 It wasn’t until our call a few weeks later that the whole truth came out: I have way less of a filter in person! And at first it was kind of awkward, probably because the group didn’t understand why I was the only person unsure about the value of diving into these changes as a whole, dedicated DSC post. But before long, people got interested in the awesome tradition of [theorizing power relations in childhood studies and its implications for children’s literature](https://www.representingchildhood.pitt.edu/rose.html), and I was thinking about how the process itself of finding these differences might be useful to others. The rest of the DSC also asked questions about my own anxious experience of feeling like the least “digital” humanist in the group, and we agreed that it would be nice to make that part of the post, too. After a good talk (Katia described some of it at the end of her [last post](dsc2)), we turned our plans for DSC #3 into what it is now: a post about collaboration and disciplinary knowledge in digital humanities projects, with a bonus section about corpus comparison.
 
+```{index} single: Collaboration; yes-and
+```
 As most digital humanities people now agree, there is no meaningful “hacking” without deep, well-theorized “yacking” -- but too often, collaborators in digital humanities projects can feel less relevant if they aren’t the ones writing code. At the same time, the labor that goes into preparing and running a digital project (from building the corpus to cleaning data to running text comparisons) should be valued and honored as intellectual work too. It’s important for digital humanities teams to foreground this “both-and” (“yes, and”?) approach, from forming research groups that meaningfully include both digital and disciplinary experts to making sure that each member knows their contributions are essential to the project. This can be especially tough to do when your team is spread around the world, like ours is, and only communicates by email and occasional calls. But it’s worth the time and effort it takes to talk through the conflicts, ambiguities, and surprising overlaps.
 
 This isn’t the end for our discrepancy data – just because having differences between original and re-released books is not that uncommon in children’s literature doesn’t mean that the differences can’t tell us interesting things about the books and their shifting cultural contexts. Check out this sample of differences from the great spreadsheet Quinn made!
@@ -69,6 +82,11 @@ For now, I’ll leave you with Quinn’s notes on how to computationally work ou
 
 
 ## Dear Reader
+```{index} single: *Book Topics ; Finding textual differences (DSC 3 Dear Reader)
+```
+```{index} single: Finding textual differences
+```
+
 > Dear Reader,
 
 > In DSC #3, Maria gave us a reality check about what initially seemed like a remarkable discovery: differences between the (presumably older) versions of the corpus I initially found online, and the recent re-releases that we scanned and OCR’d. While these updates -- ranging from punctuation conventions, to inflation, to fashion trends -- are unsurprising in children’s literature, such changes may point to changes of greater interest in other kinds of texts.
@@ -76,6 +94,12 @@ For now, I’ll leave you with Quinn’s notes on how to computationally work ou
 > Identifying differences between two versions of a text is a problem just asking for computational methods. You don’t have to identify as a digital humanist to not want to spend time comparing texts manually. Text collation is one most intuitively understandable computational text analysis methods, at least at first glance: “how are these texts different?” For that reason, it’s been an appealing target for digital humanities tool development, to make it easier for anyone to do text collation without having to learn how to write code. Text collation also has applications in commercial software. Have you ever looked at the version history for a Google Doc? It uses text collation to identify additions and deletions: that’s easier than monitoring every change as you make it.
 
 > There’s a few different ways to do it -- and more that I haven’t included here -- but this should be enough to get you started with text collation.
+
+```{index} single: Textual differences ; Diff Match Patch
+```
+
+```{index} single: Tools ; Diff Match Patch
+```
 
 > **What I actually used: Diff Match Patch**
 
@@ -91,9 +115,15 @@ For now, I’ll leave you with Quinn’s notes on how to computationally work ou
 
 ![Screenshot of Track Changes](_static/images/dsc3_trackchanges.png)
 
+```{index} single: Textual differences ; Juxta
+```
+
+```{index} single: Tools ; Juxta
+```
+
 > **What I tried: Juxta**
 
-> When I first told the other data-sitters that there were changes in the text, the tool that immediately leaped to mind for a couple of us was Juxta. Juxta made a big splash in the late 2000’s -- initially as an installable Java app, and then as a web-based version, [Juxta Commons](juxtacommons.org). Juxta Commons is still “in beta” about a decade later, but has [detailed documentation](http://juxtacommons.org/guide), still works, and you can even create new accounts (as I discovered, since my old account is associated with an email from two jobs ago).
+> When I first told the other data-sitters that there were changes in the text, the tool that immediately leaped to mind for a couple of us was Juxta. Juxta made a big splash in the late 2000’s -- initially as an installable Java app, and then as a web-based version, [Juxta Commons](https://web.archive.org/web/20190216185901/http://juxtacommons.org/). Juxta Commons is still “in beta” about a decade later, but has [detailed documentation](https://web.archive.org/web/20190309214858/juxtacommons.org/guide), still works, and you can even create new accounts (as I discovered, since my old account is associated with an email from two jobs ago).
 
 > A web-based digital humanities tool that still works a decade later, even as the associated blog is six years out-of-date, is nothing short of a miracle. There’s just one catch:
 
@@ -124,6 +154,12 @@ For now, I’ll leave you with Quinn’s notes on how to computationally work ou
 > For better performance, you could try running the [Juxta Commons source code](https://github.com/performant-software/juxta-service) on your own laptop, but it’s probably more straightforward to [install the desktop software](http://www.juxtasoftware.org/download/). I found it a little counterintuitive -- though to be fair, I’m the type who usually leaps into software without reading the documentation first. The [user manual](https://github.com/performant-software/juxta-desktop/wiki/UserManual) is actually helpful for working through the process of comparing texts.
 
 > ![Screenshot of Juxta Desktop](_static/images/dsc3_juxtadesktop.png)
+
+```{index} single: Textual differences; CollateX
+```
+
+```{index} single: Tools; CollateX
+```
 
 > **Do It With Code: CollateX**
 

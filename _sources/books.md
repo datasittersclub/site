@@ -1,8 +1,10 @@
-<img src="https://datasittersclub.github.io/site/_static/DSClogo.png" />
+<img src="_static/images/DSCLogo.png" />
 
 # The Data-Sitters Club Books
 
 Check out our main series and our <a href="#mystery">multilingual mystery series</a>!
+
+Feeling lost? Check out our **[brand-new index](genindex)** of book topics, tools, mistakes, and more!
 
 ## Main series
 
@@ -26,6 +28,10 @@ Check out our main series and our <a href="#mystery">multilingual mystery series
 | [![DSC #13: Goodbye Friends, Goodbye](_static/images/bookcovers/dsc13_cover.jpg)](dsc13/) | [![DSC #14: Hello, DMCA Exemption](_static/images/bookcovers/dsc14_cover.jpg)](dsc14/) | [![DSC #15: Little Miss California Stereotype... and the BY Times](_static/images/bookcovers/dsc15_cover.jpg)](dsc15/) |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                                                            [DSC #13](dsc13/)                                                             |  [DSC #14](dsc14/)                                                                                                                               |  [DSC #15](dsc15/)                                                                                                                                                     |
+
+| [![DSC #16: Anastasia's Secret Language](_static/images/bookcovers/dsc16_cover.jpg)](dsc16/) | ![Coming soon](_static/images/bookcovers/blankcover.png) | ![Coming soon](_static/images/bookcovers/blankcover.png) |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|                                                            [DSC #16](dsc16/)                                                             |  []()                                                                                                                               |  []()                                                                                                                                                     |
 
 
 <a name="mystery" />

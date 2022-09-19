@@ -7,13 +7,13 @@ blurb: 'Copyright law makes life harder for the DSC! Can fair use save the day?'
 bookseries: regular
 permalink: /dsc7
 ---
-<img src="https://datasittersclub.github.io/site/_static/DSClogo.png" />
+
+# DSC \#7: The DSC and Mean Copyright Law
+```{index} single: *Book Topics ; Copyright & fair use (DSC 7)
+```
 <div style="float: right; width: 200px;margin-left: 7px;margin-top: 0px;">
 <img src="_images/bookcovers/dsc7_cover.jpg" alt="DSC 7 book cover" />
 </div>
-
-# DSC #7: The DSC and Mean Copyright Law
-
 by Quinn Dombrowski and Matthew Sag, September 22, 2020
 
 
@@ -23,13 +23,17 @@ It all started with a comment on the draft of [DSC #5: The DSC and the Impossibl
 
 That's how we do things in the Data-Sitters Club: we each write things, and we all edit together. (What's the Data-Sitters Club, you may be wondering? You can get all caught up in [Chapter 2](https://datasittersclub.github.io/site/chapter-2/).) This time I was pretty confident that our use of a couple panels from the graphic novels was legit, and didn't need any special annotation or justification. But I could see where Katia was coming from. Ever since I started the Data-Sitters Club, copyright has been an issue that's haunted us like the ghost of Old Ben Brewer in Karen Brewer's attic. We thought we understood it well enough to stay out of trouble, but it still made us uneasy.
 
+```{index} single: Copyright; Building LLDTM workshop
+```
 Luckily, I was on my way to [Building LLTDM (Legal Literacies for Text Data Mining)](https://buildinglltdm.org/), an NEH Institute on copyright, licensing, ethics, and that whole swarm of issues that can make you lose sleep when working on a computational text analysis project!
-
+```{index} single: Copyright; Sonny Bono Copyright Extension Act
+```
 I've been a copyright nerd since college (in the 2000's), counting down the years until 2019, when the evil spell of the Sonny Bono Copyright Extension Act would be broken and new things would enter the public domain. And I was there at the Internet Archive, wearing a dress made of newly public-domain images from 1924, when that day came.
-
 
 ![Quinn in 1924 public domain dress](_static/images/quinn_publicdomain.jpg)
 
+```{index} single: Guest Data-Sitters; Matthew Sag
+```
 In the spirit of the Data-Sitters Club, I'll start from the beginning. But first I need to introduce a special guest data-sitter for this book: Matthew Sag. Matthew is a law professor at Loyola University Chicago School of Law and a leading expert on copyright law and fair use. Matthew has friendly blue eyes, a diamond shaped face, and an Australian accent smoothed over from 20 years living in the United States. He had blonde floppy hair like John Denver when he was a kid, but now he looks more like a clean shaven Jude Law.
 
 Let's face it: being a copyright nerd helps when it comes to doing DH, but when I got to talking with Matt about our copyright uncertainties while I was at the Building LLTDM workshop and he offered to help out, I started jumping up and down with joy. When he even read some of the Baby-Sitters Club books to get up to speed on our subject matter, I knew I'd found the right law professor for the job!
@@ -37,11 +41,14 @@ Let's face it: being a copyright nerd helps when it comes to doing DH, but when 
 So let's dive in together, me and Matt.
 
 ## What exactly is copyright?
-
+```{index} single: Copyright; as set of exclusive rights
+```
 Most people, if asked casually, would probably say they know what copyright is. But then there are moments when cracks begin to show. If you read fanfic, for example, you'll likely come across disclaimers like "no copyright infringement intended" -- almost like some legalistic twist on "no offense intended".
 
 Here's the deal: *anyone* who makes almost any type of creative work immediately has a set of *exclusive* rights pertaining to that work.
 
+```{index} single: Copyright; facts aren't copyrightable
+```
 The "creative" part is important: you can't copyright facts. Fan wikis (like the one we scraped for metadata about the BSC books in [DSC Multilingual Mystery #3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs](https://datasittersclub.github.io/site/dscm3/)) depend on this: there's nothing copyrightable about the fact that Ann M. Martin wrote Kristy's Great Idea in 1986, it was narrated by a teenage girl named Kristy Thomas, and she refers to her friends Claudia Kishi, Mary Anne Spier, and Stacey McGill. So all that information, plus a plot synopsis, the ISBN number, publication date, and various other details can be included on fan wiki pages. But the fan wiki can't post the full text of the book, because *that's* the creative work *itself*.
 
 Similarly, a simple list of ingredients and preparation instructions isn't copyrightable, but the further the recipe skews towards personal narrative, the more likely it is to be eligible for copyright. But even then, copyright would protect only the narrative parts (the original expression) and people would still be free to copy the fact and instruction parts.
@@ -49,7 +56,8 @@ Similarly, a simple list of ingredients and preparation instructions isn't copyr
 ## As a creator, you have exclusive rights
 
 We think of copyright most often in the context of formally published works (e.g. books, songs, movies), but it applies equally to, for instance, the first scene of a play that you scrawled in the margins of a course reading while you’re bored in class.
-
+```{index} single: Copyright; specific rights for creators
+```
 Copyright does not give the creator total control over every conceivable use of a work. It gives creators the right to:
 Reproduce (i.e., making copies of) the work: if your roommate finds your class notes and types up the script without your permission, they’ve violated your copyright.*
 Create derivative works based on the work (i.e., to alter, remix, or build upon the work): if your roommate reads the script and is inspired, and goes on to write the rest of the play without your permission, they’ve violated your copyright.\*
@@ -61,7 +69,8 @@ Create derivative works based on the work (i.e., to alter, remix, or build upon 
 \* Matt made me add “subject to any applicable defenses.” Of course.
 
 ## Copyright feels like it lasts forever less one day
-
+```{index} single: Copyright; duration
+```
 How long do these exclusive rights last? Well, if you're Alexander Hamilton, working under the [Copyright Act of 1790 in the United States](https://en.wikipedia.org/wiki/Copyright_Act_of_1790), you get 14 years -- and if you're still alive at the end of those 14 years (sorry, Hamilton) you can apply for one copyright extension of an additional 14 years. After that, your work is in the *public domain*, meaning that it's unencumbered by copyright and people can use it however they like, without even having to credit you. (Like me, printing all those 1924 magazine covers on fabric and sewing them into a dress.)
 
 In the US in 2020, copyright applies to anything created after 1978 for the lifetime of the creator -- plus 70 years. (For things created before 1978, it can get a little messy, but is similarly a very long time.) So, maybe your roommate's grandchildren or great-grandchildren could do whatever they want with your script, depending on when you die. (The EU has the same copyright term, 70 years after the death of the creator, and in Mexico, it's life plus 100 years! Katia gets off easy in Canada, with a term of just 50 years after the death of the creator.)
@@ -71,7 +80,8 @@ If you're doing the math and realizing that this means that something you scribb
 ## The limits of copyright
 
 A work being in copyright means that there's very little you can legally *just do with no questions asked*.
-
+```{index} single: Copyright; implications for people with disabilities
+```
 "I would say 'limits what' because saying 'very little' only increases the struggle to get people to embrace the full scope of their fair use rights," Matt interjected. "If we are in the world of pure personal non-public uses, there is *a lot* you can do without further permission. Non-public performances, silent reading, partial copying for critical or educational purposes..."
 
 I rolled my eyes. "Silent reading? I mean, duh, you can read silently, but is that even worth counting? That's like, if my kids complain they're bored, and I'm like, 'well, you can breathe air'. It's not even worth enumerating!"
@@ -87,7 +97,8 @@ Yikes! I hadn't thought about the intersection of copyright and accessibility. I
 Anyhow, on the other hand, work being in the public domain means you can *legally do basically anything* with no questions asked. But what about the space in the middle, where the legality depends on the details of what, exactly, you're doing, why you're doing it, and how? Under US copyright law, we're getting into the gray zone of fair use.
 
 ## What's fair use?
-
+```{index} single: Fair use; fair use vs. fair dealing
+```
 The UK (where my fellow Data-Sitter Anouk Lang lives) and former British colonies (e.g. Canada, Australia, New Zealand, India, Singapore) have as part of their copyright law something called "fair dealing" -- which enumerates a specific and finite list of uses of in-copyright works that **do not** count as copyright infringement. What, exactly, makes it onto that list varies from country to country, but common examples include:
 
 * Research (like the Data-Sitters Club)
@@ -99,15 +110,23 @@ The UK (where my fellow Data-Sitter Anouk Lang lives) and former British colonie
 
 To make it as fair dealing, a use has to fit one of these purposes and be seen as “fair.” So the list is a best-case scenario: it shows what might be allowed, if it meets a general test of fairness as the courts understand it. 
 
+```{index} single: Fair use; as an open list
+```
 In the US, instead of “fair dealing” we’ve got something called “fair use” Fair use is similar to fair dealing, but with a twist: the list of examples that can count as “fair use” is, crucially, not finite. The Copyright Act lists a few illustrative fair uses: criticism, comment, news reporting, teaching, scholarship, and research. But the good news is that the list is not closed—things that don’t fit neatly into those categories can still qualify as fair use. The bad news is that, just like with fair dealing, the list is no guarantee either. This is frustrating from the perspective of clarity (there’s no definitive list of things that “count,” so a lot is left up to interpretation and judgment), but it makes fair use broader and more flexible. 
 
 Fair use is not black-and-white: instead, any particular use that would appear to violate one of the exclusive rights provided to the author by copyright can be evaluated for “fairness” along the following axes…
 
+```{index} single: Fair use; as a standard
+```
 Now it was Matt’s turn to roll his eyes. “Okay. Enough of this ‘fair use is a gray zone’ stuff. True enough, fair use is not black-and-white like the rule in the US Constitution that says that you have to be at least 35 years old to be President. There is not much in law that is mechanical and clear cut like that. Fair use is more of a standard, like the part of the Constitution that bans ‘cruel and unusual punishment.’ What you have to understand is that even when the law starts off as a vague standard, rules and principles emerge from the cases that make it much clearer over time. I don’t like the constant refrain that fair use is a gray zone because it ignores the fact that there are many many uses that are clearly fair use, we just don’t talk about them much because they are so uncontroversial.”
 
 I was taken aback. I’d heard the “gray zone” framing so often that I’d assumed that was an uncontroversial shorthand for the situation with fair use. It was even kind of reassuring: the unavoidable ambiguity meant that what might look like a “no” could actually be a “maybe” -- even if it also meant that there also was never quite a “yes”, and it all came down to telling a good story. But what Matt was saying was that some stories had been told and validated enough times that they had become truth. I wanted to know more.
 
 ## The factors of fair use
+```{index} single: Fair use ; factors
+```
+```{index} seealso: Copyright ; fair use
+```
 Like a lot of copyright law, the fair use doctrine began with judges filling in the blank spaces in the vaguely worded early copyright acts in England and then in the United States. In 1976, the US Congress finally got around to recognizing fair use in the text of the Copyright Act, in Section 107. That section was meant to restate and continue the common law tradition of fair use, but it also included four “factors” to be considered in applying the doctrine. 
 
 Those factors are:
@@ -121,7 +140,8 @@ Those factors are:
 4. the effect of the use upon the potential market for or value of the copyrighted work -- is your use making it less likely that people will purchase the copyrighted work, or access it in another way that would result in the copyright holder getting paid (e.g. music streaming service vs. pirated mp3)?
 
 ## “Promoting progress”
-
+```{index} single: Copyright; promoting progress
+```
 “There is SO MUCH CONFUSION about the four fair use factors. Let me see if I can help,” said Matt. “I don’t think people can understand fair use without trying to wrap their heads around the question of ‘what is copyright really for?’ Luckily, I think I have some answers. Copyright is meant to ‘promote progress’ (it’s there in the Constitution), but the question is how?”
 
 “Yeah, there’s a lot you could problematize there…” I mused.
@@ -130,6 +150,8 @@ Those factors are:
 
 “Huh. Okay, but how does that interact with fair use?” I asked.
 
+```{index} single: Fair use ; transformative uses
+```
 “By and large, the things that courts have recognized as fair use involve some technical act of copying, but in a context where this copying is really unlikely to interfere with the author's interest in being the one who gets to communicate her original expression to the public. Such uses are usually seen as ‘transformative’ in that they are for an entirely different purpose, usually a purpose like parody of the original that the original can’t fulfill. A transformative purpose is really important to establishing fair use under the first factor mentioned above, but also under the fourth factor because uses that are really different to the original and couldn’t be fulfilled by the original obviously don’t pose much threat of disturbing the market for the original.”
 
 “Gotcha. So, since Ann M. Martin and associated ghostwriters were creating original expressions specifically with the goal of entertaining and (as our children’s literature scholar Data-Sitter Maria would note) educating children, rather than explicating computational text analysis methods and researching their corpus of texts, that helps make the case for a fair use argument for any excerpts of those original expressions the Data-Sitters Club publishes in the course of our work?”
@@ -140,23 +162,37 @@ I had to interject. "I mean, that **would** be really cool... but yeah, I can se
 
 "Right," Matt agreed. "But the DSC is using the original Baby-Sitters Club books for an entirely different purpose. It's easy to recognize the use of small extracts embedded within a broader comment on/analysis of the original work as fair use. And copying entire works into a database for computational analysis is actually an even easier case, because original expression goes in one end and fairly abstract and uncopyrightable metadata comes out the other end. Again, this use is really different so we could call it transformative if you like, but more than that, it doesn't actually communicate any of the original expression to the public."
 
+```{index} single: Fair use; leeway for education
+```
 "But this only works because we're researchers, and publishing our 'books' online for free, right? If we decided to write The Data-Sitters Club Computational Text Analysis Textbook and didn't publish it open-access, but somehow it was a huge hit and we made some money, would we be running a risk if we had included parts of our Baby-Sitters Club book corpus in that textbook?"
 
 "You're asking if fair use has to be non-commercial, or educational, or for research, or some other socially laudable activity? No. Sometimes these things help make the case (and there is generally a bit of extra latitude for educational uses), but no, it's not required. A use does not need to be noncommercial or for research purposes to be transformative or to be fair use. In fact, some of the most important transformative use cases are about commercial uses."
 
 "Ooh, like what?" I asked with inordinate interest. (Sorry, copyright nerd.)
 
+```{index} single: Fair use ; legitimacy of parody
+```
+
 "Well, in 1994 the Supreme Court overruled the Sixth Circuit Court of Appeals when it said that [2 Live Crew's parody of Roy Orbison's rock ballad 'Oh, Pretty Woman'](https://www.youtube.com/watch?v=rMqnPVU207M) couldn't be fair use because it was commercial. That's [the case](https://scholar.google.com/scholar_case?case=16686162998040575773&q=campbell+v+acuff+rose+music+inc&hl=en&as_sdt=400006) that really cemented the concept of transformative use. All the software reverse engineering cases, and the Internet search engine cases are about commercial users doing commercial things. We don't have much non-profit news reporting in this country, so every time a newspaper successfully relies on fair use, that's commercial fair use too! So non-commercial use is not required at all, but sometimes the fact that a use is non-commercial can make it easier to see that the purpose is fundamentally different to the work's original purpose and that it does not interfere with the author's interest in her original expression."
 
 "In any case, we should limit ourselves to short extracts from the source material, right?"
+
+```{index} single: Fair use ; reasonableness of amount used
+```
 
 "Yes and no. The amount used has to be reasonable in light of the purpose and not so much that it will damage the market for the original work. What's reasonable will depend on the circumstances. It's easy to see why if you think about how the third factor feeds back into the first factor and the fourth factor."
 
 Is it a weird lawyer thing to be able to keep different numbered points straight in your head? What he was getting at was that we were worried about how "the amount/proportion of the copyrighted work" fed back into "the purpose and character of use" and "the effect on the market."
 
+```{index} single: Fair use ; effect on the market
+```
+
 "If I republish A's entire work but I call it a parody, then (1) you might begin to seriously question whether it was genuinely a parody after all and (2) you might conclude, that even if it was, it still might interfere with the market for A's original expression because the parody communicated the whole work. Using too much might harm your fair use case just because you used too much, but the real damage comes from the implications that overuse has for "the purpose and character of use" and "the effect on the market". How much is enough versus too much depends a lot on the context. I'll come back to this."
 
 My copyright nerd inclinations were getting the better of me. "Wait a sec, we've talked about three of the four factors. But what's the deal with 'the nature of the copyrighted work'?"
+
+```{index} single: Fair use ; nature of copyrighted work
+```
 
 "Yeah, I skipped that because when people talk about the second factor they are either explaining why it doesn't really matter---the Supreme Court said that 'the nature of the work' does not 'help much in separating the fair use sheep from the infringing goats'---, or they are trying to draw distinctions between published and unpublished works, or between creative and informational works that just don't make any sense," admitted Matt. "Putting sheep and goats to one side, the notion that the nature of the work is an independent factor in which some works are more deserving of copyright protection than others is just bone-headed. The nature of the work is not really a factor at all, it is just an important part of the factual context in which courts must apply the substantive considerations of purpose (factor one), proportionality (factor three), and market effect (factor four)."
 
@@ -174,6 +210,9 @@ My copyright nerd inclinations were getting the better of me. "Wait a sec, we've
 
 It was pretty clear now that when I assured Katia that including a couple panels from a graphic novel in our TEI book was fine on the basis of fair use, I was right. (Phew!) But let’s work through it:
 
+```{index} single: Fair use ; purpose and character of use
+```
+
 ### Purpose and character of use
 The Data-Sitters Club is a non-commercial activity with educational and research aims. 
 
@@ -185,17 +224,29 @@ He had a point. It was *quite literally* transformative, because I’d combined 
 
 It’s true, it was hard to imagine how someone would get back to the original work with its intended purpose, from what we’ve put together. As if a parent would point their kid to the Data-Sitters Club and say, “Here, sweetie, enjoy some stories about intrepid girl baby-sitters, just don’t mind all the other text mixed in about digital humanities.” Not happening.
 
+```{index} single: Fair use ; nature of copyrighted work
+```
 ### Nature of the copyrighted work
+
 Matt already dispelled this one. It’s “bone-headed” as a separate factor. 
 
 (Fun fact: “bone-headed” appears exactly once in the Baby-Sitters Club corpus, in #107 *Mind Your Own Business, Kristy!*: “Hey, once in awhile we all do something really bone-headed. Even the great Kristy Thomas.”)
 
+```{index} single: Fair use ; amount and substantiality of the portion used
+```
 ### Amount and substantiality of the portion used 
+
 We used less than a full page from the graphic novel: just a couple of panels. You couldn’t even figure out the basic plot based on those panels. Which demonstrates that we really did have an entirely different purpose in mind (transformative use ✅) and also leads directly to ...
 
+```{index} single: Fair use ; effect of use on potential market
+```
 ### Effect of the use upon the potential market/value of the copyrighted work
 It’s inconceivable that anyone would say, after seeing those couple panels in our TEI book, “Cool, that saves me from having to buy this graphic novel!” Those couple panels are no substitute for reading the graphic novel, for people who would want to read it already. If anything, I can imagine the work of the Data-Sitters Club -- which combines tutorials for DH methods with the Baby-Sitters Club corpus -- potentially creating a market of readers for the Baby-Sitters Club series (in its various manifestations) who would not have otherwise considered it. You know, readers like our guest data-sitter, Matt!
 
+```{index} single: Fair use ; implications of licensing
+```
+```{index} single: Copyright ; licensing
+```
 ## The truth about licensing
 So, we’re good, right? There’s no problem for the Data-Sitters Club to include a few graphic novel panels in our books, and we should be free to use the Baby-Sitters Club novels for our research. Thanks, fair use doctrine!
 
@@ -219,9 +270,16 @@ REALLY NOW, did you send the email?
 
 Okay, moving on.
 
+```{index} seealso: DMCA ; Copyright
+```
+```{index} single: DMCA
+```
 ## DMCA as Buzzkill
 
 Licensed corpora aren't the only complication you can face when applying computational methods to text corpora. The copyright experts at the Building LLTDM Institute were fairly confident that copying for text mining purposes would be fair use, even if the material was copied from somewhere a little bit sketchy, like SciHub.This is different from EU copyright law, which requires you to acquire your corpus by legal means. If you're in the US, you can freely avail yourself of torrents, Russian pirate websites, or mysterious USB drives full of in-copyright literary texts that happen to be left on your porch. As long as you didn't participate in or encourage the original illegal copying, there should be no problem, no questions asked.
+
+```{index} single: DMCA ; cracking ebooks
+```
 
 But of course, there's one crucial exception: You. Cannot. Legally. Crack. Ebooks. (This again differs from the EU, where it will soon be legal to crack ebooks for legitimate computational research purposes. The EU passed a new directive on copyright law in 2019 that comes into effect in 2021.) I cannot begin to tell you how much easier my life would be if it were legal to crack ebooks. For starters, [DSC #2: Katia and the Phantom Corpus](https://datasittersclub.github.io/site/dsc2/) would've been a lot shorter: we could've just included some instructions for how to crack ebooks, instead of all that prose about how to scan and OCR paper copies of books (Not to mention, it would have saved us a lot of time not to have to order, wait for the mail, scan, OCR, and clean 225 texts in the BSC corpus!).
 
@@ -229,14 +287,25 @@ Even if your use of those cracked ebooks is totally legit under fair use, it rem
 
 But wait! It gets more complicated!
 
+```{index} single: DMCA ; exemption petition process
+```
 Every three years, the Librarian of Congress gets to issue specific exemptions from the DMCA. These exemptions only last three years, so if it's not renewed during the next period for issuing exemptions... it goes back to being illegal. And if you find any tutorials about how to circumvent access control technologies, you have to check the date it's posted, the most recent Librarian of Congress review period, and today's date, all to figure out if it's still legal. The whole system is, legit, a complete mess, but here's the [list of the 2018 exemptions](https://library.osu.edu/site/copyright/2019/03/20/2018-dmca-section-1201-exemptions-announced/) that should be applicable still in 2020.
 
 Anyhow, another one of these rulemaking events will happen in 2021. And the organizers of the "Building LLTDM" NEH-funded workshop I attended include folks associated with the [Samuelson Law, Technology & Public Policy Clinic](https://www.law.berkeley.edu/experiential/clinics/samuelson-law-technology-public-policy-clinic/) at UC Berkeley, who are filing an amicus brief to support a new exemption from the DMCA that would enable legal ebook cracking for research purposes. Fingers crossed!
 
+```{index} single: Fair use ; acting boldly
+```
 ## Acting boldly
 <img src="_static/images/dsc07_quinn_buildinglltdm.jpg" alt="Quinn with Building LLTDM logo COVID-19 mask" height="600px"/>
 
 So this brings us back to the Building LLTDM workshop where I met Matt. The biggest take-away point for me was that the standard advice on copyright doled out by libraries (sometimes with backing from the university’s general counsel, whose job is to keep the university out of hot water, not figure out a way to make your project possible) really tends to be conservative, even when it’s not transparently so. Getting the copyright door slammed in your face is an invitation to dig deeper, because it can’t possibly be that simple. But the “fair use is a gray area” dance is just plausible enough to believe. “It’s complicated” is too often short for “It’s too complicated for you to understand and you don’t want to risk making a mistake.” But talking to Matt helped me see the other side of it: “It’s complicated enough that what might look like a smooth surface of prohibition at first glance actually has grooves and wrinkles where you can get a handhold for doing more things than you might imagine, in a legally defensible way.”
+
+```{index} single: Graphic novels ; shareability of TEI annotations
+```
+
+```{index} single: Fair use ; DSC case study with TEI annotations
+```
+
 
 This got me thinking. I’d spent a ton of time transcribing the dialogue and sound effects from the Baby-Sitters Club graphic novels -- not just in English, but also in French. It wasn’t just a plain-text transcript, even: I’d put in the time to mark the speaker of each piece of dialogue. And when Lee did her sample of TEI markup, she took it even further by describing the visuals of the graphic novels themselves. 
 
@@ -329,6 +398,9 @@ Imagine, for instance, you were looking at every reference to Stacey’s diabete
 And it wasn’t only the courts. Katia was also dubious. “From a research standpoint, what’s the point of omitting chapters, even if you mark it? It would skew your results!”
 
 Guess that’s a no-go on the legal **and** humanities research fronts.
+```{index} single: Copyright ; evolving
+```
+
 
 ## A non-conclusion
 

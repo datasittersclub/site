@@ -29,3 +29,7 @@ Need some fun? We've got it right here! We put together this ad campaign for the
 ![Vote is still open](_static/images/dhawards2019/dsc_vote_still_open.jpg)
 
 Have we convinced you? Go [vote in the DH Awards 2019 now](http://dhawards.org/dhawards2019/voting/)!
+
+```python
+
+```

@@ -6,17 +6,15 @@ coverart: 'dsc12_cover.jpg'
 bookseries: regular
 permalink: /dsc12
 ---
-<img src="https://datasittersclub.github.io/site/_images/DSCLogo.png" />
+# DSC \#12: The DSC and the New Programming Language
+```{index} single: *Book Topics ; Learning to code (DSC 12)
+```
 <div style="float: right; width: 200px;margin-left: 7px;margin-top: 0px;">
 <img src="_images/bookcovers/dsc12_cover.jpg" alt="DSC 12 book cover" />
 </div>
-
-# DSC #12: The DSC and the New Programming Language
-
 by Katherine Bowers, Quinn Dombrowski, and Roopika Risam
 
 November 2, 2021
-
 
 We need to talk about coding.
 
@@ -32,9 +30,16 @@ What's the difference between a programming language, a library / package, and a
 
 ### Quinn
 
+
 I spent 15 years "doing DH" -- and even got hired for my dream job, supporting non-English DH at Stanford -- before I meaningfully learned to code.
 
+```{index} single: Learning to code; via XSLT
+```
+
 Sure, one of the very first technical things I learned in becoming a DH person was XSLT (thanks, David Birnbaum!) in 2006, but "learn some XSLT to generate some meaningful output from the XML you've painstakingly marked up" isn't usually what people mean when they say you should "learn to code". (Not familiar with XML, XSLT, or TEI? Check out [DSC #5: The DSC and the Impossible TEI Quandaries](https://datasittersclub.github.io/site/dsc5.html).)
+
+```{index} single: Learning to code; bad Python classes
+```
 
 Many times, I had tried to follow that clichéd "learn to code" advice. I took Python in library school at UIUC in 2008! I got nothing at all out of it -- granted, the course was taught by a grad student who confessed on the first day that she only knew the older programming language Perl, which operates using a very different kind of logic. The Python textbook for that class felt like one of the most insulting things I'd ever encountered:
 
@@ -52,6 +57,9 @@ During my six years of working in the central Research IT group at UC Berkeley, 
 
 Only after I was hired in the Division of Literatures, Cultures, and Languages, and in the Library, at Stanford University in 2018 was I actually -- finally -- in a position where I both actually needed to learn to code, and had the time and space to do that.
 
+```{index} single: Learning to code; like learning a human language
+```
+
 What I learned (am learning?) is Python. My 2009 textbook couldn’t have been more wrong. Python could not be further from magic. Programming languages are more like real, human languages than we often give them credit for. If you’ve ever been serious about studying a language (whatever that looks like -- whether that’s maintaining a major Duolingo streak or majoring in a language in college), you’ll have some idea about what I’m talking about. Learning a programming language takes time, practice, but most of all, it takes use. You’ll only actually get somewhere with a language if you use it. And given all the competing demands of life, you’ll only use it if you have a compelling reason. 
 
 At first, using it sucks. You’re confronted, over and over, with your own ineptitude. Not only can you not say what you want to say, you can’t even say something vaguely approximating what’s in your head. You look things up in dictionaries, you awkwardly kludge together nouns and verbs. With human languages, at least, assuming a sympathetic listener, you can thoroughly mangle half of the grammar and still generally be understood. Programming languages are less generous; they’ll throw an error and simply refuse to run if you stray very far in your syntax. So you struggle. You look things up. You try again. You force yourself to stop copying and pasting, and start re-typing it for practice. And after doing that enough times, one day you’re able to write some of the code without consulting things you’ve written already. And then someday you realize that when you Google how to do specific things, the info you find on StackOverflow might not be something you could’ve come up with off the top of your head, but it basically makes sense.
@@ -60,10 +68,11 @@ But you can only get there by practicing. And you’ll only practice if it’s w
 
 ### Roopsi
 
+```{index} single: Learning to code; via BASIC
+```
 Somewhere in the late 1980s, as hunched over an Apple IIe as an eight-year old could hunch, I dutifully typed in a sequence of letters and numbers that---voila!---could deduce how old someone was by entering the year of their birth. Our next act was to type in a string of commands to make the "turtle" (protip: it looked nothing like a turtle) create lines on the screen. [REPEAT 10 [REPEAT 5 [FD 2 RT 3] RT 20] Woo. Lines on the screen. 
 
 ![The dubious turtle drawing lines on the screen](_static/images/dsc12_logo.gif)
-
 
 Not sure who had the bright idea to teach BASIC and Logo to elementary school students who would much rather be playing *Oregon Trail* (the 8 bit version, thank you very much) but that was a thing. In the early 1990s, my parents gave me a Mac LC that became my prized possession. They weren't the kind to give extravagant gifts, so clearly this was a ploy to position me for an inevitable future as a South Asian in STEM. Naturally, they were thrilled when I used it to play *Oregon Trail* (*Oregon Trail Deluxe*, to be exact---I'd leveled up in the world) and *Where in the World is Carmen Sandiego*? To counteract the stultifying effects of such recreation, I was forced to play *The Castle of Dr. Brain*, because science.
 
@@ -71,35 +80,63 @@ Not sure who had the bright idea to teach BASIC and Logo to elementary school st
 
 By the mid-1990s, the free floppy (curiously, they weren't the large floppy kind but the small, hard kind) disks advertising America Online started arriving in the mail, and I discovered that the Mac LC didn't have a modem, which was a tragedy. So, I asked my cousin, a wannabe teen hacker (didn't we all have that cousin?), how to access this magical portal of America Online and was introduced to the world of PCs, Warez, AOHell, and at least 15 other '90s cyberfelonies (the statute of limitations have run out by now, right?).
 
+```{index} single: Learning to code; messing around with operating systems
+```
+
 My leap from the comfortable world of Macs to the land of PCs was cushioned by the introduction of Windows 95, and after roughly 90 million hours and 75 installation floppy (i.e. not floppy) disks later, I had turned my father's work computer into my new toy. I certainly enjoyed breaking Windows 95 over and over by screwing around with the operating system, though I did not enjoy the long, disk-filled reinstallations. But I greatly preferred talking to strangers on the internet (if you were on the SPINOnline AOL chatroom in the mid-90s, we were probably friends), being angsty and misunderstood, making websites (Geocities-style), and occasionally foraying into Dreamweaver and Flash when I was feeling adventurous. To my mother's dismay, none of this was setting me up for a Future in STEM™. (Astute observers will note that it absolutely did set me up for a Future in DH™, which largely consists of talking to strangers on the internet, being angsty and misunderstood, and making websites. Probably the occasional cybermisdemeanor too.)
 
 Despite my comfort and familiarity with computers and front-end web development, the backend was the place where I broke things, reinstalled operating systems or applications, and started again. Never again had I experienced my childhood successes at deducing age or instructing a sham turtle to make lines. But that was totally fine---I had my internet strangers and my websites. When I first started doing what would eventually be called "digital humanities" as a graduate assistant at Georgetown's Center for New Designs in Learning and Technology in the mid-2000s, I had enough comfort and facility to do my job, which didn't involve coding. But when my research turned to digital humanities during my doctoral work, it was right smack in the middle of the debate about whether one had to be able to code to be a digital humanist. I couldn't; therefore, I was a fraud.
 
+```{index} single: Learning to code; Miriam Posner's blog post on coding
+```
+
 When Miriam Posner's blog post, ["Some Things to Think About Before You Exhort Everyone to Code,"](https://miriamposner.com/blog/some-things-to-think-about-before-you-exhort-everyone-to-code/) came out, I found solace in her arguments about how certain people, from certain demographics, were never socialized to learn how to code. That's right! I was a woman of color and not socialized to code and therefore I couldn't do it, didn't need to do it, and everything was fine. (Conveniently forgetting that, in fact, my parents had bought me a computer, ostensibly to prepare me for my great South Asian Future in STEM™.) I became a righteous defender of the non-coders. I embraced out-of-the-box tools. People trying to make us code? Bigots, all of them.
+
+```{index} single: Learning to code; via Jekyll
+```
 
 And then, something happened. First, in the mid-2010s, Alex Gil decided that I would be an ideal experiment for his goal of convincing people to join the world of minimal computing. During a whiskey-fueled bender that lasted until 6am one Saturday night, he told me I would be learning how to use Jekyll, the static-site generator. An hour later, I knew how to work a command line, how to create a Jekyll site, and how to use Markdown. Then, in the Summer of 2018, a number of friends and I undertook the project *[Torn Apart/Separados](https://xpmethod.columbia.edu/torn-apart/volume/1/)*, a series of data visualizations responding to the Trump Administration's family separation policy for migrants at the U.S.-Mexico border. Since our site was built in Jekyll, my familiarity with it, along with my comfort in the command line meant that I could make my content contributions without pestering my teammates. However, the coding was being done by Moacir P. de Sá Pereira, so I didn't have to worry about that. Later, we undertook a [second volume](https://xpmethod.columbia.edu/torn-apart/volume/2/) of the project, in which I took the lead on developing concepts for our data visualizations. We'd been joined by an expert coder who wanted to use their skills to add layers of beautiful complexity to the visualizations---and then they got busy with other things and could not work with us. We had two options: 1) we could scale back our plans to create visualizations within the scope of having one expert coder or 2) it was all hands on deck and I, the ardent defender of not-coding, would, gulp, have to learn how to code. Being reasonable people who know our limitations.... we chose the latter.
 
+```{index} single: Learning to code; the need for a good reason
+```
+
 I bought a hoodie. I stocked up on energy drinks. I watched every Marvel movie. I was becoming a code-bro. It turned out, there was nothing preventing me from learning how to code---except a good reason to put aside other work and learn. In my head, in order to code you had to have done a degree in computer science or a coding bootcamp, where all the code was downloaded into your head and just waiting for you to execute it. I didn't realize that it was a creative and iterative process, a collaborative problem solving process, where if you learn the fundamentals of computing, figure out how to use Stack Overflow, read enough free tutorials, and occasionally phone a friend, you can figure it out. Who knew? Now I do.
+
+```{index} single: Learning to code; coding opens possibilities
+```
 
 Having learned how to code in JavaScript, I've been able to make relatively easy leaps to Python when the situation requires it. But, more importantly, being able to code has opened up a new world of possibilities, for new levels of control that I can have over my data and over data visualization that I'm now implementing in a project on [W.E.B. Du Bois](http://www.roopikarisam.com/global-du-bois/). I am free from the constraints I was encountering with my Neatline prototype, and this "non-coder" has built a backend for a progressive webapp using Node.js, Babel, and Webpack. A few years ago, I didn't even know what those words meant. I still use out-of-the-box tools when the situation calls for it, like for workshops on data visualization, working with students, and more recently when I chose to build a WordPress page (ugh) rather than a Jekyll site to make life easier for a group of collaborators. But the difference is, I now have choices.
 
 ### Katia
 
+```{index} single: Learning to code; in high school via Business Computer Programming
+```
 Like Roopsi, I always preferred Oregon Trail to that turtle, but nevertheless, when I was in high school in the 90s, I signed up for a class called "Business Computer Programming" because it sounded "useful." I had always been good at math and I had taught myself HTML a year or two before so I could build Geocities websites with my friends, and I thought, well, why not. In the class, we learned database programming with Microsoft Access and something called Visual Basic. I was pretty good at it, but I didn't really understand the point of it. How did any of this relate to business? Business also seemed kind of vague. But all of this was part of this equally vague to me adult world where people did things with computers in professional ways.
 
 <div style="float: right; width: 200px;margin-left: 7px;margin-top: 0px;"><img src="_static/images/dsc12_katia_button.jpg" alt="Katia's C++ I can hack it button" /></div>
 
+```{index} single: Learning to code; via CS 101
+```
 When I went away to university, I signed up for computer classes. I started by taking CS 101, where we learned C++. CS 101 was kind of fun. It was doing things with math and code and making cute games. I was not especially good at it, but I liked it. I even signed up to be an undergrad teaching assistant for it so I could do it again. I was an undergrad TA for the university equivalent of my high school Visual Basic class, CS 110, too. And I took more computing classes. I learned PerlScript. And Java. And I thought, maybe I could even get a degree in this. I started doing the sequence to do a degree... but as the programming classes got more advanced and as I struggled to keep up, I realized that the parts of programming I liked were by far in the minority to the parts of it that I just wasn't good at. The way the classes were taught was antithetical to actually learning something so hands-on as programming for me. Hardly anyone had a laptop in the late 90s and early 2000s, so we all sat in large lecture halls with hundreds of other students watching the professor lecture to us from slides about how to do code while taking handwritten notes in our notebooks. Then, because our own late 90s computers were too slow to actually run the compilers in most cases, we would have to check in for a timed slot at a computer lab to do the homework. Also, everyone else in these classes seemed to have a clear vision of why they were doing this or how it could be useful, and it just didn't seem all that useful to me. Like, I could see that they were becoming programmers, but how you get from doing these cutesy games we were doing where triangles moved around to doing something useful was a mystery.
 
 Then I went away to intensive Russian language summer school, got back and took a grad level Russian poetry class, studied abroad in St Petersburg, and the rest kind of wrote itself. I quit computer science. I did a Russian degree and kept on going... until now I find myself a Russian lit professor with an unhealthy interest in narrative form and genre. But, as I have been learning more about the ways that digital humanities text analysis methods can help address research questions I have, I find myself coming back to programming.
 
 At first this was just thinking about ways machines could read text. Some Dostoevsky scholar friends and I did a couple of Twitter projects where we "mined" (not using a machine) Dostoevsky novels for dialogue that we could turn into tweets to create a first-person Twitter version of each novel (you can read about one of these [here](https://blogs.ubc.ca/cp150/digital-outreach/rodiontweets/)). This process of "tweet mining" required intensively close reading and we were inspired to think of other ways that the digital could help us better understand the text. I discovered Voyant Tools, and then TEI, and then my friend Kate Holland and I launched [a project called "Digital Dostoevsky."](https://digitaldostoevsky.com/) We planned to create a TEI corpus of Dostoevsky's texts. But we were not so much interested in the TEI as we were in what to do with the TEI. We wanted to use it to answer research questions. And here we began to have to learn programming languages.
 
+```{index} single: Learning to code; via XML and TEI
+```
+
 Tagging a novel using TEI requires some use of XML. And so we learned some basic XML. And I mean, really basic. Our team of two Dostoevsky profs (Kate and me) and three grad students is all pretty new to all of this. And I have definitely forgotten everything I learned 20+ years ago when I struggled with C++. But we were figuring out XML and our XML file was compiling with no errors and we were feeling pretty good. Then, in order to do something with the XML, we took a class at DHSI from past guest Data-Sitter and TEI aficionado Elisa Beshero Bondar called "Processing XML and TEI into What?" where we learned XPath, XQuery, and XSLT. The class was great, but it was challenging for our team. It was really maybe just a step or two beyond where we were.
 
 During the DHSI class, which was conducted on Zoom, I was fielding a lot of questions from other Dostoevsky team members in our private Slack about how to connect our experience with XML with these new ways of using it. We had already learned really basic XML and we had done some HTML, so we had done a little programming. But we hadn't encountered a programming language that required functions to be written before. The XML we had been writing was entirely tied to TEI and identifying elements of our text. We hadn't thought through the logic of programming languages, other than to make sure our bracketed expressions were always closed. But what we took away from this course was a strong sense that each language had its own grammar. You had to follow the specific language rules of the X-family of languages to do XPath, XQuery, and XSLT. And when you mixed in other languages, like RegEx or HTML, you had to follow their rules for the parts where you were including them.
 
+```{index} single: Learning to code; Python at DHSI
+```
+
 Team Dostoevsky valiantly completed our first DHSI course, and then we started week 2. For week 2 of DHSI, we had signed up for a course called "Programming for Humanists," which turned out to be a 20-hour deep dive into Python. Taking this class, like the first DHSI class, revealed some things about programming languages that I had not anticipated, but that I think any humanist getting into DH and wondering about where to get started with coding should know. The class was really at a good level for us. It started with the command line, got into the basics of coding Python, and then introduced a couple things you could do with Python ([to learn about my adventure with Python and sentiment analysis in the class, check out DSC #11](https://datasittersclub.github.io/site/dsc11.html)). Everyone on Team Dostoevsky was following really well. But what I realized, fielding questions in our private Slack during the class, is that, just as we hadn't really considered programming languages to have a grammar like Russian (a language we all know way better than XML, *ahem*), we hadn't thought through a kind of universal logic of programming languages.
+
+```{index} single: Learning to code; similarities & differences among languages
+```
 
 If you think about Tolstoy's famous opening line, you could say that "All programming languages are alike; each programming language is unique in its own way." The C++ that I learned at university was really, really different from something like XPath, which was, in turn, really really different from Python. That is, it looked different and its expressions were different. But the basic logic of coding was present in all of these. You had to declare your variables as objects to use them. You had to do things in a logical sequence so that the compiler would know to do x before y. You had to make sure your loops had a stopping point or your computer would crash. This logic of programming languages becomes intuitive when you learn a couple of them, but for beginning programmers learning their first language, it isn't in place yet. I was able to switch easily from week 1 to week 2 of DHSI because I had that background from high school and university that I thought I had forgotten, but the other members of Team Dostoevsky, encountering a new programming language for the first time, and then a second one in a really quick time span, were figuring this out as they went.
 
@@ -114,8 +151,13 @@ Remember how in DSC #10 I wrote about how working with R when you only know Pyth
 But before I tell you about that, I should probably start with a few words on Python.
 
 ### Danger Noodle Club
+```{index} single: Learning to code; Danger Noodle Club
+```
 
 In the Before-Times, I ran something I called “Danger Noodle Club”, after one of many internet memes / nicknames for snakes. In theory it was a Python co-working/co-learning group; in practice, half the time it was a group of DH folks strategizing about ways to get things done that didn’t require busting out code. Nonetheless, it was helpful to have a place to share the things I was learning, and get help debugging some of the workflows I was trying to figure out how to translate into code.
+
+```{index} single: DH Twitter ; as a source of memories
+```
 
 Do you ever have trouble viscerally summoning up the memories of what day-to-day Old Normal used to be like? I do. And the early stages of when I started actually learning Python are on the other side of that gulf. As we’ve talked about in DSC #8, DH Twitter is a thing. It’s where I often go for help with my coding problems, and I try to pay it forward (especially with multilingual stuff) where I can. But I also use it when I’m trying to work through stuff, even when I don’t need help as such, and I can reconstruct some of the process through old tweets:
 
@@ -126,6 +168,12 @@ Do you ever have trouble viscerally summoning up the memories of what day-to-day
 ![Quinn's tweet from April 2020: Jupyter has informed me that the most recent notebook was opened a month ago... yup, sounds about right. Hello again, Python. I've missed you.](_static/images/dsc12_miss_python.png)
 
 ![Quinn's tweet from April 2020: Friday night frustration: in the last year I put a lot of work into getting better at Python, and after about 12 weeks of disuse (first teaching, and now this) it's already painfully rusty. Small problem in the grand scheme of things. But annoying nonetheless.](_static/images/dsc12_python_rusty.png)
+
+```{index} single: Covid ; post-vaccine optimism
+```
+
+```{index} single: Learning to code; reaching conversational fluency
+```
 
 From where I sit now -- fortunate to be double-vaccinated and boostered, and maybe days away from my older kids getting their first COVID shots -- Python feels comfortable. Conversational. Even more conversational the way I write it, which is to say, without structuring it as a set of functions. Instead, I write all my code in Jupyter notebooks as a series of commands to be carried out in sequence. I reuse some of my code between projects, if I need to do the same thing over again, but through copying and pasting (or retyping) and modifying. I still struggle with writing functions, turning a specific step in my workflow-du-jour into a more abstract thing that could be applied to any input that meets a specified set of requirements. Even though I can now claim some ability to write code -- that thing that was always lacking in my performance evaluations-- I still sometimes hear my engineer ex-boss's voice in my head, ranting about those humanists who think they can code, but they just write "spaghetti code" and none of it is properly architected and it's all a mess of dubious value. Sometimes I even [stumble across those same arguments being made in DH circles](https://digitalhumanitiesnot.wordpress.com/2021/10/06/programming-fetishism/). I don't think it's so black-and-white, though. Do I have any business architecting scalable software? I do not! But I also have neither the background knowledge nor practical skills to bake large-scale desserts, and I'm not going to beat myself up over that, either. Just because a specific technical implementation of a particular method wouldn't scale up well doesn't mean it's invalid when applied to a smaller problem. I can't bake a cake for your 100-person wedding, but I can make my kid really happy on his birthday with a little cake mix and a little Googling.
 
@@ -139,17 +187,29 @@ But it turned out I was wrong: for some things in the R universe, they've invent
 
 I started trying to learn R the way one often starts learning a language, human or otherwise. I acquired some books.
 
+```{index} single: Learning to code; Humanities Data in R
+```
+
 My first stop was *Humanities Data in R*, by Taylor Arnold and Lauren Tilton. I had humanities data! It was novel-shaped. But I should’ve been a better close-reader here: the first sentence in the book’s blurb reads as follows: “​This pioneering book teaches readers to use R within four core analytical areas applicable to the Humanities: networks, text, geospatial data, and images.” Okay, yes, it mentions “text” as one of the four areas. But my interest in networks, geospatial data, and images is much more limited -- not least because I don’t have a lot of that kind of data, at least, not compared to my mountains of novels. And if this book teaches R with the goal of segueing into each of those areas, that’s a sign that it’s more general than I’m looking for. Because, to be honest, I’m not actually looking to “learn R”, even to the (far from “fluent”) extent that I “know Python”. I just want to be less confused when confronted with the computational text analysis code that Mark writes. (Mark Algee-Hewitt is the Director of the Stanford Literary Lab and our Associate Data-Sitter. If I’m getting code from him, odds are it’s going to be in R.)
 
 And, as I should have suspected, this book didn’t really work for me. After a chapter on installing R, it set about demonstrating R for calculations that were at first way too easy (like how to add 1+2), but quickly became way too confusing (logical vectors). I seriously struggled to connect any of this to *anything I wanted to do with R*, which is more of a challenge common to programming textbooks than a particular flaw with this one. Please do check out this book if you actually want to learn R!
 
+```{index} single: Learning to code; problem with learn-to-code books
+```
+
 I don’t envy programming language textbook authors, whose readers may be coming from all kinds of backgrounds, with many different goals. There’s no way for books like these to be everything for everyone, but the stakes aren’t trivial: if someone tries a programming language book like this, and walks away frustrated, they may (incorrectly!) conclude that they’re the problem, that programming is inherently over their head, and not that the pedagogical style and focus wasn’t a good match for them. I mean, to this day, I have never gotten all the way through any kind of “intro to Python” book/course/whatever. But I still successfully use Python every week, if not every day. If you’re struggling to get through some kind of pedagogical material for learning to code, especially if that material doesn’t focus on what you want to use the programming language for, put it aside. Try something else. The problem isn’t you.
+
+```{index} single: Learning to code; Text Analysis with R for Students of Literature
+```
 
 For round two, I went back to another book that I tried years ago when it first came out, but back then I couldn’t make any sense of it. That book, *Text Analysis with R for Students of Literature*, was co-authored by Rosamond Thalken and Matt Jockers, the latter of whom also created the [Syuzhet package for sentiment analysis that we talked about in DSC #11](https://datasittersclub.github.io/site/dsc11.html#the-syuzhet-incident). The second edition came out in 2020, and it incorporates a set of packages known as the “tidyverse”; we’ll talk a little more about that later in this DSC book, as part of our survey of DH Twitter.
 
 With the benefit of some Python already under my belt, this book worked pretty well for me. I was a little uninspired by all the *Moby Dick* (Herman **Meh**-ville living up to his name), but since it’s important for the data to be redistributable, I guess I can forgive it not being as fun as Baby-Sitters Club novels. And admittedly, it does seem to be hard to completely get away from arithmetic in the earliest stages of programming textbooks, but at least the reference was fleeting before the book into stuff that was more relatable.
 
 And I have to say, even working my way through the first four or five chapters transformed the gibberish of [Mark's Typicality code](https://datasittersclub.github.io/site/dsc10.html#running-typicality) (written in R) into something I could actually make sense of. Those [line-by-line comments on the R code in DSC #10](https://datasittersclub.github.io/site/dsc10.html#the-typicality-function)? I wrote almost all of them myself, after going through the first few chapters of *Text Analysis with R for Student of Literature*, though Mark corrected a couple of my misinterpretations.
+
+```{index} single: Learning to code; R feels different than Python
+```
 
 But I must also confess that I don't really like R. And the more R I learn, the more squeamish I get.
 
@@ -172,6 +232,9 @@ When you learn languages -- human or programming -- some of them feel good, and 
 I don't think I like R. And I don't think that's just because I'm more proficient with Python. It's not that I'm aggravated that I can't turn what I want to do into R code -- whatever, I'm getting pretty okay at turning my desires into Python code, and it's not like you get bonus DH points for writing code in one language versus another. But I. Do. Not. Like. Writing. R. Those one-liners, like graph(whatever), make me uneasy rather than enthusiastic. I'm like Dr. McCoy, who [hates the transporter](https://memory-alpha.fandom.com/wiki/Transporter_phobia); to paraphrase him, "I signed up to do computational text analysis, not have my text scattered back and forth across packages that do weird things with one-liners by this programming language."
 
 I'm glad I'm getting to the point where I can start to make sense of other people's R code, and implement it a little bit myself when there's an R-only package I need. But I don't think  it’s a bandwagon I’ll be jumping on anytime soon.
+
+```{index} single: Code ; packages, libraries, programming languages
+```
 
 ### Sneakers, shoelaces, and code
 
@@ -209,6 +272,12 @@ All of which is to say, even though there’s packages for Python where there’
 
 ### Surveying DH Twitter
 
+```{index} single: DH Twitter; code survey
+```
+
+```{index} single: Code; DH Twitter survey
+```
+
 We’re not shy about the Data-Sitters Club being an *opinionated* project. We pour our emotions, our struggles -- and, yes, our opinions -- into these books. But when it comes to coding languages for computational text analysis, we don’t want you to just take our word for it. So in July 2021, we threw together a short survey about programming languages for DH computational text analysis, and shared it (and re-shared it) on Twitter. 
 
 Here’s what we found out from the 64 responses.
@@ -241,6 +310,9 @@ The survey also asked what people liked and disliked about each language, regard
 
 (If you don't know Python or R yet, don't worry if the details below don't make a lot of sense. The tl;dr is that both languages have their strengths and weaknesses.)
 
+```{index} single: Python vs R according to DH Twitter
+```
+
 #### Python's strengths
 Across the programming language preference spectrum, people appreciate the community, libraries, and tutorials available for Python, especially NLP libraries where "new stuff [is] implemented there first". (We talked about this a little in DSC #11: The DSC and the Sentiment Snobs.) I'm not the only one to feel like you can easily find the answers to your Python problems online; someone else noted "basically all my problems have been solved on [Stack Overflow](https://stackoverflow.com/questions/tagged/python)".
 
@@ -265,6 +337,9 @@ Similarly, the weaknesses identified for R are the inverse of Python’s strengt
 
 ### Conclusion
 Do you need to learn to code? I dunno, you tell me! Do you actually have a problem where there’s no other practical way to solve it? Or can you get the answers you need with a little bit of Microsoft Excel? If you want to level up, maybe what you need is a browser plug-in for web scraping and OpenRefine for data wrangling. Just because you could do those things using a programming language doesn’t mean you have to… or even that you should. Data-wrangling skills are valuable, in and out of academia -- but learning to code is not a prerequisite. And honestly? Don’t let the drum beat of “YOU SHOULD LEARN TO CODE” get into your head. Because if you’re a humanities scholar, odds are that you don’t actually want to “learn to code” as such. Not really. What you might actually want is to be able to do things you couldn’t otherwise do -- and that doesn’t necessarily involve coding. The process of actually learning to code is stressful, frustrating, and time-consuming. It can be worth it if you’re getting something you want out of it (being able to do a concrete thing that you weren’t able to do before)... but quite another if you’re doing it out of a sense of pressure, guilt, or insecurity. “Learning to code” is a straight-up miserable path to walk down if you’re doing it mostly because you feel like you have to in order to be a “real digital humanist”. There are so many other things you could put your time and effort towards, like improving your project management, people management, project budgeting, or even paleography skills!
+
+```{index} single: Code ; choosing a programming language
+```
 
 #### Choosing a programming language
 If you do reach the point where you've concluded that learning to code is the best path for being able to do what you want to be able to do, how do you pick which language to learn?
@@ -366,8 +441,8 @@ I teach R and Python (& a couple of other programming languages) in my courses, 
 An excellent reflection on coding and DH! My own coding journey started in 2011 (ignoring an abandoned attempt at Perl and some BASIC dabbling in my youth) was Ruby -> R -> Python (with ventures into JavaScript and C land when fancy viz or speed are of the essence). I'm thoroughly a Python partisan these days, but I've never been fully satisfied with viz options. Matplotlib works but feels very dated. More recently I've been experimenting with plotly, but sometimes shoehorning my data into it can be a hassle. I kind of wonder if I'd be more of an R partisan if I hadn't left before the advent of the tidyverse. But I made the switch because I was doing all of my text cleaning in Python and then analysis in R, and I just needed a simpler workflow. At the time R was not great with Chinese. But the key to getting programming to stick for me was simply finding a problem that required I learn. I bailed on Perl because I didn't really have a goal. Once I had a question I wanted answered, the rest fell into place. Well, that and having the flexibility that comes with early dissertation work (and having an advisor who looked the other way for the six month trail-by-fire in which I banged my head against the wall trying to figure out the basics)
 
 
-
-
+```{index} single: LaTeX
+```
 [^*]: No shade meant towards LaTeX (which, heads-up, is pronounced **LAH**-tek) as such: if your scholarship regularly involves complex formulas, syntax trees for linguistics, or other gnarly layout things, you've got to learn it, and it's a game-changer for publishing that kind of work! But as we've been saying across multiple books now, technology is social. It's not just the tech, it's the context. LaTeX has a distinctive and immediately-recognizable look. It's also ubiquitous in some of the "harder" technical fields adjacent to and intersecting with DH. So in practice, it can end up being like Esprit:
     ![90's ad for Esprit with teenagers with solid colored sweatshirts with ESPRIT written on them](_static/images/dsc12_esprit.jpg)
 

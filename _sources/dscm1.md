@@ -9,9 +9,10 @@ bookseries: mystery
 permalink: /dscm1/
 ---
 
-<img src="https://datasittersclub.github.io/site/_static/DSClogo.png" />
-
-# DSC Multilingual Mystery #1: Lee and the Missing metadata
+<!-- #region -->
+# DSC Multilingual Mystery #1: Lee and the Missing Metadata
+```{index} single: *Book Topics ; Searching for book metadata (DSC M1)
+```
 
 by Lee Skallerup Bessette and Quinn Dombrowski, January 24, 2020
 
@@ -19,13 +20,20 @@ by Lee Skallerup Bessette and Quinn Dombrowski, January 24, 2020
 <img src="_static/images/bookcovers/dscm1_cover.jpg" alt="DSC M1 book cover" />
 </div>
 
-### Quinn
+## Quinn
+
 
 I engaged in some retail therapy over the holidays. With a little Christmas money burning a hole in my pocket, and two weeks on the East Coast visiting relatives with three small kids in tow, sitting down with a beer at the end of the day and hunting down translations of Baby-Sitters Club books was a reliable small source of joy.
+
+```{index} single: DSC Multilingual Mystery series
+```
 
 The Data-Sitters Club has become something of an awkward undertaking for me, in relation to my job. I support _non-English_ DH at Stanford, and help run a [Multilingual DH](http://multilingualdh.org/) group. While we'd [managed to acquire the complete corpus of The Baby-Sitters Club with financial support from the Stanford Literary Lab](https://datasittersclub.github.io/site/dsc2/), we were nearly out of money and all we had was English. I had a good story to explain why I was doing it: the methods we're walking through in these posts can, in most cases, be applied to non-English text as well, given some care and pre-processing. But still, it bugged me. Non-English DH is where I feel most at home, and since the series has been translated -- at least in part -- into over 15 languages, aren't there things we should explore with those versions, too?
 
 (If you're wondering what the deal is with the Data-Sitters Club, read [Chapter 2](https://datasittersclub.github.io/site/chapter-2/).)
+
+```{index} single: WorldCat
+```
 
 As MSNBC talking heads, 15-year-old reruns of Law & Order, or, on a good night, Discovery Channel docu-dramas of harsh, unforgiving nature flashed across the TV at my in-laws' house, and my jet-lagged children attempted to postpone sleep indefinitely by jumping on an air mattress upstairs, I curled up on the couch with my laptop and lost myself in WorldCat.
 
@@ -55,6 +63,9 @@ I don't get the pricing for Baby-Sitters Club translations. Really, I don't. Som
 
 I had a little extra money after Christmas, but not that much. So I looked for cheap books, then on AbeBooks, looked for additional books from the same booksellers (an option feature you get when you add a book to your cart), hoping that combining international shipping might make it slightly less painful. Other than the five Dutch books that I couldn't resist, I largely focused on Spanish books so I could read them. Also, the Spanish books have the best translation of "The Baby-Sitters Club" (as "El club de las canguro"), and the best logo to match. And they even do a derivative logo for the mystery books.
 
+```{index} single: Spanish translations
+```
+
 ![Club de las Canguro logo, a kangaroo with a human baby in its pouch. And the mystery logo, with the kangaroo and a magnifying glass](_static/images/canguro_logo.png)
 
 What's more, the Spanish cover art takes the US cover art and turns it up to 11 in terms of being utterly 80's/90's-tastic.
@@ -63,6 +74,9 @@ What's more, the Spanish cover art takes the US cover art and turns it up to 11 
 !['Stacey's Mistake' cover comparison. Stacey is in an all-yellow suit (was that the mistake?), and Claudia doesn't look at all like herself in the Spanish version](_static/images/staceys_mistake_cover_comparison.jpg)
 
 I was surprised by what I often didn't find in the metadata for these translations: the translators! I expect that to be a fundamental piece of metadata about any translation, about equal in importance to the author. Not when it comes to mass-market children's literature, I guess. The hit-or-miss translator information was going to make it tricky to figure out how many times these books had been translated. Sure, there were new editions of the books with more-contemporary cover art (the members of the new Club de las Canguro are so much cooler than me), but especially since the modernizing edits to the original English books stopped after about the first 10, is there any reason to expect that publishers would've invested in all-new translations?
+
+```{index} single: French translations
+```
 
 The Data-Sitters Club may have been my great idea, but the project (and its funding) belongs to all of us now. So while I indulged in a handful of translations on my own dime, I wanted to wait until our next meeting to consult with the rest of the data-sitters on how we should spend the rest of the money for the Literary Lab. I described what I'd found in my WorldCat browsing: lots of translations locked up in libraries with no obvious way of accessing them, and godawful shipping rates to the US from Europe (though I'd started making inquiries with a network of potential summer "book mules" to help out with Italian and Spanish translations). French, though, seemed like an appealing option. Katia had managed to find copies of recently-published French translations on Amazon. There were some used bookstores in France that had lots of copies of 90's translations, and were generous with combining shipping. But what's more, one of the earliest translations of the Baby-Sitters Club series was done in Quebec, in order to enable distribution of the original English versions of the books into Canada. And even more: there was a Belgian translation after the Quebecois version, but well before the translation in France. We're talking up to four different translations for some of the French books: 90's Quebec, 90's Belgium, 90's France, and recent France (if it was, indeed, different) -- and the Quebec ones could be mailed to Katia in British Columbia for non-exorbitant shipping. And still more: in the Ann M. Martin papers at Smith College where my friend Shannon Supple works as the curator of rare books, there's a copy of a draft French translation of Mary Anne Saves the Day from Quebec, and a letter from the Quebec publisher!
 
@@ -88,7 +102,7 @@ Luckily, Roopsi knew just the right person. "I bet Lee would be interested..."
 >
 > Roopsi
 
-### Lee
+## Lee
 
 When I first saw the announcement about the Data-Sitters Club, I was not so secretly jealous of those lucky few who were participating. I was obsessed with The Baby-Sitters Club books when I was younger. But, I thought, they've got everything covered. What could I possibly offer? So, I kept quiet tabs on the goings-on of the project and went on with the other 27 or so writing and research projects I have going on.
 
@@ -96,7 +110,13 @@ Little did I know that they would become interested in the various foreign-langu
 
 Folks, this is academic-nerd dreams come true.
 
+```{index} single: Metadata ; national libraries
+```
+
 First thing I did was to head over to the [Bibliothèque et Archives nationales du Québec (BAnQ)](https://www.banq.qc.ca/) website to search for the Québécois translations of the books. I knew they would be in there, as any and all books published in Quebec have to be legally deposited there. While the library itself [has been around for 100 years in one form or another (EXACTLY 100 years)](https://www.banq.qc.ca/a_propos_banq/historique/), the law that required any and all publications in and about Quebec moving forward was enacted in 1968, at the height of the Natonalist movement in the province. The idea of and for this library was to make history and knowledge accessible to all in Quebec, in their mother tongue. So while Canada has its own [National Library and Archives](https://www.bac-lac.gc.ca/eng/pages/home.aspx), Quebec wanted to ensure the preservation of their own history, accessible to their own people.
+
+```{index} single: Translation ; Quebec market
+```
 
 The remnants of the first-wave Nationalist movement also formed the infrastructure that facilitated the rapid publication of these books for the Quebec market, almost at the same rate they were coming out in English, one per month. Canada, in response to Quebec's Nationalist sentiments, created funds to support the translation and publication of works from each official language into the other. Literary translation flourished, and so did the number of translators. This meant that in the late 1980s, there was a rich network of talented and skilled translators.
 
@@ -105,6 +125,9 @@ The metadata on the Quebec translations of the books is much better here, and th
 Gotta pay the bills somehow.
 
 This is also why the metadata on the translators was so well-documented: it was important in terms of getting paid, later, in terms of sales and reprints. In order for the translators to remain in the business of translating, they needed to be paid. It also represents Canada's (and Quebec's) efforts to recognize and reward the work of translators. And while translations of Degrassi or Baby-Sitters Club wouldn't be winning any awards (insert commentary about "high" vs "low" literature here), nonetheless, this was important information that Quebec and Canada has worked hard to try and preserve, post 1960s.
+
+```{index} single: YA in Quebec
+```
 
 YA in Quebec has a long history, and with various changes to the language laws and curriculum, including that all textbooks and other assigned materials in Quebec schools having been written and published in Quebec. This meant there were no fewer than 12 youth book publishers in Quebec when the French-language version of the Baby-Sitters Club was published. Quebec knew the importance of representation, so put their laws and resources into home-grown literature for schools and for kids. Interestingly enough, Héritage was singled out in an overview of YA publishing in Quebec during the 1980s as being the only publisher doing YA series in translation; they were also publishing Degrassi books (a wonderful late-1980s uniquely Canadian pop-culture reference), Choose Your Own Adventure books, and Goosebumps, among others. It has such an importance that the BAnQ has developed a center within the library devoted to Quebec youth literature: Centre québécois de ressources en littérature pour la jeunesse (CQRLJ).
 
@@ -118,6 +141,9 @@ I wanted to see if I could gage if the books had any sort of lasting impact. I w
 
 !["Sophie's Problem", AKA "The Truth About Stacey" in the Quebec translation](_static/images/bsc3_frqu.jpg)
 
+```{index} single: Quebec translations ; found in a used bookstore
+```
+
 Finally, being impatient (and also needing something to do while watching hockey), I started searching AbeBooks for copies of the Quebec translations. I can easily save on shipping costs by sending them "home" to my mother, but if they happened to be for sale at a Montreal used bookshop, I could send her on a field trip. I narrowed my search parameters by limiting myself to book sellers in Canada, and by searching for just Héritage as the publisher. Turns out, one used bookshop in Hearst, Ontario, seems to have an almost complete set of the books. Northern Ontario is home to a number of French-Canadian communities, formed during the great migration of French-Canadians during the late 19th and early 20th Century; the Catholic Church encouraged/required large families to resist assimilation, as well as a slavish devotion to an agrarian lifestyle meant that there wasn't enough hereditary land to go around, causing French-Canadians to migrate west and south. Hearst is one of those communities, and the used bookstore, Librairie du Nord, specializes in Francophone books. I imagine a young girl growing up in Hearst collecting the series, keeping it for years and years, and then selling the whole thing off when she moved away.
 
 I also want to know if they'll give me a deal if I offer to buy the whole collection that they have.
@@ -126,12 +152,17 @@ The more I think and write about this, the more I feel like I'm coming full-circ
 
 See, Quebec did get it right: representation does matter.
 
-### Quinn
+## Quinn
 
 Okay, so maybe we haven't solved any francophone mysteries yet. But we're on our way, now that we've got Lee as our Mallory -- in the "keeper of the mystery journal" sense, not the "ugh... another Mallory book?" sense! It's good to be back in the non-English DH business.
 
 Stay tuned for Data-Sitters Club Mystery #2...
 
-### Suggested Citation
+## Suggested Citation
 
 Bessette, Lee Skallerup and Quinn Dombrowski. “DSC Multilingual Mystery #1: Lee and the Missing Metadata.” _The Data-Sitters Club_. January 23, 2020. https://datasittersclub.github.io/site/dscm1.html.
+<!-- #endregion -->
+
+```python
+
+```

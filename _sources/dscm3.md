@@ -8,10 +8,9 @@ bookseries: mystery
 permalink: /dscm3/
 ---
 
-<img src="https://datasittersclub.github.io/site/_static/DSClogo.png" />
-
-# DSC Multilingual Mystery #3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs
-
+# DSC Multilingual Mystery \#3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs
+```{index} single: *Book Topics ; Web scraping & OpenRefine (DSC M3)
+```
 by Lee Skallerup Bessette and Quinn Dombrowski, April 2, 2020
 
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
@@ -19,11 +18,17 @@ by Lee Skallerup Bessette and Quinn Dombrowski, April 2, 2020
 </div>
 
 
+```{index} single: Covid ; March 2020
+```
+
 ## Dear Reader
 
 Dear Reader,
 
 We've been writing this Multilingual Mystery on and off for the last month. During that time, Lee performed non-stop heroics for the emergency shift to online instruction at Georgetown. Quinn finished teaching her Dungeons-and-Dragons style DH role-playing game course virtually, watching as COVID-19 disrupted the lives of the characters -- and the students. For more than two weeks now, the Bay Area has been on lockdown, and Quinn has been running a preschool/kindergarten for three kids 6-and-under while trying to help non-English language and literature faculty at Stanford figure out what to do for spring quarter. Lee is also [working from home with older kids](https://readywriting.org/working-from-home/), and we're both grappling with how to [manage what the school districts are putting together for K-12 virtual education](http://quinndombrowski.com/blog/2020/03/27/pandemic-parenting-pedagogy).
+
+```{index} single: Covid ; data-wrangling as a locus of control
+```
 
 Throughout all of this, we kept coming back to writing this Data-Sitters Club "book". We've had to go back and edit it in places (ballet classes are no longer happening), and we've felt moments of estrangement from words written less than a month before. There's been nights when we've been [too exhausted to do anything else](http://quinndombrowski.com/blog/2020/03/21/working-conditions), but this project has been a reassuring distraction. The topics -- data downloading, web scraping, and data cleaning -- may seem dry and technical, but in this strange time there's something comforting about writing up how to have control over *something*... even if it's just text on a screen.
 
@@ -35,10 +40,13 @@ Quinn & Lee
 
 P.S. If you want a laugh, check out our ongoing series of [Important Public Health Messages from the Data-Sitters Club](http://datasittersclub.github.io/site/covid19).
 
-
+<!-- #region -->
 ## Recap
 
 When we left off with [DSC Multilingual Mystery #2](https://datasittersclub.github.io/site/dscm2/), we had realized that metadata is going to be essential for just about anything we do with computational text analysis at scale for these translations. And in DSC #4 (forthcoming soon!), Anouk comes to the same conclusions about the original corpus in English. It was time to investigate metadata acquisition and cleaning, and the DSC Multilingual Mystery crew was on the case!
+
+```{index} single: Metadata ; national libraries
+```
 
 ## Lee
 As I mentioned in the [DSC Multilingual Mystery #1](https://datasittersclub.github.io/site/dscm1/), I already had a pretty good working idea about where to get the metadata we needed to be able to identify translators and other publication data for the various foreign-language translations of the series: national libraries. And, I wasn't wrong. The [Bibliothèque et Archives nationales du Québec](https://banq.qc.ca/accueil/), the [Bibliothèque nationale de France](https://www.bnf.fr/fr), the [Biblioteca Nacional de España](http://www.bne.es/es/Inicio/index.html), the [Biblioteca Nazionale Centrale di Firenze](https://www.bncf.firenze.sbn.it/), and the [Koninklijke Bibliotheek](https://www.kb.nl/en) provided me with all of the information we would need to get the information we required. Oh, and the five lonely German translations from [Deutsche Nationalbibliothek](https://www.dnb.de/EN/Home/home_node.html).
@@ -49,12 +57,18 @@ This is where the inconsistencies arose, with each library offering its own idio
 
 All I gotta say is that y'all are lucky I love to solve a good mystery and that I only have the mental capacity for menial tasks while waiting during my daughter's ballet class where I found myself sitting in the most uncomfortable seat imaginable while seven different dance studios practice five different dance styles, playing seven different songs repeatedly. Sigh. I never thought I'd say this, but I miss those days.
 
-There was often the option to export the results as a simple text file, but the challenge was that simple text often didn't preserve the accents on letters, becoming gibberish instead, making it difficult to understand the information and data. So, CSV and XML were the closest I could get to relatively universal readability, or at least the cleanest data I could get for Quinn. It wasn't perfect, but it was a good first start. Also, the metadata you extract is only as good as the metadata contained in the book's library entry, and apparently no one bothered in either France or Belgium to note who translated the first handful of Belgian-French translations of the books. So while I extracted all of the data that was available, there are still some mysteries that might only be solved by either looking at a physical copy of the books or reaching out to the publisher to see if they have preserved the archives or kept the records somewhere. More mysteries that maybe we'll be able to someday solve if we're ever allowed to leave our houses again (lol*sob).
+```{index} single: Multilingual DH ; problems exporting accents from national libraries
+```
+
+There was often the option to export the results as a simple text file, but the challenge was that simple text often didn't preserve the accents on letters, becoming gibberish instead, making it difficult to understand the information and data. So, CSV and XML were the closest I could get to relatively universal readability, or at least the cleanest data I could get for Quinn. It wasn't perfect, but it was a good first start. Also, the metadata you extract is only as good as the metadata contained in the book's library entry, and apparently no one bothered in either France or Belgium to note who translated the first handful of Belgian-French translations of the books. So while I extracted all of the data that was available, there are still some mysteries that might only be solved by either looking at a physical copy of the books or reaching out to the publisher to see if they have preserved the archives or kept the records somewhere. More mysteries that maybe we'll be able to someday solve if we're ever allowed to leave our houses again (lol*sob*).
 
 I was also curious to see if there were other translations in common Romance languages, so I looked in national libraries in South America for other Spanish translations, as well as Brazil and Portugal for Portugese translations. I came up empty-handed, but it was worth it to look to see if there were any other translations in a language that I could recognize. Which brings up the next limitation in my search: I know English and French fluently, have six credits of university Spanish, and feel pretty comfortable given my knowledge of French and Spanish in navigating an Italian language library website. So while there are more translations, I didn't feel like I was comfortable enough to rummage around in the national libraries of other languages.
 
 ## Quinn
 I was amazed at what Lee managed to find in those national library catalog records. There it was: the answers to our question about the number of translations, and who most of the translators were! One beautiful thing about most national libraries, many museums, and various other online digital collections is that there's often an option for just downloading your search or browsing results, which saves you a *ton of work* relative to trying to do web scraping to collect the same information. Before you embark on web scraping from any cultural heritage website, be sure to read the documentation and FAQs, Google around, and be extra, extra sure that there's not an easier route to get the data directly. I'm not kidding: about half my "web scraping" consults at work have been resolved by me finding some kind of "download" button. Downloading the data isn't everything, though: I knew that if we didn't spend the time now to reorganize it into a consistent format that we could easily use to look things up and check for correlations (e.g. between translators and certain character-name inconsistencies), we'd definitely regret it later.
+
+```{index} single: Data ; decision-making around cleaning
+```
 
 Now, it's easy to go overboard with data cleaning. Sometimes my library degree gets the better of me, and I start organizing All The Things. (This in contrast to my usual inclination to just pile things in places and assume it'll all sort itself out when the time is right.) With DH in particular, there's a temptation to clean more than you need, and produce a beautiful data set that has all the information perfectly structured. It's usually driven by altruism towards your future self or other scholars. "Someday, *someone might want this.*" And if the data is easy and quick to clean, there's not much lost in that investment. But if it's a gnarly problem, and your future use case is hypothetical, maybe it's worth reconsidering whether it's the best use of your time *right now*. If someone wants a clean version of that data in the future, it's okay to let it be their problem. In the national library records that Lee found, there's a lot of data like that. Would it be interesting to see the publication cities for all the translations? Sure! Would it be fun to look at differences in subject metadata? Absolutely! (I'm really tempted by that one, truth be told.) But the data for both of those is kind of annoying to clean, and not actually what we need to answer the questions we're working on. Sometimes the hardest part of DH is setting aside all the things you *could do*, to finish the thing that you're *actually doing*.
 
@@ -72,6 +86,15 @@ But wait! We already started wondering about whether certain things we were find
 
 If you want to follow along some of the steps, but not the whole thing, you can check out the [GitHub repo for this book](https://github.com/datasittersclub/dscm3) for the data and configuration files we're with here.
 
+```{index} single: Web scraping ; with Webscraper.io
+```
+
+```{index} single: Tools ; Webscraper.io
+```
+
+```{index} single: Webscraper.io
+```
+
 ### Web scraping
 
 I do a lot of web scraping. When I need to do something simple, quick, and relatively small-scale, I go with webscraper.io, even though it gives you less flexibility in structuring and exporting your results compared to Python. I knew the [Baby-Sitters Club Wiki](https://babysittersclub.fandom.com/wiki/The_Baby-Sitters_Club_Wiki) on Fandom.com had the data I needed, presented as well-structured metadata on each book page. Webscraper.io was going to be a good tool for this job.
@@ -80,6 +103,9 @@ Webscraper.io is a plugin for the Chrome browser, so first you need to [install 
 
 ![Launching the webscraper plugin](_static/images/dscm3_launchwebscraper.jpg)
 
+```{index} single: Webscraper.io ; creating a sitemap
+```
+
 #### Creating a sitemap
 
 Using Webscraper.io's menu, go to *Create new sitemap > Create sitemap*, as shown by arrow 3, above. (Note: if you want to import an existing sitemap, like one of the complete ones that we've posted at the [Data-Sitters Club GitHub repo for this book](https://github.com/datasittersclub/dscm3), you can choose "Import Sitemap" and copy and paste the text from the appropriate sitemap text file into the text field. If you run into trouble with the instructions here, importing one of our sitemaps and playing around with it might help you understand it better.)
@@ -87,6 +113,9 @@ Using Webscraper.io's menu, go to *Create new sitemap > Create sitemap*, as show
 The first page is where you put in the start URL of the page you want to scrape. If you're trying to scrape multiple pages of data, and the site uses pagination that involves appending some page number to the end of the URL (e.g. if you go to the second page of results and you see the URL is the same except for something like `?page=2` on the end), you can set a range here, e.g. http://www.somesite.com/results?page=[1-5] if there are 5 pages of results. In our case, though, we have eight *different* web pages we want to scrape for URLs, one for each book (sub-)series.
 
 First, we'll give our scraper a name (it can be almost anything; I went with *bsc_fan_wiki_link_scraper*). For the URL, I just put in the URL for the main book series, <https://babysittersclub.fandom.com/wiki/Category:The_Baby-Sitters_Club_series>. If you have multiple pages (and especially if you're putting in a range), it's often best to start by putting in a single page, setting up the scraper, checking the results, and seeing if you need to make any modifications before you scrape hundreds of pages without capturing what you need. (Trust me -- it's a mistake I've made!)
+
+```{index} single: Webscraper.io ; simple use of selectors
+```
 
 #### Handling selectors: easy mode
 
@@ -115,6 +144,9 @@ One good way to make sure you're generally getting what you want is to click the
 ![Previewing data](_static/images/dscm3_data_preview.png)
 
 Click the blue *Save selector* button at the bottom of the interface.
+    
+    ```{index} single: Webscraper.io ; scraping and exporting
+```
 
 #### Scraping and exporting
 
@@ -128,11 +160,19 @@ When the window closes itself, it'll take you to a page that says "No data scrap
 
 If you want to edit your scraper to include multiple pages, go to *Sitemap bsc_fan_wiki_link_scraper > Edit metadata*. There's a + button on the right side of the URL field, and you can use it to put in more than one page (e.g. adding the URLs for [Mysteries](https://babysittersclub.fandom.com/wiki/Category:Mystery_books), [Super Specials](https://babysittersclub.fandom.com/wiki/Category:Super_Special_books), [Super Mysteries](https://babysittersclub.fandom.com/wiki/Category:Super_mysteries), [Portrait Collection](https://babysittersclub.fandom.com/wiki/Category:Portrait_Collection_books), [California Diaries](https://babysittersclub.fandom.com/wiki/Category:California_Diaries_series), [Reader Requests](https://babysittersclub.fandom.com/wiki/Category:Readers%27_Request_books), and [Friends Forever](https://babysittersclub.fandom.com/wiki/Category:Friends_Forever_series)). Then, just re-scrape and re-download.
 
+    
+```{index} single: Webscraper.io ; extracting URLs
+```
+    
+    
 #### Just the URLs
 
 We could import this CSV into OpenRefine, but honestly, it's faster and easier to pull the CSV into Google Docs or Excel, delete the stray rows (e.g. Category:Jessi books), and copy only the *pagelink-href* column (which has the URLs). At this scale (fewer than 300 rows), it probably makes the most sense to just skim and do this cleanup manually, but if you search for "Category" (which will give you links that just take you to sub-categories, like "Mallory Books"), and "Karen" (which is a giveaway for books in the "Baby-Sitter's Little Sister" book series, about Kristy's super-annoying step-sister Karen), that should help you flag the bigger sets of bad results. There's also random pages that accidentally got mis-tagged (e.g. at least as of when I'm writing this, "How to cosplay as Stacey McGill from the BSC"), so you do actually need to read through the list with your eyeballs, and check on any page titles where you're unsure. You should also de-duplicate links as needed, so that you only have one copy of each link (e.g. "Stacey and the Haunted Masquerade" was tagged with both the regular series and mystery, so it appears twice.) Sorting the URLs alphabetically should help make these visible, and most spreadsheet software can easily replace duplicates automatically. (If you're using Google Sheets, you can just go to *Data > Remove* duplicates to take care of it.)
 
 All together, you should have 229 links to scrape.
+    
+    ```{index} single: Webscraper.io ; scraping from a list of URLs
+```
 
 #### Scraping ALL THE THINGS
 
@@ -148,6 +188,9 @@ However you put your list of links online, the next step is to create a new site
 
 Once you've saved that selector, click on it in your sitemap. This takes you *inside* that selector, as Webscraper.io structures things. The new selectors you add aren't selectors for your page of links, they're selectors for the *pages whose URLs are on that page of links*. For that reason, it's going to be very helpful if the links in a single list go to pages that are pretty homogenous: you want the nested selectors to be applicable to most or all of those pages. Not all the selectors I created here work for every book (e.g. the California Diaries and Portrait books don't really have book numbers), but most of the fields are relevant across the board.
 
+```{index} single: Web scraping ; minimal structure of most websites
+```
+    
 As an important side note here, wikis hosted on fandom.com are *unusually well-structured* and pretty remarkable for their use of semantically-inflected markup (i.e. a lot of the HTML elements include a class -- as we've seen above -- that tells you something about the content that you'll find inside). Compare, even, to Wikipedia: even though you have what looks like structured metadata in the sidebar boxes for most articles, if you inspect the HTML, you'll find a table with the class "infobox", and then a bunch of table rows (<tr>) and cells (<td>). What if you were reading the news and wanted to, say, set up a scraper that would go to the Wikipedia page for a bunch of different historical pandemics and extract the death toll? Good luck!
 
 Probably the best you could do is capture the whole sidebar table, and try to (as likely as not, manually) extract the number you're looking for. Having an HTML class that says what it is (e.g. class="death-toll" on a <tr> element) isn't the only setup that would let you scrape the data easily; if every pandemic page had a 100% consistent set of metadata, which was always provided in the same order (and listed as "N/A" or something if there was no known value), you might be able to reliably use something like `tr:nth-of-type(n+3)` in your scraper if you could count on the death toll always being the third element in that sidebar. But in reality, very few websites use either totally consistent metadata, or semantic classes on their elements. In most cases, for the results to be usable, web scraping is just a prelude to lots and lots of data cleaning.
@@ -170,6 +213,12 @@ But fandom.com wikis make our lives easy! Here's the elements I created for all 
 Now, if you want to make your life easier, omit the *wikipagetext* element. What I initially wanted to get out of it was the "Dear Reader" section for the books that have it (e.g. what is the wholesome, relatable message at the end of *[Stacey's Big Crush](https://babysittersclub.fandom.com/wiki/Stacey%27s_Big_Crush)*, where she has a crush on a student teacher?), but there's no HTML class to indicate that section, and it's not like the book synopses are reliably 5 paragraphs long, so that you could count on "Dear Reader" being the 6th. But because this element has multiple values, and each one gets saved as its own row in the output file, it's going to be a pretty gross data-hairball.
 
 Once you've set this up, run the scraper, download the results, and you've got a brand new Ghost Cat data-hairball to clean up in OpenRefine... in addition to all those records from the various national libraries.
+    
+```{index} single: Tools ; OpenRefine
+```
+    
+    ```{index} single: OpenRefine ; installation
+```
 
 ### Got Ghost Cat Data-Hairballs? Call OpenRefine.
 
@@ -189,6 +238,9 @@ Once you’re happy with the preview, click the “Create project” button in t
 
 #### Step 1: Getting One Row Per Book from the Fan Wiki Data
 
+```{index} single: OpenRefine ; reordering rows
+```
+
 You may notice that the lines in the file that you uploaded seem to be in a random order: webscraper.io doesn't scrape in the order you might expect, in alphabetical order like you specified. We'll start by sorting by the URL of each page you scraped data from. Click the downward-facing arrow next to the *bookurl* column header, and choose "Sort" then "OK" in the box that pops up. Now your results are clustering by the book they're associated with (starting with *Abby and the Best Kid Ever*), but if you look at the third column from the left, you can see that this view is just a display for your benefit: the data itself hasn't been re-sorted. We can change that by clicking on the down arrow next to Sort above the cells, and choosing "Reorder rows permanently". This changes the row numbers associated with *Abby and the Best Kid Ever* to 1-7.
 
 ![Reordering rows in OpenRefine](_static/images/dscm3_reorder.png)
@@ -205,9 +257,15 @@ What we're ultimately going to want to do is add columns to the wiki spreadsheet
 
 #### Step 2. Clean up Quebec data
 
+```{index} single: Data ; analyzing how to clean data
+```
+
 What Lee sent me from Quebec was a series of CSVs, one per year (1990-1996). There's lots of ways you can combine those files, the most obvious-- if rather inefficient-- method being copying and pasting the content (minus the headers) from all the files into a single file. However you choose to do it, load the resulting CSV file into OpenRefine as a new project. If the default settings don't pick up the use of a semicolon as the separator, you'll need to manually configure that under "Columns are separated by" by choosing "Custom separator" and putting in a semicolon. You'll also need to uncheck "Parse next 1 line(s) as column headers". Then click "Create project", in the upper right of the interface.
 
 The first record ("Bienvenue, Marjorie!", if you're using the data file in our GitHub repo) will be a little messed up -- split between two rows. The fastest way to fix this is to copy and paste the values into the right places, then delete the erroneous second row. If you hover over a cell, a blue "edit" button appears in the upper right of that cell, and you can use that to both copy and paste text.
+
+```{index} single: OpenRefine ; example cleaning workflow
+```
 
 Keeping an eye on the end goal of being able to sync up this spreadsheet with the wiki data, we need one column that has the unique ID for each book. In this case, it's column 5, which looks like "Les baby-sitters ; 15"; what we need to do is replace the first part with nothing, leaving us just the number. Hit the arrow in the header for that column, then choose *Edit cells > Replace* and replace "Les baby-sitters ; " with nothing.
 
@@ -276,6 +334,9 @@ But wait! What about that *paramétrage professionnel* tab?
 
 ![BNF professional catalog export](_static/images/dsc_m3_professional_export.png)
 
+```{index} single: Metadata ; converting from UNIMARC
+```
+
 Intermarc? Unimarc? I know about the [MARC standards](https://en.wikipedia.org/wiki/MARC_standards) for library cataloging, and I have a piece of paper lying around here saying that I'm officially certified as a Library and Information Scientist, but ... ugh.
 
 But then I thought about Arcadia Falcone, the metadata librarian at work and one of the most quirky-cool people I know. She'd probably know the MARC codes I needed for these records off the top of her head, and could figure out Unimarc with both hands busy crocheting an amazing shawl. I could do this, too. And thanks to the Library of Congress, it wasn't actually too bad; there's a "[UNIMARC to MARC 21 Conversion Specifications](https://www.loc.gov/marc/unimarctomarc21.html)" that was published only 9 months after the last Baby-Sitters Club book. The formatting alone suggests a promising treatment for insomnia-- try it the next time nightmares wake you up in the middle of the night! (I can't be the only one with that problem these days...)
@@ -285,6 +346,9 @@ But then I thought about Arcadia Falcone, the metadata librarian at work and one
 Searching for "translation" scored me 453 for the field with the English title of the book, and searching for "series" got me 225 for the field with the book number (even better than the English book title). I stuck "225;" into the field, hit Exporter, and held my breath.
 
 What I got was an ExportPro.csv file, with the fields "Identifiant ARK", "N° notice BnF", "Type de notice", "Type de document;="225"". The spreadsheet I'd already partly cleaned in OpenRefine had that "N° notice BnF" field, too, as a unique value for each book -- all I needed to do was connect my new data with my old OpenRefine project using that "N° notice BnF" value to match everything up. Time for another metadata librarian to the rescue! [Ruth Kitchin Tillman](https://ruthtillman.com/) recently did an [online OpenRefine workshop on "cell cross"](https://ruthtillman.com/talk/cell-cross-webinar-2020-03/), which is the OpenRefine jargon for doing exactly what we need to do here. It's worth watching for a more detailed explanation, but uses a library cataloging example that might not be as relevant to Data-Sitters Club readers, so let's run through it here.
+
+```{index} single: OpenRefine ; cell cross
+```
 
 #### Look both ways before crossing the cells
 
@@ -300,6 +364,9 @@ In the box that pops up, we’ll call the new column “seriesnumber”. The syn
 Success! Once you've finished the cell cross, you can close the ExportPro OpenRefine project. All we need to do now is clean up the "seriesnumber" field. It's easiest to start by doing *Facet > Text facet* on the "seriesnumber" field, to get a sense of how much progress you're making in your cleaning. Replace `225$aLe club des baby-sitters.$v`, `225$aLe club des baby-sitters.$v`, `225$aLe club des babysitters$v`, and ` &#124; 225\$aFolio junior\$v(.*)` (the broader "Folio junior" publication series) with nothing.
 
 There are 18 records that just have the series "225$aLe club des baby-sitters"; these are the text collections ("Nos dossiers top-secret", "Nos plus belles histoires de coeur", etc.) that have multiple books in one. Because we can't disambiguate who translated which of the sub-books, these records aren't very helpful for us; you can delete them all by choosing the facet "225$aLe club des baby-sitters", then going to the *All* column and choosing *Remove matching rows*. Do the same for the records with the "225$aFolio junior" facet, which seem to represent series (like the mysteries, or comic books). You can also delete the record in the "225$aFolio junior$v950" facet (not a BSC book), and the records with blank values for "seriesnumber" (more series records or not BSC books). This leaves us with a set of mystery entries. Replace `225$aLe club des baby sitters mystère.$v` and `225$aLe club des babysitters$iMystère$v` with `M`.
+
+```{index} single: Metadata ; created by people
+```
 
 Can we pause for a second and reflect on what it means to have to replace two different values for the mystery books, or three for the main series? Yeah, it's more work, and that's kinda annoying, but when I see things like that, it's a reminder that these records were created by people (and more likely than not, *women*). It's easy to treat a giant national library catalog with export functionality and millions upon millions of records as something digital, computerized, consistent -- but those records were originally created by people. People who might still be walking around in the world (or, at this present moment, hopefully sheltering-in-place at home). Who are they? What are their lives like? Do they have family members who are sick? Are they in a hospital, with a complex constellation of factors determining whether they'll be one of the lucky ones who gets a ventilator? Think about that, next time you're using an online catalog to access digital resources. Real people made these records. And other real people did real work to convert them into the form that you're using. Pause for a moment to think of those people. And maybe send a thank-you note or cupcakes or flowers or something to your local library's technical services staff from time to time, once this is over.
 
@@ -332,6 +399,9 @@ Once again, create a new OpenRefine project, this time for the Belgian records y
 Before we combine the fan wiki data with the records from the national libraries, we need to do a little more cleanup. Go to *Facet > Text facet* for the "booknumber" column. There shouldn't be more than one value for each of the facets, but some of them have multiple values (e.g. "Kristy's Great Idea" -- the very first book -- and "Baby-sitters on Board!" -- the first Super Special book, both are listed under 1.) If you add a text facet for the "bookseries" column, you can do some bulk editing. For instance, if you select the "The Baby-Sitters Club Mystery" facet under "bookseries", you can do *Edit cells > Replace* and replace `^` with `M` (make sure you check the "regular expressions" checkbox) to put an M at the beginning of all the mystery books. Super-special books should similarly be prefixed with "SS", Reader's Request should be "RR", Super Mysteries are "SM", Portrait Collection are "PC", Friends Forever are "FF", and California Diaries are "CD". (We just made up these conventions, but they are how we actually name the files in our corpus.)
 
 Once no facet other than "null" has more than one value, you're ready to bring in the data from the national libraries.
+
+```{index} single: OpenRefine ; cell cross example
+```
 
 ### Step 5. The Ultimate Cell-Cross of Ultimate Destiny[*](#footnote)
 
@@ -419,3 +489,8 @@ Bessette, Lee Skallerup and Quinn Dombrowski. "DSC Multilingual Mystery #3: Quin
 <br />
 <a name="footnote" />&#42; 
 Am I the only one who's had strange, random music emerging from the corner of their brain after a couple weeks at home? I have no idea why this <a href="https://www.youtube.com/watch?v=wbKmETVWG64">12-year-old song</a> has gotten stuck in my head, but working on this final step, I can't help but re-imagine it, subbing out the Baby-Sitters Club, Sweet Valley High, American Girl Dolls, Cabbage Patch Kids, Rainbow Bright, My Little Ponies, and other differently-gendered references. Would Maria from Sesame Street emerge victorious -- perhaps by negotiating with the other iconic characters to work together instead of fighting, in order to ensure everyone has the resources they need to defeat COVID-19, from toilet paper to ventilators?
+<!-- #endregion -->
+
+```python
+
+```
