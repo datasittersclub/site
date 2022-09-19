@@ -1,4 +1,4 @@
-<img src="_static/images/DSCLogo.png" />
+<img src="https://datasittersclub.github.io/site/_static/DSClogo.png" />
 
 # The Data-Sitters Club Books
 
