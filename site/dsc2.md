@@ -9,10 +9,9 @@ bookseries: regular
 permalink: /dsc2/
 ---
 
-<img src="_static/images/DSCLogo.png" />
-
-# DSC #2: Katia and the Phantom corpus
-
+# DSC #2: Katia and the Phantom Corpus
+```{index} single: *Book Topics ; Scanning and OCR (DSC M2)
+```
 by Katherine Bowers, December 12, 2019
 
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
@@ -25,12 +24,17 @@ What is the DSC? It all started with [Quinn's great idea](../dsc1/). The DSC is 
 
 My involvement with what became the DSC had started about a month earlier when Quinn, Roopsi and I had started talking on Twitter about a corpus of BSC books Quinn had found online while she was on holiday in Vegas. I had read BSC books obsessively as a kid -- to the point that I read them way beyond what their typical age range was and was book-shamed in my 7th grade English class by my teacher who told me to read more "elevated" things. It's true that BSC books were maybe not so "elevated" as what she wanted us to read, but, for me, a kid who had recently moved to the US and was figuring American middle school out for the first time, BSC books were comforting in their formula and their tales of American suburbia that always had a happy ending. (And, anyway, I'd already read the books assigned for 7th grade English.. I'm kind of a bookworm). What I realized when we had our first DSC Zoom meeting to talk about the project was that, while my knowledge of the BSC series is somewhat misty, Roopsi's is impressively encyclopedic. And so, as Quinn fleshed out our corpus, I started reading so I would have better knowledge of our corpus (and, let's face it, reading BSC books is not something you really have to twist my arm to do).
 
+```{index} single: Text acquisition ; downloading
+```
+```{index} single: DRM ; cracking encryption
+```
 Just how did Quinn manage to find most of the Baby-Sitters Club books while on vacation, you might ask. Quinn and I share a love of the Russian language, and one of the perks of studying Russian is that you learn how to find things. "I always wished I could get away with making posters for first-year Russian that read 'Learn the one verb you need to find anything online!' -- that'd fix our enrollment problems!" Quinn jokes. (That verb, by the way, is скачать "skah-CHAHTS", and if you add it to your query on a Russian search engine like yandex.ru, you might be surprised at what you can find sitting on the open web.) But there's a difference between what you find in assorted corners of the internet that aren't indexed by American search engines, and what you'd get if you "did it right" by scanning and OCR-ing in-copyright books for private research use, with manual correction as necessary. (Cracking the DRM on e-books is illegal even if you've purchased the e-books, are just trying to get a text file for research use, and don't redistribute the text files.)
 
 To start with, I bought a bundle of the first four books as ebooks. The corpus wasn't in place yet, and I was just so excited to start reading! I can finish a BSC book in a little less than an hour, reading them is comforting, even today (I think because of the time in my life when last I was reading them and how important they were for me then), and, as the DSC got started up, I was finishing up my monograph (which is about Russian realism and the gothic genre) and actively in search of stress-free pleasure reading that would help me get to sleep in the evening. These three factors all contributed to the fact that before I knew it, I had read all four, and was ready to move on to no. 5, Dawn and the Impossible Three. I was really excited to reread this one because this was the one I had read the most as a kid; it was the only one I had owned and not just checked out from the public library.
 
 I opened up the corpus copy, started reading, and:
-
+```{index} single: OCR ; errors
+```
 > A he <BZZT!>  Baby-sitters Club. I didn't start it and I don't run it, but I am its newset member...
 > uprooted from hot, sunny California and trans-
 > planted to cold, sloppy Connecticut **<BZZT!>**.
@@ -52,9 +56,12 @@ And it got worse. Sometimes, there would be a wall of gibberish, with faint trac
 > U5 -to wn+e to -ttY2 Bflbu-5T-ttgT6 Sub Notebook 5o\we Could _eep track of tinu prdolem6 we h&d wT^^bu-iTte) aubMft, bo_ -ftkTna care dt ttMtf HwSfcl w35m+rDUbl(2 3rZltt° H<2w36 very otxd. White Kr?6+-y w35 chfoTrg rjroona nf+er -mobe +wd dephzlh+6,
 
 When I was browsing in Lawrence Books later that week, I found an old paperback copy of no. 16, _Jessi's Secret Language_, and flipping through it, the answer jumped out at me:
-
+```{index} single: OCR ; handwriting
+```
 ![Picture of the header for chapter 1, with letters in 3D blocks](_static/images/bsc-ch1.jpg)
 
+```{index} single: Handwriting ; cursive
+```
 The OCR software that had been used for some of these books wasn't able to handle the children's building-block lettering of the chapter headers, or the Baby-Sitters Club notebook entries (or diary entries, or letters) written in the characters' "handwriting"!
 
 ![Picture of one of Claudia's "handwritten" sections, in sloppy cursive](_static/images/claudia-handwriting.png)
@@ -69,14 +76,20 @@ The thing about Quinn's corpus is that it's from a lot of different sources. The
 
 > When I first sat down to write the rough draft, my friends gave me a hand once again. I asked them for their final thoughts and observations. This is what they wrote:
 
+```{index} single: OCR ; noise
+```
 Omitting long strings of obviously bad OCR isn't the world's worst approach: sometimes when you're doing OCR, the software will try to "read" things like shadows in the margins of a book, or illustrations, giving you a block of gibberish when there was nothing meaningful there to begin with. In fact, if you're scanning thousands of books, that kind of situation is going to be more common than books with unusual lettering in their chapter headers, or cursive pseudo-"handwriting". The Baby-Sitters Club books are an edge case -- but they're the case we care about.
 
 I realized I just wasn't going to be able to read the corpus as I had planned, and so, in order to keep reading and keep my sanity, I started buying books. A bonus was that I could then turn them into our "ground truth" for comparing against Quinn's corpus. "Ground truth" is a concept used in evaluating OCR quality: it's typically a transcribed (or OCR'd and hand-corrected) version of some number of pages or lines, such that you can do OCR (either using out-of-the-box software like open source [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) or [OCRopus](https://github.com/tmbdev/ocropy), or commercial -- and sometimes better-performing -- software like ABBYY FineReader) and easily compare the output with the "correct" answer that's been verified by a person who knows what they're doing.
 
-### Quinn's OCR Tips
-
+## Quinn's OCR Tips
+```{index} single: OCR ; tips
+```
 If you need to do some OCR yourself, here's some tips from someone who's spent a lot of time doing it:
-
+```{index} single: Text acquisition ; scanning
+```
+```{index} seealso: Scanning ; Text acquisition
+```
 **Actually scan your sources**. With a scanner. At minimum 300 dpi (dots per inch -- it's a measure of how much detail the image captures). More like 400-600 dpi if your books include a really small font, like for footnotes. Yes, the technology is improving, and sometimes you can get better-than-total-garbage with photos from your phone, as long as they're not skewed (taken at an angle), the lighting is good, etc., but still, most phone pictures are still only 72 dpi, and it's hard to position your phone directly above a book and not cast a shadow. Just use a scanner.
 
 **Scan your sources in grayscale**, especially if you're going to be using ABBYY FineReader. While all the OCR algorithms actually use on binarized images (black & white -- where everything in the image is either black or white, according to some threshold you or the software defines), you can go from grayscale to B&W, but not the other way around. Even though the OCR algorithm itself involves a binarized image, the algorithms used for layout analysis (i.e. figuring out where the text is on the page, whether it's one column or two, whether there's tables or running headers or page numbers, etc.) are more nuanced. Also, both ABBYY FineReader and the open-source Tesseract software include pre-processing steps before they perform the OCR, including binarizing images using a sensible threshold that cuts down on the noise in the image. For instance, if you run a B&W scan of a two-page spread through Tesseract (i.e. an image where the binarization has happened at the time when you did the scanning), you'll end up with some gibberish from when the OCR algorithm tried to "read" the shadow caused by the binding.
@@ -92,15 +105,17 @@ The [ABBYY FineReader documentation](https://abbyy.technology/en:kb:images_resol
 **Lines in general**: Tesseract's OCR exactly replicates the line structure of the original source. But for most computational text analysis purposes, what we care about is meaningful divisions in the text, rather than arbitrary ones caused by the inherent constraints of mass-market book layout. Paragraphs matter, not which 7-10 words happen to make up a line. FineReader gets this, and maintains paragraph divisions, but treats individual lines within a paragraph as continuous text.
 
 **Running headers and page numbers**: FineReader understands that, in the vast majority of cases, what you want is just the text, not paratextual elements like running page headers, page numbers, etc. There's an option when you export the text to remove those header and footer elements.
-
+```{index} single: OCR ; software
+```
 If you're OCRing so much text (hundreds or thousands of volumes, by many authors, etc.) that small perturbations like page numbers won't matter, and mostly-successful text corrections applied en-masse (e.g. to try to connect lines and remove end-of-line hyphens), Tesseract is free, open-source, and high-quality (at least for English). But if you're doing a project like ours where you care about each individual text, it's worth using ABBYY FineReader. The FineReader interface also makes it easy to manually transcribe portions of the text that you could potentially train it to recognize given enough time and examples, but it's faster to just type in yourself (e.g. Claudia's cursive handwriting). While ABBYY doesn't offer an academic discount, many institutions have FineReader available somewhere on campus (e.g. in computer labs), and depending on your situation, it may be worth paying the $200 one-time standard license. One important caveat, though: as of 2019, the Windows version of FineReader has much better functionality than the Mac version (to say nothing of the cloud-based mobile version). If you want the nice interface for transcribing text that can't be meaningfully OCR'd (again, looking at you, Claudia's handwriting), you've got to figure out some way to run it on Windows, even if you're primarily a Mac user (like the whole Data-Sitters Club).
 
 Before long, we had two corpora: Quinn's scavenged Baby-Sitters Club corpus, and the more-accurate "phantom corpus" I'd created for the 60 or so books I'd hunted down and shared with the rest of the Data-Sitters Club.
 
-### OCR evaluation
+## OCR evaluation
 
 Quinn runs another club at Stanford, which she's dubbed the "Danger Noodle Club". It's a weekly meet-up for humanists who are learning Python in particular, and computational methodologies in general. They help debug each other's code, and also spend a lot of time talking about situations where other tools might be more helpful than Python. Like most things, she organizes it last-minute, so I didn't even realize she was comparing her corpus and mine until she sent a note out to all the data-sitters one Thursday afternoon:
-
+```{index} single: Book re-releases ; content changes
+```
 > **From:** Quinn Dombrowski  
 > **To:** Maria Sachiko Cecire, Katia Bowers, Anouk Lang, Roopika Risam  
 > **Date:** 11/7/19 2:51 PM  
@@ -143,6 +158,8 @@ It wasn't long before everyone weighed in:
 >
 > Thanks, Quinn! Those are cool findings, and in line with some other examples from the history of children's literature publishing. Up until the Harry Potter phenomenon, children's publishing worked on a "slow burn" model rather than a blockbuster model of sales (which it now goes for much more, though they are still re-releasing and promoting old classics too). That meant selling the same books over many generations of readers -- parents/grandparents/etc. buying for children was and is a key part of the market -- and I imagine this long lifespan had something to do with the fact that it's not uncommon for children's lit to be updated as norms change. I'm sure this has to do with the fact that anything written for children almost inevitably gets treated as didactic, and so is scrutinized for its presumed effects on youth -- and anything that might be deemed a "bad influence" is likely to get changed in a way that books for adults might not over time.
 
+```{index} single: OCR ; evaluation
+```
 Quinn spelled out exactly what she'd done later on in the thread. She was following up on a [Twitter discussion she'd had with Hannah Alpert-Abrams on OCR evaluation](https://twitter.com/quinnanya/status/1181960738794958848) by actually trying out [ocreval](https://github.com/eddieantonio/ocreval). The GitHub repo has step-by-step instructions for how to install ocreval on Mac or Linux. Then, all you need to do is [use the command line](https://programminghistorian.org/en/lessons/intro-to-bash) to navigate to a folder that contains both versions of the plain-text file you want to compare, and run accuracy file1.txt file2.txt.
 
 Quinn used her version as file1, and mine as file2. For no. 7, Claudia and Mean Jeanine, the ocreval accuracy report stated that there were 141611 characters and 6,905 errors, for an overall accuracy of 95.12%. That sounds like a big number, but for OCR on modern English, that's actually not amazing.
@@ -173,8 +190,9 @@ But there was more.
 
 One of Quinn's Danger Noodle Club colleagues, Nichole Nomura, pointed out the equal attention paid to updating differently-gendered technologies (feminine via fashion, masculine via computers). Another, Matt Warner, pointed Quinn to [Diff Match Patch](https://github.com/google/diff-match-patch) as an easier way to see the differences between two texts (rather than treating it as an evaluative task for OCR quality). Conveniently, if you use the Diff demo and copy and paste the results into Word, the changes show up using Word's track changes functionality.
 
-### DSC in Stanford's Literary Lab
-
+## DSC in Stanford's Literary Lab
+```{index} single: Stanford's Literary Lab
+```
 Between the comparisons using Claudia and Mean Jeanine and Dawn and the Impossible Three (which Quinn later shared with everyone), it was clear that we really did need both the original and the edited versions of the Baby-Sitters Club corpus.
 
 I have some research funding this year, but I'd long exceeded the "no questions asked" point when it came to ordering second-hand English-language girls' literature on Amazon Marketplace. (Remember, I'm a Russianist.) It was going to take more resources than I could cover to get the corpus we needed.
@@ -203,6 +221,6 @@ _To be continued..._
 
 The author gratefully acknowledges Quinn Dombrowski for her help in preparing this manuscript.
 
-### Suggested citation
+## Suggested citation
 
 Bowers, Katherine and Quinn Dombrowski. "DSC #2: Katia and the Phantom Corpus." _The Data-Sitters Club._ December 12, 2019. https://datasittersclub.github.io/site/dsc2.html.

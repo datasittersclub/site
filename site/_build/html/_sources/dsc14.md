@@ -7,13 +7,12 @@ blurb: 'We won a new exemption! ... so what does that actually mean?'
 bookseries: regular
 permalink: /dsc14
 ---
-<img src="_static/images/DSCLogo.png" />
+# DSC \#14: Hello, DMCA Exemption
+```{index} single: *Book Topics ; DMCA text & data mining exemption (DSC 14)
+```
 <div style="float: right; width: 200px;margin-left: 7px;margin-top: 0px;">
 <img src="_images/bookcovers/dsc14_cover.jpg" alt="DSC 14 book cover" />
 </div>
-
-# DSC #14: Hello, DMCA Exemption
-
 by Quinn Dombrowski, Rachael Samberg, and Erik Stallman
 
 ## Returning to the cliffhanger
@@ -26,12 +25,20 @@ But I’m getting ahead of myself, as I often do. I’m Quinn, founder of the Da
 
 I’m lucky to be joined once again by some amazing lawyers who have been deeply involved in advocating for the DH community: Rachael Samberg and Erik Stallman. 
 
+```{index} single: Guest Data-Sitters ; Rachael Samberg
+```
+
 Rachael (UC Berkeley Library) has brown hair, some of which she occasionally bleaches and dips in her favorite color (which is purple). She can have a basic conversation in Finnish. And she is perpetually covered in cat fur because she has the sweetest and funniest kitty, and Rachael and her kitty practice nightly gene-splicing…I mean, er… are best friends. Rachael uses her law degree to promote justice (!!!) and innovation (!!!) as the director of UC Berkeley Library’s Office of Scholarly Communication Services. Confused? Basically, if anyone on the UC Berkeley campus has questions about copyright, licenses, privacy, or ethics in their research, scholarship, or teaching, Rachael’s office can help.
+
+```{index} single: Guest Data-Sitters ; Erik Stallman
+```
 
 Erik (Berkeley Law) has brown hair that is turning gray and brown eyes that are mostly staying brown. He wears an assortment of drugstore reading glasses because he loses his glasses a lot. He is the Associate Director of the Samuelson Law, Technology & Public Policy Clinic at Berkeley Law. He works with law students to help researchers and other folks because copyright law sometimes solves a problem for some people by creating problems for other people.  
 
 
 ## “Text Data Mining”, Fair Use & the DMCA
+```{index} single: Text Data Mining
+```
 
 We describe the Data-Sitters Club as a friendly, colloquial guide to “computational text analysis”, but the terminology that’s caught on in legal contexts is a little different: “text data mining”, or TDM. Rachael defines TDM – mostly for other lawyers and people who aren’t doing this kind of work – as “a research approach where scholars are using automated methods to identify patterns, or extract and describe trends in large volumes of unstructured or thinly structured digital content.” If you’ve never thought about your literary corpus as a “large volume of unstructured digital content”, you’re not alone. For legal advocacy work to be effective, you have to invest a lot of effort into translation – in all directions.
 
@@ -39,15 +46,23 @@ As a quick refresher for anyone who hasn’t revisited DSC #7, copyright law gra
 
 There’s one catch, though, and it comes down to some details from [DSC #2: Katia and the Phantom Corpus](https://datasittersclub.github.io/site/dsc2.html). The Data-Sitters Club project isn’t going to land us in copyright trouble because we built our corpus by scanning and OCRing the Baby-Sitters Club book series. Making our corpus that way was annoying and time-consuming in a way that wouldn’t work for large-scale projects, but it was also legal. It would not have been legal (that is, it would not have been “fair use”) to purchase ebook copies of the entire series, break the encryption, and use the resulting text files as our corpus, all because of a law called the Digital Millennium Copyright Act (DMCA). Even though creating the Data-Sitters Club corpus itself would have been legal (or fair), the DMCA makes it *additionally illegal* to break the encryption on encrypted ebooks in order to extract the text (or do anything else), even if you’re doing it for something that would otherwise be covered by fair use.
 
+```{index} single: DMCA ; exemption granted in 2021
+```
 Now, the DMCA isn’t absolute: there’s a system in place, every three years, for people to request exemptions for certain kinds of situations. 2021 was one of those years. We’ll get to the story in a minute about how the new exemption came to be, but the tl;dr version is that we actually did succeed in getting an exemption granted to break encryption for “text data mining”! 🥳 
 
 Except it doesn’t exactly fulfill all our hopes and wishes. 😭
 
 I don’t know anyone better than Rachael for explaining this exemption as it was written, which you can find in the [rule from the Copyright Office of the Library of Congress in the Federal Register on October 28, 2021](https://www.federalregister.gov/documents/2021/10/28/2021-23311/exemption-to-prohibition-on-circumvention-of-copyright-protection-systems-for-access-control). (There’s a lot in there, because the rule covers multiple different petitions; the good stuff for our purposes is “[Proposed classes 7a/7b](https://www.federalregister.gov/documents/2021/10/28/2021-23311/exemption-to-prohibition-on-circumvention-of-copyright-protection-systems-for-access-control#h-35)”.)
 
+```{index} single: DMCA ; types of works where you can break encryption
+```
+
 “There are now two types of materials that the new exception allows you to break encryption on to conduct TDM: motion pictures (think DVDs) and literary works (think ebooks),” explained Rachael. “The short of all this is that the Copyright Office recommended that researchers be permitted to break encryption for purposes of text data mining on those two categories of materials.”
 
 Sounds great so far, right? But then we get to the fine print.
+
+```{index} single: DMCA ; conditions for breaking encryption
+```
 
 “Researchers need to meet several conditions, though,” Rachael continued. “First, the encryption can only be broken by a researcher at a nonprofit institution of higher education.” 
 
@@ -61,9 +76,15 @@ Independent scholar? Public librarian? Alt-ac working at a humanities think tank
 
 Okay, so you have to be a researcher at a non-profit university, and you can’t go cracking your way through your personal DVD or ebook library. What else was in the fine print?
 
+```{index} single: DMCA ; limitations on use of decrypted materials
+```
+
 “The third requirement is about what you can do with the content that you’ve decrypted. You can break the encryption **only** for purposes of doing and verifying your research results. So, you can take the text file you got out of the ebook, run it through an algorithm, and then look at the text file with your eyeballs just to double-check that the algorithm did what you were expecting. But let’s say you also or maybe later on want to closely analyze the text file by reading it to understand it yourself. Reading the book in the text file would be violating the terms of this rule, and you’d once again be running afoul of the DMCA,” Rachael explained.
 
 Frankly, reading ebooks via plain text files is no fun at all – trust me, I’ve tried this with some of the books I’ve scanned, and I wouldn’t recommend it to anyone. But there was one last condition that posed the biggest challenge yet.
+
+```{index} single: DMCA ; security requirements for decrypted data
+```
 
 “The last and final requirement before a researcher can rely on the new exception,” said Rachael, “is that the institution has to use ‘effective security measures to prevent further dissemination or downloading of the literary works in the corpus’, and limit access only to the persons who are identified as being able to have access for them.”
 
@@ -77,6 +98,9 @@ Rachael shared my frustration. “If it’s okay to editorialize for a moment…
 
 I laughed. “I mean, that’s like half of what we do here in the Data-Sitters Club.”
 
+```{index} single: DMCA ; extreme security requirements
+```
+
 “There are security measures that global research experts agree are sufficient to protect genetic data, health data, all sorts of highly confidential things, but in the pursuit of this DMCA exemption, the publishers who opposed the rule suggested that none of these measures would sufficiently protect their copyrighted text. And that’s how we ended up with a rule that asks institutions to negotiate with publishers when a researcher wants to break DRM for TDM, or to apply measures used for other  ‘highly confidential’ information. As a practical matter, negotiating with publishers each time a researcher has a TDM project they want to break DRM on isn’t a likely outcome – and not only because the publishers won’t agree, but also institutions don’t have time to do all the negotiations that would be involved. So these projects would just get shunted into the second category of being forced into a research environment used for ‘highly confidential’ data.”
 
 That was depressing. But the bad news kept coming.
@@ -84,6 +108,9 @@ That was depressing. But the bad news kept coming.
 “Let’s imagine that you can figure out all four things, including the security requirement. So you’re good to go with breaking the encryption, right?”
 
 I got a feeling this was going nowhere good.
+
+```{index} single: Licensing ; limitations on use
+```
 
 “There is at least one major practical constraint in relying on the exemption at least for ebooks. When you ‘purchase’ an ebook, you’re not always actually purchasing it. You’re usually just licensing it. And when anyone licenses an ebook, they agree to the terms of the license, which governs what they can do with that ebook. By giving the licensor like Amazon money, you’re entering into an agreement with them, and whether it’s you or the institution making that agreement, the terms and conditions will apply to your use. And the reality is that, whether we’re talking about your license of an individual book from Amazon or the library’s licensing of thousands of DRM-protected eBooks from a vendor, many of these ebook licenses explicitly prohibit breaking the encryption to access the underlying content.” Rachael sighed. “So we went through this whole thing to have the Copyright Office issue an exception to the Digital Millennium Copyright Act that would allow for breaking DRM… and yet we now face a contractual override scenario where, fine, the copyright law says we can do something, but the institution or a researcher using institutional funds has entered into a contract that effectively squashes a right that they would now have had under copyright law. I can tell you that the extent of our ability to negotiate with publishers to *remove* those contractual restrictions is still TBD, but you'd imagine that it wouldn't look really promising to undertake those negotiations with powerful publishers who don’t want us to be able to do this at all.”
 
@@ -94,6 +121,9 @@ The legal landscape for DVDs, Rachael noted, looked a lot better after this DMCA
 It was looking like all our work had led us to a dead end. 
 
 ## Mommy, where do DMCA exemptions come from?
+
+```{index} single: DMCA ; how the exemption process works
+```
 
 What **is** the work that goes into a DMCA exemption? How did we end up here, and what does it all mean? For another perspective, I turned to Erik Stallman.
 
@@ -108,6 +138,9 @@ I still remember that first meeting with Erik and the UC Berkeley law students a
 “Initially, we asked for a very broad exemption to cover all text and data mining for research purposes,” Erik explained. “That request was accompanied by letters from many different kinds of academics – faculty, grad students, librarians, at research institutions, at smaller institutions. So we filed that, and *the entire content industry* came out and said ‘Text data mining isn’t covered by fair use and there’s no basis in law for an exemption this broad.’” 
 
 I remembered how angry the content industry’s response made me, especially when they called out the Data-Sitters Club use case specifically as one where we shouldn’t be allowed to look at the full text in order to check our results.
+
+```{index} single: DMCA ; compromise as part of exemption process
+```
 
 “Then we filed the reply comment,” Erik continued. “In which we agreed to narrow the exemption to only cover non-commercial research by academic institutions, libraries, and museums, so no one can use it to build commercial apps or whatever. We tried to address all of the legitimate concerns that the rights holders had, and contour our exemption to the types of projects that were in the letters that scholars had submitted along with our original petition, because we knew the Copyright Office would want to see evidence in those documents.”
 
@@ -133,6 +166,9 @@ I remembered this well from my time working on a secure computing environment at
 
 “There were the post-hearing letters, there were some ex parte meetings – where everyone had these side-meetings with just them and the Copyright Office to make their case one last time. And then we waited. 
 
+```{index} single: DMCA ; emotional roller-coaster of the exemption
+```
+
 “How did you get the news?” I asked.
 
 “David Bamman was the person who told me about it, and my first reaction was that surely he had misread the Copyright Office’s recommendation. I tend not to be optimistic about these things. And then I read it and – wow, it’s true! And then I read the details, and the whole thing was an emotional roller coaster: surely we lost! No, we won! Wait, maybe we lost…” Erik paused to reflect on it. “I do think it’s really great that we got the exemption, and they didn’t impose a flat ban on viewing corpus content, which was a real risk. But unaffiliated libraries and archives were cut out, and the hardest part of the exemption is the security language.”
@@ -147,6 +183,9 @@ When I read that part of the rule, it definitely led to some texts and Slack mes
 
 And all this would be the *best case scenario*, if somehow you were able to get around the license restrictions.
 
+```{index} single: Fair use ; computational text analysis legitimate
+```
+
 Erik sighed. “You have to take a step back and remind yourself what it means to have gotten this exemption at all. The US Copyright Office is acknowledging that computational digital humanities research – text data mining – is fair use! That’s big. And you have to take the long view here: we now have a legal beachhead for this kind of work.”
 
 
@@ -156,6 +195,9 @@ Good news! We got a DMCA exemption granted that legitimizes breaking encryption 
 
 But we can fix it, right? The exemption will be up for renewal in 2024 and that will create the opportunity to address the parts that aren’t working or even expand it. Could we address the contracts issue?
 
+```{index} single: Licensing ; potential legislative fixes
+```
+
 “Not so fast,” said Rachael. “Setting permissible terms for contracts is not within the domain of the Copyright Office. They only have the authority to grant or deny exemptions to allow the breaking of encryption – they have no power over the agreements businesses make with their customers. The way to get there is to either negotiate with individual publishers, or try legislation at a state or federal level. That’s what’s happened in Europe– there’s been legislation at the EU level that will be implemented in the laws of individual countries, prohibiting contract terms that interfere with their equivalent of fair use for researchers.”
 
 “Oh good, so we just need to get federal legislation passed. That’s so not happening in the current political climate,” I moaned.
@@ -163,6 +205,9 @@ But we can fix it, right? The exemption will be up for renewal in 2024 and that 
 “The thing is, people have tried it at the state level. Maryland got a law passed about ebook contract terms for libraries, but then a court found it to be unconstitutional, and so they’re not pursuing it further,” said Rachael.
 
 But her mention of the situation in Europe gave me an idea. “Could we collaborate with researchers working in more favorable legal environments? More international collaboration is a good thing, right? Now every project in the US that wants to work with ebooks has a great excuse to go find a colleague in the EU to partner with! Would that work?”
+
+```{index} single: Licenses ; possibility of EU collaboration
+```
 
 “All of this is so new,” said Rachael. “First, EU rules prohibiting contractual override of fair use rights aren’t codified in the laws of all the individual countries yet, and not everywhere also allows breaking DRM as part of those rights. Plus, in terms of EU researchers sharing content with US researchers, what matters is their fine print. If you want to rely on someone else’s DRM exception, that other researcher would need to make sure their own contracts include rights to share materials with collaborators at other institutions, in other countries (which is unlikely). Cross-border text data mining issues are pervasive, and we’re just learning how to navigate them. No one has it all figured out yet; I’m speaking to the World Intellectual Property Organization next week about this, planting the seeds for further discussion about text data mining challenges, both from a copyright perspective and a contractual override perspective. This is a learning process for policymakers, too. And there’s very little that any single scholar or institution can do about any of this. What we need is coordinated action.”
 

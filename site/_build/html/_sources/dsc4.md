@@ -8,32 +8,40 @@ bookseries: regular
 permalink: /dsc4/
 ---
 
-<img src="_static/images/DSCLogo.png" />
-
-# DSC #4: AntConc Saves the Day
-
+# DSC \#4: AntConc Saves the Day
+```{index} single: *Book Topics ; AntConc (DSC 4)
+```
 by Anouk Lang, April 10, 2020
 
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
-<img src="_static/images/bookcovers/dsc4_cover.jpg" alt="DSC 4 book cover" />
+<img src="https://datasittersclub.github.io/site/_images/dsc4_cover.jpg" alt="DSC 4 book cover" />
 </div>
 
 My heart racing, I flipped my laptop open, powered it up and waited with bated breath for the browser to start. This was the moment I'd been waiting for. At last the page loaded and I clicked the link, to get to what I'd been waiting for with such anticipation. Hundreds of beautiful clean text files shone out of the screen at me, carefully labelled, fixed of their OCR errors and culled of their paratexts and their encoding gremlins. It was better than finding a stash of candy in one of Claudia's pillowcases: it was the corpus of BSC texts, [lovingly curated and cleaned by Quinn and Katia (as described in _DSC #2: Katia and the Phantom Corpus_)](https://datasittersclub.github.io/site/dsc2/), and all ready to work with. Meanwhile, a thicket of deadlines and disasters had sprung up in front of the other Data-Sitters, which was just the excuse I needed. "I'll get started with AntConc!" I told them.
 
 <img src="_static/images/dsc4_gettingahead.png" alt="AntConc results for 'getting ahead of myself'" />
 
-
+```{index} single: Tools; AntConc
+```
+```{index} single: AntConc
+```
 But, as BSC narrators like to do, I’m getting ahead of myself. AntConc, for those who’ve not encountered it before, is a concordancer: a piece of software used in the fields of corpus linguistics and natural language processing (NLP) that lets you load a corpus of texts and then search it for words or phrases. You can modify your search terms with a set of customizable wildcards or regular expressions, and AntConc will bring up those words or phrases in what’s known as a key word in context (KWIC) display. You can then sort these KWIC lines to get a sense of the words that precede or follow the words in your query, generate a frequency list of all the words in the corpus, find words which commonly appear (or collocate) together, bring up a visual display of where in each file the words in your query appear, compare the frequency of words in your corpus to their frequency in a reference corpus, and more. AntConc is well regarded in the digital humanities community as it’s well maintained by its creator Laurence Anthony, it’s free to use, and – one of the things I particularly appreciate about it – it’s lightweight and can usually be installed on lab PCs of the type that people teaching digital humanities can find themselves restricted to using. For classes, or DH beginners for whom jumping into NLP with Python is not a realistic option, it is a good way to demonstrate some of the potential of text analysis using a pretty intuitive graphical user interface (GUI). You might see it as the text analysis equivalent of the Kid-Kit, the box of crafty fun things the BSC took to babysitting gigs when they particularly wanted to keep their charges amused. 
 
-
+```{index} single: AntConc; word frequency lists
+```
 I loaded the corpus of BSC books into AntConc (*File > Open Dir*) and started by generating a word frequency list (*Word List* tab then *Start*) and taking a look at the basic stats, which appear at the top of the main white window in the Word List tab once you have clicked Start. The corpus was around 4.7 million words, with around 33 000 different unique words (or types). I then looked at the word frequency list, something which can be an interesting exploratory step, as it lets you see if there are any terms with fairly high frequencies whose presence isn't immediately explainable by intuition. I was all primed to look up terms relating to the things the other Data-Sitters and I had speculated would make for interesting queries: words around gender, race, consumerism, suburbia and so on. But before any of those appeared on the frequency list, however, I came across the term "little" quite high up. What was even more interesting was that of the 7075 instances of little in the corpus, almost two thirds of them (4653) appeared as part of the bigram "a little". What could it mean? I decided to investigate further by doing a concordance search for "a little" (*Concordance* tab, type `little` into the search box and press *Start*) and sorting the results alphabetically by the word to the right of the search terms (enter *1R, 2R* and *3R* into the Kwic Sort boxes then press *Sort*).
 
 ![AntConc results for 'look a little alike'](_static/images/dsc4_LookALittleAlike.png){:style="float: right;margin-right: 7px;margin-top: 0px;"}
-
+```{index} single: KWIC; with AntConc
+```
+```{index} single: AntConc; KWIC
+```
 The first thing to jump out at me -- in light of our discussions about similarities and differences between the books and the logistics of keeping things consistent across the series when a number of ghostwriters were producing the books  -- was the way the formula of "look a little alike" recurred in the introductory descriptions of Mary Anne and Kristy. (If you look at the KWIC lines you'll spot other formulae in there, notably being best friends, being short and having brown hair.) Given what we knew of the 'BSC Bible' (as mentioned in [DSC Multilingual Mystery #2: Beware, Lee and Quinn](https://datasittersclub.github.io/site/dscm2/)) and its role in guiding the ghostwriters, this wasn't that surprising. I made a mental note to check, once we got access to the version in the archives, whether "look a little alike" was part of the phraseology it used when describing those two characters.
 
 As I continued to cast my eye over the KWIC lines for the search query "look a little", trying different sorting options and looking out for other combinations, a more subtle pattern emerged. The phrase was, it seemed, more likely to modify negatively rather than positively inflected adjectives: terms like *downcast, forlorn, guilty, hurt, green, pale, wary*, and *wistful* that encompassed emotional, behavioral or somatic states. Were the BSC books, I wondered idly, offering readers a lesson in the textual regulation of negative feelings or bodily states, by suggesting that the way to express one’s own feelings, or represent someone else’s, was by using the premodifying phrase "a little"?
 
+```{index} single: Interpretation ; corpus analysis
+```
 This is the dangerous point in corpus analysis: when a potential finding of interest suggests itself to you and -- if you are trained as a literary analyst to value this as 'close reading', rather than as a statistician to dismiss it as 'overfitting' -- it is an almost irresistible mental leap to land on an intuitive explanation, and use the KWIC lines that support your theory as evidence, while quietly discarding the ones that complicate it. There could be any number of reasons why the numbers shake out as they do, so what you need to do is park that intuitive explanation and carry out some additional tests. You could, for instance, check if the word or phrase is more or less frequent in your corpus when compared to a reference corpus (a comparable group of texts which is a roughly acceptable match for the genre, historical period, regional variants and so forth of your own corpus). I sighed. It had been enough of an effort getting our own data together. What corpus could I possibly find that would approximate 4.7 million words of 1980/90s young adult fiction in American English?
 
 In the meantime, though, what I **could** do pretty easily was a comparison of look a little + [negative state] to look + [negative state]. I used the * wildcard (which stands in for zero or more of any character: see *Settings > Global settings* then the *Wildcards* tab for more) to pull up all instances of the lemma *look*, ie. *look, looks, looking, looked* and so on, and pulled out a few examples to get a sense of how often a term describing a negative state would be preceded by a little:
@@ -46,10 +54,18 @@ In the meantime, though, what I **could** do pretty easily was a comparison of l
 
 Pulling on my amateur sociolinguist's deerstalker hat (one of which fashion-forward Claudia would undoubtedly own), I noticed that, as the percentages in this short list increased -- that is, as the likelihood that one of these states would be qualified by "a little" -- so the perceived negative qualities of the emotion seemed also to increase. There's nothing particularly wrong with or shameful about being surprised, I figured, so perhaps it's not very important to cushion that judgment of oneself or others with "a little". But if someone is embarrassed or sheepish, then that's an unpleasant state for them to be in, and for others to witness them in, so it might become more pressing to modify those descriptors.
 
+```{index} single: Tools; CLAWS POS-tagger
+```
+```{index} single: Part-of-speech tagging; CLAWS tagger
+```
 I really wanted the other Data-Sitters to weigh in on this -- safety in numbers when you have a potentially dangerous data-sitting job -- but I still had some work to do. For a start, I wanted to be sure I had captured all the adjectives describing emotional states that were modified by "a little" in the corpus, rather than relying on those I had identified manually, and see whether my hypothesis still held. The best way to do this was to apply part-of-speech tags, or POS-tags, to every word in the corpus. This is most efficiently done with something like the NLTK's nltk.pos_tag function. But, as I wanted to use only tools with a GUI, I turned to the[  CLAWS POS-tagger](http://ucrel-api.lancaster.ac.uk/claws/free.html), which allows you to manually paste in plain-text and get back a version that has had parts of speech tags applied to it automatically. A singular noun such as "cat" will be tagged as `cat_NN1`, for instance, while a verb such as "babysit" will be tagged `babysit_VV0` and so forth. The automated tagging isn't perfect, but as it would take an absurd amount of time to manually assign part-of-speech tags to a corpus this size, it's a good deal better than not having any pos-tags at all. The[  C7 tagset](http://ucrel.lancs.ac.uk/claws7tags.html), which is the one I was using, has three tags for adjectives: JJ (general adjective), JJR (general comparative adjective and JJT (general superlative adjective), which are appended to the end of each word with an underscore, so you can include all or part of a tag in your search term by using wildcards. AntConc allows you to specify the characters that separate words from their tags, so once I had tagged my corpus and loaded it into AntConc, I set the tag marker to _ (*Settings > Global Settings* then select *Tags* and look in the box next to *Tag* marker). I then typed in the search query `a_* little_* *_J*` (meaning "find me all instances of phrases consisting of the word a followed by any tag, then "little" followed by any tag, then any word followed by a tag that starts with J and contains 0 or more other letters, ie. JJ, JJR and JJT"), and hit *Start*.
 
+```{index} single: Part-of-speech tagging; errors
+```
 I got back 1271 results, mostly consisting of adjectives of the sort I was looking for, but there were a fair number of errors such a "little stuffed koala bear" (where a "little" denoted size), and "let's go downtown, shop a little, separate for lunch and then shop some more" (where a tagging error had missed the comma before "separate" and thus miscategorized it as an adjective rather than a noun). I saved the output to a text file, opened that in Excel and manually removed all the false positives, which yielded a list of 1054. I then ran the same search but with a search query string that picked up the past participles of verbs (ie. `a_* little_* *_VVN`), so as to return phrases such as "a little carried away" and "a little choked up". This search produced 353 results which, after removing a few errors (eg. "a little jeweled mirror"), left me with 351. Once that was done, I amalgamated the two lists, copied the column containing "a little" + the descriptor, and pasted it into a new file in the text editor BBEdit. I used regular expressions to strip out the tags and all the words in the sentence except the descriptor (replacing `a_.{2}\slittle_.{2}\s ` with nothing to remove the text that preceded each descriptor, `_.{2,3}\s.*` with nothing to remove the text that followed, and `\n[^a-z]*` with `\n` to clean up any stray non-alphanumeric characters), and was left with a list of 1405 descriptors. (For more on using regular expressions, see [DSC Multilingual Mystery #3](https://datasittersclub.github.io/site/dscm3/).)
 
+```{index} single: OpenRefine; text facet
+```
 But I wasn't quite done yet. I had to find out how many of each type of word there were in my list, so I used OpenRefine's Text Facet function to get a list of the clustered terms (367, as it turns out) with counts. OpenRefine will give you a tab-separated version of this information (if you click '367 choices', just below the words 'Column 1' to the left of the screen), so I dumped that into Excel, and added two more columns: the number of times the word appeared in the corpus in total, and the proportion of times the word was modified by a little. (For those seeking a proper tutorial on how to use the power tool that is OpenRefine, Quinn's got you covered: see [DSC Multilingual Mystery #3](https://datasittersclub.github.io/site/dscm3/).)
 
 
@@ -127,8 +143,14 @@ I sat back and looked at my handiwork with satisfaction: a table of the words in
 
 So, some of the terms in the list were more trustworthy than others. But to what extent did that compromise my earlier hypothesis about there being a focus in the books on mitigating unpleasant emotions via the (over)use of the premodifying phrase a little? There were terms towards the top of the list -- *panicky, queasy, taken aback, choked up, sheepish, carried away* -- which seemed very much in tune with the intense emotions experienced in teenagerhood: feelings whose distress was multiplied by the mortifying possibility that you would be observed -- and judged -- for going through them, rather than gliding through them unruffled. But as evocative as they were, these terms were not a reliable basis on which to build an argument, as they each numbered only a few dozen. However, a little further down the list were terms including *disappointed, annoyed, jealous, nervous, guilty, confused, embarrassed* and *uncomfortable* that, while denoting feelings that were perhaps less viscerally intense, nonetheless signalled other unpleasant states, and which appeared at least a hundred times in the corpus (nervous, in fact, appeared 709 times). These seemed like more of a solid basis on which to hang an interpretation. And, taking the more and the less reliable terms all together, it did feel like the list moved, roughly, from more intense to less intense, and from more excessive to more reasonable, as the likelihood of modification by "a little" decreased. Describing someone as "carried away" felt to me as if it contained the implication that they were over-excited and unreasonably emotional, as opposed to "worried" or "concerned" which didn't carry those same overtones of inappropriate excess.
 
+```{index} single: Corpus linguistics; reference corpora
+```
+```{index} single: Corpora; Corpus of Contemporary American English (COCA)
+```
 Pondering the extent to which my British/Australian English would lead my judgments about the positive or negative associations of particular words in 1980s tween American English to differ to those of the rest of the Data-Sitters on the other side of the Atlantic, I went off to search for a reference corpus. The Corpus of Contemporary American English (COCA) presented itself as my best option, as it contains 1 billion words from 1990 to the present, and covers a range of genres, including fiction. It was far from a perfect match, and the interface limited me to an irritatingly low number of queries per 24 hour period, but it was the best thing to hand. I rolled up my sleeves and got searching.
 
+```{index} single: Phrases; a little
+```
 Querying COCA for all phrases with "a little" + an adjective turned up a list that, sorted by frequency, was also heavy on the negative terms, but didn't follow quite the same pattern I'd been hypothesizing about:
 
 <img src="_static/images/dsc4_COCA_ALittle.png" alt="COCA results for 'a little'" />
@@ -217,6 +239,11 @@ The raw frequencies were even lower here than in my BSC corpus, so all the same 
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
 <img src="_static/images/dsc4_QuinnGreenScreen.jpg" alt="Quinn on Zoom with a green screen and BSC books" />
 </div>
+
+```{index} single: Theorizing; emotional labor
+```
+```{index} single: Collaboration; with easily-distracted collaborators
+```
 By now I was bursting to take all of this to a Data-Sitters Club meeting and to hear what everyone else made of it. We dialled in -- Quinn having rigged up a green screen for her Zoom background so that her head appeared, Cheshire Cat-like, in front of a rainbow of BSC covers -- and I ran everyone through the searches, the word lists, the disclaimers, the reference corpora and all the rest of it. I shared my AntConc screen and ran some searches to illustrate. I finished with my grand unified theory of what it meant for our understanding of the ideological work being done by the books: "... and so it feels to me like the books might be modelling for the reader in a discursive way one of the forms of emotional labor that women are socialized to do in daily life: regulating other people's emotions for them."
 
 No one was interested in my dumb theory. Everyone was, however, entranced by AntConc. “Hey, I saw ‘happy ending’ a bunch of times!” exclaimed Roopsi. “Can you look that up?”
@@ -225,14 +252,20 @@ No one was interested in my dumb theory. Everyone was, however, entranced by Ant
 
 “Sure,” I said, and did the search. Everyone started to talk at once about why there might be so many mentions of happy endings, and whether this was about the endings of the novels themselves, ways of describing what happened to characters and families, or something else. It was, I had to admit, more interesting than my deep dive into "a little".
  
+```{index} single: Ronald Reagan
+```
 “I’m sure they start talking about Ronald Reagan at one point”, Katia said, so I looked up *reagan*.
 
 <img src="_static/images/dsc4_Reagan.png" alt="AntConc results for 'Regan'" />
 
+```{index} single: Back to the Future
+```
 “Wait, are they talking about *Back to the Future*? They’re talking about *Back to the Future*!” Roopsi squealed.
 
 ![AntConc results for 'Back to the Future'](_static/images/dsc4_BTTF.png)
 
+```{index} single: Wizard of Oz
+```
 And, before I knew it, we were down a rabbit hole of the movies the BSC characters watched:
 
 ![AntConc results for 'Wizard of Oz'](_static/images/dsc4_WizOfOz.png)
@@ -243,7 +276,9 @@ And, before I knew it, we were down a rabbit hole of the movies the BSC characte
 ![AntConc results for 'guys'](_static/images/dsc4_Guys.png)
 
 “*Guys*,” I said more firmly, attempting to channel Kristy bringing a BSC meeting to order. “What do you think about these findings around 'a little' and the interpretation I’ve come up with? Is there something there? What have I missed?”
- 
+
+```{index} single: Phrases; a little, but
+```
 Gradually, everyone turned their attention back to the searches I’d done. “I think you’d want to look at other kinds of modifying phrases as well”, suggested Quinn. “Like 'sort of' and 'kind of', and see if the same pattern appeared.”
  
 “Yeah, I had the same idea,” I said, “but I was running a bit short on time. I’ll give them a go, though. ”
@@ -276,13 +311,14 @@ The other Data-Sitters had given me a lot to think about, and I was glad to have
 ![AntConc results for 'a little, well'](_static/images/dsc4_ALittleWell.png)
 ![AntConc results for 'a little...'](_static/images/dsc4_ALittleDotDotDot.png)
 
-
+```{index} single: Theorizing; modeling mitigation of emotional distress
+```
 These examples felt like they supported my theory: not only did most of them have some kind of negative connotations to them (rooms and houses being untidy; people being displeased; judgments about unpleasant character traits), but they showcased other ways to push back the moment when a negative judgement is voiced ("the script is a little – well, it’s a little boring and it seems a little … I don’t know … a little insulting"). I could see it was going to be hard to give up my theory. I guess close reading habits die hard.
 
 In the days that followed, I found myself wondering what these findings illuminated of the books more broadly. My thoughts kept returning to the pedagogical imperative of children's literature that Maria had spoken about in [DSC #3: The Truth About Digital Humanities Collaborations (and Textual Variants!)](https://datasittersclub.github.io/site/dsc3/), and in addition, the socializing function of children's literature that it is impossible not to notice when you begin reading children's literature to children when you yourself are an adult. I couldn't shake the sense that the BSC books were gently modelling to their readers ways to mitigate the emotional distress experienced by people around you, even if those people are characters in a book rather than real people in the real world, in ways that seemed to me remarkably well aligned with concepts of emotional labour that women are disproportionately socialised and expected to perform. Was it taking it too far to draw a conclusion of that sort just from lists of word frequencies? Maybe the other Data-Sitters would take up that question in their own explorations with Voyant. Maybe they'd find much more intriguing, or even contradictory, things. Or maybe they'd just happily fall down a rabbit hole following popular culture references from the 1980s and 1990s, and that'd be the last we ever heard of them.
 
 
 
-### Suggested Citation
+## Suggested Citation
 
 Lang, Anouk. “DSC #4: AntConc Saves the Day.” _The Data-Sitters Club_. April 10, 2020. https://datasittersclub.github.io/site/dsc4.html.

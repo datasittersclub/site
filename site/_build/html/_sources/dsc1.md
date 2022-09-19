@@ -7,14 +7,15 @@ blurb: 'A colloquial, collaborative guide to computational text analysis for dig
 bookseries: regular
 permalink: /dsc1/
 ---
-<img src="_static/images/DSCLogo.png" />
 
-## DSC #1 - Quinn's Great idea
+# DSC \#1 - Quinn's Great idea
 
+```{index} single: *Book Topics ; About the DSC (DSC 1)
+```
 by Quinn Dombrowski, November 7, 2019
 
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
-<img src="_static/images/bookcovers/dsc1_cover.jpg" alt="DSC 1 book cover" />
+<img src="https://datasittersclub.github.io/site/_static/images/bookcovers/dsc1_cover.jpg" alt="DSC 1 book cover" />
 </div>
 
 It doesn’t really matter that it was my idea. I don’t really care about credit— I’ve got what's half-jokingly been called "the world’s best dead-end job," and credit doesn’t buy me anything. What matters to me is that good things happen, and this project is a very good thing.
@@ -40,6 +41,8 @@ Over the course of the week, lots of people were generous in answering the more 
 
 Think about it: there are over 200 novels, all written in the voice of one (or multiple) characters, by Ann M. Martin or a clearly identified ghostwriter. (There’s no one I need to gratefully acknowledge for their help in preparing this manuscript, because I wrote it myself, thank you very much.) Does each character have a distinct voice? Is that voice different across writers? Do non-narrating characters have distinct voices expressed through their dialogue? How does the characters’ written language (through the handwritten portions of the text) differ from their implicitly spoken text through the first-person narration? The _BSC_ is (in)famous for its use of tropes (Claudia’s “almond-shaped eyes”, “Mal is white and Jessi is black”, etc.), so what else can we find in terms of explicit text reuse in the more formulaic parts of the book (the “Chapter 2” question, AKA “how many different ways can you describe the basic premise and major characters across 200+ novels”)? How do these books treat religion, race, adoption, divorce, disability, not to mention the “Very Special Episode” topics? And all that is just the books: what about how the material was adapted for the 1990's show, the movie, the new graphic novels, the upcoming Netflix series, and the fanfic? There’s unexplored material for a whole research agenda in the area of cultural analytics, which could really use a teenage girl lit counterbalance to its superheroes and sci-fi.
 
+```{index} single: Pedagogy ; communities of practice
+```
 But what if a project did more than just analyze these books? What if it actually walked through the whole process? A year ago, when I started this job at Stanford, I’d done digital humanities for nearly 15 years but had never done computational text analysis. The internet is littered with workshop materials, tutorials, and Python and R scripts with varying levels of documentation, but I had trouble putting all the pieces together. My question to folks at Stanford’s Literary Lab, again and again, was “so what do you actually do next?” And what I learned was that what lies behind the glossy final graphs isn’t a paved road, but a series of choices that shape a walk through the woods. Yes, there are some things (particularly with statistics) that you can unambiguously do wrong, but in most contexts there isn’t a right choice — it’s more like each possible decision provides a different set of opportunities and constraints for your analysis. Some of those constraints make a difference, some of them don’t, and it all depends on what you’re trying to do. At a “Women and Gender Minorities in Digital Humanities" event at Stanford last May, [Nichole Nomura](https://nicholenomura.com) — a member of the Literary Lab, and my co-director at Stanford’s Textile Makerspace — brought up the “view of the whole” from Lave & Wenger’s conceptual framework for communities of practice, in the context of an alternate model of mentoring in digital humanities: “To mentor and have people join our community, we have to show them the whole work of the whole community. We have to make all our practices visible. Maybe we don't have to teach them explicitly right away, but they need to be seen.” I’ve been thinking about this ever since, and whether demystifying computational text analysis might make it more accessible for folks who don’t see themselves as programmers, or “the sort of person who does that stuff” (i.e. white dudes with some previous exposure to computer science).
 
 This was the great idea that came together in Las Vegas: to apply the computational tools and methods that are widely used in the digital humanities text analysis community to the _BSC_ corpus, making visible all the steps and decisions that shape that path. And to write the whole thing up in a series of detailed but colloquial posts that could serve as a guidebook for fellow travelers. I wanted it to be useful — something that newbies of all genders would consult, regardless of whether they grew up as fans of the _BSC_. Even in the reality-distortion field of Las Vegas, I was under no delusion that I could tackle this by myself. So I emailed a couple friends who’d chimed in on the _BSC_ tweets, and then a few more.
@@ -83,7 +86,7 @@ The Data-Sitters Club was going to be a success, and I helped make it work. I ho
 <img src="_static/images/bscmeeting.png" alt="Photo of the first Data-Sitters Club Zoom meeting with Quinn Dombrowski, Katia Bowers, Maria Cecire, Anouk Lang, and Roopika Risam" />
 </div>
 
-### Suggested citation
+## Suggested citation
 
 Dombrowski, Quinn. "DSC #1: Quinn's Great Idea." _The Data-Sitters Club._ November 7, 2019. https://datasittersclub.github.io/site/dsc1.html.
 

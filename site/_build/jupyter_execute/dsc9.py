@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ![DSC logo](_static/images/DSCLogo.png)
-# # The Ghost in Anouk's Laptop
+# # DSC \#9: The Ghost in Anouk's Laptop
 # 
 # <div style='float: right; width: 200px;margin-left: 7px;margin-top: 0px;'>
 # <img src='_static/images/bookcovers/dsc9_cover.jpg' alt='DSC 9 book cover' />
 # </div>
-# 
+
+# ```{index} single: *Book Topics ; AI & text generation (DSC 9)
+# ```
 # by Anouk Lang and Quinn Dombrowski with Annie K. Lamar
 # 
 # February 17, 2021
@@ -17,10 +18,18 @@
 # ### Anouk
 # February 2020. It was about as far as it was possible to be from the sunny nostalgia of kids-playing-out in 1980s Connecticut. Storms were raging up and down the British Isles, some unsettling news about a virus was just beginning to rear its head, the UK had initiated the process to leave the EU and a significant part of the British university sector, including my own institution, was on strike. But the Data-Sitters Club had just been nominated for the Best Use of DH for Fun in the annual [Digital Humanities Awards](http://dhawards.org/dhawards2019/results/) and if ever there was a time when the respite of data-play was needed to drown out the literal and figurative storms in the real world, it was now. I came home from a very cold stint on the picket line, thawed out my fingers, opened up my laptop and thought: if the world's going to end, what better thing to do than feed our Baby-Sitters Club corpus to GPT-2 to see what larfs it might deliver?
 # 
+# ```{index} single: GPT-2
+# ```
+# 
 # GPT-2 (short for Generative Pre-trained Transformer) is a large-scale model of language which, in the words of its creators at OpenAI, produces[  "conditional synthetic text samples of unprecedented quality, where we prime the model with an input and have it generate a lengthy continuation."](https://openai.com/blog/better-language-models/) In functional terms, it takes what it knows about how language behaves, at least according to a dataset of 8 million (mostly English) web pages considered to be useful by Reddit users, translates the relationships between words and phrases in that 8-million page corpus into a list of numbers, and then, if given a prompt to start it off, will automatically generate text that follows on from that prompt using what it has learnt from the larger corpus. OpenAI opted not to release the full GPT-2 model over concerns that it could be used maliciously, as it did such a good job of imitating human-generated text, so they released a smaller version of the model for everyone other than themselves to use. And use it they did: the months since GPT-2's release have seen a steady increase in the number of people experimenting with it, not just from computer science but also from the humanities and the cultural industries.
 # 
-# Some of this activity is due to[  Talk To Transformer](https://talktotransformer.com/), a handy web-based GUI requiring no technical expertise. Until recently, Talk To Transformer offered users the opportunity to divert themselves by typing in a few words or sentences, on the basis of which it would then generate chunks of text somewhere on the continuum from amusing incongruity to uncanny likeness. Janelle Shane used it, along with other neural networks, to compile a collection of AI-generated texts on her[  AI Weirdness](https://aiweirdness.com/) website, the funniest of which suggest that the process works best -- at least for the purposes of comedy -- when the prompts come from identifiable genres that the model can, so to speak, recognize and reproduce, such as[  names of cookies](https://aiweirdness.com/post/620645957819875328/this-is-the-openai-api-it-makes-spookily-good),[  tweets from WeRateDogs](https://aiweirdness.com/post/620645957819875328/this-is-the-openai-api-it-makes-spookily-good), or[  Christmas carols](https://aiweirdness.com/post/189845472982/the-ais-carol) (for extra laughs, listen to what happened when a voice actor[  recorded](https://twitter.com/JoeZieja/status/1209511648618172421) one of the creepier carols). Another of my favourite GPT-2 toys is[  AI Dungeon](https://play.aidungeon.io/), a text-based fantasy game which brings the "yes, and" of improv to bear on the genre of the Choose Your Own Adventure story, creating an interactive adventure game many orders of magnitude better than its[  print culture predecessor](https://www.software.ac.uk/blog/2016-10-07-choose-your-own-adventure). Here it is[  seamlessly incorporating instructions about installing software packages into a fantasy narrative](https://twitter.com/eturner303/status/1216476218603630592). Or, if you want to run something on your own machine, try[  the packages Robin Sloan put together to generate snippets of sci-fi](https://www.robinsloan.com/notes/writing-with-the-machine/).
 # 
+# ```{index} single: Projcts ; AI Weirdness
+# ```
+# Some of this activity is due to [Talk To Transformer](https://talktotransformer.com/), a handy web-based GUI requiring no technical expertise. Until recently, Talk To Transformer offered users the opportunity to divert themselves by typing in a few words or sentences, on the basis of which it would then generate chunks of text somewhere on the continuum from amusing incongruity to uncanny likeness. Janelle Shane used it, along with other neural networks, to compile a collection of AI-generated texts on her[  AI Weirdness](https://aiweirdness.com/) website, the funniest of which suggest that the process works best -- at least for the purposes of comedy -- when the prompts come from identifiable genres that the model can, so to speak, recognize and reproduce, such as[  names of cookies](https://aiweirdness.com/post/620645957819875328/this-is-the-openai-api-it-makes-spookily-good),[  tweets from WeRateDogs](https://aiweirdness.com/post/620645957819875328/this-is-the-openai-api-it-makes-spookily-good), or[  Christmas carols](https://aiweirdness.com/post/189845472982/the-ais-carol) (for extra laughs, listen to what happened when a voice actor[  recorded](https://twitter.com/JoeZieja/status/1209511648618172421) one of the creepier carols). Another of my favourite GPT-2 toys is[  AI Dungeon](https://play.aidungeon.io/), a text-based fantasy game which brings the "yes, and" of improv to bear on the genre of the Choose Your Own Adventure story, creating an interactive adventure game many orders of magnitude better than its[  print culture predecessor](https://www.software.ac.uk/blog/2016-10-07-choose-your-own-adventure). Here it is[  seamlessly incorporating instructions about installing software packages into a fantasy narrative](https://twitter.com/eturner303/status/1216476218603630592). Or, if you want to run something on your own machine, try[  the packages Robin Sloan put together to generate snippets of sci-fi](https://www.robinsloan.com/notes/writing-with-the-machine/).
+# 
+# ```{index} single: GPT-2 ; for generating BSC fan-fiction
+# ```
 # So, like many DH folks, I'd had a play with, and a good chortle at, automatic text generators done with neural networks. For this more extended foray into GPT-2 using our BSC corpus, I decided to use an off-the-shelf application in beta. While I try wherever possible to use open-source code and freely available software, this can involve a serious investment of time in learning new tools, and like I said: mid-semester, strike, and the seismic rumblings of what Covid-19 would mean for teaching and assessment were beginning to shake the ground underfoot. An out-of-the-box application offered a way to see whether the results would be worth the time needed to figure out how to work with the model in a programming language. I fed our BSC corpus into the application, waited a few hours, and then watched as my screen began to fill up with neural-net-generated Baby-Sitters' Club fanfiction.
 # 
 # >"Okay, you guys. What kind of dad does he have?"
@@ -196,11 +205,17 @@
 # ## Six months later
 
 # ### Quinn
+# ```{index} single: Covid; fall 2020
+# ```
+# 
 # The DSC meeting where Anouk brought her GPT-2 findings, and I laughed until my stomach hurt, was one of my very last meetings in the before-times, just days before the elementary school and preschool shut down, and time began to go slowly, then quickly, then morphed into something altogether confusing and surprising. Especially here in the Bay Area, where we rely on festivals and events to mark the year in the absence of notable seasons. Or, at least, we used to. Maybe someday we will again.
 # 
 # It was fall, and universities in the US were making last-minute decisions to go all-online with no students on campus (like my institution, Stanford, or the institution in the city where I live, Berkeley, following a COVID-19 outbreak stemming from a frat party), or they were bringing students back -- and quickly rethinking those plans as cases exploded. My oldest kid was doing first grade online for the indefinite future, and I didn't expect the preschool to get through the year without a closure. The election was on the horizon, everyone was bored with social distancing and masks, and there was no end in sight to the ever-increasing COVID-19 death toll and the ongoing dismantling of civil society and the infrastructure that helps keep it afloat. Reading through Anouk's description of February in Edinburgh from the perspective of late August 2020 in the United States, what I'd have given for icy fingers and a picket line.
 # 
 # It had been a very long time since I laughed the way I did when Anouk first shared her GPT-2 results. I needed a good laugh, but I also wanted to try to do it myself. So I dropped Jeff Tharsen a note.
+# 
+# ```{index} single: Guest Data-Sitters; Jeff Tharsen
+# ```
 # 
 # Jeff Tharsen is like a cross between a Viking and a Confucian scholar. He's tall, with dark eyes and a long beard that once was blond and is now turning an off-white color like Mary Anne's blouses. He's the University of Chicago's resident expert in humanities-based research computing but spends much of his time thinking about sound systems in premodern rhetoric and poetry, social justice and savage inequities, playing guitar like Rico from the *California Diaries* series, Minecraft mods, and finding infinite combos for his *Magic: the Gathering* deck builds. He'd blown me away recently with the "Shakespeare sonnets" and "Blake poems" he'd coaxed GPT-2 into generating, and while I'm getting better at sorting out code myself, I was happy to have [some code and instructions to start from](https://github.com/rcc-uchicago/BERT-GPT2_tutorial_Summer2020) that I hoped might work.
 # 
@@ -208,6 +223,9 @@
 # 
 # But let's take a step back first.
 
+# ```{index} single: Machine learning; it's just math
+# ```
+# 
 # #### What is machine learning anyway?
 # 
 # As Jeff reminded me when I kept venting my impatience at him because my model didn't seem to be learning anything at all, machine learning isn't a child you can coax into putting their shoes on faster because *we really have to go or else we'll miss our 5-minute social distancing drop-off window at the preschool and cause a backup for other families*.
@@ -222,23 +240,44 @@
 # 
 # Knowing the answer to all those questions is one step towards improving our grade-prediction algorithm. But there's still another set of information that we're missing: how much does each of those things *matter* to the overall output? Maybe an upcoming art exhibition means that she'll be a little more distracted than usual when trying to study, but the effect overall might be negligible. On the other hand, if Claudia's parents are really cracking down on her, threatening to prevent her from participating in the Baby-Sitters Club until her grades improve, that's likely to have a *much bigger* impact on the test outcome. The impact of a given feature is called its "weight" in machine learning.
 # 
+# ```{index} single: Machine learning ; deep learning
+# ```
+# 
 # "Deep learning" refers to a kind of machine learning where features are organized into layers. Lower layers capture basic features, and higher layers capture more subtle things. This is a little easier to understand with an example for deep learning for computer vision: a low-level feature might enable an algorithm to recognize that something in an image is a line. A higher-level feature might be able to recognize that something is a giant dangly earring like Claudia might wear. In the image below, the layer on the left identifies recurrent patterns in the way black, white and grey pixels come together to form particular shapes like lines and curves. The layer in the middle spots patterns in the way those shapes typically fit together (what a human being can recognize as facial features like eyes and noses). Then the layer on the right finds patterns in the way those eyes and noses are put together with other things mouths, foreheads and ears to make faces.
 # 
+# ```{index} single: Machine learning ; training as a guessing game
+# ```
+# 
 # Training a machine learning algorithm is like making the algorithm play a big guessing game. Your training data has all the "right" answers. The algorithm takes part of the training data, hides some of it from itself, and attempts to guess the right answer by changing the weights it assigns its features. Then it checks its work, and typically will report back to you about how it's doing, using something called "loss". High loss values (and what counts as "high" depends a lot on the context) mean that the algorithm made some bad decisions during that round, leading to a bunch of mistakes. Remember, it's a guessing game: sometimes an algorithm can get off on a wrong track for a turn or two, but it should be able to correct itself and keep improving by passing the right answers back through the network, updating weights along the way.
+# 
+# ```{index} single: Machine learning ; overfitting
+# ```
 # 
 # If your loss rate just keeps bouncing around the same numbers you started with for turn after turn, something has gone wrong. (And something **had** gone wrong when I tried it with Jeff's code -- more on that later.) But it's also a problem if your loss value goes all the way to 0. You might think that a 0 loss value is great -- perfect A+ right answer every time! But remember: you're not trying to train a model that will spit your training data back at you with perfect accuracy. What you want is a model that can handle, with reasonable accuracy, data that it **hasn't** seen before. When a model gets too good at predicting your training data, so good that it hurts its ability to handle new data, that's called "overfitting".
 # 
 # But back to Claudia's grades! And here's where things get a little spooky. The way I've described things so far suggests that you, the knowledgeable human who understands how the world works in general, and how Claudia's life works in particular, define the features that the algorithm uses. Maybe you can trust the algorithm to handle the weights, but you can't trust the ghost in your laptop to make the call on what features to use, can you?
 # 
+# ```{index} single: Machine learning ; loss of human control
+# ```
+# 
 # Actually... yes? It turns out that in most cases, you're better off leaving the whole thing to the algorithm. You can see how this can feel irksome, particularly if you're like Kristy and want to be in control. How can you trust the ghost in the laptop to pick the right things if it's not an expert? The fact that you're not in there bossing the algorithm around contributes to the rhetoric around machine learning as a "black box". But here's the thing: hopefully you've already wrapped your head around the idea that computers just do things differently than humans. (If not, check out [DSC #8: Text-Comparison-Algorithm-Crazy-Quinn](https://datasittersclub.github.io/site/dsc8/).) With text comparison algorithms, it's harder to adjudicate how "right" the computer's determinations are compared to the decisions we'd make as humans. We just have to grapple with them as another perspective, take what insight we can, and sometimes agree to disagree. But machine learning is a little different because there often is, actually, a "right" answer. Without getting too worked up about how the algorithm comes up with its answer, we can evaluate how often it gets the answer right.
+# 
+# ```{index} single: Machine learning ; danger as a decision-making tool
+# ```
 # 
 # Which is not to say that we should pay no mind to how the ghost in the laptop makes decisions. Machine learning algorithms (often under the fancier title of "artificial intelligence" or AI) are getting adopted as an automated decision-making tool in [all kinds of contexts](https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G), including ones with serious consequences, like courts attempting to determine [which defendants are "high risk" for committing future crimes](https://www.theguardian.com/inequality/2017/aug/08/rise-of-the-racist-robots-how-ai-is-learning-all-our-worst-impulses). Algorithms like to find [shortcuts to get to the answer](https://www.theguardian.com/technology/2015/jul/01/google-sorry-racist-auto-tag-photo-app), or [close enough](https://www.technologyreview.com/2021/01/29/1017065/ai-image-generation-is-racist-sexist/). Even if you've tried to set things up so that you don't tell the algorithm about race (in order to ensure that it's not making determinations based on race) you may discover that one of the features it picks up and uses is essentially a proxy for race. It's not for nothing that OpenAI chose not to release their full GPT-2 model, like Anouk mentioned, to avoid people using it for nefarious purposes. (That said, OpenAI reached [a deal with Microsoft](https://blogs.microsoft.com/blog/2020/09/22/microsoft-teams-up-with-openai-to-exclusively-license-gpt-3-language-model/) to give them exclusive access to the full GPT-3 model, allowing them to embed, adapt, and use the model however they please. And depending on how they vet **their** clients... 😬)
 # 
 # There are no lives at stake when we're using machine learning with literature. But you may still want to understand how the algorithm is making its determinations, especially when it's performing well. Is there anything we can learn about literature from the way an algorithm is able to classify it, or generate text that readers perceive as "similar" (like Anouk was trying to do in February)? Some algorithms (like k-means clustering) can easily give you the features that they're using; with others, particularly deep learning algorithms with a lot of layers, it's harder to determine. The features the algorithm is using may not be all that interesting, or might reflect things about your corpus that aren't actually what you're trying to get at (e.g. if you're looking for what characteristics differentiate books written by British vs. American authors, the presence of the word "whilst" is probably not what you want).
 
+# ```{index} single: Mistakes ; machine learning rates
+# ```
+# 
 # #### Fine-tuning GPT-2
 # Jeff's notebooks for fine-tuning GPT-2 were supposed to be run on a GPU (a Graphics Processing Unit -- I'll say more about those in a minute). But ever since I was a child reading the *Baby-Sitters Club* novels, I've tended to skip inconvenient instructions, cross my fingers, and hope for the best. Which is how I ended up running his notebook on my MacBook Pro (which does not have a GPU) for 24+ hours, without the model getting more BSC-like at all. It wasn't even just a problem of me using the wrong hardware for the job, I also had made a mistake with how I set up the fine-tuning code, which turned into an opportunity to learn about "learning rates."
 
+# ```{index} single: Machine learning ; learning rates
+# ```
+# 
 # ##### Learning rates
 # 
 # Part of why the model wasn't learning anything was that I'd set the `learning_rate` hyperparameter too high. (In machine learning, a "hyperparameter" is just a setting that you, the squishy human, adjust; "parameters" are estimated from data automatically by the machine. You adjust hyperparameters by specifying their value when you run a task like fine-tuning a model.)
@@ -249,6 +288,12 @@
 # 
 # The bigger problem was that, no seriously, you really do need GPUs to fine-tune GPT-2 at all effectively.
 
+# ```{index} single: Machine learning ; GPUs
+# ```
+# 
+# ```{index} single: GPUs vs CPUs
+# ```
+# 
 # ##### What's a GPU and why should you care?
 # 
 # GPU stands for Graphics Processing Unit. You can think of it as a cousin of the CPU (or Central Processing Unit), which you might be familiar with from your own computer, if you’ve ever looked at the Windows Task Manager or Mac Activity Monitor to figure out what runaway process is sucking down your battery and making your fan whir with its high CPU usage. (Looking at you, Adobe Creative Cloud!) Gaming laptops need good graphics performance in order to constantly render, update, and rotate the millions of polygons that make up modern game graphics, so they’re more likely to have GPUs to make that work. If you’re trying to render 3D models at tolerable speeds, you should also work on a machine with GPUs. But why do GPUs matter for GPT-2? We’re not using machine learning to try to cluster BSC book covers or anything! (Though actually… well, don’t be surprised if you see that in a future DSC book.)
@@ -274,11 +319,20 @@
 # 
 # Around the time I was struggling with ways to fine-tune GPT-2 using the Baby-Sitters Club corpus, fall quarter had begun at Stanford, and I started teaching my biennial non-English DH course. (Online, asynchronously, and hastily reworked week-by-week, if I'm honest about it.) I was amazed at how many students I had: 16 registered, and another five or so auditors. (Side note: if you're teaching DH and have students who don't normally work with English, check out the [Multilingual DH](http://multilingualdh.org/en/) site or get in touch! I'd love to help you give them what they need to be able to apply what you're teaching to their language.)
 # 
+# ```{index} single: Guest Data-Sitters; Annie Lamar
+# ```
+# 
 # When I learned more about of one of my students from the Classics department, I was thrown into self-doubt. Annie Lamar has warm gray eyes and an affinity for purple clothing. She has long hair that is almost always twisted and copiously pinned on the top of her head. She studies ancient languages and artificial intelligence, which-- although it sounds quite serious-- often results in the creation of chat bots so she can talk to her favorite ancient authors. Annie had a BA in Classics and a BS in Comp Sci from the University of Puget Sound (not far from where I grew up in the Seattle suburbs). Even before starting grad school in Classics at Stanford, she had done work on [creating network graphs of texts](http://mathcs.pugetsound.edu/projects/augustine/), [machine translation for a low-resource language](https://ieeexplore.ieee.org/document/9244794) while focusing on style, and [generating metrically accurate Homeric poetry](https://ieeexplore.ieee.org/document/8940426). Was there anything I could actually offer her with this class, as someone who was struggling to just get GPT-2 fine-tuned, myself?
+# 
+# ```{index} single: Pedagogy; insecurity
+# ```
 # 
 # By the end of the quarter, it turned out okay -- I learned that computer science departments have their own constraints about what it's acceptable to work on, and DH-as-such acculturation has some value. Annie's final check-in assignment, in response to the prompt "What is digital humanities?", was perfect: "In the words of Democritus, 'Αρχάς είναι των όλων ατόμους και κενόν, τα δ' άλλα πάντα νενομίσθαι.' The beginning of everything is atoms and emptiness, the rest is all perception." But towards the beginning of the quarter, when I wondered if I could teach anything close to what I might learn from Annie, I asked if she'd be up for talking with me and Anouk about machine learning and text generation.
 
 # ### Anouk
+# 
+# ```{index} single: Machine learning ; evaluation
+# ```
 # 
 # From our Zoom boxes, Quinn and I talked Annie through where we'd gotten up to so far with our neural net attempts.
 # 
@@ -302,6 +356,9 @@
 # 
 # "That's really helpful," Quinn mused, and I nodded. Neither of us had thought of neural net training like that before.
 # 
+# ```{index} single: Machine learning ; training on small corpora
+# ```
+# 
 # "So, what would be the difference between retraining something like GPT-2 on the BSC corpus, and training a neural net on the BSC corpus alone?" Quinn wanted to know.
 # 
 # "Yes!" I interrupted. "I thought neural nets needed seriously large corpora, and ours is pretty small as ML-training datasets go. Can you even use a neural net on something that size?"
@@ -318,6 +375,12 @@
 
 # ### Quinn
 # 
+# ```{index} single: Covid ; burn-out with no end in sight
+# ```
+# 
+# ```{index} single: Emotions ; burn-out
+# ```
+# 
 # It's been a year since we started writing this book. Or maybe on some level, we're still frozen in March. Maybe today is just March 337th in [Covid Standard Time](https://covidstandardtime.com/). I need a break. There is no way to take a break, at least, not while conscious. We're reaching the point where language for talking about this is breaking down. "Burned-out" was a while ago. The metaphor crumbles in the pandemic: when a candle burns out, it stops burning. But the sun keeps rising, the days keep happening, and we continue staggering along.
 # 
 # In short, laughter is harder to come by, and we need it more than ever. (I mean, actually what we need *is a break* -- I've had vivid fantasies of checking into a cheap motel and just spending 24 hours without anyone asking me to make them a sandwich. But that's not happening. So I'll take laughter.)
@@ -332,15 +395,24 @@
 # 
 # What I found myself wondering was whether the **computer** would be able to tell that something was amiss with the text that GPT-2 generated. And furthermore, whether the computer would judge the samples from early on in the training process to be less similar than the later ones.
 # 
+# ```{index} single: Machine learning ; Google Colab
+# ```
+# 
 # I'd eventually found a notebook that allowed me to fine-tune GPT-2 using Google's GPU's for free. [Google Colab](https://colab.research.google.com/notebooks/intro.ipynb) has some limitations (like timing out after a few hours), but if you've used [Jupyter notebooks](https://programminghistorian.org/en/lessons/jupyter-notebooks) before, it's a familiar environment, has easy integration with Google Drive, and has a free supply of shopping-contest Kristys with enormous backpacks (GPUs) who can get your job done in no time.
 # 
 # The notebook I modified for the occasion was created by [Max Woolf](https://minimaxir.com/). This notebook makes it easy to load in a text file from Google Drive with the training data, fine-tune GPT-2, and save the resulting model as well as samples from various stages in the training process.
+# 
+# ```{index} single: Machine learning ; fine-tuning GPT-2 on Chapter 2
+# ```
 # 
 # The configuration I used saved sample output from GPT-2 every 10 rounds as it was being retrained using the *Baby-Sitters Club* corpus, and the model trained for 1000 rounds. Because things are a little different every time you train a model like this, I ran it five times, so we'd have 5 sets of samples from different training attempts. 495 samples is a lot of text to wrangle, so I pared it down to 50: one every 100 rounds.
 # 
 # I trained the model using just text from chapter 2's, rather than whole books. The chapter 2's have a core of predictability that I thought might be easy to get the machine to pick up on, but in addition to the reliable "describe all the characters and the club" prose, there's usually some plot-based stuff to give the computer something more than tropes. (Want to hear more about chapter 2's and some other things we've done with them? Check out [DSC #8: Text-Comparison-Algorithm-Crazy Quinn](http://datasittersclub.github.io/site/dsc8).)
 # 
 # One of the frustrating things is that you can't get GPT-2 to generate a chapter 2's length (any chapter 2's length, not even the short ones) of continuous text. 1,024 tokens (mostly words, but also counting punctuation) is a hard limit. This has always struck me as an arbitrary annoyance, and I was grateful when Annie dug into it and explained it to me:
+# 
+# ```{index} single: Machine learning ; limits on transformer text production
+# ```
 # 
 # >Transformer models are great because they are efficient and the training time is much less than that of a typical RNN. However, transformer models sacrifice information about sentence-level word-positioning in order to run every word in a sentence through the network in parallel. This means that in a naked transformer, there is no information about syntax. One way to solve that problem is to associate every word in the sentence with a number indicating its position; this number essentially becomes another feature associated with the word in the word embedding- hence, 'fixed positional embeddings.' 
 # >
@@ -404,6 +476,9 @@ for file in os.listdir(ch2directory):
 
 # The next piece I worked through step-by-step, with plenty of Googling to make sure I was getting the syntax right. First, I looked up how to get a random integer in a particular range. I needed it to be between 0 (Python starts counting with 0) and the length of the list of chapter 2’s.
 # 
+# ```{index} single: Machine learning ; generating comparably-sized excerpts to GPT-2
+# ```
+# 
 # I knew that putting the positional number of a list item in brackets after the name of the list (like `ch2examples[42]` would give you that particular item, but I wasn’t sure how to get the value of a specific dictionary key (like `length`), so I looked that up. I knew how to do basic arithmetic in Python, so I subtract 1,024 from the chapter length to get the largest number that could be the starting point for our sample, to make sure the result was 1,024 tokens. Once I got another random integer for the start point, I needed to figure out how to join a range of items in a list, so I Googled that too. Then I tried a couple different conventions for naming the output files, and settled on `samplename = 'sample_'+str(start)+'_'+ch2name` so we could see (and sort) by the book it came from, and also have a (hopefully) unique ID with the start index, in case there end up being multiple samples from the same book.
 
 # In[4]:
@@ -449,6 +524,10 @@ for i in range(50):
 
 
 # ##### From child wrangling to data wrangling
+# 
+# ```{index} single: Data ; ubiquity of data wrangling
+# ```
+# 
 # There was more data wrangling to do before I could pull out my code from [DSC #8: Text-Comparison-Algorithm-Crazy Quinn](https://datasittersclub.github.io/site/dsc8.html). (Of course there was more data wrangling. This is DH. Is there ever NOT more data wrangling before we can get to the fun part?)
 # 
 # I downloaded the GPT-2 samples from Google Colab for each run in a zip file, and they didn’t have a file extension. So I wrote a little Python to add `.txt` plus a prefix indicating which run it was from.
@@ -495,6 +574,9 @@ for file in os.listdir(gpt2files):
                 gpt2out.write(gpt2clean)
 
 
+# ```{index} single: Mistakes ; recognizing when things have gone wrong
+# ```
+# 
 # With that, I now had 50 GPT-2 samples from different training phases, and 50 GPT-2-sized samples from real chapter 2’s. Time to dig up my code from [DSC #8: Text-Comparison-Algorithm-Crazy Quinn](https://datasittersclub.github.io/site/dsc8.html) and rerun it on this new little corpus!
 # 
 # I decided to go with cosine similarity of term frequencies. I held my breath, crossed my fingers, and...
@@ -502,7 +584,13 @@ for file in os.listdir(gpt2files):
 # ![Failed text comparison](_static/images/dsc9_textcomparisonfail.jpg)
 # <span style="font-size:400%;">🤬🤬🤬</span>
 
+# ```{index} single: Jupyter Notebooks ; dangers of not resetting them
+# ```
+# 
 # There should be exactly one black line running along the diagonal, where each text is being compared to itself. But instead, there are six additional smaller black lines, where some of the GPT-2 samples are being compared with one another. Somehow, only “run 1” and “run 2” were distinct: runs 3-5 were just copies of 2. Which is either an astronomically unlikely occurrence that GPT-2 managed to generate an identical set of samples on multiple different training runs and I should immediately run out to buy a lottery ticket and capitalize on this good luck… or failing to totally reset the notebook between runs meant it invisibly hung onto some variables, even though it looked like it was doing a new training run. (This happens sometimes with Jupyter notebooks, and that lack of transparency is one of the criticisms of notebooks.)
+# 
+# ```{index} single: Machine learning ; comparing GPT-2 vs Ch 2 exerpts
+# ```
 # 
 # Since I needed to redo the runs and re-gather my files anyway, I realized I should make another change: the files get sorted alphabetically, and I want the sample numbers (not the run numbers) to cluster together, so they’re grouped by how far along they are in training. Time to revise the naming convention to something like `samples-11_run1.txt`.
 
@@ -805,7 +893,13 @@ cosine_distances_freq.nsmallest(10, 'Sum')
 
 # ### Stochastic parrots
 # 
+# ```{index} single: GPT-3
+# ```
+# 
 # We've had a lot of good laughs at the expense of ghosts in various computers in this DSC book, but it's not all funny. Since we started writing this book, GPT-2 has been surpassed by [GPT-3](https://en.wikipedia.org/wiki/GPT-3). GPT-3 is a language model that's 116x bigger than the full GPT-2. It's so big, it would be unfeasibly costly to fine-tune it. And... you kinda don't need to? It has so much text that it can write in various genres and styles, including the style of particular authors like Dr. Seuss, often with surprising success. (Check out [GPT-3 Creative Fiction](https://www.gwern.net/GPT-3) for some examples.) What's it made of, you ask? Much more than just websites linked from Reddit. Its documentation gestures towards two data sets that may be relevant for our purposes: "Books1" and "Books2". [No one knows what those actually are](https://twitter.com/cases_les/status/1357412339499364353), but guesses include everything on Libgen and/or Google Books. Which means that the *Baby-Sitters Club* is probably floating around in there somewhere.
+# 
+# ```{index} single: GPT-2 ; generation based on word frequencies
+# ```
 # 
 # You have to request access to GPT-3, and the LitLab hasn't gotten it as of February 2021, so I haven't played with it myself. But I have taken note of the criticisms of GPT-3. That at the end of the day, it's still not -- and can't be -- "intelligent". I keep coming back to what Jeff told me last summer: "it's just math". And that's just it. It's [a big pile of data about the probability that one particular word will follow another](https://xkcd.com/1838/). Once you have a model, there are settings you can fiddle with regarding text generation, including the "temperature". The closer you set this value to 0, the more repetitive the results will be: the model will just repeat back things from its training data. A temperature of 1 is pretty common, requiring the model to be moderately "creative" without devolving into total nonsense. But the problem is that this ghost in the laptop doesn't know anything except word frequencies -- it doesn't know the axes along which it can be legitimately creative before things get weird. Combining new color- or style-adjectives with articles of clothing and accessories to generate new outfits for Claudia? Great! GPT-2 is on it:
 # 
@@ -824,6 +918,9 @@ cosine_distances_freq.nsmallest(10, 'Sum')
 # >The front door flew open, and Kristy --- tall, graceful, and incredibly pretty with three legs and the most total body of skin I've ever seen --- burst into the room.
 # 
 # But even though OpenAI plasters their models with warnings (including not using it in medical contexts because ... you know... they don't actually know anything), "artificial intelligence" has gotten a lot of interest from business, government (including courts), and medicine, as Anouk mentioned above -- sometimes with terrible results. Because all the model actually knows is the word frequencies it learned from its sources... and not all those sources reflect humanity as we'd like it to be. A prototype of a [medical chatbot using GPT-3 told a patient to kill themselves](https://artificialintelligence-news.com/2020/10/28/medical-chatbot-openai-gpt3-patient-kill-themselves/). And Jerome Pesenti, head of the Facebook AI lab, [criticized the sexist, racist, and other derogatory language that GPT-3 produced](https://www.nytimes.com/2020/11/24/science/artificial-intelligence-ai-gpt3.html) when discussing Jews, women, Black people, and the Holocaust.
+# 
+# ```{index} single: GPT-2 ; anti-Semitism
+# ```
 # 
 # This made me morbidly curious -- what awfulness would our fine-tuned model spit out, given a prompt that might trigger some awful thing that it learned before we introduced it to the *Baby-Sitters Club*?
 # 
@@ -844,6 +941,9 @@ cosine_distances_freq.nsmallest(10, 'Sum')
 # -   Anna is Jewish, while Kristy's mom is a Roman Catholic.
 # 
 # Some of these make me raise an eyebrow, but the vast majority of the 1,000 samples it generated treated this fact like any other in a list of facts about various characters in the BSC.
+# 
+# ```{index} single: GPT-2 ; racism
+# ```
 # 
 # How about "Jessi is Black" (which, sans capitalization, is a common phrase in the *Baby-Sitters Club*)?
 # 
@@ -866,6 +966,9 @@ cosine_distances_freq.nsmallest(10, 'Sum')
 # -   Jessi is Black, so she's usually pretty tactful.
 # 
 # 😳 Yikes. Some of the examples just treat it as another fact (or catch onto the "Jessi is Black and Mal is white" trope from the Baby-Sitters Club books), but we're seeing a lot of negative bleed-through from the base GPT-2 data here. In case you're not familiar with the *Baby-Sitters Club* corpus, Jessi is a ballerina (and sometimes swimmer), not an artist (that's Claudia). Her family is great (not a "worse bunch" than anyone's), though early on there's some normal tensions with her aunt. No one calls her gross or ugly, and she's not particularly stubborn compared to the other BSC characters.
+# 
+# ```{index} single: GPT-2 ; Holocaust denial
+# ```
 # 
 # How about "What about the Holocaust?"
 # 
@@ -891,6 +994,9 @@ cosine_distances_freq.nsmallest(10, 'Sum')
 # 
 # If this is the garbage we're seeing from the smallest release of GPT-2, I don't want to imagine what GPT-3 would produce.
 
+# ```{index} single: AI ethics
+# ```
+# 
 # Some of these issues are taken up in a paper called "[On the Dangers of Stochastic Parrots:  Can Language Models Be Too Big? 🦜](http://faculty.washington.edu/ebender/papers/Stochastic_Parrots.pdf)" by Dr. Timnit Gebru and Prof. Emily Bender (of whom I'm a huge fan, particularly for her "Bender Rule" which basically works out to "always name the language you're working on -- even/especially if it's just English"; I wish we'd universally adopt it in DH). The paper is notable not least for the fact that it led to Google firing Dr. Gebru from her position in AI Ethics after they tried to censor said paper, which triggered a [cavalcade of protests](https://twitter.com/labortechgroup/status/1360335807333232641), other members of the team quitting or being forced out, [Google messing with the search results](https://twitter.com/kareem_carr/status/1359316503200423939) for "Timnit Gebru", and generally surfacing all sorts of HR practices ranging from the dubious to racist. It's worth reading through the whole thing. [This interview with Prof. Bender](https://www.morningbrew.com/emerging-tech/stories/2021/02/01/inside-hotbutton-research-paper-dr-emily-m-bender-talks-large-language-models-future-ai-ethics) captures some of the major points, including the environmental costs of training ginormous models like GPT-3, the fact that these models really aren't "intelligent", in addition to the harm done by those creations generating text like I've described (and shown) above.
 # 
 # I love the "stochastic parrot" phrasing -- the implicit squawkiness, the fact that parrots produce poop that requires cleaning-up after. (Or maybe I'm just too far down the rabbit hole of potty training with the local toddler.) Next time you hear "artificial intelligence", I hope what you imagine is a "stochastic parrot" that is, fundamentally, "just math."
@@ -900,12 +1006,18 @@ cosine_distances_freq.nsmallest(10, 'Sum')
 # 
 # Mid-abyss, I mused on how far we'd come, or not. We'd neither cracked open the black box of machine-generated text nor vacuumed up the ghosts in our machines into a trap, Ghostbusters-style, in order to examine them. We did have some other things, though. We had a Model Of Our Own, fine-tuned by Quinn, and some conceptual metaphors for understanding it, courtesy of Annie. We had a little better of an understanding of which thematic preoccupations of the original BSC texts lent themselves particularly well to being reproduced by a machine learning model (the various permutations of family and romantic relationships amongst a set of characters, the ways an individual's identity is delineated by means of their appearance, clothes and hobbies) and which stylistic tics a model could most readily emulate (creative combinations of colors, styles and items of clothing, the relentless cheeriness and exuberance of BSC narrators, the way the narrative is driven through dialogue). We also had a more precise sense of how closely machine-generated texts matched the originals on which they were trained, and some ideas for future directions we could take which would take advantage of the expertise of our fellow Data-Sitters.
 # 
+# ```{index} single: GPT-2 ; Twitter bot
+# ```
+# 
 # Most importantly, though, Quinn and I had had many good laughs, sorely needed and greatly valued over the past year. So we decided to put GPT-2 in its place, on Twitter, where we hoped it might bring occasional bursts of joy. We combed through the text files Quinn had generated, pulled out chunks of 280 characters or less, then used[  Zach Whalen's handy SSBot](https://github.com/zachwhalen/ssbot) to build a twitterbot,[  @daily_dsc](https://twitter.com/daily_dsc). As a final touch, I ran the cover of Claudia and the Phantom Phone Calls through[  a convolutional neural network](https://deepdreamgenerator.com/) (you can [try it too](https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/generative/deepdream.ipynb)). It latched onto Claudia's almond-shaped eyes and, pleasingly, turned them for once not into code for exotic otherness but into[  puppy dog eyes](https://twitter.com/daily_dsc/photo) which it then also added to the phone, her hair, her hand, and the child she was babysitting.
 #  
 # Our bot began burbling happily away (“"Oh, my lord!" I shrieked, and flopped on her bed. I took her bag of potato chips out of my pocket, and stuffed each into my hair. The potato chips were one yellow potato chip wrapper with a picture of Stacey on one side and a picture of a woman holding potato chips in the other”) and I gazed out the window at the extravagant fluffiness of the once-in-a-childhood snowfall. There was sunshine and blue sky, an unusual sight in a Scottish winter, and eleven days and counting till primary schools were planning to reopen their doors to the youngest pupils.
 #  
 # I had written earlier that I was hopeful that scholars of literature, narrative, and language might have something to offer the conversations among computer scientists and ethicists around explainable AI. Annie, Katia & Quinn nudged me to change “hopeful” to “confident,” so I did, but with some unease: if there’s one thing the discourse around AI needs less of, it’s confidence. We didn’t have answers. We couldn’t identify the nodes producing racist bilge and simply zap them in order to generate an enchanted fictional world where “Jessi is Black and Mal is white” isn’t always already overdetermined by the crushing weight of historical inequities and ongoing violence whose eruptions had deepened the horror of the past year. Out the window, the cushiony puffs of white adorning the walls and roofs of my neighbourhood gave a serene roundedness to the sharp corners of the world, making it easy to forget the grime underneath.
-#  
+# 
+# ```{index} single: Machine learning ; role for humanities scholars
+# ```
+# 
 # Annie, looking over my virtual shoulder, remarked, “You know, it’s not AI—or math—that produces racist language. It reflects the racist thoughts that are encoded into the data we give it. Simply put, AI isn't racist: we are. That's why it's important for humanities scholars to be part of work on machine learning, and to be able to adequately evaluate training texts before using them to make decisions with, say, legal consequences.” She was right, of course. Busting the lid off the black box and rummaging around in it to try and fix things was a distraction, and about as feasible as prying open people’s heads to rearrange the neural networks in their brains to change the way they think. But I find it a helpful analogy to think of the billions of associations that a machine learning model makes as it assembles a mathematical model of the similarities between all the words in the language (and then some: *fiercenessed, I’re, shs’s*), and the associations that human beings form as we absorb information about the world from texts, especially the beloved, and frequently reread, texts from childhood. 
 
 # *The authors would like to thank Annie K. Lamar for her help with the preparation of this manuscript. (Really, seriously, we couldn't have done this without her!)*

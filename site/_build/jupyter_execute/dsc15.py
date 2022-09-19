@@ -1,21 +1,28 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ![DSC logo](_static/images/DSCLogo.png)
-# 
-# # Little Miss California Stereotype... and the BY Times
+# # DSC \#15: Little Miss California Stereotype... and the BY Times
 # 
 # <div style='float: right; width: 200px;margin-left: 7px;margin-top: 0px;'>
 # <img src='_static/images/bookcovers/dsc15_cover.jpg' alt='DSC 15 book cover' />
 # </div>
 # 
+
+# ```{index} single: *Book Topics ; Text classification (DSC 15)
+# ```
 # by Dainy Bernstein, Quinn Dombrowski, and Mark Algee-Hewitt
 # 
 # September 15, 2022
 
 # ## Quinn
 # ### Prelude
+# ```{index} single: DH Twitter; for meeting people
+# ```
+# 
 # The miraculous thing about DH Twitter is how it can bring you the friends you don't even realize you're looking for. It's how I started the Data-Sitters Club (which you can read more about in [Chapter 2](https://datasittersclub.github.io/site/chapter-2.html)). I met [Dainy Bernstein](https://dainybernstein.wordpress.com/) shortly after the pandemic started.
+# 
+# ```{index} single: Guest Data-Sitters; Dainy Bernstein
+# ```
 # 
 # Dainy is a Visiting Lecturer in Literature at the University of Pittsburgh, and has short, dark brown hair and brown eyes. Ey bounces back and forth between big-picture ideas and detail-focused ideas, sometimes writing about an entire collection of books and sometimes writing three pages about a single paragraph. Eir childhood and adolescence was spent in Brooklyn, New York, reading as many books a week as the public library let er borrow. Dainy writes about ultra-Orthodox Jewish children's literature and is the editor of the recently-published collection of essays *[Artifacts of Orthodox Jewish Childhoods](https://www.benyehudapress.com/books/artifacts-of-orthodox-childhoods/)*.
 # 
@@ -26,6 +33,9 @@
 # Spoiler alert: it didn't work. Which is on point for book 15: Dawn's contestants in the Little Miss Stoneybrook beauty pageant didn't win, either. But come join us for this interdisciplinary digital humanities adventure anyway, where you'll see what happens when you combine an expert in a particular literature (Dainy), a curious and bewildered jack-of-all-trades (me), and a computational text analysis expert (Associate Data-Sitter Mark Algee-Hewitt, recently-tenured Director of the Stanford Literary Lab) to tackle a text-classification problem.
 
 # ## Dainy
+# 
+# ```{index} single: BY Times ; childhood reading experience
+# ```
 # 
 # ### Childhood experience reading the BY Times
 # 
@@ -38,6 +48,9 @@
 # <div style='float: right; width: 400px;margin-left: 7px;margin-top: 0px;'>
 # <img src='_static/images/dsc15_pizza.jpg' alt='Gemarakup book cover' />
 # </div>
+
+# ```{index} single: BY Times ; depicting "out-of-town" communities
+# ```
 # 
 # Batya, from the suburban Bloomfield, is excited at the prospect of Bais Yaakov having its own building; her counterpart from the city scoffs at this as a marker of growth since her community passed that marker decades before. The existence of the Ben-Levi pizza shop in the *B.Y. Times* series is remarked upon as extraordinary within the books, because the infrastructure of a kosher community in a suburban environment was indeed extraordinary at the time, in the early 1990s. In 1990s Brooklyn, the existence of a thriving kosher pizza store was taken for granted.
 # 
@@ -58,6 +71,9 @@
 # >Quinn: Ohhhh, interesting.
 # >
 # >Dainy: I am so loving "reading" the books through your eyes.
+
+# ```{index} single: BY Times ; interview with the author
+# ```
 # 
 # I am rereading these books myself now as I write about the development of Orthodox children's publishing in America. The earliest Orthodox children's books from major publishers appeared in the 1980s, making the *B.Y. Times* series part of Haredi publishing's relative infancy. I interviewed series creator Miriam Stark Zakon (writing under the pseudonym Leah Klein), and she confirmed that the connections that Mara Wilson and others draw between the BSC and the BYT are deliberate. Zakon had been writing books for Haredi children for a while, and she wanted to get a sense of what was popular for children in mainstream America. Since she was living in Israel at the time, she asked her sister in America to go into a bookstore and take stock of titles and genres on the shelves in the children's sections. Her sister sent her copies of *The Baby-Sitters Club*, and Zakon set out to create a "kosher" version of the books for Orthodox children in which middle-school girls create a school newspaper.
 # 
@@ -66,7 +82,9 @@
 # </div>
 # 
 # A few other Orthodox series are also clearly based on popular mainstream series. The *Gemarakup* series (also written by Zakon), for example, is a riff on *Encyclopedia Brown*. In both, a young boy (Yisrael David Finkel and Leroy Brown, respectively) solves mysteries and crimes in his neighborhood using his extensive knowledge. Leroy (aka Encyclopedia) uses knowledge he gains from an encyclopedia; Yisrael David (aka Gemarakup, literally translatable as Talmud-Head) uses knowledge he gains from the Talmud.
-# 
+
+# ```{index} single: BY Times ; acquiring the books
+# ```
 # When I first connected with Quinn over the connection between the BSC and the BYT, I hadn't managed to get hold of any *B.Y. Times* novels. Copies available for purchase from the publisher are new editions, and I wanted to make sure I was reading the books in their original forms. The used copies available online are prohibitively expensive, and while the Brooklyn Public Library used to carry the books, they have since been retired from circulation.
 # 
 # Once I started working with Quinn, I doubled my efforts to get hold of the books and tried some other channels.
@@ -82,6 +100,9 @@
 # Although the books are being reprinted with brand new covers by Menucha Publishers, a newer Haredi publishing house who inherited Targum Press's old titles, it was important to me to have the original copies of the books because of the extra-textual details often included in books. And the copies from the Jewish Youth Library are indeed the originals! Taped up and worn out from years and years of use... I scanned the books (noting fascinating details like a writing contest for readers announced at the back of some books), and sent them off to Quinn. Since then, Quinn has managed to get copies of the books held in Harvard's library via Inter-library Loan.
 
 # ## Quinn
+# 
+# ```{index} single: BY Times ; mashup of BSC and Sweet Valley
+# ```
 # 
 # ### Baby-Sitters meets Sweet Valley, but make it Orthodox?
 # 
@@ -105,7 +126,9 @@
 # <div style='float: right; width: 400px;margin-left: 7px;margin-top: 0px;'>
 # <img src='_static/images/dsc15_littleworld.jpg' alt="Batya's Search book cover and sick Dusty the computer with a virus" />
 # </div>
-# 
+
+# ```{index} single: BY Times ; depicting a different small world
+# ```
 # I found these girls’ adventures to be fascinating and strange. Where the *Baby-Sitters Club* books are written in a way that now reads as “timeless”, that’s also another way to say that it’s disconnected from the time, place, and sociopolitical context in which it was written. In a talk we gave last year, Data-Sitter Maria Sachiko Cecire mused over how we could explore the ways in which the *Baby-Sitters Club* forms a sort of “small world” (as J.M. Barrie describes a “map of a child’s mind, which is not only confused, but keeps going round all the time”) that captures some things about the adult world (like capitalism and divorce and bra shopping and British palace guards) but leaves out others (collapse of the USSR, the Persian Gulf War, computer viruses, etc.) The *BY Times* offers a point of contrast where the author made a different set of choices about what made it into her narrative “small world”. On one hand, the characters live in an insular community with a specific set of rules: no one’s eating a bacon cheeseburger or wearing tie-dye leggings with overall shorts. But on another hand, no member of the *Baby-Sitters Club* learns how to correctly put on a gas mask, or survives a scud missile attack, or helps “Russian” Jewish refugees from Kyiv resettle in the US, or picks up the pieces when the club’s computer is infected with a virus.
 # 
 # I really wanted to do something to explore the scope and nature of the worldbuilding between the *BY Times* and the *Baby-Sitters Club*, but Russia’s invasion of Ukraine blew up the small world of multilingual and feminist DH projects that I’d created for myself at work, and tackling something that big felt out of reach. Dainy and I had talked about “how Jewish” vs “how American” these books were, but that also meant some hard decisions about how to model each of those things. I wanted something more straightforward, something that I could use to try out a new-to-me text analysis technique.
@@ -114,6 +137,9 @@
 # 
 # Sound familiar?
 
+# ```{index} single: BY Times ; Ilana the California Girl
+# ```
+# 
 # ### Ilana the California Girl
 # With many *BY Times* characters, you can only see the shadows and contours of influence from the Baby-Sitters Club. Not so with Ilana Silver. Ilana is Dawn with valley girl stereotypes turned up all the way. (Also: Ilana is a **really hard name** to reliably OCR in the font they used to print BY Times books. She’s “Hana”, “Dana”, “Tiana”, or even “Bana” as often as “Ilana”.)
 # 
@@ -154,6 +180,9 @@
 # 
 # Amazing! We, like, totally found something that we could measure: how distinctive was Ilana’s speech, compared to Dawn’s? 
 # 
+# 
+# ```{index} single: Data ; difficulty of extracting dialogue
+# ```
 # ### Dialogue to Data
 # How do we figure out if something is, like, totally distinctive? We test to see if you can reliably tell it apart from the thing you’re comparing it to. There’s lots of ways to do that, and not all of them involve computers. But all of them do involve turning the things you want to compare into something that looks like data. Even if you wanted a human (instead of a computer) to evaluate Ilana vs. non-Ilana quotes to see if they can reliably tell them apart, you couldn’t just hand that person a *BY Times* book, or even a *BY Times* book that you’ve covered with sticky notes pointing to relevant sections of dialogue. For starters, it’d be hard for them to avoid seeing text like “said Ilana” or “Chani exclaimed” that would give away the answer! What you need to do is take the quotes out of their narrative context and put them into something like a spreadsheet where you can view the quote by itself, but also connect it to metadata like speaker (Ilana/non-Ilana) and source (which book).
 # 
@@ -271,7 +300,10 @@ with open('/Users/qad/Documents/dawn.csv', 'w') as dawnout:
         dawnout.write(randomdawn + '\n')
 
 
-# This is, once again, a hack for quote attribution and it could backfire, for instance, if Mary Anne said, “I heard that Dawn said I was a bad step-sister.” Thanks to [AntConc](dsc4.html), we can double-check to make sure there aren’t any examples like that:
+# ```{index} single: AntConc ; checking for problems with data
+# ```
+# 
+# This is, once again, a hack for quote attribution and it could backfire, for instance, if Mary Anne said, “I heard that Dawn said I was a bad step-sister.” Thanks to [AntConc](https://datasittersclub.github.io/site/dsc4.html), we can double-check to make sure there aren’t any examples like that:
 # 
 # <img src='_static/images/dsc15_antconc.jpg' alt='Antconc results for "Dawn said that"' />
 # 
@@ -289,6 +321,9 @@ with open('/Users/qad/Documents/dawn.csv', 'w') as dawnout:
 # 
 # In this case, it was clear that we needed to change the plan. We couldn’t use all 674 Ilana speech acts – the Ilana of the early books speaks noticeably differently than the Ilana of the later books. The “California girl” Ilana from books 9-12 only said 230 things according to Dainy’s list, so that’s all we had to work with. I brought this small data set, and a random sample of 230 non-Ilana quotes, to Associate Data-Sitter Mark Algee-Hewitt, to see what he’d suggest.
 
+# ```{index} single: Text length ; importance of checking for length
+# ```
+# 
 # ### Length and Normal Distribution
 # "Okay, I have all the Ilana quotes and non-Ilana quotes ... now what?" I asked.
 # 
@@ -389,9 +424,24 @@ get_ipython().run_cell_magic('R', '', '#Combine Ilana and non-Ilana tables in a 
 get_ipython().run_cell_magic('R', '', 'mean(length.table$Length)')
 
 
+# ```{index} single: Statistics ; t-test
+# ```
+# 
+# ```{index} single: Statistics ; checking for normal distribution
+# ```
+# 
 # "We know that the average length of the Ilana quotes is 9.1 words, and the average for non-Ilana quotes is 11.1 words. What we want to do is compare them, check on whether there's a meaningful difference between them. The statistical method we'd usually reach for is a *t-test* -- also known as the student's t-test -- which is a statistical test of whether or not the difference in the means of two distributions is significant. We compare the output to an *alpha*, which is a threshold value used to judge whether a test statistic is statistically significant. By convention, we use .05 -- if it's less than or equal to .05, we say it's statistically significant. But there's a catch: the t-test only works if the data is distributed *normally* -- normally in the statistical sense, where most of the values cluster in the central region, and they trail off equally in both directions. A normal distribution looks like a bell curve if you were to visualize it. For this data, that would mean that there'd be (roughly equally) few very long and very short quotes, and most of the quotes would be middle-length."
 # 
 # "How do we figure that out?" I asked. "There's got to be a better way than making a chart and eyeballing it, right?"
+# 
+# ```{index} single: Statistics ; QQplot
+# ```
+# 
+# ```{index} seealso: Normal distribution; Statistics
+# ```
+# 
+# ```{index} seealso: QQplot; Statistics
+# ```
 # 
 # "Yes," said Mark. "We can use what's called a quantile-quantile plot, or qqplot, which is available as an R package. What it does is take two sets of data, and plots each quantile of one data set against the same quantile of the second data set. A quantile is just a way to break up data into chunks with the same probability -- you might have heard of *quartiles*, which break data into four pieces with equal probability: the second quartile is the *median* of the data, the first quartile is halfway between the starting point and the median, so that 25% of the data is below that point. The third quartile is the middle value between the median and the highest value, so that 75% of the data is below the third quartile. Anyhow, if the data follows a normal distribution, all the points should roughly fall along the reference line."
 
@@ -405,7 +455,16 @@ get_ipython().run_cell_magic('R', '', '#Creates the qqnorm plot\nqqnorm(length.t
 # 
 # “Nope, definitely don’t know.”
 # 
+# ```{index} single: Statistics ; Mann-Whitney U test
+# ```
+# 
+# ```{index} single: Statistics ; Wilcoxon rank-sum test
+# ```
+# 
 # It was gratifying to see Mark pull up a web browser and Google for the answer, the same way I do. “Test difference non-parametric data…” and then, scrutinizing the results, he added “in R”. Success, apparently! “That’s it – there’s Mann-Whitney U test, also known as Wilcoxon rank-sum test, two names for, in our case, effectively the same thing – they both allow us to test for the difference between two samples of non-parametric, or non-normal, data. Instead of using mean values like we would use in a t-test, the Mann-Whitney asks: if we choose two random data points from sample A (Ilana) and sample B (non-Ilana), is the probability that A>B equal to the probability that B>A?  This is for independent variables – if we had dependent variables, then we could use a Wilcoxon Signed Rank test.” 
+# 
+# ```{index} single: Statistics ; independent vs dependent variables
+# ```
 # 
 # “Wait a minute, I’m confused again,” I said. “If I’m remembering right, ‘independent’ variables are things that you change in an experiment like this, and ‘dependent’ variables are things that change as a result of how you’ve changed the independent variable. Why are we saying we’re looking at independent variables? Couldn’t we argue that length is a dependent variable resulting from the independent variable of Ilana vs. non-Ilana?”
 # 
@@ -428,6 +487,12 @@ get_ipython().run_cell_magic('R', '', 'w.result<-wilcox.test(Length~Attribution,
 
 # “The p-value is .14, so we can safely say that the fact that non-Ilana dialogue is slightly longer (11.1 vs 9.1 for Ilana dialogue) shouldn’t make a difference,” Mark concluded. “Length has a large effect – in fact, it tends to have an outsized effect on computational results. You can adjust for length, but it’s kind of difficult. So when you’re comparing two groups of things, if there’s a statistically significant difference in length between them, it’s probably going to have an effect and we don’t want it to. We don’t want to create a model that just says “not-Ilana dialogue is longer, so if it’s long, it’s not Ilana.” That’s not going to get us a kind of classification that helps answer our question. Sometimes it can be very accurate – for the LitLab’s short story project, we created a model that predicted with 100% accuracy whether something was a short story or a novel, because it turns out that short stories are shorter than novels. It was extremely accurate, but completely unhelpful. In this case, it’s important that we know whether or not there’s a significant difference in length, because that’s not a difference we’re interested in. Hopefully there are *other* differences that we *are* interested in. Sometimes length could end up being an interesting difference – if the p-value was low for that test, that could be a sign that her dialogue is shorter in a way that merits a second look. It’s not, but now we know that conclusively, and we can discount it as a potentially confounding factor.”
 
+# ```{index} single: Distinctive words
+# ```
+# 
+# ```{index} single: Text classification ; distinctive words
+# ```
+# 
 # ### Distinctive words
 # Mark pulled out some more code. “Let’s look for some distinctive words. We’ll start by installing some R packages…”
 
@@ -494,7 +559,7 @@ get_ipython().run_cell_magic('R', '', '#make a new table out of the sampled corp
 # In[26]:
 
 
-get_ipython().run_cell_magic('R', '', '#Extract the text from the table\nraw.corpus.mdws<-quotes.mdws\n#Apply the cleaning function\nclean.corpus.mdws<-lapply(raw.corpus.mdws, function(x) fullClean(x))\n#Create a vector with the clean corpus\nclean.corpus.mdws<-Corpus(VectorSource(clean.corpus.mdws))\n#Remove stopwords\nclean.corpus.mdws<-tm_map(clean.corpus.mdws, content_transformer(removeWords), stopwords("en"))\n#Create a vector with the default English stopwords list\nall.sw<-stopwords(\'en\')\n#check if stopwords contains Ilana-specific works\nall.sw')
+get_ipython().run_cell_magic('R', '', '#Extract the text from the table\nraw.corpus.mdws<-quotes.mdws\n#Apply the cleaning function\nclean.corpus.mdws<-lapply(raw.corpus.mdws, function(x) fullClean(x))\n#Create a vector with the clean corpus\nclean.corpus.mdws<-Corpus(VectorSource(clean.corpus.mdws))\n#Remove stopwords\nclean.corpus.mdws<-tm_map(clean.corpus.mdws, content_transformer(removeWords), stopwords("en"))\n#Create a vector with the default English stopwords list\nall.sw<-stopwords(\'en\')')
 
 
 # Mark skimmed the list, then frowned. “Let’s double-check that the major ‘Ilana words’ aren’t going to get caught in our stopwords list. We can search for them like this.”
@@ -533,7 +598,7 @@ get_ipython().run_cell_magic('R', '', 'corpus.dtm.mdws<-DocumentTermMatrix(clean
 # In[31]:
 
 
-get_ipython().run_cell_magic('R', '', '#Get the document-term matrix as a matrix\ncorpus.matrix.mdws<-as.matrix(corpus.dtm.mdws)\n#Add up the word counts for each row (quote)\nall.sums.mdws<-rowSums(corpus.matrix.mdws)\n#Which ones have a total word count of zero (i.e. no words)\nwhich(all.sums.mdws==0)')
+get_ipython().run_cell_magic('R', '', '#Get the document-term matrix as a matrix\ncorpus.matrix.mdws<-as.matrix(corpus.dtm.mdws)\n#Add up the word counts for each row (quote)\nall.sums.mdws<-rowSums(corpus.matrix.mdws)\n#Which ones have a total word count of zero (i.e. no words)\nlength(all.sums.mdws==0)')
 
 
 # “Hmm… what were those quotes before they got deleted?”
@@ -566,7 +631,7 @@ get_ipython().run_cell_magic('R', '', 'metadata.table.mdws<-metadata.table.mdws[
 # In[35]:
 
 
-get_ipython().run_cell_magic('R', '', 'n=500\nword.sums.mdws<-colSums(corpus.matrix.mdws)\nword.sums.mdws<-sort(word.sums.mdws, decreasing=T)\nmfw.mdws<-names(word.sums.mdws[1:n])\nmfw.mdws')
+get_ipython().run_cell_magic('R', '', 'n=500\nword.sums.mdws<-colSums(corpus.matrix.mdws)\nword.sums.mdws<-sort(word.sums.mdws, decreasing=T)\nmfw.mdws<-names(word.sums.mdws[1:n])\nmfw.mdws[1:15]')
 
 
 # “Oh yeah, those top most-frequent words are VERY Ilana,” I said, looking at the list. 
@@ -604,6 +669,12 @@ get_ipython().run_cell_magic('R', '', '#Get the group data from the metadata\ngr
 get_ipython().run_cell_magic('R', '', 'group.source.mdws<-metadata.table.mdws$Group\n#Now we\'re using .1 as the cutoff\nmdw.table<-allMDW(corpus.matrix.mdws, group.source.mdws, 0.1)\nwrite.csv(mdw.table, file="CorpusMDWs-v2.csv", row.names=F)\nmdw<-unique(mdw.table[,1])')
 
 
+# ```{index} single: Principal component analysis ; looking for distinctions between quotes
+# ```
+# 
+# ```{index} single: Text classification ; PCA
+# ```
+# 
 # ### Trying PCA
 
 # "Okay. Let's give the most distinctive words a miss. What if we see if there's any separation using PCA?"
@@ -658,6 +729,12 @@ get_ipython().run_cell_magic('R', '', 'colnames(feature.table.pca)<-feature.name
 
 # “Hmm… PC1 still only explains about 4% of the variation,” said Mark grimly. “Maybe we’re just looking at too many features. How about if we try a stepwise variable selection to see if we can find a better feature set for classification?”
 
+# ```{index} single: Stepwise variable selection
+# ```
+# 
+# ```{index} single: Text classification ; stepwise variable selection
+# ```
+# 
 # ### Stepwise variable selection
 # “I was with you on PCA, but you’ve lost me again,” I said.
 # 
@@ -698,6 +775,9 @@ get_ipython().run_cell_magic('R', '', 'library(klaR)\nfeature.names.sc<-gsub("�
 # 
 # “Oh no, we’ve only been playing with this for ten minutes,” laughed Mark. “I don’t usually give up this easily.” 
 
+# ```{index} single: Text classification ; classification by a reader
+# ```
+# 
 # ### Measuring the human success rate
 # 
 # Mark considered the data for another moment. A little smile crept over his face. “Let’s play a game. I’m going to read you a quote, and you’ll tell me if it’s Ilana or non-Ilana.”
@@ -744,6 +824,9 @@ get_ipython().run_cell_magic('R', '', 'library(klaR)\nfeature.names.sc<-gsub("�
 # 
 # "What all this shows is what I was thinking when I saw this data," concluded Mark. "Based on words, and trying to classify quotes, Ilana's discourse is just not distinctive enough across all her utterances. Only 40% of the sentences are 'California girl sentences', and that's it. There are three possibilities here: one, we could try moving on to a classifier that's better or more precise... but I don't know how close we're going to get. If you can't do it, I don't think the best neural net is going to do it. Two, we could stop trying to classify sentences and knit this into larger blocks of text. That'd be a little artificial, but if it's all glued together we'll see differences in discourse. Three, we try non-word features. Part-of-speech is one option, punctuation is another, and strings of three characters are another one."
 
+# ```{index} single: Text classification; three-character sequences
+# ```
+# 
 # ### Three-character sequences
 # 
 # I fixed Mark with a hard stare. “I don’t like that last one. Why would you break up words?”
@@ -830,6 +913,9 @@ get_ipython().run_cell_magic('R', '', 'library(klaR)\nfeature.names.tg<-gsub("�
 
 # "... Looks like the trigrams are just slightly better than Quinn."
 
+# ```{index} single: Text classification ; limitations
+# ```
+# 
 # ### What have we learned here?
 # 
 # Classification is one of those computational methods that often gets whipped out as something that's pretty basic, especially in data science contexts. You've got all this data, and you just wave a magic wand and the computer will give you its idea of how it should be grouped. And especially with all the AI hype (which we've also debunked in [DSC 9](https://datasittersclub.github.io/site/dsc9.html)), it's tempting to think that surely all these algorithmic advances mean that computers should be able to easily tell the difference between groups of things you've identified for it, especially if you as a human can recognize the groups.
@@ -842,16 +928,24 @@ get_ipython().run_cell_magic('R', '', 'library(klaR)\nfeature.names.tg<-gsub("�
 
 # ## Dainy
 # 
+# ```{index} single: BY Times ; New York as hub of Orthodox Jewish community
+# ```
+# 
 # ### What's up with Ilana anyway?
 # Much like the distinction between the Brooklyn girls and the Bloomfield girls, within the world of the BYT, Ilana’s being from California holds specific Jewish cultural connotations in addition to the American stereotypes of blonde, laid-back, health-food nut. Interestingly, while the Orthodox East Coast girls don't have the same stereotypes as their non-Orthodox or non-Jewish East Coast counterparts, Ilana carries both the broader California stereotypes and specific Orthodox connotations. The Orthodox connotations show up more subtly, but Ilana's association with broader American culture is in itself a symptom. 
 # 
 # In the last decade of the twentieth century, Orthodox Jewish communities across America were being strengthened. The major hubs of American Jewish life, however, remained in the New York metropolitan area. The slight tension between the Brooklyn girls and the Bloomfield girls in War! is true to real-life dynamics between high school girls of that era. (At the 2006 national convention of Bais Yaakov seniors in Baltimore, my classmates and I - from the largest Bais Yaakov high school in Brooklyn - got a laugh from everyone else when a faculty organizer asked all "out of towners" to move to one side of the dining room and we didn't move. We were too used to calling others "out of towners," meaning anyone not from New York City.) Being from "out of town" was associated with a somewhat more lenient Jewish religious observance and a porousness between Orthodox and American culture. The smaller the Orthodox community infrastructure, after all, the more its members would need to interact with people outside their community - and the end of the twentieth century was characterized by an increasing push toward as much insularity as possible, leading these smaller, more porous communities to be viewed as somewhat inferior in religious observance by the larger, more insular communities.
 # 
+# ```{index} single: BY Times ; Los Angeles Orthodox community
+# ```
 # Los Angeles had a growing Orthodox community, which is rich and vibrant today. But in the 1990s, it seemed like a completely foreign country to Orthodox teens on the East Coast. We didn't watch TV or movies (except for some rebellious kids, of course), but the California stereotype still filtered into our consciousness. Combining these factors - the idea of someone as far away as California being more connected to non-Jewish cultures and the idea of the laid back Californian health nut - explains why Ilana, in this cultural remix of the BSC, retains the mainstream American cultural stereotypes while the other characters are more ambiguously connected to their BSC counterparts.
 # 
 # <div style='float: right; width: 400px;margin-left: 7px;margin-top: 0px;'>
 # <img src='_static/images/dsc15_healthfood.jpg' alt='Gemarakup book cover' />
 # </div>
+
+# ```{index} single: BY Times ; use of California stereotype
+# ```
 # 
 # As to Quinn's question about why the Silvers would move from California to open a health food store in Bloomfield, I have only conjecture based on these cultural considerations. One of the big Orthodox cultural movements of the 90s and the decades preceding the 90s was the kiruv (religious outreach) movement. Efforts to bring unaffiliated or non-religious Jews into the Orthodox fold dominated quite a bit of time and energy. We get a glimpse of this through the character of Jen Farber, whose American name very clearly labels her a "returnee" to religious Judaism. We also see it through the "Russian" girls from Kyiv (as people from all Soviet countries were called “Russian” in Orthodox circles) who are rescued from behind the Iron Curtain and brought to America to live freely as religious Jews. 
 # 
@@ -872,7 +966,6 @@ get_ipython().run_cell_magic('R', '', 'library(klaR)\nfeature.names.tg<-gsub("�
 # I'll admit, I was disappointed to learn that the computer could not distinguish meaningfully between Ilana's speech and the others', and I still have a hard time accepting that what seems so obvious to us as human readers can be statistically not verifiable. Her speech stands out, but maybe that's because the stereotypical phrases are used in ways that sound foreign to the typical American ear: "Like, hi!" is not something we expect to hear even from the most stereotypical Californian. "Like" is just not used that way, and is clearly inserted by an author with only passing familiarity with stereotypical Californian speech patterns. 
 # 
 # Markers of insiders and outsiders are like that, though. They rely on minute details like names, verbal tics, clothing, food, etc., all of which is legible only to the insiders who are intimately familiar with community norms. For my own work, this is not a negative result - it's confirmation of the way communal identity is formed and the way that these kids' books strengthen that communal identity.
-# 
 
 # ## Suggested citation
 # Suggested citation: Bernstein, Dainy, Quinn Dombrowski, and Mark Algee-Hewitt. “DSC \#15: Little Miss California Stereotype... and the BY Times.” *The Data-Sitters Club*, September 15, 2022. https://datasittersclub.github.io/site/dsc15.html.

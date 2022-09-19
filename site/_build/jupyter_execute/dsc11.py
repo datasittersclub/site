@@ -1,20 +1,22 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ![DSC logo](_static/images/DSCLogo.png)
-# 
-# # Katia and the Sentiment Snobs
+# # DSC \#11: Katia and the Sentiment Snobs
 # 
 # <div style='float: right; width: 200px;margin-left: 7px;margin-top: 0px;'>
 # <img src='_static/images/bookcovers/dsc11_cover.jpg' alt='DSC 11 book cover' />
 # </div>
 # 
+
+# ```{index} single: *Book Topics ; Sentiment analysis (DSC 11)
+# ```
 # by Katherine Bowers and Quinn Dombrowski
 # 
 # October 25, 2021
 
 # ## Katia 
-# 
+# ```{index} single: Projects ; Digital Dostoevsky
+# ```
 # When I’m not thinking about the BSC corpus, I’m thinking about my Dostoevsky corpus. That’s the other DH project I’m involved with. I think I’ve mentioned before that I’m a Russianist. I’m co-PI on a [“Digital Dostoevsky” project](https://digitaldostoevsky.com/) that involves a team that is all pretty new to DH. I jokingly call myself the n00b Data-Sitter, but on the Dostoevsky project, I’m the one with the most experience. (That’s a little scary!). Team Dostoevsky is lucky because we have a wonderful consultant that we’re able to call on to answer questions about TEI quandaries, software questions, and methodologies to try out. Her name is Eka Grguric and she’s a Digital Scholarship Librarian at my university.
 # 
 # For those of you who are more familiar with Ann M. Martin than Dostoevsky, let me give you a little background. Dostoevsky is a 19th-century Russian writer who wrote a bunch of long novels that pose and work through philosophical, theological, and moral dilemmas. Dostoevsky viewed his novels as a kind of laboratory, a testing ground for his ideas. One of the key components of his novelistic craft is the way his characters are written and interact. When I am teaching my Dostoevsky seminar, I tell my students that the characters’ emotions and psychologies are larger than life. They are written to explode off the page and drag you into his novels. They are exaggerated, but often exaggerated in universally relatable ways. I’d say there is a LOT of emotion in Dostoevsky’s novels. 
@@ -27,9 +29,18 @@
 # 
 
 # ## Quinn
+# ```{index} single: Sentiment analysis ; wariness about it
+# ```
+# 
 # I have feelings about sentiment analysis. No, I do not think you should try to measure them. I don’t teach it in my non-English DH class, but I very clearly remember the image on my sentiment analysis slide during a brief overview of methods:
 # 
 # <img src='_static/images/dsc_11_warning.jpg' alt='A danger sign with a bolt of energy striking a person' />
+# 
+# ```{index} single: DH is people
+# ```
+# 
+# ```{index} single: Tools; tools have histories
+# ```
 # 
 # One thing that’s easy to forget if you’re new to DH is that DH, like Soylent Green, is people. And the technical approaches you choose for your computational analysis don’t exist in some Platonic realm of methods. Methods have histories. **Tools**, especially, have histories. And just as you would take care with the literary theorists you cite, because your choice of theorists has implications for how (and whether) your work will be accepted in different circles, you should take similar care with regard to which tools and methods you use for computational text analysis. Tools are not neutral, and just because half a decade has passed since a particular spat of tool-centric DH drama, it doesn’t mean the peer reviewers for your next paper have forgotten about it.
 # 
@@ -39,12 +50,19 @@
 # 
 # But first, let me tell you a story from the history of DH in the 2010's.
 
+# ```{index} single: Syuzhet ; The Syuzhet Incident of 2015
+# ```
+# 
 # ### The Syuzhet Incident
 # 
+# ```{index} single: Matt Jockers
+# ```
 # Once upon a time in February 2015 -- and it feels even longer ago -- Matt Jockers (who co-founded the Stanford Literary Lab that the Data-Sitters Club is now affiliated with, and who was in 2015 an Associate Professor of English at the University of Nebraska, Lincoln) [wrote a blog post](https://web.archive.org/web/20150225012646/http://www.matthewjockers.net/2015/02/02/syuzhet/) about his new R package, called "Syuzhet" (with explicit props to Vladimir Propp's concept of *syuzhet* as the "organization of the narrative"). Gesturing to Kurt Vonnegut's idea of there being a finite number of plots, Syuzhet aimed to extract the data necessary to visualize the narrative's plot model. And what it used to extract that data was sentiment analysis.
 # 
 # The R package got a lot of publicity! And there was a [follow-up blog post](https://web.archive.org/web/20150227194713/https://www.matthewjockers.net/2015/02/25/the-rest-of-the-story/) from Jockers that spelled things out a little more, including the mapping to Vonnegut's plot models.
 # 
+# ```{index} single: Annie Swafford
+# ```
 # And then Annie Swafford, then an Assistant Professor in English at SUNY-New Paltz (who had already gained a following in the DH world through her 2014 DH project / dissertation at the University of Virginia, *[Songs of the Victorians](http://www.songsofthevictorians.com/))* raised some questions in a blog post, "[Problems with the Syuzhet Package](https://web.archive.org/web/20151124131629/https://annieswafford.wordpress.com/2015/03/02/syuzhet/)".
 # 
 # There were multiple takeaways from this post, depending on your mathematical comfort level. The part that stuck with me was the description of how sentiment analysis works... or, rather, how badly it falls short. Three out of the four sentiment taggers (including Bing, the one recommended at the time) were literally just lists of contemporary English words with numerical scores attached. Two of the taggers (again, including Bing) scored words as -1, 0, or 1 -- not a lot of room for nuance. Words are scored in isolation, so that negation (e.g. "not") or augmentation (e.g. "extremely") don't affect the way a word (e.g. "good") is scored. Syuzhet in particular only counts a word once per sentence if it's repeated.
@@ -65,15 +83,26 @@
 # 
 # The Syuzhet Incident was a big deal at a fraught moment in the field of DH, and it played a major role in shaping my opinion about sentiment analysis. But there's been a lot of significant development on many technical fronts in the last few years-- including development on Syuzhet itself. Maybe it's time for me to give sentiment analysis another look?
 
+# ```{index} single: Sentiment analysis ; word lists vs word vectors
+# ```
+# 
 # ### Sentiment Analysis 101
 # There are two technical approaches to sentiment analysis: one involves word lists, one involves a different computational method called "word vectors". In this DSC book, we're going to stick to the word list method, but we'll get back to word vectors in a future book. (If you'd like a taste of what word vectors can do, you can check out our recent Super Special: "Business is to Successful as Babysitter is to..." in the collection *We Are The Baby-Sitters Club*, available in [print](https://www.chicagoreviewpress.com/we-are-the-baby-sitters-club-products-9781641604901.php) and [audiobook](https://www.penguinrandomhouse.com/books/700586/we-are-the-baby-sitters-club-by-edited-by-marisa-crawford-and-megan-milks-foreword-by-mara-wilson/)).
 # 
+# ```{index} single: Multilingual DH ; horror at how sentiment analysis is implemented
+# ```
+# 
+# ```{index} single: Sentiment analysis ; horror at multilingual implementation
+# ```
 # 
 # <div style='float: right; width: 200px;margin-left: 7px;margin-top: 0px;'>
 # <img src='_static/images/dsc11_commentthread.png' alt="Katia: omg that's horrifying; Katia: lol probably too extreme a sentiment for what this comment is attached to - but I genuinely gasped when I saw that.' Quinn: RIGHT?! Anouk: This is why we need humanists doing computing'" />
 # </div> 
 # 
 # Two out-of-the-box packages for English sentiment analysis in Python that get mentioned a lot in tutorials are [Textblob](https://textblob.readthedocs.io/en/dev/) and [VADER](https://pypi.org/project/vaderSentiment/). There are also packages like [Polyglot](https://polyglot.readthedocs.io/en/latest/Sentiment.html) that claim to offer sentiment analysis in over a hundred languages... which is just to say that they used machine translation to translate English word lists into other languages and called it a day, which layers some new problems on top of the issues inherent to word list based sentiment analysis. Monolingual readers: please take note of the fact that your colleagues who work across multiple languages are dumbstruck with horror right now upon reading this, as you can see from our Data-Sitters Google Docs comment thread about this point.
+
+# ```{index} single: Sentiment analysis ; materials it was designed for
+# ```
 # 
 # If you look up tutorials for doing sentiment analysis, you’ll see a lot of examples from things like reviews (movie reviews, restaurant reviews, etc.) or social media posts. That’s because those are the kinds of domains where sentiment analysis -- especially using pre-defined lists of words -- does a decent job. Those are situations where you potentially have a lot of short texts as your input (more than any person could reasonably read through with their eyeballs!) and you want to get a broad sense of whether people love or hate a thing. Or if people are spewing awful stuff on social media; anything involving hate speech is on trend in the social sciences these days.
 # 
@@ -111,6 +140,9 @@
 # 
 # As human readers, we should all hopefully be on the same page that the first 10 examples express negative sentiment, and the second 10 examples express positive sentiment. Let’s see what Textblob and VADER make of them!
 
+# ```{index} single: Sentiment analysis ; Textblob and VADER
+# ```
+# 
 # ### Trying Textblob and VADER
 # To get started, let's install Textblob and VADER. (You only have to run this cell the first time you run this code on a particular Python environment.)
 
@@ -203,6 +235,9 @@ print(vaderanalyzer.polarity_scores(potato))
 # 
 # So far VADER is looking better -- or at least, more nuanced -- than TextBlob. But let’s consider the positive sentences, too. TextBlob gives a score of 1 to “Richard is a wonderful stepdad, and Mary Anne is the best”; VADER is more conservative, considering this 47% likely to be positive, and 53% likely to be neutral. (Maybe this is just a factual statement about Richard being wonderful and Mary Anne being the best?) “The show is going to be awesome” is another 1 from TextBlob, but 60% neutral and 40% positive from VADER. Even “This is the best job in the world” fails to impress VADER, with 63% neutral and 37% positive. But practically speaking, you’d probably use the composite score when evaluating a large quantity of data, so VADER still tends to come out ahead of TextBlob, despite its wavering between neutrality and positivity when it comes to the detailed breakdown. TextBlob only gives a score of .5 to “Suddenly I had a great stepmom, a great stepsister, and a great new house.” As a human reader, I’d count that as more positive than “This is the best job in the world” (which gets a score of 1 from TextBlob). VADER is on the same page, and scores the sentence with all the “great” things .9. TextBlob isn’t too excited about “You’re a wonderful big sister and a big help to your mommy and daddy.”, giving it a score of .3, while VADER goes for .75 -- which I feel like is a lot closer to a human evaluation.
 # 
+# ```{index} single: Sentiment analysis; transparency of word-list method
+# ```
+# 
 # Now, a literary scholar might raise concerns with the examples I've used here. After all, "awesome" and "awful" are historically closely linked -- the experience of arousing awe (e.g. in 18th-century texts) has both positive and negative connotations. And if we were working with sentiment dictionaries that were based on public domain (pre-1926) texts, we might expect to see the sentiment for those words to be muddied as a result. And if we were using an approach to sentiment analysis that was based on word vectors trained on lots and lots of unspecified text (which might include some pre-20th-century texts), it would be hard to debug whether that’s a factor at play in the way that “awful” and “awesome” get treated. But working with sentiment analysis based on word lists, things are much more transparent: we can just go look at how they score the words. Here’s VADER’s lexicon on GitHub, and here’s TextBlob’s lexicon. Even if you’re not the coding type, and generally steer clear of GitHub, go take a look. They’re fundamentally pretty human-readable text files. Here are the scores they give for a few of the words we’ve talked about:
 # 
 # | Word      | VADER | TextBlob                                                            |
@@ -228,6 +263,9 @@ print(vaderanalyzer.polarity_scores(potato))
 
 # TextBlob doesn’t have a score for “potato”, and doesn’t treat “like” as positive, so the whole thing is neutral. VADER is hedging its bets (or maybe it, like Claudia Kishi, just loves french fries) and saying there’s a 61% chance it’s positive. (In VADER, “well” has a score of 1.1, “like” has a score of 1.5, and while you’d think it’d ignore those words if its claims of syntactic awareness are to be taken seriously, they still seem to be playing a role here.) 🤨🍟
 
+# ```{index} single: Sentiment analysis; as applied to literary text
+# ```
+# 
 # ### Sentiment Analysis Meets Literary Text
 # So, those mixed results we just saw? Don't forget that those were for sentiment analysis on "easy mode". Using sentences that were (at least meant to be) unambiguous. Both algorithms did get things right in the big picture -- there were no negative sentences that were overwhelmingly marked as positive, and no positive sentences marked as negative. But there was a lot of variation in *how* positive or negative they were. Maybe this stuff works okay on a straight-up positive/negative binary-- at least with clear sentences -- but there's not a lot of reliable nuance here.
 # 
@@ -290,6 +328,9 @@ snobpara2df
 
 # It almost feels silly to write this out, because I’m pretty sure my 5- and 7-year-olds would comfortably pick up on this nuance. I’d even give the 3-year-old decent odds for it. This is another really negative paragraph. Kristy takes pride in her brother Charlie driving a beat-up station wagon, in contrast to the snobs in her neighborhood with their fancy cars. And she’s not neutrally reporting the facts when she lists the things her neighbors have: she’s ripping on them. But if you look at the sentiment analysis scores, you don’t see Kristy’s pride in Charlie’s beat-up station wagon (both TextBlob and VADER agree on a score of 0), and both scores think that it’s a positive thing to “spin along with radios blaring”. And only TextBlob picks up the slightest trace of negativity in Kristy’s list of things that nearby families have.
 
+# ```{index} single: Sentiment analysis ; application to modernist literature
+# ```
+# 
 # ### "Sentiment" Meets Modernism
 # 
 # And if you think things go badly when you feed sentiment analysis *Baby-Sitters Club* books, wait until you see what happened when Anouk tried to use it with modernist texts, which sometimes use language in innovative and subversive ways. Taking a passage from a text she’d been teaching that week, Patrick White’s *The Twyborn Affair*, she found the sentiment swinging around from neutral to negative and positive:
@@ -322,6 +363,9 @@ snobpara2df
 # 
 # Syuzhet is an R package, and we talked a little bit about R in [DSC #10: Heather Likes Principal Component Analysis](https://spacy.io/universe/project/spacy-stanza), along with [how to make R work with Jupyter notebooks](https://datasittersclub.github.io/site/dsc10.html#fitting-an-r-shaped-peg-into-a-jupyter-shaped-hole). I mostly code in Python, and while I've learned a little bit more R over the summer (more on that in DSC #12), R still feels like limping around in a pair of shoes that are a couple sizes too small.
 
+# ```{index} single: Code ; moving between Python and R in a notebook
+# ```
+# 
 # #### Moving Between Python and R
 # Just like in DSC #10, I [used the rpy2 Python module to run R in my Python Jupyter notebook](https://datasittersclub.github.io/site/dsc10.html#fitting-an-r-shaped-peg-into-a-jupyter-shaped-hole) -- but this time I also used its ability to take lists I've already created in Python, and bring them over to R. If you've read through all the code so far in this book, you may remember we have a list called sentences, which has 10 positive and 10 negative *sentences*, and another list called *snobpara1*, which is the first paragraph from *Kristy and the Snobs*.
 # 
@@ -367,6 +411,9 @@ get_ipython().run_cell_magic('R', '', 'sentences')
 get_ipython().run_cell_magic('R', '', 'sentences <- unlist(sentences)\n\nsentences')
 
 
+# ```{index} single: Syuzhet ; word lists for scoring texts
+# ```
+# 
 # #### Syuzhet's Scoring
 # Syuzhet has **four** different word lists for scoring text -- and they each score words using a different scale, so they’re not directly comparable. Still, we can score the 20 sentences using each of the lists, and take a look at the results. 
 # 
@@ -416,6 +463,9 @@ get_ipython().run_cell_magic('R', '', 'sentences_nrc')
 
 # ## Katia
 # 
+# ```{index} single: Sentiment analysis ; challenge of interpretation
+# ```
+# 
 # ### You Did Sentiment Analysis, Now What?
 # 
 # Whether you’re doing sentiment analysis with a package that supports just one model, or many, what you’re going to get at the end is a bunch of numbers. Honestly, that’s not very satisfying, and depending on the genre can be outright misleading. 
@@ -429,6 +479,9 @@ get_ipython().run_cell_magic('R', '', 'sentences_nrc')
 # I presented my work at the Python class the next day, and the instructors said this was a good result. But is it a good result if it’s not clear what it means? So Dostoevsky’s novel is a 58. How do you analyze that? Even if I had a library that was trained on 19th-century novel language and not 21st-century social media language. And even if I figured out these numbers for other Dostoevsky novels, in the end all I’d have is a bunch of numbers that are the result of running texts using libraries that are based on sentiment-score data that doesn’t hold up to start with.
 
 # ## Quinn
+# 
+# ```{index} single: Syuzhet ; dubious connection between sentiment and plot
+# ```
 # 
 # ### Syuzhet's Sleight-of-Hand
 # 
@@ -452,6 +505,9 @@ get_ipython().run_cell_magic('R', '', 'sentences_nrc')
 # 
 # Mark shrugged. "Sure, you could look at that. See what you find."
 
+# ```{index} single: Sentiment analysis ; manually plotting sentiment
+# ```
+# 
 # ### DIY Sentiment Arcs
 # What if we tried to do what Syuzhet claims to be doing, using our own eyeballs and “domain-expert knowledge” as fans of the Baby-Sitters Club? It was time to get crafty! I printed out a graph paper template, taped some sheets together, and split the strip into 15 sections, one per chapter. This gave each chapter up to 6 “plot points” that could be assigned different positivity/negativity scores. Why 6? That worked out to be a strip of paper that was long but not ridiculous to work with, and I wanted a template that we could use across different books. Some chapters would probably have 6 noteworthy things happen, others may not, but we could just repeat values to fill in any gaps.
 # 
@@ -489,6 +545,8 @@ get_ipython().run_cell_magic('R', '', 'sentences_nrc')
 # 
 
 # ### Our Sentiment vs Syuzhet
+# ```{index} single: Syuzhet ; running the simple visualization
+# ```
 # First, I used a command to make the notebook change directories to the folder with the corpus.
 
 # In[24]:
@@ -510,6 +568,9 @@ get_ipython().run_cell_magic('R', '', 'library(syuzhet)\n\nfiles <- list.files(\
 # <img src='_static/images/dsc11_dawns_big_date-plotonly.jpg' alt="A noisy red graph with the sentiment scores for all the sentences in Dawn's Big Date" />
 # 
 # It's really hard to read, because *every single sentence* is there. Katia and I didn't score every sentence, we scored plot points, which basically amounts to a cluster of sentences with some particularly meaningful content for the story. We have too much data here: we need a meaningful way to compress it to see what's going on.
+# 
+# ```{index} single: Syuzhet ; methods for navigating too much data
+# ```
 # 
 # Syuzhet offers you a path to navigate that, too. Syuzhet has a function called simple_plot that will take the sentiment vector (i.e. all the scores for all the sentences) and apply three transformations to reduce the noise, layered on top of one another:
 # 
@@ -541,12 +602,21 @@ get_ipython().run_cell_magic('R', '', '\nkatia <- c(2, 1, 7, 2, 4, 1, 3, 7, 6, 2
 # 
 # Looking at just the simplified macro shapes, you might think that Syuzhet and I were looking at the same book, but just interpreted the beginning differently. Things tank around 30% through the book, again around 70%, with a small bump up between those two points, and it ends on a high note. The simplified macro shape for Katia is almost the inverse: things start off bad, 30% is a high point, and everything craters at 50% before improving at the end. Looking at the top graph, the ups and downs are all over the place, as is their intensity.
 # 
+# ```{index} single: Syuzhet ; graphs invite interpretation
+# ```
+# 
 # Compared to Katia’s and my human-oriented manual graphs of the book’s emotions, the smoothing transformations flatten most of it out in a way that feels off. On one hand, flattening out ups and downs is exactly what a smoothing transformation is supposed to do. On the other hand, what if your book actually **is** full of drama and emotional ups and downs, like *Dawn’s Big Date*? You wouldn’t know from looking at a graph like this. In our case, we can say definitively that this doesn’t do a good job representing what we as human readers get out of this book, but only because we’ve all put in the time to read it. If you were to try to apply something like this at scale to books you haven’t read personally, how confident can you be in your ability to interpret the output? Graphs like these *feel* more satisfying and meaningful than a number like “58”, but how much more insight are we getting, actually? What’s worse, just getting a number like “58” makes you stop in your tracks. It’s immediately obvious that there’s no easy interpretive path forward from “58”. But Syuzhet’s graphs are enticing; they’re an invitation to attempt an interpretation. They give you something pretty to look at that obscures the fact that it’s a house of cards built out of other people’s assumptions: the scores in the sentiment dictionary, the interpretive leap to link those scores to plot, the decisions about which smoothing transforms to do and what those transforms assume about the nature of your data.
+# 
+# ```{index} single: Syuzhet ; 'just say no'
+# ```
 # 
 # Sometimes it’s hard to know where exactly the line is between “valuable with caveats” and “too many caveats to be valuable” when it comes to DH tools and methods. But after going through all this, if you ask me, Syuzhet crosses that line. As [Scruff McGruff taught us in the 90’s](https://collections.nlm.nih.gov/catalog/nlm:nlmuid-101437868-img), “just say no.”
 # 
 # <img src='_static/images/dsc11_just_say_no.jpg' alt="McGruff the crime dog in a 90's poster with the text 'Say No to Syuzhet and other sentiment analysis for literature'" />
 
+# ```{index} single: Sentiment analysis ; modeling sentiment
+# ```
+# 
 # ### What Does 'BSC Sentiment' Look Like?
 # 
 # Our next plan in this quest to find something valuable about the Baby-Sitters Club books using sentiment analysis involved developing a model of positivity and negativity in the corpus. At Mark’s suggestion, we set off to identify 500 positive and 500 negative sentences -- 500 being, again, a pretty arbitrary number, but one that had worked for him in the past when modeling the words that convey positivity or negativity in small to medium-sized corpora.
@@ -606,6 +676,9 @@ with open('bsc-sentences.csv', 'w') as out:
 
 # I stuck them all in a Google sheet, made a copy for each of us, and we started tagging.
 
+# ```{index} single: Sentiment analysis ; difficulty in scoring sentences
+# ```
+# 
 # ### Where's the Sentiment?
 # 
 # A week passed. Tagging sentences positive/negative was a great activity for multitasking during dull Zoom meetings. But the more time I spent doing it, the more skeptical I became that we actually would get to 500 positive sentences. Even negative sentences -- which were much more numerous than unambiguously positive sentences -- felt like rare and delicious M&Ms occasionally discovered among the empty candy wrappers in Claudia’s bedroom. Most of our random sample was just… neutral. When I finished going through our first 2,000 sentences, I grabbed 3,000 more -- and still encountered the same problem. 
@@ -628,6 +701,12 @@ with open('bsc-sentences.csv', 'w') as out:
 # 
 # We talked about *effect size*, which is often reported alongside statistical significance in medical papers, and is one of the parameters that you must account for in order to calculate the sample size (circling back to the earlier question). Statistical significance mostly just means “is there a ‘real’ (i.e., not due to chance) difference between A and B” -- and the larger your sample size is, the more likely that you **will** find **some** difference. Effect size asks, “How *big* was the difference between A and B?” This becomes particularly important in a medical context, where “A” may be a control group and “B” is people trying out a new drug. Maybe “B” does show a statistically significant decrease in some condition, but the decrease could be both statistically significant (i.e. the findings aren’t just chance) and tiny -- and if the drug comes with side effects, the tiny decrease over the sample population might not be worth the risk for any individual. There are [ways to estimate the sample size](https://machinelearningmastery.com/effect-size-measures-in-python/) required to, essentially, feel confident about your findings -- the smaller the effect size, the larger the sample needed. And I could work that out with the data I had, but Andy had some bigger-picture questions.
 # 
+# ```{index} single: Sentiment analysis ; null hypothesis
+# ```
+# 
+# ```{index} single: Statistics ; finding a good baseline
+# ```
+# 
 # “What’s your null hypothesis here?” he asked.
 # 
 # “So a null hypothesis is basically just what you’d expect to see, right? ” I said. Andy nodded. “My null hypothesis was that there’d be a lot more clearly-emotional sentences in our sample from The Baby-Sitters Club. It’s narrated by middle-school age girls, and they get into interpersonal drama amongst themselves, their families, and their babysitting charges. But it really seems to be overwhelmingly neutral.”
@@ -642,7 +721,13 @@ with open('bsc-sentences.csv', 'w') as out:
 # 
 # The baseline, Andy noted, has as much to do with the corpus you’ve selected as anything. “If I take everything that’s ever been published in the domain of fiction, is that a meaningful baseline or not? ‘Everything’ might even mean Beowulf here. You have to be thoughtful about your reference group. In addition to that, you need to pick a comparison group that reflects the question you’re trying to answer. So you’ve been looking at other middle-school series -- that’s one way to frame the question. But given how broad your initial hypothesis was about emotion in middle-school girl series, I could also see that a relevant comparison group could be all literary fiction. Or you could look at books that lean towards everyday experiences vs. ones that are deliberately soap-opera-ish, like you were trying with the Sweet Valley books.”
 # 
+# ```{index} single: Statistics ; as applied philosophy
+# ```
+# 
 # “My marketing coworker is really into business school jargon, and one of the things he loves is the ‘Theory of Jobs to be Done’,” Andy continued. “This Harvard business school professor, Clay Christensen, came up with this framework for understanding customer behavior. The Theory of Jobs to be Done is really simple: people don’t buy products just because, they do it because they want to accomplish something. Understanding what problem, or ‘job’, in your customer’s life your product is addressing is really important if you want your product to not suck. When it comes to building things, it’s easy to get so caught up in what would be cool and fun and useful from an internal perspective that you forget that people buy products because they solve problems for them. It’s like the ‘so what?’ question in the humanities, since it pushes you to move beyond your own internal frame of reference and comfort zone and articulate why your work matters to other people who might have different interests, priorities, and perspectives. Stats is applied philosophy -- **applied** is the key word. You have to have a question in mind, and the clearer and more pressing that question is, the better your outcome will be for figuring out what the right statistical method is. When you start from ‘I’ve got a bunch of data, a bunch of tests, I guess I’ll go try them all’ -- that’s unlikely to generate anything useful for anyone.”
+# 
+# ```{index} single: Statistics ; like a bra
+# ```
 # 
 # The more Andy spoke about it, the more it occurred to me that statistical methods are like bras. If someone comes up to you with an arbitrary bra and asks, “Does this work for you?”, that’s not a question you can necessarily just answer ‘yes’ or ‘no’. It depends on what you’re trying to accomplish. In the Baby-Sitters Club, the topic of bras comes up a lot, but not in the ways you might expect. Kristy, the sporty President who is full of ideas and self-confidence, is often described in chapter 2 as the only one of the group who isn’t wearing a bra yet. In Super Special #2: *Baby-Sitters’ Summer Vacation*, Kristy finds herself bunking in a cabin with a bunch of other girls who are all clearly bra-wearers. Kristy doesn’t need a bra, but at that moment, if she was offered one to wear just so the straps could casually peek out from under her shirt and indicate that she was one of the group, a bra would be a great option. At a Club meeting in BSC #16: *Jessi’s Secret Language*, California girl Dawn outlines a theory about future bra size. Namely, if you can touch your tongue to your nose when you are 12 or 13, you will definitely be wearing a large bra size by the age of 18. While the other Club members giggle about this, Kristy, able to touch her nose with her tongue, is gleeful. In this case, if she was offered a very large bra, she might want to accept it as insurance against the future. If we think of size as being the same as “basic suitability for your data” (e.g. statistical methods were a bad fit for our squishy human-oriented graphs of chapter sentiment), there’s a lot more context that you need to consider. What else are you planning to wear with this bra? How sheer is it? What color is it? How low-cut is it? How professional, or casual, or trendy are you trying to look? What are the current fashion trends around the acceptability of bra straps showing? The context around the suitability of bras maps to the different kinds of questions you’re trying to answer with your method.
 # 
@@ -661,8 +746,16 @@ with open('bsc-sentences.csv', 'w') as out:
 # We started this book trying to make sense of how sentiment analysis works, and quickly discovered that it mostly *doesn’t*, at least in texts with any kind of nuance. Sure, you can get some number out of it, but it’s not a meaningful number. Then we explored how things play out with Syuzhet’s interpretive leap, built on top of questionable sentiment analysis scores. We attempted to do something similar to Syuzhet’s purported sentiment plots using a squishy, interpretive tagging method that wasn’t rigorous enough to directly compare to Syuzhet (or even itself). We looked at the ways that our own plots aligned and diverged from Syuzhet’s, using its default smoothing transformations. Our attempt to “do sentiment analysis better” by developing a BSC-specific model of positive and negative sentiment words foundered on a lack of clearly positive and clearly negative sentences -- and the inconsistency of subject-area experts (the Data-Sitters) for the data we were able to gather. But what to make of the relative non-emotive-ness of the Baby-Sitters Club is an exceedingly complex question that deserves a lot more thought. And sure, we could calculate up some numbers and make some claims, but honestly, this is a moment where the responsible choice is probably to simply *not do it*. And maybe that’s a lesson that also applies to sentiment analysis most of the time. At least for literature, sentiment analysis is fractally bad: the closer you look at what it’s actually doing, the more problems you find.
 
 # ## Katia
+# 
+# 
 # ### Conclusion
+# ```{index} single: Notes from Underground
+# ```
+# 
 # As it happens, Dostoevsky’s novel *Notes from Underground* (1864) and Kristy and the Snobs have a lot in common. Both are first person narratives that detail their protagonists’ growing consciousness of social hierarchies and describe the ways this consciousness prompts their heroes to act out in spite, whether pranks on a rival baby-sitter or an absurd “duel” of shoving an officer on the street. Of course, the novels wildly diverge from this initial premise. Kristy becomes friends with her rival, Shannon, who gives her an adorable puppy. Underground Man emotionally manipulates a prostitute and retreats from society to write his spiteful notes. My point here is that, while they seem kind of distant (not in a BSC slang way, like we [explored in DSC #6](https://datasittersclub.github.io/site/dsc6.html)), when it comes down to it, Dostoevsky novels and the Baby-Sitters Club are not so different. Dostoevsky’s narrative universe and Ann M. Martin’s Stoneybrook both function as a backdrop for richly drawn characters whose emotions grab the reader from the page. And this is true also for many literary works, not just these.
+# 
+# ```{index} single: Sentiment analysis ; quantifying characters' emotional landscape
+# ```
 # 
 # This brings us back full circle to the question we started with when Eka and I had that conversation last spring. Can Dostoevsky’s characters’ emotions, or the emotional landscape of his novels, be quantified through sentiment analysis? And now we have our answer. Probably not. Does 58 or 1 or -1 or any of these numbers represent Dostoevsky’s characters’ emotional lives? Nope. They represent what the computer identifies as matching the model, which is trained on data that is subjective to start with. Even if the model was trained on Dostoevsky novels, at the end of the day, the words don’t have semantic meaning for the computer, which assesses them and scores them with numbers against the model. But each word in a Dostoevsky text holds semantic meaning for Dostoevsky and his readers and that meaning is built through context and nuance. Sentiment analysis isn’t going to tell us anything about Dostoevsky’s characters’ emotions. Nothing new. Nothing, full stop. 
 # 

@@ -1,18 +1,22 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ![DSC logo](_static/images/DSCLogo.png)
-# # Heather Likes Principal Component Analysis
+# # DSC \#10: Heather Likes Principal Component Analysis
 # 
 # <div style='float: right; width: 200px;margin-left: 7px;margin-top: 0px;'>
 # <img src='_static/images/bookcovers/dsc10_cover.jpg' alt='DSC 10 book cover' />
 # </div>
-# 
+
+# ```{index} single: *Book Topics ; Principal component analysis (DSC 10)
+# ```
 # by Mark Algee-Hewitt, Katherine Bowers, Quinn Dombrowski, and Heather Froehlich
 # 
 # July 20, 2021
 
 # ## Quinn
+# 
+# ```{index} single: Visualization ; graph comprehensibility
+# ```
 # Have you ever been to one of those DH talks that involved dazzling graphs, showing some aspect of literature at a scale way bigger than you can imagine, and thought to yourself, “Wow… I wonder *how they did that*?” These slides usually whiz by at a brisk clip, appearing just long enough for you to marvel at the nicely-clustered bunches of colorful dots with a brief explanation from the speaker, before moving on to the next thing. I don’t think there’s some kind of conspiracy afoot here -- like most DH work, there’s just *so much* you want to share, especially with a DH-friendly audience, and only so much you can pack into 20 or even 40 minutes. But one side effect of the quick pace of these talks is that they rarely stay on one colorful visualization long enough for the sense of unease to sink in. There are some visualizations that the audience knows how to read. Comparing the number of occurrences for different character names? Yup, no problem, that’s the stuff of first grade math.
 # 
 # <img src='_static/images/dsc10_barchart.png' alt='A DH bar chart with character names vs an excerpt from a 1st grade math worksheet' />
@@ -21,16 +25,26 @@
 # 
 # <img src='_static/images/dsc10_mark_typicality.png' alt='A slide from Mark Algee-Hewitt with a PCA graph' />
 # 
+# ```{index} single: Typicality ; project overview
+# ```
 # This was a slide from a talk that Associate Data-Sitter Mark Algee-Hewitt gave at *DARIAH Beyond Europe*, a conference at Stanford a few weeks before I started working there in fall 2018. He was speaking about a project in the Stanford Literary Lab called “Typicality”, or “Typicality as Mean”. This chart shows American fiction-- specifically, the Gale American Fiction corpus. My fellow Data-Sitter Roopsi critiqued that corpus in our recent LitLab talk, on account of all the American fiction that gets left out -- significantly, non-English fiction and fiction by people who were not white men with access to mainstream commercial publishing channels. Anyhow, with those caveats in place, it takes this corpus of (a subset of) American fiction and looks for the “most average” one -- the one that is closest to the middle. Not one off in the romance cluster, not one over by the mysteries. Just… totally average for this corpus, or as close to it as you can get.
 # 
 # That book, by the way, is “The Dragon’s Daughter” by Clyde C. Westover. In his talk, Mark noted that he’s probably one of the only people to have read it all the way through in the last 50 years -- which immediately prompted me to download it from Project Gutenberg and attempt the slog myself. But boy, is it ever a slog. A hackneyed plot, liberally sprinkled with jaw-dropping racism, applied to everyone from an Irish policeman to the protagonists who are implicated in the Chinese mafia of San Francisco. I gave up halfway through, so I guess Mark can legitimately keep saying he’s the only one who’s read it. (In Russian there’s a handy set of verbal prefixes you can use to differentiate “read some of” and “read all the way to the end”. I miss having those in English.)
 # 
 # But even as I’ve tried to put “The Dragon’s Daughter” out of my mind, I haven’t forgotten about that visualization. I wanted to understand what he did to make it -- and even more importantly, I wanted to *actually* understand how to read it, beyond smiling and nodding along with the explanation. 
 # 
+# ```{index} single: Stanford's Literary Lab ; building on projects
+# ```
+# 
+# ```{index} single: Code ; Reading R as a Python user
+# ```
 # One of the cool things about the Data-Sitters Club being part of the LitLab is that it makes it easy to build on work that’s been done for other projects. (And all the other Lab members have been super nice about answering my questions and helping me wrangle their code.) The Typicality code is Mark’s, and Mark primarily works in R. I don’t know how to explain this to a monolingual English speaker, but dealing with R code when you’re … let’s call it an “intermediate” Python user is kind of like trying to read Italian with high-school Spanish. (Or, if I’m having a bad day, like trying to read *Romanian* with high-school Spanish.) Most of the high-level structure of the language is comparable, and a lot of the roots are recognizable, but I wouldn’t claim it’s something I’m exactly comfortable doing.
 # 
 # On one hand, it would make sense to show you the Typicality code next, then talk about how to interpret it. On the other hand, the Typicality code is going to make a lot more sense after we talk, conceptually, about what it’s doing. (Trust me on this, as someone who ran the Typicality code blindly for a while before understanding it.) So for the moment, let’s just say I ran some code and visualized the output and it looked something like Mark’s all-the-dots viz, but with the Baby-Sitters Club books. All we needed was someone to help interpret it. And I knew just the person.
 
+# ```{index} single: Guest Data-Sitters ; Heather Froehlich
+# ```
+# 
 # ### Meet Heather
 # Heather Froehlich (Penn State University) has wavy-curly red hair and a more-than-passing similarity in style to the famed missing Waldo. She has an affinity for stripes, and like the Baby-Sitters Club members spent her tween years in New England. She spends a lot of time pondering computers and how they understand language. She spends even more time thinking about what people’s brains can do with the resulting data, because as she will be the first to tell you, “computers are dumb boxes of plastic and metal”. In her position as Literary Informatics Librarian at Penn State University, she has the opportunity to consult with a range of scholars in diffuse fields about all the ways people can work smartly with the data computers give us and how to get them to give it to us. She loves a good corpus. 
 # 
@@ -45,9 +59,15 @@
 # 
 # “Okay, so my name is Katia and I’m an Associate Professor of Slavic Studies at the University of British Columbia, and I work on 19th-century Russian lit. My research expertise is in genre and narrative theory.” I explained. “Also, I am fascinated by the Baby-Sitters Club books, which was true when I was eight and apparently it's still true, and I’ve read a lot of them. I’m relatively new to DH, and so I usually have a lot of questions about how we do things.”
 # 
+# ```{index} single: Projects ; Visualizing English Print
+# ```
+# 
 # “What I really do is, I’ve worked on a lot of projects, including a very big project called Visualizing English Print (1472-1700) where we did a lot of work using Principal Component Analysis as a way to kind of get into texts as a process,” said Heather. “I’ve spent a lot of time working both with computer scientists and people like Katia who are close enough to DH to be, like, ‘We have maybe heard of these things.’ As for myself, my background is in corpus linguistics-- language and sort of stylistics as a whole-- and I'm really interested in language variation and change as the sort of underlying feature of all this.”
 # 
 # Not unlike Stacey McGill, Heather really does love math and, in the absence of a whiteboard and shared space, she sent us searching for our own pen and paper so we could draw some graphs of our own. Old school style.
+# 
+# ```{index} single: Graphs ; basic explanation
+# ```
 # 
 # “So we're first going to talk a little bit about what the graph is and what we're doing with these graphs. Then, we’ll cover what PCA is and how it works, what we’re thinking when we talk about PCA which might be a better version of the same idea as graphs. Then we'll dive into a couple of these examples as a way to kind of get thinking about the relationship between different texts.”
 # 
@@ -58,6 +78,9 @@
 # <img src='_static/images/dsc10_plussign.jpg' alt='A piece of paper with a giant plus sign.' />
 # 
 # “This is a graph,” Heather reminded us. “We learned about this in grade school and then promptly forgot about it as quickly as possible because we hated it.” Quinn nodded enthusiastically.
+# 
+# ```{index} single: Graph ; quadrants
+# ```
 # 
 # “We're going to call each of these little sections a quadrant. So, we are familiar with some of these and…” Heather wrestled with the pen, her laptop webcam, and Zoom lighting. “This is why God invented whiteboards…” she muttered.
 # 
@@ -73,6 +96,9 @@
 # 
 # “Um, math class did not go well for me, so I will be the person who's confused now,” admitted Quinn.
 # 
+# ```{index} single: Graphs; X-axis and Y-axis
+# ```
+# 
 # “Okay,” Heather revised. “So this is the X-axis, this is the Y-axis, and you can label those accordingly on your own pieces of paper.”
 # 
 # <img src='_static/images/dsc10_xyaxes.jpg' alt='A piece of paper with a giant plus sign and quadrant labels and x and y axes labeled.' />
@@ -87,8 +113,14 @@
 # 
 # <img src='_static/images/dsc10_posneg.jpg' alt='A piece of paper with a giant plus sign and quadrant labels and x and y axes labeled and 0,0 labeled.' />
 # 
+# ```{index} single: Principal Component Analysis ; purpose
+# ```
+# 
 # “Graphing generally is trying to find relationships between multiple points of stuff,” said Heather, before pausing to reconsider. “Well, my computer scientists are going to tell me something else, but most people commonly look at relationships between different kinds of stuff in graph spaces. Principal component analysis, or PCA, is a way of taking lots of data and condensing it into something that is more human readable.”
 
+# ```{index} single: Principal Component Analysis ; to cluster pets
+# ```
+# 
 # ### PCA for Pets
 # The graphs that immediately leapt to all of our minds were COVID-related, those charts of daily positive tests, hospitalizations, deaths that had dominated the news and social media. But learning PCA using people’s suffering and death didn’t feel right for the Data-Sitters Club. So instead, let’s talk pets. In *BSC #22: Jessi Ramsey, Pet-Sitter*, the Mancusi family has a ridiculous number of pets:
 # 
@@ -161,6 +193,9 @@
 # 
 # "Sure!" said Heather. "You guys are language people, and you're used to thinking about things like categories, so I won't belabor the point! But it doesn't just have to be grammatical categories! This kind of quantitative approach can look very daunting."
 # 
+# ```{index} single: Principal Component Analysis ; Spreadsheet of Doom
+# ```
+# 
 # To illustrate her point, she opened a [ginormous spreadsheet](https://graphics.cs.wisc.edu/WP/vep/vep-early-modern-drama-collection/), which she affectionately called her SPREADSHEET OF DOOM, explaining, "This is all of the plays in Early English Books Online, 1472-1700. There are 544 of them, and the spreadsheet has categories that are designed to kind of cover different **kinds** of words. Not, like, parts of speech, but more semantic. Things like abstract words, acknowledgement, anger, apology..."
 # 
 # Her columns scrolled on and on, a blur of numbers. Quinn squinted at the screen, puzzled. "So, how did you get those categories?"
@@ -173,6 +208,9 @@
 # 
 # No objections from us! So we scaled things back.
 
+# ```{index} single: Principal Component Analysis ; using M&M colors
+# ```
+# 
 # ### Counting Claudia Kishi’s Snacks
 # “I want you to draw 5 columns on your paper for me,” said Heather. “And label them BSC #1-#5. And our rows will be red, yellow, brown, and black. We’re going to make up some percentages for the colors of Claudia Kishi’s snacks mentioned in the books.”
 # 
@@ -187,6 +225,9 @@
 # | brown       | 20%   | 10%   | 30%   | 35%   | 24%  |
 # | black       | 10%   | 20%   | 15%   | 10%   | 10%  |
 # 
+# ```{index} single: Principal Component Analysis ; grappling with dimensionality
+# ```
+# 
 # “Okay, in our hypothetical version of what our spreadsheet is looking like, we're beginning to see that relationships exist across these categories that are relevant to each individual item, yes?” said Heather. I nodded. “That giant spreadsheet I showed you before shows you what it looks like to aggregate your data at a scale that offers a ton of information. This one is a little bit more reasonable to kind of deal with, right? Like, we can kind of talk around this one in ways that feel more accessible. But, imagine that you were to do this for all -- how many Baby-Sitters Club books? You have what, like 60?”
 # 
 # “225 or so,” Quinn deadpanned.
@@ -199,6 +240,12 @@
 # 
 # “So, crucially, we don’t work well in 1,000 dimensions, right? We struggle after, like, three dimensions most of the time. Even encountering four dimensions in college, it’s like, ‘I don’t know how to do this’. We as humans like to see things visually in two dimensions -- sometimes we can handle three, but we do really well in two dimensions. So that’s what PCA’s trying to do,” explained Heather. “But to get there, we have to flatten the variation in our data a whole bunch. And this comes into play when you’re trying to interpret it.”
 
+# ```{index} single: Principal Component Analysis ; interpreting PCA of top 1k nouns
+# ```
+# 
+# ```{index} single: Typicality ; interpretation
+# ```
+# 
 # ### Interpreting Typicality
 # Heather pulled up the graph that Quinn had generated, running Mark’s Typicality code on the BSC corpus using the top 1,000 nouns. 
 # 
@@ -233,6 +280,9 @@
 # “See how *BSC #20 Kristy and the Walking Disaster* is all the way over there? Both its plot and subplot revolve around taking care of kids. The main plot is about the kids’ softball team Kristy coaches and the subplot is about a new baby-sitting client whose son is very accident prone. Teen drama is at a minimum in this book!”
 # 
 
+# ```{index} single: YRDL ; PCA across series books
+# ```
+# 
 # ### PCA Across Series
 # “Should we try another example?” asked Heather. “How about the series one, I saw that and it was fascinating!”
 # 
@@ -265,7 +315,13 @@
 # ## Quinn
 # I had thoughts (and feelings!) after talking with Heather about PCA, but before I get into those, it’s finally time to look at how these visualizations come into being to begin with.
 # 
+# ```{index} seealso: Principal Component Analysis ; Typicality
+# ```
+# 
 # ### A High-Level Look at Typicality
+# 
+# ```{index} single: Typicality ; noun extraction
+# ```
 # For the Typicality code to do what it’s supposed to do, it’s designed to take as its input all the *nouns* in a series of texts. Since I’m more comfortable working with Python, I used that to prepare the text by extracting all the nouns first. There are more recent and sophisticated natural language processing (NLP) packages that you can use to extract nouns, but it felt like overkill for this task, especially since we were just looking at English here. So I used the NLTK package.
 # 
 # #### Extracting All Nouns
@@ -328,11 +384,16 @@ for filename in os.listdir(textdir):
                             out.write(' ')
 
 
+# ```{index} single: Typicality ; how it works
+# ```
 # #### What Typicality Does
 # The Typicality code takes the most frequent nouns across all the texts, and then uses the frequencies of those nouns in each text to plot a location for that text in multi-dimensional space -- meaning that if you go with the default of 1,000 nouns, you get coordinates for the text in 1,000-dimensional space. We've talked a little bit about [grappling with mega-dimensional space before in DSC #8](https://datasittersclub.github.io/site/dsc8.html#what-do-we-compare-when-we-compare-texts) in the context of *vectorizing texts*, and that's what we're doing here, too: turning each text into a *vector* consisting of 1,000 coordinates based on the frequency of each of the top 1,000 nouns. But in DSC #8, we were measuring the distance between the vectors as one way of looking at text similarity. Here, we're using PCA to generate principal component values for each of the texts, and then we'll plot the first two principal components (which account for the greatest variation in the data) as the X- and Y-values in an easier-to-understand 2-dimensional space. You could make other choices about how to visualize the data, like graphing PC1 vs PC2 vs PC3 in 3-dimensional space (in case you want a graph that looks even more baffling to people who aren't used to interpreting PCA visualizations)! There's no single "right" next step once you have your PC values, though -- it's an interpretive decision, and PC1 on the X-axis and PC2 on the Y-axis is just something that people often go with. The interpretive spin on all this that Mark's Typicality  approach offers is that the concept that the most "typical" text is the one that's closest to (0,0) or the *center* of the grid: not too far up, not too far down. Not too far left, not too far right. Just... average.
 
+# ```{index} single: Code ; running R in Jupyter notebooks
+# ```
+# 
 # #### Fitting an R-shaped Peg into a Jupyter-shaped Hole
-# You may have noticed that all the code we've used in the Data-Sitters Club to date has been Python. Or maybe you haven't noticed, and that's fine too! When you're not familiar with coding, looking at any code is like when the TV closed captions just show something like *&gt;speaking quickly in a foreign language&lt;* instead of the actual words the person is saying in Spanish.
+# You may have noticed that all the code we've used in the Data-Sitters Club to date has been Python. Or maybe you haven't noticed, and that's fine too! When you're not familiar with coding, looking at any code is like when the TV closed captions just show something like *&lt;speaking quickly in a foreign language&gt;* instead of the actual words the person is saying in Spanish.
 # 
 # If you're interested in understanding more about PCA but don't want to get into the code, feel free to skip ahead! If you're curious about how to run code in R (maybe even alongside Python code), or the details of how the Typicality code works, read on!
 # 
@@ -370,6 +431,9 @@ get_ipython().run_line_magic('load_ext', 'rpy2.ipython')
 get_ipython().run_cell_magic('R', '', '#A function that takes a text chunk as an input\ncleanChunk <- function(text.chunk){\n  #Removes tabs\n  text.chunk <- paste(text.chunk, collapse=" ")\n  #Splits the text into individual characters\n  text.chunk <- unlist(strsplit(text.chunk, ""))\n  #Makes all text lower-case\n  text.chunk <- tolower(text.chunk)\n  #Throws out any character that isn\'t considered a letter by R\n  text.chunk <- text.chunk[which(text.chunk %in% c(letters, " "))]\n  #Pastes the vector of individual letters back together to form one giant string\n  text.chunk <- paste(text.chunk, collapse="")\n  #Splits everything based on spaces so we have a vector of words instead of letters\n  text.clean <- unlist(strsplit(text.chunk, " "))\n  #Returns the clean text chunk\n  return(text.clean)\n}')
 
 
+# ```{index} single: Typicality ; PCA function
+# ```
+# 
 # #### The Typicality function
 # The Typicality code takes a directory with your corpus (plain text files, and only the plain text files you want it to analyze), a metadata table (the code for running this function, below, includes steps for creating a basic metadata table with filename and title), the number of most-frequent words you want it to use for its analysis, and a corpus name (to use for the output files).
 # 
@@ -385,6 +449,9 @@ get_ipython().run_cell_magic('R', '', '#A function that takes a text chunk as an
 get_ipython().run_cell_magic('R', '', '#Sets up what the function expects as its inputs & outputs\ncorpusTypicality<-function(corpus.dir, meta.data.file, output.dir, top.words = evaluated.words, corpus.name){\n  #Loads the text mining package\n  library(tm)\n  #Sets up a path for each file, with the corpus directory + filename\n  all.files<-paste(corpus.dir, meta.data.file$Filename, sep="/")\n  #Extracts text from the text files\n  all.texts<-lapply(all.files, function(x) scan(x, what="character", sep="\\n", quiet=T))\n  #Pastes everything back together in a single string\n  all.texts<-lapply(all.texts, function(x) paste(x, collapse=" "))\n  #Applies Mark\'s special cleaning function\n  all.texts<-lapply(all.texts, function(x) cleanChunk(x))\n  #Pastes all texts back together in a single string\n  all.texts<-lapply(all.texts, function(x) paste(x, collapse=" "))\n  #Returns a list, changing the text strings into a vector\n  all.texts<-unlist(all.texts)\n  #Defines text.corpus as a vectorization of all the texts\n  text.corpus<-Corpus(VectorSource(all.texts))\n  #Creates a document-term matrix from the vectorization\n  text.dtm<-DocumentTermMatrix(text.corpus)\n  #Sets the document-term matrix as a matrix\n  text.dtm<-as.matrix(text.dtm)\n  #Defines word frequency by sorting the words in order of occurrence\n  word.freqs<-sort(colSums(text.dtm), decreasing=T)\n  #Defines top terms as being the # of terms that you specify when you run the code\n  #The "starts.with", which you also specify when you run the code, lets you exclude the most-frequent terms\n  #This might be useful if you\'re using all words (e.g. not just nouns) and want to\n  #exclude the highest-frequency words that are mostly indicative of author signal (e.g. \'the\', \'a\', \'and\')\n  top.terms<-names(word.freqs[starts.with:top.words])\n  #Writes a CSV with the top terms that it\'s using for its analysis\n  write.csv(x = top.terms, file = paste(c(output.dir, \'/\', \'top_terms_\', corpus.name,\'.csv\'), collapse = \'\'))\n  #Converts word counts to frequencies, dividing by book length\n  #Otherwise, books would look different from one another just because of different length\n  dtm.scale<-text.dtm/rowSums(text.dtm)\n  #Reshapes the document/term matrix to just columns with frequencies for the top words\n  dtm.mfw<-dtm.scale[,which(colnames(dtm.scale) %in% top.terms)]\n  #Computes PCA coordinates using the words in the range you specified for analysis\n  pca.coords<-prcomp(dtm.mfw)\n  #Specififes that the coordinates should be PC1 and PC2\n  pca.coords<-pca.coords$x[,1:2]\n  #Names the columns in your output file\n  colnames(pca.coords)<-c("PC1", "PC2")\n  #Creates a dataframe (R spreadsheet) with the coordinates plus the info from the metadata file in the input\n  final.table<-data.frame(pca.coords, meta.data.file)\n  #Calculates the mean X value\n  x.mean<-mean(pca.coords[,1])\n  #Calculates the median X value\n  x.median<-median(pca.coords[,1])\n  #Calculates the mean Y value\n  y.mean<-mean(pca.coords[,2])\n  #Calculates the median Y value\n  y.median<-median(pca.coords[,2])\n  #Creates 2 empty rows\n  empty.rows<-matrix(rep(NA, (ncol(meta.data.file)*2)), nrow=2)\n  #Fills the empty rows with the x-mean and x-median\n  x.add<-c(x.mean, x.median)\n  #Fills the empty rows with the y-mean and y-median\n  y.add<-c(y.mean, y.median)\n  #Adds the rows with the calculated mean and median values to the final dataframe\n  add.table<-data.frame(x.add, y.add, empty.rows)\n  colnames(add.table)<-colnames(final.table)\n  final.table<-rbind(final.table, add.table)\n  #Puts the value \'text\' for all your original text files in the final dataframe\n  type.vector<-rep("text", nrow(final.table))\n  #Puts the values \'mean\' and \'median\' in the final dataframe for your calculated values\n  type.vector[c(length(type.vector)-1, length(type.vector))]<-c("mean", "median")\n  #Sets the final table to be a vector\n  final.table$Type<-type.vector\n  #Defines the filename for the PCA output\n  out.filename<-paste(corpus.name, "_pca.csv", sep="")\n  #Defines the path for the PCA output\n  out.filename<-paste(output.dir, out.filename, sep="/")\n  #Writes the final dataframe to your output file\n  write.csv(final.table, out.filename, row.names=F)\n}')
 
 
+# ```{index} single: Typicality ; running Typicality code
+# ```
+# 
 # #### Running Typicality
 # The code cell below is what you use to actually run Typicality. You'll need to edit it first your own data, as described here.
 # 
@@ -420,6 +487,15 @@ get_ipython().run_cell_magic('R', '', '#Sets up what the function expects as its
 get_ipython().run_cell_magic('R', '', '#How many top words should it use?\nevaluated.words=1000\n#How many of the very most frequent words should it skip? To skip 0, starts.with = 1.\n#To skip 50, starts.with = 51\nstarts.with=1\n#Put the path to the folder containing the folder with your texts here\nsetwd(\'~/Documents\')\n#Put the name of the folder with your texts here\nFilename<-list.files(\'dsc_pca_all_words\')\n#If you want to strip anything off the text filename for the title besides .txt you can change this\nTitle<-unlist(strsplit(Filename, ".txt"))\n#Creates the metadata table\ndsc.meta<-data.frame(Filename, Title, stringsAsFactors = FALSE)\n#Runs the Typicality code\nmeans.text<-corpusTypicality(\'dsc_pca_all_words\', dsc.meta, ".", corpus.name="dsc_pca_all_words")')
 
 
+# ```{index} single: Visualization ; of Typicality PCA output
+# ```
+# 
+# ```{index} single: Typicality ; visualization
+# ```
+# 
+# ```{index} single: Tableau ; use with Typicality PCA output
+# ```
+# 
 # ### Visualizing the Typicality Output
 # After running the Typicality code, you should now have two CSV files:
 # 
@@ -453,6 +529,9 @@ get_ipython().run_cell_magic('R', '', '#How many top words should it use?\nevalu
 # 
 # And that's how we got our graphs. But before we could feel good about it, first we needed to make sense of these coordinates, and how PCA manages to squish 1,000 dimensions down to 2, and what it means for things to not be in the middle, because without that, we didn't have a lot of hope of interpreting what the middle means. And that's what led to the conversation with Heather that you just read about.
 
+# ```{index} single: Principal Component Analysis ; understanding features
+# ```
+# 
 # ### Making Sense of Features
 # I was grateful for the conversation with Heather; I felt like I had a better sense of how to start interpreting a PCA graph, but some things were still troubling me. The Typicality code was how I stumbled into this world of PCA, so I figured it was time to go to the source: it was time for a conversation with Mark Algee-Hewitt, Director of the Stanford Literary Lab and Associate Data Sitter (just like Logan Bruno in the Baby-Sitters Club.) 
 # 
@@ -460,7 +539,13 @@ get_ipython().run_cell_magic('R', '', '#How many top words should it use?\nevalu
 # 
 # “As many as the things in your corpus,” said Mark. “So if you’ve got 250 Baby-Sitters Club books, there could be 250 principal components. But in practice, it’s not worth it to do the math for all 250 because there are diminishing returns. You can calculate the percentage of the variation that each principal component covers. PC1 always covers the most variation -- it depends on your data, but 25% is a plausible number for what PC1 might cover. And it all goes downhill from there, so by the time you get to PCA 200, it’s not explaining a whole lot. Plus, keep in mind that we’re trying to flatten everything down to 2 dimensions using values that summarize the biggest range of variation. And if that’s our end-goal, PCA 200 really isn’t of any use here.”
 # 
+# ```{index} single: Emotions ; angst about PCA
+# ```
+# 
 # That was reassuring. But I was still vexed about what we were supposed to be measuring here anyways. The PCA results looked so different when we looked at all the words vs. just the nouns -- to say nothing of the time I tried adjectives. And then there was Heather's approach, to create buckets of word-counts based on semantically-connected words, which got us another, different visualization when we ran it on the BSC (though this was dubious for anything other than lulz, because it included lots of Early Modern English words and omitted some salient BSC vocab like "distant" and "fresh" like Katia described in [DSC #6: Voyant's Big Day](https://datasittersclub.github.io/site/dsc6.html).) So, what? Do you just choose a bunch of stuff to measure until you find a visualization that you like the look of? That's really not what I'd hoped to do with this PCA thing.
+# 
+# ```{index} single: Theorizing ; how we answer questions
+# ```
 # 
 # So I poured my guts out to Mark, all my angst and doubt about how meaningful any of these measures were. He smiled. "This isn't any different than in traditional literary scholarship. If I'm doing a Marxist reading of a text, everything will be linked to the economy."
 # 
@@ -473,6 +558,15 @@ get_ipython().run_cell_magic('R', '', '#How many top words should it use?\nevalu
 # "If you want to know how novels are the same or different based on their 'about-ness', maybe a topic model is the right thing to use to create a feature set," Mark went on. "If you want to know differences related to who wrote it, you could try stylometry or most frequent words."
 # 
 # The mention of "most frequent words" lit off sparks in my brain: the top-1,000-word PCA model for the series books! Maybe that's why the series were so strongly delineated! I mean, yes, there were ghostwriters involved for most or all of the series, but if they were trying to write in a consistent voice and style, maybe that attenuated some of the "author signal" from the ghostwriters. What would happen if we color-coded the BSC chart with the top-1,000 words by ghostwriter? And were there any ghostwriters who wrote for more than one of the series we had in our corpora?! But I tried to not get too distracted by the new rabbit holes forming in my brain because Mark had other pointers.
+# 
+# ```{index} single: Methods ; method options for different questions
+# ```
+# 
+# ```{index} single: Questions ; method options
+# ```
+# 
+# ```{index} single: Stanford's Literary Lab ; Microgenres
+# ```
 # 
 # "To differentiate individual texts, you can look at the most distinctive words." ([We tried that in DSC #8: Text-Comparison-Algorithm-Crazy Quinn!](https://datasittersclub.github.io/site/books/dsc8.html#tf-idf)) "For genre, you can try a topic model. If you're interested in dialogue, that has a lot to do with verb tenses, and you can try part-of-speech. We used part-of-speech in the Lab's Microgenres project because we were interested in grammatical similarities across texts rather than semantics. The Lab's Personhood project, on the other hand, used syntactical features -- we were less into looking at words, and more into the relationships between words. Who or what is 'owned', vs. 'put', vs. 'does'?"
 # 
@@ -491,6 +585,9 @@ get_ipython().run_cell_magic('R', '', '#How many top words should it use?\nevalu
 # I grabbed my phone and texted Katia, “You’ve got to read this…”
 
 # ## Katia
+# ```{index} single: Principal component analysis ; struggle with interpretation
+# ```
+# 
 # Quinn sent me Mark’s chapter and I got excited and read it. And Mark’s chapter is great! It gave me so much food for thought for my Dostoevsky project and for the Data-Sitters Club. But then Quinn asked me to use my literature scholar skills to conclude this book… and I had no idea what to say. The fact is, I understood what we’re doing with PCA and I understood what Mark’s saying in his chapter, but what I didn’t understand is how to put those things together in a way that says something conclusive or meaningful. Now, it’s true that concluding a Data-Sitters Club book is lower stakes and more relaxed than concluding a monograph or even a journal article. But I still felt like the pieces weren’t coming together for me well enough to write anything yet. 
 # 
 # So Quinn and I jumped on Zoom and talked through the data again. 
@@ -516,6 +613,9 @@ get_ipython().run_cell_magic('R', '', '#How many top words should it use?\nevalu
 # “Ehhhh, don’t get too excited,” Quinn laughed. “I don’t actually know how to do this. But I bet the internet does.”
 # 
 
+# ```{index} single: Typicality ; finding the closest points to 0,0
+# ```
+# 
 # ### Finding the Closest Points to 0,0
 # And sure enough, [the internet did](https://www.geeksforgeeks.org/find-k-closest-points-to-the-origin/). Quinn took the coordinates of each book from the CSV that the Typicality code generated, and used some regular expressions in a plain text file to reformat it into a list:
 
@@ -572,6 +672,10 @@ print(pClosest(points, K))
 # We needed help. It was time for Quinn to have a follow-up meeting with Mark. 
 
 # ## Quinn
+# 
+# ```{index} single: Collaboration; getting stuck
+# ```
+# 
 # ### Mark and Biplots Save the Day
 # “Hi, we’re stuck.”
 # 
@@ -586,6 +690,9 @@ print(pClosest(points, K))
 # “And on the other side, we see more that relates to … age? But maybe also publication history.”
 # 
 # <img src='_static/images/dsc10_arrow2.jpg' alt='PCA of the Baby-Sitters Club corpus using the top 1k nouns with a diagonal line going up and to the right.' />
+# 
+# ```{index} single: Biplot analysis
+# ```
 # 
 # “Have you tried a biplot analysis?”
 # 
@@ -625,6 +732,9 @@ get_ipython().run_cell_magic('R', '', '#How many top words should it use?\nevalu
 # 
 # *🎵’Cause biplots are a firework… come on show me what they’re worth… 🎵*
 # 
+# ```{index} single: Biplot analysis; interpretation
+# ```
+# 
 # I was perplexed. But then Mark started zooming in, and soon I could see that the specks of dust were numbers corresponding to each of the books, and at the end of each pink line was a word. Mark was right. It was joy in a weird puff-ball of data.
 # 
 # <img src='_static/images/dsc10_biplot_sports.png' alt='Zoomed in biplot of the PCA of the Baby-Sitters Club book using top 1k nouns' />
@@ -642,6 +752,9 @@ get_ipython().run_cell_magic('R', '', '#How many top words should it use?\nevalu
 # Now we had what we needed to read the PCA like the computer. But Mark had one more trick up his sleeve. “Doing PCA with a regular biplot analysis is great because it gives you the magnitude-- you can see **how** significant the really significant words are. But you might also want to run it scaled according to the zeta score.”
 # 
 # "The what now?" I asked.
+# 
+# ```{index} single: Biplot analysis; zeta score
+# ```
 # 
 # "Hrm, this is slightly more math than I'm really up for this early in the morning," grumbled Mark. "It'd involve taking the frequency of a term in a book, subtracting the mean frequency, and then dividing by the standard deviation. Basically, it shows you how far away the frequency is from the corpus norm. It's less of a big deal when you're looking at only nouns, but especially if you're looking at the top terms overall, this will dampen down the function words that occur everywhere, and bring out the effect of words that are occurring an unusual amount in specific texts. It's used a lot when [doing stylometry](https://programminghistorian.org/en/lessons/introduction-to-stylometry-with-python)."
 # 
@@ -670,6 +783,9 @@ get_ipython().run_cell_magic('R', '', '#How many top words should it use?\nevalu
 # “Well, look at that,” Mark remarked. “The mystery words weren’t frequent enough to have much of an impact in the first version, but when we scale it by the z-score, the mysteries cluster together.” That also made sense, and it was a great sanity check for us about what was going on. This version had a big impact on the mysteries, but the other high-level stuff mostly stayed the same. That said, scaling the nouns by z-score had a major impact on our most “average” texts; the only one left near the center was *BSC #103: Happy Holidays Jessi*, a space it shared with *BSC #84: Dawn and the School Spirit War*. 
 # 
 # "Oh, cool -- I get it now!" I exclaimed. "Once you have the feature loadings from the biplot analysis, you can use TF-IDF to look at how significantly the major features for that part of the graph appear in a given text, to get a sense of why it's located there and not somewhere else."
+# 
+# ```{index} single: Biplot analysis ; interpretation using TF-IDF
+# ```
 # 
 # ### Interpretation Help from TF-IDF
 # 
@@ -720,6 +836,9 @@ get_ipython().run_cell_magic('R', '', '#How many top words should it use?\nevalu
 # 
 # I texted all this to Quinn and added, “What if we tested it with something else to see what the words in the book are doing?”
 # 
+# ```{index} single: Voyant ; use as interpretive tool
+# ```
+# 
 # I put the corpus file for BSC #103 into [Voyant Tools](https://voyant-tools.org/), and with even the first visualization, Cirrus the word cloud, I could see what was happening. I expanded the word count as high as it would go, to 500:
 # <img src='_static/images/dsc10_cirrus-103.png' alt='Wordcloud of Happy Holidays Jessi from Voyant' />
 # 
@@ -737,6 +856,9 @@ get_ipython().run_cell_magic('R', '', '#How many top words should it use?\nevalu
 # “Now that’s an ending,” Quinn replied. “And isn’t it cool that we’re starting to have a suite of tools at our disposal to investigate things with?”
 # 
 # The interesting thing I realized through doing this is that when I think about a Baby-Sitters Club book’s plot, I think about the things that happen. But a plot isn’t just nouns. Or adjectives. Or even words. It’s the combination of those things. You can have a bunch of mentions of “beach” in a beach novel, but it doesn’t make all beach novels seem all that similar to the reader. As a reader, you think about similarity and typicality as two sides of the same coin. But the computer hasn’t read any of the Baby-Sitters Club books in the same sense that you have. The computer only counts nouns, or words, or whatever you give it. BSC #103: *Happy Holidays, Jessi* doesn’t seem like it should be typical, but when you look at what the computer is processing, all the nouns that make it more of a stand-out are stripped away. The results can be counterintuitive on a corpus like ours, a small one where there isn’t necessarily a lot of diversity of vocabulary.
+# 
+# ```{index} single: Collaboration ; domain expertise
+# ```
 # 
 # An important take-away from DSC #10 is that you need to know your corpus and also know what you’re looking for before you try to draw conclusions! Some might say we’re way too familiar with the specifics of the books’ plots, but one of the key areas of expertise that Roopsi and I bring to the DSC is our knowledge of the BSC corpus. For PCA, this is crucial. Over the course of this book, I’ve had so many texts from Quinn asking me about why this book appears there, or what the specifics are with that book, in order to figure out what it is doing. PCA is counting words, extracting data, and creating visualizations, but in order to interpret the results you get, you need to know both what the computer is reading and what is in your corpus. 
 # 

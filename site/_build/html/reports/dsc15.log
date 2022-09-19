@@ -1,4 +1,15 @@
 Traceback (most recent call last):
+  File "/Users/qad/anaconda3/lib/python3.8/site-packages/nbclient/client.py", line 622, in _async_poll_for_reply
+    msg = await ensure_async(self.kc.shell_channel.get_msg(timeout=new_timeout))
+  File "/Users/qad/anaconda3/lib/python3.8/site-packages/nbclient/util.py", line 85, in ensure_async
+    result = await obj
+  File "/Users/qad/anaconda3/lib/python3.8/site-packages/jupyter_client/asynchronous/channels.py", line 48, in get_msg
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
   File "/Users/qad/anaconda3/lib/python3.8/site-packages/jupyter_cache/executors/utils.py", line 51, in single_nb_execution
     executenb(
   File "/Users/qad/anaconda3/lib/python3.8/site-packages/nbclient/client.py", line 1112, in execute
@@ -11,106 +22,20 @@ Traceback (most recent call last):
     return future.result()
   File "/Users/qad/anaconda3/lib/python3.8/site-packages/nbclient/client.py", line 553, in async_execute
     await self.async_execute_cell(
-  File "/Users/qad/anaconda3/lib/python3.8/site-packages/nbclient/client.py", line 857, in async_execute_cell
-    self._check_raise_for_error(cell, exec_reply)
-  File "/Users/qad/anaconda3/lib/python3.8/site-packages/nbclient/client.py", line 760, in _check_raise_for_error
-    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
-nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
-------------------
+  File "/Users/qad/anaconda3/lib/python3.8/site-packages/nbclient/client.py", line 841, in async_execute_cell
+    exec_reply = await self.task_poll_for_reply
+  File "/Users/qad/anaconda3/lib/python3.8/site-packages/nbclient/client.py", line 646, in _async_poll_for_reply
+    await self._async_handle_timeout(timeout, cell)
+  File "/Users/qad/anaconda3/lib/python3.8/site-packages/nbclient/client.py", line 696, in _async_handle_timeout
+    raise CellTimeoutError.error_from_timeout_and_cell(
+nbclient.exceptions.CellTimeoutError: A cell timed out while it was being executed, after 30 seconds.
+The message was: Cell execution timed out.
+Here is a preview of the cell contents:
+-------------------
 %%R
 library(klaR)
-feature.names.tg<-gsub("’", "'", feature.names.tg)
-colnames(feature.table.tg)<-feature.names.tg
-vars<-stepclass(feature.table.tg, metadata.table.tg[,1], method="lda", improvement=0.0001)
-------------------
-
-[0;31m---------------------------------------------------------------------------[0m
-[0;31mRRuntimeError[0m                             Traceback (most recent call last)
-[0;32m~/anaconda3/lib/python3.8/site-packages/rpy2/ipython/rmagic.py[0m in [0;36meval[0;34m(self, code)[0m
-[1;32m    267[0m                 [0;31m# Need the newline in case the last line in code is a comment.[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
-[0;32m--> 268[0;31m                 [0mvalue[0m[0;34m,[0m [0mvisible[0m [0;34m=[0m [0mro[0m[0;34m.[0m[0mr[0m[0;34m([0m[0;34m"withVisible({%s\n})"[0m [0;34m%[0m [0mcode[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m    269[0m             [0;32mexcept[0m [0;34m([0m[0mri[0m[0;34m.[0m[0membedded[0m[0;34m.[0m[0mRRuntimeError[0m[0;34m,[0m [0mValueError[0m[0;34m)[0m [0;32mas[0m [0mexception[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
-
-[0;32m~/anaconda3/lib/python3.8/site-packages/rpy2/robjects/__init__.py[0m in [0;36m__call__[0;34m(self, string)[0m
-[1;32m    437[0m         [0mp[0m [0;34m=[0m [0mrinterface[0m[0;34m.[0m[0mparse[0m[0;34m([0m[0mstring[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0;32m--> 438[0;31m         [0mres[0m [0;34m=[0m [0mself[0m[0;34m.[0m[0meval[0m[0;34m([0m[0mp[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m    439[0m         [0;32mreturn[0m [0mconversion[0m[0;34m.[0m[0mrpy2py[0m[0;34m([0m[0mres[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-
-[0;32m~/anaconda3/lib/python3.8/site-packages/rpy2/robjects/functions.py[0m in [0;36m__call__[0;34m(self, *args, **kwargs)[0m
-[1;32m    197[0m                 [0mkwargs[0m[0;34m[[0m[0mr_k[0m[0;34m][0m [0;34m=[0m [0mv[0m[0;34m[0m[0;34m[0m[0m
-[0;32m--> 198[0;31m         return (super(SignatureTranslatedFunction, self)
-[0m[1;32m    199[0m                 .__call__(*args, **kwargs))
-
-[0;32m~/anaconda3/lib/python3.8/site-packages/rpy2/robjects/functions.py[0m in [0;36m__call__[0;34m(self, *args, **kwargs)[0m
-[1;32m    124[0m                 [0mnew_kwargs[0m[0;34m[[0m[0mk[0m[0;34m][0m [0;34m=[0m [0mconversion[0m[0;34m.[0m[0mpy2rpy[0m[0;34m([0m[0mv[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0;32m--> 125[0;31m         [0mres[0m [0;34m=[0m [0msuper[0m[0;34m([0m[0mFunction[0m[0;34m,[0m [0mself[0m[0;34m)[0m[0;34m.[0m[0m__call__[0m[0;34m([0m[0;34m*[0m[0mnew_args[0m[0;34m,[0m [0;34m**[0m[0mnew_kwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m    126[0m         [0mres[0m [0;34m=[0m [0mconversion[0m[0;34m.[0m[0mrpy2py[0m[0;34m([0m[0mres[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-
-[0;32m~/anaconda3/lib/python3.8/site-packages/rpy2/rinterface_lib/conversion.py[0m in [0;36m_[0;34m(*args, **kwargs)[0m
-[1;32m     44[0m     [0;32mdef[0m [0m_[0m[0;34m([0m[0;34m*[0m[0margs[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
-[0;32m---> 45[0;31m         [0mcdata[0m [0;34m=[0m [0mfunction[0m[0;34m([0m[0;34m*[0m[0margs[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m     46[0m         [0;31m# TODO: test cdata is of the expected CType[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
-
-[0;32m~/anaconda3/lib/python3.8/site-packages/rpy2/rinterface.py[0m in [0;36m__call__[0;34m(self, *args, **kwargs)[0m
-[1;32m    679[0m             [0;32mif[0m [0merror_occured[0m[0;34m[[0m[0;36m0[0m[0;34m][0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
-[0;32m--> 680[0;31m                 [0;32mraise[0m [0membedded[0m[0;34m.[0m[0mRRuntimeError[0m[0;34m([0m[0m_rinterface[0m[0;34m.[0m[0m_geterrmessage[0m[0;34m([0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m    681[0m         [0;32mreturn[0m [0mres[0m[0;34m[0m[0;34m[0m[0m
-
-[0;31mRRuntimeError[0m: Error in str2lang(x) : <text>:1:60: unexpected symbol
-1: metadata.table.tg[, 1] ~ all+ me+ an+it +ed + be+ou + go+t i
-                                                               ^
-
-
-During handling of the above exception, another exception occurred:
-
-[0;31mRInterpreterError[0m                         Traceback (most recent call last)
-[0;32m<ipython-input-55-7fd3441dff80>[0m in [0;36m<module>[0;34m[0m
-[0;32m----> 1[0;31m [0mget_ipython[0m[0;34m([0m[0;34m)[0m[0;34m.[0m[0mrun_cell_magic[0m[0;34m([0m[0;34m'R'[0m[0;34m,[0m [0;34m''[0m[0;34m,[0m [0;34m'library(klaR)\nfeature.names.tg<-gsub("’", "\'", feature.names.tg)\ncolnames(feature.table.tg)<-feature.names.tg\nvars<-stepclass(feature.table.tg, metadata.table.tg[,1], method="lda", improvement=0.0001)\n'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m
-[0;32m~/anaconda3/lib/python3.8/site-packages/IPython/core/interactiveshell.py[0m in [0;36mrun_cell_magic[0;34m(self, magic_name, line, cell)[0m
-[1;32m   2397[0m             [0;32mwith[0m [0mself[0m[0;34m.[0m[0mbuiltin_trap[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
-[1;32m   2398[0m                 [0margs[0m [0;34m=[0m [0;34m([0m[0mmagic_arg_s[0m[0;34m,[0m [0mcell[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0;32m-> 2399[0;31m                 [0mresult[0m [0;34m=[0m [0mfn[0m[0;34m([0m[0;34m*[0m[0margs[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m   2400[0m             [0;32mreturn[0m [0mresult[0m[0;34m[0m[0;34m[0m[0m
-[1;32m   2401[0m [0;34m[0m[0m
-
-[0;32m~/anaconda3/lib/python3.8/site-packages/decorator.py[0m in [0;36mfun[0;34m(*args, **kw)[0m
-[1;32m    229[0m             [0;32mif[0m [0;32mnot[0m [0mkwsyntax[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
-[1;32m    230[0m                 [0margs[0m[0;34m,[0m [0mkw[0m [0;34m=[0m [0mfix[0m[0;34m([0m[0margs[0m[0;34m,[0m [0mkw[0m[0;34m,[0m [0msig[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0;32m--> 231[0;31m             [0;32mreturn[0m [0mcaller[0m[0;34m([0m[0mfunc[0m[0;34m,[0m [0;34m*[0m[0;34m([0m[0mextras[0m [0;34m+[0m [0margs[0m[0;34m)[0m[0;34m,[0m [0;34m**[0m[0mkw[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m    232[0m     [0mfun[0m[0;34m.[0m[0m__name__[0m [0;34m=[0m [0mfunc[0m[0;34m.[0m[0m__name__[0m[0;34m[0m[0;34m[0m[0m
-[1;32m    233[0m     [0mfun[0m[0;34m.[0m[0m__doc__[0m [0;34m=[0m [0mfunc[0m[0;34m.[0m[0m__doc__[0m[0;34m[0m[0;34m[0m[0m
-
-[0;32m~/anaconda3/lib/python3.8/site-packages/IPython/core/magic.py[0m in [0;36m<lambda>[0;34m(f, *a, **k)[0m
-[1;32m    185[0m     [0;31m# but it's overkill for just that one bit of state.[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
-[1;32m    186[0m     [0;32mdef[0m [0mmagic_deco[0m[0;34m([0m[0marg[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
-[0;32m--> 187[0;31m         [0mcall[0m [0;34m=[0m [0;32mlambda[0m [0mf[0m[0;34m,[0m [0;34m*[0m[0ma[0m[0;34m,[0m [0;34m**[0m[0mk[0m[0;34m:[0m [0mf[0m[0;34m([0m[0;34m*[0m[0ma[0m[0;34m,[0m [0;34m**[0m[0mk[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m    188[0m [0;34m[0m[0m
-[1;32m    189[0m         [0;32mif[0m [0mcallable[0m[0;34m([0m[0marg[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
-
-[0;32m~/anaconda3/lib/python3.8/site-packages/rpy2/ipython/rmagic.py[0m in [0;36mR[0;34m(self, line, cell, local_ns)[0m
-[1;32m    781[0m             [0;32mif[0m [0;32mnot[0m [0me[0m[0;34m.[0m[0mstdout[0m[0;34m.[0m[0mendswith[0m[0;34m([0m[0me[0m[0;34m.[0m[0merr[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
-[1;32m    782[0m                 [0mprint[0m[0;34m([0m[0me[0m[0;34m.[0m[0merr[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0;32m--> 783[0;31m             [0;32mraise[0m [0me[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m    784[0m         [0;32mfinally[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
-[1;32m    785[0m             [0;32mif[0m [0mself[0m[0;34m.[0m[0mdevice[0m [0;32min[0m [0;34m[[0m[0;34m'png'[0m[0;34m,[0m [0;34m'svg'[0m[0;34m][0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
-
-[0;32m~/anaconda3/lib/python3.8/site-packages/rpy2/ipython/rmagic.py[0m in [0;36mR[0;34m(self, line, cell, local_ns)[0m
-[1;32m    761[0m                     [0mreturn_output[0m [0;34m=[0m [0;32mFalse[0m[0;34m[0m[0;34m[0m[0m
-[1;32m    762[0m             [0;32melse[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
-[0;32m--> 763[0;31m                 [0mtext_result[0m[0;34m,[0m [0mresult[0m[0;34m,[0m [0mvisible[0m [0;34m=[0m [0mself[0m[0;34m.[0m[0meval[0m[0;34m([0m[0mcode[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m    764[0m                 [0mtext_output[0m [0;34m+=[0m [0mtext_result[0m[0;34m[0m[0;34m[0m[0m
-[1;32m    765[0m                 [0;32mif[0m [0mvisible[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
-
-[0;32m~/anaconda3/lib/python3.8/site-packages/rpy2/ipython/rmagic.py[0m in [0;36meval[0;34m(self, code)[0m
-[1;32m    270[0m                 [0;31m# Otherwise next return seems to have copy of error.[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
-[1;32m    271[0m                 [0mwarning_or_other_msg[0m [0;34m=[0m [0mself[0m[0;34m.[0m[0mflush[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0;32m--> 272[0;31m                 raise RInterpreterError(code, str(exception),
-[0m[1;32m    273[0m                                         warning_or_other_msg)
-[1;32m    274[0m             [0mtext_output[0m [0;34m=[0m [0mself[0m[0;34m.[0m[0mflush[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-
-[0;31mRInterpreterError[0m: Failed to parse and evaluate line 'library(klaR)\nfeature.names.tg<-gsub("’", "\'", feature.names.tg)\ncolnames(feature.table.tg)<-feature.names.tg\nvars<-stepclass(feature.table.tg, metadata.table.tg[,1], method="lda", improvement=0.0001)\n'.
-R error message: 'Error in str2lang(x) : <text>:1:60: unexpected symbol\n1: metadata.table.tg[, 1] ~ all+ me+ an+it +ed + be+ou + go+t i\n                                                               ^'
-RInterpreterError: Failed to parse and evaluate line 'library(klaR)\nfeature.names.tg<-gsub("’", "\'", feature.names.tg)\ncolnames(feature.table.tg)<-feature.names.tg\nvars<-stepclass(feature.table.tg, metadata.table.tg[,1], method="lda", improvement=0.0001)\n'.
-R error message: 'Error in str2lang(x) : <text>:1:60: unexpected symbol\n1: metadata.table.tg[, 1] ~ all+ me+ an+it +ed + be+ou + go+t i\n                                                               ^'
+feature.names.sc<-gsub("’", "'", feature.names.sc)
+colnames(feature.table.sc)<-feature.names.sc
+vars<-stepclass(feature.table.sc, metadata.table.sc$Group, method="lda", improvement=0.0001)
+-------------------
 

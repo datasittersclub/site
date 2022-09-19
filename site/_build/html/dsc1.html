@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="DSC #2: Katia and the Phantom corpus" href="dsc2.html" />
-    <link rel="prev" title="The Data-Sitters Club Books" href="books.html" />
+    <link rel="next" title="DSC #2: Katia and the Phantom Corpus" href="dsc2.html" />
+    <link rel="prev" title="About The Data-Sitters Club" href="chapter-2.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -115,18 +115,23 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  About
+  The Kid-Kit
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="chapter-2.html">
-   About the DSC
+  <a class="reference internal" href="genindex.html">
+   DSC Index
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="books.html">
    DSC Books
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter-2.html">
+   About the DSC
   </a>
  </li>
 </ul>
@@ -209,6 +214,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="dsc15.html">
    DSC 15: Little Miss California Stereotype... and the BY Times
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc16.html">
+   DSC 16: Anastasia's Secret Language
   </a>
  </li>
 </ul>
@@ -439,12 +449,11 @@ title="Print to PDF"
                 
               <div>
                 
-  <img src="_static/images/DSCLogo.png" />
-<div class="section" id="dsc-1-quinn-s-great-idea">
+  <div class="tex2jax_ignore mathjax_ignore section" id="dsc-1-quinn-s-great-idea">
 <h1>DSC #1 - Quinn’s Great idea<a class="headerlink" href="#dsc-1-quinn-s-great-idea" title="Permalink to this headline">#</a></h1>
-<p>by Quinn Dombrowski, November 7, 2019</p>
+<p id="index-0">by Quinn Dombrowski, November 7, 2019</p>
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
-<img src="_static/images/bookcovers/dsc1_cover.jpg" alt="DSC 1 book cover" />
+<img src="https://datasittersclub.github.io/site/_static/images/bookcovers/dsc1_cover.jpg" alt="DSC 1 book cover" />
 </div>
 <p>It doesn’t really matter that it was my idea. I don’t really care about credit— I’ve got what’s half-jokingly been called “the world’s best dead-end job,” and credit doesn’t buy me anything. What matters to me is that good things happen, and this project is a very good thing.</p>
 <p>I got the idea while I was on vacation. It was the first vacation I’d taken in four years, and my husband, Andy, and I were happily working on our own projects on the 10th floor of a giant pyramid in Las Vegas. Because it was vacation, I’d promised myself I wouldn’t do anything related to my job — which meant no non-English digital humanities. But by the second day of our trip, my thoughts kept coming back to a <a class="reference external" href="https://bookriot.com/2019/09/04/the-babysitters-club/">blog post</a> about <em>The Baby-Sitters Club</em> (<em>BSC</em>), featuring my friend Shannon Supple, who stewards Ann M. Martin’s papers at Smith College. Some of my projects involve fanfic, and I’d already written a Jupyter notebook to scrape <a class="reference external" href="http://fanfiction.net">fanfiction.net</a>, so I first thought I’d just grab the metadata for English-language <em>BSC</em> fanfic and throw together a few visualizations. But I’ve been spoiled by the size of the Harry Potter fanfic corpus (nearly 800,000 — 100x bigger than the BSC’s 800) and wasn’t feeling inspired.</p>
@@ -459,7 +468,7 @@ title="Print to PDF"
 <p>So there I was in Las Vegas, sipping on a beer, building a <em>BSC</em> corpus — and as usual, tweeting about it. On the geopolitical stage, it’s hard to argue with the claim that Twitter is a force of evil. But Twitter is also the infrastructural backbone of much of the digital humanities world. It was on this same trip that I realized that Twitter gave me the community of friends who share my weird interests that I’d dreamed of since reading the <em>BSC</em> books as a child. One notable thing about tweeting about the <em>BSC</em> is who replies: it’s all people who experienced girlhood in the 1990s. The first <em>BSC</em> book came out in 1986, and the last in 2000 (not counting <em>The Summer Before</em>, which was published a decade later). If you grew up female in the Anglophone world, and you’re in your 30s or early 40s, these books are a cultural touchstone — even for people like me who moved on to other franchises (<em>Star Wars</em> novels, in my case) by the time they hit puberty.</p>
 <p>Over the course of the week, lots of people were generous in answering the more technical questions I had when playing with this emerging corpus (like — ugh — is it normal for the top 20 words for every single topic in a topic model to just be names?), but I was surprised and delighted to find pools of interest in the books themselves among my digital humanities Twitter friends. And not just interest, but expertise: Roopika Risam, in addition to being a brilliant postcolonial digital humanities scholar, is also a walking encyclopedia of <em>BSC</em>. The more people threw ideas out on Twitter, the more sure I was that I was on to something, that the <em>BSC</em> is, in fact, an amazing potential laboratory for computational text analysis.</p>
 <p>Think about it: there are over 200 novels, all written in the voice of one (or multiple) characters, by Ann M. Martin or a clearly identified ghostwriter. (There’s no one I need to gratefully acknowledge for their help in preparing this manuscript, because I wrote it myself, thank you very much.) Does each character have a distinct voice? Is that voice different across writers? Do non-narrating characters have distinct voices expressed through their dialogue? How does the characters’ written language (through the handwritten portions of the text) differ from their implicitly spoken text through the first-person narration? The <em>BSC</em> is (in)famous for its use of tropes (Claudia’s “almond-shaped eyes”, “Mal is white and Jessi is black”, etc.), so what else can we find in terms of explicit text reuse in the more formulaic parts of the book (the “Chapter 2” question, AKA “how many different ways can you describe the basic premise and major characters across 200+ novels”)? How do these books treat religion, race, adoption, divorce, disability, not to mention the “Very Special Episode” topics? And all that is just the books: what about how the material was adapted for the 1990’s show, the movie, the new graphic novels, the upcoming Netflix series, and the fanfic? There’s unexplored material for a whole research agenda in the area of cultural analytics, which could really use a teenage girl lit counterbalance to its superheroes and sci-fi.</p>
-<p>But what if a project did more than just analyze these books? What if it actually walked through the whole process? A year ago, when I started this job at Stanford, I’d done digital humanities for nearly 15 years but had never done computational text analysis. The internet is littered with workshop materials, tutorials, and Python and R scripts with varying levels of documentation, but I had trouble putting all the pieces together. My question to folks at Stanford’s Literary Lab, again and again, was “so what do you actually do next?” And what I learned was that what lies behind the glossy final graphs isn’t a paved road, but a series of choices that shape a walk through the woods. Yes, there are some things (particularly with statistics) that you can unambiguously do wrong, but in most contexts there isn’t a right choice — it’s more like each possible decision provides a different set of opportunities and constraints for your analysis. Some of those constraints make a difference, some of them don’t, and it all depends on what you’re trying to do. At a “Women and Gender Minorities in Digital Humanities” event at Stanford last May, <a class="reference external" href="https://nicholenomura.com">Nichole Nomura</a> — a member of the Literary Lab, and my co-director at Stanford’s Textile Makerspace — brought up the “view of the whole” from Lave &amp; Wenger’s conceptual framework for communities of practice, in the context of an alternate model of mentoring in digital humanities: “To mentor and have people join our community, we have to show them the whole work of the whole community. We have to make all our practices visible. Maybe we don’t have to teach them explicitly right away, but they need to be seen.” I’ve been thinking about this ever since, and whether demystifying computational text analysis might make it more accessible for folks who don’t see themselves as programmers, or “the sort of person who does that stuff” (i.e. white dudes with some previous exposure to computer science).</p>
+<p id="index-1">But what if a project did more than just analyze these books? What if it actually walked through the whole process? A year ago, when I started this job at Stanford, I’d done digital humanities for nearly 15 years but had never done computational text analysis. The internet is littered with workshop materials, tutorials, and Python and R scripts with varying levels of documentation, but I had trouble putting all the pieces together. My question to folks at Stanford’s Literary Lab, again and again, was “so what do you actually do next?” And what I learned was that what lies behind the glossy final graphs isn’t a paved road, but a series of choices that shape a walk through the woods. Yes, there are some things (particularly with statistics) that you can unambiguously do wrong, but in most contexts there isn’t a right choice — it’s more like each possible decision provides a different set of opportunities and constraints for your analysis. Some of those constraints make a difference, some of them don’t, and it all depends on what you’re trying to do. At a “Women and Gender Minorities in Digital Humanities” event at Stanford last May, <a class="reference external" href="https://nicholenomura.com">Nichole Nomura</a> — a member of the Literary Lab, and my co-director at Stanford’s Textile Makerspace — brought up the “view of the whole” from Lave &amp; Wenger’s conceptual framework for communities of practice, in the context of an alternate model of mentoring in digital humanities: “To mentor and have people join our community, we have to show them the whole work of the whole community. We have to make all our practices visible. Maybe we don’t have to teach them explicitly right away, but they need to be seen.” I’ve been thinking about this ever since, and whether demystifying computational text analysis might make it more accessible for folks who don’t see themselves as programmers, or “the sort of person who does that stuff” (i.e. white dudes with some previous exposure to computer science).</p>
 <p>This was the great idea that came together in Las Vegas: to apply the computational tools and methods that are widely used in the digital humanities text analysis community to the <em>BSC</em> corpus, making visible all the steps and decisions that shape that path. And to write the whole thing up in a series of detailed but colloquial posts that could serve as a guidebook for fellow travelers. I wanted it to be useful — something that newbies of all genders would consult, regardless of whether they grew up as fans of the <em>BSC</em>. Even in the reality-distortion field of Las Vegas, I was under no delusion that I could tackle this by myself. So I emailed a couple friends who’d chimed in on the <em>BSC</em> tweets, and then a few more.</p>
 <p>My vacation came to an end, throwing me right back into getting kids dressed and fed and delivered to and picked up from the right places at the right times; meetings, projects, just enough housework to postpone descent into utter chaos, and the four-hour daily commute three times a week. But this project was the best souvenir I could have asked for. It has some challenges, including language: English is one of the few languages out of scope for my job. But it’s mostly a project for after the kids’ bedtime, and I think that understanding what it’s like to work on a project in modern English will help me advocate for better resources for languages that aren’t English.</p>
 <p>So I’d like to introduce The Data-Sitters Club. Need computational text analysis? Save time! Visit the Data-Sitters Club and get the inside story on how to apply digital humanities methods to a real project. So far, there are five of us, and, like the BSC members, we all have different experience and specializations.</p>
@@ -518,17 +527,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="books.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="chapter-2.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">The Data-Sitters Club Books</p>
+            <p class="prev-next-title">About The Data-Sitters Club</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="dsc2.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">DSC #2: Katia and the Phantom corpus</p>
+        <p class="prev-next-title">DSC #2: Katia and the Phantom Corpus</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

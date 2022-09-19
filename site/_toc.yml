@@ -4,12 +4,14 @@
 format: jb-book
 root: index
 parts:
-- caption: About
+- caption: The Kid-Kit
   chapters:
-  - file: chapter-2
-    title: About the DSC
+  - file: genindex
+    title: DSC Index
   - file: books
     title: DSC Books
+  - file: chapter-2
+    title: About the DSC
 - caption: Main series
   chapters:
   - file: dsc1
@@ -42,6 +44,8 @@ parts:
     title: 'DSC 14: Hello, DMCA Exemption!'
   - file: dsc15
     title: 'DSC 15: Little Miss California Stereotype... and the BY Times'
+  - file: dsc16
+    title: "DSC 16: Anastasia's Secret Language"
 - caption: Multilingual mysteries
   chapters:
   - file: dscm1
