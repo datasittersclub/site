@@ -58,6 +58,18 @@ First, we should tell you about The Data-Sitters Club, how it works, and who we 
 <br />
 <br />
 
+## Junior Officers
+<div style="float: left; margin-right: 5px;margin-top: 0px;"><img src="_static/images/cadencepic.png" alt="Photo of Cadence Cordell" /></div>
+
+**Cadence Cordell** has short strawberry blonde hair, blue eyes, and glasses. She's working towards a Bachelor's Degree in History and Spanish at Mount Holyoke College and plans to pursue a Master's degree in library science after she graduates. While she didn't grow up reading *The Baby-Sitters Club* (instead obsessing over *Percy Jackson*, *Harry Potter*, and other fantasy and sci-fi series), she strongly relates to Mary Anne's quiet, shy personality; organization skills; and tendency to cry a bit too often.
+
+<div style="float: left; margin-right: 5px;margin-top: 0px;"><img src="_static/images/sampic.png" alt="Photo of Sam Dombrowski" /></div>
+
+**Sam Dombrowski** is in third grade, nearly as tall as Quinn, and has brown hair and blue eyes along with a California tan like Dawn after a summer in Palo City. He loves the recent *She-Ra* remake, *Magic: The Gathering*, and playing computer games with his uncle Matt, who lives with him. He considers himself a serious gamer, and takes after Quinn in a lot of ways. Sam has been one of the youngest volunteers capturing Ukrainian cultural heritage websites as part of [SUCHO](https://www.sucho.org/). 
+
+<div style="float: left; margin-right: 5px;margin-top: 0px;"><img src="_static/images/paulpic.png" alt="Photo of Paul Dombrowski" /></div>
+
+**Paul Dombrowski** is in first grade, has a lighter complexion and hair, but the same blue eyes as Quinn and Sam. He loves to read, and even though he's only in first grade, he already reads just about everything his big brother does. He's a big fan of cheese pizza, snakes and the [History Oversimplified](https://www.youtube.com/c/OverSimplified/videos) YouTube videos, and takes after [his dad](https://datasittersclub.github.io/site/dsc11.html#a-statistical-reality-check). Paul is not a big fan of being roped into whatever nonsense scheme his parent has come up with at any given moment.
 
 ## Guest Data-Sitters
 
@@ -87,6 +99,12 @@ First, we should tell you about The Data-Sitters Club, how it works, and who we 
 **Annie K. Lamar** (Stanford University) has warm gray eyes and an affinity for purple clothing. She has long hair that is almost always twisted and copiously pinned on the top of her head. She studies ancient languages and artificial intelligence, which-- although it sounds quite serious-- often results in the creation of chat bots so she can talk to her favorite ancient authors. Read more about what we learned from Annie about machine learning in <a href="dsc9.html">DSC #9: The Ghost in Anouk's Laptop</a>.
 
 **Matthew Sag** (Loyola University Chicago) has friendly blue eyes, a diamond shaped face, and an Australian accent smoothed over from 20 years living in the United States. He had blonde floppy hair like John Denver when he was a kid, but now he looks more like a clean shaven Jude Law. He is a law professor at Loyola University Chicago School of Law and a leading expert on copyright law and fair use -- just the guest data-sitter we needed in <a href="dsc7.html">DSC #7: The DSC and Mean Copyright Law</a>!
+
+<div style="float: left; margin-right: 5px;margin-top: 0px;">
+	<img src="_static/images/anastasiapic.png" alt="Photo of Anastasia Salter" />
+</div>
+
+**Anastasia Salter** was definitely not BSC material growing up in the 90s, as they spent much more time with books and video games and no time at all with children. They were the kid who knew how to debug a Soundblaster 16 audio problem while installing DOS adventure games, and that love of narrative games became the major focus of their research as a (sort-of) grown-up. Currently, they run University of Central Florida's Texts & Technology PhD program, which is dedicated to research for people who want to understand everything at the intersection of books and computers.
 
 
 <div style="float: left; margin-right: 5px;margin-top: 0px;">
