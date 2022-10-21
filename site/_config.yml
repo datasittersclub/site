@@ -21,3 +21,4 @@ repository:
 html:
   use_issues_button: false
   use_repository_button: true
+  favicon: _static/images/favicon.ico
