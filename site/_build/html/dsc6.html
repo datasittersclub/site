@@ -50,6 +50,7 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="DSC #7: The DSC and Mean Copyright Law" href="dsc7.html" />
@@ -219,6 +220,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="dsc16.html">
    DSC 16: Anastasia's Secret Language
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc17.html">
+   DSC 17: Cadence's Archives Mystery
   </a>
  </li>
 </ul>
@@ -465,13 +471,13 @@ title="Print to PDF"
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
 <img src="_static/images/bookcovers/dsc6_cover.jpg" alt="DSC 6 book cover" />
 </div>
-<p>If you’ll pardon my late 90s/early 2000s turn of phrase, I’d describe myself as a DH n00b. In the Data-Sitters Club, my n00bness is helpful in that I’m usually the one that asks for clarification about terms or how to break processes down into smaller tasks or notices when we’ve missed a step. Long before <a class="reference external" href="https://datasittersclub.github.io/site/dsc1/">Quinn had her great idea</a> and <a class="reference external" href="https://datasittersclub.github.io/site/chapter-2/">Lee, Maria, Quinn, Anouk, Roopsi, and I</a> came together to form the Club, my first exposure to DH was <a class="reference external" href="https://voyant-tools.org/">Voyant</a>. I have a lot of affection for Voyant and I think my story is not unique. Voyant has been a first DH step for a lot of people. And so, today, Voyant’s Big Day, let’s talk about Voyant, what it is, how it works, and what you can do with it as a researcher or as an instructor.</p>
+<p>If you’ll pardon my late 90s/early 2000s turn of phrase, I’d describe myself as a DH n00b. In the Data-Sitters Club, my n00bness is helpful in that I’m usually the one that asks for clarification about terms or how to break processes down into smaller tasks or notices when we’ve missed a step. Long before <a class="reference external" href="https://datasittersclub.github.io/site/dsc1.html">Quinn had her great idea</a> and <a class="reference external" href="https://datasittersclub.github.io/site/chapter-2.html">Lee, Maria, Quinn, Anouk, Roopsi, and I</a> came together to form the Club, my first exposure to DH was <a class="reference external" href="https://voyant-tools.org/">Voyant</a>. I have a lot of affection for Voyant and I think my story is not unique. Voyant has been a first DH step for a lot of people. And so, today, Voyant’s Big Day, let’s talk about Voyant, what it is, how it works, and what you can do with it as a researcher or as an instructor.</p>
 <p id="index-1">Voyant Tools is a web-based suite of tools for digital humanities text analysis. It was developed by Geoffrey Rockwell and Stéfan Sinclair in 2016. If you upload some text into it, it will create a series of visualizations that can help you get a new perspective on the text for interpretation and analysis.</p>
-<p>The visualizations can be roughly categorized as tools that count word frequencies, tools that show how words appear in context in individual texts, and tools that look at ways words appear across a corpus of texts. The visualizations include lots of line graphs, charts, etc., but also things like word clouds, bubble lines, and knots. In <a class="reference external" href="https://datasittersclub.github.io/site/dsc4/">DSC #4: AntConc Saves the Day</a>, Anouk theorized that AntConc was the <a class="reference external" href="https://babysittersclub.fandom.com/wiki/Kid_Kits">kid kit</a> of DH, but in this book, I want to make the case for Voyant being the kid kit of DH. But I am getting ahead of myself….</p>
+<p>The visualizations can be roughly categorized as tools that count word frequencies, tools that show how words appear in context in individual texts, and tools that look at ways words appear across a corpus of texts. The visualizations include lots of line graphs, charts, etc., but also things like word clouds, bubble lines, and knots. In <a class="reference external" href="https://datasittersclub.github.io/site/dsc4.html">DSC #4: AntConc Saves the Day</a>, Anouk theorized that AntConc was the <a class="reference external" href="https://babysittersclub.fandom.com/wiki/Kid_Kits">kid kit</a> of DH, but in this book, I want to make the case for Voyant being the kid kit of DH. But I am getting ahead of myself….</p>
 <p>When you go to <a class="reference external" href="https://voyant-tools.org/">voyant-tools.org</a>, the first thing you will see is this:</p>
 <p><img alt="Landing page for Voyant" src="_images/dsc6-voyant-landing.png" /></p>
 <p>That’s it. It’s simple, clean, and intuitive. What’s the first thing you do when you want to work with Voyant? Well, obviously you feed some text into it: you can copy/paste whatever text or links to texts into the text box, click “open” which gives you the option to choose preloaded corpora (either Shakespeare or Austen), or upload your own files.</p>
-<p>Now I love Jane Austen, but today we’re going to see what Voyant can tell us about the Baby-Sitters Club books, so I click upload. Voyant will accept a lot of different kinds of files: plain text, MS Word, .pdf, .rtf, .html, and .xml. I select the individual files of our cleaned up .txt Baby-Sitters Club corpus (to learn about how we created our corpus and how you can create your own, read my previous BSC opus, <a class="reference external" href="https://datasittersclub.github.io/site/dsc2/">DSC #2: Katia and the Phantom Corpus</a>), hit open… and then I wait. It takes some time to upload a corpus as large as ours!</p>
+<p>Now I love Jane Austen, but today we’re going to see what Voyant can tell us about the Baby-Sitters Club books, so I click upload. Voyant will accept a lot of different kinds of files: plain text, MS Word, .pdf, .rtf, .html, and .xml. I select the individual files of our cleaned up .txt Baby-Sitters Club corpus (to learn about how we created our corpus and how you can create your own, read my previous BSC opus, <a class="reference external" href="https://datasittersclub.github.io/site/dsc2.html">DSC #2: Katia and the Phantom Corpus</a>), hit open… and then I wait. It takes some time to upload a corpus as large as ours!</p>
 <p><img alt="Uploading corpus" src="_images/dsc6_upload.png" /></p>
 <p><img alt="Upload 15% complete" src="_images/dsc6_uploading15.png" /></p>
 <span class="target" id="index-2"></span><p id="index-3">When we were talking about this book in our last Data-Sitters Club meeting, Maria mentioned that she does an assignment in her LIT 135 class “Falling in Love” that incorporates Voyant. First, Maria asks her students to collect personal ad texts from various sources and clean them up. Then she assembles a corpus of them. Next she asks students to do a close reading of the corpus. And, finally, she asks them to use Voyant to do a distant reading of the corpus. I think this project is great in that it walks students through building a corpus, thinking about data, practicing both close and distant reading, and analyzing visualizations.</p>
@@ -491,7 +497,7 @@ title="Print to PDF"
 <li><p>What topics appear in the corpus?</p></li>
 <li><p>How do texts cluster together?</p></li>
 </ul>
-<p>What you’ll notice if you’re familiar with AntConc (throwback to <a class="reference external" href="https://datasittersclub.github.io/site/dsc4/">DSC #4</a>) is that many of these questions are similar to things you can learn by using AntConc or another concordancer. Voyant in fact includes a concordancer, but also has a number of other tools that visualize the text’s word frequencies and contexts in ways that AntConc can’t. What questions do I want to ask Voyant?</p>
+<p>What you’ll notice if you’re familiar with AntConc (throwback to <a class="reference external" href="https://datasittersclub.github.io/site/dsc4.html">DSC #4</a>) is that many of these questions are similar to things you can learn by using AntConc or another concordancer. Voyant in fact includes a concordancer, but also has a number of other tools that visualize the text’s word frequencies and contexts in ways that AntConc can’t. What questions do I want to ask Voyant?</p>
 <p><img alt="Uploading corpus" src="_images/dsc6_upload.png" /></p>
 <p><img alt="Upload 89% complete" src="_images/dsc6_uploading89.png" /></p>
 <p>Suddenly the box changes to “fetching your corpus.” Finally! My corpus upload has finished and a colorful, crowded, and admittedly pretty overwhelming page featuring five default visualization tools opens.</p>

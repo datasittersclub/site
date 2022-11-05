@@ -28,9 +28,9 @@ I engaged in some retail therapy over the holidays. With a little Christmas mone
 ```{index} single: DSC Multilingual Mystery series
 ```
 
-The Data-Sitters Club has become something of an awkward undertaking for me, in relation to my job. I support _non-English_ DH at Stanford, and help run a [Multilingual DH](http://multilingualdh.org/) group. While we'd [managed to acquire the complete corpus of The Baby-Sitters Club with financial support from the Stanford Literary Lab](https://datasittersclub.github.io/site/dsc2/), we were nearly out of money and all we had was English. I had a good story to explain why I was doing it: the methods we're walking through in these posts can, in most cases, be applied to non-English text as well, given some care and pre-processing. But still, it bugged me. Non-English DH is where I feel most at home, and since the series has been translated -- at least in part -- into over 15 languages, aren't there things we should explore with those versions, too?
+The Data-Sitters Club has become something of an awkward undertaking for me, in relation to my job. I support _non-English_ DH at Stanford, and help run a [Multilingual DH](http://multilingualdh.org/) group. While we'd [managed to acquire the complete corpus of The Baby-Sitters Club with financial support from the Stanford Literary Lab](https://datasittersclub.github.io/site/dsc2.html), we were nearly out of money and all we had was English. I had a good story to explain why I was doing it: the methods we're walking through in these posts can, in most cases, be applied to non-English text as well, given some care and pre-processing. But still, it bugged me. Non-English DH is where I feel most at home, and since the series has been translated -- at least in part -- into over 15 languages, aren't there things we should explore with those versions, too?
 
-(If you're wondering what the deal is with the Data-Sitters Club, read [Chapter 2](https://datasittersclub.github.io/site/chapter-2/).)
+(If you're wondering what the deal is with the Data-Sitters Club, read [Chapter 2](https://datasittersclub.github.io/site/chapter-2.html).)
 
 ```{index} single: WorldCat
 ```

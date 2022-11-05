@@ -52,6 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="DSC Multilingual Mystery #4: Isabelle and the Missing Spaghetti-O’s" href="dscm4.html" />
@@ -221,6 +222,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="dsc16.html">
    DSC 16: Anastasia's Secret Language
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc17.html">
+   DSC 17: Cadence's Archives Mystery
   </a>
  </li>
 </ul>
@@ -628,11 +634,11 @@ title="Print to PDF"
 </div>
 <div class="section" id="recap">
 <h2>Recap<a class="headerlink" href="#recap" title="Permalink to this headline">#</a></h2>
-<p>When we left off with <a class="reference external" href="https://datasittersclub.github.io/site/dscm2/">DSC Multilingual Mystery #2</a>, we had realized that metadata is going to be essential for just about anything we do with computational text analysis at scale for these translations. And in DSC #4 (forthcoming soon!), Anouk comes to the same conclusions about the original corpus in English. It was time to investigate metadata acquisition and cleaning, and the DSC Multilingual Mystery crew was on the case!</p>
+<p>When we left off with <a class="reference external" href="https://datasittersclub.github.io/site/dscm2.html">DSC Multilingual Mystery #2</a>, we had realized that metadata is going to be essential for just about anything we do with computational text analysis at scale for these translations. And in DSC #4 (forthcoming soon!), Anouk comes to the same conclusions about the original corpus in English. It was time to investigate metadata acquisition and cleaning, and the DSC Multilingual Mystery crew was on the case!</p>
 </div>
 <div class="section" id="lee">
 <span id="index-3"></span><h2>Lee<a class="headerlink" href="#lee" title="Permalink to this headline">#</a></h2>
-<p>As I mentioned in the <a class="reference external" href="https://datasittersclub.github.io/site/dscm1/">DSC Multilingual Mystery #1</a>, I already had a pretty good working idea about where to get the metadata we needed to be able to identify translators and other publication data for the various foreign-language translations of the series: national libraries. And, I wasn’t wrong. The <a class="reference external" href="https://banq.qc.ca/accueil/">Bibliothèque et Archives nationales du Québec</a>, the <a class="reference external" href="https://www.bnf.fr/fr">Bibliothèque nationale de France</a>, the <a class="reference external" href="http://www.bne.es/es/Inicio/index.html">Biblioteca Nacional de España</a>, the <a class="reference external" href="https://www.bncf.firenze.sbn.it/">Biblioteca Nazionale Centrale di Firenze</a>, and the <a class="reference external" href="https://www.kb.nl/en">Koninklijke Bibliotheek</a> provided me with all of the information we would need to get the information we required. Oh, and the five lonely German translations from <a class="reference external" href="https://www.dnb.de/EN/Home/home_node.html">Deutsche Nationalbibliothek</a>.</p>
+<p>As I mentioned in the <a class="reference external" href="https://datasittersclub.github.io/site/dscm1.html">DSC Multilingual Mystery #1</a>, I already had a pretty good working idea about where to get the metadata we needed to be able to identify translators and other publication data for the various foreign-language translations of the series: national libraries. And, I wasn’t wrong. The <a class="reference external" href="https://banq.qc.ca/accueil/">Bibliothèque et Archives nationales du Québec</a>, the <a class="reference external" href="https://www.bnf.fr/fr">Bibliothèque nationale de France</a>, the <a class="reference external" href="http://www.bne.es/es/Inicio/index.html">Biblioteca Nacional de España</a>, the <a class="reference external" href="https://www.bncf.firenze.sbn.it/">Biblioteca Nazionale Centrale di Firenze</a>, and the <a class="reference external" href="https://www.kb.nl/en">Koninklijke Bibliotheek</a> provided me with all of the information we would need to get the information we required. Oh, and the five lonely German translations from <a class="reference external" href="https://www.dnb.de/EN/Home/home_node.html">Deutsche Nationalbibliothek</a>.</p>
 <p>My methodology was simple: Google the country name and “national library.” Put Ann M. Martin in the search box (thank goodness for the universal language of user experience and expectations). If that didn’t work, find the word that most closely resembles “catalogue” and click on it to find a different search box. And then, the final and least simple of the steps: export the metadata.</p>
 <p>This is where the inconsistencies arose, with each library offering its own idiosyncratic way of getting the metadata out of the library catalogue and into the hands of users. Quebec would only let me export a certain number of results from my search at a time as a csv file. I decided to limit my search by time period, as it was easiest to limit my searches in the interface that way. So, there are I had one CSV file for each year that the books were being published. France was the easiest to export, allowing me to download my entire search (which included the France and Belgium translations) as a giant CSV file. Spain let me export a page of results at a time as XML that displayed in my browser window, which I copied into a file. Shout-out to the Netherlands for having a functional English interface…and exporting the search as a simple text file. And then Italy…Italy made me cut and paste every single entry individually as XML as there was no batch export function.</p>
 <p>All I gotta say is that y’all are lucky I love to solve a good mystery and that I only have the mental capacity for menial tasks while waiting during my daughter’s ballet class where I found myself sitting in the most uncomfortable seat imaginable while seven different dance studios practice five different dance styles, playing seven different songs repeatedly. Sigh. I never thought I’d say this, but I miss those days.</p>
