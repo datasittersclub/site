@@ -493,11 +493,11 @@ Roopsi interjected, "I'd argue TEI is epistemologically Anglophone."
 
 "Wait, wait! What's Regex?" Katia interjected.
 
-"This is the answer to how you can do TEI more quickly." Elisa explained. "A regular expression, or Regex, would be writing code to find every instance of anything expressed as a year -- find four digits in a row surrounded by white space. Using the power of regular expressions, you can totally mark up very structural TEI in 20 minutes." (You can also read more about regex in [DSC #4: AntConc Saves the Day](https://datasittersclub.github.io/site/dsc4/) and in [DSC Multilingual Mystery #3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs](https://datasittersclub.github.io/site/dscm3/).)
+"This is the answer to how you can do TEI more quickly." Elisa explained. "A regular expression, or Regex, would be writing code to find every instance of anything expressed as a year -- find four digits in a row surrounded by white space. Using the power of regular expressions, you can totally mark up very structural TEI in 20 minutes." (You can also read more about regex in [DSC #4: AntConc Saves the Day](https://datasittersclub.github.io/site/dsc4.html) and in [DSC Multilingual Mystery #3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs](https://datasittersclub.github.io/site/dscm3.html).)
 ```{index} single: TEI; compared to concordances
 ```
 
-"In the Data-Sitters Club," Katia began, "[We have done some work with AntConc](https://datasittersclub.github.io/site/dsc4/). How is TEI different than using a concordance?"
+"In the Data-Sitters Club," Katia began, "[We have done some work with AntConc](https://datasittersclub.github.io/site/dsc4.html). How is TEI different than using a concordance?"
 
 "Depending on how complicated your structure is, you can definitely get those instances out of AntConc. But once you are, for example, working with a play, and want act and scene information, it's going to be easier to get that when you have structural boundaries in place with XML. "
 
