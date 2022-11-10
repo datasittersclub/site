@@ -48,6 +48,8 @@ parts:
     title: "DSC 16: Anastasia's Secret Language"
   - file: dsc17
     title: "DSC 17: Cadence's Archives Mystery"
+  - file: dsc18
+    title: "DSC 18: The Data-Sitters' HathiTrust Mistake"
 - caption: Multilingual mysteries
   chapters:
   - file: dscm1
