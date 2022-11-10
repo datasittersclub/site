@@ -1,4 +1,4 @@
-# DSC \#18: The HathiTrust Mistake
+# DSC \#18: The Data-Sitters' HathiTrust Mistake
 ```{index} single: *Book Topics ; HathiTrust (DSC 18)
 ```
 by Cadence Cordell, Quinn Dombrowski, and Glen Layne-Worthey, November 10, 2022
