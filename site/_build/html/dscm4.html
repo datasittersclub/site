@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Important Public Health Messages from the Data-Sitters Club about COVID-19" href="covid19.html" />
+    <link rel="next" title="DSC Multilingual Mystery #5: Lee &amp; Quinn and the Mystery in the French NLP Model" href="dscm5.html" />
     <link rel="prev" title="DSC Multilingual Mystery #3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs" href="dscm3.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -227,6 +227,11 @@ const thebe_selector_output = ".output, .cell_output"
    DSC 17: Cadence's Archives Mystery
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsc18.html">
+   DSC 18: The Data-Sitters' HathiTrust Mistake
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -252,6 +257,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    DSCM 4: Isabelle and the Missing Spaghetti-O's
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dscm5.html">
+   DSCM 5: Lee &amp; Quinn and the Mystery in the French NLP Model
   </a>
  </li>
 </ul>
@@ -983,33 +993,40 @@ The UBC talk was around 7pm in my timezone and made for a perfect lockdown eveni
 <span class="g g-Whitespace">     </span><span class="mi">17</span>                     <span class="c1">#If the word is tagged with a noun part-of-speech...</span>
 <span class="g g-Whitespace">     </span><span class="mi">18</span>                     <span class="k">if</span> <span class="p">(</span><span class="n">pos</span> <span class="o">==</span> <span class="s1">&#39;NN&#39;</span> <span class="ow">or</span> <span class="n">pos</span> <span class="o">==</span> <span class="s1">&#39;NNS&#39;</span><span class="p">):</span>
 
-<span class="nn">~/anaconda3/lib/python3.8/site-packages/nltk/tag/__init__.py</span> in <span class="ni">pos_tag</span><span class="nt">(tokens, tagset, lang)</span>
-<span class="g g-Whitespace">    </span><span class="mi">163</span>     <span class="s2">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">164</span><span class="s2">     tagger = _get_tagger(lang)</span>
-<span class="ne">--&gt; </span><span class="mi">165</span><span class="s2">     return _pos_tag(tokens, tagset, tagger, lang)</span>
-<span class="g g-Whitespace">    </span><span class="mi">166</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">167</span><span class="s2"> </span>
+<span class="nn">~/anaconda3/lib/python3.8/site-packages/nltk/tokenize/__init__.py</span> in <span class="ni">word_tokenize</span><span class="nt">(text, language, preserve_line)</span>
+<span class="g g-Whitespace">    </span><span class="mi">128</span>     <span class="p">:</span><span class="nb">type</span> <span class="n">preserve_line</span><span class="p">:</span> <span class="nb">bool</span>
+<span class="g g-Whitespace">    </span><span class="mi">129</span>     <span class="sd">&quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">130</span><span class="sd">     sentences = [text] if preserve_line else sent_tokenize(text, language)</span>
+<span class="g g-Whitespace">    </span><span class="mi">131</span><span class="sd">     return [</span>
+<span class="nn">    132         token for sent in sentences for token</span> in <span class="ni">_treebank_word_tokenizer.tokenize</span><span class="nt">(sent)</span>
 
-<span class="nn">~/anaconda3/lib/python3.8/site-packages/nltk/tag/__init__.py</span> in <span class="ni">_pos_tag</span><span class="nt">(tokens, tagset, tagger, lang)</span>
-<span class="g g-Whitespace">    </span><span class="mi">120</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">121</span><span class="s2">     else:</span>
-<span class="ne">--&gt; </span><span class="mi">122</span><span class="s2">         tagged_tokens = tagger.tag(tokens)</span>
-<span class="g g-Whitespace">    </span><span class="mi">123</span><span class="s2">         if tagset:  # Maps to the specified tagset.</span>
-<span class="g g-Whitespace">    </span><span class="mi">124</span><span class="s2">             if lang == &quot;eng&quot;:</span>
+<span class="nn">~/anaconda3/lib/python3.8/site-packages/nltk/tokenize/__init__.py</span> in <span class="ni">sent_tokenize</span><span class="nt">(text, language)</span>
+<span class="g g-Whitespace">    </span><span class="mi">106</span><span class="sd">     &quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">107</span>     <span class="n">tokenizer</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s2">&quot;tokenizers/punkt/</span><span class="si">{0}</span><span class="s2">.pickle&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">language</span><span class="p">))</span>
+<span class="ne">--&gt; </span><span class="mi">108</span>     <span class="k">return</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">109</span> 
+<span class="g g-Whitespace">    </span><span class="mi">110</span> 
 
-<span class="nn">~/anaconda3/lib/python3.8/site-packages/nltk/tag/perceptron.py</span> in <span class="ni">tag</span><span class="nt">(self, tokens, return_conf, use_tagdict)</span>
-<span class="g g-Whitespace">    </span><span class="mi">186</span><span class="s2">             if not tag:</span>
-<span class="g g-Whitespace">    </span><span class="mi">187</span><span class="s2">                 features = self._get_features(i, word, context, prev, prev2)</span>
-<span class="ne">--&gt; </span><span class="mi">188</span><span class="s2">                 tag, conf = self.model.predict(features, return_conf)</span>
-<span class="g g-Whitespace">    </span><span class="mi">189</span><span class="s2">             output.append((word, tag, conf) if return_conf == True else (word, tag))</span>
-<span class="g g-Whitespace">    </span><span class="mi">190</span><span class="s2"> </span>
+<span class="nn">~/anaconda3/lib/python3.8/site-packages/nltk/tokenize/punkt.py</span> in <span class="ni">tokenize</span><span class="nt">(self, text, realign_boundaries)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1272</span>         <span class="n">Given</span> <span class="n">a</span> <span class="n">text</span><span class="p">,</span> <span class="n">returns</span> <span class="n">a</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">the</span> <span class="n">sentences</span> <span class="ow">in</span> <span class="n">that</span> <span class="n">text</span><span class="o">.</span>
+<span class="g g-Whitespace">   </span><span class="mi">1273</span>         <span class="sd">&quot;&quot;&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1274</span><span class="sd">         return list(self.sentences_from_text(text, realign_boundaries))</span>
+<span class="g g-Whitespace">   </span><span class="mi">1275</span><span class="sd"> </span>
+<span class="g g-Whitespace">   </span><span class="mi">1276</span><span class="sd">     def debug_decisions(self, text):</span>
 
-<span class="nn">~/anaconda3/lib/python3.8/site-packages/nltk/tag/perceptron.py</span> in <span class="ni">predict</span><span class="nt">(self, features, return_conf)</span>
-<span class="g g-Whitespace">     </span><span class="mi">65</span><span class="s2">             weights = self.weights[feat]</span>
-<span class="g g-Whitespace">     </span><span class="mi">66</span><span class="s2">             for label, weight in weights.items():</span>
-<span class="ne">---&gt; </span><span class="mi">67</span><span class="s2">                 scores[label] += value * weight</span>
-<span class="g g-Whitespace">     </span><span class="mi">68</span><span class="s2"> </span>
-<span class="g g-Whitespace">     </span><span class="mi">69</span><span class="s2">         # Do a secondary alphabetic sort, for stability</span>
+<span class="nn">~/anaconda3/lib/python3.8/site-packages/nltk/tokenize/punkt.py</span> in <span class="ni">sentences_from_text</span><span class="nt">(self, text, realign_boundaries)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1326</span><span class="sd">         follows the period.</span>
+<span class="g g-Whitespace">   </span><span class="mi">1327</span><span class="sd">         &quot;&quot;&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1328</span>         <span class="k">return</span> <span class="p">[</span><span class="n">text</span><span class="p">[</span><span class="n">s</span><span class="p">:</span><span class="n">e</span><span class="p">]</span> <span class="k">for</span> <span class="n">s</span><span class="p">,</span> <span class="n">e</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">span_tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">realign_boundaries</span><span class="p">)]</span>
+<span class="g g-Whitespace">   </span><span class="mi">1329</span> 
+<span class="g g-Whitespace">   </span><span class="mi">1330</span>     <span class="k">def</span> <span class="nf">_slices_from_text</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">):</span>
+
+<span class="nn">~/anaconda3/lib/python3.8/site-packages/nltk/tokenize/punkt.py</span> in <span class="ni">&lt;listcomp&gt;</span><span class="nt">(.0)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1326</span>         <span class="n">follows</span> <span class="n">the</span> <span class="n">period</span><span class="o">.</span>
+<span class="g g-Whitespace">   </span><span class="mi">1327</span>         <span class="s2">&quot;&quot;&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1328</span><span class="s2">         return [text[s:e] for s, e in self.span_tokenize(text, realign_boundaries)]</span>
+<span class="g g-Whitespace">   </span><span class="mi">1329</span><span class="s2"> </span>
+<span class="g g-Whitespace">   </span><span class="mi">1330</span><span class="s2">     def _slices_from_text(self, text):</span>
 
 <span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
@@ -2369,10 +2386,10 @@ FOOD
             <p class="prev-next-title">DSC Multilingual Mystery #3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="covid19.html" title="next page">
+    <a class='right-next' id="next-link" href="dscm5.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Important Public Health Messages from the Data-Sitters Club about COVID-19</p>
+        <p class="prev-next-title">DSC Multilingual Mystery #5: Lee &amp; Quinn and the Mystery in the French NLP Model</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

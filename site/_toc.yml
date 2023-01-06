@@ -60,6 +60,8 @@ parts:
     title: 'DSCM 3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs'
   - file: dscm4
     title: "DSCM 4: Isabelle and the Missing Spaghetti-O's"
+  - file: dscm5
+    title: "DSCM 5: Lee & Quinn and the Mystery in the French NLP Model"
 - caption: Fun
   chapters:
   - file: covid19
