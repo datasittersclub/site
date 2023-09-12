@@ -8,13 +8,14 @@ logo: DSClogo.png
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: auto
+  execute_notebooks: cache
+  timeout: 1000
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/datasittersclub/site  # Online location of your book
-  path_to_book: site  # Optional path to your book, relative to the repository root
-  branch: master  # Which branch of the repository should be used when creating links (optional)
+  url: https://github.com/datasittersclub/site # Online location of your book
+  path_to_book: site # Optional path to your book, relative to the repository root
+  branch: master # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
@@ -22,3 +23,11 @@ html:
   use_issues_button: false
   use_repository_button: true
   favicon: _static/images/favicon.ico
+
+sphinx:
+  extra_extensions:
+    - sphinxext.opengraph
+  config:
+    ogp_site_url: "https://datasittersclub.github.io/site/"
+    ogp_image: "https://datasittersclub.github.io/site/_static/DSClogo.png"
+    ogp_description_length: 200

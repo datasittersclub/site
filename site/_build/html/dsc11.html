@@ -1,48 +1,68 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DSC #11: Katia and the Sentiment Snobs &#8212; The Data-Sitters Club</title>
-    
-  <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+<meta property="og:title" content="DSC #11: Katia and the Sentiment Snobs" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://datasittersclub.github.io/site/dsc11.html" />
+<meta property="og:site_name" content="Python" />
+<meta property="og:description" content="by Katherine Bowers and Quinn Dombrowski October 25, 2021 Katia: When I’m not thinking about the BSC corpus, I’m thinking about my Dostoevsky corpus. That’s the other DH project I’m involved with. ..." />
+<meta property="og:image" content="https://datasittersclub.github.io/site/_static/DSClogo.png" />
+<meta property="og:image:alt" content="Python" />
+<meta name="description" content="by Katherine Bowers and Quinn Dombrowski October 25, 2021 Katia: When I’m not thinking about the BSC corpus, I’m thinking about my Dostoevsky corpus. That’s the other DH project I’m involved with. ..." />
 
-    
-  <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    <title>DSC #11: Katia and the Sentiment Snobs &#8212; The Data-Sitters Club</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="_static/style.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -50,62 +70,94 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'dsc11';</script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="DSC #12: The DSC and the New Programming Language" href="dsc12.html" />
     <link rel="prev" title="DSC #10: Heather Likes Principal Component Analysis" href="dsc10.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
-    <div class="container-fluid" id="banner"></div>
-
-    
-
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="index.html">
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="_static/DSClogo.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">The Data-Sitters Club</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+    
+    
+    <img src="_static/DSClogo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/DSClogo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -114,665 +166,280 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  The Kid-Kit
- </span>
-</p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">The Kid-Kit</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="genindex.html">
-   DSC Index
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="books.html">
-   DSC Books
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="chapter-2.html">
-   About the DSC
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">DSC Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="books.html">DSC Books</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter-2.html">About the DSC</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Main series
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Main series</span></p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="dsc1.html">
-   DSC 1: Quinn's Great Idea
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dsc2.html">
-   DSC 2: Katia and the Phantom Corpus
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dsc3.html">
-   DSC 3: The Truth About DH Collaboration (and Textual Variants!)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dsc4.html">
-   DSC 4: AntConc Saves the Day
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dsc5.html">
-   DSC 5: The DSC and the Impossible TEI Quandaries
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dsc6.html">
-   DSC 6: Voyant's Big Day
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dsc7.html">
-   DSC 7: The DSC and Mean Copyright Law
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dsc8.html">
-   DSC 8: Text-Comparison-Algorithm-Crazy Quinn
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dsc9.html">
-   DSC 9: The Ghost in Anouk's Laptop
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dsc10.html">
-   DSC 10: Heather Likes PCA
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   DSC 11: Katia and the Sentiment Snobs
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dsc12.html">
-   DSC 12: The DSC and the New Programming Language
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dsc13.html">
-   DSC 13: Goodbye, Friends, Goodbye
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dsc14.html">
-   DSC 14: Hello, DMCA Exemption!
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dsc15.html">
-   DSC 15: Little Miss California Stereotype... and the BY Times
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dsc16.html">
-   DSC 16: Anastasia's Secret Language
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dsc17.html">
-   DSC 17: Cadence's Archives Mystery
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="dsc1.html">DSC 1: Quinn's Great Idea</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc2.html">DSC 2: Katia and the Phantom Corpus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc3.html">DSC 3: The Truth About DH Collaboration (and Textual Variants!)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc4.html">DSC 4: AntConc Saves the Day</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc5.html">DSC 5: The DSC and the Impossible TEI Quandaries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc6.html">DSC 6: Voyant's Big Day</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc7.html">DSC 7: The DSC and Mean Copyright Law</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc8.html">DSC 8: Text-Comparison-Algorithm-Crazy Quinn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc9.html">DSC 9: The Ghost in Anouk's Laptop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc10.html">DSC 10: Heather Likes PCA</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">DSC 11: Katia and the Sentiment Snobs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc12.html">DSC 12: The DSC and the New Programming Language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc13.html">DSC 13: Goodbye, Friends, Goodbye</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc14.html">DSC 14: Hello, DMCA Exemption!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc15.html">DSC 15: Little Miss California Stereotype... and the BY Times</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc16.html">DSC 16: Anastasia's Secret Language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc17.html">DSC 17: Cadence's Archives Mystery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc18.html">DSC 18: The Data-Sitters' HathiTrust Mistake</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc19.html">DSC 19: Shelley and the Bad Corpus</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Multilingual mysteries
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Multilingual mysteries</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="dscm1.html">
-   DSCM 1: Lee and the Missing Metadata
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dscm2.html">
-   DSCM 2: Beware, Lee and Quinn!
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dscm3.html">
-   DSCM 3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dscm4.html">
-   DSCM 4: Isabelle and the Missing Spaghetti-O's
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="dscm1.html">DSCM 1: Lee and the Missing Metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dscm2.html">DSCM 2: Beware, Lee and Quinn!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dscm3.html">DSCM 3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dscm4.html">DSCM 4: Isabelle and the Missing Spaghetti-O's</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dscm5.html">DSCM 5: Lee &amp; Quinn and the Mystery in the French NLP Model</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Fun
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Fun</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="covid19.html">
-   Important Public Health Messages from the Data-Sitters Club about COVID-19
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dhawards2019.html">
-   DH Awards 2019 Ad Campaign
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="covid19.html">Important Public Health Messages from the Data-Sitters Club about COVID-19</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dhawards2019.html">DH Awards 2019 Ad Campaign</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
-
-
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/datasittersclub/site/master?urlpath=tree/site/dsc11.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
   
-
-<span class="headerbtn__icon-container">
-  
-    <img src="_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-    </ul>
+  <div class="sidebar-primary-items__end sidebar-primary__section">
   </div>
-</div>
+  
+  <div id="rtd-footer-container"></div>
 
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/datasittersclub/site" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-expand"></i>
-  </span>
-
-</button>
-<a href="https://github.com/datasittersclub/site"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="bottom"
-title="Source repository"
->
-  
-
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fab fa-github"></i>
   </span>
 
 </a>
 
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="_sources/dsc11.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/dsc11.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="headerbtn__text-container">.ipynb</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
-
-      </li>
+</li>
+      
+      
+      
       
       <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-file-pdf"></i>
   </span>
-<span class="headerbtn__text-container">.pdf</span>
+<span class="btn__text-container">.pdf</span>
 </button>
-
-      </li>
+</li>
       
-    </ul>
-  </div>
+  </ul>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
   </span>
 
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#katia">
-   Katia
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#quinn">
-   Quinn
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-syuzhet-incident">
-     The Syuzhet Incident
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#sentiment-analysis-101">
-     Sentiment Analysis 101
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#trying-textblob-and-vader">
-     Trying Textblob and VADER
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#sentiment-scoring">
-     Sentiment scoring
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#sentiment-analysis-meets-literary-text">
-     Sentiment Analysis Meets Literary Text
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#sentiment-meets-modernism">
-     “Sentiment” Meets Modernism
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#trying-syuzhet">
-     Trying Syuzhet
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#moving-between-python-and-r">
-       Moving Between Python and R
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#syuzhet-s-scoring">
-       Syuzhet’s Scoring
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   Katia
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#you-did-sentiment-analysis-now-what">
-     You Did Sentiment Analysis, Now What?
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id2">
-   Quinn
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#syuzhet-s-sleight-of-hand">
-     Syuzhet’s Sleight-of-Hand
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#diy-sentiment-arcs">
-     DIY Sentiment Arcs
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#our-sentiment-vs-syuzhet">
-     Our Sentiment vs Syuzhet
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#what-does-bsc-sentiment-look-like">
-     What Does ‘BSC Sentiment’ Look Like?
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#select-random-sentences">
-       Select Random Sentences
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#where-s-the-sentiment">
-     Where’s the Sentiment?
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#a-statistical-reality-check">
-     A Statistical Reality Check
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#let-s-not-and-say-we-didn-t">
-     Let’s Not and Say We Didn’t
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id3">
-   Katia
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#conclusion">
-     Conclusion
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#suggested-citation">
-   Suggested Citation
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>DSC #11: Katia and the Sentiment Snobs</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#katia">
-   Katia
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#quinn">
-   Quinn
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-syuzhet-incident">
-     The Syuzhet Incident
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#sentiment-analysis-101">
-     Sentiment Analysis 101
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#trying-textblob-and-vader">
-     Trying Textblob and VADER
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#sentiment-scoring">
-     Sentiment scoring
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#sentiment-analysis-meets-literary-text">
-     Sentiment Analysis Meets Literary Text
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#sentiment-meets-modernism">
-     “Sentiment” Meets Modernism
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#trying-syuzhet">
-     Trying Syuzhet
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#moving-between-python-and-r">
-       Moving Between Python and R
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#syuzhet-s-scoring">
-       Syuzhet’s Scoring
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   Katia
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#you-did-sentiment-analysis-now-what">
-     You Did Sentiment Analysis, Now What?
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id2">
-   Quinn
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#syuzhet-s-sleight-of-hand">
-     Syuzhet’s Sleight-of-Hand
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#diy-sentiment-arcs">
-     DIY Sentiment Arcs
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#our-sentiment-vs-syuzhet">
-     Our Sentiment vs Syuzhet
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#what-does-bsc-sentiment-look-like">
-     What Does ‘BSC Sentiment’ Look Like?
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#select-random-sentences">
-       Select Random Sentences
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#where-s-the-sentiment">
-     Where’s the Sentiment?
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#a-statistical-reality-check">
-     A Statistical Reality Check
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#let-s-not-and-say-we-didn-t">
-     Let’s Not and Say We Didn’t
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id3">
-   Katia
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#conclusion">
-     Conclusion
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#suggested-citation">
-   Suggested Citation
-  </a>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>DSC #11: Katia and the Sentiment Snobs</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#katia">Katia</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quinn">Quinn</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-syuzhet-incident">The Syuzhet Incident</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sentiment-analysis-101">Sentiment Analysis 101</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trying-textblob-and-vader">Trying Textblob and VADER</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sentiment-scoring">Sentiment scoring</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sentiment-analysis-meets-literary-text">Sentiment Analysis Meets Literary Text</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sentiment-meets-modernism">“Sentiment” Meets Modernism</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trying-syuzhet">Trying Syuzhet</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#moving-between-python-and-r">Moving Between Python and R</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#syuzhet-s-scoring">Syuzhet’s Scoring</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Katia</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#you-did-sentiment-analysis-now-what">You Did Sentiment Analysis, Now What?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Quinn</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#syuzhet-s-sleight-of-hand">Syuzhet’s Sleight-of-Hand</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diy-sentiment-arcs">DIY Sentiment Arcs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#our-sentiment-vs-syuzhet">Our Sentiment vs Syuzhet</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-does-bsc-sentiment-look-like">What Does ‘BSC Sentiment’ Look Like?</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#select-random-sentences">Select Random Sentences</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#where-s-the-sentiment">Where’s the Sentiment?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-statistical-reality-check">A Statistical Reality Check</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#let-s-not-and-say-we-didn-t">Let’s Not and Say We Didn’t</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Katia</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suggested-citation">Suggested Citation</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
-  <div class="tex2jax_ignore mathjax_ignore section" id="dsc-11-katia-and-the-sentiment-snobs">
-<h1>DSC #11: Katia and the Sentiment Snobs<a class="headerlink" href="#dsc-11-katia-and-the-sentiment-snobs" title="Permalink to this headline">#</a></h1>
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="dsc-11-katia-and-the-sentiment-snobs">
+<h1>DSC #11: Katia and the Sentiment Snobs<a class="headerlink" href="#dsc-11-katia-and-the-sentiment-snobs" title="Permalink to this heading">#</a></h1>
 <div style='float: right; width: 200px;margin-left: 7px;margin-top: 0px;'>
 <img src='_static/images/bookcovers/dsc11_cover.jpg' alt='DSC 11 book cover' />
 </div>
 <p id="index-0">by Katherine Bowers and Quinn Dombrowski</p>
 <p>October 25, 2021</p>
-<div class="section" id="katia">
-<h2>Katia<a class="headerlink" href="#katia" title="Permalink to this headline">#</a></h2>
+<section id="katia">
+<h2>Katia<a class="headerlink" href="#katia" title="Permalink to this heading">#</a></h2>
 <p id="index-1">When I’m not thinking about the BSC corpus, I’m thinking about my Dostoevsky corpus. That’s the other DH project I’m involved with. I think I’ve mentioned before that I’m a Russianist. I’m co-PI on a <a class="reference external" href="https://digitaldostoevsky.com/">“Digital Dostoevsky” project</a> that involves a team that is all pretty new to DH. I jokingly call myself the n00b Data-Sitter, but on the Dostoevsky project, I’m the one with the most experience. (That’s a little scary!). Team Dostoevsky is lucky because we have a wonderful consultant that we’re able to call on to answer questions about TEI quandaries, software questions, and methodologies to try out. Her name is Eka Grguric and she’s a Digital Scholarship Librarian at my university.</p>
 <p>For those of you who are more familiar with Ann M. Martin than Dostoevsky, let me give you a little background. Dostoevsky is a 19th-century Russian writer who wrote a bunch of long novels that pose and work through philosophical, theological, and moral dilemmas. Dostoevsky viewed his novels as a kind of laboratory, a testing ground for his ideas. One of the key components of his novelistic craft is the way his characters are written and interact. When I am teaching my Dostoevsky seminar, I tell my students that the characters’ emotions and psychologies are larger than life. They are written to explode off the page and drag you into his novels. They are exaggerated, but often exaggerated in universally relatable ways. I’d say there is a LOT of emotion in Dostoevsky’s novels.</p>
 <p>Last spring, Eka and I were talking about things Team Dostoevsky could do to analyze the Dostoevsky corpus and one of the methods that came up was sentiment analysis. Sentiment analysis, Eka said, is a way of visualizing the emotional landscape of a corpus. Basically, words are valued as positive, negative, or neutral. When all the words in a sentence (or an utterance) are analyzed in this way, you get a reading as to whether the excerpt is more positive, more negative, or neutral. In theory, you could use this method to determine how positive or negative, emotionally speaking, a specific Dostoevsky character is.</p>
 <p>I decided I wanted to try out sentiment analysis because it sounded possibly really interesting for our Dostoevsky corpus and its emotionally extreme characters. So I wrote to Quinn and suggested that we write a Data-Sitters Club book about it. Trying it out on a contemporary anglophone corpus before embarking on the same for the 19th-century Russian corpus, which always presents difficulties for tools and methods that use things trained on contemporary Russian (for the things that even exist for Russian) seemed like a great idea to me. Plus, a new Data-Sitters Club book! What wasn’t to love?</p>
 <p>But I was NOT ready for Quinn’s reaction (OR the strength of her eye roll!) when I brought it up…</p>
-</div>
-<div class="section" id="quinn">
-<h2>Quinn<a class="headerlink" href="#quinn" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="quinn">
+<h2>Quinn<a class="headerlink" href="#quinn" title="Permalink to this heading">#</a></h2>
 <p id="index-2">I have feelings about sentiment analysis. No, I do not think you should try to measure them. I don’t teach it in my non-English DH class, but I very clearly remember the image on my sentiment analysis slide during a brief overview of methods:</p>
 <img src='_static/images/dsc_11_warning.jpg' alt='A danger sign with a bolt of energy striking a person' />
 <span class="target" id="index-3"></span><p id="index-4">One thing that’s easy to forget if you’re new to DH is that DH, like Soylent Green, is people. And the technical approaches you choose for your computational analysis don’t exist in some Platonic realm of methods. Methods have histories. <strong>Tools</strong>, especially, have histories. And just as you would take care with the literary theorists you cite, because your choice of theorists has implications for how (and whether) your work will be accepted in different circles, you should take similar care with regard to which tools and methods you use for computational text analysis. Tools are not neutral, and just because half a decade has passed since a particular spat of tool-centric DH drama, it doesn’t mean the peer reviewers for your next paper have forgotten about it.</p>
 <p>Even a decade after Bethany Nowviskie’s “<a class="reference external" href="http://nowviskie.org/2010/eternal-september-of-the-digital-humanities/">Eternal September of the Digital Humanities</a>”, it still rings true. People still discover DH every day – and their enthusiasm is sometimes invigorating,  sometimes exhausting for DH old-timers… and it can also be to the newcomers’ peril. Unless someone fills them in, they might never think to, if you will, “background check” the tools they encounter and adopt. Until they find that their conference submissions keep getting rejected, with feedback that is more intense and less helpful than they expected.</p>
 <p>I’ve had conversations like this with grad students, whose DH-savvy advisors never mentioned that their tool or method was once a DH flash point that left scars. DHers have long memories, and especially in the context of a peer review where it’s not obvious that the submission is from someone whose first encounter with DH was well after a particular blow-up happened, I share the instinct to hold the old battle lines with a firm, “NOPE” or at best a 😬😬😬 with sentiment analysis. And especially in the context of my fellow-data sitters, who get my unfiltered take on things (unlike peer review), that was exactly the reaction Katia got when she suggested sentiment analysis to me in April 2021.</p>
 <p>But first, let me tell you a story from the history of DH in the 2010’s.</p>
-<div class="section" id="the-syuzhet-incident">
-<span id="index-5"></span><h3>The Syuzhet Incident<a class="headerlink" href="#the-syuzhet-incident" title="Permalink to this headline">#</a></h3>
+<section id="the-syuzhet-incident">
+<span id="index-5"></span><h3>The Syuzhet Incident<a class="headerlink" href="#the-syuzhet-incident" title="Permalink to this heading">#</a></h3>
 <p id="index-6">Once upon a time in February 2015 – and it feels even longer ago – Matt Jockers (who co-founded the Stanford Literary Lab that the Data-Sitters Club is now affiliated with, and who was in 2015 an Associate Professor of English at the University of Nebraska, Lincoln) <a class="reference external" href="https://web.archive.org/web/20150225012646/http://www.matthewjockers.net/2015/02/02/syuzhet/">wrote a blog post</a> about his new R package, called “Syuzhet” (with explicit props to Vladimir Propp’s concept of <em>syuzhet</em> as the “organization of the narrative”). Gesturing to Kurt Vonnegut’s idea of there being a finite number of plots, Syuzhet aimed to extract the data necessary to visualize the narrative’s plot model. And what it used to extract that data was sentiment analysis.</p>
 <p>The R package got a lot of publicity! And there was a <a class="reference external" href="https://web.archive.org/web/20150227194713/https://www.matthewjockers.net/2015/02/25/the-rest-of-the-story/">follow-up blog post</a> from Jockers that spelled things out a little more, including the mapping to Vonnegut’s plot models.</p>
 <p id="index-7">And then Annie Swafford, then an Assistant Professor in English at SUNY-New Paltz (who had already gained a following in the DH world through her 2014 DH project / dissertation at the University of Virginia, <em><a class="reference external" href="http://www.songsofthevictorians.com/">Songs of the Victorians</a>)</em> raised some questions in a blog post, “<a class="reference external" href="https://web.archive.org/web/20151124131629/https://annieswafford.wordpress.com/2015/03/02/syuzhet/">Problems with the Syuzhet Package</a>”.</p>
@@ -786,9 +453,9 @@ title="Print to PDF"
 <p>This tale would be incomplete without an epilogue. Neither Jockers nor Swafford is still in DH, or academia for that matter. Jockers became a dean at Central Washington University, started a business using computational text analysis as a consultant to authors of fiction, then left academia for a gig at Apple in 2021. Swafford left SUNY in 2017 to become a Digital Humanities Specialist at Tufts University, and in 2019 she left academia altogether to write, as she puts it, “queer romance novels about nerds falling in love despite trauma and toxic masculinity”. I can’t wait to read them someday.</p>
 <p>Enough time has passed, though, that we can see how the dust has settled. I’d assumed Syuzhet had been buried in the junk drawer of DH tools, and I was completely caught off-guard to see people recently using it and even <a class="reference external" href="https://programminghistorian.org/es/lecciones/analisis-de-sentimientos-r">writing tutorials for it</a>. Asking around among recent grad students, those who had heard of Syuzhet did not know about Annie Swafford. All of which I found baffling, which is probably a sign that I have become one of those Old DH People.</p>
 <p>The Syuzhet Incident was a big deal at a fraught moment in the field of DH, and it played a major role in shaping my opinion about sentiment analysis. But there’s been a lot of significant development on many technical fronts in the last few years– including development on Syuzhet itself. Maybe it’s time for me to give sentiment analysis another look?</p>
-</div>
-<div class="section" id="sentiment-analysis-101">
-<span id="index-8"></span><h3>Sentiment Analysis 101<a class="headerlink" href="#sentiment-analysis-101" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="sentiment-analysis-101">
+<span id="index-8"></span><h3>Sentiment Analysis 101<a class="headerlink" href="#sentiment-analysis-101" title="Permalink to this heading">#</a></h3>
 <p>There are two technical approaches to sentiment analysis: one involves word lists, one involves a different computational method called “word vectors”. In this DSC book, we’re going to stick to the word list method, but we’ll get back to word vectors in a future book. (If you’d like a taste of what word vectors can do, you can check out our recent Super Special: “Business is to Successful as Babysitter is to…” in the collection <em>We Are The Baby-Sitters Club</em>, available in <a class="reference external" href="https://www.chicagoreviewpress.com/we-are-the-baby-sitters-club-products-9781641604901.php">print</a> and <a class="reference external" href="https://www.penguinrandomhouse.com/books/700586/we-are-the-baby-sitters-club-by-edited-by-marisa-crawford-and-megan-milks-foreword-by-mara-wilson/">audiobook</a>).</p>
 <span class="target" id="index-9"></span><div style='float: right; width: 200px;margin-left: 7px;margin-top: 0px;'>
 <img src='_static/images/dsc11_commentthread.png' alt="Katia: omg that's horrifying; Katia: lol probably too extreme a sentiment for what this comment is attached to - but I genuinely gasped when I saw that.' Quinn: RIGHT?! Anouk: This is why we need humanists doing computing'" />
@@ -826,38 +493,42 @@ title="Print to PDF"
 <li><p>We can get great ice-cream sundaes at Friendly’s. (<em>BSC #120: Mary Anne and the Playground Fight</em>)</p></li>
 </ul>
 <p>As human readers, we should all hopefully be on the same page that the first 10 examples express negative sentiment, and the second 10 examples express positive sentiment. Let’s see what Textblob and VADER make of them!</p>
-</div>
-<div class="section" id="trying-textblob-and-vader">
-<span id="index-12"></span><h3>Trying Textblob and VADER<a class="headerlink" href="#trying-textblob-and-vader" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="trying-textblob-and-vader">
+<span id="index-12"></span><h3>Trying Textblob and VADER<a class="headerlink" href="#trying-textblob-and-vader" title="Permalink to this heading">#</a></h3>
 <p>To get started, let’s install Textblob and VADER. (You only have to run this cell the first time you run this code on a particular Python environment.)</p>
-<div class="cell docutils container">
+<div class="cell tag_skip-execution docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Import the system module to be able to install other libraries</span>
 <span class="kn">import</span> <span class="nn">sys</span>
 <span class="c1">#Installs Textblob</span>
-<span class="o">!{</span>sys.executable<span class="o">}</span> -m pip install textblob
+<span class="o">!{</span>sys.executable<span class="o">}</span><span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>textblob
 <span class="c1">#Installs VADER</span>
-<span class="o">!{</span>sys.executable<span class="o">}</span> -m pip install vaderSentiment
+<span class="o">!{</span>sys.executable<span class="o">}</span><span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>vaderSentiment
+<span class="c1">#Installs rpy2</span>
+<span class="o">!{</span>sys.executable<span class="o">}</span><span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>rpy2
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: textblob in /Users/qad/anaconda3/lib/python3.8/site-packages (0.15.3)
-Requirement already satisfied: nltk&gt;=3.1 in /Users/qad/anaconda3/lib/python3.8/site-packages (from textblob) (3.6.1)
-Requirement already satisfied: regex in /Users/qad/anaconda3/lib/python3.8/site-packages (from nltk&gt;=3.1-&gt;textblob) (2021.4.4)
-Requirement already satisfied: click in /Users/qad/anaconda3/lib/python3.8/site-packages (from nltk&gt;=3.1-&gt;textblob) (7.1.2)
-Requirement already satisfied: joblib in /Users/qad/anaconda3/lib/python3.8/site-packages (from nltk&gt;=3.1-&gt;textblob) (1.0.1)
-Requirement already satisfied: tqdm in /Users/qad/anaconda3/lib/python3.8/site-packages (from nltk&gt;=3.1-&gt;textblob) (4.64.0)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: vaderSentiment in /Users/qad/anaconda3/lib/python3.8/site-packages (3.3.2)
-Requirement already satisfied: requests in /Users/qad/anaconda3/lib/python3.8/site-packages (from vaderSentiment) (2.27.1)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: certifi&gt;=2017.4.17 in /Users/qad/anaconda3/lib/python3.8/site-packages (from requests-&gt;vaderSentiment) (2020.12.5)
-Requirement already satisfied: idna&lt;4,&gt;=2.5 in /Users/qad/anaconda3/lib/python3.8/site-packages (from requests-&gt;vaderSentiment) (2.10)
-Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /Users/qad/anaconda3/lib/python3.8/site-packages (from requests-&gt;vaderSentiment) (1.26.4)
-Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/qad/anaconda3/lib/python3.8/site-packages (from requests-&gt;vaderSentiment) (2.0.11)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: textblob in /usr/local/lib/python3.11/site-packages (0.17.1)
+Requirement already satisfied: nltk&gt;=3.1 in /usr/local/lib/python3.11/site-packages (from textblob) (3.8.1)
+Requirement already satisfied: click in /usr/local/lib/python3.11/site-packages (from nltk&gt;=3.1-&gt;textblob) (8.1.7)
+Requirement already satisfied: joblib in /usr/local/lib/python3.11/site-packages (from nltk&gt;=3.1-&gt;textblob) (1.3.2)
+Requirement already satisfied: regex&gt;=2021.8.3 in /usr/local/lib/python3.11/site-packages (from nltk&gt;=3.1-&gt;textblob) (2023.8.8)
+Requirement already satisfied: tqdm in /usr/local/lib/python3.11/site-packages (from nltk&gt;=3.1-&gt;textblob) (4.66.1)
+Requirement already satisfied: vaderSentiment in /usr/local/lib/python3.11/site-packages (3.3.2)
+Requirement already satisfied: requests in /usr/local/lib/python3.11/site-packages (from vaderSentiment) (2.31.0)
+Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /usr/local/lib/python3.11/site-packages (from requests-&gt;vaderSentiment) (3.2.0)
+Requirement already satisfied: idna&lt;4,&gt;=2.5 in /usr/local/lib/python3.11/site-packages (from requests-&gt;vaderSentiment) (3.4)
+Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /usr/local/lib/python3.11/site-packages (from requests-&gt;vaderSentiment) (2.0.4)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.11/site-packages (from requests-&gt;vaderSentiment) (2023.7.22)
+Requirement already satisfied: rpy2 in /usr/local/lib/python3.11/site-packages (3.5.14)
+Requirement already satisfied: cffi&gt;=1.10.0 in /usr/local/lib/python3.11/site-packages (from rpy2) (1.15.1)
+Requirement already satisfied: jinja2 in /usr/local/lib/python3.11/site-packages (from rpy2) (3.1.2)
+Requirement already satisfied: tzlocal in /usr/local/lib/python3.11/site-packages (from rpy2) (5.0.1)
+Requirement already satisfied: pycparser in /usr/local/lib/python3.11/site-packages (from cffi&gt;=1.10.0-&gt;rpy2) (2.21)
+Requirement already satisfied: MarkupSafe&gt;=2.0 in /usr/local/lib/python3.11/site-packages (from jinja2-&gt;rpy2) (2.1.3)
 </pre></div>
 </div>
 </div>
@@ -874,6 +545,21 @@ Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/qad/anaconda3
 <span class="kn">from</span> <span class="nn">textblob.sentiments</span> <span class="kn">import</span> <span class="n">PatternAnalyzer</span>
 <span class="c1">#Import Pandas to be able to create tables of data</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">rpy2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="mi">3</span><span class="n">r</span><span class="o">/</span><span class="mi">55</span><span class="n">b5kjpd4s14_tg80r24vs7r0000gq</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_16132</span><span class="o">/</span><span class="mf">1482265312.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">os</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1">#Import VADER sentiment analyzer</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">vaderSentiment.vaderSentiment</span> <span class="kn">import</span> <span class="n">SentimentIntensityAnalyzer</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">vaderanalyzer</span> <span class="o">=</span> <span class="n">SentimentIntensityAnalyzer</span><span class="p">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1">#Import Textblob</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;vaderSentiment&#39;
 </pre></div>
 </div>
 </div>
@@ -887,7 +573,7 @@ Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/qad/anaconda3
 </div>
 </div>
 <p>Then we’ll create a table using that list, and display the table:</p>
-<div class="cell docutils container">
+<div class="cell tag_output_scroll docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sentencesdf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">sentences</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span><span class="p">[</span><span class="s1">&#39;sentence&#39;</span><span class="p">])</span>
 <span class="n">sentencesdf</span>
@@ -1001,12 +687,12 @@ Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/qad/anaconda3
 </table>
 </div></div></div>
 </div>
-</div>
-<div class="section" id="sentiment-scoring">
-<h3>Sentiment scoring<a class="headerlink" href="#sentiment-scoring" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="sentiment-scoring">
+<h3>Sentiment scoring<a class="headerlink" href="#sentiment-scoring" title="Permalink to this heading">#</a></h3>
 <p>One of the challenges of sentiment analysis is that different tools have different features. TextBlob gives you a score (from -1 to 1), along with a subjectivity rating, which we don’t care about here and haven’t included in our table. A -1 score means the sentence is evaluated to be super-negative; a 1 score means it’s evaluated to be super-positive. VADER also gives you this same kind of total composite score (mercifully on the same scale, from -1 to 1), but it also breaks out the probability that the sentence is negative, neutral, and positive; all those scores together add up to 1. So we get a better view into what VADER is doing. (Thanks to <a class="reference external" href="https://stackoverflow.com/questions/61608057/output-vader-sentiment-scores-in-columns-based-on-dataframe-rows-of-tweets">StackOverflow</a> here.)</p>
 <p>We’ll add columns with the sentiment scores from both Textblob and VADER, then display the updated table:</p>
-<div class="cell docutils container">
+<div class="cell tag_output_scroll docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sentencesdf</span><span class="p">[</span><span class="s1">&#39;tbsentiment&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">sentencesdf</span><span class="p">[</span><span class="s1">&#39;sentence&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">sentence</span><span class="p">:</span> <span class="n">TextBlob</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span><span class="o">.</span><span class="n">sentiment</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 <span class="n">sentencesdf</span><span class="p">[</span><span class="s1">&#39;vadersentiment&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">vaderanalyzer</span><span class="o">.</span><span class="n">polarity_scores</span><span class="p">(</span><span class="n">x</span><span class="p">)[</span><span class="s1">&#39;compound&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">sentencesdf</span><span class="p">[</span><span class="s1">&#39;sentence&#39;</span><span class="p">]]</span>
@@ -1268,7 +954,7 @@ Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/qad/anaconda3
 <p>In the first result, TextBlob doesn’t know the word “prejudice”, and it thinks “I think it’s” are neutral words (even from the perspective of evaluating subjectivity… which… I have questions there), so the whole thing gets a score of 0. VADER, on the other hand, knows the word “prejudice”, and its evaluation is split 52/48 in favor of a negative evaluation. And yet, adding in the word “awful” (as in our original sentence), which you would think would increase the negativity score, actually shifts the balance significantly towards neutrality.</p>
 <p>So far VADER is looking better – or at least, more nuanced – than TextBlob. But let’s consider the positive sentences, too. TextBlob gives a score of 1 to “Richard is a wonderful stepdad, and Mary Anne is the best”; VADER is more conservative, considering this 47% likely to be positive, and 53% likely to be neutral. (Maybe this is just a factual statement about Richard being wonderful and Mary Anne being the best?) “The show is going to be awesome” is another 1 from TextBlob, but 60% neutral and 40% positive from VADER. Even “This is the best job in the world” fails to impress VADER, with 63% neutral and 37% positive. But practically speaking, you’d probably use the composite score when evaluating a large quantity of data, so VADER still tends to come out ahead of TextBlob, despite its wavering between neutrality and positivity when it comes to the detailed breakdown. TextBlob only gives a score of .5 to “Suddenly I had a great stepmom, a great stepsister, and a great new house.” As a human reader, I’d count that as more positive than “This is the best job in the world” (which gets a score of 1 from TextBlob). VADER is on the same page, and scores the sentence with all the “great” things .9. TextBlob isn’t too excited about “You’re a wonderful big sister and a big help to your mommy and daddy.”, giving it a score of .3, while VADER goes for .75 – which I feel like is a lot closer to a human evaluation.</p>
 <p id="index-13">Now, a literary scholar might raise concerns with the examples I’ve used here. After all, “awesome” and “awful” are historically closely linked – the experience of arousing awe (e.g. in 18th-century texts) has both positive and negative connotations. And if we were working with sentiment dictionaries that were based on public domain (pre-1926) texts, we might expect to see the sentiment for those words to be muddied as a result. And if we were using an approach to sentiment analysis that was based on word vectors trained on lots and lots of unspecified text (which might include some pre-20th-century texts), it would be hard to debug whether that’s a factor at play in the way that “awful” and “awesome” get treated. But working with sentiment analysis based on word lists, things are much more transparent: we can just go look at how they score the words. Here’s VADER’s lexicon on GitHub, and here’s TextBlob’s lexicon. Even if you’re not the coding type, and generally steer clear of GitHub, go take a look. They’re fundamentally pretty human-readable text files. Here are the scores they give for a few of the words we’ve talked about:</p>
-<table class="colwidths-auto table">
+<table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Word</p></th>
 <th class="head"><p>VADER</p></th>
@@ -1317,9 +1003,9 @@ Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/qad/anaconda3
 </div>
 </div>
 <p>TextBlob doesn’t have a score for “potato”, and doesn’t treat “like” as positive, so the whole thing is neutral. VADER is hedging its bets (or maybe it, like Claudia Kishi, just loves french fries) and saying there’s a 61% chance it’s positive. (In VADER, “well” has a score of 1.1, “like” has a score of 1.5, and while you’d think it’d ignore those words if its claims of syntactic awareness are to be taken seriously, they still seem to be playing a role here.) 🤨🍟</p>
-</div>
-<div class="section" id="sentiment-analysis-meets-literary-text">
-<span id="index-14"></span><h3>Sentiment Analysis Meets Literary Text<a class="headerlink" href="#sentiment-analysis-meets-literary-text" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="sentiment-analysis-meets-literary-text">
+<span id="index-14"></span><h3>Sentiment Analysis Meets Literary Text<a class="headerlink" href="#sentiment-analysis-meets-literary-text" title="Permalink to this heading">#</a></h3>
 <p>So, those mixed results we just saw? Don’t forget that those were for sentiment analysis on “easy mode”. Using sentences that were (at least meant to be) unambiguous. Both algorithms did get things right in the big picture – there were no negative sentences that were overwhelmingly marked as positive, and no positive sentences marked as negative. But there was a lot of variation in <em>how</em> positive or negative they were. Maybe this stuff works okay on a straight-up positive/negative binary– at least with clear sentences – but there’s not a lot of reliable nuance here.</p>
 <p>Now, the Baby-Sitters Club books are narrated in the first person by middle-school age girls. We might assume that means there’s a lot of positivity and negativity! Some of it needs context, and the books are more than happy to provide that context for you through the tedious exposition of the “chapter 2 phenomenon”. (Want to experience the repetition of chapter 2 for yourself? Check out <a class="reference external" href="https://datasittersclub.github.io/site/dsc8.html#a-time-for-tropes">DSC #8: Text-Comparison-Algorithm-Crazy Quinn</a>.)</p>
 <p>Let’s take the opening paragraph of <em>BSC #11: Kristy and the Snobs</em>:</p>
@@ -1599,11 +1285,11 @@ Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/qad/anaconda3
 </div></div></div>
 </div>
 <p>It almost feels silly to write this out, because I’m pretty sure my 5- and 7-year-olds would comfortably pick up on this nuance. I’d even give the 3-year-old decent odds for it. This is another really negative paragraph. Kristy takes pride in her brother Charlie driving a beat-up station wagon, in contrast to the snobs in her neighborhood with their fancy cars. And she’s not neutrally reporting the facts when she lists the things her neighbors have: she’s ripping on them. But if you look at the sentiment analysis scores, you don’t see Kristy’s pride in Charlie’s beat-up station wagon (both TextBlob and VADER agree on a score of 0), and both scores think that it’s a positive thing to “spin along with radios blaring”. And only TextBlob picks up the slightest trace of negativity in Kristy’s list of things that nearby families have.</p>
-</div>
-<div class="section" id="sentiment-meets-modernism">
-<span id="index-15"></span><h3>“Sentiment” Meets Modernism<a class="headerlink" href="#sentiment-meets-modernism" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="sentiment-meets-modernism">
+<span id="index-15"></span><h3>“Sentiment” Meets Modernism<a class="headerlink" href="#sentiment-meets-modernism" title="Permalink to this heading">#</a></h3>
 <p>And if you think things go badly when you feed sentiment analysis <em>Baby-Sitters Club</em> books, wait until you see what happened when Anouk tried to use it with modernist texts, which sometimes use language in innovative and subversive ways. Taking a passage from a text she’d been teaching that week, Patrick White’s <em>The Twyborn Affair</em>, she found the sentiment swinging around from neutral to negative and positive:</p>
-<table class="colwidths-auto table">
+<table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Sentence</p></th>
 <th class="head"><p>Rating</p></th>
@@ -1671,19 +1357,32 @@ Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/qad/anaconda3
 </table>
 <p>The baroque animal imagery and the coded language used to comment on social status make it easy for a human reader to discern the negative connotations that attach to Marcia Lushington, a woman who has married into a wealthy farming family. But the sentiment scores can’t read those connotations, and so they miss the mounting tension of the passage which culminates the vindictive judgment of the last line. If sentiment analysis engines are trained on text that is generally straightforward to interpret, Anouk mused, their inability to give meaningful results when applied to literary texts, especially those that aren’t semantically straightforward, might have more to tell us about a text’s genre, and even its position on the continuum from popular to high art, than it does about its plot.</p>
 <p>Even if we wanted to say that, in broad strokes, that sentiment analysis mostly “works” for mostly-unambiguous sentences like we were looking at before, applying it to (even not all that nuanced) actual paragraphs from books should make you too feel squeamish about the results.</p>
-</div>
-<div class="section" id="trying-syuzhet">
-<h3>Trying Syuzhet<a class="headerlink" href="#trying-syuzhet" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="trying-syuzhet">
+<h3>Trying Syuzhet<a class="headerlink" href="#trying-syuzhet" title="Permalink to this heading">#</a></h3>
 <p>If you were looking at the Python code earlier, you might have noticed that we had to run TextBlob and VADER in different ways, and do different things to get the output into the column where it belonged. (If you <em>weren’t</em> looking at the Python code and just skipped over that part, that’s totally fine too.) One upside of sentiment analysis packages that let you use different models is that you only have to learn one way of doing things, and the only code you have to change is the model name. Let’s retry our first experiment, with the positive and negative sentences, using Syuzhet, which supports four models: “syuzhet” (the default), “bing”, and “nrc”.</p>
 <p>Syuzhet is an R package, and we talked a little bit about R in <a class="reference external" href="https://spacy.io/universe/project/spacy-stanza">DSC #10: Heather Likes Principal Component Analysis</a>, along with <a class="reference external" href="https://datasittersclub.github.io/site/dsc10.html#fitting-an-r-shaped-peg-into-a-jupyter-shaped-hole">how to make R work with Jupyter notebooks</a>. I mostly code in Python, and while I’ve learned a little bit more R over the summer (more on that in DSC #12), R still feels like limping around in a pair of shoes that are a couple sizes too small.</p>
-<div class="section" id="moving-between-python-and-r">
-<span id="index-16"></span><h4>Moving Between Python and R<a class="headerlink" href="#moving-between-python-and-r" title="Permalink to this headline">#</a></h4>
+<section id="moving-between-python-and-r">
+<span id="index-16"></span><h4>Moving Between Python and R<a class="headerlink" href="#moving-between-python-and-r" title="Permalink to this heading">#</a></h4>
 <p>Just like in DSC #10, I <a class="reference external" href="https://datasittersclub.github.io/site/dsc10.html#fitting-an-r-shaped-peg-into-a-jupyter-shaped-hole">used the rpy2 Python module to run R in my Python Jupyter notebook</a> – but this time I also used its ability to take lists I’ve already created in Python, and bring them over to R. If you’ve read through all the code so far in this book, you may remember we have a list called sentences, which has 10 positive and 10 negative <em>sentences</em>, and another list called <em>snobpara1</em>, which is the first paragraph from <em>Kristy and the Snobs</em>.</p>
 <p>I could recreate those lists from scratch in R, but instead, let’s “push” them to R from Python.</p>
 <p>First, I need to load the extension that lets me run R code in a Python Jupyter notebook.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> rpy2.ipython
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">rpy2</span>
+<span class="c1">#import rpy2.situation</span>
+<span class="o">%</span><span class="k">load_ext</span> rpy2.ipython
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Unable to determine R library path: Command &#39;(&#39;/Library/Frameworks/R.framework/Resources/bin/Rscript&#39;, &#39;-e&#39;, &#39;cat(Sys.getenv(&quot;LD_LIBRARY_PATH&quot;))&#39;)&#39; returned non-zero exit status 1.
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="n">Cannot</span> <span class="n">execute</span> <span class="n">code</span><span class="p">,</span> <span class="n">session</span> <span class="n">has</span> <span class="n">been</span> <span class="n">disposed</span><span class="o">.</span> <span class="n">Please</span> <span class="k">try</span> <span class="n">restarting</span> <span class="n">the</span> <span class="n">Kernel</span><span class="o">.</span>
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="n">The</span> <span class="n">Kernel</span> <span class="n">crashed</span> <span class="k">while</span> <span class="n">executing</span> <span class="n">code</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">the</span> <span class="n">current</span> <span class="n">cell</span> <span class="ow">or</span> <span class="n">a</span> <span class="n">previous</span> <span class="n">cell</span><span class="o">.</span> <span class="n">Please</span> <span class="n">review</span> <span class="n">the</span> <span class="n">code</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">cell</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="n">to</span> <span class="n">identify</span> <span class="n">a</span> <span class="n">possible</span> <span class="n">cause</span> <span class="n">of</span> <span class="n">the</span> <span class="n">failure</span><span class="o">.</span> <span class="n">Click</span> <span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s1">&#39;https://aka.ms/vscodeJupyterKernelCrash&#39;</span><span class="o">&gt;</span><span class="n">here</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span> <span class="k">for</span> <span class="n">more</span> <span class="n">info</span><span class="o">.</span> <span class="n">View</span> <span class="n">Jupyter</span> <span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s1">&#39;command:jupyter.viewOutput&#39;</span><span class="o">&gt;</span><span class="n">log</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span> <span class="k">for</span> <span class="n">further</span> <span class="n">details</span><span class="o">.</span>
 </pre></div>
 </div>
 </div>
@@ -1706,312 +1405,10 @@ rsentences &lt;-list(&quot;What I meant was that it was chilling, horrible, disg
 </div>
 </div>
 <p>If you take a look at what you got (starting the cell with <code class="docutils literal notranslate"><span class="pre">%%R</span></code> to tell the notebook it’s R code), you can see it has a weird nested structure: not 20 sentences, but 20 abstract containers, each containing one sentence.</p>
-<div class="cell docutils container">
+<div class="cell tag_output_scroll docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">R</span>
 sentences
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1]]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;What I meant was that it was chilling, horrible, disgusting, and the meanest thing in the world -- only I couldn’t say that in front of a little baby.&quot;
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[2]]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;Something cold and slimy and disgusting and icky touched my neck and then wriggled beneath the collar of my shirt and down my spine.&quot;
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[3]]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;I was expecting some disgusting vegetarian substitute.&quot;
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[4]]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;As bad as Saturday night was, Sunday morning was just awful.&quot;
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[5]]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;He looked awful, as if he’d been crying for hours.&quot;
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[6]]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;Isn’t prejudice awful?&quot;
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[7]]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;It’s just that I found out the most terrible thing.&quot;
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[8]]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;I felt terrible: terrible about the lie, terrible about how badly I had handled the whole thing.&quot;
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[9]]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;Playing Monopoly with anybody can be a slow and torturous experience, but with Charlotte it’s the absolute worst.&quot;
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[10]]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;It was her worst baby-sitting experience ever.&quot;
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[11]]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;We made an awesome pasta dish, with sun-dried tomatoes and basil.&quot;
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[12]]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;The show is going to be awesome.&quot;
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[13]]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;You’re a wonderful big sister and a big help to your mommy and daddy.&quot;
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[14]]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;Richard is a wonderful stepdad, and Mary Anne is the best.&quot;
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[15]]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;When I got to California, I had an absolutely fantastic time.&quot;
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[16]]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;And Logan scored a touchdown, which was so fantastic.&quot;
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[17]]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;This is the best job in the world.&quot;
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[18]]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;She is the best listener and the most loyal friend.&quot;
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[19]]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;Suddenly I had a great stepmom, a great stepsister, and a great new house.&quot;
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[20]]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;We can get great ice-cream sundaes at Friendly&#39;s.&quot;
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -2026,192 +1423,10 @@ sentences
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [1]
-</pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;What I meant was that it was chilling, horrible, disgusting, and the meanest thing in the world -- only I couldn’t say that in front of a little baby.&quot;
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [2]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;Something cold and slimy and disgusting and icky touched my neck and then wriggled beneath the collar of my shirt and down my spine.&quot;                  
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [3]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;I was expecting some disgusting vegetarian substitute.&quot;                                                                                                
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [4]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;As bad as Saturday night was, Sunday morning was just awful.&quot;                                                                                          
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [5]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;He looked awful, as if he’d been crying for hours.&quot;                                                                                                    
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [6]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;Isn’t prejudice awful?&quot;                                                                                                                                
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [7]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;It’s just that I found out the most terrible thing.&quot;                                                                                                   
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [8]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;I felt terrible: terrible about the lie, terrible about how badly I had handled the whole thing.&quot;                                                      
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [9]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;Playing Monopoly with anybody can be a slow and torturous experience, but with Charlotte it’s the absolute worst.&quot;                                     
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[10]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;It was her worst baby-sitting experience ever.&quot;                                                                                                        
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[11]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;We made an awesome pasta dish, with sun-dried tomatoes and basil.&quot;                                                                                     
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[12]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;The show is going to be awesome.&quot;                                                                                                                      
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[13]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;You’re a wonderful big sister and a big help to your mommy and daddy.&quot;                                                                                 
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[14]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;Richard is a wonderful stepdad, and Mary Anne is the best.&quot;                                                                                            
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[15]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;When I got to California, I had an absolutely fantastic time.&quot;                                                                                         
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[16]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;And Logan scored a touchdown, which was so fantastic.&quot;                                                                                                 
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[17]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;This is the best job in the world.&quot;                                                                                                                    
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[18]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;She is the best listener and the most loyal friend.&quot;                                                                                                   
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[19]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;Suddenly I had a great stepmom, a great stepsister, and a great new house.&quot;                                                                            
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[20]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;We can get great ice-cream sundaes at Friendly&#39;s.&quot;                                                                                                     
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="syuzhet-s-scoring">
-<span id="index-17"></span><h4>Syuzhet’s Scoring<a class="headerlink" href="#syuzhet-s-scoring" title="Permalink to this headline">#</a></h4>
+</section>
+<section id="syuzhet-s-scoring">
+<span id="index-17"></span><h4>Syuzhet’s Scoring<a class="headerlink" href="#syuzhet-s-scoring" title="Permalink to this heading">#</a></h4>
 <p>Syuzhet has <strong>four</strong> different word lists for scoring text – and they each score words using a different scale, so they’re not directly comparable. Still, we can score the 20 sentences using each of the lists, and take a look at the results.</p>
 <p>First, let’s start by loading the Syuzhet library:</p>
 <div class="cell docutils container">
@@ -2242,153 +1457,11 @@ sentences_syuzhet
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [1]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -2.55
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -3.05
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -1.00
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -1.50
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -1.25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -1.25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -0.15
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -2.00
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -2.00
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -0.50
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0.60
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0.60
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[13]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1.00
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1.25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0.75
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0.75
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0.50
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  2.30
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1.30
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0.50
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">R</span>
 sentences_bing
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [1]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -2400,74 +1473,6 @@ sentences_afinn
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [1]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -7
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -6
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -6
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -5
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -6
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  4
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  4
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  7
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  7
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  4
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  4
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  7
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2476,94 +1481,26 @@ sentences_nrc
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [1]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -4
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> -3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-</div>
 </div>
 <p>Three of the four lists assign negative values to all the “negative” sentences. The exception is NRC, which gives “Playing Monopoly with anybody can be a slow and torturous experience, but with Charlotte it’s the absolute worst.” and “It was her worst baby-sitting experience ever.” the same score as “We made an awesome pasta dish, with sun-dried tomatoes and basil.” and “Richard is a wonderful stepdad, and Mary Anne is the best.” NRC is the list that “supports” sentiment analysis in other languages, as if I needed yet another reason to be suspicious of those claims. 🤨</p>
-</div>
-</div>
-</div>
-<div class="section" id="id1">
-<h2>Katia<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
-<div class="section" id="you-did-sentiment-analysis-now-what">
-<span id="index-18"></span><h3>You Did Sentiment Analysis, Now What?<a class="headerlink" href="#you-did-sentiment-analysis-now-what" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+</section>
+<section id="id1">
+<h2>Katia<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<section id="you-did-sentiment-analysis-now-what">
+<span id="index-18"></span><h3>You Did Sentiment Analysis, Now What?<a class="headerlink" href="#you-did-sentiment-analysis-now-what" title="Permalink to this heading">#</a></h3>
 <p>Whether you’re doing sentiment analysis with a package that supports just one model, or many, what you’re going to get at the end is a bunch of numbers. Honestly, that’s not very satisfying, and depending on the genre can be outright misleading.</p>
 <p>When I was doing an intro to Python course this summer at DHSI and we were already starting to think through this book, I tried to do sentiment analysis on a Dostoevsky text for my class’s mini final project. I found a Russian language sentiment analysis library trained on VKontakte, Russia’s most popular social media network (sort of like Russian Facebook), which was called “Dostoevsky” (confusingly or serendipitously…. ). I couldn’t use Syuzhet because, although its name is taken from Russian, Syuzhet doesn’t work on Russian language texts, even though it includes a word list that claims to support Russian, because its tokenization code (for splitting the text into words) assumes you’re using the Latin alphabet. Now, Dostoevsky is a 19th-century writer and VKontakte is a 21st-century social media platform so there are already some problems there, but I installed it and ran it and it compiled okay and I seemed to get okay results with some test words and phrases she entered like: люблю [I love] was marked as 1, positive. Достоевский [Dostoevsky] was marked as neutral. A curse word I whimsically put in was marked as negative.</p>
 <p>Testing more things: целую [I kiss] is neutral, всего доброго [all best] is neutral, and :)) [Russian text smiling face] is neutral. That’s not what you would expect at all. Whether things are positive, neutral, or negative seemed pretty subjective. Beyond that, feeding in sentences or words from Dostoevsky’s novels didn’t return a better result. Knowing that a word/sentence is positive, neutral, or negative in the text doesn’t say much about the text or about Dostoevsky’s characters in the greater scheme of things – even if the individual scores were all things I agreed with, and they definitely were not. “Sentiment analysis” had some value for making us figure out how to install libraries and play around with Python and getting things to run, but in terms of telling Team Dostoevsky anything, it really didn’t.</p>
 <p>At this point, I decided to take it one step further, by extracting just the dialogue from Dostoevsky’s 1846 novella <em>The Double</em>, sticking it into a .csv file, lemmatizing things (because Russian has a lot more inflection than English, which makes it hard to count words unless you transform them into their dictionary form with lemmatization), removing stopwords, and running a vectorizer on it. I was so excited when everything compiled without errors. My old, slow computer took 3 hours to do this for the whole novel…. And at the end of all of that I got a result! It was 58.</p>
 <p>I presented my work at the Python class the next day, and the instructors said this was a good result. But is it a good result if it’s not clear what it means? So Dostoevsky’s novel is a 58. How do you analyze that? Even if I had a library that was trained on 19th-century novel language and not 21st-century social media language. And even if I figured out these numbers for other Dostoevsky novels, in the end all I’d have is a bunch of numbers that are the result of running texts using libraries that are based on sentiment-score data that doesn’t hold up to start with.</p>
-</div>
-</div>
-<div class="section" id="id2">
-<h2>Quinn<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
-<div class="section" id="syuzhet-s-sleight-of-hand">
-<span id="index-19"></span><h3>Syuzhet’s Sleight-of-Hand<a class="headerlink" href="#syuzhet-s-sleight-of-hand" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+<section id="id2">
+<h2>Quinn<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<section id="syuzhet-s-sleight-of-hand">
+<span id="index-19"></span><h3>Syuzhet’s Sleight-of-Hand<a class="headerlink" href="#syuzhet-s-sleight-of-hand" title="Permalink to this heading">#</a></h3>
 <p>One of the things that sets Syuzhet apart from other sentiment analysis packages is that it doesn’t just give you some numbers then walk away. With Syuzhet, the computational output doesn’t end with a score of “58”, as Katia experienced for <em>The Double</em>. Syuzhet offers the humanities scholar an interpretive path forward from those numbers. And you might feel so relieved to have <strong>some</strong> framework for taking the next step with your analysis that you don’t think too hard about the sleight-of-hand it uses to get there.</p>
 <p>That sleight-of-hand is the phrase “sentiment-derived plot arc”. There’s an implicit claim here that sentiment scores, like the ones we’ve been looking at, are a plausible – even a <em>good</em> – way to derive a plot arc. If you’ve been following along this far, you should be feeling uneasy after seeing how those sentiment scores (often fail to) capture the actual sentiment in a text. But those terrible sentiment scores aren’t even the biggest problem here: even if the sentiment scores were better, what is the connection between sentiment and plot anyway?</p>
 <p>The Data-Sitters Club has spent a lot of time grappling with some of the things we measure in computational text analysis, and to what extent they’re good proxies for the concepts we’re actually interested in. Mark and I had <a class="reference external" href="https://datasittersclub.github.io/site/dsc10.html#making-sense-of-features">a long conversation about feature selection</a> in DSC #10. In DSC #8 we thought about <a class="reference external" href="https://datasittersclub.github.io/site/dsc8.html#a-different-direction">what we compare when we compare texts</a>, and concluded that those common ways of doing comparisons <a class="reference external" href="https://datasittersclub.github.io/site/dsc8.html#what-does-this-tell-us-about-chapter-2">don’t tell us much about the “chapter 2 phenomenon”</a> in the Baby-Sitters Club series, though <a class="reference external" href="https://datasittersclub.github.io/site/dsc8.html#read-until-the-very-end">Mark had a more positive spin on it</a>. In DSC #9, we <a class="reference external" href="https://datasittersclub.github.io/site/dsc9.html#from-child-wrangling-to-data-wrangling">applied the text comparison methods to real vs. machine generated texts</a> to appreciate another set of shortcomings in text comparison algorithms.</p>
@@ -2574,9 +1511,9 @@ sentences_nrc
 <p>“There’s some good work going on in things like event and scene detection that are plot related,” Mark suggested. “But this is a moment where I think that common critique of DH is right: plot is one of those things where it’s just far more complex than the proxies we’re using. Sentiment analysis is <strong>much</strong> too blunt a tool.”</p>
 <p>“Okay,” I said. “So what Syuzhet is giving us isn’t plot, I get that. It doesn’t really work. But the Baby-Sitters Club books are written in the voice of middle-school age girls. Isn’t there…” I gestured around a little, flailing “… <em>something</em> to the idea of tracking the distribution of positive and negative emotion across the book? After rereading like 60 of these books, Katia tells me she can predict what’s going to happen in each chapter after getting the initial setup. And you hear that a lot about how predictable these books are. But when I <a class="reference external" href="https://datasittersclub.github.io/site/dsc8.html#cosine-distance-with-word-frequencies">looked at cosine distance for word frequencies</a> (in DSC #8), only the chapter 2’s looked all that similar, because they were literally using the exact same words and phrases. But the bigger-picture similarity patterns could show up through sentiment – like, maybe chapter 3 is reliably where the baby-sitting subplot problem shows up, and like chapter 15 resolves the baby-sitting problem in a positive way?”</p>
 <p>Mark shrugged. “Sure, you could look at that. See what you find.”</p>
-</div>
-<div class="section" id="diy-sentiment-arcs">
-<span id="index-20"></span><h3>DIY Sentiment Arcs<a class="headerlink" href="#diy-sentiment-arcs" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="diy-sentiment-arcs">
+<span id="index-20"></span><h3>DIY Sentiment Arcs<a class="headerlink" href="#diy-sentiment-arcs" title="Permalink to this heading">#</a></h3>
 <p>What if we tried to do what Syuzhet claims to be doing, using our own eyeballs and “domain-expert knowledge” as fans of the Baby-Sitters Club? It was time to get crafty! I printed out a graph paper template, taped some sheets together, and split the strip into 15 sections, one per chapter. This gave each chapter up to 6 “plot points” that could be assigned different positivity/negativity scores. Why 6? That worked out to be a strip of paper that was long but not ridiculous to work with, and I wanted a template that we could use across different books. Some chapters would probably have 6 noteworthy things happen, others may not, but we could just repeat values to fill in any gaps.</p>
 <p>At Katia’s suggestion, I sat down to read <em>BSC #50: Dawn’s Big Date</em>, in which cool, confident California girl Dawn is in fact wracked with insecurity when it comes to dating and guys, and nearly botches her shot with the cute cousin of the boyfriend of her step-sister / fellow BSC member Mary Anne by trying to be someone she isn’t. I read through the whole book, then revisited it chapter by chapter, using a pencil to scribble down dots on the graph paper. In parallel, I had a spreadsheet where I entered the same information for each plot point, along with a brief description of what happened. It was impressionistic and imprecise; for chapters where very little happened, I sometimes made an arbitrary call about which of the plot values would be repeated two vs. three times in the spreadsheet. But it was also holistic and very human: I wasn’t reading like sentiment analysis code, I was reading like a person. And here’s what I got:</p>
 <img src='_static/images/dsc11_quinnpaper_dawnsbigdate.jpg' alt='A piece of paper with a hand-drawn sentiment plot.' />
@@ -2595,20 +1532,20 @@ sentences_nrc
 <p>At that moment I realized I couldn’t have my impressionistic, squishy, human-reader cake and eat it computationally, too. I was trying to do this graph the human way, with just a little bit of concession to formal constraints (by having a consistent number of squares for each chapter). And there’s nothing inherently wrong with doing things that way! But how you collect your data <em>always</em> has implications for your analysis. It’s not that you can’t do <em>any</em> kind of interpretation or analysis of the kind of squishy human-interpretation graph we put together– I did! I looked at it with my eyeballs and, ignoring things that I evaluated to be unimportant noise, determined that Katia and I drew similar graphs. But just like how you can’t meaningfully use methods that require a <em>lot</em> of text (like word vectors) on a single novel, you can’t apply quantitative methods to graphs like the ones we created.</p>
 <p>You have to be more rigorous in how you set up the annotation, because computers care about precision. They care in a way that they can’t get beyond to see the bigger picture that you can with your eyeballs. “We just repeated some values to fill in the gaps” won’t fly with computers. So what do you do? You could annotate every paragraph, but some of them will be very short (like in dialogue sections), and many of them will lack any major plot event with a strong emotional value. You could grab text chunks of a certain size (200 words, 500 words, some other fundamentally arbitrary number of words), but then you’re going to end up cutting off sentences in the middle. Or, to fix that, you could grab an arbitrary number of sentences, though you’ll likely end up spanning paragraph breaks. But none of those approaches are sensitive to how plot or emotion work in novels. Maybe you’ve got two or three chunks of pretty-neutral descriptive prose, and then in the fourth chunk the character starts off feeling sorry for herself before having an epiphany that changes her perspective. What happens if both those sentiments – self-pity and joy – happen to co-occur in a single chunk of text? Do you pick one? Average it out to neutral? That’s what was appealing about our squishy-human-graph method of “plot the pivots”: even if two emotive plot points occurred close to one another, we could easily track them as discrete things. You could go through the text and break it up into chunks representing each major emotive plot point for others to evaluate, but that’s adding another layer of human interpretation as a prerequisite to your explicit interpretive step. If I were preparing <em>Dawn’s Big Date</em> that way, I wouldn’t have separated out the chunk where Mary Anne was really into her new album, but Katia would have split the text there.</p>
 <p>In short, if you want to be able to legitimately do computational things with text that humans have scored or evaluated in some way, you have to put <em>a lot of detailed and rigorous thought</em> into how you set up that evaluation task. But that wasn’t really an experiment I wanted to do. I wanted to see (not necessarily <em>quantify</em>, but… you know… just <em>eyeball</em>) how our sentiment arcs compared to Syuzhet.</p>
-</div>
-<div class="section" id="our-sentiment-vs-syuzhet">
-<h3>Our Sentiment vs Syuzhet<a class="headerlink" href="#our-sentiment-vs-syuzhet" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="our-sentiment-vs-syuzhet">
+<h3>Our Sentiment vs Syuzhet<a class="headerlink" href="#our-sentiment-vs-syuzhet" title="Permalink to this heading">#</a></h3>
 <p id="index-21">First, I used a command to make the notebook change directories to the folder with the corpus.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">R</span>
-setwd(&#39;/Users/qad/Documents/dsc_just_the_corpus&#39;)
+setwd(&#39;/Users/qad/Documents/dsc/dsc_corpus_syuzhet&#39;)
 </pre></div>
 </div>
 </div>
 </div>
 <p>Next, I took the code example in Jockers’s <a class="reference external" href="https://cran.r-project.org/web/packages/syuzhet/vignettes/syuzhet-vignette.html">Syuzhet vignette</a> and adapted it to iterate over all the text files in the directory with the Data-Sitters Club corpus, first outputting the simple visualization of all the sentiment scores.</p>
-<div class="cell docutils container">
+<div class="cell tag_skip-execution docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">R</span>
 library(syuzhet)
@@ -2627,113 +1564,6 @@ dev.off()
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>R[write to console]: Error in gsub(replaces[i], c(&quot;&#39;&quot;, &quot;&#39;&quot;, &quot;\&quot;&quot;, &quot;\&quot;&quot;)[i], x, fixed = TRUE) : 
-  input string 1 is invalid UTF-8
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>R[write to console]: In addition: 
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>R[write to console]: There were 50 or more warnings (use warnings() to see the first 50)
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>R[write to console]: 
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Error in gsub(replaces[i], c(&quot;&#39;&quot;, &quot;&#39;&quot;, &quot;\&quot;&quot;, &quot;\&quot;&quot;)[i], x, fixed = TRUE) : 
-  input string 1 is invalid UTF-8
-</pre></div>
-</div>
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">RRuntimeError</span><span class="g g-Whitespace">                             </span>Traceback (most recent call last)
-<span class="nn">~/anaconda3/lib/python3.8/site-packages/rpy2/ipython/rmagic.py</span> in <span class="ni">eval</span><span class="nt">(self, code)</span>
-<span class="g g-Whitespace">    </span><span class="mi">267</span>                 <span class="c1"># Need the newline in case the last line in code is a comment.</span>
-<span class="ne">--&gt; </span><span class="mi">268</span>                 <span class="n">value</span><span class="p">,</span> <span class="n">visible</span> <span class="o">=</span> <span class="n">ro</span><span class="o">.</span><span class="n">r</span><span class="p">(</span><span class="s2">&quot;withVisible({</span><span class="si">%s</span><span class="se">\n</span><span class="s2">})&quot;</span> <span class="o">%</span> <span class="n">code</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">269</span>             <span class="k">except</span> <span class="p">(</span><span class="n">ri</span><span class="o">.</span><span class="n">embedded</span><span class="o">.</span><span class="n">RRuntimeError</span><span class="p">,</span> <span class="ne">ValueError</span><span class="p">)</span> <span class="k">as</span> <span class="n">exception</span><span class="p">:</span>
-
-<span class="nn">~/anaconda3/lib/python3.8/site-packages/rpy2/robjects/__init__.py</span> in <span class="ni">__call__</span><span class="nt">(self, string)</span>
-<span class="g g-Whitespace">    </span><span class="mi">437</span>         <span class="n">p</span> <span class="o">=</span> <span class="n">rinterface</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">438</span>         <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">439</span>         <span class="k">return</span> <span class="n">conversion</span><span class="o">.</span><span class="n">rpy2py</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
-
-<span class="nn">~/anaconda3/lib/python3.8/site-packages/rpy2/robjects/functions.py</span> in <span class="ni">__call__</span><span class="nt">(self, *args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">197</span>                 <span class="n">kwargs</span><span class="p">[</span><span class="n">r_k</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span>
-<span class="ne">--&gt; </span><span class="mi">198</span>         <span class="k">return</span> <span class="p">(</span><span class="nb">super</span><span class="p">(</span><span class="n">SignatureTranslatedFunction</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">199</span>                 <span class="o">.</span><span class="fm">__call__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">))</span>
-
-<span class="nn">~/anaconda3/lib/python3.8/site-packages/rpy2/robjects/functions.py</span> in <span class="ni">__call__</span><span class="nt">(self, *args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">124</span>                 <span class="n">new_kwargs</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">conversion</span><span class="o">.</span><span class="n">py2rpy</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">125</span>         <span class="n">res</span> <span class="o">=</span> <span class="nb">super</span><span class="p">(</span><span class="n">Function</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__call__</span><span class="p">(</span><span class="o">*</span><span class="n">new_args</span><span class="p">,</span> <span class="o">**</span><span class="n">new_kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">126</span>         <span class="n">res</span> <span class="o">=</span> <span class="n">conversion</span><span class="o">.</span><span class="n">rpy2py</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
-
-<span class="nn">~/anaconda3/lib/python3.8/site-packages/rpy2/rinterface_lib/conversion.py</span> in <span class="ni">_</span><span class="nt">(*args, **kwargs)</span>
-<span class="g g-Whitespace">     </span><span class="mi">44</span>     <span class="k">def</span> <span class="nf">_</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-<span class="ne">---&gt; </span><span class="mi">45</span>         <span class="n">cdata</span> <span class="o">=</span> <span class="n">function</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">46</span>         <span class="c1"># TODO: test cdata is of the expected CType</span>
-
-<span class="nn">~/anaconda3/lib/python3.8/site-packages/rpy2/rinterface.py</span> in <span class="ni">__call__</span><span class="nt">(self, *args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">679</span>             <span class="k">if</span> <span class="n">error_occured</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
-<span class="ne">--&gt; </span><span class="mi">680</span>                 <span class="k">raise</span> <span class="n">embedded</span><span class="o">.</span><span class="n">RRuntimeError</span><span class="p">(</span><span class="n">_rinterface</span><span class="o">.</span><span class="n">_geterrmessage</span><span class="p">())</span>
-<span class="g g-Whitespace">    </span><span class="mi">681</span>         <span class="k">return</span> <span class="n">res</span>
-
-<span class="ne">RRuntimeError</span>: Error in gsub(replaces[i], c(&quot;&#39;&quot;, &quot;&#39;&quot;, &quot;\&quot;&quot;, &quot;\&quot;&quot;)[i], x, fixed = TRUE) : 
-  <span class="nb">input</span> <span class="n">string</span> <span class="mi">1</span> <span class="ow">is</span> <span class="n">invalid</span> <span class="n">UTF</span><span class="o">-</span><span class="mi">8</span>
-
-
-<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
-
-<span class="ne">RInterpreterError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">25</span><span class="o">-</span><span class="n">f0a354875c95</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="nn">----&gt; 1 get_ipython().run_cell_magic(&#39;R&#39;, &#39;&#39;, &#39;library(syuzhet)\n\nfiles &lt;- list.files(\&#39;.\&#39;, pattern = &quot;txt&quot;)\nfor (file</span> in <span class="ni">files) {\nbook &lt;- get_text_as_string(file)\nbooksentences &lt;- get_sentences(book)\n#Other methods are \&#39;syuzhet\&#39;, \&#39;bing\&#39;, \&#39;afinn\&#39;, \&#39;nrc\&#39;\nsyuzhet_vector &lt;- get_sentiment(booksentences, method=&quot;syuzhet&quot;)\noutputname &lt;- paste(file, &quot;-plotonly.jpg&quot;)\njpeg(file=outputname)\nplot(syuzhet_vector, type = &quot;h&quot;, main=file, xlab = \&#39;time\&#39;, ylab = \&#39;emotion\&#39;, col = \&#39;red\&#39;)\ndev.off</span><span class="nt">()\n}\n&#39;)</span>
-
-<span class="nn">~/anaconda3/lib/python3.8/site-packages/IPython/core/interactiveshell.py</span> in <span class="ni">run_cell_magic</span><span class="nt">(self, magic_name, line, cell)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2397</span>             <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">builtin_trap</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">2398</span>                 <span class="n">args</span> <span class="o">=</span> <span class="p">(</span><span class="n">magic_arg_s</span><span class="p">,</span> <span class="n">cell</span><span class="p">)</span>
-<span class="ne">-&gt; </span><span class="mi">2399</span>                 <span class="n">result</span> <span class="o">=</span> <span class="n">fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2400</span>             <span class="k">return</span> <span class="n">result</span>
-<span class="g g-Whitespace">   </span><span class="mi">2401</span> 
-
-<span class="nn">~/anaconda3/lib/python3.8/site-packages/decorator.py</span> in <span class="ni">fun</span><span class="nt">(*args, **kw)</span>
-<span class="g g-Whitespace">    </span><span class="mi">229</span>             <span class="k">if</span> <span class="ow">not</span> <span class="n">kwsyntax</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">230</span>                 <span class="n">args</span><span class="p">,</span> <span class="n">kw</span> <span class="o">=</span> <span class="n">fix</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">kw</span><span class="p">,</span> <span class="n">sig</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">231</span>             <span class="k">return</span> <span class="n">caller</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="o">*</span><span class="p">(</span><span class="n">extras</span> <span class="o">+</span> <span class="n">args</span><span class="p">),</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">232</span>     <span class="n">fun</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">=</span> <span class="n">func</span><span class="o">.</span><span class="vm">__name__</span>
-<span class="g g-Whitespace">    </span><span class="mi">233</span>     <span class="n">fun</span><span class="o">.</span><span class="vm">__doc__</span> <span class="o">=</span> <span class="n">func</span><span class="o">.</span><span class="vm">__doc__</span>
-
-<span class="nn">~/anaconda3/lib/python3.8/site-packages/IPython/core/magic.py</span> in <span class="ni">&lt;lambda&gt;</span><span class="nt">(f, *a, **k)</span>
-<span class="g g-Whitespace">    </span><span class="mi">185</span>     <span class="c1"># but it&#39;s overkill for just that one bit of state.</span>
-<span class="g g-Whitespace">    </span><span class="mi">186</span>     <span class="k">def</span> <span class="nf">magic_deco</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
-<span class="ne">--&gt; </span><span class="mi">187</span>         <span class="n">call</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">f</span><span class="p">,</span> <span class="o">*</span><span class="n">a</span><span class="p">,</span> <span class="o">**</span><span class="n">k</span><span class="p">:</span> <span class="n">f</span><span class="p">(</span><span class="o">*</span><span class="n">a</span><span class="p">,</span> <span class="o">**</span><span class="n">k</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">188</span> 
-<span class="g g-Whitespace">    </span><span class="mi">189</span>         <span class="k">if</span> <span class="n">callable</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
-
-<span class="nn">~/anaconda3/lib/python3.8/site-packages/rpy2/ipython/rmagic.py</span> in <span class="ni">R</span><span class="nt">(self, line, cell, local_ns)</span>
-<span class="g g-Whitespace">    </span><span class="mi">781</span>             <span class="k">if</span> <span class="ow">not</span> <span class="n">e</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">err</span><span class="p">):</span>
-<span class="g g-Whitespace">    </span><span class="mi">782</span>                 <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">err</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">783</span>             <span class="k">raise</span> <span class="n">e</span>
-<span class="g g-Whitespace">    </span><span class="mi">784</span>         <span class="k">finally</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">785</span>             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">device</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;png&#39;</span><span class="p">,</span> <span class="s1">&#39;svg&#39;</span><span class="p">]:</span>
-
-<span class="nn">~/anaconda3/lib/python3.8/site-packages/rpy2/ipython/rmagic.py</span> in <span class="ni">R</span><span class="nt">(self, line, cell, local_ns)</span>
-<span class="g g-Whitespace">    </span><span class="mi">761</span>                     <span class="n">return_output</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="g g-Whitespace">    </span><span class="mi">762</span>             <span class="k">else</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">763</span>                 <span class="n">text_result</span><span class="p">,</span> <span class="n">result</span><span class="p">,</span> <span class="n">visible</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="n">code</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">764</span>                 <span class="n">text_output</span> <span class="o">+=</span> <span class="n">text_result</span>
-<span class="g g-Whitespace">    </span><span class="mi">765</span>                 <span class="k">if</span> <span class="n">visible</span><span class="p">:</span>
-
-<span class="nn">~/anaconda3/lib/python3.8/site-packages/rpy2/ipython/rmagic.py</span> in <span class="ni">eval</span><span class="nt">(self, code)</span>
-<span class="g g-Whitespace">    </span><span class="mi">270</span>                 <span class="c1"># Otherwise next return seems to have copy of error.</span>
-<span class="g g-Whitespace">    </span><span class="mi">271</span>                 <span class="n">warning_or_other_msg</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
-<span class="ne">--&gt; </span><span class="mi">272</span>                 <span class="k">raise</span> <span class="n">RInterpreterError</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">exception</span><span class="p">),</span>
-<span class="g g-Whitespace">    </span><span class="mi">273</span>                                         <span class="n">warning_or_other_msg</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">274</span>             <span class="n">text_output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
-
-<span class="ne">RInterpreterError</span>: Failed to parse and evaluate line &#39;library(syuzhet)\n\nfiles &lt;- list.files(\&#39;.\&#39;, pattern = &quot;txt&quot;)\nfor (file in files) {\nbook &lt;- get_text_as_string(file)\nbooksentences &lt;- get_sentences(book)\n#Other methods are \&#39;syuzhet\&#39;, \&#39;bing\&#39;, \&#39;afinn\&#39;, \&#39;nrc\&#39;\nsyuzhet_vector &lt;- get_sentiment(booksentences, method=&quot;syuzhet&quot;)\noutputname &lt;- paste(file, &quot;-plotonly.jpg&quot;)\njpeg(file=outputname)\nplot(syuzhet_vector, type = &quot;h&quot;, main=file, xlab = \&#39;time\&#39;, ylab = \&#39;emotion\&#39;, col = \&#39;red\&#39;)\ndev.off()\n}\n&#39;.
-<span class="n">R</span> <span class="n">error</span> <span class="n">message</span><span class="p">:</span> <span class="s1">&#39;Error in gsub(replaces[i], c(&quot;</span><span class="se">\&#39;</span><span class="s1">&quot;, &quot;</span><span class="se">\&#39;</span><span class="s1">&quot;, &quot;</span><span class="se">\\</span><span class="s1">&quot;&quot;, &quot;</span><span class="se">\\</span><span class="s1">&quot;&quot;)[i], x, fixed = TRUE) : </span><span class="se">\n</span><span class="s1">  input string 1 is invalid UTF-8&#39;</span>
-</pre></div>
-</div>
-</div>
 </div>
 <p>Here’s what you get for <em>Dawn’s Big Date</em>:</p>
 <img src='_static/images/dsc11_dawns_big_date-plotonly.jpg' alt="A noisy red graph with the sentiment scores for all the sentences in Dawn's Big Date" />
@@ -2745,7 +1575,7 @@ dev.off()
 <li><p>The <em>Syuzhet DCT</em> (red line) is the “improved” replacement for the infamous Fourier transform in the Syuzhet Incident. It’s a discrete cosine transformation, which “expresses a finite sequence of data points in terms of a sum of cosine functions oscillating at different frequencies” (if you ask Wikipedia). As a cosine transformation (if you can dredge up any high school trigonometry here) it still assumes the data is cyclical in some way (a <a class="reference external" href="https://benschmidt.org/2015/04/03/commodius-vici-of-recirculation-the-real-problem-with-syuzhet/">criticism Ben Schmidt directed towards the original Fourier transform</a>, further spelled out in his <em>Debates in DH 2016</em> piece, “<a class="reference external" href="https://dhdebates.gc.cuny.edu/read/untitled/section/557c453b-4abb-48ce-8c38-a77e24d3f0bd">Do Digital Humanists Need to Understand Algorithms?</a>”). The Syuzhet DCT is the smoothing method privileged by Syuzhet, and it shows up in the second plot.</p></li>
 </ul>
 <p>The second plot offers yet another data transformation: where the X-axis on the first plot is based on the actual number of sentences, the second plot turns the time axis into percentages, which makes it much easier to compare texts of different lengths. The only smoothing method in the second plot is the Syuzhet DCT. The Syuzhet DCT looks little different in the second plot because of the way the time axis has been stretched (or compacted, depending on the length of the text).</p>
-<div class="cell docutils container">
+<div class="cell tag_skip-execution docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">R</span>
 library(syuzhet)
@@ -2792,13 +1622,13 @@ simple_plot(quinn, title=&quot;Quinn&#39;s sentiment scores&quot;)
 <p>Looking at just the simplified macro shapes, you might think that Syuzhet and I were looking at the same book, but just interpreted the beginning differently. Things tank around 30% through the book, again around 70%, with a small bump up between those two points, and it ends on a high note. The simplified macro shape for Katia is almost the inverse: things start off bad, 30% is a high point, and everything craters at 50% before improving at the end. Looking at the top graph, the ups and downs are all over the place, as is their intensity.</p>
 <p id="index-23">Compared to Katia’s and my human-oriented manual graphs of the book’s emotions, the smoothing transformations flatten most of it out in a way that feels off. On one hand, flattening out ups and downs is exactly what a smoothing transformation is supposed to do. On the other hand, what if your book actually <strong>is</strong> full of drama and emotional ups and downs, like <em>Dawn’s Big Date</em>? You wouldn’t know from looking at a graph like this. In our case, we can say definitively that this doesn’t do a good job representing what we as human readers get out of this book, but only because we’ve all put in the time to read it. If you were to try to apply something like this at scale to books you haven’t read personally, how confident can you be in your ability to interpret the output? Graphs like these <em>feel</em> more satisfying and meaningful than a number like “58”, but how much more insight are we getting, actually? What’s worse, just getting a number like “58” makes you stop in your tracks. It’s immediately obvious that there’s no easy interpretive path forward from “58”. But Syuzhet’s graphs are enticing; they’re an invitation to attempt an interpretation. They give you something pretty to look at that obscures the fact that it’s a house of cards built out of other people’s assumptions: the scores in the sentiment dictionary, the interpretive leap to link those scores to plot, the decisions about which smoothing transforms to do and what those transforms assume about the nature of your data.</p>
 <p id="index-24">Sometimes it’s hard to know where exactly the line is between “valuable with caveats” and “too many caveats to be valuable” when it comes to DH tools and methods. But after going through all this, if you ask me, Syuzhet crosses that line. As <a class="reference external" href="https://collections.nlm.nih.gov/catalog/nlm:nlmuid-101437868-img">Scruff McGruff taught us in the 90’s</a>, “just say no.”</p>
-<img src='_static/images/dsc11_just_say_no.jpg' alt="McGruff the crime dog in a 90's poster with the text 'Say No to Syuzhet and other sentiment analysis for literature'" /></div>
-<div class="section" id="what-does-bsc-sentiment-look-like">
-<span id="index-25"></span><h3>What Does ‘BSC Sentiment’ Look Like?<a class="headerlink" href="#what-does-bsc-sentiment-look-like" title="Permalink to this headline">#</a></h3>
+<img src='_static/images/dsc11_just_say_no.jpg' alt="McGruff the crime dog in a 90's poster with the text 'Say No to Syuzhet and other sentiment analysis for literature'" /></section>
+<section id="what-does-bsc-sentiment-look-like">
+<span id="index-25"></span><h3>What Does ‘BSC Sentiment’ Look Like?<a class="headerlink" href="#what-does-bsc-sentiment-look-like" title="Permalink to this heading">#</a></h3>
 <p>Our next plan in this quest to find something valuable about the Baby-Sitters Club books using sentiment analysis involved developing a model of positivity and negativity in the corpus. At Mark’s suggestion, we set off to identify 500 positive and 500 negative sentences – 500 being, again, a pretty arbitrary number, but one that had worked for him in the past when modeling the words that convey positivity or negativity in small to medium-sized corpora.</p>
 <p>In our Data-Sitters Club meeting, we came up with our ground rules for tagging sentences as positive or negative, which mostly came down to: don’t think. If you’re thinking, it’s too ambiguous and you should skip it.</p>
-<div class="section" id="select-random-sentences">
-<h4>Select Random Sentences<a class="headerlink" href="#select-random-sentences" title="Permalink to this headline">#</a></h4>
+<section id="select-random-sentences">
+<h4>Select Random Sentences<a class="headerlink" href="#select-random-sentences" title="Permalink to this heading">#</a></h4>
 <p>I wrote some code that put all the sentences in our corpus into a giant list, then randomly selected (without replacement) 2000 sentences from that list.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2812,7 +1642,7 @@ simple_plot(quinn, title=&quot;Quinn&#39;s sentiment scores&quot;)
 </div>
 </div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_skip-execution docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Creates an empty list for the sentences</span>
 <span class="n">bsc_sentences</span> <span class="o">=</span> <span class="p">[]</span>
@@ -2851,19 +1681,19 @@ simple_plot(quinn, title=&quot;Quinn&#39;s sentiment scores&quot;)
 </div>
 </div>
 <p>I stuck them all in a Google sheet, made a copy for each of us, and we started tagging.</p>
-</div>
-</div>
-<div class="section" id="where-s-the-sentiment">
-<span id="index-26"></span><h3>Where’s the Sentiment?<a class="headerlink" href="#where-s-the-sentiment" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+<section id="where-s-the-sentiment">
+<span id="index-26"></span><h3>Where’s the Sentiment?<a class="headerlink" href="#where-s-the-sentiment" title="Permalink to this heading">#</a></h3>
 <p>A week passed. Tagging sentences positive/negative was a great activity for multitasking during dull Zoom meetings. But the more time I spent doing it, the more skeptical I became that we actually would get to 500 positive sentences. Even negative sentences – which were much more numerous than unambiguously positive sentences – felt like rare and delicious M&amp;Ms occasionally discovered among the empty candy wrappers in Claudia’s bedroom. Most of our random sample was just… neutral. When I finished going through our first 2,000 sentences, I grabbed 3,000 more – and still encountered the same problem.</p>
 <p>And it wasn’t just me. Even though we didn’t always agree on the scoring (and I leaned towards neutrality more than my fellow Data-Sitters), there was a lot more neutrality than negative statements, and negative statements far outnumbered the positive. Here’s our scores for the first 250 sentences, which five of us had time to score:</p>
 <img src='_static/images/dsc11_sentence_scoring.png' alt="Five sets of sentence scores, mostly blue for neutral." />
 <p>Was the whole <em>Baby-Sitters Club</em> series a whole lot more level-headed than I thought? What point of comparison could I use to investigate this? In DSC #10, <a class="reference external" href="https://datasittersclub.github.io/site/dsc10.html#pca-across-series">we mentioned YAMS, the Young Adult and Middle-School corpus</a> I’ve been working on. Since then, it’s been renamed <a class="reference external" href="https://yrdl.org/">YRDL</a> (Young Readers Database of Literature – pronounced like the megalomaniac turtle who tried to stack his subjects), and my starting point was the <em>Sweet Valley</em> series, which I remember being often shelved near the Baby-Sitters Club and similarly dismissed as vacuous books for teenage girls. But unlike the Baby-Sitters Club, it was explicitly soap opera-ish, complete with dramatic cliffhangers that explicitly invited readers to “read on to book [whatever]” to learn how whatever shocking situation was resolved. (It’s kinda funny that this rhetorical twist contributed to <em>Sweet Valley</em> being dismissed as fundamentally unserious; Katia points out that this soap opera-ish, dramatic cliffhanger method was also Dostoevsky’s for attracting readers to later installments of his serialized novels.) I ran the random-sentence grabber, found 1000 random sentences, and started tagging – and found my suspicions confirmed, that <em>Sweet Valley High</em> seems to be more emotive.</p>
 <p>But was that a fair comparison? Realistic fiction with female protagonists that didn’t sell itself as a soap opera for middle-school kids would be a better parallel for the Baby-Sitters Club. So I started pulling other series– <em>Sisterhood of the Traveling Pants</em>, <em>Allergic To</em>, <em>Anastasia</em>, <em>Boys vs. Girls</em>, <em>Dear Dumb Diary</em> – grabbing examples, and tagging them.</p>
 <p>I was completely caught up in this whirlwind of tagging and number-crunching and even emailed the other Data-Sitters with the hopeful proposition that maybe this time we actually did have a real discovery about this series (unlike the last time I thought we found something new in DSC #3), when my husband interrupted my focus and asked what I was doing.</p>
-</div>
-<div class="section" id="a-statistical-reality-check">
-<h3>A Statistical Reality Check<a class="headerlink" href="#a-statistical-reality-check" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="a-statistical-reality-check">
+<h3>A Statistical Reality Check<a class="headerlink" href="#a-statistical-reality-check" title="Permalink to this heading">#</a></h3>
 <p>I often apologize to grad students for my weird career path at “secrets of alt-ac careers revealed!” panels, but I’ve got nothing on my husband, Andy, that way. Andy is about a foot taller than me, with brown hair, green-blue eyes, and a beard that at times has been reminiscent of Rasputin. He finished a dual PhD in linguistics and Slavic Linguistics from the University of Chicago, then did pre-med at UC Berkeley extension, aced the MCAT, decided against medical school, and has had various jobs in that space since, including editing English-language articles for open-access Korean medical journals into clear, cohesive, professional English. He’s probably read, in depth, more medical literature than almost anyone who’s not a doctor, across a huge range of specialties, and one thing many of them have in common is the use (and sometimes misuse) of statistics. Between that and his humanities background, he’s my favorite person to talk with about the conceptual level of quantitative methods. (And one of my favorite people in general, for that matter; we’ve been married 14 years.)</p>
 <p>I explained the problem as I saw it: it seemed like the Baby-Sitters Club had a lot less emotion (positive and negative) than we were expecting. Sweet Valley High had more emotion than the BSC. Going through a thousand examples or so from other series, some of them looked more like the BSC than others. But how could I be confident that 1,000 sentences would be enough? What if those random 1,000 sentences just happened to be particularly (un)emotional? What’s the inflection point where things are likely to be more or less consistent?</p>
 <p>We talked about <em>effect size</em>, which is often reported alongside statistical significance in medical papers, and is one of the parameters that you must account for in order to calculate the sample size (circling back to the earlier question). Statistical significance mostly just means “is there a ‘real’ (i.e., not due to chance) difference between A and B” – and the larger your sample size is, the more likely that you <strong>will</strong> find <strong>some</strong> difference. Effect size asks, “How <em>big</em> was the difference between A and B?” This becomes particularly important in a medical context, where “A” may be a control group and “B” is people trying out a new drug. Maybe “B” does show a statistically significant decrease in some condition, but the decrease could be both statistically significant (i.e. the findings aren’t just chance) and tiny – and if the drug comes with side effects, the tiny decrease over the sample population might not be worth the risk for any individual. There are <a class="reference external" href="https://machinelearningmastery.com/effect-size-measures-in-python/">ways to estimate the sample size</a> required to, essentially, feel confident about your findings – the smaller the effect size, the larger the sample needed. And I could work that out with the data I had, but Andy had some bigger-picture questions.</p>
@@ -2878,19 +1708,19 @@ simple_plot(quinn, title=&quot;Quinn&#39;s sentiment scores&quot;)
 <p id="index-30">The more Andy spoke about it, the more it occurred to me that statistical methods are like bras. If someone comes up to you with an arbitrary bra and asks, “Does this work for you?”, that’s not a question you can necessarily just answer ‘yes’ or ‘no’. It depends on what you’re trying to accomplish. In the Baby-Sitters Club, the topic of bras comes up a lot, but not in the ways you might expect. Kristy, the sporty President who is full of ideas and self-confidence, is often described in chapter 2 as the only one of the group who isn’t wearing a bra yet. In Super Special #2: <em>Baby-Sitters’ Summer Vacation</em>, Kristy finds herself bunking in a cabin with a bunch of other girls who are all clearly bra-wearers. Kristy doesn’t need a bra, but at that moment, if she was offered one to wear just so the straps could casually peek out from under her shirt and indicate that she was one of the group, a bra would be a great option. At a Club meeting in BSC #16: <em>Jessi’s Secret Language</em>, California girl Dawn outlines a theory about future bra size. Namely, if you can touch your tongue to your nose when you are 12 or 13, you will definitely be wearing a large bra size by the age of 18. While the other Club members giggle about this, Kristy, able to touch her nose with her tongue, is gleeful. In this case, if she was offered a very large bra, she might want to accept it as insurance against the future. If we think of size as being the same as “basic suitability for your data” (e.g. statistical methods were a bad fit for our squishy human-oriented graphs of chapter sentiment), there’s a lot more context that you need to consider. What else are you planning to wear with this bra? How sheer is it? What color is it? How low-cut is it? How professional, or casual, or trendy are you trying to look? What are the current fashion trends around the acceptability of bra straps showing? The context around the suitability of bras maps to the different kinds of questions you’re trying to answer with your method.</p>
 <p>“The Theory of Jobs to be Done is isomorphic to the question in academia of what is an insightful explanation. And I’ve rarely heard good answers to that question in my field, and I’m not sure I’ve seen it much in yours either.”</p>
 <p>Mic. Drop.</p>
-<img src='_static/images/dsc11_micdrop.gif' alt='Animated GIF of a man with a beard in a red jacket with military insignia dropping a microphone, shrugging, and walking off.' /></div>
-<div class="section" id="let-s-not-and-say-we-didn-t">
-<h3>Let’s Not and Say We Didn’t<a class="headerlink" href="#let-s-not-and-say-we-didn-t" title="Permalink to this headline">#</a></h3>
+<img src='_static/images/dsc11_micdrop.gif' alt='Animated GIF of a man with a beard in a red jacket with military insignia dropping a microphone, shrugging, and walking off.' /></section>
+<section id="let-s-not-and-say-we-didn-t">
+<h3>Let’s Not and Say We Didn’t<a class="headerlink" href="#let-s-not-and-say-we-didn-t" title="Permalink to this heading">#</a></h3>
 <div style='float: right; width: 200px;margin-left: 7px;margin-top: 0px;'>
 <img src='_static/images/dsc11_fractallybad.gif' alt='Animated GIF of fractal gears, kind of like a 90s spirograph.' />
 </div>
 <p>We started this book trying to make sense of how sentiment analysis works, and quickly discovered that it mostly <em>doesn’t</em>, at least in texts with any kind of nuance. Sure, you can get some number out of it, but it’s not a meaningful number. Then we explored how things play out with Syuzhet’s interpretive leap, built on top of questionable sentiment analysis scores. We attempted to do something similar to Syuzhet’s purported sentiment plots using a squishy, interpretive tagging method that wasn’t rigorous enough to directly compare to Syuzhet (or even itself). We looked at the ways that our own plots aligned and diverged from Syuzhet’s, using its default smoothing transformations. Our attempt to “do sentiment analysis better” by developing a BSC-specific model of positive and negative sentiment words foundered on a lack of clearly positive and clearly negative sentences – and the inconsistency of subject-area experts (the Data-Sitters) for the data we were able to gather. But what to make of the relative non-emotive-ness of the Baby-Sitters Club is an exceedingly complex question that deserves a lot more thought. And sure, we could calculate up some numbers and make some claims, but honestly, this is a moment where the responsible choice is probably to simply <em>not do it</em>. And maybe that’s a lesson that also applies to sentiment analysis most of the time. At least for literature, sentiment analysis is fractally bad: the closer you look at what it’s actually doing, the more problems you find.</p>
-</div>
-</div>
-<div class="section" id="id3">
-<h2>Katia<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
-<div class="section" id="conclusion">
-<h3>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+<section id="id3">
+<h2>Katia<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<section id="conclusion">
+<h3>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h3>
 <p id="index-31">As it happens, Dostoevsky’s novel <em>Notes from Underground</em> (1864) and Kristy and the Snobs have a lot in common. Both are first person narratives that detail their protagonists’ growing consciousness of social hierarchies and describe the ways this consciousness prompts their heroes to act out in spite, whether pranks on a rival baby-sitter or an absurd “duel” of shoving an officer on the street. Of course, the novels wildly diverge from this initial premise. Kristy becomes friends with her rival, Shannon, who gives her an adorable puppy. Underground Man emotionally manipulates a prostitute and retreats from society to write his spiteful notes. My point here is that, while they seem kind of distant (not in a BSC slang way, like we <a class="reference external" href="https://datasittersclub.github.io/site/dsc6.html">explored in DSC #6</a>), when it comes down to it, Dostoevsky novels and the Baby-Sitters Club are not so different. Dostoevsky’s narrative universe and Ann M. Martin’s Stoneybrook both function as a backdrop for richly drawn characters whose emotions grab the reader from the page. And this is true also for many literary works, not just these.</p>
 <p id="index-32">This brings us back full circle to the question we started with when Eka and I had that conversation last spring. Can Dostoevsky’s characters’ emotions, or the emotional landscape of his novels, be quantified through sentiment analysis? And now we have our answer. Probably not. Does 58 or 1 or -1 or any of these numbers represent Dostoevsky’s characters’ emotional lives? Nope. They represent what the computer identifies as matching the model, which is trained on data that is subjective to start with. Even if the model was trained on Dostoevsky novels, at the end of the day, the words don’t have semantic meaning for the computer, which assesses them and scores them with numbers against the model. But each word in a Dostoevsky text holds semantic meaning for Dostoevsky and his readers and that meaning is built through context and nuance. Sentiment analysis isn’t going to tell us anything about Dostoevsky’s characters’ emotions. Nothing new. Nothing, full stop.</p>
 <p>One conclusion that can be drawn from all of this is the one Team Dostoevsky and I joked about when my absurd result of 58 was revealed in our DHSI class: Dostoevsky, himself, would be appalled by sentiment analysis. Let’s not forget Underground Man’s observation:</p>
@@ -2899,13 +1729,13 @@ simple_plot(quinn, title=&quot;Quinn&#39;s sentiment scores&quot;)
 </div></blockquote>
 <p>In this quotation, Underground Man argues that one of the key things that makes us human is our free will, that is, in one regard, our capacity for irrational feelings, behavior, and choices. Dostoevsky’s point is that representing humans’ feelings/choices/behavior using a mathematical equation that is completely predictable (twice two will always be four) is not representative of humans. This is a degree or two removed from sentiment analysis, but, if you follow it through, the same principle applies. Tagging individual words as positive or negative gets you into some subjective weeds, using those words as a model to tag other words gets trickier still, and then applying that model to something as complex as a novel, or even a story, becomes meaningless. Words do not mean the same thing in all contexts. Even in the passage quoted above, “two times two is four” is “insolence,” “brazen,” “spitting at you,” but also “splendid.” That splendid would probably be tagged as a positive when doing sentiment analysis, but is it positive? Dostoevsky and the Underground Man would just laugh at you if you answered yes. Assuming that individual words will always be positive or negative in any context and using that as a basis for interpretation becomes reckless when you add in the multiplicity of human emotion and, beyond that, its representation through rhetorical devices like sarcasm, as you’d find in basically any literary text, whether <em>Kristy and the Snobs</em>, <em>Notes from Underground</em>, or anything else. In Dostoevsky’s book, representing humans in all their emotional complexity with numbers and charts goes against our humanity.</p>
 <p>When I started thinking about sentiment analysis, without much idea of what it was, for my Dostoevsky corpus last spring, I didn’t know any of this, of course. Eka’s advice seemed good (Eka’s advice is usually solid!). And since Eka had worked with sentiment analysis on IMDB reviews and other similar corpora, her experience with sentiment analysis was (no pun intended) positive. It is a useful tool for analysis for those kinds of tasks. However, IMDB reviews are not long Russian novels (even postmodern ones!). And what we have learned from this long story about trying to do sentiment analysis on literary texts is that it’s not a great idea. Methodologically speaking, it’s shaky when you dig down into what’s actually going on beneath the nice numbers and charts that get spit out. As a reader and literary scholar, it goes against all intuition and how we view and analyze literary texts from a disciplinary standpoint. And, when it comes down to it, Dostoevsky wouldn’t like it anyway.</p>
-<img src='_static/images/dsc11_mad_dostoevsky.jpg' alt='A picture of Dostoevsky looking annoyed.' /></div>
-</div>
-<div class="section" id="suggested-citation">
-<h2>Suggested Citation<a class="headerlink" href="#suggested-citation" title="Permalink to this headline">#</a></h2>
+<img src='_static/images/dsc11_mad_dostoevsky.jpg' alt='A picture of Dostoevsky looking annoyed.' /></section>
+</section>
+<section id="suggested-citation">
+<h2>Suggested Citation<a class="headerlink" href="#suggested-citation" title="Permalink to this heading">#</a></h2>
 <p>Bowers, Katherine and Quinn Dombrowski. “Katia and the Sentiment Snobs”. <em>The Data-Sitters Club</em>. October 25, 2021. <a class="reference external" href="https://datasittersclub.github.io/site/dsc11.html">https://datasittersclub.github.io/site/dsc11.html</a></p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -2919,7 +1749,7 @@ simple_plot(quinn, title=&quot;Quinn&#39;s sentiment scores&quot;)
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
@@ -2927,50 +1757,141 @@ simple_plot(quinn, title=&quot;Quinn&#39;s sentiment scores&quot;)
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="dsc10.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">DSC #10: Heather Likes Principal Component Analysis</p>
-        </div>
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="dsc10.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">DSC #10: Heather Likes Principal Component Analysis</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="dsc12.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="dsc12.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">DSC #12: The DSC and the New Programming Language</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
-</div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
-  
-    By The Data-Sitters Club<br/>
-  
-      &copy; Copyright 2022.<br/>
-</p>
-        </footer>
-    </div>
-    
-</div>
-
-
       </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#katia">Katia</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quinn">Quinn</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-syuzhet-incident">The Syuzhet Incident</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sentiment-analysis-101">Sentiment Analysis 101</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trying-textblob-and-vader">Trying Textblob and VADER</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sentiment-scoring">Sentiment scoring</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sentiment-analysis-meets-literary-text">Sentiment Analysis Meets Literary Text</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sentiment-meets-modernism">“Sentiment” Meets Modernism</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trying-syuzhet">Trying Syuzhet</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#moving-between-python-and-r">Moving Between Python and R</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#syuzhet-s-scoring">Syuzhet’s Scoring</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Katia</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#you-did-sentiment-analysis-now-what">You Did Sentiment Analysis, Now What?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Quinn</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#syuzhet-s-sleight-of-hand">Syuzhet’s Sleight-of-Hand</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diy-sentiment-arcs">DIY Sentiment Arcs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#our-sentiment-vs-syuzhet">Our Sentiment vs Syuzhet</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-does-bsc-sentiment-look-like">What Does ‘BSC Sentiment’ Look Like?</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#select-random-sentences">Select Random Sentences</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#where-s-the-sentiment">Where’s the Sentiment?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-statistical-reality-check">A Statistical Reality Check</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#let-s-not-and-say-we-didn-t">Let’s Not and Say We Didn’t</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Katia</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suggested-citation">Suggested Citation</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Data-Sitters Club
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

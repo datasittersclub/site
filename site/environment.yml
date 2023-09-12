@@ -2,10 +2,10 @@ name: dsc-notebook
 channels:
   - default
 dependencies:
-  - python=3.8
+  - python=3.11
   - sphinx
   - pip
   - pandas
   - matplotlib
   - pip:
-    - jupyter-book
+      - jupyter-book
