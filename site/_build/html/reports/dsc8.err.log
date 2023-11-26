@@ -36,7 +36,7 @@ for file in os.listdir(resultsdirectory):
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mAttributeError[0m                            Traceback (most recent call last)
-[0;32m/var/folders/3r/55b5kjpd4s14_tg80r24vs7r0000gq/T/ipykernel_33296/1963970400.py[0m in [0;36m<module>[0;34m[0m
+[0;32m/var/folders/3r/55b5kjpd4s14_tg80r24vs7r0000gq/T/ipykernel_25834/1963970400.py[0m in [0;36m<module>[0;34m[0m
 [1;32m      6[0m         [0mdf[0m [0;34m=[0m [0mpd[0m[0;34m.[0m[0mread_csv[0m[0;34m([0m[0mfile[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 [1;32m      7[0m         [0;31m#Counts the number of individual-word matches from a particular book[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
 [0;32m----> 8[0;31m         [0mdf[0m[0;34m[[0m[0;34m'matches_count'[0m[0;34m][0m [0;34m=[0m [0mdf[0m[0;34m.[0m[0mFAN_WORK_FILENAME[0m[0;34m.[0m[0mapply[0m[0;34m([0m[0;32mlambda[0m [0mx[0m[0;34m:[0m [0mdf[0m[0;34m.[0m[0mFAN_WORK_FILENAME[0m[0;34m.[0m[0mvalue_counts[0m[0;34m([0m[0;34m)[0m[0;34m[[0m[0mx[0m[0;34m][0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
