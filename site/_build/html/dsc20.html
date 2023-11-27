@@ -451,8 +451,13 @@ document.write(`
 <p>That’s a nice intuition…but what does a topic model actually do? Rather than a topic being literally just a list of words, a computational topic is going to be a distribution over words, an assignment of whatever vocabulary words we have in our dictionary to different non-zero probabilities that should all together account for a nice 100%. Maybe I have a topic that’s about behavior - that might have a much higher probability of the word decorum than of the words platypus or dubstep, with words about specific behaviors like dancing or yelling somewhere in between. However, every word is going to have at least a tiny probability of showing up in that topic. Sometimes, this means a word will have a high probability in multiple topics – maybe dancing features in another topic about music as well! That’s not a problem for our model.</p>
 <p>Now, if you’ve seen topics listed for a topic model before, you’ve probably seen lists of words. This can make it very confusing to understand what’s going on – that’s not a probability distribution! However, actually looking at a probability distribution across however many words are in your vocabulary (think maybe tens or even hundred of thousands of words) is a super overwhelming thing to do. When people are first browsing through topics, they usually want something easier to read, so they’ll just sort the words in a topic by their probability and grab the top most-probable words. By default, this will often be the top 10 words. I actually usually find that to be way too few; I usually grab the top 50 or so, which is still a drop in the 10,000+ word bucket.</p>
 <p>So we’ve covered what a topic is – and a topic model is just a group of topics. However, it’s not just any group: topic models are supposed to be specific to a text collection. If I train a 50-topic model on BSC books, then my model is aiming to find 50 different probability distributions over words that together are good at describing all the words in the BSC books. Better still, it’s going to make the assumption that particular passages of text should not be spread across too many topics. This isn’t to say that each text we consider has to have only one topic. For instance, the text we looked at from <em>BSC 1: Kristy’s Great Idea</em> isn’t just about one thing, it’s about school, about Kristy, about behavior, about weather, etc. But it’s also not about a bunch of things – it’s not about Claudia, baseball, clothes, boys, siblings, or many other themes from the BSC books. Our model allows text to have more than one topic present, but it’s going to be happier with passages of text belonging mostly to a small number of topics. Just like our topics being built around assigning words different probabilities, our documents are going to give topics different probabilities: maybe Chapter 1 of BSC #1 is giving high probabilities to stuff about Kristy and school and lower probabilities to a bunch of other things.</p>
+<div style='float: center; width: 600px;'>
+<img src='_static/images/dsc20_topic_model_view.png' alt='The information we get out of a topic model is effectively two tables based on the original table of which words show up in which documents. The two tables are the proportions of topics in our documents and the topics themselves (which are given as probabilities of words). Illustration shows the original table or *matrix* (words in documents) is approximately equal to the the table of topic proportions in documents times the table of word proportions in topics.' />
+</div>
 <p>Ultimately, the math problem a topic model wants to solve is: given a bunch of text split into distinct chunks (we’ll call them documents), what’s a set of topics that says that the words we see showing up together actually have a high probability of showing up together? Now, this is a huge and complicated math problem, one where it’s just not possible to solve for what the “best” topics are. Instead, we have to run some code for a while that keeps moving through the same text over and over again, starting from a random set of topics and iteratively changing the topics to better match what’s actually showing up together until they settle into something consistent. It’s not super crucial to get into how exactly that settling works (there are several algorithms that can do it)…no matter what, our model then gives us the topics (which are each a probability distribution over words) and the proportions of those topics in our documents (each a probability distribution over K topics).</p>
-<p>[picture of the two types of data you get out: the document-topic distribution and the topic-word distribution. Show an example of what it means for a word to have a certain probability in a topic and a topic to have a certain probability in a document]</p>
+<div style='float: center; width: 600px;'>
+<img src='_static/images/dsc20_topic_model_example.png' alt='Illustration of tables: when making sense of this model, we can imagine looking into the table for a paragraph in Kristy and the Walking Disaster - if we see a lot of Topic 2 in that paragraph, and Topic 2 has a high probability of softball words like "pitch", "softball", and "base", then we might be able to guess the paragraph talks about softball.' />
+</div>
 <div class="admonition-quinn-says admonition">
 <p class="admonition-title">Quinn says</p>
 <p><em>This</em> was where things had gone wrong with topic modeling in Vegas! I was trying to topic model entire books – which, yes, are each <em>about something</em>, but they’ve also got lots of other things in them. No wonder I wasn’t getting sensible topics, if the poor algorithm was trying to cohere distinctive “topics” on the level of each book, when at the book level these texts contain a lot of the same things, and a small amount of distinct things mixed in!</p></p>
@@ -471,6 +476,86 @@ document.write(`
 <li><p>If we just separate the whole books, we’re treating everything in one book as being equally related to each other. For things on the order of novel-length books, this is usually going to go really poorly – even for the fairly short BSC chapter books, this would mean that things that happen in every book could never have their own topic (like the regular BSC meetings).</p></li>
 </ul>
 <p>Usually, when people come to me saying that a topic model wasn’t working for them, the first issue is whether the text has been split right. The second is whether they’re using something reasonable to learn the model – there are different topic modeling implementations out there, and they’re not all equivalent. Unluckily, the highest profile one in Python, <a class="reference external" href="https://radimrehurek.com/gensim/models/ldamodel.html">the LDA implementation in Gensim</a>, is actually doing some stuff designed to work fast for extremely large datasets – but the choices and approximations that make that possible also make it kind of sloppy on more regular-sized datasets like the BSC. Unless you’ve got millions of paragraphs of text, you probably should be using something like the <a class="reference external" href="https://mimno.github.io/Mallet/topics.html">command line tool Mallet</a>, R’s <a class="reference external" href="https://www.tidytextmining.com/topicmodeling.html">topicmodels package</a>, or the more recent Python <a class="reference external" href="https://bab2min.github.io/tomotopy/v/en/">tomotopy package</a>.</p>
+<p>I ended up writing a short script to split my text up and match up information between babysitter narrators, chapters, and text. The function that’s probably the most reusable here is <code class="docutils literal notranslate"><span class="pre">split_text_into_paragraph_chunks</span></code>, which looks for places where a new paragraph starts (that is, where someone left a blank line between lines of text) to split text up, combining together shorter paragraphs into single passages until they exceed 100 words together.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">re</span>
+
+<span class="kn">import</span> <span class="nn">nltk</span>
+
+
+<span class="n">CHUNK_SIZE</span> <span class="o">=</span> <span class="mi">100</span> <span class="c1"># we keep adding paragraphs until we exceed 100 words</span>
+<span class="n">METADATA_PATH</span> <span class="o">=</span> <span class="s2">&quot;dsc_metadata.tsv&quot;</span>
+<span class="n">DATA_PATH</span> <span class="o">=</span> <span class="s2">&quot;txt/&quot;</span>
+<span class="n">OUT_FILE</span> <span class="o">=</span> <span class="s2">&quot;dsc_chunks_by_chapter_and_narrator.tsv&quot;</span>
+
+
+<span class="c1"># Help match metadata from filenames to narrators</span>
+<span class="k">def</span> <span class="nf">make_file_to_babysitter_dict</span><span class="p">(</span><span class="n">metadata_file</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">metadata_file</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="p">[</span><span class="n">r</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">reader</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+        <span class="n">row</span><span class="p">[</span><span class="s2">&quot;file_prefix&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;(-s)?.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">row</span><span class="p">[</span><span class="s2">&quot;filename&quot;</span><span class="p">])</span>
+    <span class="n">file_to_babysitter</span> <span class="o">=</span> <span class="p">{</span><span class="n">r</span><span class="p">[</span><span class="s2">&quot;file_prefix&quot;</span><span class="p">]:</span> <span class="n">r</span><span class="p">[</span><span class="s2">&quot;narrator&quot;</span><span class="p">]</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">}</span>
+    <span class="k">return</span> <span class="n">file_to_babysitter</span>
+
+
+<span class="c1"># Get narrator and chapter information for each chapter file</span>
+<span class="k">def</span> <span class="nf">get_metadata_from_filename</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="n">file_to_babysitter</span><span class="p">):</span>
+    <span class="n">file_prefix</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;_[0-9]+.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">fname</span><span class="p">)</span>
+    <span class="n">narrator</span> <span class="o">=</span> <span class="n">file_to_babysitter</span><span class="p">[</span><span class="n">file_prefix</span><span class="p">]</span>
+    <span class="n">chapter_number</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;_([0-9]+).txt&quot;</span><span class="p">,</span> <span class="n">fname</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">file_prefix</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">chapter_number</span><span class="p">),</span> <span class="n">narrator</span><span class="p">,</span> <span class="n">fname</span><span class="p">)</span>
+
+
+<span class="c1"># Split the text of a chapter into CHUNK_SIZE-word-ish chunks. Chunks should</span>
+<span class="c1"># never split up a paragraph.</span>
+<span class="k">def</span> <span class="nf">split_text_into_paragraph_chunks</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="n">paragraphs</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">chunks</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">chunk_so_far</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="n">chunk_tokens</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">paragraphs</span><span class="p">:</span>
+        <span class="n">chunk_so_far</span> <span class="o">+=</span> <span class="n">p</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">)</span>
+        <span class="n">n_tokens</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">p</span><span class="p">))</span>
+        <span class="n">chunk_tokens</span> <span class="o">+=</span> <span class="n">n_tokens</span>
+        <span class="k">if</span> <span class="n">chunk_tokens</span> <span class="o">&gt;=</span> <span class="n">CHUNK_SIZE</span><span class="p">:</span>
+            <span class="n">chunks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">chunk_so_far</span><span class="p">)</span>
+            <span class="n">chunk_so_far</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+            <span class="n">chunk_tokens</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">chunk_so_far</span> <span class="o">+=</span> <span class="s2">&quot; &quot;</span>
+    <span class="k">if</span> <span class="n">chunk_tokens</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">chunks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">chunk_so_far</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">chunks</span>
+
+
+<span class="c1"># Write out into a MALLET-friendly TSV file with the following row format</span>
+<span class="c1"># (with four spaces indicating a tab):</span>
+<span class="c1"># [filename]-[chunk #]    [narrator]_[chapter #]    [text]</span>
+<span class="k">def</span> <span class="nf">write_chunked_csv</span><span class="p">(</span><span class="n">metadata_listing</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">OUT_FILE</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">wf</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">pre</span><span class="p">,</span> <span class="n">ch</span><span class="p">,</span> <span class="n">nar</span><span class="p">,</span> <span class="n">fname</span> <span class="ow">in</span> <span class="n">metadata_listing</span><span class="p">:</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">DATA_PATH</span><span class="p">,</span> <span class="n">fname</span><span class="p">))</span> <span class="k">as</span> <span class="n">chapter_file</span><span class="p">:</span>
+                <span class="n">chapter_text</span> <span class="o">=</span> <span class="n">chapter_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+                <span class="n">chunks</span> <span class="o">=</span> <span class="n">split_text_into_paragraph_chunks</span><span class="p">(</span><span class="n">chapter_text</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">chunks</span><span class="p">):</span>
+                <span class="n">wf</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">-</span><span class="si">{}</span><span class="se">\t</span><span class="si">{}</span><span class="s2">_</span><span class="si">{}</span><span class="se">\t</span><span class="si">{}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">nar</span><span class="p">,</span> <span class="n">ch</span><span class="p">,</span> <span class="n">chunk</span><span class="p">))</span>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">file_to_babysitter</span> <span class="o">=</span> <span class="n">make_file_to_babysitter_dict</span><span class="p">(</span><span class="n">METADATA_PATH</span><span class="p">)</span>
+    <span class="n">metadata_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">get_metadata_from_filename</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="n">file_to_babysitter</span><span class="p">)</span>
+                     <span class="k">for</span> <span class="n">fname</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">DATA_PATH</span><span class="p">)</span>
+                     <span class="k">if</span> <span class="n">fname</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;.txt&quot;</span><span class="p">)]</span>
+    <span class="n">write_chunked_csv</span><span class="p">(</span><span class="n">metadata_list</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
 <p>One thing I notably don’t usually recommend is messing too much with other kinds of text processing. It can be really tempting when looking through topic models to say “I don’t like that this word list contains both the singular and plural of the same word” or “The word ‘year’ shows up too often and bores me, let me delete that word and retrain the whole model”. Remember that when you’re looking at lists of just the top words, things that are probably good signs for the model (like treating the singular and plural of a word the same way) can look bad. It’s all about context – instead of overreacting to those top words, it’s really important to spend time with the documents that have high proportions of that topic to see if those documents have content, style, etc. in common in a way that’s reflected by those top words.</p>
 </section>
 </section>
@@ -768,6 +853,7 @@ document.write(`
 <p>Asymmetric priors are important here for things like Mallory’s pony obsession: there are some Mallory books that are <strong>very much about ponies</strong> even though ponies don’t come up much elsewhere in the corpus.</p>
 </div>
 <p>At this point, we’d been looking at topics already from a lot of previous models, before we had finished figuring out whether to remove quotes or add names - but in a lot of those situations, we were answering kind of high-level questions, like “do these topics look like they’d reasonably come from this text” and “could I imagine learning anything useful from these”. Once the answer is “yes” to both, it’s possible to start doing some more detailed analysis. However, that analysis can also start a little more quickly with some sense of what’s been happening already; by the time we started this step, we already had a pretty good idea that we were going to have topics that were focused on individual babysitters alongside topics that were a little more general.</p>
+<p>For the next section, I’m assuming that you’re working with topic model files that come out of Mallet, which include the original imported file, document-topic proportions, top words for each topic (a “keys” file), and the output topic “state” file. All of these files are generated as plain text, except for the state file, which is zipped up using the gzip format. That should mean that the filenames here match the filenames from Sathvika’s big messy Mallet command from earlier.</p>
 </section>
 <section id="understanding-topic-keywords">
 <h3>Understanding topic keywords<a class="headerlink" href="#understanding-topic-keywords" title="Permalink to this heading">#</a></h3>
@@ -1054,10 +1140,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.FacetGrid at 0x7f9b4bf6e610&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.FacetGrid at 0x7f7a4dee9750&gt;
 </pre></div>
 </div>
-<img alt="_images/0badf51bee7db5ea2289b11574a6bcb45bcc8be24f5ba3fede18588af66f90f0.png" src="_images/0badf51bee7db5ea2289b11574a6bcb45bcc8be24f5ba3fede18588af66f90f0.png" />
+<img alt="_images/b8039094d09f0ab862a8e00840130bc19f01bd03eeb94f34337ced4b91187c8d.png" src="_images/b8039094d09f0ab862a8e00840130bc19f01bd03eeb94f34337ced4b91187c8d.png" />
 </div>
 </div>
 <p>This is a pretty conclusive sign that chapter 2 is a little different. We see spikes for topics 3 and 18 there, as well as dips in some of the other topics in the same spot. (It’s hard to read much from the dips: since the probabilities all have to sum to 1, if a couple topics are extra high in one chapter, the other ones just have less space to be present!) We can also see a couple of subtler weird things, including topic 5 (which seems to go down a little over time) and topic 17 (which seems to be a little spikier). However, the keys for both are a little overwhelmed by names, so it’s hard to make sense about what those topics might be about! We’ll try to check those out in a bit.</p>
@@ -1072,10 +1158,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.FacetGrid at 0x7f9b3bc82ed0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.FacetGrid at 0x7f7a3de94450&gt;
 </pre></div>
 </div>
-<img alt="_images/b244245f2e51df3ba9bfdc278fb937a65a1f597943437f7af71f2467dad9e794.png" src="_images/b244245f2e51df3ba9bfdc278fb937a65a1f597943437f7af71f2467dad9e794.png" />
+<img alt="_images/42a7185cb8729e0cd7b62932f096aea2cd05f1bd7fb1de082a818464a514e832.png" src="_images/42a7185cb8729e0cd7b62932f096aea2cd05f1bd7fb1de082a818464a514e832.png" />
 </div>
 </div>
 <p>I looked at this plot and realized I’d made a mistake: this data is so broken down that it’s too much to meaningfully take in. Even though I have a couple of questions that come up looking at these, including why there seem to be numerous examples of character-specific topics with a 3-chapter rhythm of rising and falling, they’re too jumbled to be able to chase down quickly. I can confirm that all of our narrators spike in early chapters for topics 3 and 18, not just a few, though it looks like maybe Shannon’s more likely to lag an extra chapter…however, it’s not clear whether this is just random variation or not from these plots.</p>
