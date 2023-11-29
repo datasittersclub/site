@@ -389,15 +389,17 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#but-what-are-they-saying">But what are they saying?</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-3">Topic 3</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-18">Topic 18</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-5">Topic 5</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-17">Topic 17</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-5">Topic 5</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-17">Topic 17</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-making-of-chapter-2">The making of Chapter 2</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#once-more-with-50-topics">Once more, with 50 topics</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-16">Topic 16</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-42">Topic 42</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-43">Topic 43</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#once-more-with-50-topics">Once more, with 50 topics</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-16">Topic 16</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-42">Topic 42</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-43">Topic 43</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Quinn</a><ul class="nav section-nav flex-column">
@@ -477,7 +479,7 @@ document.write(`
 </ul>
 <p>Usually, when people come to me saying that a topic model wasn’t working for them, the first issue is whether the text has been split right. The second is whether they’re using something reasonable to learn the model – there are different topic modeling implementations out there, and they’re not all equivalent. Unluckily, the highest profile one in Python, <a class="reference external" href="https://radimrehurek.com/gensim/models/ldamodel.html">the LDA implementation in Gensim</a>, is actually doing some stuff designed to work fast for extremely large datasets – but the choices and approximations that make that possible also make it kind of sloppy on more regular-sized datasets like the BSC. Unless you’ve got millions of paragraphs of text, you probably should be using something like the <a class="reference external" href="https://mimno.github.io/Mallet/topics.html">command line tool Mallet</a>, R’s <a class="reference external" href="https://www.tidytextmining.com/topicmodeling.html">topicmodels package</a>, or the more recent Python <a class="reference external" href="https://bab2min.github.io/tomotopy/v/en/">tomotopy package</a>.</p>
 <p>I ended up writing a short script to split my text up and match up information between babysitter narrators, chapters, and text. The function that’s probably the most reusable here is <code class="docutils literal notranslate"><span class="pre">split_text_into_paragraph_chunks</span></code>, which looks for places where a new paragraph starts (that is, where someone left a blank line between lines of text) to split text up, combining together shorter paragraphs into single passages until they exceed 100 words together.</p>
-<div class="cell docutils container">
+<div class="cell tag_skip-execution docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
 <span class="kn">import</span> <span class="nn">os</span>
@@ -565,18 +567,28 @@ document.write(`
 <h3>Data processing<a class="headerlink" href="#data-processing" title="Permalink to this heading">#</a></h3>
 <p>I’m Sathvika, and here’s my journey dealing with topic models this semester.</p>
 <p>After learning a little about what topic models even are, I worked on getting Mallet up and running and got a preliminary set of data to understand what the software was even doing. Mallet is a package that includes lots of tools for various natural language processing tasks, including topic models. I used <a class="reference external" href="https://docs.google.com/presentation/d/1MUWtqjlEZ6gNfSdHZ_HdIvwjFkFY6psiq02lSPPurtM/edit?usp=sharing">this guide</a> for topic modeling to learn how to set everything up!</p>
+<div class="admonition-quinn-says admonition">
+<p class="admonition-title">Quinn says</p>
+<p>Mallet is software you run from the command line, but setting it up isn’t as scary as that might make it sound. It might have been one of the first command-line tools I ever ran, a few decades ago. <a class="reference external" href="https://docs.google.com/presentation/d/1MUWtqjlEZ6gNfSdHZ_HdIvwjFkFY6psiq02lSPPurtM/edit?usp=sharing">Xanda’s guide</a> is a great one for how to get it set up the first time.</p>
+</div>
 <p>To use Mallet for topic modeling, I first needed to import the .tsv file that contained all the book data.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$&gt; ~/Mallet/bin/mallet import-file --input dsc_chunks.tsv --output dsc_chunks.seq --keep-sequence --remove-stopwords
-
-</pre></div>
-</div>
+<p><code class="docutils literal notranslate"><span class="pre">$&gt;</span> <span class="pre">~/Mallet/bin/mallet</span> <span class="pre">import-file</span> <span class="pre">--input</span> <span class="pre">dsc_chunks.tsv</span> <span class="pre">--output</span> <span class="pre">dsc_chunks.seq</span> <span class="pre">--keep-sequence</span> <span class="pre">--remove-stopwords</span></code></p>
 <p>This imports the file dsc_chunks while removing the stopwords, and the file Mallet needs will be saved in dsc_chunks.seq. Then, we can run the topic models, using this Mallet command for 10 topics:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$&gt; ~/Mallet/bin/mallet train-topics --input dsc_chunks.seq --num-topics 10 --optimize-interval 10 --num-iterations 1000 --output-state dsc1.txt.gz --evaluator-filename dsc1.evaluator --output-topic-keys dsc1.keys --num-top-words 50 --diagnostics-file dsc1_diag.xml --topic-word-weights-file dsc.wordweights.txt --output-doc-topics dsc.doctopics.txt
-
-</pre></div>
-</div>
+<p><code class="docutils literal notranslate"><span class="pre">$&gt;</span> <span class="pre">~/Mallet/bin/mallet</span> <span class="pre">train-topics</span> <span class="pre">--input</span> <span class="pre">dsc_chunks.seq</span> <span class="pre">--num-topics</span> <span class="pre">10</span> <span class="pre">--optimize-interval</span> <span class="pre">10</span> <span class="pre">--num-iterations</span> <span class="pre">1000</span> <span class="pre">--output-state</span> <span class="pre">dsc1.txt.gz</span> <span class="pre">--evaluator-filename</span> <span class="pre">dsc1.evaluator</span> <span class="pre">--output-topic-keys</span> <span class="pre">dsc1.keys</span> <span class="pre">--num-top-words</span> <span class="pre">50</span> <span class="pre">--diagnostics-file</span> <span class="pre">dsc1_diag.xml</span> <span class="pre">--topic-word-weights-file</span> <span class="pre">dsc.wordweights.txt</span> <span class="pre">--output-doc-topics</span> <span class="pre">dsc.doctopics.txt</span></code></p>
 <p>To make 20- or 50-topic models, I just change –num-topics to 20 or 50…all the other arguments stay the same!</p>
 <p>The code generated a bunch of files from different parts of the representation of the topic mode. The easiest to look at was the list of top words: if I generated 20 topics, this would be a list numbered from 0 to 19, with each line showing a list of the highest probability words associated with that number of topic. In general, I think of these topics as essentially groupings of words that appear in context with each other in the dataset.</p>
+<div class="admonition-quinn-says admonition">
+<p class="admonition-title">Quinn says</p>
+<p>So what does the output of a topic model look like? Like Sathvika says, it’s a bunch of files. Here’s how that breaks down based on the command you run:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">output-state</span></code>: dsc1.txt.gz - this is a compressed (like a zip file, but different compression) file with every single word in the corpus and what topic it was assigned to. It can get very large!</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">evaluator-filename</span></code>: dsc1.evaluator - ???</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">output-topic-keys</span></code>: dsc1.keys` - <strong>this</strong> is where you should look first; it’s the most legible of the output files. Your computer probably won’t know how to open a file with a .keys extension, but it’s just a text file, so any text editor will do. It has a number for each topic, then the top words that appear in that topic. As this book goes on, you’ll see a lot of tables with a number then a bunch of words, representing a topic: those are pulled straight from the .keys file.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">diagnostics-file</span></code>: dsc1_diag.xml - ???</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">topic-word-weights-file</span></code>: dsc.wordweights.txt - ???</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">output-doc-topics</span></code>: dsc.doctopics.txt - This shows the topic proportions for each document, by listing each document then giving you a tab-separated list with as many entries as you have topics, showing what % of the document maps to each of those topics. It’s not very easy to read on its own, but you can use it (like Xanda does below) for visualizations and things.</p></li>
+</ul>
+</div>
 <p>In this first iteration, I realized that a lot of preprocessing was going to be necessary in order to get coherent, useful topics. In this set of topics, there were a lot of common English words present, like “was” and “I”, which are expected to be in every topic. These so-called “stop words” (since they’re ignored or “stopped” in tools like search engines) naturally show up in the top words of topic models if they’re not removed from the collection: after all,  these high-probability common words are present in the context of almost every other word in the dataset. Luckily, this is something Mallet can already handle with its <a class="reference external" href="https://github.com/mimno/Mallet/blob/master/stoplists/en.txt">built-in English stoplist</a>, which contains around 500 words to remove by default (though you can also write your own stoplist).</p>
 <p>Additionally, the names of the babysitters themselves (as well as other characters in the books) appeared in large groups as the most common words in the topics. At first, we were hesitant to remove these, since the names were important for the topics in the books and seemed like a good way to connect characters with their associated hobbies, family, and plotlines. However, it became clear the names were appearing in topics associated with other characters. The culprit was dialogue, the real danger in this story!</p>
 <p>The way the Baby-Sitters Club books are written, each book has its own narrator who is also one of the main characters of the other books. Thus, most times a first-person pronoun like “I”, “me” or “myself” appears in the book, the pronoun refers to one of the babysitters. However, in dialogue, this guarantee goes away, as other non-narrating characters might also talk about themselves. The information about who was speaking was being lost in the original topic models, making it difficult to parse which themes were associated with which characters. What we wanted was a way to deal with some of the dialogue confusion and to help pull the narrators back into how our topics were represented.</p>
@@ -1140,10 +1152,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.FacetGrid at 0x7f7a4dee9750&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.FacetGrid at 0x7fbbc4badd10&gt;
 </pre></div>
 </div>
-<img alt="_images/b8039094d09f0ab862a8e00840130bc19f01bd03eeb94f34337ced4b91187c8d.png" src="_images/b8039094d09f0ab862a8e00840130bc19f01bd03eeb94f34337ced4b91187c8d.png" />
+<img alt="_images/61956c15fcc58d05491bfe2d502c62ee37ad54cf3bb9cdbbb0f3e92f4db71f87.png" src="_images/61956c15fcc58d05491bfe2d502c62ee37ad54cf3bb9cdbbb0f3e92f4db71f87.png" />
 </div>
 </div>
 <p>This is a pretty conclusive sign that chapter 2 is a little different. We see spikes for topics 3 and 18 there, as well as dips in some of the other topics in the same spot. (It’s hard to read much from the dips: since the probabilities all have to sum to 1, if a couple topics are extra high in one chapter, the other ones just have less space to be present!) We can also see a couple of subtler weird things, including topic 5 (which seems to go down a little over time) and topic 17 (which seems to be a little spikier). However, the keys for both are a little overwhelmed by names, so it’s hard to make sense about what those topics might be about! We’ll try to check those out in a bit.</p>
@@ -1158,10 +1170,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.FacetGrid at 0x7f7a3de94450&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.FacetGrid at 0x7fbbb2470f90&gt;
 </pre></div>
 </div>
-<img alt="_images/42a7185cb8729e0cd7b62932f096aea2cd05f1bd7fb1de082a818464a514e832.png" src="_images/42a7185cb8729e0cd7b62932f096aea2cd05f1bd7fb1de082a818464a514e832.png" />
+<img alt="_images/a68de946bf57cbd3f2ba2aea3d7d3c89f85f85b687c39b9cceef0af9762b6e3d.png" src="_images/a68de946bf57cbd3f2ba2aea3d7d3c89f85f85b687c39b9cceef0af9762b6e3d.png" />
 </div>
 </div>
 <p>I looked at this plot and realized I’d made a mistake: this data is so broken down that it’s too much to meaningfully take in. Even though I have a couple of questions that come up looking at these, including why there seem to be numerous examples of character-specific topics with a 3-chapter rhythm of rising and falling, they’re too jumbled to be able to chase down quickly. I can confirm that all of our narrators spike in early chapters for topics 3 and 18, not just a few, though it looks like maybe Shannon’s more likely to lag an extra chapter…however, it’s not clear whether this is just random variation or not from these plots.</p>
@@ -1238,9 +1250,8 @@ document.write(`
 <p>What’s going on here? The first topic, our club-meeting-logistic topic, is pretty much as expected - dominated by Chapters 2 and 3 and a lot of information about how things usually work in the club, not events specific to the story. We actually have a Chapter 4 passage in here, but it’s a discussion of Kristy’s other ideas for how the club runs, which makes it feel like a pretty good affirmation that we’re getting the kind of content we expect from Chapter 3. Topic 18 is also mostly what we expect, descriptions of sitters - with an interesting note that we’re getting an awful lot of Stacey and her diabetes in this discussion. It’s not possible from just the top 10 documents to tell exactly what’s up, but I’d guess this kind of abbreviated description of diabetes usually gets saved for the babysitter introductions, but that this topic might spread out a little more in books where Stacey’s diabetes comes up more, especially from her point of view. It’d be worth being cautious about generalizing this topic without checking that!</p>
 <p>Let’s pick a different topic, one that we saw wasn’t as prominent in general but seemed to correlate heavily with Kristy – topic 5.</p>
 </section>
-</section>
 <section id="topic-5">
-<h3>Topic 5<a class="headerlink" href="#topic-5" title="Permalink to this heading">#</a></h3>
+<h4>Topic 5<a class="headerlink" href="#topic-5" title="Permalink to this heading">#</a></h4>
 <p><strong>m04c_kristy_and_the_missing_child_1.txt-6 - Kristy, Chapter 1 (94.81%)</strong> For a long time, that was my family. Mom, Charlie, Sam, David Michael, and me. Then Mom met this guy named Watson Brewer, and she married him. I wasn’t crazy about him at first, even though he is a millionaire, but now I really like him. Watson had also been married once before, and he has two children, Karen (she’s seven) and Andrew (he’s four). They’re both Krushers, too. They live with us every other weekend and for two weeks in the summer. The rest of the time they live with their mother and stepfather.</p>
 <p><strong>125c_mary_anne_in_the_middle_2.txt-3 - Mary Anne, Chapter 2 (94.50%)</strong> Kristy’s life changed again when her mother married Watson Brewer. That’s because her new stepdad is a millionaire. The Thomas family moved across town to his mansion and became part of a new, blended family. That new family includes seven-year-old Karen and four-year-old Andrew, Watson’s kids from his first marriage, who live at his house every other month. They adored Kristy instantly. Kristy also gained another younger sister, this one a full-time resident, when Watson and Kristy’s mom adopted a baby girl from Vietnam. Emily Michelle is now about two and a half. Kristy’s grandmother, Nannie, moved in to help with the younger kids — Emily Michelle, in particular. And, with assorted pets, including their puppy Shannon, and a kitten named Pumpkin, they have a very full house. It’s a good thing it’s a mansion.</p>
 <p><strong>088c_farewell_dawn_2.txt-14 - Dawn, Chapter 2 (94.41%)</strong> Watson has two young kids of his own from his first marriage (Karen, who is seven, and Andrew, who is four). Then, Kristy’s mom and Watson adopted a little girl from Vietnam named Emily Michelle who is now two and a half. Kristy’s grandmother (her mom’s mom) came to live with them to help take care of Emily Michelle. Karen and Andrew live with Watson every other month and with their mother the rest of the time. They adore Kristy and she adores them back.</p>
@@ -1256,7 +1267,7 @@ document.write(`
 <p>Let’s also check out Topic 17 while we’re here, our mysterious spiky topic:</p>
 </section>
 <section id="topic-17">
-<h3>Topic 17<a class="headerlink" href="#topic-17" title="Permalink to this heading">#</a></h3>
+<h4>Topic 17<a class="headerlink" href="#topic-17" title="Permalink to this heading">#</a></h4>
 <p><strong>052c_mary_anne_plus_too_many_babies_11.txt-6 - Mary Anne, Chapter 11 (89.56%)</strong> “Me, too,” said Vanessa. She looked hopefully at Byron. Byron sighed. “Okay. I’ll be your husband,” he said. “But only for tonight.” “Who will be my husband?” asked Margo. “Not me,” said Adam defiantly. “I am never, ever getting married.” “Jordan?” said Margo. “Oh, all right.” Surprisingly, Nicky agreed to be Claire’s husband. “Okay, let’s adopt babies!” cried Vanessa.</p>
 <p><strong>111c_staceys_secret_friend_8.txt-4 - Stacey, Chapter 8 (88.41%)</strong> “Football!” cried Margo Pike (who’s seven) as she came down the stairs. “Who’s playing football? I want to play.” “No girls,” Nicky told her, scowling. “It’s a touch football game.” “No girls? That’s silly. Why don’t we all go together?” Mallory suggested. “I’ll get Claire ready.” Claire, who’s five, is the youngest Pike. “Ah, come on,” Nicky groaned. “Claire isn’t going to play, is she?”</p>
 <p><strong>073c_mary_anne_and_miss_priss_9.txt-1 - Mary Anne, Chapter 9 (86.59%)</strong> “We’re going to divide the team into two groups,” Adam announced as Shannon and the Barretts arrived. “I want to be on Buddy’s team,” Nicky Pike shouted. “Me, too,” Suzi Barrett cried. “Becca Ramsey and I have to be on the same team,” Haley Braddock declared. “I want to be with Haley and Becca!” Margo shouted. Adam waved his hands in the air. “Quiet! Quiet, everybody! We’ll pick the teams and you have to do what we say.”</p>
@@ -1275,6 +1286,7 @@ document.write(`
 <p>That’s exactly what’s happening. The BSC books have a pretty predictable main plot / babysitting-related subplot pattern of alternating chapters, and this kind of stuff is standard fare for babysitting scenes.</p>
 </div>
 <p>But of course, the real question we wanted to get at was about chapter 2: how did this norm form? What does chapter 2 mean for us? Let’s try diving in to chapter-by-chapter book-by-book topic breakdowns.</p>
+</section>
 </section>
 <section id="the-making-of-chapter-2">
 <h3>The making of Chapter 2<a class="headerlink" href="#the-making-of-chapter-2" title="Permalink to this heading">#</a></h3>
@@ -1352,23 +1364,22 @@ document.write(`
 | <font color="cyan">42 | <font color="cyan">0.0846  | <font color="cyan">kristy karen david michael andrew emily hannie linny lou watson nannie shannon asked sam michelle louie charlie papadakis kids karen’s told cried scout mom sari mrs porter kristy’s puppy house boo-boo michael’s replied nancy brother dru game watson’s papadakises called dog yard emma witch playing luke added began moment andrew’s    |
 | <font color="cyan">43	 | <font color="cyan">0.02024	| <font color="cyan"> kristy kristy’s watson mom family david michael live house emily brothers karen brewer mansion sam thomas kids andrew moved charlie michelle nannie mrs she’s older mother brother named watson’s married grandmother adopted younger who’s lives it’s dog town millionaire big girl he’s sister puppy stepsister marriage stepfather father care ago  |</p>
 <p>And this is where it gets to the heart of why you may (or may not) want more topics in your topic model: if we look at the top few documents for these topics, we can find out there’s actually a distinction between these topics besides the order of names:</p>
-</section>
 <section id="topic-16">
-<h3>Topic 16<a class="headerlink" href="#topic-16" title="Permalink to this heading">#</a></h3>
+<h4>Topic 16<a class="headerlink" href="#topic-16" title="Permalink to this heading">#</a></h4>
 <p><strong>095c_kristy_plus_bart_equals_questionmark_14.txt-18 - Kristy, Chapter 14 (71.64%)</strong> Bart was about to pedal away but he didn’t. “Huh?” “You know, the April Fools’ Day Dance?” I reminded him. “At your school? Did you forget?” “Well, no,” Bart replied. “But we’re not going to that dance together.” “I thought — didn’t you ask — we’re friends again, aren’t we?” “Sure we are. But this is a dance, Kristy. I don’t want to take just a friend to the dance.”</p>
 <p><strong>122c_kristy_in_charge_10.txt-9 - Kristy, Chapter 10 (67.72%)</strong> “How do teachers manage, then?” I asked. “You have to give a little,” Ms. Walden said. “Things can’t always go exactly as you think they should. You have to allow other people to have input.” “Cary has no input,” I pointed out. “His idea of student teaching is to let the kids run wild!” “And what’s your idea of how it should be?” she asked. “Well …” Here was my chance to tell her how I thought she might improve her own teaching. “Kids should learn, but in a fun way. You don’t have to yell at them and punish them all the time.”</p>
 <p><strong>038c_kristys_mystery_admirer_12.txt-14 - Kristy, Chapter 12 (63.97%)</strong> Well, she certainly wasn’t my best friend. “Anyway,” Cokie went on, “I thought you might need a little extra cheering. You’ve looked sort of depressed lately. I want your team to win.” “I haven’t been depressed!” I cried. “I’ve even got a boyfriend. He’s coming to the Halloween Hop with me.” “Really?” said Cokie. “You must like each other a lot.” I drew myself up. I knew I was showing off, but I couldn’t help saying, “We plan to spend our lives together.”</p>
 <p><strong>045c_kristy_and_the_baby_parade_8.txt-1 - Kristy, Chapter 8 (63.14%)</strong> I looked around the room at my friends. Nobody had begged me to tell them my idea, but then again, none of them had said I shouldn’t. “Okay, here’s what we’ll do. The theme will be — get this — Take Me Out to the Ball Game!” I scanned their faces to see their reactions to my idea, but I couldn’t tell what they thought. “We’ll dress the babies in little baseball uniforms and decorate the float like a baseball diamond. It’ll be so, so cute!” I went on.</p>
 </section>
 <section id="topic-42">
-<h3>Topic 42<a class="headerlink" href="#topic-42" title="Permalink to this heading">#</a></h3>
+<h4>Topic 42<a class="headerlink" href="#topic-42" title="Permalink to this heading">#</a></h4>
 <p><strong>039c_poor_mallory_10.txt-2 - Mallory, Chapter 10 (84.96%)</strong> “Let’s play with Myrtle the turtle and Noodle the poodle,” said David Michael. “Nah. We already did that today,” Linny told him. “Dolls!” Karen suggested to Hannie. “Nah,” said Hannie. “Invaders from the planet Neptune?” Linny suggested to David Michael. “Nah,” said David Michael. “Hey!” cried Karen. “I know something we’ve never played, and we can all play it together. Even Sari. Even you, Kristy.”</p>
 <p><strong>009c_the_ghost_at_dawns_house_7.txt-11 - Dawn, Chapter 7 (78.85%)</strong> “Except for the storm,” said Andrew. “And the fire crackling,” added David Michael. “And just think,” said Karen. “This was happening right here in our house … in that room on the third floor.” (Ben Brewer is Andrew and Karen’s great-grandfather.) “The room we never go in,” whispered Andrew. At that moment, Boo-Boo, the Brewers’ fat cat, waddled in. Karen pointed to him. “Boo-Boo knows about that room, Kristy. He knows it’s haunted.”</p>
 <p><strong>062c_kristy_and_the_worst_kid_ever_3.txt-19 - Kristy, Chapter 3 (74.19%)</strong> “He’s coming. He’s coming!” “Who?” said David Michael. “The foster kid. This afternoon!” “You’re getting a brother?” asked David Michael. That stopped Linny, but only for a moment. “We’re not sure yet. But I bet we are. The people called today and said it would be this afternoon.” “That’s great news, Linny,” I said. “Can we come over?” asked David Michael.</p>
 <p><strong>062c_kristy_and_the_worst_kid_ever_9.txt-13 - Kristy, Chapter 9 (71.32%)</strong> “You are going to meet a tall, dark stranger?” “I’m not …” “You might,” said Karen. “I’m going on a treasure hunt,” I told her. “Can I come, too?” “Me too, me too,” cried David Michael. “And me,” said Andrew. “Me,” echoed Emily Michelle. “In the attic,” I said. “Right after breakfast. For stuff for the auction.” (I’d already told everyone about the auction.)</p>
 </section>
 <section id="topic-43">
-<h3>Topic 43<a class="headerlink" href="#topic-43" title="Permalink to this heading">#</a></h3>
+<h4>Topic 43<a class="headerlink" href="#topic-43" title="Permalink to this heading">#</a></h4>
 <p><strong>045c_kristy_and_the_baby_parade_1.txt-3 - Kristy, Chapter 1 (94.51%)</strong> And then, not too long ago, my mom met this really terrific guy named Watson Brewer. They fell in love and got married — so now Watson’s my stepfather. After the wedding, we moved across town to live in his mansion. Watson is a real, true millionaire. Can you believe it? But you’d never know it by the way he acts — he’s not stuck up or anything. He’s just a regular guy. And he’s a great father to his two kids from his first marriage — Karen (she’s seven) and Andrew (he’s almost five). They live with us every other weekend and for a couple of weeks during the summer. They’re terrific kids.</p>
 <p><strong>m11c_claudia_and_the_mystery_at_the_museum_2.txt-4 - Claudia, Chapter 2 (94.24%)</strong> But Kristy’s family has changed — and grown — a lot in the last year or so. It all started when Kristy’s mom fell in love with a man named Watson Brewer, who happens to be mega-rich. When they got married, Kristy and her brothers moved across town to live in Watson’s mansion. (They used to live across the street from me.) Watson has two children from his first marriage, Karen and Andrew, who live with him part-time. And soon after their marriage, Watson and Kristy’s mom decided to adopt a baby, so Emily Michelle came to live with them, too. She’s an incredibly cute two-and-a-half-year-old Vietnamese girl. Soon after she arrived, Kristy’s grandmother (everybody calls her Nannie) moved in to help out with everything. Full house, right? And that’s not even counting the pets — Shannon, Boo-Boo the cat, and the goldfish.</p>
 <p><strong>119c_staceys_ex_boyfriend_2.txt-9 - Stacey, Chapter 2 (93.35%)</strong> She’s also very down-to-earth. You’d never guess she lives in a mansion and that her stepfather is a millionaire. It’s true, though. Kristy’s birth father walked out on the family not long after Kristy’s younger brother, David Michael, was born. He just up and left Kristy’s mom to support four kids on her own. (Kristy also has two older brothers, Sam and Charlie.) It was really tough for them for a while, but Kristy’s mom was tough too. She supported all of them on her own. Then she met and married Watson.</p>
@@ -1376,6 +1387,7 @@ document.write(`
 <hr class="docutils" />
 <p>Does it make sense what might be distinctive here? Again, it might take more sleuthing to be sure, but it looks like our classic “introduce Kristy’s blended family” introduction now has topic 43 all to itself, whether it’s Kristy narrating or someone else. In contrast, the other two topics both center dialogue, but where topic 16 seems to highlight a few specific Kristy-perspective conversations, topic 42 seems to highlight conversations with Kristy’s siblings.</p>
 <p>I think it’s fair to say that if we wanted to analyze Kristy’s narrative, this would be cool to dig into more; for other questions that are more cross-babysitter, however, this level of splitting might be frustrating. One approach to this is just to use fewer topics; another is to train with more topics than you need and then to manually combine the ones you think should be treated the same for your question of interest. Because topics are just proportions and probabilities, if we want to combine two topics, we can literally just add them together, which makes it pretty easy to analyze. However, I usually prefer to just train a few models at the outside - 10, 20, 50, 100 topics, say - to see which one feels right for the questions I have, and to work from there. It might seem excessive, but why limit myself? Changing my mind is usually as easy as changing one number at the top of a file, just like here.</p>
+</section>
 </section>
 </section>
 <section id="id2">
@@ -1481,15 +1493,17 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#but-what-are-they-saying">But what are they saying?</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-3">Topic 3</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-18">Topic 18</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-5">Topic 5</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-17">Topic 17</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-5">Topic 5</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-17">Topic 17</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-making-of-chapter-2">The making of Chapter 2</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#once-more-with-50-topics">Once more, with 50 topics</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-16">Topic 16</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-42">Topic 42</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-43">Topic 43</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#once-more-with-50-topics">Once more, with 50 topics</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-16">Topic 16</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-42">Topic 42</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-43">Topic 43</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Quinn</a><ul class="nav section-nav flex-column">
