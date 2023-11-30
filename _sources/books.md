@@ -32,9 +32,9 @@ Feeling lost? Check out our **[index](genindex)** of book topics, tools, mistake
 | :--------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
 |                                      [DSC #16](dsc16.md)                                       |                                      [DSC #17](dsc17.md)                                      |                                    [DSC #18](dsc18.md)                                    |
 
-| [![DSC #19: Shelley and the Bad Corpus](_static/images/bookcovers/dsc19_cover.jpg)](dsc19.md) | ![DSC #20: Xanda Rescues the Topic Modeling Disaster](_static/images/bookcovers/dsc20_cover.jpg) | ![Coming soon!](_static/images/bookcovers/blankcover.png) |
-| :-------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------: |
-|                                      [DSC #20](dsc20.md)                                      |                                       [DSC #19](dsc19.md)                                        |                                                           |
+| [![DSC #19: Shelley and the Bad Corpus](_static/images/bookcovers/dsc19_cover.jpg)](dsc19.md) | [![DSC #20: Xanda Rescues the Topic Modeling Disaster](_static/images/bookcovers/dsc20_cover.jpg)](dsc20.ipynb) | ![Coming soon!](_static/images/bookcovers/blankcover.png) |
+| :-------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------: |
+|                                      [DSC #20](dsc20.md)                                      |                                               [DSC #19](dsc19.md)                                               |                                                           |
 
 <a name="mystery" />
 
@@ -46,4 +46,4 @@ Feeling lost? Check out our **[index](genindex)** of book topics, tools, mistake
 
 | [![DSC Multilingual Mystery #4: Isabelle and the Missing Spaghetti O's](_static/images/bookcovers/dscm4_cover.jpg) ](dscm4.md) | ![DSC Multilingual Mystery #5: Lee & Quinn and the Mystery in the French NLP Model](_static/images/bookcovers/dscm5_cover.jpg) | ![Coming soon!](_static/images/bookcovers/blankcover.png) |
 | :----------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------: |
-|                                                      [DSCM #4](dscm4.md)                                                       |                                                      [DSCM #5](dscm5.md)                                                       |                           []()                            |
+|                                                      [DSCM #4](dscm4.md)                                                       |                                                      [DSCM #5](dscm5.md)                                                       |                                                           |
