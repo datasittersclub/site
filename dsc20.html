@@ -162,7 +162,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="index.html">
-                    <no title>
+                    The Data-Sitters Club
                 </a>
             </li>
         </ul>
@@ -378,7 +378,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-processing">Data processing</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Xanda</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Xanda</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#topics-at-last">Topics at last!</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-topic-keywords">Understanding topic keywords</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparing-some-high-level-trends">Comparing some high-level trends</a><ul class="nav section-nav flex-column">
@@ -402,11 +402,12 @@ document.write(`
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Quinn</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Quinn</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#where-s-the-walking-disaster">Where’s the walking disaster?</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-modeling-ftw">Topic modeling ftw!</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#go-try-topic-modeling">Go try topic modeling!</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suggested-citation">Suggested citation</a></li>
 </ul>
             </nav>
         </div>
@@ -420,25 +421,25 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="dsc-20-xanda-rescues-the-topic-model-disaster">
 <h1>DSC #20: Xanda Rescues the Topic Model Disaster<a class="headerlink" href="#dsc-20-xanda-rescues-the-topic-model-disaster" title="Permalink to this heading">#</a></h1>
-<p>by Sathvika Anand, Quinn Dombrowski, and Xanda Schofield</p>
-<p>November 30, 2023</p>
-<div style='float: right; width: 200px;margin-left: 7px;margin-top: 0px;'>
+<div style='float: right; width: 300px;margin-left: 7px;margin-top: 0px;'>
 <img src='_static/images/bookcovers/dsc20_cover.jpg' alt='DSC 19 book cover' />
-</div><section id="quinn">
-<h2>Quinn<a class="headerlink" href="#quinn" title="Permalink to this heading">#</a></h2>
-<p>In the beginning, there was topic modeling.</p>
+</div><p>by Sathvika Anand, Quinn Dombrowski, and Xanda Schofield</p>
+<p>November 30, 2023</p>
+<section id="quinn">
+<span id="index-0"></span><h2>Quinn<a class="headerlink" href="#quinn" title="Permalink to this heading">#</a></h2>
+<p id="index-1">In the beginning, there was topic modeling.</p>
 <p>No, really.</p>
-<p>When I was <a class="reference external" href="https://datasittersclub.github.io/site/dsc1.html">in Las Vegas, having a few drinks</a>, playing with the beginnings of what would become the Data-Sitters Club, one of the very first things I tried was topic modeling. At least for DH people of my generation, topic modeling is the kind of thing that you look towards as one of the first analytic steps for a corpus  (whether or not you really understand what’s going on with it, let’s be honest). And, I gotta say, I was underwhelmed with what I got as a first topic model using some fairly-standard default settings. [^1]: Yes, I’d read “<a class="reference external" href="https://www.matthewjockers.net/macroanalysisbook/lda/">The LDA Buffet</a>” by Matt Jockers – who came up in <a class="reference external" href="https://datasittersclub.github.io/site/dsc11.html">DSC 11: Katia and the Sentiment Snobs</a>. It’s apt for Las Vegas given the prevalence of buffets, but honestly, it left me more hungry than satisfied with my understanding of topic modeling.</p>
+<p>When I was <a class="reference external" href="https://datasittersclub.github.io/site/dsc1.html">in Las Vegas, having a few drinks</a>, playing with the beginnings of what would become the Data-Sitters Club, one of the very first things I tried was topic modeling. At least for DH people of my generation, topic modeling is the kind of thing that you look towards as one of the first analytic steps for a corpus  (whether or not you really understand what’s going on with it, let’s be honest). And, I gotta say, I was underwhelmed with what I got as a first topic model using some fairly-standard default settings<a class="footnote-reference brackets" href="#id4" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
 <p>The Data-Sitters Club has written 19 books since then – 24 books if you count the Multilingual Mysteries – and we haven’t touched topic modeling. But it’s time we change that. Some early social media posts about this book left me thinking that I wasn’t alone in feeling a little insecure of my understanding about what topic models are and what they do, and how you can work with them to make them as helpful as possible.</p>
-<p>Luckily, I knew an expert. Xanda Schofield has straight blue hair except for her dark brown roots, with blue glasses frames to match her blue eyes. She’s a professor of computer science at Harvey Mudd College, where she focuses her research on how to make computational text analysis processes actually work for questions in the humanities and social sciences. Since Harvey Mudd is a little outside of Los Angeles, she’s almost always wearing sandals, even when she’s wearing her preferred work clothes of fancy slacks or floral dresses. She likes video games, Dungeons and Dragons, and baking cookies, and is obsessive about completing the New York Times crossword every day (and has done so for about 1000 days straight now). It turns out she was a DSC fangirl even before we started swapping some messages on Twitter (RIP) about art, text analysis, and beyond. More than anything, Xanda loves talking to people who know a lot about a collection of text, whether it’s boring financial reports, social media posts, or a collection of novels about the life and times of a babysitting club in Stoneybrook, Connecticut. Also, her PhD advisor was David Mimno – the very same David Mimno who maintains Mallet, the most widely-known topic modeling tool, which has also been implemented in other tools like Voyant.</p>
-<p>Xanda was also able to recruit a Harvey Mudd student to help with the quest to revisit topic models. Sathvika Anand has thick, curly maroon hair, and dark brown eyes sometimes behind round glasses when she doesn’t feel like putting her contacts in. She’s a senior at Harvey Mudd College majoring in Computer Science, but her linguistics concentration sparked an interest in the field of natural language processing. Though she might have been a tad too young to delve into the original The Baby-Sitters Club books, Sathvika’s appetite for reading was insatiable throughout the mid 2000s. In her free time, she really enjoys scaling walls at rock climbing gyms, cooking, and playing the guitar, even if it means relearning songs she once mastered years ago.</p>
+<p id="index-2">Luckily, I knew an expert. Xanda Schofield has straight blue hair except for her dark brown roots, with blue glasses frames to match her blue eyes. She’s a professor of computer science at Harvey Mudd College, where she focuses her research on how to make computational text analysis processes actually work for questions in the humanities and social sciences. Since Harvey Mudd is a little outside of Los Angeles, she’s almost always wearing sandals, even when she’s wearing her preferred work clothes of fancy slacks or floral dresses. She likes video games, Dungeons and Dragons, and baking cookies, and is obsessive about completing the New York Times crossword every day (and has done so for about 1000 days straight now). It turns out she was a DSC fangirl even before we started swapping some messages on Twitter (RIP) about art, text analysis, and beyond. More than anything, Xanda loves talking to people who know a lot about a collection of text, whether it’s boring financial reports, social media posts, or a collection of novels about the life and times of a babysitting club in Stoneybrook, Connecticut. Also, her PhD advisor was David Mimno – the very same David Mimno who maintains Mallet, the most widely-known topic modeling tool, which has also been implemented in other tools like Voyant.</p>
+<p id="index-3">Xanda was also able to recruit a Harvey Mudd student to help with the quest to revisit topic models. Sathvika Anand has thick, curly maroon hair, and dark brown eyes sometimes behind round glasses when she doesn’t feel like putting her contacts in. She’s a senior at Harvey Mudd College majoring in Computer Science, but her linguistics concentration sparked an interest in the field of natural language processing. Though she might have been a tad too young to delve into the original The Baby-Sitters Club books, Sathvika’s appetite for reading was insatiable throughout the mid 2000s. In her free time, she really enjoys scaling walls at rock climbing gyms, cooking, and playing the guitar, even if it means relearning songs she once mastered years ago.</p>
 <p>With their help, I was going to finally get to the bottom of topic modeling.</p>
 </section>
 <section id="xanda">
 <h2>Xanda<a class="headerlink" href="#xanda" title="Permalink to this heading">#</a></h2>
 <section id="how-does-topic-modeling-work">
 <h3>How does topic modeling work?<a class="headerlink" href="#how-does-topic-modeling-work" title="Permalink to this heading">#</a></h3>
-<p>In the very first chapter of BSC #1, Kristy’s Great Idea, Kristy discovers a new word:</p>
+<p id="index-4">In the very first chapter of BSC #1, Kristy’s Great Idea, Kristy discovers a new word:</p>
 <blockquote>
 <div><p>“Mr. Redmont,” I said, “I’m really sorry. I didn’t mean anything. I mean, I didn’t mean I was glad school was over. I meant I was glad I could go home. Because my house is air-conditioned….”</p>
 <p>Mr. Redmont nodded. “But do you think, Kristy, that it would be possible, in the future, for you to conduct yourself with a bit more decorum?”</p>
@@ -451,10 +452,10 @@ document.write(`
 </div></blockquote>
 <p>As readers, sometimes we acquire the meanings of words by looking things up, but as the types of things we read get more complicated and situationally specific, the more impractical it gets to look up every word we don’t know. Instead, we often operate on context clues based on what words show up together. Once we know what “etiquette” means, when we see it in the vicinity of “decorum”, it gives us a better sense that they might be related. This lands us in situations where we sort of know a word is about (“It’s about being polite”) but might not be able to offer a specific definition.</p>
 <p>What does this have to do with topic models? Topic models are supposed to help us find groups of words that show up together in text, hopefully in a way that matches our intuition as human beings about which words are about the same topics. However, humans like Kristy and you and I are good at using a lot of context at once, including things in the real world we notice, to figure out for one instance of one word what it might mean using these “context clues”. When computers read in text, we can’t tell them to pay attention to everything; our topic modeling software doesn’t get to see people’s facial reactions or to spend enough years going to school to learn that being asked to stay after class sometimes implies being in trouble. All the model gets to do is count things, and figure out which things show up together.</p>
-<p>What topic models lack in social context, they make up for in how much they can look at. Rather than trying to figure out that words are related to each other based on specifically analyzing one little passage, they try to look for those words everywhere in the text collection at once: what are all the different words that show up with this word? What’s showing up with those words? Taking all these counts of which things show up together (what we call co-occurrence information) can tell us that propriety, etiquette, conduct, behavior, and decorum are all words that show up in the same sorts of places, and we can look at that word list together to figure out they have some context in common.</p>
-<p>That’s a nice intuition…but what does a topic model actually do? Rather than a topic being literally just a list of words, a computational topic is going to be a distribution over words, an assignment of whatever vocabulary words we have in our dictionary to different non-zero probabilities that should all together account for a nice 100%. Maybe I have a topic that’s about behavior - that might have a much higher probability of the word decorum than of the words platypus or dubstep, with words about specific behaviors like dancing or yelling somewhere in between. However, every word is going to have at least a tiny probability of showing up in that topic. Sometimes, this means a word will have a high probability in multiple topics – maybe dancing features in another topic about music as well! That’s not a problem for our model.</p>
+<p id="index-5">What topic models lack in social context, they make up for in how much they can look at. Rather than trying to figure out that words are related to each other based on specifically analyzing one little passage, they try to look for those words everywhere in the text collection at once: what are all the different words that show up with this word? What’s showing up with those words? Taking all these counts of which things show up together (what we call co-occurrence information) can tell us that propriety, etiquette, conduct, behavior, and decorum are all words that show up in the same sorts of places, and we can look at that word list together to figure out they have some context in common.</p>
+<p id="index-6">That’s a nice intuition…but what does a topic model actually do? Rather than a topic being literally just a list of words, a computational topic is going to be a distribution over words, an assignment of whatever vocabulary words we have in our dictionary to different non-zero probabilities that should all together account for a nice 100%. Maybe I have a topic that’s about behavior - that might have a much higher probability of the word decorum than of the words platypus or dubstep, with words about specific behaviors like dancing or yelling somewhere in between. However, every word is going to have at least a tiny probability of showing up in that topic. Sometimes, this means a word will have a high probability in multiple topics – maybe dancing features in another topic about music as well! That’s not a problem for our model.</p>
 <p>Now, if you’ve seen topics listed for a topic model before, you’ve probably seen lists of words. This can make it very confusing to understand what’s going on – that’s not a probability distribution! However, actually looking at a probability distribution across however many words are in your vocabulary (think maybe tens or even hundred of thousands of words) is a super overwhelming thing to do. When people are first browsing through topics, they usually want something easier to read, so they’ll just sort the words in a topic by their probability and grab the top most-probable words. By default, this will often be the top 10 words. I actually usually find that to be way too few; I usually grab the top 50 or so, which is still a drop in the 10,000+ word bucket.</p>
-<p>So we’ve covered what a topic is – and a topic model is just a group of topics. However, it’s not just any group: topic models are supposed to be specific to a text collection. If I train a 50-topic model on BSC books, then my model is aiming to find 50 different probability distributions over words that together are good at describing all the words in the BSC books. Better still, it’s going to make the assumption that particular passages of text should not be spread across too many topics. This isn’t to say that each text we consider has to have only one topic. For instance, the text we looked at from <em>BSC 1: Kristy’s Great Idea</em> isn’t just about one thing, it’s about school, about Kristy, about behavior, about weather, etc. But it’s also not about a bunch of things – it’s not about Claudia, baseball, clothes, boys, siblings, or many other themes from the BSC books. Our model allows text to have more than one topic present, but it’s going to be happier with passages of text belonging mostly to a small number of topics. Just like our topics being built around assigning words different probabilities, our documents are going to give topics different probabilities: maybe Chapter 1 of BSC #1 is giving high probabilities to stuff about Kristy and school and lower probabilities to a bunch of other things.</p>
+<p id="index-7">So we’ve covered what a topic is – and a topic model is just a group of topics. However, it’s not just any group: topic models are supposed to be specific to a text collection. If I train a 50-topic model on BSC books, then my model is aiming to find 50 different probability distributions over words that together are good at describing all the words in the BSC books. Better still, it’s going to make the assumption that particular passages of text should not be spread across too many topics. This isn’t to say that each text we consider has to have only one topic. For instance, the text we looked at from <em>BSC 1: Kristy’s Great Idea</em> isn’t just about one thing, it’s about school, about Kristy, about behavior, about weather, etc. But it’s also not about a bunch of things – it’s not about Claudia, baseball, clothes, boys, siblings, or many other themes from the BSC books. Our model allows text to have more than one topic present, but it’s going to be happier with passages of text belonging mostly to a small number of topics. Just like our topics being built around assigning words different probabilities, our documents are going to give topics different probabilities: maybe Chapter 1 of BSC #1 is giving high probabilities to stuff about Kristy and school and lower probabilities to a bunch of other things.</p>
 <div style='float: center; width: 600px;'>
 <img src='_static/images/dsc20_topic_model_view.png' alt='The information we get out of a topic model is effectively two tables based on the original table of which words show up in which documents. The two tables are the proportions of topics in our documents and the topics themselves (which are given as probabilities of words). Illustration shows the original table or *matrix* (words in documents) is approximately equal to the the table of topic proportions in documents times the table of word proportions in topics.' />
 </div>
@@ -462,16 +463,16 @@ document.write(`
 <div style='float: center; width: 600px;'>
 <img src='_static/images/dsc20_topic_model_example.png' alt='Illustration of tables: when making sense of this model, we can imagine looking into the table for a paragraph in Kristy and the Walking Disaster - if we see a lot of Topic 2 in that paragraph, and Topic 2 has a high probability of softball words like "pitch", "softball", and "base", then we might be able to guess the paragraph talks about softball.' />
 </div>
-<div class="admonition-quinn-says admonition">
+<div class="admonition-quinn-says admonition" id="index-8">
 <p class="admonition-title">Quinn says</p>
 <p><em>This</em> was where things had gone wrong with topic modeling in Vegas! I was trying to topic model entire books – which, yes, are each <em>about something</em>, but they’ve also got lots of other things in them. No wonder I wasn’t getting sensible topics, if the poor algorithm was trying to cohere distinctive “topics” on the level of each book, when at the book level these texts contain a lot of the same things, and a small amount of distinct things mixed in!</p></p>
 <p>Even though I hadn't made the newbie mistake of trying to topic model one single text and wondering why it didn't work, trying to topic model 200-some novels as individual documents was almost as ineffective. If you want to get meaningful topic modeling results, you need to <em>chunk your texts</em> into pieces that are more likely to be about one thing. And I hadn't realized that. The topic modeling jargon had tripped me up the references to "documents": a book seems reasonable enough as a document, right? But it turns out that I was on the wrong track with my understanding of what a document is for topic modeling, and the choices you make around splitting your text into "documents" are really important.</p>
 </div>
 </section>
 <section id="what-s-a-document">
-<h3>What’s a “document”?<a class="headerlink" href="#what-s-a-document" title="Permalink to this heading">#</a></h3>
+<span id="index-9"></span><h3>What’s a “document”?<a class="headerlink" href="#what-s-a-document" title="Permalink to this heading">#</a></h3>
 <p>Getting back to the higher-level idea behind topic models: the key thing they’re relying on is this naive version of context clues, just “which words show up together”. For classic topic models, the definition of “together” we’re using is “in the same document” - the fact that the words “nail” and “polish” show up right next to each other in a piece of text doesn’t mean any more than the word “nail” showing up 200 words after the word “decorum”, as long as we define it as the same document. This means that one of the most important things to do when using topic models is to make sure that the text being passed in isn’t using too much text as one single context. If we can help it, we like to break things explicitly in ways that will keep common themes together.</p>
-<p>We could think about breaking down our books into different size units for our documents:</p>
+<p id="index-10">We could think about breaking down our books into different size units for our documents:</p>
 <ul class="simple">
 <li><p>If we break things down into sentences, we’re going to get very little context in each sentence, so it might not do super well. This is generally a bad idea for standard topic models.</p></li>
 <li><p>If we break things into paragraphs, we’ll have kept things that appeared within a pretty close window, so it’s unlikely we’ll include anything super unrelated (especially if our writer is good at keeping paragraph unified). Paragraphs can change length a lot, though, so we may need to grab multiple, or we may prefer to get something paragraph-length-ish instead. This works well as long as it’s easy to separate paragraphs and most are on the order of 100 words long.</p></li>
@@ -479,8 +480,8 @@ document.write(`
 <li><p>If we break things into chapters, we may have an easier time getting a lot of text, but the length is going to be enough that it’s possible the topic may wander. This works great for text with short chapters (or with collections of articles where there’s really one story per chapter/article/item).</p></li>
 <li><p>If we just separate the whole books, we’re treating everything in one book as being equally related to each other. For things on the order of novel-length books, this is usually going to go really poorly – even for the fairly short BSC chapter books, this would mean that things that happen in every book could never have their own topic (like the regular BSC meetings).</p></li>
 </ul>
-<p>Usually, when people come to me saying that a topic model wasn’t working for them, the first issue is whether the text has been split right. The second is whether they’re using something reasonable to learn the model – there are different topic modeling implementations out there, and they’re not all equivalent. Unluckily, the highest profile one in Python, <a class="reference external" href="https://radimrehurek.com/gensim/models/ldamodel.html">the LDA implementation in Gensim</a>, is actually doing some stuff designed to work fast for extremely large datasets – but the choices and approximations that make that possible also make it kind of sloppy on more regular-sized datasets like the BSC. Unless you’ve got millions of paragraphs of text, you probably should be using something like the <a class="reference external" href="https://mimno.github.io/Mallet/topics.html">command line tool Mallet</a>, R’s <a class="reference external" href="https://www.tidytextmining.com/topicmodeling.html">topicmodels package</a>, or the more recent Python <a class="reference external" href="https://bab2min.github.io/tomotopy/v/en/">tomotopy package</a>.</p>
-<p>I ended up writing a short script to split my text up and match up information between babysitter narrators, chapters, and text. The function that’s probably the most reusable here is <code class="docutils literal notranslate"><span class="pre">split_text_into_paragraph_chunks</span></code>, which looks for places where a new paragraph starts (that is, where someone left a blank line between lines of text) to split text up, combining together shorter paragraphs into single passages until they exceed 100 words together.</p>
+<span class="target" id="index-11"></span><p id="index-12">Usually, when people come to me saying that a topic model wasn’t working for them, the first issue is whether the text has been split right. The second is whether they’re using something reasonable to learn the model – there are different topic modeling implementations out there, and they’re not all equivalent. Unluckily, the highest profile one in Python, <a class="reference external" href="https://radimrehurek.com/gensim/models/ldamodel.html">the LDA implementation in Gensim</a>, is actually doing some stuff designed to work fast for extremely large datasets – but the choices and approximations that make that possible also make it kind of sloppy on more regular-sized datasets like the BSC. Unless you’ve got millions of paragraphs of text, you probably should be using something like the <a class="reference external" href="https://mimno.github.io/Mallet/topics.html">command line tool Mallet</a>, R’s <a class="reference external" href="https://www.tidytextmining.com/topicmodeling.html">topicmodels package</a>, or the more recent Python <a class="reference external" href="https://bab2min.github.io/tomotopy/v/en/">tomotopy package</a>.</p>
+<p id="index-13">I ended up writing a short script to split my text up and match up information between babysitter narrators, chapters, and text. The function that’s probably the most reusable here is <code class="docutils literal notranslate"><span class="pre">split_text_into_paragraph_chunks</span></code>, which looks for places where a new paragraph starts (that is, where someone left a blank line between lines of text) to split text up, combining together shorter paragraphs into single passages until they exceed 100 words together.</p>
 <div class="cell tag_skip-execution docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
@@ -560,7 +561,7 @@ document.write(`
 </div>
 </div>
 </div>
-<p>One thing I notably don’t usually recommend is messing too much with other kinds of text processing. It can be really tempting when looking through topic models to say “I don’t like that this word list contains both the singular and plural of the same word” or “The word ‘year’ shows up too often and bores me, let me delete that word and retrain the whole model”. Remember that when you’re looking at lists of just the top words, things that are probably good signs for the model (like treating the singular and plural of a word the same way) can look bad. It’s all about context – instead of overreacting to those top words, it’s really important to spend time with the documents that have high proportions of that topic to see if those documents have content, style, etc. in common in a way that’s reflected by those top words.</p>
+<p id="index-14">One thing I notably don’t usually recommend is messing too much with other kinds of text processing. It can be really tempting when looking through topic models to say “I don’t like that this word list contains both the singular and plural of the same word” or “The word ‘year’ shows up too often and bores me, let me delete that word and retrain the whole model”. Remember that when you’re looking at lists of just the top words, things that are probably good signs for the model (like treating the singular and plural of a word the same way) can look bad. It’s all about context – instead of overreacting to those top words, it’s really important to spend time with the documents that have high proportions of that topic to see if those documents have content, style, etc. in common in a way that’s reflected by those top words.</p>
 </section>
 </section>
 <section id="sathvika">
@@ -568,7 +569,7 @@ document.write(`
 <section id="data-processing">
 <h3>Data processing<a class="headerlink" href="#data-processing" title="Permalink to this heading">#</a></h3>
 <p>I’m Sathvika, and here’s my journey dealing with topic models this semester.</p>
-<p>After learning a little about what topic models even are, I worked on getting Mallet up and running and got a preliminary set of data to understand what the software was even doing. Mallet is a package that includes lots of tools for various natural language processing tasks, including topic models. I used <a class="reference external" href="https://docs.google.com/presentation/d/1MUWtqjlEZ6gNfSdHZ_HdIvwjFkFY6psiq02lSPPurtM/edit?usp=sharing">this guide</a> for topic modeling to learn how to set everything up!</p>
+<p id="index-15">After learning a little about what topic models even are, I worked on getting Mallet up and running and got a preliminary set of data to understand what the software was even doing. Mallet is a package that includes lots of tools for various natural language processing tasks, including topic models. I used <a class="reference external" href="https://docs.google.com/presentation/d/1MUWtqjlEZ6gNfSdHZ_HdIvwjFkFY6psiq02lSPPurtM/edit?usp=sharing">this guide</a> for topic modeling to learn how to set everything up!</p>
 <div class="admonition-quinn-says admonition">
 <p class="admonition-title">Quinn says</p>
 <p>Mallet is software you run from the command line, but setting it up isn’t as scary as that might make it sound. It might have been one of the first command-line tools I ever ran, a few decades ago. <a class="reference external" href="https://docs.google.com/presentation/d/1MUWtqjlEZ6gNfSdHZ_HdIvwjFkFY6psiq02lSPPurtM/edit?usp=sharing">Xanda’s guide</a> is a great one for how to get it set up the first time.</p>
@@ -579,20 +580,24 @@ document.write(`
 <p><code class="docutils literal notranslate"><span class="pre">$&gt;</span> <span class="pre">~/Mallet/bin/mallet</span> <span class="pre">train-topics</span> <span class="pre">--input</span> <span class="pre">dsc_chunks.seq</span> <span class="pre">--num-topics</span> <span class="pre">10</span> <span class="pre">--optimize-interval</span> <span class="pre">10</span> <span class="pre">--num-iterations</span> <span class="pre">1000</span> <span class="pre">--output-state</span> <span class="pre">dsc1.txt.gz</span> <span class="pre">--evaluator-filename</span> <span class="pre">dsc1.evaluator</span> <span class="pre">--output-topic-keys</span> <span class="pre">dsc1.keys</span> <span class="pre">--num-top-words</span> <span class="pre">50</span> <span class="pre">--diagnostics-file</span> <span class="pre">dsc1_diag.xml</span> <span class="pre">--topic-word-weights-file</span> <span class="pre">dsc.wordweights.txt</span> <span class="pre">--output-doc-topics</span> <span class="pre">dsc.doctopics.txt</span></code></p>
 <p>To make 20- or 50-topic models, I just change –num-topics to 20 or 50…all the other arguments stay the same!</p>
 <p>The code generated a bunch of files from different parts of the representation of the topic mode. The easiest to look at was the list of top words: if I generated 20 topics, this would be a list numbered from 0 to 19, with each line showing a list of the highest probability words associated with that number of topic. In general, I think of these topics as essentially groupings of words that appear in context with each other in the dataset.</p>
-<div class="admonition-quinn-says admonition">
+<div class="admonition-quinn-says admonition" id="index-16">
 <p class="admonition-title">Quinn says</p>
-<p>So what does the output of a topic model look like? Like Sathvika says, it’s a bunch of files. Here’s how that breaks down based on the command you run:</p>
+<p>So what does the output of a topic model look like? Like Sathvika says, it’s a bunch of files – and not even files with recognizable file names where it’s immediately obvious what they are! Here’s what I learned from Xanda about what’s what in the output of a topic model:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">output-state</span></code>: dsc1.txt.gz - this is a compressed (like a zip file, but different compression) file with every single word in the corpus and what topic it was assigned to. It can get very large!</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">evaluator-filename</span></code>: dsc1.evaluator - ???</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">output-topic-keys</span></code>: dsc1.keys` - <strong>this</strong> is where you should look first; it’s the most legible of the output files. Your computer probably won’t know how to open a file with a .keys extension, but it’s just a text file, so any text editor will do. It has a number for each topic, then the top words that appear in that topic. As this book goes on, you’ll see a lot of tables with a number then a bunch of words, representing a topic: those are pulled straight from the .keys file.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">diagnostics-file</span></code>: dsc1_diag.xml - ???</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">topic-word-weights-file</span></code>: dsc.wordweights.txt - ???</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">output-doc-topics</span></code>: dsc.doctopics.txt - This shows the topic proportions for each document, by listing each document then giving you a tab-separated list with as many entries as you have topics, showing what % of the document maps to each of those topics. It’s not very easy to read on its own, but you can use it (like Xanda does below) for visualizations and things.</p></li>
+<li><p><strong>output-state: dsc1.txt.gz</strong> - this is a compressed (like a zip file, but different compression) file. Every single instance of a word in the corpus has its own line which lists (among other things) what topic that instance of a word was assigned to. It can get very large!</p></li>
+<li><p><strong>evaluator-filename: dsc1.evaluator</strong> - this is a little chunk of Java-object-stuff that allows someone to check whether a topic model matches some documents that weren’t used to train the topic model (a.k.a. “held out data”). This can be a nice way to make the case that a model generalizes: if it works well at representing not just on text it saw, but also similar text it didn’t see, then it’s probably capturing something about that kind of text rather than just the documents it had access to. Mallet has special commands built in to use this thing to “evaluate” how well the model fits text, but we’re not going to in this tutorial, and if you try to read it like a regular text file, it’ll look super weird.</p></li>
+<li><p><strong>output-topic-keys: dsc1.keys</strong> - this is where you should look first; it’s the most legible of the output files. Your computer probably won’t know how to open a file with a .keys extension, but it’s just a text file, so any text editor will do. It has a number for each topic, then the top words that appear in that topic. As this book goes on, you’ll see a lot of tables with a number then a bunch of words, representing a topic: those are pulled straight from the .keys file.</p></li>
+<li><p><strong>diagnostics-file: dsc1_diag.xml</strong> - this prints out some fun diagnostic information about our topics in a little XML file - it’s like a very annotated version of the keys file! In this case, it specifically includes metrics for topic coherence, a.k.a. how much we think the high-probability words in the same topic seem like they should go together. There are tools like Palmetto that can do fancier versions of this evaluation, and the numbers can be a little odd to make sense of initially, but they can allow you to compare both individual topics and whole models for which are more “coherent” versions of the text in the corpus.</p></li>
+<li><p><strong>topic-word-weights-file: dsc.wordweights.txt</strong> - this is a wacky data file to explain. To set it up, it’s important to think about what questions we ask about words and topics. One question people might care about for topics is (a) assuming we know a word is from topic 2, what’s the probability it’s the specific word softball? Another subtly different question is (b) given we see the word softball, what’s the probability that word was assigned to topic 2?</p></li>
+</ul>
+<p>Why are these different? To figure out (a), we’re interested in counting how many words got assigned to topic 2 and then what proportion of those are <em>softball</em>, then adding in a little bonus math to get our probability of <em>softball</em> in topic 2. In contrast, to figure out (b), we start with just the instances of the word <em>softball</em> across all topics, and then figure out what proportion of those were in topic 2. The numerator ends up being the same, instances of <em>softball</em> in topic 2, but the denominator’s a little different - for (a), it’s all words in topic 2, and for (b), it’s all <em>softball</em> instances regardless of topic. This is made slightly weirder by the fact that we like to have a little probability of every word showing up in every topic: rather than counting the number of times a word shows up, we’re going to add a small number to every single possible combination of topic and word (something little, like 0.01) to keep that option open.</p>
+<p>The wordweights file is basically going to store just these numerators for each topic-word pair. You can load all of these numerators into a numpy matrix or a pandas array, then choose which denominator you care about to <em>normalize</em> these numbers into probabilities: either dividing every entry by the sum of entries of the same topic (a) or the sum of entries of the same word (b). We’re not going to use either in this tutorial. Either way, this gives us a much fuller picture of how probable every single word is in every topic, or every topic in every word, than the keys file gives us; however, for a lot of document exploration, this information isn’t super necessary.</p>
+<ul class="simple">
+<li><p><strong>output-doc-topics: dsc.doctopics.txt</strong> - This shows the topic proportions for each document, by listing each document then giving you a tab-separated list with as many entries as you have topics, showing what % of the document maps to each of those topics. It’s not very easy to read on its own, but you can use it (like Xanda does below) for visualizations and things.</p></li>
 </ul>
 </div>
-<p>In this first iteration, I realized that a lot of preprocessing was going to be necessary in order to get coherent, useful topics. In this set of topics, there were a lot of common English words present, like “was” and “I”, which are expected to be in every topic. These so-called “stop words” (since they’re ignored or “stopped” in tools like search engines) naturally show up in the top words of topic models if they’re not removed from the collection: after all,  these high-probability common words are present in the context of almost every other word in the dataset. Luckily, this is something Mallet can already handle with its <a class="reference external" href="https://github.com/mimno/Mallet/blob/master/stoplists/en.txt">built-in English stoplist</a>, which contains around 500 words to remove by default (though you can also write your own stoplist).</p>
-<p>Additionally, the names of the babysitters themselves (as well as other characters in the books) appeared in large groups as the most common words in the topics. At first, we were hesitant to remove these, since the names were important for the topics in the books and seemed like a good way to connect characters with their associated hobbies, family, and plotlines. However, it became clear the names were appearing in topics associated with other characters. The culprit was dialogue, the real danger in this story!</p>
+<span class="target" id="index-17"></span><p id="index-18">In this first iteration, I realized that a lot of preprocessing was going to be necessary in order to get coherent, useful topics. In this set of topics, there were a lot of common English words present, like “was” and “I”, which are expected to be in every topic. These so-called “stop words” (since they’re ignored or “stopped” in tools like search engines) naturally show up in the top words of topic models if they’re not removed from the collection: after all,  these high-probability common words are present in the context of almost every other word in the dataset. Luckily, this is something Mallet can already handle with its <a class="reference external" href="https://github.com/mimno/Mallet/blob/master/stoplists/en.txt">built-in English stoplist</a>, which contains around 500 words to remove by default (though you can also write your own stoplist).</p>
+<p id="index-19">Additionally, the names of the babysitters themselves (as well as other characters in the books) appeared in large groups as the most common words in the topics. At first, we were hesitant to remove these, since the names were important for the topics in the books and seemed like a good way to connect characters with their associated hobbies, family, and plotlines. However, it became clear the names were appearing in topics associated with other characters. The culprit was dialogue, the real danger in this story!</p>
 <p>The way the Baby-Sitters Club books are written, each book has its own narrator who is also one of the main characters of the other books. Thus, most times a first-person pronoun like “I”, “me” or “myself” appears in the book, the pronoun refers to one of the babysitters. However, in dialogue, this guarantee goes away, as other non-narrating characters might also talk about themselves. The information about who was speaking was being lost in the original topic models, making it difficult to parse which themes were associated with which characters. What we wanted was a way to deal with some of the dialogue confusion and to help pull the narrators back into how our topics were represented.</p>
 <p>To do this, I first used regular expressions to remove dialogue (by detecting matching sets of quotations!). Luckily for us, this isn’t the first time the DSC has pulled quotations out (see, for instance, <a class="reference external" href="https://datasittersclub.github.io/site/dsc15.html">DSC #15</a> about whether the character Ilana from the <em>BY Times</em> series has similar dialogue to BSC’s Dawn). It was important to do this step first, to make sure that the only first person pronouns were coming from our narrator. Before even doing that, though, I did some small substitutions: replacing curly quote characters like <code class="docutils literal notranslate"><span class="pre">“</span></code> or <code class="docutils literal notranslate"><span class="pre">’</span></code> with their straightened counterparts <code class="docutils literal notranslate"><span class="pre">&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">'</span></code>.</p>
 <div class="cell docutils container">
@@ -630,13 +635,13 @@ document.write(`
 </div>
 </div>
 <p>This, coupled with the removal of dialogue, ensured that topics in books were correctly related to the narrator of the book, and not other characters that were mentioned. These preprocessing steps led to some interesting topics!</p>
-<p>However, we then ran into some issues. I was working on the next step of our research plan, which was compiling topic proportions by book, when I realized that the data I was using only had around half of the book titles that were in the original corpus. When did I lose half my data?</p>
+<p id="index-20">However, we then ran into some issues. I was working on the next step of our research plan, which was compiling topic proportions by book, when I realized that the data I was using only had around half of the book titles that were in the original corpus. When did I lose half my data?</p>
 <p>I did some digging around, and it turns out that it was a simple naming issue! When I was editing the data to remove dialogue and change pronouns, I was cross-referencing with a metadata file that listed narrators alongside each book’s file name to make sure I got the correct narrator name for each specific book. However, it turned out some of the file names in the metadata file didn’t match the actual filename exactly (Stacey was spelled as Stacy on multiple occasions - a classic error!).</p>
 <div class="admonition-quinn-says admonition">
 <p class="admonition-title">Quinn says</p>
 <p>These typos were entirely my fault. It’s funny, the DSC is the rare DH text analysis project where we haven’t actually used the metadata sheet since I first put it together, so we never found those mistakes until now.</p>
 </div>
-<p>Prof. Xanda assured me these sorts of problems are typical when working with text data; since a lot of this information is collected and corrected manually from different sources, there’s a lot of room for typos and mismatches even with careful effort. The fastest fix for this was also a manual one: I went through and corrected these errors by adjusting the filenames manually until the filenames all matched the actual files (and the babysitters’ names!), and then we were good to go! After training a number of models as we went, noticing and correcting problems each time, we finally trained 10-, 20-, and 50-topic models with dialogue and stopwords removed, as well as with pronouns appended to the narrator names.</p>
+<p id="index-21">Prof. Xanda assured me these sorts of problems are typical when working with text data; since a lot of this information is collected and corrected manually from different sources, there’s a lot of room for typos and mismatches even with careful effort. The fastest fix for this was also a manual one: I went through and corrected these errors by adjusting the filenames manually until the filenames all matched the actual files (and the babysitters’ names!), and then we were good to go! After training a number of models as we went, noticing and correcting problems each time, we finally trained 10-, 20-, and 50-topic models with dialogue and stopwords removed, as well as with pronouns appended to the narrator names.</p>
 <p>Looking at these resulting topics below, we realized that appending the narrator names told us what topics were associated with certain babysitters, as we can see in the highlighted topics. These topics are just grouping names with the content in their respective chapters. This would be convenient if we just wanted to identify who was narrating each chapter, but this is labeling that we already have.</p>
 <table class="table">
 <thead>
@@ -658,9 +663,9 @@ document.write(`
 <td><p>0.02933</p></td>
 <td><p>mystery house ghost police fire find story we’d heard found man told thought stories wasn’t knew case secret solve he’d didn’t couldn’t clues cat read night thinking hadn’t station scared happened ghosts officer thing detective remembered mysteries telling stoneybrook put clue search started eye cary finally suspicious woman solved disappeared</p></td>
 </tr>
-<tr class="row-odd"><td><p><font color="orange">3</p></td>
-<td><p><font color="orange">0.02561</p></td>
-<td><p><font color="orange">hair i_shannon brown eyes tiffany my_shannon maria she’s blonde short blue long dark girl clothes tall curly wears wear mom pretty alike glasses pale style big thick kind skin dresses boy black red thin jeans mother i’d_shannon cut freckles dress nose gorgeous me_shannon casual makeup shy age pierced father doesn’t</p></td>
+<tr class="row-odd"><td><p><font color="indigo">3</p></td>
+<td><p><font color="indigo">0.02561</p></td>
+<td><p><font color="indigo">hair i_shannon brown eyes tiffany my_shannon maria she’s blonde short blue long dark girl clothes tall curly wears wear mom pretty alike glasses pale style big thick kind skin dresses boy black red thin jeans mother i’d_shannon cut freckles dress nose gorgeous me_shannon casual makeup shy age pierced father doesn’t</p></td>
 </tr>
 <tr class="row-even"><td><p>4</p></td>
 <td><p>0.0125</p></td>
@@ -678,9 +683,9 @@ document.write(`
 <td><p>0.03868</p></td>
 <td><p>school class teacher math day kids sms locker teachers gym english students mrs grade hall classes test homework homeroom kingbridge bell desk middle lunch study morning science office student end stoneybrook period rest called front walked social year books studies work cafeteria sat rang classroom girl back auditorium short principal</p></td>
 </tr>
-<tr class="row-even"><td><p><font color="orange">8</p></td>
-<td><p><font color="orange">0.05379</p></td>
-<td><p><font color="orange">i_maryanne my_maryanne anne logan me_maryanne dawn i’d_maryanne dad sharon i’m_maryanne tigger felt didn’t told thought father replied myself_maryanne knew i’ve_maryanne couldn’t asked wanted friends logan’s dawn’s hadn’t wasn’t realized called i’ll_maryanne feel gave cry thinking boy miss dad’s feeling bed angela sharon’s fire kitten guess sammie reese sort shelley sighed</p></td>
+<tr class="row-even"><td><p><font color="indigo">8</p></td>
+<td><p><font color="indigo">0.05379</p></td>
+<td><p><font color="indigo">i_maryanne my_maryanne anne logan me_maryanne dawn i’d_maryanne dad sharon i’m_maryanne tigger felt didn’t told thought father replied myself_maryanne knew i’ve_maryanne couldn’t asked wanted friends logan’s dawn’s hadn’t wasn’t realized called i’ll_maryanne feel gave cry thinking boy miss dad’s feeling bed angela sharon’s fire kitten guess sammie reese sort shelley sighed</p></td>
 </tr>
 <tr class="row-odd"><td><p>9</p></td>
 <td><p>0.03213</p></td>
@@ -714,13 +719,13 @@ document.write(`
 <td><p>0.16643</p></td>
 <td><p>kristy claudia stacey asked anne jessi dawn mary replied abby mal mallory added claud looked nodded told agreed cried suggested exclaimed shannon laughed began explained answered shrugged pointed spoke grinned continued rest reminded repeated giggled started interrupted admitted sighed laughing laugh idea announced groaned thought finished friends logan insisted turned</p></td>
 </tr>
-<tr class="row-odd"><td><p><font color="orange">17</p></td>
-<td><p><font color="orange">0.06209</p></td>
-<td><p><font color="orange">i_claudia my_claudia me_claudia janine i’d_claudia mimi josh mom peaches asked i’m_claudia ashley stacey dad friends room knew mark art told madden felt parents couldn’t russ myself_claudia thought lynn i’ve_claudia nicholls wasn’t jeannie joey shira started joanna replied painting shea nate janine’s mimi’s jimmy didn’t grandmother left show thinking pictures gave</p></td>
+<tr class="row-odd"><td><p><font color="indigo">17</p></td>
+<td><p><font color="indigo">0.06209</p></td>
+<td><p><font color="indigo">i_claudia my_claudia me_claudia janine i’d_claudia mimi josh mom peaches asked i’m_claudia ashley stacey dad friends room knew mark art told madden felt parents couldn’t russ myself_claudia thought lynn i’ve_claudia nicholls wasn’t jeannie joey shira started joanna replied painting shea nate janine’s mimi’s jimmy didn’t grandmother left show thinking pictures gave</p></td>
 </tr>
-<tr class="row-even"><td><p><font color="orange">18</p></td>
-<td><p><font color="orange">0.03393</p></td>
-<td><p><font color="orange">i_jessi my_jessi becca me_jessi aunt cecelia i’d_jessi daddy mama squirt danielle quint mme asked class noelle mallory ballet i’m_jessi dance wendy told room replied mal katie knew beth myself_jessi hilary madame elise katz frank maritza hadn’t couldn’t dupre dressing felt thought guess derek rehearsal i’ve_jessi sister roberts brailsford greg becca’s</p></td>
+<tr class="row-even"><td><p><font color="indigo">18</p></td>
+<td><p><font color="indigo">0.03393</p></td>
+<td><p><font color="indigo">i_jessi my_jessi becca me_jessi aunt cecelia i’d_jessi daddy mama squirt danielle quint mme asked class noelle mallory ballet i’m_jessi dance wendy told room replied mal katie knew beth myself_jessi hilary madame elise katz frank maritza hadn’t couldn’t dupre dressing felt thought guess derek rehearsal i’ve_jessi sister roberts brailsford greg becca’s</p></td>
 </tr>
 <tr class="row-odd"><td><p>19</p></td>
 <td><p>0.21903</p></td>
@@ -734,9 +739,9 @@ document.write(`
 <td><p>0.03245</p></td>
 <td><p>buddy mrs haley suzi barrett kids matt marnie jake myriah braddock gabbie lindsey dewitt kuhn asked sign norman laurel patsy house signed stacey perkins barretts told pow taylor cried franklin ryan shannon jessi anne girls claudia sarah chewy buddy’s language dawn charlotte braddocks shouted madeleine deaf who’s hill sister arrived</p></td>
 </tr>
-<tr class="row-even"><td><p><font color="orange">22</p></td>
-<td><p><font color="orange">0.03167</p></td>
-<td><p><font color="orange">i_mallory my_mallory me_mallory jessi i’d_mallory mom dad uncle told joe hayes margaret cobb alexis sophie i’m_mallory brothers sisters asked girls felt room sandra family vanessa myself_mallory bed class knew parents thought lauren henry replied walden katie called horse sarah riding justin mother cat smita craine pax henrietta finally didn’t riverbend</p></td>
+<tr class="row-even"><td><p><font color="indigo">22</p></td>
+<td><p><font color="indigo">0.03167</p></td>
+<td><p><font color="indigo">i_mallory my_mallory me_mallory jessi i’d_mallory mom dad uncle told joe hayes margaret cobb alexis sophie i’m_mallory brothers sisters asked girls felt room sandra family vanessa myself_mallory bed class knew parents thought lauren henry replied walden katie called horse sarah riding justin mother cat smita craine pax henrietta finally didn’t riverbend</p></td>
 </tr>
 <tr class="row-odd"><td><p>23</p></td>
 <td><p>0.02224</p></td>
@@ -762,21 +767,21 @@ document.write(`
 <td><p>0.04657</p></td>
 <td><p>house room tree looked big side front small stood wall yard white huge set window place led light walls floor inside green barn walked windows red flowers corner dark building water long back large beautiful pool garden covered trees sat blue people top full wooden chairs area kids tables flower</p></td>
 </tr>
-<tr class="row-odd"><td><p><font color="orange">29</p></td>
-<td><p><font color="orange">0.06696</p></td>
-<td><p><font color="orange">i_stacey my_stacey me_stacey i’d_stacey mom robert dad laine asked friends claudia told i’m_stacey thought felt myself_stacey knew replied sheila didn’t couldn’t tess claud wanted joni i’ve_stacey carrot terry wes mother henry hadn’t dana andi called ethan john grace i’ll_stacey robert’s walked apartment york johanssens ewan gave parents jacqui father barbara</p></td>
+<tr class="row-odd"><td><p><font color="indigo">29</p></td>
+<td><p><font color="indigo">0.06696</p></td>
+<td><p><font color="indigo">i_stacey my_stacey me_stacey i’d_stacey mom robert dad laine asked friends claudia told i’m_stacey thought felt myself_stacey knew replied sheila didn’t couldn’t tess claud wanted joni i’ve_stacey carrot terry wes mother henry hadn’t dana andi called ethan john grace i’ll_stacey robert’s walked apartment york johanssens ewan gave parents jacqui father barbara</p></td>
 </tr>
 <tr class="row-even"><td><p>30</p></td>
 <td><p>0.03181</p></td>
 <td><p>club kristy baby-sitters bsc phone call money idea members meetings stacey kid-kits business dues parents claudia kristy’s sitters kids jobs job president that’s sitter great monday time claudia’s meeting pay times things number make clients baby-sitting it’s calls she’s ideas meet toys member line books room reach treasurer love week</p></td>
 </tr>
-<tr class="row-odd"><td><p><font color="orange">31</p></td>
-<td><p><font color="orange">0.01099</p></td>
-<td><p><font color="orange">i_logan my_logan james mathew johnny hobart ben me_logan king t-jam mark hobarts deb bob boys jed zach guys felt i’d_logan track hunter replied kerry susan badd boyz cooper i’m_logan ice locker practice box called ebon football tickets omar boy sitting older peter johnny’s marcus steve austin coach australian kind remo</p></td>
+<tr class="row-odd"><td><p><font color="indigo">31</p></td>
+<td><p><font color="indigo">0.01099</p></td>
+<td><p><font color="indigo">i_logan my_logan james mathew johnny hobart ben me_logan king t-jam mark hobarts deb bob boys jed zach guys felt i’d_logan track hunter replied kerry susan badd boyz cooper i’m_logan ice locker practice box called ebon football tickets omar boy sitting older peter johnny’s marcus steve austin coach australian kind remo</p></td>
 </tr>
-<tr class="row-even"><td><p><font color="orange">32</p></td>
-<td><p><font color="orange">0.04671</p></td>
-<td><p><font color="orange">i_dawn my_dawn me_dawn jeff mom sunny i’d_dawn richard dad whitney i’m_dawn asked felt california maggie told travis carol jill didn’t stephie beach couldn’t back myself_dawn lewis passage knew clover i’ve_dawn thought daffodil called thinking thrash sunny’s erick jeff’s connecticut friends plane left guess flight dad’s surfers waves cynthia hadn’t mom’s</p></td>
+<tr class="row-even"><td><p><font color="indigo">32</p></td>
+<td><p><font color="indigo">0.04671</p></td>
+<td><p><font color="indigo">i_dawn my_dawn me_dawn jeff mom sunny i’d_dawn richard dad whitney i’m_dawn asked felt california maggie told travis carol jill didn’t stephie beach couldn’t back myself_dawn lewis passage knew clover i’ve_dawn thought daffodil called thinking thrash sunny’s erick jeff’s connecticut friends plane left guess flight dad’s surfers waves cynthia hadn’t mom’s</p></td>
 </tr>
 <tr class="row-odd"><td><p>33</p></td>
 <td><p>0.20832</p></td>
@@ -798,25 +803,25 @@ document.write(`
 <td><p>0.05918</p></td>
 <td><p>car house front street back pulled driveway door walked called ran waved home turned bike drove time seat lot reached climbed waiting charlie station bus road window cars minutes headed parking ride side stop watched arrived inside walk mrs sidewalk van train left parked man wagon rode walking dad drive</p></td>
 </tr>
-<tr class="row-even"><td><p><font color="orange">38</p></td>
-<td><p><font color="orange">0.01835</p></td>
-<td><p><font color="orange"> i_abby my_abby anna me_abby i’d_abby mom gram lou erin ross told didn’t eli mother nikki i’m_abby jay knew wasn’t grandpa miriam myself_abby frost baby felt soccer stephen bat long aunt mitzvah anna’s thought daniel armstrong sister i’ve_abby feeling realized hadn’t island greenbrook elsie morris corley kawaja uncle suddenly smiled study</p></td>
+<tr class="row-even"><td><p><font color="indigo">38</p></td>
+<td><p><font color="indigo">0.01835</p></td>
+<td><p><font color="indigo"> i_abby my_abby anna me_abby i’d_abby mom gram lou erin ross told didn’t eli mother nikki i’m_abby jay knew wasn’t grandpa miriam myself_abby frost baby felt soccer stephen bat long aunt mitzvah anna’s thought daniel armstrong sister i’ve_abby feeling realized hadn’t island greenbrook elsie morris corley kawaja uncle suddenly smiled study</p></td>
 </tr>
 <tr class="row-odd"><td><p>39</p></td>
 <td><p>0.15179</p></td>
 <td><p>day time home afternoon meeting school kids bsc house we’d night didn’t sitting job work morning arrived called decided left friends told party wanted she’d saturday hadn’t good friday dinner wasn’t mrs rest long parents couldn’t talked spent days back week hour wait things early made talk stoneybrook they’d evening</p></td>
 </tr>
-<tr class="row-even"><td><p><font color="orange">40</p></td>
-<td><p><font color="orange">0.05742</p></td>
-<td><p><font color="orange">i_kristy my_kristy me_kristy i’d_kristy charlie bart watson i’m_kristy asked cary thought shannon knew sam couldn’t didn’t told mom susan felt myself_kristy karen abby friends looked nannie wasn’t felder made bill hadn’t bain thinking replied tonya i’ve_kristy vicki heard angelica called gloria dilys bea watch sarah i’ll_kristy started golem watson’s jake</p></td>
+<tr class="row-even"><td><p><font color="indigo">40</p></td>
+<td><p><font color="indigo">0.05742</p></td>
+<td><p><font color="indigo">i_kristy my_kristy me_kristy i’d_kristy charlie bart watson i’m_kristy asked cary thought shannon knew sam couldn’t didn’t told mom susan felt myself_kristy karen abby friends looked nannie wasn’t felder made bill hadn’t bain thinking replied tonya i’ve_kristy vicki heard angelica called gloria dilys bea watch sarah i’ll_kristy started golem watson’s jake</p></td>
 </tr>
 <tr class="row-odd"><td><p>41</p></td>
 <td><p>0.03397</p></td>
 <td><p>store money mall bought people booth park man time woman shop town buy shopping kids main big place counter walked department found decided office stores toy april headed called wanted movie half dollars stuff things stoneybrook hour we’d food candy small restaurant sign pay window minutes paid museum card huge</p></td>
 </tr>
-<tr class="row-even"><td><p><font color="orange">42</p></td>
-<td><p><font color="orange">0.01423</p></td>
-<td><p><font color="orange">i_maryanne anne mrs my_maryanne towne me_maryanne spark tom luke logan cates alex asked i’d_maryanne granny alicia gillian hunter kerry amalia jim fowler sharon professor barbara poe pop-pop simon boyden sewing kingsolver martinez bobby park bruno amelia quilt desk eddie allie gable hank pop-pop’s beau gianelli gordon martinezes mal surprised man</p></td>
+<tr class="row-even"><td><p><font color="indigo">42</p></td>
+<td><p><font color="indigo">0.01423</p></td>
+<td><p><font color="indigo">i_maryanne anne mrs my_maryanne towne me_maryanne spark tom luke logan cates alex asked i’d_maryanne granny alicia gillian hunter kerry amalia jim fowler sharon professor barbara poe pop-pop simon boyden sewing kingsolver martinez bobby park bruno amelia quilt desk eddie allie gable hank pop-pop’s beau gianelli gordon martinezes mal surprised man</p></td>
 </tr>
 <tr class="row-odd"><td><p>43</p></td>
 <td><p>0.16543</p></td>
@@ -848,11 +853,11 @@ document.write(`
 </tr>
 </tbody>
 </table>
-<p>What now? We found that if we just remove pronouns, we can see topics that aren’t necessarily associated with just one narrator, and instead connect across chapters. We decided to then train models with pronouns removed instead, and used these models for the following analysis! While it’s a little discouraging sometimes to spend a while processing only to find out it’s not the thing we want to do, we learned something about our text and the model in this process: that if we make our processing too direct a reflection of metadata, our topics are going to mimic that. There’s actually a whole paper about trying to deal with this “author-specific” kind of problem with topic models here: Thompson and Mimno, <a class="reference external" href="https://aclanthology.org/C18-1329/">Authorless Topic Models</a>.</p>
+<p id="index-22">What now? We found that if we just remove pronouns, we can see topics that aren’t necessarily associated with just one narrator, and instead connect across chapters. We decided to then train models with pronouns removed instead, and used these models for the following analysis! While it’s a little discouraging sometimes to spend a while processing only to find out it’s not the thing we want to do, we learned something about our text and the model in this process: that if we make our processing too direct a reflection of metadata, our topics are going to mimic that. There’s actually a whole paper about trying to deal with this “author-specific” kind of problem with topic models here: Thompson and Mimno, <a class="reference external" href="https://aclanthology.org/C18-1329/">Authorless Topic Models</a>.</p>
 </section>
 </section>
-<section id="id1">
-<h2>Xanda<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<section id="id2">
+<h2>Xanda<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
 <section id="topics-at-last">
 <h3>Topics at last!<a class="headerlink" href="#topics-at-last" title="Permalink to this heading">#</a></h3>
 <p>After Sathvika successfully nailed down our processing for our topic models, it was finally time to look at some topics! Just to recap, we had the following processing steps:</p>
@@ -871,7 +876,7 @@ document.write(`
 </section>
 <section id="understanding-topic-keywords">
 <h3>Understanding topic keywords<a class="headerlink" href="#understanding-topic-keywords" title="Permalink to this heading">#</a></h3>
-<p>Let’s start with our 20-topic model. Here are our top topics just based on the most probable terms in each. I’ve highlighted a couple of topics of interest. In orange are two topics with high alpha, 9 and 14, which corresponds to having a high probability of showing up in a larger proportion in a document. (We’ll see both of these show up across a lot of documents!) The two topics in green, 3 and 18, are the ones we’ll later see are the most correlated with Chapter 2: 3 covers meeting logistics, while 18 seems to cover descriptions of people.</p>
+<p id="index-23">Let’s start with our 20-topic model. Here are our top topics just based on the most probable terms in each. I’ve highlighted a couple of topics of interest. In  are two topics with high alpha, 9 and 14, which corresponds to having a high probability of showing up in a larger proportion in a document. (We’ll see both of these show up across a lot of documents!) The two topics in purple, 3 and 18, are the ones we’ll later see are the most correlated with Chapter 2: 3 covers meeting logistics, while 18 seems to cover descriptions of people.</p>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Topic #</p></th>
@@ -892,9 +897,9 @@ document.write(`
 <td><p>0.03866</p></td>
 <td><p>mallory mom dad asked jessi told uncle joe hayes brothers class called sisters margaret girls vanessa cobb alexis sophie family claire didn’t sandra mother replied read felt henry cat thought book wanted ben room margo horse lauren justin pike walden explained riding katie parents bed writing finally write head riverbend</p></td>
 </tr>
-<tr class="row-odd"><td><p><font color="limegreen">3</p></td>
-<td><p><font color="limegreen">0.06677</p></td>
-<td><p><font color="limegreen">club kristy bsc members job phone baby-sitters meeting call jobs meetings claudia she’s book it’s kids sitting member kristy’s notebook money that’s record stacey claudia’s idea clients time business baby-sitting president anne great shannon don’t sitters parents sitter calls logan dues good things room monday kid-kits mary we’re associate times</p></td>
+<tr class="row-odd"><td><p><font color="MediumVioletRed">3</p></td>
+<td><p><font color="MediumVioletRed">0.06677</p></td>
+<td><p><font color="MediumVioletRed">club kristy bsc members job phone baby-sitters meeting call jobs meetings claudia she’s book it’s kids sitting member kristy’s notebook money that’s record stacey claudia’s idea clients time business baby-sitting president anne great shannon don’t sitters parents sitter calls logan dues good things room monday kid-kits mary we’re associate times</p></td>
 </tr>
 <tr class="row-even"><td><p>4</p></td>
 <td><p>0.09868</p></td>
@@ -916,9 +921,9 @@ document.write(`
 <td><p>0.07597</p></td>
 <td><p>kristy shannon bart asked charlie didn’t tiffany maria derek looked watson cary team told mom sergeant thought called knew krushers johnson susan wasn’t back couldn’t heard softball replied cokie felt mother coach bill turned wanted friends head dru thinking nodded smiled angelica felder laughed bain field practice explained realized hadn’t</p></td>
 </tr>
-<tr class="row-odd"><td><p><font color="orange">9</p></td>
-<td><p><font color="orange">0.35186</p></td>
-<td><p><font color="orange">looked asked eyes back head voice face turned hand smile began didn’t hands nodded gave smiled shook mrs stood door replied cried moment put heard whispered started suddenly arms walked sat stopped arm breath mouth standing held tears front laughing shoulder room deep hard couldn’t shouted felt jumped leaned thought</p></td>
+<tr class="row-odd"><td><p><font color="indigo">9</p></td>
+<td><p><font color="indigo">0.35186</p></td>
+<td><p><font color="indigo">looked asked eyes back head voice face turned hand smile began didn’t hands nodded gave smiled shook mrs stood door replied cried moment put heard whispered started suddenly arms walked sat stopped arm breath mouth standing held tears front laughing shoulder room deep hard couldn’t shouted felt jumped leaned thought</p></td>
 </tr>
 <tr class="row-even"><td><p>10</p></td>
 <td><p>0.063</p></td>
@@ -936,9 +941,9 @@ document.write(`
 <td><p>0.07048</p></td>
 <td><p>maryanne anne logan dad sharon jenny mrs asked didn’t victoria dawn thought replied tigger told felt miss father knew called wanted prezzioso towne cokie spark looked couldn’t alex cates rutherford wasn’t tom hunter kerry friends luke logan’s king t-jam smiled bruno pete granny back feel mother alicia answered alan gillian</p></td>
 </tr>
-<tr class="row-even"><td><p><font color="orange">14</p></td>
-<td><p><font color="orange">0.36958</p></td>
-<td><p><font color="orange">didn’t time day wasn’t thought school good knew kids made home couldn’t things make hadn’t wanted afternoon she’d night felt thing we’d decided work meeting pretty talk idea friends bsc morning lot class feel wouldn’t house long mind feeling told hard great people bad left find happened they’d started talking</p></td>
+<tr class="row-even"><td><p><font color="indigo">14</p></td>
+<td><p><font color="indigo">0.36958</p></td>
+<td><p><font color="indigo">didn’t time day wasn’t thought school good knew kids made home couldn’t things make hadn’t wanted afternoon she’d night felt thing we’d decided work meeting pretty talk idea friends bsc morning lot class feel wouldn’t house long mind feeling told hard great people bad left find happened they’d started talking</p></td>
 </tr>
 <tr class="row-odd"><td><p>15</p></td>
 <td><p>0.05176</p></td>
@@ -952,9 +957,9 @@ document.write(`
 <td><p>0.07354</p></td>
 <td><p>nicky claire vanessa buddy kids margo mrs pike mal haley adam asked mallory suzi barrett jordan byron triplets jessi matt anne melody marnie pikes replied cried bill braddock james charlotte house told added lindsey called boys dewitt looked brothers shouted suggested mathew yelled becca explained sisters sister pow sign who’s</p></td>
 </tr>
-<tr class="row-even"><td><p><font color="limegreen">18</p></td>
-<td><p><font color="limegreen">0.0846</p></td>
-<td><p><font color="limegreen">she’s stoneybrook hair it’s parents don’t doesn’t school long family that’s he’s they’re friends eyes grade moved pretty things lot people friend brown good sister love live can’t lives thing city bsc york great big baby loves life day clothes fact younger short time boyfriend kind black years club makes</p></td>
+<tr class="row-even"><td><p><font color="MediumVioletRed">18</p></td>
+<td><p><font color="MediumVioletRed">0.0846</p></td>
+<td><p><font color="MediumVioletRed">she’s stoneybrook hair it’s parents don’t doesn’t school long family that’s he’s they’re friends eyes grade moved pretty things lot people friend brown good sister love live can’t lives thing city bsc york great big baby loves life day clothes fact younger short time boyfriend kind black years club makes</p></td>
 </tr>
 <tr class="row-odd"><td><p>19</p></td>
 <td><p>0.03296</p></td>
@@ -965,7 +970,7 @@ document.write(`
 </section>
 <section id="comparing-some-high-level-trends">
 <h3>Comparing some high-level trends<a class="headerlink" href="#comparing-some-high-level-trends" title="Permalink to this heading">#</a></h3>
-<p>One thing we can do is compare how much each topic is showing up across different books, different narrators, and so on. I’m going to do this with heat maps, where each row corresponds to a category applied to our text chunks and each column corresponds to a topic. The brighter/lighter the color, the more probability that topic has for that category. Note that to compute this, we can’t just average naively, as some text passages are longer than others; we’re going to weigh the proportion each text passage counts for by the number of tokens it has in the model (after stopwords are removed).</p>
+<p id="index-24">One thing we can do is compare how much each topic is showing up across different books, different narrators, and so on. I’m going to do this with heat maps, where each row corresponds to a category applied to our text chunks and each column corresponds to a topic. The brighter/lighter the color, the more probability that topic has for that category. Note that to compute this, we can’t just average naively, as some text passages are longer than others; we’re going to weigh the proportion each text passage counts for by the number of tokens it has in the model (after stopwords are removed).</p>
 <p>When I set out to do this sort of exploration, I usually spend the most time just pulling the data from the model together into a format where I can actually make plots that I want to see. In this case, I decided to use pandas Dataframes, which store data in Excel-like columns that allow a lot of nice built-in operations.</p>
 <p>The starting point for my plots is going to be topic proportions for each “segment”, or each text passage.</p>
 <div class="cell docutils container">
@@ -1002,7 +1007,7 @@ document.write(`
 </div>
 </div>
 </div>
-<p>What are these “topic proportions”? Really simply, they’re the amount of each topic in each segment, written as a decimal (instead of a percentage): so if topic 3 has proportion <code class="docutils literal notranslate"><span class="pre">.1</span></code> in a particular text segment, that means that 10% of that document’s words are coming from topic 3. We expect each row’s probabilities should sum to 1, though tiny decimal place errors could give us 0.999999 instead. Notably, some of our topics are more prevalent in our text than others, so the average of each column may vary quite a bit!</p>
+<p id="index-25">What are these “topic proportions”? Really simply, they’re the amount of each topic in each segment, written as a decimal (instead of a percentage): so if topic 3 has proportion <code class="docutils literal notranslate"><span class="pre">.1</span></code> in a particular text segment, that means that 10% of that document’s words are coming from topic 3. We expect each row’s probabilities should sum to 1, though tiny decimal place errors could give us 0.999999 instead. Notably, some of our topics are more prevalent in our text than others, so the average of each column may vary quite a bit!</p>
 <p>We now have for each of our text segments the proportion of each topic (numbered from 0 to <code class="docutils literal notranslate"><span class="pre">ntopics</span> <span class="pre">-</span> <span class="pre">1</span></code>). However, there’s some other information we want about each of these passages: the book they’re from, the chapter they appeared in, and who was narrating that book.</p>
 <p>The first two items, book and chapter, we can learn just from the ID we have for each segment - we’ll write little functions to compute the things we want, then apply a little thing called a “lambda” to make sure that function gets applied to the right part of each row to make new columns:</p>
 <div class="cell docutils container">
@@ -1079,7 +1084,7 @@ document.write(`
 <p>Since our segments aren’t very different in length, this extra code to get the segment lengths and get a weighted average probably didn’t affect much – little enough that I often skip this step in my first round of analysis, since it’s unlikely to change any of my final conclusions. But if you’re doing a project where your text segments have very different lengths and you want to combine them, it can be important to think about whether you want to take a regular average (so each <em>segment</em> counts equally) or a weighted average (so each <em>word</em> counts equally).</p>
 <section id="noticing-character-specific-topics">
 <h4>Noticing character-specific topics<a class="headerlink" href="#noticing-character-specific-topics" title="Permalink to this heading">#</a></h4>
-<p>We might notice character-specific topics only lighting up for books focusing on that character:</p>
+<p id="index-26">We might notice character-specific topics only lighting up for books focusing on that character:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plotting books by topics</span>
@@ -1114,14 +1119,14 @@ document.write(`
 </div>
 </div>
 <p>This helps us confirm our topic assignments from before for 2 (Mallory), 4 (Stacey), and 6 (Claudia), as well as showing Dawn (12), Jessi (15) and Abby (19). It also gives us some weird things like Kristy and Shannon sharing a topic (8) and Mary Anne and Logan sharing another (13). Given the prominence of some of these characters and how distinct we expected the main baby-sitters to be, this was a bit of a surprise to me – maybe we need more topics to better represent distinctions between these characters?</p>
-<div class="admonition-quinn admonition">
+<div class="admonition-quinn admonition" id="index-27">
 <p class="admonition-title">Quinn</p>
 <p>It’s reading-with-eyeballs to the rescue! As a childhood <em>Baby-Sitters Club</em> reader, I know that having Shannon and Kristy, and Mary Anne and Logan, sharing a topic actually makes a lot of sense. Logan is Mary Anne’s boyfriend, and Shannon is a neighbor from Kristy’s new rich neighborhood. They almost never show up without Mary Anne or Kristy, respectively, other than in the couple “Reader’s Request” super specials where they’re the narrator.</p>
 </div>
 </section>
 <section id="trends-over-chapters">
 <h4>Trends over chapters<a class="headerlink" href="#trends-over-chapters" title="Permalink to this heading">#</a></h4>
-<p>Lastly, let’s do a slightly different plot to look at topics versus chapters. Here, I’m going to treat chapters as a sort of timeseries, since most books are around the same length: we’ll just treat chapter numbers as times and plot topic proportion over time. We expect that if a topic shows up a lot in topic 2, then it should spike at x=2; if it shows up more towards the end of books, it should have an upward slope.</p>
+<span class="target" id="index-28"></span><p id="index-29">Lastly, let’s do a slightly different plot to look at topics versus chapters. Here, I’m going to treat chapters as a sort of timeseries, since most books are around the same length: we’ll just treat chapter numbers as times and plot topic proportion over time. We expect that if a topic shows up a lot in topic 2, then it should spike at x=2; if it shows up more towards the end of books, it should have an upward slope.</p>
 <p>Before we do this, we need to do the same thing for chapters as we did before for books. Then, to help us plot, we’re going to do some bonus processing to split our one row per segment into <code class="docutils literal notranslate"><span class="pre">ntopics</span></code> rows, one for each specific proportion we want to plot. (Admittedly, I’m pretty sure there’s a nice pandas-y way to do this, but I was having trouble remembering how, so I just wrote some loops to make my data fit. A little ugly, I know, but it gets the job done!)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1178,13 +1183,13 @@ document.write(`
 <img alt="_images/a68de946bf57cbd3f2ba2aea3d7d3c89f85f85b687c39b9cceef0af9762b6e3d.png" src="_images/a68de946bf57cbd3f2ba2aea3d7d3c89f85f85b687c39b9cceef0af9762b6e3d.png" />
 </div>
 </div>
-<p>I looked at this plot and realized I’d made a mistake: this data is so broken down that it’s too much to meaningfully take in. Even though I have a couple of questions that come up looking at these, including why there seem to be numerous examples of character-specific topics with a 3-chapter rhythm of rising and falling, they’re too jumbled to be able to chase down quickly. I can confirm that all of our narrators spike in early chapters for topics 3 and 18, not just a few, though it looks like maybe Shannon’s more likely to lag an extra chapter…however, it’s not clear whether this is just random variation or not from these plots.</p>
+<p id="index-30">I looked at this plot and realized I’d made a mistake: this data is so broken down that it’s too much to meaningfully take in. Even though I have a couple of questions that come up looking at these, including why there seem to be numerous examples of character-specific topics with a 3-chapter rhythm of rising and falling, they’re too jumbled to be able to chase down quickly. I can confirm that all of our narrators spike in early chapters for topics 3 and 18, not just a few, though it looks like maybe Shannon’s more likely to lag an extra chapter…however, it’s not clear whether this is just random variation or not from these plots.</p>
 <p>I kept the plot above mostly as a reminder for myself of why it’s good to use caution when slicing up data too much: if you plot too many things (in this case, 10 narrators * 20 topics = 200 trend lines), some of them will probably look like they’re doing something interesting by total random chance. This is related to the common statistical <a class="reference external" href="https://xkcd.com/882/">jelly bean problem</a>: if your test for “significance” means “there’s a less than 5% chance that a population with only boring things happening would produce data that looks this not-boring”, and you run that test on 200 different things, you’d expect about 10 of them to come up as “significant” just by chance.</p>
 </section>
 </section>
 <section id="but-what-are-they-saying">
 <h3>But what are they saying?<a class="headerlink" href="#but-what-are-they-saying" title="Permalink to this heading">#</a></h3>
-<p>It can be helpful to look at <em>top documents</em> for particular topics to see what’s actually being said in them. Here, “documents” are just going to be short passages with a high proportion of a topic we’re interested in, so we can get a sense of not just what words and names are present, but the context in which they’re showing up. This is a surprisingly easy step to skip, but often the most important for making sure your topics mean what you think they mean. I’m writing my function especially so it’ll print them out with the bold face <code class="docutils literal notranslate"><span class="pre">**</span></code> and new lines <code class="docutils literal notranslate"><span class="pre">\n</span></code> that will help me make it look nice when I paste it in later.</p>
+<p id="index-31">It can be helpful to look at <em>top documents</em> for particular topics to see what’s actually being said in them. Here, “documents” are just going to be short passages with a high proportion of a topic we’re interested in, so we can get a sense of not just what words and names are present, but the context in which they’re showing up. This is a surprisingly easy step to skip, but often the most important for making sure your topics mean what you think they mean. I’m writing my function especially so it’ll print them out with the bold face <code class="docutils literal notranslate"><span class="pre">**</span></code> and new lines <code class="docutils literal notranslate"><span class="pre">\n</span></code> that will help me make it look nice when I paste it in later.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_top_docs_for_topic</span><span class="p">(</span><span class="n">topic_no</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
@@ -1221,7 +1226,7 @@ document.write(`
 </div>
 </div>
 </div>
-<p>Here’s the top 10 documents for topic 3 and topic 18, our chapter-2-associated topics:</p>
+<p id="index-32">Here’s the top 10 documents for topic 3 and topic 18, our chapter-2-associated topics:</p>
 <section id="topic-3">
 <h4>Topic 3<a class="headerlink" href="#topic-3" title="Permalink to this heading">#</a></h4>
 <p><strong>127c_abbys_un_valentine_2.txt-7 - Abby, Chapter 2 (97.07%)</strong> We meet Monday, Wednesday, and Friday afternoons, from five-thirty until six at Claudia’s. Clients know that if they call us during meeting times, they’ll reach six reliable, experienced baby-sitters. Since Claudia has her own phone number, the line isn’t busy with family calls (and Claud’s family isn’t prevented from using the phone while we are meeting). When a client calls, Mary Anne checks the record book to see who is available and we schedule the baby-sitting appointment. We pay dues every Monday. The club uses the money to pay Kristy’s older brother Charlie for gas (he usually drives Kristy and me to meeting — I live two houses down the street from Kristy), to contribute to Claudia’s refreshments fund, to splurge on the occasional pizza party, and to keep our Kid-Kits stocked.</p>
@@ -1250,7 +1255,7 @@ document.write(`
 <p><strong>118c_kristy_thomas_dog_trainer_2.txt-12 - Kristy, Chapter 2 (85.59%)</strong> Plus, she looked as if she were slightly older than the rest of us. She isn’t, but in some ways she’s more worldly and a bit more grown-up. Part of this is because she’s from New York City originally. (Her parents are divorced and her father still lives there. She visits him often.) Stacey is also diabetic. Because of this, her parents were super-overprotective of their only child, and Stacey has had to work hard to convince them that she could be responsible about managing her condition. This means that she has to be very careful about what she eats (no sugar or sweets, or she might get really sick), and she has to give herself insulin injections regularly (ouch). It’s a big responsibility, but one that Stacey seems to take in stride, accepting it as something that’s no more remarkable than her amazing math abilities.</p>
 <hr class="docutils" />
 <p>What’s going on here? The first topic, our club-meeting-logistic topic, is pretty much as expected - dominated by Chapters 2 and 3 and a lot of information about how things usually work in the club, not events specific to the story. We actually have a Chapter 4 passage in here, but it’s a discussion of Kristy’s other ideas for how the club runs, which makes it feel like a pretty good affirmation that we’re getting the kind of content we expect from Chapter 3. Topic 18 is also mostly what we expect, descriptions of sitters - with an interesting note that we’re getting an awful lot of Stacey and her diabetes in this discussion. It’s not possible from just the top 10 documents to tell exactly what’s up, but I’d guess this kind of abbreviated description of diabetes usually gets saved for the babysitter introductions, but that this topic might spread out a little more in books where Stacey’s diabetes comes up more, especially from her point of view. It’d be worth being cautious about generalizing this topic without checking that!</p>
-<p>Let’s pick a different topic, one that we saw wasn’t as prominent in general but seemed to correlate heavily with Kristy – topic 5.</p>
+<span class="target" id="index-33"></span><p id="index-34">Let’s pick a different topic, one that we saw wasn’t as prominent in general but seemed to correlate heavily with Kristy – topic 5.</p>
 </section>
 <section id="topic-5">
 <h4>Topic 5<a class="headerlink" href="#topic-5" title="Permalink to this heading">#</a></h4>
@@ -1266,7 +1271,7 @@ document.write(`
 <p><strong>049c_claudia_and_the_genius_of_elm_street_2.txt-5 - Claudia, Chapter 2 (92.00%)</strong> Everything changed for Kristy’s family not long ago. Mrs. Thomas met this millionaire named Watson Brewer. They fell madly in love and got married, and the Thomases ended up moving into a huge mansion. And let me tell you, that house needs to be huge. Watson is the divorced father of two kids, Karen and Andrew, who spend every other weekend and some vacations and holidays at the house. Then there’s Emily Michelle, an adorable two-and-a-half-year-old Vietnamese girl whom Watson and Kristy’s mother recently adopted. Then there’s Nannie, Kristy’s grandmother on her mom’s side, who now lives there and helps take care of Emily Michelle. And then there are Boo-Boo and Shannon, a cat and a dog.</p>
 <hr class="docutils" />
 <p>Aha! This is definitely a topic about Kristy’s family. The specificity of this, and the fact that lots of other narrators single out the uniqueness of Kristy’s family, might be part of why we didn’t get as distinct a single Kristy topic as some of the other babysitters did. Looking back, it’s clear the list of names is all Kristy’s family, pretty much, but that’s not always evident from a list of names (especially common ones), so it’s good to have some skepticism. We also can notice that this doesn’t light up for all Kristy books – mostly just ones where Kristy’s family figures heavily into it. Neat!</p>
-<p>Let’s also check out Topic 17 while we’re here, our mysterious spiky topic:</p>
+<p id="index-35">Let’s also check out Topic 17 while we’re here, our mysterious spiky topic:</p>
 </section>
 <section id="topic-17">
 <h4>Topic 17<a class="headerlink" href="#topic-17" title="Permalink to this heading">#</a></h4>
@@ -1300,12 +1305,17 @@ document.write(`
 <th class="head"><p>Keywords</p></th>
 </tr>
 </thead>
+<tbody>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>0.06677</p></td>
+<td><p>club kristy bsc members job phone baby-sitters meeting call jobs meetings claudia she’s book it’s kids sitting member kristy’s notebook money that’s record stacey claudia’s idea clients time business baby-sitting president anne great shannon don’t sitters parents sitter calls logan dues good things room monday kid-kits mary we’re associate times</p></td>
+</tr>
+<tr class="row-odd"><td><p>18</p></td>
+<td><p>0.0846</p></td>
+<td><p>she’s stoneybrook hair it’s parents don’t doesn’t school long family that’s he’s they’re friends eyes grade moved pretty things lot people friend brown good sister love live can’t lives thing city bsc york great big baby loves life day clothes fact younger short time boyfriend kind black years club makes</p></td>
+</tr>
+</tbody>
 </table>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>                   |
-</pre></div>
-</div>
-<p>| <font color="limegreen">3  | <font color="limegreen">0.06677 | <font color="limegreen">club kristy bsc members job phone baby-sitters meeting call jobs meetings claudia she’s book it’s kids sitting member kristy’s notebook money that’s record stacey claudia’s idea clients time business baby-sitting president anne great shannon don’t sitters parents sitter calls logan dues good things room monday kid-kits mary we’re associate times  |
-| <font color="limegreen">18 | <font color="limegreen">0.0846  | <font color="limegreen">she’s stoneybrook hair it’s parents don’t doesn’t school long family that’s he’s they’re friends eyes grade moved pretty things lot people friend brown good sister love live can’t lives thing city bsc york great big baby loves life day clothes fact younger short time boyfriend kind black years club makes                                            |</p>
 <p>Topic 3 is a meeting logistics topic: it seems to be associated with dues, officers, recording, and the business part of the club. This matches the typical description of how a conventional BSC meeting runs, and we’ve looked up examples to confirm that’s what’s going on here. Topic 18, in contrast, is describing characters in terms of hair and eye color, clothing, family, likes/dislikes, etc. We also checked and confirmed this is our usual chapter-2 recipe for describing characters.</p>
 <p>We’re pretty sure both of these topics should be prominent in Chapter 2 of most baby-sitter’s club books. But what if we could see a little more about that pattern? Let’s just look at topic proportion for Topics 3 and 18 for Chapter 1, 2, and 3 of each book:</p>
 <div class="cell docutils container">
@@ -1328,14 +1338,14 @@ document.write(`
 <img alt="_images/9a8c362b244d15bc26c22ab51fd2b275afedca3c10d7ab713deea3f74eac6071.png" src="_images/9a8c362b244d15bc26c22ab51fd2b275afedca3c10d7ab713deea3f74eac6071.png" />
 </div>
 </div>
-<p>Our hypothesis holds for most books on the list: both topic 3 and topic 18 are lit up in Chapter 2. We also see a couple of additional things: first, unsurprisingly, our describing-people topic (18) is also showing up in Chapter 1 pretty consistently, though usually in a less concentrated way. Since some characters are getting introduced in Chapter 1 usually, this makes sense - and it also makes sense the meeting topic wouldn’t match on that, so we see topic 3 is not usually lit up.</p>
+<p id="index-36">Our hypothesis holds for most books on the list: both topic 3 and topic 18 are lit up in Chapter 2. We also see a couple of additional things: first, unsurprisingly, our describing-people topic (18) is also showing up in Chapter 1 pretty consistently, though usually in a less concentrated way. Since some characters are getting introduced in Chapter 1 usually, this makes sense - and it also makes sense the meeting topic wouldn’t match on that, so we see topic 3 is not usually lit up.</p>
 <p>But the fun part here is the exceptions. If we scroll to the top of this plot, we see a lot more variation! It looks like our crisp meeting logistics topic, topic 3, isn’t really lighting up all that much for the first chapters of the first eight books at all, then starts to show up in different patterns in any of the first three chapters. It isn’t until 16-27 that we get a pretty consistent run of chapter 2 having a lot of topic 3 (with a break for Dawn on the Coast, where even Kristy admits “It’s not exactly a meeting” when they have a party in Chapter 2). During this time, Topic 18 is showing up more consistently in Chapter 1 than Chapter 2. Then, we see a run with some of the most prominent signs of topic 3…all in Chapter 3! It looks like during this period (roughly books 29-49, though there are definitely exceptions in there), a pattern emerges of describing the babysitters in Chapter 2, then walking through their meeting in Chapter 3.</p>
 <p>Starting in Book 50, we seem to settle into merging those two chapters into one, marking the signature “Chapter 2” format. From here on, both topics seem to appear dominantly in the same early chapter, usually landing in Chapter 2 but occasionally Chapter 3. The only exceptions to these two topics “traveling together” seem to be a couple of early mysteries and the Special Edition: Reader’s Request books, which are not surprising to see breaking form.</p>
 <p>Now, of course, the topic analysis is unlikely to tell the whole story here; it’s probably the case that meetings and descriptions were happening in some of these chapters, but the language might have been varying a little over time compared with the consistency of the latter books. All the same, this was a surprise to confirm for me as I skimmed book chapters: it does indeed look like the merged chapter 2 I was used to taking for granted actually used to be two separate components, and that our topics can help us track how those components got moved around and interwoven into the modern format.</p>
 </section>
 <section id="once-more-with-50-topics">
 <h3>Once more, with 50 topics<a class="headerlink" href="#once-more-with-50-topics" title="Permalink to this heading">#</a></h3>
-<p>I wrote the code to make my plots carefully: I tried to make sure I never referred to the number “20” directly, and instead always used the variable ntopics to describe how I wanted things plotted. This relates to the programming practice of “avoiding magic numbers”: if you have an exact constant like a 20 or 50 in your code all over the place, it’s really hard to update, but if there’s a variable at the top that you define and reuse, it’s much easier. This means I can pretty much just replace the number 20 with 50 and immediately regenerate the plots I want – the only thing I’m going to need to do is update the aspect ratio.</p>
+<p id="index-37">I wrote the code to make my plots carefully: I tried to make sure I never referred to the number “20” directly, and instead always used the variable ntopics to describe how I wanted things plotted. This relates to the programming practice of “avoiding magic numbers”: if you have an exact constant like a 20 or 50 in your code all over the place, it’s really hard to update, but if there’s a variable at the top that you define and reuse, it’s much easier. This means I can pretty much just replace the number 20 with 50 and immediately regenerate the plots I want – the only thing I’m going to need to do is update the aspect ratio.</p>
 <p>I’m going to skip straight to our topic-narrator plot first, which we generate the same way we did for the 20-topic model. Before, we were sometimes conflating two babysitters in one topic. Have we successfully separated out topics for each of our babysitters while also having topics in common?</p>
 <p>We could rewrite all the code above - or we can just rerun it by setting <code class="docutils literal notranslate"><span class="pre">ntopics</span> <span class="pre">=</span> <span class="pre">50</span></code> way earlier in our code! Here’s the plot we get for our new babysitterby-topic analysis:</p>
 <div class="cell docutils container">
@@ -1349,7 +1359,7 @@ document.write(`
 <img alt="_images/df9fcfcb17efc9a840d7b87fe1ce1e39e83690ead55ffa640d40a67de144cde9.png" src="_images/df9fcfcb17efc9a840d7b87fe1ce1e39e83690ead55ffa640d40a67de144cde9.png" />
 </div>
 </div>
-<p>Looks like it! We used to have Kristy and Shannon sharing a topic, but now, Kristy has topic 16 (and to a lesser extent topic 42), while Shannon alone dominates topic 11. Indeed, we seem to have a baby-sitter-aligned topic for each babysitter now, with some even having two more or less exclusively to themselves – in addition to Kristy’s pair of topics, Jessi has 18 and 38. While Quinn pointed out the babysitters sharing topics might have been a feature, not a bug, this number of topics gives us a way to separate pieces out a bit more if we prefer that kind of analysis.</p>
+<p id="index-38">Looks like it! We used to have Kristy and Shannon sharing a topic, but now, Kristy has topic 16 (and to a lesser extent topic 42), while Shannon alone dominates topic 11. Indeed, we seem to have a baby-sitter-aligned topic for each babysitter now, with some even having two more or less exclusively to themselves – in addition to Kristy’s pair of topics, Jessi has 18 and 38. While Quinn pointed out the babysitters sharing topics might have been a feature, not a bug, this number of topics gives us a way to separate pieces out a bit more if we prefer that kind of analysis.</p>
 <p>Last time, we spotted a Kristy topic that seemed to be about Kristy’s family. Can we find a topic like that again? 16 and 42 look like good candidates in this new model from the top words and topic proportions, but 43 also sticks out as very Kristy-ish, even though it’s not specific to her books:</p>
 <table class="table">
 <thead>
@@ -1358,13 +1368,21 @@ document.write(`
 <th class="head"><p>Keywords</p></th>
 </tr>
 </thead>
+<tbody>
+<tr class="row-even"><td><p>16</p></td>
+<td><p>0.07065</p></td>
+<td><p>kristy charlie bart asked told watson couldn’t knew thought didn’t looked cary susan replied friends thinking wasn’t shannon …</p></td>
+</tr>
+<tr class="row-odd"><td><p>42</p></td>
+<td><p>0.0846</p></td>
+<td><p>kristy karen david michael andrew emily hannie linny lou watson nannie shannon asked sam michelle louie charlie papadakis kids …</p></td>
+</tr>
+<tr class="row-even"><td><p>43</p></td>
+<td><p>0.02024</p></td>
+<td><p>kristy kristy’s watson mom family david michael live house emily brothers karen brewer mansion sam thomas kids andrew moved …</p></td>
+</tr>
+</tbody>
 </table>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>                   |
-</pre></div>
-</div>
-<p>| <font color="cyan">16  | <font color="cyan">0.07065 | <font color="cyan">	kristy charlie bart asked told watson couldn’t knew thought didn’t looked cary susan replied friends thinking wasn’t shannon heard sam guess felt felder started realized thomas cokie tonya wanted hadn’t agreed bea karen dilys nodded idea sarah suddenly watch running began angelica stop laughed abbott sounded jake wondered hoping yelled   |
-| <font color="cyan">42 | <font color="cyan">0.0846  | <font color="cyan">kristy karen david michael andrew emily hannie linny lou watson nannie shannon asked sam michelle louie charlie papadakis kids karen’s told cried scout mom sari mrs porter kristy’s puppy house boo-boo michael’s replied nancy brother dru game watson’s papadakises called dog yard emma witch playing luke added began moment andrew’s    |
-| <font color="cyan">43	 | <font color="cyan">0.02024	| <font color="cyan"> kristy kristy’s watson mom family david michael live house emily brothers karen brewer mansion sam thomas kids andrew moved charlie michelle nannie mrs she’s older mother brother named watson’s married grandmother adopted younger who’s lives it’s dog town millionaire big girl he’s sister puppy stepsister marriage stepfather father care ago  |</p>
 <p>And this is where it gets to the heart of why you may (or may not) want more topics in your topic model: if we look at the top few documents for these topics, we can find out there’s actually a distinction between these topics besides the order of names:</p>
 <section id="topic-16">
 <h4>Topic 16<a class="headerlink" href="#topic-16" title="Permalink to this heading">#</a></h4>
@@ -1387,23 +1405,32 @@ document.write(`
 <p><strong>119c_staceys_ex_boyfriend_2.txt-9 - Stacey, Chapter 2 (93.35%)</strong> She’s also very down-to-earth. You’d never guess she lives in a mansion and that her stepfather is a millionaire. It’s true, though. Kristy’s birth father walked out on the family not long after Kristy’s younger brother, David Michael, was born. He just up and left Kristy’s mom to support four kids on her own. (Kristy also has two older brothers, Sam and Charlie.) It was really tough for them for a while, but Kristy’s mom was tough too. She supported all of them on her own. Then she met and married Watson.</p>
 <p><strong>085c_claudia_kishi_live_from_wsto_2.txt-5 - Claudia, Chapter 2 (93.25%)</strong> Times were tough for Kristy’s family back then. Mrs. Thomas was raising four kids by herself — Charlie (who’s now seventeen), Sam (fifteen), and David Michael (seven and a half). Kristy’s dad had walked out on his family not long after David Michael was born, just left them flat, no explanations, no nothing. Can you imagine? Boy, have things changed. Mrs. Thomas married this nice, quiet guy named Watson Brewer, who is a millionaire. Now Kristy and her family live in a real mansion on the wealthy side of town, along with an adopted little sister, Emily Michelle, who’s from Vietnam; Nannie, Kristy’s grandmother; Watson’s two kids from his previous marriage (seven-year-old Karen and four-year-old Andrew, who are there every other month); and several pets.</p>
 <hr class="docutils" />
-<p>Does it make sense what might be distinctive here? Again, it might take more sleuthing to be sure, but it looks like our classic “introduce Kristy’s blended family” introduction now has topic 43 all to itself, whether it’s Kristy narrating or someone else. In contrast, the other two topics both center dialogue, but where topic 16 seems to highlight a few specific Kristy-perspective conversations, topic 42 seems to highlight conversations with Kristy’s siblings.</p>
+<p id="index-39">Does it make sense what might be distinctive here? Again, it might take more sleuthing to be sure, but it looks like our classic “introduce Kristy’s blended family” introduction now has topic 43 all to itself, whether it’s Kristy narrating or someone else. In contrast, the other two topics both center dialogue, but where topic 16 seems to highlight a few specific Kristy-perspective conversations, topic 42 seems to highlight conversations with Kristy’s siblings.</p>
 <p>I think it’s fair to say that if we wanted to analyze Kristy’s narrative, this would be cool to dig into more; for other questions that are more cross-babysitter, however, this level of splitting might be frustrating. One approach to this is just to use fewer topics; another is to train with more topics than you need and then to manually combine the ones you think should be treated the same for your question of interest. Because topics are just proportions and probabilities, if we want to combine two topics, we can literally just add them together, which makes it pretty easy to analyze. However, I usually prefer to just train a few models at the outside - 10, 20, 50, 100 topics, say - to see which one feels right for the questions I have, and to work from there. It might seem excessive, but why limit myself? Changing my mind is usually as easy as changing one number at the top of a file, just like here.</p>
 </section>
 </section>
 </section>
-<section id="id2">
-<h2>Quinn<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<section id="id3">
+<h2>Quinn<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
 <section id="where-s-the-walking-disaster">
 <h3>Where’s the walking disaster?<a class="headerlink" href="#where-s-the-walking-disaster" title="Permalink to this heading">#</a></h3>
-<p>So far the only walking disaster we’ve found in this book has been me, in Las Vegas in 2019, not knowing what I was doing with topic modeling and getting frustrated at how little I could get out of them. But there’s another way that topic modeling can be like Jackie Rodowsky, the infamously klutzy baby-sitting charge: much like Jackie, if your corpus is “dirty”, topic modeling will find the mess and trip over it. Even if you don’t want to use it for its analytical capabilities with document chunks like we’ve done here, consider trying topic modeling when you’re working with a corpus that you <em>don’t</em> know inside and out, and where you suspect there might be some “mess”.</p>
+<p id="index-40">So far the only walking disaster we’ve found in this book has been me, in Las Vegas in 2019, not knowing what I was doing with topic modeling and getting frustrated at how little I could get out of them. But there’s another way that topic modeling can be like Jackie Rodowsky, the infamously klutzy baby-sitting charge: much like Jackie, if your corpus is “dirty”, topic modeling will find the mess and trip over it. Even if you don’t want to use it for its analytical capabilities with document chunks like we’ve done here, consider trying topic modeling when you’re working with a corpus that you <em>don’t</em> know inside and out, and where you suspect there might be some “mess”.</p>
 <p>One of my projects at work involves analyzing the last 20 years of dissertations from my department. (Fellow Data-Sitter Katia and I have also mulled over doing something similar for the last 20 years of Slavic dissertations in the US and Canada!) One of the tricky things about this project is that not all the texts are in English – but I don’t know which ones aren’t. What’s worse, there are plenty of dissertations that are <em>mostly</em> in English, except for where they aren’t. I’m excited about the possibilities of using topic modeling to help me sift through these dissertations to find the parts that are the acknowledgements, the parts that are the citations, and the parts that are extensive quotes from primary sources in other languages, to help me find the main English substantive parts of the dissertations, so I can compare them across time, advisors, and topics to better understand the kind of scholarship the department produces.</p>
 </section>
-<section id="topic-modeling-ftw">
-<h3>Topic modeling ftw!<a class="headerlink" href="#topic-modeling-ftw" title="Permalink to this heading">#</a></h3>
+<section id="go-try-topic-modeling">
+<span id="index-41"></span><h3>Go try topic modeling!<a class="headerlink" href="#go-try-topic-modeling" title="Permalink to this heading">#</a></h3>
 <p>Working with Xanda and Sathvika changed my mind about topic modeling: it’s gotten a big boost in my personal DH text analysis toolkit. I can see using it at the beginning of the project, when I’m working with a messier corpus than the Data-Sitters Club (and <em>almost all</em> the corpora are messier than the DSC at this point, after we’ve worked with it for four years). I can see using it to explore different … well, <em>topics</em> in a corpus after I’ve cleaned it up. And for corpora that I know well, I can see using it as another lens on quantifying and solidifying my understanding of things that I have hunches about, like the infamous “chapter 2” phenomenon in the Baby-Sitters Club. There’s more we could even do with the topic models Xanda and Sathvika made here, reading through the book synopses in <a class="reference external" href="https://datasittersclub.github.io/site/dsc17.html">the Ann M. Martin archive</a>, and then using it as a starting point for diving into how those topics play out in the corpus.</p>
 <p>Topic modeling reliably trips over mess in your corpus, and it chokes if you give it too much text, but much like klutzy Jackie Rodowsky, I can definitely imagine it becoming a beloved member of an ensemble cast of DH tools, as long as you understand what you’re getting into.</p>
 </section>
+</section>
+<section id="suggested-citation">
+<h2>Suggested citation<a class="headerlink" href="#suggested-citation" title="Permalink to this heading">#</a></h2>
+<p>Suggested citation: Anand, Sathvika, Quinn Dombrowski, and Xanda Schofield. “DSC #20: Xanda Rescues the Topic Model Disaster.” <em>The Data-Sitters Club,</em> November 30, 2023. <a class="reference external" href="https://datasittersclub.github.io/site/dsc20.html">https://datasittersclub.github.io/site/dsc20.html</a>.</p>
+<hr class="footnotes docutils" />
+<aside class="footnote brackets" id="id4" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Yes, I’d read “<a class="reference external" href="https://www.matthewjockers.net/macroanalysisbook/lda/">The LDA Buffet</a>” by Matt Jockers – who came up in <a class="reference external" href="https://datasittersclub.github.io/site/dsc11.html">DSC 11: Katia and the Sentiment Snobs</a>. It’s apt for Las Vegas given the prevalence of buffets, but honestly, it left me more hungry than satisfied with my understanding of topic modeling.</p>
+</aside>
 </section>
 </section>
 
@@ -1484,7 +1511,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-processing">Data processing</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Xanda</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Xanda</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#topics-at-last">Topics at last!</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-topic-keywords">Understanding topic keywords</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparing-some-high-level-trends">Comparing some high-level trends</a><ul class="nav section-nav flex-column">
@@ -1508,11 +1535,12 @@ document.write(`
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Quinn</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Quinn</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#where-s-the-walking-disaster">Where’s the walking disaster?</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-modeling-ftw">Topic modeling ftw!</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#go-try-topic-modeling">Go try topic modeling!</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suggested-citation">Suggested citation</a></li>
 </ul>
   </nav></div>
 
