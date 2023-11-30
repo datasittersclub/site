@@ -3,7 +3,7 @@
 # The Data-Sitters Club
 
 <div style="float:right; margin-left:10px;">
-<img src="https://datasittersclub.github.io/site/_static/dsc_book_cover.jpg" width="300px" style="float:right;" />
+<img src="https://datasittersclub.github.io/site/_static/images/dsc_book_cover.jpg" width="300px" style="float:right;" />
 </div>
 
 _Need a fun way to learn about computational text analysis for digital humanities?_
