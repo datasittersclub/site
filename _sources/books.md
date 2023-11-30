@@ -32,9 +32,9 @@ Feeling lost? Check out our **[index](genindex)** of book topics, tools, mistake
 | :--------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
 |                                      [DSC #16](dsc16.md)                                       |                                      [DSC #17](dsc17.md)                                      |                                    [DSC #18](dsc18.md)                                    |
 
-| [![DSC #19: Shelley and the Bad Corpus](_static/images/bookcovers/dsc19_cover.jpg)](dsc19.md) | ![Coming soon!](_static/images/bookcovers/blankcover.png) | ![Coming soon!](_static/images/bookcovers/blankcover.png) |
-| :-------------------------------------------------------------------------------------------: | :-------------------------------------------------------: | :-------------------------------------------------------: |
-|                                      [DSC #19](dsc19.md)                                      |                                                           |                                                           |
+| [![DSC #19: Shelley and the Bad Corpus](_static/images/bookcovers/dsc19_cover.jpg)](dsc19.md) | ![DSC #20: Xanda Rescues the Topic Modeling Disaster](_static/images/bookcovers/dsc20_cover.jpg) | ![Coming soon!](_static/images/bookcovers/blankcover.png) |
+| :-------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------: |
+|                                      [DSC #20](dsc20.md)                                      |                                       [DSC #19](dsc19.md)                                        |                                                           |
 
 <a name="mystery" />
 
