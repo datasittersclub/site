@@ -1,12 +1,14 @@
 ![DSC logo](https://datasittersclub.github.io/site/_static/DSClogo.png)
 
+# The Data-Sitters Club
+
 <div style="float:right; margin-left:10px;">
-<img src="https://datasittersclub.github.io/site/_images/dsc_book_cover.jpg" width="300px" style="float:right;" />
+<img src="https://datasittersclub.github.io/site/_static/dsc_book_cover.jpg" width="300px" style="float:right;" />
 </div>
 
 _Need a fun way to learn about computational text analysis for digital humanities?_
 
-The Data-Sitters Club has you covered with [19 main books and 5 multilingual mysteries](books)!
+The Data-Sitters Club has you covered with [20 main books and 5 multilingual mysteries](books)!
 
 Feeling lost? Check out our **[index](genindex)** of book topics, tools, mistakes, and more!
 
