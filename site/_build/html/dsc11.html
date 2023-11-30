@@ -193,15 +193,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="dsc17.html">DSC 17: Cadence's Archives Mystery</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dsc18.html">DSC 18: The Data-Sitters' HathiTrust Mistake</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dsc19.html">DSC 19: Shelley and the Bad Corpus</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dsc20.html">Quinn</a></li>
-
-
-
-
-
-
-
-
+<li class="toctree-l1"><a class="reference internal" href="dsc20.html">DSC 20: Xanda Rescues the Topic Model Disaster</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Multilingual mysteries</span></p>
 <ul class="nav bd-sidenav">
@@ -561,14 +553,14 @@ Requirement already satisfied: MarkupSafe&gt;=2.0 in /usr/local/lib/python3.11/s
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="mi">3</span><span class="n">r</span><span class="o">/</span><span class="mi">55</span><span class="n">b5kjpd4s14_tg80r24vs7r0000gq</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_18537</span><span class="o">/</span><span class="mf">1482265312.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">os</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1">#Import VADER sentiment analyzer</span>
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">vaderSentiment.vaderSentiment</span> <span class="kn">import</span> <span class="n">SentimentIntensityAnalyzer</span>
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="mi">3</span><span class="n">r</span><span class="o">/</span><span class="mi">55</span><span class="n">b5kjpd4s14_tg80r24vs7r0000gq</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_52119</span><span class="o">/</span><span class="mf">1482265312.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">vaderanalyzer</span> <span class="o">=</span> <span class="n">SentimentIntensityAnalyzer</span><span class="p">()</span>
 <span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1">#Import Textblob</span>
+<span class="ne">----&gt; </span><span class="mi">6</span> <span class="kn">from</span> <span class="nn">textblob</span> <span class="kn">import</span> <span class="n">TextBlob</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="kn">from</span> <span class="nn">textblob.sentiments</span> <span class="kn">import</span> <span class="n">PatternAnalyzer</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="c1">#Import Pandas to be able to create tables of data</span>
 
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;vaderSentiment&#39;
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;textblob&#39;
 </pre></div>
 </div>
 </div>
