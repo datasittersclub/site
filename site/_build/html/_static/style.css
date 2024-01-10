@@ -1,3 +1,12 @@
+@media print {
+  a.skip-link {
+    display: none;
+  }
+  #jb-print-toc {
+    display: none;
+  }
+}
+
 html[data-theme="dark"] {
   --pst-color-attention: #de0e5e;
   --pst-color-text-base: #000000;
