@@ -1,3 +1,12 @@
+@media print {
+  a.skip-link {
+    display: none;
+  }
+  #jb-print-toc {
+    display: none;
+  }
+}
+
 html[data-theme="dark"] {
   --pst-color-attention: #de0e5e;
   --pst-color-text-base: #000000;
@@ -5,7 +14,7 @@ html[data-theme="dark"] {
   --pst-color-shadow: #212121;
   --pst-color-border: silver;
   --pst-color-inline-code: #f237a1;
-  --pst-color-target: #472700;
+  --pst-color-target: #ce7fd6;
   --pst-color-background: #f9bbc6;
   --pst-color-on-background: #c68acd;
   --pst-color-surface: #373737;
@@ -459,7 +468,7 @@ div.cell_output .output::-webkit-scrollbar {
 }
 
 div.cell_output .output::-webkit-scrollbar-thumb {
-  background: var(--pst-color-text-muted);
+  background: #c68acd;
   border-radius: 0.25rem;
 }
 
@@ -473,7 +482,7 @@ div.cell_output .output::-webkit-scrollbar-thumb {
 
 div.cell_output .output::-webkit-scrollbar-thumb:hover,
 div.cell_output .output:hover::-webkit-scrollbar-thumb {
-  background: var(--pst-color-text-muted);
+  background: #c68acd;
 }
 
 html[data-theme="dark"] .bd-content div.cell_output .text_html,
