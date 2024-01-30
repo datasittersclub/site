@@ -17,7 +17,12 @@ permalink: /dsc16
 <div style="float: right; width: 200px;margin-left: 7px;margin-top: 0px;">
 <img src="_static/images/bookcovers/dsc16_cover.jpg" alt="DSC 16 book cover" />
 </div>
+
 by Anastasia Salter and Quinn Dombrowski, with Sam and Paul Dombrowski
+
+September 19, 2022
+
+<img src='_static/images/doi_logo.png' alt='DOI logo' height="20px" /> https://doi.org/10.25740/pj698yt9545
 
 ## Quinn
 
@@ -417,4 +422,4 @@ There's so much more the Data-Sitters Club can do with the Friendship Kit, if we
 
 ## Suggested citation
 
-Suggested citation: Salter, Anastasia and Quinn Dombrowski. "DSC #16: Anastasia's Secret Language." _The Data-Sitters Club,_ September 19, 2022. https://datasittersclub.github.io/site/dsc16.html.
+Salter, Anastasia and Quinn Dombrowski. "DSC #16: Anastasia's Secret Language." _The Data-Sitters Club._ September 19, 2022. https://doi.org/10.25740/pj698yt9545.

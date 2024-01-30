@@ -14,11 +14,15 @@ permalink: /dsc3/
 
 ```
 
-by Maria Sachiko Cecire, January 10, 2020
-
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
 <img src="_static/images/bookcovers/dsc3_cover.jpg" alt="DSC 3 book cover" />
 </div>
+
+by Maria Sachiko Cecire
+
+January 10, 2020
+
+<img src='_static/images/doi_logo.png' alt='DOI logo' height="20px" /> https://doi.org/10.25740/pn676yy8805
 
 I read the email thread again. Then one more time. “Oh my gosh,” I whispered. “What do I say?”
 
@@ -205,4 +209,4 @@ For now, I’ll leave you with Quinn’s notes on how to computationally work ou
 
 ## Suggested Citation
 
-Cecire, Maria Sachiko. “DSC #3: The Truth About Digital Humanities Collaboration.” _The Data-Sitters Club_. January 10, 2020. https://datasittersclub.github.io/site/dsc3.html.
+Cecire, Maria Sachiko. “DSC #3: The Truth About Digital Humanities Collaboration.” _The Data-Sitters Club_. January 10, 2020. https://doi.org/10.25740/pn676yy8805.

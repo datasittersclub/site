@@ -4,7 +4,11 @@
 
 ```
 
-by Cadence Cordell, Quinn Dombrowski, and Glen Layne-Worthey, November 10, 2022
+by Cadence Cordell, Quinn Dombrowski, and Glen Layne-Worthey
+
+November 10, 2022
+
+<img src='_static/images/doi_logo.png' alt='DOI logo' height="20px" /> https://doi.org/10.25740/wr486nr4873
 
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
 <img src="_static/images/bookcovers/dsc18_cover.jpg" alt="DSC 18 book cover" />
@@ -310,7 +314,7 @@ Now that we have that URL in a way that we can access it even without network co
 
 ### Secure mode
 
-Once your data capsule is running, right above the remote desktop window, you’ll see the option “Switch to Secure Mode”. Click on it. A pop-up will appear warning you about the limits to network access, the fact that you’ll only be able to access the HTRC data API (i.e. to download the texts you want) along with the standard warning about only doing non-consumptive research. Hit “Agree & Switch Mode”. You may have to wait a few minutes while you see “SWITCH_TO_SECURE_PENDING” displayed, but when you can once again access the virtual desktop, you’ll notice some changes: there will be two folders open, one called _secure_volume_ and one called _release_spool_.
+Once your data capsule is running, right above the remote desktop window, you’ll see the option “Switch to Secure Mode”. Click on it. A pop-up will appear warning you about the limits to network access, the fact that you’ll only be able to access the HTRC data API (i.e. to download the texts you want) along with the standard warning about only doing non-consumptive research. Hit “Agree & Switch Mode”. You may have to wait a few minutes while you see “SWITCH*TO_SECURE_PENDING” displayed, but when you can once again access the virtual desktop, you’ll notice some changes: there will be two folders open, one called \_secure_volume* and one called _release_spool_.
 
 _Secure_volume_ is where you save the texts that you download from your collection. Once you do your analysis, things that you want to get access to outside the data capsule go into _release_spool_.
 
@@ -469,4 +473,4 @@ What have we learned here? Well, the Data-Sitters are no Stacey McGill. HathiTru
 
 ## Suggested citation
 
-Suggested citation: Cordell, Cadence, Quinn Dombrowski, and Glen Layne-Worthey. "DSC #18: The Data-Sitters' HathiTrust Mistake." _The Data-Sitters Club,_ November 10, 2022. https://datasittersclub.github.io/site/dsc18.html.
+Cordell, Cadence, Quinn Dombrowski, and Glen Layne-Worthey. "DSC #18: The Data-Sitters' HathiTrust Mistake." _The Data-Sitters Club._ November 10, 2022. https://doi.org/10.25740/wr486nr4873.
