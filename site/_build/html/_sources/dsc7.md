@@ -17,7 +17,11 @@ permalink: /dsc7
 <div style="float: right; width: 200px;margin-left: 7px;margin-top: 0px;">
 <img src="https://datasittersclub.github.io/site/_static/images/bookcovers/dsc7_cover.jpg" alt="DSC 7 book cover" />
 </div>
-by Quinn Dombrowski and Matthew Sag, September 22, 2020
+by Quinn Dombrowski and Matthew Sag
+
+September 22, 2020
+
+<img src='_static/images/doi_logo.png' alt='DOI logo' height="20px" /> https://doi.org/10.25740/jw434mm1467
 
 It all started with a comment on the draft of [DSC #5: The DSC and the Impossible TEI Quandaries](https://datasittersclub.github.io/site/dsc5.html).
 
@@ -509,4 +513,4 @@ There’s so much to learn about copyright, fair use (and similar provisions in 
 
 ## Suggested Citation
 
-Suggested citation: Dombrowski, Quinn and Matthew Sag. "DSC #7: The DSC and Mean Copyright Law." _The Data-Sitters Club,_ September 22, 2020. https://datasittersclub.github.io/site/dsc7.html.
+Dombrowski, Quinn and Matthew Sag. "DSC #7: The DSC and Mean Copyright Law." _The Data-Sitters Club._ September 22, 2020. https://doi.org/10.25740/jw434mm1467.

@@ -15,7 +15,11 @@ permalink: /dsc2/
 
 ```
 
-by Katherine Bowers, December 12, 2019
+by Katherine Bowers
+
+December 12, 2019
+
+<img src='_static/images/doi_logo.png' alt='DOI logo' height="20px" /> https://doi.org/10.25740/nj242yt4186
 
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
 <img src="_static/images/bookcovers/dsc2_cover.jpg" alt="DSC 2 book cover" />
@@ -259,4 +263,4 @@ The author gratefully acknowledges Quinn Dombrowski for her help in preparing th
 
 ## Suggested citation
 
-Bowers, Katherine and Quinn Dombrowski. "DSC #2: Katia and the Phantom Corpus." _The Data-Sitters Club._ December 12, 2019. https://datasittersclub.github.io/site/dsc2.html.
+Bowers, Katherine and Quinn Dombrowski. "DSC #2: Katia and the Phantom Corpus." _The Data-Sitters Club._ December 12, 2019. https://doi.org/10.25740/nj242yt4186.

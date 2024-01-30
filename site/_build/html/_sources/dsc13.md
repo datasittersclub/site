@@ -19,6 +19,10 @@ permalink: /dsc13
 </div>
 by Lee Skallerup Bessette, Maria Sachiko Cecire, Quinn Dombrowski, and Roopika Risam
 
+May 18, 2022
+
+<img src='_static/images/doi_logo.png' alt='DOI logo' height="20px" /> https://doi.org/10.25740/jq417jv3351
+
 ## Introduction (Roopsi)
 
 I literally hate this. “How’s _DSC 13_?” has been the perennial question in my emails and DMs with Quinn. For months, Quinn has gently nudged me to finish this book because we have others in the pipeline and we’d agreed that we wouldn’t put them out before we paused to do the important work of remembering friends and colleagues that we have lost recently.
@@ -286,4 +290,4 @@ And so it seems fitting to end my piece of this book with lyrics from another mu
 
 ## Suggested citation
 
-Suggested citation: Bessette, Lee Skallerup, Quinn Dombrowski, Maria Sachiko Cecire, and Roopika Risam. "DSC #13: Goodbye, Friends, Goodbye." _The Data-Sitters Club,_ May 18, 2022. https://datasittersclub.github.io/site/dsc13.html.
+Bessette, Lee Skallerup, Quinn Dombrowski, Maria Sachiko Cecire, and Roopika Risam. "DSC #13: Goodbye, Friends, Goodbye." _The Data-Sitters Club,_ May 18, 2022. https://doi.org/10.25740/jq417jv3351.

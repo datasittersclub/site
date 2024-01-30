@@ -14,7 +14,11 @@ permalink: /dscm3/
 
 ```
 
-by Lee Skallerup Bessette and Quinn Dombrowski, April 2, 2020
+by Lee Skallerup Bessette and Quinn Dombrowski
+
+April 2, 2020
+
+<img src='_static/images/doi_logo.png' alt='DOI logo' height="20px" /> https://doi.org/10.25740/yx951qc9382
 
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
 <img src="_static/images/bookcovers/dscm3_cover.jpg" alt="DSC M3 book cover" />
@@ -505,4 +509,4 @@ It sounded great. We’ll take a break from these translations for now, and star
 
 ## Suggested citation
 
-Bessette, Lee Skallerup and Quinn Dombrowski. "DSC Multilingual Mystery #3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs". April 2, 2020. https://datasittersclub.github.io/site/dscm3.html
+Bessette, Lee Skallerup and Quinn Dombrowski. "DSC Multilingual Mystery \#3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs". April 2, 2020. https://doi.org/10.25740/yx951qc9382.

@@ -19,6 +19,10 @@ permalink: /dsc14
 </div>
 by Quinn Dombrowski, Rachael Samberg, and Erik Stallman
 
+May 17, 2022
+
+<img src='_static/images/doi_logo.png' alt='DOI logo' height="20px" /> https://doi.org/10.25740/rx261rg1892
+
 ## Returning to the cliffhanger
 
 [DSC 7: The DSC and Mean Copyright Law](dsc7.md) was published in September 2020. It’s still one of my favorite pieces ever on working through fair use. Unlike the _Sweet Valley_ book series that stuck a dramatic cliffhanger at the end of each volume, the DSC tries to wrap up most of the loose ends by the end of each book. But DSC 7 was different: we mentioned this 1998 law, the [Digital Millennium Copyright Act (DMCA)](https://datasittersclub.github.io/site/dsc7.html#dmca-as-buzzkill), that put additional restrictions on the use of ebooks (and other “digital” things, like DVDs) beyond fair use – such as making it illegal to crack the encryption on ebooks so you can use the text for solidly fair use things like research. And every three years, there’s a window where people can petition for exemptions to this rule. Some of them have actually been granted, like one that allows blind people who use screen readers to crack the encryption if necessary to make the books readable by that accessibility device. 2021 was a petition year, and a bunch of DH people along with some friendly lawyers had a plan.
@@ -245,4 +249,4 @@ Whether you’re a student or librarian, an adjunct or an independent scholar, a
 
 ## Suggested citation
 
-Suggested citation: Dombrowski, Quinn, Rachael Samberg, and Erik Stallman. "DSC #14: Hello, DMCA Exemption." _The Data-Sitters Club,_ May 17, 2022. https://datasittersclub.github.io/site/dsc14.html.
+Dombrowski, Quinn, Rachael Samberg, and Erik Stallman. "DSC #14: Hello, DMCA Exemption." _The Data-Sitters Club. _ May 17, 2022. https://doi.org/10.25740/rx261rg1892.

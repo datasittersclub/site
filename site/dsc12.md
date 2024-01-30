@@ -20,6 +20,8 @@ by Katherine Bowers, Quinn Dombrowski, and Roopika Risam
 
 November 2, 2021
 
+<img src='_static/images/doi_logo.png' alt='DOI logo' height="20px" /> https://doi.org/10.25740/wr764jc8892
+
 We need to talk about coding.
 
 Ever since [DSC 7: The DSC and Mean Copyright Law](https://datasittersclub.github.io/site/dsc7.html), we've been putting an awful lot of code in these books. [Text comparison algorithms](https://datasittersclub.github.io/site/dsc8.html), [machine-generated text](https://datasittersclub.github.io/site/dsc9.html), [principal component analysis](https://datasittersclub.github.io/site/dsc10.html), [sentiment analysis](https://datasittersclub.github.io/site/dsc11.html).
@@ -406,7 +408,7 @@ And that's totally okay. DH coding skills aren't like Pokémon: you don't have t
 
 ## Suggested Citation
 
-Suggested citation: Bowers, Katherine, Quinn Dombrowski, and Roopika Risam. "DSC #12: The DSC and the New Coding Language." _The Data-Sitters Club,_ November 2, 2021. https://datasittersclub.github.io/site/dsc12.html.
+Bowers, Katherine, Quinn Dombrowski, and Roopika Risam. "DSC #12: The DSC and the New Coding Language." _The Data-Sitters Club._ November 2, 2021. https://doi.org/10.25740/wr764jc8892.
 
 ## Dear Reader: More Coding Stories
 
