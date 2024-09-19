@@ -1,20 +1,19 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta property="og:title" content="DSC #20: Xanda Rescues the Topic Model Disaster" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://datasittersclub.github.io/site/dsc20.html" />
-<meta property="og:site_name" content="Python" />
+<meta property="og:site_name" content="Project name not set" />
 <meta property="og:description" content="by Sathvika Anand, Quinn Dombrowski, and Xanda Schofield November 30, 2023 https://doi.org/10.25740/bf458zg9079 Quinn: In the beginning, there was topic modeling. No, really. When I was in Las Vega..." />
 <meta property="og:image" content="https://datasittersclub.github.io/site/_static/DSClogo.png" />
-<meta property="og:image:alt" content="Python" />
+<meta property="og:image:alt" content="Project name not set" />
 <meta name="description" content="by Sathvika Anand, Quinn Dombrowski, and Xanda Schofield November 30, 2023 https://doi.org/10.25740/bf458zg9079 Quinn: In the beginning, there was topic modeling. No, really. When I was in Las Vega..." />
 
     <title>DSC #20: Xanda Rescues the Topic Model Disaster &#8212; The Data-Sitters Club</title>
@@ -23,55 +22,52 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/style.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/style.css?v=a0fcb558" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'dsc20';</script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="DSC Multilingual Mystery #1: Lee and the Missing Metadata" href="dscm1.html" />
@@ -85,19 +81,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -119,12 +119,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -139,9 +147,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="index.html">
+  
   
   
   
@@ -151,12 +163,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/DSClogo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/DSClogo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/DSClogo.png" class="logo__image only-light" alt="The Data-Sitters Club - Home"/>
+    <script>document.write(`<img src="_static/DSClogo.png" class="logo__image only-dark" alt="The Data-Sitters Club - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -222,7 +245,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -231,14 +254,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -328,26 +351,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -417,17 +442,17 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="dsc-20-xanda-rescues-the-topic-model-disaster">
-<h1>DSC #20: Xanda Rescues the Topic Model Disaster<a class="headerlink" href="#dsc-20-xanda-rescues-the-topic-model-disaster" title="Permalink to this heading">#</a></h1>
+<h1>DSC #20: Xanda Rescues the Topic Model Disaster<a class="headerlink" href="#dsc-20-xanda-rescues-the-topic-model-disaster" title="Link to this heading">#</a></h1>
 <div style='float: right; width: 300px;margin-left: 7px;margin-top: 0px;'>
 <img src='_static/images/bookcovers/dsc20_cover.jpg' alt='DSC 19 book cover' />
 </div><p>by Sathvika Anand, Quinn Dombrowski, and Xanda Schofield</p>
 <p>November 30, 2023</p>
 <p><img src='_static/images/doi_logo.png' alt='DOI logo' height="20px" /> 	<a class="reference external" href="https://doi.org/10.25740/bf458zg9079">https://doi.org/10.25740/bf458zg9079</a></p>
 <section id="quinn">
-<span id="index-0"></span><h2>Quinn<a class="headerlink" href="#quinn" title="Permalink to this heading">#</a></h2>
+<span id="index-0"></span><h2>Quinn<a class="headerlink" href="#quinn" title="Link to this heading">#</a></h2>
 <p id="index-1">In the beginning, there was topic modeling.</p>
 <p>No, really.</p>
 <p>When I was <a class="reference external" href="https://datasittersclub.github.io/site/dsc1.html">in Las Vegas, having a few drinks</a>, playing with the beginnings of what would become the Data-Sitters Club, one of the very first things I tried was topic modeling. At least for DH people of my generation, topic modeling is the kind of thing that you look towards as one of the first analytic steps for a corpus  (whether or not you really understand what’s going on with it, let’s be honest). And, I gotta say, I was underwhelmed with what I got as a first topic model using some fairly-standard default settings<a class="footnote-reference brackets" href="#id4" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
@@ -437,9 +462,9 @@ document.write(`
 <p>With their help, I was going to finally get to the bottom of topic modeling.</p>
 </section>
 <section id="xanda">
-<h2>Xanda<a class="headerlink" href="#xanda" title="Permalink to this heading">#</a></h2>
+<h2>Xanda<a class="headerlink" href="#xanda" title="Link to this heading">#</a></h2>
 <section id="how-does-topic-modeling-work">
-<h3>How does topic modeling work?<a class="headerlink" href="#how-does-topic-modeling-work" title="Permalink to this heading">#</a></h3>
+<h3>How does topic modeling work?<a class="headerlink" href="#how-does-topic-modeling-work" title="Link to this heading">#</a></h3>
 <p id="index-4">In the very first chapter of BSC #1, Kristy’s Great Idea, Kristy discovers a new word:</p>
 <blockquote>
 <div><p>“Mr. Redmont,” I said, “I’m really sorry. I didn’t mean anything. I mean, I didn’t mean I was glad school was over. I meant I was glad I could go home. Because my house is air-conditioned….”</p>
@@ -471,7 +496,7 @@ document.write(`
 </div>
 </section>
 <section id="what-s-a-document">
-<span id="index-9"></span><h3>What’s a “document”?<a class="headerlink" href="#what-s-a-document" title="Permalink to this heading">#</a></h3>
+<span id="index-9"></span><h3>What’s a “document”?<a class="headerlink" href="#what-s-a-document" title="Link to this heading">#</a></h3>
 <p>Getting back to the higher-level idea behind topic models: the key thing they’re relying on is this naive version of context clues, just “which words show up together”. For classic topic models, the definition of “together” we’re using is “in the same document” - the fact that the words “nail” and “polish” show up right next to each other in a piece of text doesn’t mean any more than the word “nail” showing up 200 words after the word “decorum”, as long as we define it as the same document. This means that one of the most important things to do when using topic models is to make sure that the text being passed in isn’t using too much text as one single context. If we can help it, we like to break things explicitly in ways that will keep common themes together.</p>
 <p id="index-10">We could think about breaking down our books into different size units for our documents:</p>
 <ul class="simple">
@@ -481,7 +506,7 @@ document.write(`
 <li><p>If we break things into chapters, we may have an easier time getting a lot of text, but the length is going to be enough that it’s possible the topic may wander. This works great for text with short chapters (or with collections of articles where there’s really one story per chapter/article/item).</p></li>
 <li><p>If we just separate the whole books, we’re treating everything in one book as being equally related to each other. For things on the order of novel-length books, this is usually going to go really poorly – even for the fairly short BSC chapter books, this would mean that things that happen in every book could never have their own topic (like the regular BSC meetings).</p></li>
 </ul>
-<span class="target" id="index-11"></span><p id="index-12">Usually, when people come to me saying that a topic model wasn’t working for them, the first issue is whether the text has been split right. The second is whether they’re using something reasonable to learn the model – there are different topic modeling implementations out there, and they’re not all equivalent. Unluckily, the highest profile one in Python, <a class="reference external" href="https://radimrehurek.com/gensim/models/ldamodel.html">the LDA implementation in Gensim</a>, is actually doing some stuff designed to work fast for extremely large datasets – but the choices and approximations that make that possible also make it kind of sloppy on more regular-sized datasets like the BSC. Unless you’ve got millions of paragraphs of text, you probably should be using something like the <a class="reference external" href="https://mimno.github.io/Mallet/topics.html">command line tool Mallet</a>, R’s <a class="reference external" href="https://www.tidytextmining.com/topicmodeling.html">topicmodels package</a>, or the more recent Python <a class="reference external" href="https://bab2min.github.io/tomotopy/v/en/">tomotopy package</a>.</p>
+<p id="index-12"><span id="index-11"></span>Usually, when people come to me saying that a topic model wasn’t working for them, the first issue is whether the text has been split right. The second is whether they’re using something reasonable to learn the model – there are different topic modeling implementations out there, and they’re not all equivalent. Unluckily, the highest profile one in Python, <a class="reference external" href="https://radimrehurek.com/gensim/models/ldamodel.html">the LDA implementation in Gensim</a>, is actually doing some stuff designed to work fast for extremely large datasets – but the choices and approximations that make that possible also make it kind of sloppy on more regular-sized datasets like the BSC. Unless you’ve got millions of paragraphs of text, you probably should be using something like the <a class="reference external" href="https://mimno.github.io/Mallet/topics.html">command line tool Mallet</a>, R’s <a class="reference external" href="https://www.tidytextmining.com/topicmodeling.html">topicmodels package</a>, or the more recent Python <a class="reference external" href="https://bab2min.github.io/tomotopy/v/en/">tomotopy package</a>.</p>
 <p id="index-13">I ended up writing a short script to split my text up and match up information between babysitter narrators, chapters, and text. The function that’s probably the most reusable here is <code class="docutils literal notranslate"><span class="pre">split_text_into_paragraph_chunks</span></code>, which looks for places where a new paragraph starts (that is, where someone left a blank line between lines of text) to split text up, combining together shorter paragraphs into single passages until they exceed 100 words together.</p>
 <div class="cell tag_skip-execution docutils container">
 <div class="cell_input docutils container">
@@ -566,9 +591,9 @@ document.write(`
 </section>
 </section>
 <section id="sathvika">
-<h2>Sathvika<a class="headerlink" href="#sathvika" title="Permalink to this heading">#</a></h2>
+<h2>Sathvika<a class="headerlink" href="#sathvika" title="Link to this heading">#</a></h2>
 <section id="data-processing">
-<h3>Data processing<a class="headerlink" href="#data-processing" title="Permalink to this heading">#</a></h3>
+<h3>Data processing<a class="headerlink" href="#data-processing" title="Link to this heading">#</a></h3>
 <p>I’m Sathvika, and here’s my journey dealing with topic models this semester.</p>
 <p id="index-15">After learning a little about what topic models even are, I worked on getting Mallet up and running and got a preliminary set of data to understand what the software was even doing. Mallet is a package that includes lots of tools for various natural language processing tasks, including topic models. I used <a class="reference external" href="https://docs.google.com/presentation/d/1MUWtqjlEZ6gNfSdHZ_HdIvwjFkFY6psiq02lSPPurtM/edit?usp=sharing">this guide</a> for topic modeling to learn how to set everything up!</p>
 <div class="admonition-quinn-says admonition">
@@ -597,7 +622,7 @@ document.write(`
 <li><p><strong>output-doc-topics: dsc.doctopics.txt</strong> - This shows the topic proportions for each document, by listing each document then giving you a tab-separated list with as many entries as you have topics, showing what % of the document maps to each of those topics. It’s not very easy to read on its own, but you can use it (like Xanda does below) for visualizations and things.</p></li>
 </ul>
 </div>
-<span class="target" id="index-17"></span><p id="index-18">In this first iteration, I realized that a lot of preprocessing was going to be necessary in order to get coherent, useful topics. In this set of topics, there were a lot of common English words present, like “was” and “I”, which are expected to be in every topic. These so-called “stop words” (since they’re ignored or “stopped” in tools like search engines) naturally show up in the top words of topic models if they’re not removed from the collection: after all,  these high-probability common words are present in the context of almost every other word in the dataset. Luckily, this is something Mallet can already handle with its <a class="reference external" href="https://github.com/mimno/Mallet/blob/master/stoplists/en.txt">built-in English stoplist</a>, which contains around 500 words to remove by default (though you can also write your own stoplist).</p>
+<p id="index-18"><span id="index-17"></span>In this first iteration, I realized that a lot of preprocessing was going to be necessary in order to get coherent, useful topics. In this set of topics, there were a lot of common English words present, like “was” and “I”, which are expected to be in every topic. These so-called “stop words” (since they’re ignored or “stopped” in tools like search engines) naturally show up in the top words of topic models if they’re not removed from the collection: after all,  these high-probability common words are present in the context of almost every other word in the dataset. Luckily, this is something Mallet can already handle with its <a class="reference external" href="https://github.com/mimno/Mallet/blob/master/stoplists/en.txt">built-in English stoplist</a>, which contains around 500 words to remove by default (though you can also write your own stoplist).</p>
 <p id="index-19">Additionally, the names of the babysitters themselves (as well as other characters in the books) appeared in large groups as the most common words in the topics. At first, we were hesitant to remove these, since the names were important for the topics in the books and seemed like a good way to connect characters with their associated hobbies, family, and plotlines. However, it became clear the names were appearing in topics associated with other characters. The culprit was dialogue, the real danger in this story!</p>
 <p>The way the Baby-Sitters Club books are written, each book has its own narrator who is also one of the main characters of the other books. Thus, most times a first-person pronoun like “I”, “me” or “myself” appears in the book, the pronoun refers to one of the babysitters. However, in dialogue, this guarantee goes away, as other non-narrating characters might also talk about themselves. The information about who was speaking was being lost in the original topic models, making it difficult to parse which themes were associated with which characters. What we wanted was a way to deal with some of the dialogue confusion and to help pull the narrators back into how our topics were represented.</p>
 <p>To do this, I first used regular expressions to remove dialogue (by detecting matching sets of quotations!). Luckily for us, this isn’t the first time the DSC has pulled quotations out (see, for instance, <a class="reference external" href="https://datasittersclub.github.io/site/dsc15.html">DSC #15</a> about whether the character Ilana from the <em>BY Times</em> series has similar dialogue to BSC’s Dawn). It was important to do this step first, to make sure that the only first person pronouns were coming from our narrator. Before even doing that, though, I did some small substitutions: replacing curly quote characters like <code class="docutils literal notranslate"><span class="pre">“</span></code> or <code class="docutils literal notranslate"><span class="pre">’</span></code> with their straightened counterparts <code class="docutils literal notranslate"><span class="pre">&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">'</span></code>.</p>
@@ -644,7 +669,7 @@ document.write(`
 </div>
 <p id="index-21">Prof. Xanda assured me these sorts of problems are typical when working with text data; since a lot of this information is collected and corrected manually from different sources, there’s a lot of room for typos and mismatches even with careful effort. The fastest fix for this was also a manual one: I went through and corrected these errors by adjusting the filenames manually until the filenames all matched the actual files (and the babysitters’ names!), and then we were good to go! After training a number of models as we went, noticing and correcting problems each time, we finally trained 10-, 20-, and 50-topic models with dialogue and stopwords removed, as well as with pronouns appended to the narrator names.</p>
 <p>Looking at these resulting topics below, we realized that appending the narrator names told us what topics were associated with certain babysitters, as we can see in the highlighted topics. These topics are just grouping names with the content in their respective chapters. This would be convenient if we just wanted to identify who was narrating each chapter, but this is labeling that we already have.</p>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Topic #</p></th>
 <th class="head"><p>Alpha</p></th>
@@ -854,13 +879,14 @@ document.write(`
 </tr>
 </tbody>
 </table>
+</div>
 <p id="index-22">What now? We found that if we just remove pronouns, we can see topics that aren’t necessarily associated with just one narrator, and instead connect across chapters. We decided to then train models with pronouns removed instead, and used these models for the following analysis! While it’s a little discouraging sometimes to spend a while processing only to find out it’s not the thing we want to do, we learned something about our text and the model in this process: that if we make our processing too direct a reflection of metadata, our topics are going to mimic that. There’s actually a whole paper about trying to deal with this “author-specific” kind of problem with topic models here: Thompson and Mimno, <a class="reference external" href="https://aclanthology.org/C18-1329/">Authorless Topic Models</a>.</p>
 </section>
 </section>
 <section id="id2">
-<h2>Xanda<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<h2>Xanda<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <section id="topics-at-last">
-<h3>Topics at last!<a class="headerlink" href="#topics-at-last" title="Permalink to this heading">#</a></h3>
+<h3>Topics at last!<a class="headerlink" href="#topics-at-last" title="Link to this heading">#</a></h3>
 <p>After Sathvika successfully nailed down our processing for our topic models, it was finally time to look at some topics! Just to recap, we had the following processing steps:</p>
 <ul class="simple">
 <li><p>To make our documents, we take the text of each chapter and split it into chunks. To make chunks, we add text paragraph by paragraph until we have at least 100 words in our chunk, then write that out (with all the new lines replaced with spaces) and start our next chunk. The last chunk in a chapter may be shorter. In some prior experiments, we removed dialogue; in these models, dialogue is still left in.</p></li>
@@ -876,9 +902,9 @@ document.write(`
 <p>For the next section, I’m assuming that you’re working with topic model files that come out of Mallet, which include the original imported file, document-topic proportions, top words for each topic (a “keys” file), and the output topic “state” file. All of these files are generated as plain text, except for the state file, which is zipped up using the gzip format. That should mean that the filenames here match the filenames from Sathvika’s big messy Mallet command from earlier.</p>
 </section>
 <section id="understanding-topic-keywords">
-<h3>Understanding topic keywords<a class="headerlink" href="#understanding-topic-keywords" title="Permalink to this heading">#</a></h3>
+<h3>Understanding topic keywords<a class="headerlink" href="#understanding-topic-keywords" title="Link to this heading">#</a></h3>
 <p id="index-23">Let’s start with our 20-topic model. Here are our top topics just based on the most probable terms in each. I’ve highlighted a couple of topics of interest. In  are two topics with high alpha, 9 and 14, which corresponds to having a high probability of showing up in a larger proportion in a document. (We’ll see both of these show up across a lot of documents!) The two topics in purple, 3 and 18, are the ones we’ll later see are the most correlated with Chapter 2: 3 covers meeting logistics, while 18 seems to cover descriptions of people.</p>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Topic #</p></th>
 <th class="head"><p>Alpha</p></th>
@@ -968,9 +994,10 @@ document.write(`
 </tr>
 </tbody>
 </table>
+</div>
 </section>
 <section id="comparing-some-high-level-trends">
-<h3>Comparing some high-level trends<a class="headerlink" href="#comparing-some-high-level-trends" title="Permalink to this heading">#</a></h3>
+<h3>Comparing some high-level trends<a class="headerlink" href="#comparing-some-high-level-trends" title="Link to this heading">#</a></h3>
 <p id="index-24">One thing we can do is compare how much each topic is showing up across different books, different narrators, and so on. I’m going to do this with heat maps, where each row corresponds to a category applied to our text chunks and each column corresponds to a topic. The brighter/lighter the color, the more probability that topic has for that category. Note that to compute this, we can’t just average naively, as some text passages are longer than others; we’re going to weigh the proportion each text passage counts for by the number of tokens it has in the model (after stopwords are removed).</p>
 <p>When I set out to do this sort of exploration, I usually spend the most time just pulling the data from the model together into a format where I can actually make plots that I want to see. In this case, I decided to use pandas Dataframes, which store data in Excel-like columns that allow a lot of nice built-in operations.</p>
 <p>The starting point for my plots is going to be topic proportions for each “segment”, or each text passage.</p>
@@ -1084,7 +1111,7 @@ document.write(`
 </div>
 <p>Since our segments aren’t very different in length, this extra code to get the segment lengths and get a weighted average probably didn’t affect much – little enough that I often skip this step in my first round of analysis, since it’s unlikely to change any of my final conclusions. But if you’re doing a project where your text segments have very different lengths and you want to combine them, it can be important to think about whether you want to take a regular average (so each <em>segment</em> counts equally) or a weighted average (so each <em>word</em> counts equally).</p>
 <section id="noticing-character-specific-topics">
-<h4>Noticing character-specific topics<a class="headerlink" href="#noticing-character-specific-topics" title="Permalink to this heading">#</a></h4>
+<h4>Noticing character-specific topics<a class="headerlink" href="#noticing-character-specific-topics" title="Link to this heading">#</a></h4>
 <p id="index-26">We might notice character-specific topics only lighting up for books focusing on that character:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1126,8 +1153,8 @@ document.write(`
 </div>
 </section>
 <section id="trends-over-chapters">
-<h4>Trends over chapters<a class="headerlink" href="#trends-over-chapters" title="Permalink to this heading">#</a></h4>
-<span class="target" id="index-28"></span><p id="index-29">Lastly, let’s do a slightly different plot to look at topics versus chapters. Here, I’m going to treat chapters as a sort of timeseries, since most books are around the same length: we’ll just treat chapter numbers as times and plot topic proportion over time. We expect that if a topic shows up a lot in topic 2, then it should spike at x=2; if it shows up more towards the end of books, it should have an upward slope.</p>
+<h4>Trends over chapters<a class="headerlink" href="#trends-over-chapters" title="Link to this heading">#</a></h4>
+<p id="index-29"><span id="index-28"></span>Lastly, let’s do a slightly different plot to look at topics versus chapters. Here, I’m going to treat chapters as a sort of timeseries, since most books are around the same length: we’ll just treat chapter numbers as times and plot topic proportion over time. We expect that if a topic shows up a lot in topic 2, then it should spike at x=2; if it shows up more towards the end of books, it should have an upward slope.</p>
 <p>Before we do this, we need to do the same thing for chapters as we did before for books. Then, to help us plot, we’re going to do some bonus processing to split our one row per segment into <code class="docutils literal notranslate"><span class="pre">ntopics</span></code> rows, one for each specific proportion we want to plot. (Admittedly, I’m pretty sure there’s a nice pandas-y way to do this, but I was having trouble remembering how, so I just wrote some loops to make my data fit. A little ugly, I know, but it gets the job done!)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1189,7 +1216,7 @@ document.write(`
 </section>
 </section>
 <section id="but-what-are-they-saying">
-<h3>But what are they saying?<a class="headerlink" href="#but-what-are-they-saying" title="Permalink to this heading">#</a></h3>
+<h3>But what are they saying?<a class="headerlink" href="#but-what-are-they-saying" title="Link to this heading">#</a></h3>
 <p id="index-31">It can be helpful to look at <em>top documents</em> for particular topics to see what’s actually being said in them. Here, “documents” are just going to be short passages with a high proportion of a topic we’re interested in, so we can get a sense of not just what words and names are present, but the context in which they’re showing up. This is a surprisingly easy step to skip, but often the most important for making sure your topics mean what you think they mean. I’m writing my function especially so it’ll print them out with the bold face <code class="docutils literal notranslate"><span class="pre">**</span></code> and new lines <code class="docutils literal notranslate"><span class="pre">\n</span></code> that will help me make it look nice when I paste it in later.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1229,7 +1256,7 @@ document.write(`
 </div>
 <p id="index-32">Here’s the top 10 documents for topic 3 and topic 18, our chapter-2-associated topics:</p>
 <section id="topic-3">
-<h4>Topic 3<a class="headerlink" href="#topic-3" title="Permalink to this heading">#</a></h4>
+<h4>Topic 3<a class="headerlink" href="#topic-3" title="Link to this heading">#</a></h4>
 <p><strong>127c_abbys_un_valentine_2.txt-7 - Abby, Chapter 2 (97.07%)</strong> We meet Monday, Wednesday, and Friday afternoons, from five-thirty until six at Claudia’s. Clients know that if they call us during meeting times, they’ll reach six reliable, experienced baby-sitters. Since Claudia has her own phone number, the line isn’t busy with family calls (and Claud’s family isn’t prevented from using the phone while we are meeting). When a client calls, Mary Anne checks the record book to see who is available and we schedule the baby-sitting appointment. We pay dues every Monday. The club uses the money to pay Kristy’s older brother Charlie for gas (he usually drives Kristy and me to meeting — I live two houses down the street from Kristy), to contribute to Claudia’s refreshments fund, to splurge on the occasional pizza party, and to keep our Kid-Kits stocked.</p>
 <p><strong>042c_jessi_and_the_dance_school_phantom_4.txt-8 - Jessi, Chapter 4 (96.99%)</strong> Where does the money come from? Well, it’s like this. We keep all the money we earn on jobs — that’s ours. But every Monday, we pay club dues. (Not without a lot of complaining, I might add — we hate to part with our hard-earned money.) The dues are used for club stuff, like paying Kristy’s brother Charlie to drive her back and forth to meetings since she lives too far away to walk now. We also use the money for the occasional pizza bash or for sleepover munchies. (We’re not all business, all the time!) And we use some of it for supplies for our Kid-Kits. Kid-Kits are yet another of Kristy’s great ideas. They’re really just cardboard boxes, but we’ve each decorated our own with all kinds of stickers and sequins and stuff. The boxes are stocked with things that kids love — crayons and books and puzzles and paper dolls … stuff like that. We bring them on any job where they might come in handy.</p>
 <p><strong>058c_staceys_choice_2.txt-15 - Stacey, Chapter 2 (96.16%)</strong> To help the club work even more effectively, Kristy came up with three more great ideas. One was the club notebook in which each club member must write up every sitting job she goes on. Then the rest of us are responsible for reading it once a week. This is a good way to keep up with the lives of the children we care for, and to find out how our friends handled sitting problems. The second idea was Kid-Kits. She invented the idea of decorating an ordinary cardboard carton and filling it with her old games, books, and toys, plus some new things such as art supplies, and bringing it with her on sitting jobs. Now we each have a Kid-Kit — and we have become very popular sitters! The third idea was to sign up two extra club members as associates. The associate members don’t attend meetings. They’re reliable sitters we can call on if a job happens to come along that none of us is available to take. That doesn’t happen often, but when it does, we’re extremely grateful for Shannon Kilbourne (a friend of Kristy’s who lives in her new neighborhood) and Logan Bruno who is … Mary Anne’s boyfriend!</p>
@@ -1243,7 +1270,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="topic-18">
-<h4>Topic 18<a class="headerlink" href="#topic-18" title="Permalink to this heading">#</a></h4>
+<h4>Topic 18<a class="headerlink" href="#topic-18" title="Link to this heading">#</a></h4>
 <p><strong>028c_welcome_back_stacey_3.txt-5 - Stacey, Chapter 3 (92.29%)</strong> The other things you should know about her are that she’s a gifted artist, she likes to read Nancy Drew mysteries, and she’s a terrible student. The bad-student thing is unfortunate for two reasons. One, Claud has a perfectly good mind; she just doesn’t apply herself in school. Two, her older sister Janine is a genius. She’s so smart that even though she’s still in high school, she’s already taking courses at Stoneybrook’s community college.</p>
 <p><strong>077c_dwn_and_whitney_friends_forever_2.txt-9 - Dawn, Chapter 2 (88.32%)</strong> Stacey McGill is Claud’s best friend and the BSC treasurer. She was born and raised in New York City, which gives her a distinct “city” style. She moved to Stoneybrook with her parents, moved back to NYC with her parents, then moved to Stoneybrook again with her mom after her parents got divorced. Stacey’s a math whiz. She’s got long blonde hair (darker than mine), is an only child (like Mary Anne) and, like me, watches what she eats. But Stacey does it because she really has to. She has diabetes, which means her blood sugar level can go haywire. She has to be very careful with her diet and inject herself every day with insulin.</p>
 <p><strong>071c_claudia_and_the_perfect_boy_2.txt-13 - Claudia, Chapter 2 (88.20%)</strong> Stacey keeps such an upbeat attitude that you’d never guess how many tough things she’s had to deal with. Tough thing number one: her health. Stacey has a very serious form of diabetes, which is a disease in which her body can’t properly regulate the amount of sugar in her system. If she doesn’t watch her diet (absolutely no sugar or junk food) and give herself insulin injections every day, she could go into a coma. I admire how disciplined she is in sticking to all this and how she doesn’t let it get her down.</p>
@@ -1256,10 +1283,10 @@ document.write(`
 <p><strong>118c_kristy_thomas_dog_trainer_2.txt-12 - Kristy, Chapter 2 (85.59%)</strong> Plus, she looked as if she were slightly older than the rest of us. She isn’t, but in some ways she’s more worldly and a bit more grown-up. Part of this is because she’s from New York City originally. (Her parents are divorced and her father still lives there. She visits him often.) Stacey is also diabetic. Because of this, her parents were super-overprotective of their only child, and Stacey has had to work hard to convince them that she could be responsible about managing her condition. This means that she has to be very careful about what she eats (no sugar or sweets, or she might get really sick), and she has to give herself insulin injections regularly (ouch). It’s a big responsibility, but one that Stacey seems to take in stride, accepting it as something that’s no more remarkable than her amazing math abilities.</p>
 <hr class="docutils" />
 <p>What’s going on here? The first topic, our club-meeting-logistic topic, is pretty much as expected - dominated by Chapters 2 and 3 and a lot of information about how things usually work in the club, not events specific to the story. We actually have a Chapter 4 passage in here, but it’s a discussion of Kristy’s other ideas for how the club runs, which makes it feel like a pretty good affirmation that we’re getting the kind of content we expect from Chapter 3. Topic 18 is also mostly what we expect, descriptions of sitters - with an interesting note that we’re getting an awful lot of Stacey and her diabetes in this discussion. It’s not possible from just the top 10 documents to tell exactly what’s up, but I’d guess this kind of abbreviated description of diabetes usually gets saved for the babysitter introductions, but that this topic might spread out a little more in books where Stacey’s diabetes comes up more, especially from her point of view. It’d be worth being cautious about generalizing this topic without checking that!</p>
-<span class="target" id="index-33"></span><p id="index-34">Let’s pick a different topic, one that we saw wasn’t as prominent in general but seemed to correlate heavily with Kristy – topic 5.</p>
+<p id="index-34"><span id="index-33"></span>Let’s pick a different topic, one that we saw wasn’t as prominent in general but seemed to correlate heavily with Kristy – topic 5.</p>
 </section>
 <section id="topic-5">
-<h4>Topic 5<a class="headerlink" href="#topic-5" title="Permalink to this heading">#</a></h4>
+<h4>Topic 5<a class="headerlink" href="#topic-5" title="Link to this heading">#</a></h4>
 <p><strong>m04c_kristy_and_the_missing_child_1.txt-6 - Kristy, Chapter 1 (94.81%)</strong> For a long time, that was my family. Mom, Charlie, Sam, David Michael, and me. Then Mom met this guy named Watson Brewer, and she married him. I wasn’t crazy about him at first, even though he is a millionaire, but now I really like him. Watson had also been married once before, and he has two children, Karen (she’s seven) and Andrew (he’s four). They’re both Krushers, too. They live with us every other weekend and for two weeks in the summer. The rest of the time they live with their mother and stepfather.</p>
 <p><strong>125c_mary_anne_in_the_middle_2.txt-3 - Mary Anne, Chapter 2 (94.50%)</strong> Kristy’s life changed again when her mother married Watson Brewer. That’s because her new stepdad is a millionaire. The Thomas family moved across town to his mansion and became part of a new, blended family. That new family includes seven-year-old Karen and four-year-old Andrew, Watson’s kids from his first marriage, who live at his house every other month. They adored Kristy instantly. Kristy also gained another younger sister, this one a full-time resident, when Watson and Kristy’s mom adopted a baby girl from Vietnam. Emily Michelle is now about two and a half. Kristy’s grandmother, Nannie, moved in to help with the younger kids — Emily Michelle, in particular. And, with assorted pets, including their puppy Shannon, and a kitten named Pumpkin, they have a very full house. It’s a good thing it’s a mansion.</p>
 <p><strong>088c_farewell_dawn_2.txt-14 - Dawn, Chapter 2 (94.41%)</strong> Watson has two young kids of his own from his first marriage (Karen, who is seven, and Andrew, who is four). Then, Kristy’s mom and Watson adopted a little girl from Vietnam named Emily Michelle who is now two and a half. Kristy’s grandmother (her mom’s mom) came to live with them to help take care of Emily Michelle. Karen and Andrew live with Watson every other month and with their mother the rest of the time. They adore Kristy and she adores them back.</p>
@@ -1275,7 +1302,7 @@ document.write(`
 <p id="index-35">Let’s also check out Topic 17 while we’re here, our mysterious spiky topic:</p>
 </section>
 <section id="topic-17">
-<h4>Topic 17<a class="headerlink" href="#topic-17" title="Permalink to this heading">#</a></h4>
+<h4>Topic 17<a class="headerlink" href="#topic-17" title="Link to this heading">#</a></h4>
 <p><strong>052c_mary_anne_plus_too_many_babies_11.txt-6 - Mary Anne, Chapter 11 (89.56%)</strong> “Me, too,” said Vanessa. She looked hopefully at Byron. Byron sighed. “Okay. I’ll be your husband,” he said. “But only for tonight.” “Who will be my husband?” asked Margo. “Not me,” said Adam defiantly. “I am never, ever getting married.” “Jordan?” said Margo. “Oh, all right.” Surprisingly, Nicky agreed to be Claire’s husband. “Okay, let’s adopt babies!” cried Vanessa.</p>
 <p><strong>111c_staceys_secret_friend_8.txt-4 - Stacey, Chapter 8 (88.41%)</strong> “Football!” cried Margo Pike (who’s seven) as she came down the stairs. “Who’s playing football? I want to play.” “No girls,” Nicky told her, scowling. “It’s a touch football game.” “No girls? That’s silly. Why don’t we all go together?” Mallory suggested. “I’ll get Claire ready.” Claire, who’s five, is the youngest Pike. “Ah, come on,” Nicky groaned. “Claire isn’t going to play, is she?”</p>
 <p><strong>073c_mary_anne_and_miss_priss_9.txt-1 - Mary Anne, Chapter 9 (86.59%)</strong> “We’re going to divide the team into two groups,” Adam announced as Shannon and the Barretts arrived. “I want to be on Buddy’s team,” Nicky Pike shouted. “Me, too,” Suzi Barrett cried. “Becca Ramsey and I have to be on the same team,” Haley Braddock declared. “I want to be with Haley and Becca!” Margo shouted. Adam waved his hands in the air. “Quiet! Quiet, everybody! We’ll pick the teams and you have to do what we say.”</p>
@@ -1297,9 +1324,9 @@ document.write(`
 </section>
 </section>
 <section id="the-making-of-chapter-2">
-<h3>The making of Chapter 2<a class="headerlink" href="#the-making-of-chapter-2" title="Permalink to this heading">#</a></h3>
+<h3>The making of Chapter 2<a class="headerlink" href="#the-making-of-chapter-2" title="Link to this heading">#</a></h3>
 <p>Let’s remind ourselves of our Chapter 2-y topics. We have two that stuck out in this model, Topics 3 and 18:</p>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Topic #</p></th>
 <th class="head"><p>Alpha</p></th>
@@ -1317,6 +1344,7 @@ document.write(`
 </tr>
 </tbody>
 </table>
+</div>
 <p>Topic 3 is a meeting logistics topic: it seems to be associated with dues, officers, recording, and the business part of the club. This matches the typical description of how a conventional BSC meeting runs, and we’ve looked up examples to confirm that’s what’s going on here. Topic 18, in contrast, is describing characters in terms of hair and eye color, clothing, family, likes/dislikes, etc. We also checked and confirmed this is our usual chapter-2 recipe for describing characters.</p>
 <p>We’re pretty sure both of these topics should be prominent in Chapter 2 of most baby-sitter’s club books. But what if we could see a little more about that pattern? Let’s just look at topic proportion for Topics 3 and 18 for Chapter 1, 2, and 3 of each book:</p>
 <div class="cell docutils container">
@@ -1345,7 +1373,7 @@ document.write(`
 <p>Now, of course, the topic analysis is unlikely to tell the whole story here; it’s probably the case that meetings and descriptions were happening in some of these chapters, but the language might have been varying a little over time compared with the consistency of the latter books. All the same, this was a surprise to confirm for me as I skimmed book chapters: it does indeed look like the merged chapter 2 I was used to taking for granted actually used to be two separate components, and that our topics can help us track how those components got moved around and interwoven into the modern format.</p>
 </section>
 <section id="once-more-with-50-topics">
-<h3>Once more, with 50 topics<a class="headerlink" href="#once-more-with-50-topics" title="Permalink to this heading">#</a></h3>
+<h3>Once more, with 50 topics<a class="headerlink" href="#once-more-with-50-topics" title="Link to this heading">#</a></h3>
 <p id="index-37">I wrote the code to make my plots carefully: I tried to make sure I never referred to the number “20” directly, and instead always used the variable ntopics to describe how I wanted things plotted. This relates to the programming practice of “avoiding magic numbers”: if you have an exact constant like a 20 or 50 in your code all over the place, it’s really hard to update, but if there’s a variable at the top that you define and reuse, it’s much easier. This means I can pretty much just replace the number 20 with 50 and immediately regenerate the plots I want – the only thing I’m going to need to do is update the aspect ratio.</p>
 <p>I’m going to skip straight to our topic-narrator plot first, which we generate the same way we did for the 20-topic model. Before, we were sometimes conflating two babysitters in one topic. Have we successfully separated out topics for each of our babysitters while also having topics in common?</p>
 <p>We could rewrite all the code above - or we can just rerun it by setting <code class="docutils literal notranslate"><span class="pre">ntopics</span> <span class="pre">=</span> <span class="pre">50</span></code> way earlier in our code! Here’s the plot we get for our new babysitterby-topic analysis:</p>
@@ -1362,7 +1390,7 @@ document.write(`
 </div>
 <p id="index-38">Looks like it! We used to have Kristy and Shannon sharing a topic, but now, Kristy has topic 16 (and to a lesser extent topic 42), while Shannon alone dominates topic 11. Indeed, we seem to have a baby-sitter-aligned topic for each babysitter now, with some even having two more or less exclusively to themselves – in addition to Kristy’s pair of topics, Jessi has 18 and 38. While Quinn pointed out the babysitters sharing topics might have been a feature, not a bug, this number of topics gives us a way to separate pieces out a bit more if we prefer that kind of analysis.</p>
 <p>Last time, we spotted a Kristy topic that seemed to be about Kristy’s family. Can we find a topic like that again? 16 and 42 look like good candidates in this new model from the top words and topic proportions, but 43 also sticks out as very Kristy-ish, even though it’s not specific to her books:</p>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Topic #</p></th>
 <th class="head"><p>Alpha</p></th>
@@ -1384,23 +1412,24 @@ document.write(`
 </tr>
 </tbody>
 </table>
+</div>
 <p>And this is where it gets to the heart of why you may (or may not) want more topics in your topic model: if we look at the top few documents for these topics, we can find out there’s actually a distinction between these topics besides the order of names:</p>
 <section id="topic-16">
-<h4>Topic 16<a class="headerlink" href="#topic-16" title="Permalink to this heading">#</a></h4>
+<h4>Topic 16<a class="headerlink" href="#topic-16" title="Link to this heading">#</a></h4>
 <p><strong>095c_kristy_plus_bart_equals_questionmark_14.txt-18 - Kristy, Chapter 14 (71.64%)</strong> Bart was about to pedal away but he didn’t. “Huh?” “You know, the April Fools’ Day Dance?” I reminded him. “At your school? Did you forget?” “Well, no,” Bart replied. “But we’re not going to that dance together.” “I thought — didn’t you ask — we’re friends again, aren’t we?” “Sure we are. But this is a dance, Kristy. I don’t want to take just a friend to the dance.”</p>
 <p><strong>122c_kristy_in_charge_10.txt-9 - Kristy, Chapter 10 (67.72%)</strong> “How do teachers manage, then?” I asked. “You have to give a little,” Ms. Walden said. “Things can’t always go exactly as you think they should. You have to allow other people to have input.” “Cary has no input,” I pointed out. “His idea of student teaching is to let the kids run wild!” “And what’s your idea of how it should be?” she asked. “Well …” Here was my chance to tell her how I thought she might improve her own teaching. “Kids should learn, but in a fun way. You don’t have to yell at them and punish them all the time.”</p>
 <p><strong>038c_kristys_mystery_admirer_12.txt-14 - Kristy, Chapter 12 (63.97%)</strong> Well, she certainly wasn’t my best friend. “Anyway,” Cokie went on, “I thought you might need a little extra cheering. You’ve looked sort of depressed lately. I want your team to win.” “I haven’t been depressed!” I cried. “I’ve even got a boyfriend. He’s coming to the Halloween Hop with me.” “Really?” said Cokie. “You must like each other a lot.” I drew myself up. I knew I was showing off, but I couldn’t help saying, “We plan to spend our lives together.”</p>
 <p><strong>045c_kristy_and_the_baby_parade_8.txt-1 - Kristy, Chapter 8 (63.14%)</strong> I looked around the room at my friends. Nobody had begged me to tell them my idea, but then again, none of them had said I shouldn’t. “Okay, here’s what we’ll do. The theme will be — get this — Take Me Out to the Ball Game!” I scanned their faces to see their reactions to my idea, but I couldn’t tell what they thought. “We’ll dress the babies in little baseball uniforms and decorate the float like a baseball diamond. It’ll be so, so cute!” I went on.</p>
 </section>
 <section id="topic-42">
-<h4>Topic 42<a class="headerlink" href="#topic-42" title="Permalink to this heading">#</a></h4>
+<h4>Topic 42<a class="headerlink" href="#topic-42" title="Link to this heading">#</a></h4>
 <p><strong>039c_poor_mallory_10.txt-2 - Mallory, Chapter 10 (84.96%)</strong> “Let’s play with Myrtle the turtle and Noodle the poodle,” said David Michael. “Nah. We already did that today,” Linny told him. “Dolls!” Karen suggested to Hannie. “Nah,” said Hannie. “Invaders from the planet Neptune?” Linny suggested to David Michael. “Nah,” said David Michael. “Hey!” cried Karen. “I know something we’ve never played, and we can all play it together. Even Sari. Even you, Kristy.”</p>
 <p><strong>009c_the_ghost_at_dawns_house_7.txt-11 - Dawn, Chapter 7 (78.85%)</strong> “Except for the storm,” said Andrew. “And the fire crackling,” added David Michael. “And just think,” said Karen. “This was happening right here in our house … in that room on the third floor.” (Ben Brewer is Andrew and Karen’s great-grandfather.) “The room we never go in,” whispered Andrew. At that moment, Boo-Boo, the Brewers’ fat cat, waddled in. Karen pointed to him. “Boo-Boo knows about that room, Kristy. He knows it’s haunted.”</p>
 <p><strong>062c_kristy_and_the_worst_kid_ever_3.txt-19 - Kristy, Chapter 3 (74.19%)</strong> “He’s coming. He’s coming!” “Who?” said David Michael. “The foster kid. This afternoon!” “You’re getting a brother?” asked David Michael. That stopped Linny, but only for a moment. “We’re not sure yet. But I bet we are. The people called today and said it would be this afternoon.” “That’s great news, Linny,” I said. “Can we come over?” asked David Michael.</p>
 <p><strong>062c_kristy_and_the_worst_kid_ever_9.txt-13 - Kristy, Chapter 9 (71.32%)</strong> “You are going to meet a tall, dark stranger?” “I’m not …” “You might,” said Karen. “I’m going on a treasure hunt,” I told her. “Can I come, too?” “Me too, me too,” cried David Michael. “And me,” said Andrew. “Me,” echoed Emily Michelle. “In the attic,” I said. “Right after breakfast. For stuff for the auction.” (I’d already told everyone about the auction.)</p>
 </section>
 <section id="topic-43">
-<h4>Topic 43<a class="headerlink" href="#topic-43" title="Permalink to this heading">#</a></h4>
+<h4>Topic 43<a class="headerlink" href="#topic-43" title="Link to this heading">#</a></h4>
 <p><strong>045c_kristy_and_the_baby_parade_1.txt-3 - Kristy, Chapter 1 (94.51%)</strong> And then, not too long ago, my mom met this really terrific guy named Watson Brewer. They fell in love and got married — so now Watson’s my stepfather. After the wedding, we moved across town to live in his mansion. Watson is a real, true millionaire. Can you believe it? But you’d never know it by the way he acts — he’s not stuck up or anything. He’s just a regular guy. And he’s a great father to his two kids from his first marriage — Karen (she’s seven) and Andrew (he’s almost five). They live with us every other weekend and for a couple of weeks during the summer. They’re terrific kids.</p>
 <p><strong>m11c_claudia_and_the_mystery_at_the_museum_2.txt-4 - Claudia, Chapter 2 (94.24%)</strong> But Kristy’s family has changed — and grown — a lot in the last year or so. It all started when Kristy’s mom fell in love with a man named Watson Brewer, who happens to be mega-rich. When they got married, Kristy and her brothers moved across town to live in Watson’s mansion. (They used to live across the street from me.) Watson has two children from his first marriage, Karen and Andrew, who live with him part-time. And soon after their marriage, Watson and Kristy’s mom decided to adopt a baby, so Emily Michelle came to live with them, too. She’s an incredibly cute two-and-a-half-year-old Vietnamese girl. Soon after she arrived, Kristy’s grandmother (everybody calls her Nannie) moved in to help out with everything. Full house, right? And that’s not even counting the pets — Shannon, Boo-Boo the cat, and the goldfish.</p>
 <p><strong>119c_staceys_ex_boyfriend_2.txt-9 - Stacey, Chapter 2 (93.35%)</strong> She’s also very down-to-earth. You’d never guess she lives in a mansion and that her stepfather is a millionaire. It’s true, though. Kristy’s birth father walked out on the family not long after Kristy’s younger brother, David Michael, was born. He just up and left Kristy’s mom to support four kids on her own. (Kristy also has two older brothers, Sam and Charlie.) It was really tough for them for a while, but Kristy’s mom was tough too. She supported all of them on her own. Then she met and married Watson.</p>
@@ -1412,25 +1441,27 @@ document.write(`
 </section>
 </section>
 <section id="id3">
-<h2>Quinn<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<h2>Quinn<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
 <section id="where-s-the-walking-disaster">
-<h3>Where’s the walking disaster?<a class="headerlink" href="#where-s-the-walking-disaster" title="Permalink to this heading">#</a></h3>
+<h3>Where’s the walking disaster?<a class="headerlink" href="#where-s-the-walking-disaster" title="Link to this heading">#</a></h3>
 <p id="index-40">So far the only walking disaster we’ve found in this book has been me, in Las Vegas in 2019, not knowing what I was doing with topic modeling and getting frustrated at how little I could get out of them. But there’s another way that topic modeling can be like Jackie Rodowsky, the infamously klutzy baby-sitting charge: much like Jackie, if your corpus is “dirty”, topic modeling will find the mess and trip over it. Even if you don’t want to use it for its analytical capabilities with document chunks like we’ve done here, consider trying topic modeling when you’re working with a corpus that you <em>don’t</em> know inside and out, and where you suspect there might be some “mess”.</p>
 <p>One of my projects at work involves analyzing the last 20 years of dissertations from my department. (Fellow Data-Sitter Katia and I have also mulled over doing something similar for the last 20 years of Slavic dissertations in the US and Canada!) One of the tricky things about this project is that not all the texts are in English – but I don’t know which ones aren’t. What’s worse, there are plenty of dissertations that are <em>mostly</em> in English, except for where they aren’t. I’m excited about the possibilities of using topic modeling to help me sift through these dissertations to find the parts that are the acknowledgements, the parts that are the citations, and the parts that are extensive quotes from primary sources in other languages, to help me find the main English substantive parts of the dissertations, so I can compare them across time, advisors, and topics to better understand the kind of scholarship the department produces.</p>
 </section>
 <section id="go-try-topic-modeling">
-<span id="index-41"></span><h3>Go try topic modeling!<a class="headerlink" href="#go-try-topic-modeling" title="Permalink to this heading">#</a></h3>
+<span id="index-41"></span><h3>Go try topic modeling!<a class="headerlink" href="#go-try-topic-modeling" title="Link to this heading">#</a></h3>
 <p>Working with Xanda and Sathvika changed my mind about topic modeling: it’s gotten a big boost in my personal DH text analysis toolkit. I can see using it at the beginning of the project, when I’m working with a messier corpus than the Data-Sitters Club (and <em>almost all</em> the corpora are messier than the DSC at this point, after we’ve worked with it for four years). I can see using it to explore different … well, <em>topics</em> in a corpus after I’ve cleaned it up. And for corpora that I know well, I can see using it as another lens on quantifying and solidifying my understanding of things that I have hunches about, like the infamous “chapter 2” phenomenon in the Baby-Sitters Club. There’s more we could even do with the topic models Xanda and Sathvika made here, reading through the book synopses in <a class="reference external" href="https://datasittersclub.github.io/site/dsc17.html">the Ann M. Martin archive</a>, and then using it as a starting point for diving into how those topics play out in the corpus.</p>
 <p>Topic modeling reliably trips over mess in your corpus, and it chokes if you give it too much text, but much like klutzy Jackie Rodowsky, I can definitely imagine it becoming a beloved member of an ensemble cast of DH tools, as long as you understand what you’re getting into.</p>
 </section>
 </section>
 <section id="suggested-citation">
-<h2>Suggested citation<a class="headerlink" href="#suggested-citation" title="Permalink to this heading">#</a></h2>
+<h2>Suggested citation<a class="headerlink" href="#suggested-citation" title="Link to this heading">#</a></h2>
 <p>Anand, Sathvika, Quinn Dombrowski, and Xanda Schofield. “DSC #20: Xanda Rescues the Topic Model Disaster.” <em>The Data-Sitters Club.</em> November 30, 2023. 	<a class="reference external" href="https://doi.org/10.25740/bf458zg9079">https://doi.org/10.25740/bf458zg9079</a>.</p>
 <hr class="footnotes docutils" />
-<aside class="footnote brackets" id="id4" role="note">
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id4" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
 <p>Yes, I’d read “<a class="reference external" href="https://www.matthewjockers.net/macroanalysisbook/lda/">The LDA Buffet</a>” by Matt Jockers – who came up in <a class="reference external" href="https://datasittersclub.github.io/site/dsc11.html">DSC 11: Katia and the Sentiment Snobs</a>. It’s apt for Las Vegas given the prevalence of buffets, but honestly, it left me more hungry than satisfied with my understanding of topic modeling.</p>
+</aside>
 </aside>
 </section>
 </section>
@@ -1460,11 +1491,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer d-print-none">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="dsc19.html"
@@ -1484,10 +1514,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1495,6 +1522,7 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1563,9 +1591,10 @@ By The Data-Sitters Club
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -1589,8 +1618,8 @@ By The Data-Sitters Club
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

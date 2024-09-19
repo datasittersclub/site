@@ -54,7 +54,9 @@ parts:
         title: "DSC 19: Shelley and the Bad Corpus"
       - file: dsc20
         title: "DSC 20: Xanda Rescues the Topic Model Disaster"
-  - caption: Multilingual mysteries
+      - file: dsc21
+        title: "DSC 21: Quinn and the Trouble with Environments"
+  - caption: Multilingual Mysteries
     chapters:
       - file: dscm1
         title: "DSCM 1: Lee and the Missing Metadata"
@@ -66,6 +68,10 @@ parts:
         title: "DSCM 4: Isabelle and the Missing Spaghetti-O's"
       - file: dscm5
         title: "DSCM 5: Lee & Quinn and the Mystery in the French NLP Model"
+  - caption: Super Specials
+    chapters:
+      - file: dscss1
+        title: "DSCSS 1: The Data-Sitters Debate at Dartmouth"
   - caption: Fun
     chapters:
       - file: covid19

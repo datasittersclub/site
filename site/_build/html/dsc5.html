@@ -1,20 +1,19 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta property="og:title" content="DSC #5: The DSC and the Impossible TEI Quandaries" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://datasittersclub.github.io/site/dsc5.html" />
-<meta property="og:site_name" content="Python" />
+<meta property="og:site_name" content="Project name not set" />
 <meta property="og:description" content="by Elisa Beshero-Bondar, Lee Skallerup Bessette, Quinn Dombrowski, and Roopika Risam June 25, 2020 https://doi.org/10.25740/wq850xt2646 Quinn: In the weeks before the world shut down due to COVID-1..." />
 <meta property="og:image" content="https://datasittersclub.github.io/site/_static/DSClogo.png" />
-<meta property="og:image:alt" content="Python" />
+<meta property="og:image:alt" content="Project name not set" />
 <meta name="description" content="by Elisa Beshero-Bondar, Lee Skallerup Bessette, Quinn Dombrowski, and Roopika Risam June 25, 2020 https://doi.org/10.25740/wq850xt2646 Quinn: In the weeks before the world shut down due to COVID-1..." />
 
     <title>DSC #5: The DSC and the Impossible TEI Quandaries &#8212; The Data-Sitters Club</title>
@@ -23,55 +22,52 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/style.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/style.css?v=a0fcb558" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'dsc5';</script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="DSC #6: Voyant’s Big Day" href="dsc6.html" />
@@ -85,19 +81,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -119,12 +119,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -139,9 +147,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="index.html">
+  
   
   
   
@@ -151,12 +163,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/DSClogo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/DSClogo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/DSClogo.png" class="logo__image only-light" alt="The Data-Sitters Club - Home"/>
+    <script>document.write(`<img src="_static/DSClogo.png" class="logo__image only-dark" alt="The Data-Sitters Club - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -222,7 +245,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -231,14 +254,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -328,26 +351,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -409,10 +434,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="dsc-5-the-dsc-and-the-impossible-tei-quandaries">
-<h1>DSC #5: The DSC and the Impossible TEI Quandaries<a class="headerlink" href="#dsc-5-the-dsc-and-the-impossible-tei-quandaries" title="Permalink to this heading">#</a></h1>
+<h1>DSC #5: The DSC and the Impossible TEI Quandaries<a class="headerlink" href="#dsc-5-the-dsc-and-the-impossible-tei-quandaries" title="Link to this heading">#</a></h1>
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
 <img src="_static/images/bookcovers/dsc5_cover.jpg" alt="DSC 5 book cover" />
 </div>
@@ -420,18 +445,18 @@ document.write(`
 <p>June 25, 2020</p>
 <p><img src='_static/images/doi_logo.png' alt='DOI logo' height="20px" /> <a class="reference external" href="https://doi.org/10.25740/wq850xt2646">https://doi.org/10.25740/wq850xt2646</a></p>
 <section id="quinn">
-<h2>Quinn<a class="headerlink" href="#quinn" title="Permalink to this heading">#</a></h2>
+<h2>Quinn<a class="headerlink" href="#quinn" title="Link to this heading">#</a></h2>
 <p id="index-1">In the weeks before the world shut down due to COVID-19, Lee and I got into a <a class="reference external" href="https://twitter.com/quinnanya/status/1232364722604761088">Twitter discussion with folks who work on comic books and computational image analysis</a>, mulling over what we could do with the graphic novels. I’d scanned the English and French versions of “Kristy’s Great Idea”, and had noticed at least one change that went beyond the text bubbles:</p>
 <div style="float: left; width: 300px;margin-right: 7px;margin-top: 0px;">
 <img src="_static/images/dsc5_thank_you_merci.jpg" alt="Chinese take-out containers with text 'thank you' and 'merci' from graphic novels" />
 </div>
-<span class="target" id="index-2"></span><p id="index-3">Were there other places in the translations where images had been modified? That’s a harder question than you might think. There’s lots of algorithms for looking at whether an image has been modified – but they all assume that someone <em>took a specific source image file</em>, made modifications to that same file, and then saved the file. What I wanted to do was <em>compare two completely different source image files</em> that show the same page of a comic book in the original, and in translation. Basically the same contents (from the perspective of a human viewer), but totally different image files (from the perspective of the computer). This turns out to be much harder. There’s a lot of exciting work going on in the area of computational analysis of images (see, for instance Taylor Arnold and Lauren Tilton’s <a class="reference external" href="https://distantviewing.org/">Distant Viewing Lab</a>), but on the whole, tools for image analysis have lagged behind tools for textual analysis.</p>
+<p id="index-3"><span id="index-2"></span>Were there other places in the translations where images had been modified? That’s a harder question than you might think. There’s lots of algorithms for looking at whether an image has been modified – but they all assume that someone <em>took a specific source image file</em>, made modifications to that same file, and then saved the file. What I wanted to do was <em>compare two completely different source image files</em> that show the same page of a comic book in the original, and in translation. Basically the same contents (from the perspective of a human viewer), but totally different image files (from the perspective of the computer). This turns out to be much harder. There’s a lot of exciting work going on in the area of computational analysis of images (see, for instance Taylor Arnold and Lauren Tilton’s <a class="reference external" href="https://distantviewing.org/">Distant Viewing Lab</a>), but on the whole, tools for image analysis have lagged behind tools for textual analysis.</p>
 <p id="index-4">So how else can we work with the graphic novels, if we’re not working with the images as images? <a class="reference external" href="http://dcl.slis.indiana.edu/cbml/">Comic Book Markup Language (CBML)</a> came to mind. CBML (as written up by John Walsh in the 2012 DH Quarterly article, “<a class="reference external" href="http://www.digitalhumanities.org/dhq/vol/6/1/000117/000117.html">Comic Book Markup Language: An Introduction and Rationale</a>”) is a variant of the Text Encoding Initiative (TEI) conventions, originally developed for marking up different kinds of texts, that adds in elements, attributes, and vocabularies specifically designed for use with comic books.</p>
 <p>Markup? Elements? Attributes? That’s a lot of jargon already – and we haven’t even gotten to schemas, XML, XSLT, XPath, XQuery. (There’s so many X’s in this area of DH that you might get the wrong idea – but don’t worry, it’s all G-rated as long as you disregard the colorful language I end up muttering as I try to write and debug the XSLT.) Let’s start from the beginning.</p>
 <p>But before we dive into the tech, you might want to <a class="reference internal" href="chapter-2.html"><span class="doc std std-doc">read Chapter 2</span></a> about what the Data-Sitters Club is, and you <em>definitely</em> should meet Lee Skallerup-Bessette, who’s been working on the Multilingual Mysteries with me but is making her main-series debut here.</p>
 </section>
 <section id="lee">
-<h2>Lee<a class="headerlink" href="#lee" title="Permalink to this heading">#</a></h2>
+<h2>Lee<a class="headerlink" href="#lee" title="Link to this heading">#</a></h2>
 <p>While I was initially brought into the Data-Sitters Club because of my experience and expertise with French (and specifically Québécois) as well as plumbing the depths of national library databases and used bookstores online, I have a number of “adjacent” areas of expertise that are applicable here, too. I’m “adjacent” to DH in a lot of ways, but I am also “adjacent” to YA graphic novels, as well as adaptations and TEI.</p>
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
 <img src="_static/images/dsc5_lee_tei_dhsi.jpg" alt="Lee's DHSI certificate for a DHSI workshop in 2012" />
@@ -442,14 +467,14 @@ document.write(`
 <p>So when Quinn was like, we need to do TEI but I’m also really interested in the graphic novels and visual representation, I was like, yeah, I can do that. I’ve “dabbled.” But more importantly for me was understanding how the books have changed and been adapted as these are the versions that my kid (and kids) are now consuming. What choices have been made in terms of what has been transferred, modernized, dropped, erased, added, and adopted, and how does that impact the narrative? There is so much on the page that takes place in the characters’ minds in these books, how is that rendered in illustration? And, how do you fill up the narratively empty space of the backgrounds of Stoneybrook? In other words, there is so much not described, and how does the artist choose to portray those gaps? It was a fascinating question, and on that I thought, why not? TEI sounds like a good way (ok, one way) to get at answering the question.</p>
 </section>
 <section id="id1">
-<h2>Quinn<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<h2>Quinn<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <section id="what-does-it-mean-to-mark-something-up">
-<h3>What does it mean to mark something up?<a class="headerlink" href="#what-does-it-mean-to-mark-something-up" title="Permalink to this heading">#</a></h3>
-<span class="target" id="index-5"></span><p id="index-6">TEI is associated with a kind of DH activity that people have been doing since the 1980’s: creating digital editions of texts. Digital editions take your classic printed critical edition of a text to the next level, allowing scholars to annotate a text in many different ways at the same time, reflecting various aspects of the text’s editorial history, physical manifestation in a particular edition, and/or content. “Marking up” a text just means annotating it, typically using a consistent set of conventions for how you represent different things. The “consistent set of conventions” part is important: markup is less like jotting down notes in the margins of a book, and more like going through a book with a set of highlighters, using one color to mark speech acts by women, and another color to mark metaphors, and a third color to mark allusions to Emily Dickinson. If your book contains a speech act by a woman that contains a metaphor, some of the text might be highlighted with two colors.</p>
-<span class="target" id="index-7"></span><p id="index-8">When you’re doing TEI markup, you typically start with a plain text file (.txt) with all the words in the text you’re marking up. (How do you get <em>that</em>? Check out <a class="reference internal" href="dsc2.html"><span class="doc std std-doc">DSC #2: Katia and the Phantom Corpus</span></a>.) That text is your “book” – and your “highlighters” are what’s called “elements”, and “attributes” that modify those elements. Elements and attributes represent real-world <em>things</em> and their <em>traits</em>, respectively. They make explicit things in the text that you as a reader can recognize – which makes it possible for computers to recognize those things as well. Once a computer can recognize those things, they can do the things that computers are good at, like counting, comparing, and visualizing. <em>This</em> gets us to the “why” of TEI: depending on what you’ve marked up, you can answer questions like, “Which chapters underwent the most extensive revisions?” or “People of which gender(s) speak most often in this book?”, or “Which characters make the most Emily Dickinson allusions, in which settings?”</p>
+<h3>What does it mean to mark something up?<a class="headerlink" href="#what-does-it-mean-to-mark-something-up" title="Link to this heading">#</a></h3>
+<p id="index-6"><span id="index-5"></span>TEI is associated with a kind of DH activity that people have been doing since the 1980’s: creating digital editions of texts. Digital editions take your classic printed critical edition of a text to the next level, allowing scholars to annotate a text in many different ways at the same time, reflecting various aspects of the text’s editorial history, physical manifestation in a particular edition, and/or content. “Marking up” a text just means annotating it, typically using a consistent set of conventions for how you represent different things. The “consistent set of conventions” part is important: markup is less like jotting down notes in the margins of a book, and more like going through a book with a set of highlighters, using one color to mark speech acts by women, and another color to mark metaphors, and a third color to mark allusions to Emily Dickinson. If your book contains a speech act by a woman that contains a metaphor, some of the text might be highlighted with two colors.</p>
+<p id="index-8"><span id="index-7"></span>When you’re doing TEI markup, you typically start with a plain text file (.txt) with all the words in the text you’re marking up. (How do you get <em>that</em>? Check out <a class="reference internal" href="dsc2.html"><span class="doc std std-doc">DSC #2: Katia and the Phantom Corpus</span></a>.) That text is your “book” – and your “highlighters” are what’s called “elements”, and “attributes” that modify those elements. Elements and attributes represent real-world <em>things</em> and their <em>traits</em>, respectively. They make explicit things in the text that you as a reader can recognize – which makes it possible for computers to recognize those things as well. Once a computer can recognize those things, they can do the things that computers are good at, like counting, comparing, and visualizing. <em>This</em> gets us to the “why” of TEI: depending on what you’ve marked up, you can answer questions like, “Which chapters underwent the most extensive revisions?” or “People of which gender(s) speak most often in this book?”, or “Which characters make the most Emily Dickinson allusions, in which settings?”</p>
 <p>Here’s the catch, though: to answer each of those questions, you need to mark up <em>different things</em>. To be able to look at revisions, you’d need to have access to multiple drafts of the text, and you’d have to mark up all the places where changes were made. To look at speech patterns by character gender, you’d need to mark up which character is performing each speech act, and you’d also need a list of all the characters with associated biographical metadata (including gender). To look at which characters make Emily Dickinson allusions, you’d need to mark up which character performed which speech act, as well as all the Emily Dickinson allusions in the text. You’d also have to decide how to handle attributing any Dickinson allusions made in the narration (separate from speech acts), if the narration is in the first person or in some other way reflects a character’s viewpoint or perspective.</p>
 <p>Marking up much besides a few basic, predictable structural things (e.g. paragraphs and chapters) or very simple markup of a defined set of content things (e.g. marking up every occurrence of character names, regardless context, given a list of all those names and variants) requires a lot of manual work. You might be able to hire an assistant for some of it – most people can reliably mark up speaker info, given some examples and guidance – but you need someone with specialized knowledge to reliably recognize Emily Dickinson allusions.</p>
-<span class="target" id="index-9"></span><p id="index-10">A lot of the methods the Data-Sitters Club has used so far have been compatible with an agenda of <em>corpus exploration</em>. We don’t know exactly what we’re looking for, but let’s find out if there’s anything there! TEI is different. With TEI, you have to <em>invest</em> in marking up a particular set of things, guided by a particular set of questions that shape what, exactly, you’re marking up. The more things you mark up, the more kinds of questions you can answer – and the longer it takes to prepare your text to the point where you can begin your analysis.</p>
+<p id="index-10"><span id="index-9"></span>A lot of the methods the Data-Sitters Club has used so far have been compatible with an agenda of <em>corpus exploration</em>. We don’t know exactly what we’re looking for, but let’s find out if there’s anything there! TEI is different. With TEI, you have to <em>invest</em> in marking up a particular set of things, guided by a particular set of questions that shape what, exactly, you’re marking up. The more things you mark up, the more kinds of questions you can answer – and the longer it takes to prepare your text to the point where you can begin your analysis.</p>
 <p>The analogy with highlighting a paper book also works from another angle. The more highlighting and underlining you add to a book, the harder it can be to <em>just read the text</em> without getting distracted by all the overlapping colors that each signify something meaningful, but can dissolve into a rainbow jumble (like my high school International Baccalaureate English copy of <em>When Rain Clouds Gather</em>).</p>
 <p><img alt="When Rain Clouds Gather, marked up too much with pen and highlighter, and a legend explaining what color means what" src="_images/dsc5_when_rain_clouds_gather_markup.jpg" /></p>
 <p>TEI can get like that, too. You start off with a plain text file that you can easily read:</p>
@@ -461,7 +486,7 @@ document.write(`
 <p>And soon you realize you’ve spent a lot of time making a file that’s <em>much less readable</em> than what you started with. The only way out of this mess is to keep going and learn how to write XSLT (we’ll get to that shortly), in order to transform your text cluttered up with angled brackets back into something that’s readable – and/or something that can count, compare, and make use of all the annotations you’ve made.</p>
 </section>
 <section id="a-xxx-toolkit">
-<span id="index-11"></span><h3>A XXX Toolkit<a class="headerlink" href="#a-xxx-toolkit" title="Permalink to this heading">#</a></h3>
+<span id="index-11"></span><h3>A XXX Toolkit<a class="headerlink" href="#a-xxx-toolkit" title="Link to this heading">#</a></h3>
 <p>Here’s another tricky thing about TEI: you can do everything I’ve described so far – marking up stuff in your text, and then analyzing it – <em>without TEI</em>. TEI is just a set of guidelines for what elements to use, what attributes those elements should have, and how to structure them hierarchically. It is <em>not</em> meant to be a <em>standard</em>, where you can count on particular elements always appearing in a particular order, and you can write code that will work to analyze or display any arbitrary TEI file in a particular way. I’ve worked on projects that have tried and failed chasing that dream, and mine aren’t the only project corpses along that road.</p>
 <p id="index-12">The kind of syntax or formatting used for actually doing TEI markup is called XML (eXtensible Markup Language). There’s a whole set of languages that can be used together to locate, query, process, analyze, and transform XML documents: XSLT (eXtensible Style Sheet Language Transformations, a programming language used to transform XML), XPath (a formal way to navigate through XML documents), XQuery (for querying XML documents), and more. None of those languages for querying, transforming, and analyzing XML care about whether you’re using TEI, or any other set of elements and attributes that follow the rules for being “well-formed” XML.</p>
 <p>The classic introductory DH reading for understanding the rules of XML and its associated ecosystem is an appendix in the TEI guidelines, “<a class="reference external" href="https://tei-c.org/release/doc/tei-p5-doc/en/html/SG.html">A Gentle Introduction to XML</a>”; David Birnbaum has made things more accessible still with “<a class="reference external" href="http://dh.obdurodon.org/what-is-xml.xhtml">What is XML and why should humanists care? An even gentler introduction to XML</a>”. If you’re interested in understanding XML, David’s introduction is the place to start, and includes a glossary with a description of all the pieces of the XML toolkit and how they fit together. The tl;dr Data-Sitters Club version is as follows:</p>
@@ -503,9 +528,9 @@ document.write(`
 &lt;/bedroom&gt;<br />
 &lt;bsc_bedrooms&gt;<br /></p>
 <p>You won’t get an error if you use spaces in attributes, but spaces are commonly used to separate multiple values of an attribute– so someone reading your XML might understand “nancy drew” as two values: “nancy” and “drew” rather than the girl detective series. It might be better to skip the “title” and “brand” attributes and just put that as text within the element. But text isn’t a complete free-for-all! There are certain characters – like the angled brackets themselves, as well as the ampersand (&amp;) that you’re not allowed to write in valid XML, and you have to use the entity name instead. And this is very important when you’re marking up Claudia’s secret candy stash, because she doesn’t have M&amp;Ms, she has: <code class="docutils literal notranslate"><span class="pre">M&amp;amp;Ms</span></code>.</p>
-<span class="target" id="index-15"></span></section>
+</section>
 <section id="so-why-bother-with-tei">
-<span id="index-16"></span><h3>So why bother with TEI?<a class="headerlink" href="#so-why-bother-with-tei" title="Permalink to this heading">#</a></h3>
+<span id="index-16"></span><span id="index-15"></span><h3>So why bother with TEI?<a class="headerlink" href="#so-why-bother-with-tei" title="Link to this heading">#</a></h3>
 <p>Since the X-family (XML, XSLT, XPath, XQuery, and friends) has all the functionality you need to annotate, analyze, and transform/display texts, why even bother with TEI? To be totally honest… for years, I didn’t. When I started doing DH, I worked on some pretty niche projects, like marking up excerpts from a Bulgarian dialectological atlas. It might have been possible to mark up the things that were important for my research question in a manner compatible with TEI, but it would have been convoluted and awkward and would have taken even longer. Instead, I made up my own schema – my own rules and set of elements – that covered only the things that mattered for my project, in a straightforward manner.</p>
 <p>It would have been a different story if I had been applying for grant funding with this project. Much as TEI isn’t “a standard” (in the sense of mandating a whole lot of consistency and uniformity), it is still <em>the standard</em> for doing XML markup in DH. If you’re applying for a grant and you want to do XML markup that’s <em>not</em> TEI, you better have a really good story for why you’re not using TEI… or, you know, claim you’re using TEI for purposes of the grant, and just make sure your final output is transformed from your own custom schema into something TEI-compatible at the end.</p>
 <p>As time has passed, though, I’ve come to appreciate TEI for more than just grant opportunism. Especially if you’re working on marking up literary text, TEI is like being handed the notes from a 30+ year series of brainstorming sessions where smart, thoughtful experts have put a lot of effort into thinking through how literary texts are structured, and how to reasonably model and capture things about those texts that other scholars might care about. Sure, you can (and should!) think through those issues for your own text – but you’re better off building from work that’s already been done than trying to invent everything from scratch. Think of all the options and alternatives that went into the super-basic XML example of Claudia’s bedroom above… and multiply that by however many different kinds of things you can imagine encountering in any text. It can be really helpful to not have to think through all of this from first principles.</p>
@@ -513,7 +538,7 @@ document.write(`
 <p>Even once you’ve chosen which flavor of TEI you’ll use – whether it’s the full standard set of elements, a constrained one like TEI-Lite, or a domain-specific one like EpiDoc – you’re not constrained to working within those boundaries. It’s very common (and even recommended) to modify the schema (a set of rules saying which elements and attributes exist, and how they’re organized hierarchically) <em>specifically for your project</em>. Even if you don’t add or change any of the elements or attributes from the flavor of TEI you’re working with, it can be very helpful to write some rules to constrain accidental variation like typos – for instance, by adding all character names to your schema as the allowed list of speakers, so that if you type <em>mary_ane</em> instead of <em>mary_anne</em>, the software you’re using to do the markup will alert you that there’s a problem. One easy tool for customizing schemas is <a class="reference external" href="https://romabeta.tei-c.org/">TEI Roma</a>.</p>
 </section>
 <section id="graphic-novel-or-chopped-up-text">
-<h3>Graphic novel or chopped-up text?<a class="headerlink" href="#graphic-novel-or-chopped-up-text" title="Permalink to this heading">#</a></h3>
+<h3>Graphic novel or chopped-up text?<a class="headerlink" href="#graphic-novel-or-chopped-up-text" title="Link to this heading">#</a></h3>
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
 <img src="_static/images/dsc5_quinn_lee_tei.jpg" alt="Zoom meeting between Quinn and Lee" />
 </div>
@@ -524,9 +549,9 @@ document.write(`
 </section>
 </section>
 <section id="id2">
-<h2>Lee<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<h2>Lee<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <section id="installing-the-software">
-<h3>Installing the software<a class="headerlink" href="#installing-the-software" title="Permalink to this heading">#</a></h3>
+<h3>Installing the software<a class="headerlink" href="#installing-the-software" title="Link to this heading">#</a></h3>
 <p id="index-19">Since I’m probably not going to be doing a lot of sustained TEI work moving forward, I was looking for a cost-effective (read: free) way of importing a TEI framework into my XML editor. I am currently using the free and open source <a class="reference external" href="https://atom.io/">Atom platform</a> for when I have to still hand-code HTML. Google was my friend here, and through a search of “atom” and “TEI” I used three different tutorials and had to phone a friend (Quinn) when it wasn’t working.</p>
 <p>First tutorial I tried was “<a class="reference external" href="https://andrewdunning.ca/getting-started-editing-tei-xml-atom">Getting Started with editing TEI XML using Atom</a>” by Andrew Dunning. This is where I made my first mistake insofar as I didn’t install Java, and when the error message appeared, the link provided took me to a page to download Adobe? Thanks to Quinn for <a class="reference external" href="https://www.oracle.com/java/technologies/javase-downloads.html">finding this resource on downloading and installing Java</a>. But this particular tutorial ended at installing the following:</p>
 <ul class="simple">
@@ -536,13 +561,13 @@ document.write(`
 <li><p><a class="reference external" href="https://atom.io/packages/double-tag">double-tag</a>: Renames matching tags when you edit one.</p></li>
 <li><p><a class="reference external" href="https://atom.io/packages/tag">tag</a>: Shortcuts for closing an XML tag.</p></li>
 </ul>
-<span class="target" id="index-20"></span><p id="index-21">I realized that there wasn’t anything in here that was actually about TEI, so I continued my google search. I found <a class="reference external" href="https://github.com/neelsmith/atomic-tei">Atomic TEI</a> and <a class="reference external" href="https://atom.io/packages/tei-framework">TEI Framework</a> to install as well for Atom, and now had template schemas and a validator and was so exhausted from the process (seriously, install Java FIRST people) that I gave up on actually doing any coding because I couldn’t see straight anymore. But, it was installed! And now at the bottom right-hand corner of my Atom workspace, I could select “TEI” as one of the options for the format of what I was working on. I also had access to templates for various usual types of TEI projects (but unsurprisingly none of them were for CBML).</p>
+<p id="index-21"><span id="index-20"></span>I realized that there wasn’t anything in here that was actually about TEI, so I continued my google search. I found <a class="reference external" href="https://github.com/neelsmith/atomic-tei">Atomic TEI</a> and <a class="reference external" href="https://atom.io/packages/tei-framework">TEI Framework</a> to install as well for Atom, and now had template schemas and a validator and was so exhausted from the process (seriously, install Java FIRST people) that I gave up on actually doing any coding because I couldn’t see straight anymore. But, it was installed! And now at the bottom right-hand corner of my Atom workspace, I could select “TEI” as one of the options for the format of what I was working on. I also had access to templates for various usual types of TEI projects (but unsurprisingly none of them were for CBML).</p>
 </section>
 </section>
 <section id="id3">
-<h2>Quinn<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<h2>Quinn<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
 <section id="transcribing-and-tei-ing">
-<h3>Transcribing and TEI-ing<a class="headerlink" href="#transcribing-and-tei-ing" title="Permalink to this heading">#</a></h3>
+<h3>Transcribing and TEI-ing<a class="headerlink" href="#transcribing-and-tei-ing" title="Link to this heading">#</a></h3>
 <p id="index-22">I’ll confess to forfeiting free and open source software for the familiar. Stanford, where I work, had bought me a license for <a class="reference external" href="https://www.oxygenxml.com/">Oxygen XML editor</a> for one of the faculty projects I help support. It’s the software I used when I learned to do XML in the early 2000’s, it’s what I used for trying (and failing) to write generalizable XSLT to display TEI-encoded bibliographies as part of Project Bamboo around 2010, and it’s what I returned to for this latest trip to the XXX-lands.</p>
 <p>I created a new XML document. Optimistically, I thought, “Since what I’m doing will be super-simple, surely TEI Lite will be sufficient,” so I chose that as my schema in Oxygen XML Editor. I opened the ebook version of the graphic novel of “Kristy’s Great Idea” and began to transcribe the text – as I read it for the first time.</p>
 <p>This is not the “right” way to do TEI markup. Ideally, you would not only have read the text before you start marking it up, you should also be familiar with what you want to mark up, and how you want to do that – enough to make a good guess at a schema that’s tailored just for your project. Having a schema that defines the conventions that you’ve chosen for your project will help you stick to those decisions, by warning you when you deviate from them.</p>
@@ -553,21 +578,21 @@ All TEI files start with a &lt;teiHeader&gt; section, where you’re supposed to
 <p id="index-24">TEI has a <a class="reference external" href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-div.html">&lt;div&gt; element</a> defined as follows: “(text division) contains a subdivision of the front, body, or back of a text”. It’s pretty broad… broad enough to cover chapters, narrative bits, and scenes. There’s an <a class="reference external" href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.typed.html">attribute, type</a>, which “provides attributes which can be used to classify or subclassify elements in any way” that I could use to differentiate the &lt;div&gt;s. Using an <a class="reference external" href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.global.html">n attribute</a>, which “gives a number (or other label) for an element, which is not necessarily unique within the document”, seemed like a good option for keeping track of the chapter number. I also wanted to give a unique ID (attribute <a class="reference external" href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.global.html">xml:id</a>, “provides a unique identifier for the element bearing the attribute”) to each chapter and each scene, as a precursor to looking at the extent to which chapters and scenes can be directly mapped from the original books to the graphic novels. For scenes, I wanted somewhere to store the information about <em>where</em> the scene takes place. The best option I could find was another very general <a class="reference external" href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.typed.html">attribute, subtype</a>, which “provides a sub-categorization of the element, if needed”.</p>
 <p>You can’t just type text within the divisions and sub-divisions: you need some sort of container for it. That’s where the <a class="reference external" href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-p.html">&lt;p&gt; element</a> comes in – it “marks paragraphs in prose.” We’re just going to treat every text bubble or block as a paragraph.</p>
 <p><img alt="Speech bubbles from the beginning of Kristy's Great Idea graphic novel" src="_images/dsc5_speechbubble_example.jpg" /></p>
-<p id="index-25">Things got dicey as soon as I hit speech bubbles. I wanted to be able to specify who was doing the speaking. There <em>is</em> a TEI <a class="reference external" href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-said.html#:~:text=may%20be%20used%20to%20indicate,having%20been%20vocalized%20or%20signed.&amp;text=may%20be%20used%20to%20indicate%20whether%20the%20quoted%20matter,as%20direct%20or%20indirect%20speech.">element &lt;said&gt;</a>, which “indicates passages thought or spoken aloud, whether explicitly indicated in the source or not, whether directly or indirectly reported, whether by real people or fictional characters.” It has some convenient attributes, like <a class="reference external" href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.ascribed.html">who</a> (“provides attributes for elements representing speech or action that can be ascribed to a specific individual”), and aloud (“may be used to indicate whether the quoted matter is regarded as having been vocalized or signed”).</p>
+<p id="index-25">Things got dicey as soon as I hit speech bubbles. I wanted to be able to specify who was doing the speaking. There <em>is</em> a TEI <a class="reference external" href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-said.html#:~:text=may%20be%20used%20to%20indicate,having%20been%20vocalized%20or%20signed.&amp;amp;text=may%20be%20used%20to%20indicate%20whether%20the%20quoted%20matter,as%20direct%20or%20indirect%20speech.">element &lt;said&gt;</a>, which “indicates passages thought or spoken aloud, whether explicitly indicated in the source or not, whether directly or indirectly reported, whether by real people or fictional characters.” It has some convenient attributes, like <a class="reference external" href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.ascribed.html">who</a> (“provides attributes for elements representing speech or action that can be ascribed to a specific individual”), and aloud (“may be used to indicate whether the quoted matter is regarded as having been vocalized or signed”).</p>
 <p>But the &lt;said&gt; element isn’t part of TEI-Lite. And I wanted to dive into the text, not work on modifying the TEI-Lite schema. So I copied what I’d written so far, opened another new text file – this one using the full TEI schema – pasted it into the &lt;body&gt; element, and kept working my way through the text.</p>
 <p><img alt="TEI markup of speech bubbles from Kristy's Great Idea graphic novel" src="_images/dsc5_tei_with_text.png" /></p>
 <p>Weeks passed.</p>
 <p>In every large Zoom meeting where I wasn’t talking much, I was transcribing and doing markup.</p>
 <p>Weekends while the kids binge-watched cartoons? Transcription and markup.</p>
 <p>In-between tucking the kids in for the second, third, fourth time? Can probably get through a page or two before the next interruption.</p>
-<span class="target" id="index-26"></span><p id="index-27">There were moments I despaired, letting technological temptation lure me down alternate paths. Would the default line-detection algorithm in <a class="reference external" href="https://transkribus.eu/">Transkribus</a>, a piece of software that does miracles with handwritten text recognition, work on comic books?</p>
+<p id="index-27"><span id="index-26"></span>There were moments I despaired, letting technological temptation lure me down alternate paths. Would the default line-detection algorithm in <a class="reference external" href="https://transkribus.eu/">Transkribus</a>, a piece of software that does miracles with handwritten text recognition, work on comic books?</p>
 <p><img alt="Failed layout analysis for HTR in Mary Anne Saves the Day graphic novel" src="_images/dsc5_transkribus_layout.jpg" /></p>
 <p>The answer: not so much. Claudia’s eyes and nose and the long tail of that speech bubble and Stacey’s whole face are not, in fact, text regions or anything close. But perhaps the algorithm can be trained to work. You may hear more about Transkribus in a future DSC book.</p>
 <p id="index-28">Eventually, I came to realize that the way I started doing the encoding wasn’t working well for everything I wanted it to cover. Sound effects, especially, were getting short shrift. So I started using the <a class="reference external" href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.global.rendition.html">rend attribute</a>, which “indicates how the element in question was rendered or presented in the source text”. I decided to use that both for sound effects and to specify other distinctive kinds of text, like narration and written text (e.g. text depicted almost scrapbook-like in the later comic books.)</p>
 <p><img alt="Simple TEI markup of sound effects in Mary Anne Saves the Day" src="_images/dsc5_soundeffect_example1.jpg" /></p>
 <p id="index-29">I kept going with these new conventions; I’d fix the earlier transcriptions later. It took until BSC #5 <em>Dawn and the Impossible Three</em> for it to leap out at me that even as no one ever talked about Claudia as being Japanese-American, she was <em>literally colored yellow</em>. And Jessi, the only Black member of the BSC, was missing, even as book #14, <em>Hello Mallory</em>, which introduces the character, was mashed up with <em>Dawn and the Impossible Three</em> in the graphic novels. Maybe there was something to follow up on there? Should we start capturing character traits somewhere?</p>
 <p>I spent a while perusing the TEI guidelines, and saw a few elements that I could imagine using for this, but I felt uncertain about it. Even knowing full well that TEI is meant to be customized, and different projects handle things in different ways, creating a list of characters and their attributes felt like the sort of thing that there <em>should be a right way</em> to do. And I didn’t know what that was.</p>
-<span class="target" id="index-30"></span><p id="index-31">I needed help from a Guest Data-Sitter, and I could think of no one better than Elisa Beshero-Bondar. Elisa is 3/4s Lebanese and 1/4 Irish. She has thick wavy black hair that she usually pulls back from her face, and looks very Mediterranean with an olive complexion and big brown eyes behind spectacles. Like Jessi in BSC #16 <em>Jessi’s Secret Language</em>, she started learning as much as she could about text encoding after working with a student who couldn’t see and needed to read poetry with her fingers on a fascinating braille monitor.  Elisa loves all things geeky about electronic documents and the Text Encoding Initiative because it’s a super supportive community that works together around the world and cares deeply about curating metadata and document data modeling. She’s on the TEI Technical Council, which is the group responsible for actually maintaining the TEI guidelines, and her students have done some seriously cool projects. Lauren McNeill, Shannon Dunn, and Amber Peddicord recently <a class="reference external" href="http://teentitans.newtfire.org/">compared the Teen Titans comic books vs. TV series</a> by marking up the season 1 TV transcripts and comparing them to the comics, including <a class="reference external" href="http://teentitans.newtfire.org/graphs.html">graphs</a> and <a class="reference external" href="http://teentitans.newtfire.org/networks-s1.html">network visualizations</a> of character speech. So I wrote Elisa a note explaining what was going on, and her response was generous and detailed:</p>
+<p id="index-31"><span id="index-30"></span>I needed help from a Guest Data-Sitter, and I could think of no one better than Elisa Beshero-Bondar. Elisa is 3/4s Lebanese and 1/4 Irish. She has thick wavy black hair that she usually pulls back from her face, and looks very Mediterranean with an olive complexion and big brown eyes behind spectacles. Like Jessi in BSC #16 <em>Jessi’s Secret Language</em>, she started learning as much as she could about text encoding after working with a student who couldn’t see and needed to read poetry with her fingers on a fascinating braille monitor.  Elisa loves all things geeky about electronic documents and the Text Encoding Initiative because it’s a super supportive community that works together around the world and cares deeply about curating metadata and document data modeling. She’s on the TEI Technical Council, which is the group responsible for actually maintaining the TEI guidelines, and her students have done some seriously cool projects. Lauren McNeill, Shannon Dunn, and Amber Peddicord recently <a class="reference external" href="http://teentitans.newtfire.org/">compared the Teen Titans comic books vs. TV series</a> by marking up the season 1 TV transcripts and comparing them to the comics, including <a class="reference external" href="http://teentitans.newtfire.org/graphs.html">graphs</a> and <a class="reference external" href="http://teentitans.newtfire.org/networks-s1.html">network visualizations</a> of character speech. So I wrote Elisa a note explaining what was going on, and her response was generous and detailed:</p>
 <blockquote id="index-32">
 <div><p>From: Elisa Beshero-Bondar</p>
 </div></blockquote>
@@ -614,7 +639,7 @@ All TEI files start with a &lt;teiHeader&gt; section, where you’re supposed to
 <blockquote>
 <div><p>Elisa</p>
 </div></blockquote>
-<span class="target" id="index-33"></span><p id="index-34">Yeah, she caught me with my free-form encoding, constrained only by the very broad boundaries of the full set of TEI guidelines. It was probably past time for me to do something about that. I knew about <a class="reference external" href="https://dh.obdurodon.org/relaxng.html">writing schemas using RelaxNG</a>, but I’d used that when I was writing schemas from scratch for projects that would’ve been hugely awkward to do with TEI. Was there a better way when trying to modify and constrain TEI?</p>
+<p id="index-34"><span id="index-33"></span>Yeah, she caught me with my free-form encoding, constrained only by the very broad boundaries of the full set of TEI guidelines. It was probably past time for me to do something about that. I knew about <a class="reference external" href="https://dh.obdurodon.org/relaxng.html">writing schemas using RelaxNG</a>, but I’d used that when I was writing schemas from scratch for projects that would’ve been hugely awkward to do with TEI. Was there a better way when trying to modify and constrain TEI?</p>
 <blockquote>
 <div><p>From: Elisa Beshero-Bondar</p>
 </div></blockquote>
@@ -635,16 +660,16 @@ All TEI files start with a &lt;teiHeader&gt; section, where you’re supposed to
 </div></blockquote>
 </section>
 <section id="tei-is-personal">
-<h3>TEI is personal<a class="headerlink" href="#tei-is-personal" title="Permalink to this heading">#</a></h3>
+<h3>TEI is personal<a class="headerlink" href="#tei-is-personal" title="Link to this heading">#</a></h3>
 <p id="index-35">The last two graphic novels were “Kristy’s Big Day” and “Boy-Crazy Stacey”. I remembered hating “Boy-Crazy Stacey” even as a kid, so I did it first – even though it’s chronologically last – so that my final book would be anything else. It seemed like a good choice at the time; suffice it to say that I didn’t find “Boy-Crazy Stacey” any less tedious this time around. Finally, I got to “Kristy’s Big Day”. If I’d been thinking, I’d have done it earlier, or one piece at a time, or better yet, just handed it off to another Data-Sitter to transcribe and encode. Instead, I ended up in a weird headspace, loathing this text I was working with, resenting this whole project, wishing it would go away, and blowing up Lee’s phone with grumpy text messages.</p>
 <p id="index-36">See, here’s the thing with this book – and if I’m being honest, all the books. It’s a super awkward thing to say as the founder of the DSC, but unlike some of my fellow Data-Sitters, I’m mostly interested in The Baby-Sitters Club as a corpus. I’m much less into individual books… including reading them with my eyeballs – especially now that, thanks to COVID-19, I’m not commuting for the foreseeable future. But with “Kristy’s Big Day”, it goes beyond disinterest. It was actually hard for me to read. Even as a child, Kristy was the baby-sitter I could relate most to (insofar as I could relate to any of them), although I found her interest in sports incomprehensible. She was a “tomboy”; so was I. And her sudden pivot in “Kristy’s Big Day” to being overwhelmed with delight at getting to be a bridesmaid and wear a fancy dress felt like a personal betrayal. I hadn’t thought about that scene once during the 27 years or so since I’d first read it, but it felt raw to re-read – particularly after how things went down with my father’s remarriage. A 12-year-old non-binary kid without a term to articulate that identity, begging to be allowed to wear a suit at the wedding, and being required instead to wear a salmon pink dress, their absolute least favorite color, even as their sister and step-sister wore white in the wedding. One after another, the details brought me back again and again. The fancy shoes that can be dyed to match the dress. The hairstylist. The flowers. I shuddered as I typed the last lines: “Everyone coming together to make a new family. That’s what the wedding had been all about.” My “new family” ultimately gave rise to a high school nickname of Quinnderella. I’m an adult now, I have my own family, I don’t dwell on it. But transcribing and encoding something like “Kristy’s Big Day” still really sucks.</p>
 <p>That’s how it is with TEI – all the more so if you have to transcribe a text, but even if you’re just encoding. TEI is personal. TEI forces you to engage with the text. You can’t keep a safe distance while doing TEI markup; you have to read it closely enough to make decisions about which portions of the text should be marked up in which way. With some of the NLP methods (like named-entity recognition, as described in <a class="reference internal" href="dscm2.html"><span class="doc std std-doc">DSC Multilingual Mystery #2</span></a>), you can analyze things in the text without having to read through every single line – or without even being able to actually read the text fluently at all. (I claim no proficiency with French.) But not so with TEI. If you have some issue with a text, find someone else to mark it up. Or grit your teeth and pour yourself a drink because it’s not feasible to create for yourself some psychological distance from the text if you’re doing TEI. It’s something to keep in mind if you’re working with a team (especially of students) on encoding texts: consider telling them upfront that it’s okay to opt out of encoding any text for personal reasons, no explanation required, and it’s not a problem to shuffle around who’s doing what. I wish I’d reached out to the rest of the team instead of making myself transcribe that book.</p>
 </section>
 </section>
 <section id="id4">
-<h2>Lee<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+<h2>Lee<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
 <section id="going-wild-with-tei">
-<h3>Going wild with TEI<a class="headerlink" href="#going-wild-with-tei" title="Permalink to this heading">#</a></h3>
+<h3>Going wild with TEI<a class="headerlink" href="#going-wild-with-tei" title="Link to this heading">#</a></h3>
 <p id="index-37">Let’s take a look at one of the examples here that Quinn has already shown. One of the things that you may notice from her markup is that she was focusing on dialogue, while choosing not to encode any of the visual information. This is where CBML can be really helpful, because it is made to encode the <em>visual</em> aspects of a comic, from the placement on the page to what else is going on in each panel only communicated through the images themselves. Take, for example, the opening scene of Kristy’s Great Idea (shown above) with Kristy sitting in class with her classmates, waiting for the day to end, and then the next panel of her writing and sweating. How do you encode all of the other students also sitting in the room, or that she was writing and sweating?</p>
 <p>The example I am instead going to focus on is from “Mary Anne Saves the Day”, where Mary Anne is in the kitchen with her father getting ready for the pizza party.</p>
 <p><img alt="Simple TEI markup of sound effects in Mary Anne Saves the Day" src="_images/dsc5_soundeffect_example1.jpg" /></p>
@@ -655,21 +680,21 @@ All TEI files start with a &lt;teiHeader&gt; section, where you’re supposed to
 <p>I thought that it would be arduous, but once I got into the rhythm and understood the note function, it wasn’t too bad. One of the best features is the ability to describe who is in each panel, even if they don’t have a speaking role, as well as the flexibility to encode different elements of the page, helping to connect the action and the narrative.</p>
 <p id="index-38">Now, why would any of this matter? Well, right now, we don’t know what matters and what doesn’t, and I tend to err on the side of completism, so I want to capture as much relevant information as I can. Did I need to put the number of chairs? Probably not. I also chose not to mention the tortilla chips or the checkered backsplash. But, given the significance of Mary Anne’s father allowing her to wear her hair down, it seemed relevant. It may also allow us to differentiate between what was adapted from the novel through the text and what was adapted from the novels through visual cues. The more information we encode can also tell us what the illustrators and colorists decided to add or take away versus the novels.</p>
 <p>Now that I’m into it, I think it’s kinda fun and I might not mind doing more…</p>
-<span class="target" id="index-39"></span><p id="index-40">We can also compare differences between similar scenes within the graphic novels, especially once you start changing illustrators. Note this similar but not exactly the same scene from “Mary Anne Saves the Day” and “Dawn and the Impossible Three”, about the first day they met in the cafeteria, each by a different author.</p>
+<p id="index-40"><span id="index-39"></span>We can also compare differences between similar scenes within the graphic novels, especially once you start changing illustrators. Note this similar but not exactly the same scene from “Mary Anne Saves the Day” and “Dawn and the Impossible Three”, about the first day they met in the cafeteria, each by a different author.</p>
 <p><img alt="Comparison of cafeteria scenes from Mary Anne Saves the Day and Dawn and the Impossible Three" src="_images/dsc5_msd_vs_dit.jpg" /></p>
 <p>You could just put the setting down as “cafeteria_middle_school” but you would be missing a lot of potentially important visual information. When you’re setting up the panel, when listing the characters, you could use “anon_student_1” and so on, but you also might want to code in some more data on race, religion, or gender. So we could go “anon_student_girl_one” or “anon_girl_1” if we take it on face value that because they are in a middle school that they are all students. But what about the handful of “brown” students, or the student wearing the hijab? You could also link the two panels across the series using markup, linking the two scenes to each other. I could make a descriptive note with the demographic data rather than using tags, but it wouldn’t be as searchable later.</p>
 <p>And maybe none of this actually matters but then again, it might, and while we try to figure out how to encode these things, I think I’ll let this particular issue rest for the moment.</p>
 </section>
 </section>
 <section id="id5">
-<h2>Quinn<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
+<h2>Quinn<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
 <section id="where-do-we-go-from-here">
-<h3>Where do we go from here?<a class="headerlink" href="#where-do-we-go-from-here" title="Permalink to this heading">#</a></h3>
+<h3>Where do we go from here?<a class="headerlink" href="#where-do-we-go-from-here" title="Link to this heading">#</a></h3>
 <p>Lee and I filled everyone in on the state of things at our next DSC meeting. We’d done a ton of work, installing software, transcribing all the graphic novels and marking them up with some really lightweight TEI, making a personography, noticing things that might be worth looking into further… but it hadn’t come together into any sort of discovery.</p>
-<span class="target" id="index-41"></span><p id="index-42">Sure, Jessi was missing, and the artist (and/or colorist) depicted Stoneybrook through crowd scenes as much more diverse than how Jessi described it. But that shouldn’t be a shock, as Maria pointed out: “So, other than description, what’s the bigger question or frame? Within children’s literature, what we’re talking about with race-bending is pretty common, especially with background characters.”</p>
+<p id="index-42"><span id="index-41"></span>Sure, Jessi was missing, and the artist (and/or colorist) depicted Stoneybrook through crowd scenes as much more diverse than how Jessi described it. But that shouldn’t be a shock, as Maria pointed out: “So, other than description, what’s the bigger question or frame? Within children’s literature, what we’re talking about with race-bending is pretty common, especially with background characters.”</p>
 <p>Anouk wondered if there could be a print culture angle: “My niece in Australia just turned ten, and she loves the Baby-Sitters Club graphic novels. But the demographic context is different: Sydney in 2020 is very diverse, but in different ways to US cities. The publishing industry has changed massively since the 80’s and 90’s, too – if these graphic novels have to sell in markets around the world, maybe that’s a contributing factor to the decision to take Jessi out and make the backgrounds less identifiably American.” Anouk had a point – these graphic novels have a different distribution than the original novels. I even have a copy of the Kristy’s Great Idea graphic novel in Chinese (which, I might add, keeps the English text on the picture of the Chinese take-out container).</p>
 <p>We struggled with what we should do with the text that we had marked up. Should we compare the text to the original novels? We could do that, but then why did we bother with the TEI markup? We could go further, and start marking up the novels using TEI to use the X-family of tools for comparison and visualization, like Elisa’s students’ Teen Titans project did. But I wasn’t feeling an overabundance of enthusiasm for doing more TEI markup at this point. It was starting to feel like we’d run headlong down a path that turned into a DH dead end.</p>
-<span class="target" id="index-43"></span><p id="index-44">We talked about the potential for using networks and their downsides. “On this other project about the Pan-African Congresses, I had all these network analysis plans. My students and I identified participants who attended the Pan-African Congress events all over the world in the first half of the 20th century, thinking we’d see this amazing network visualizing relationships between major figures in pan-Africanist social movements – but it turned out that very few people attended multiple events,” mused Roopsi. “It was a movement – it seemed like they should be linked, but once you really actually ascertain the names of as many attendees as you can, there’s so many of them – and yeah, you get Du Bois and a few other people attending regularly, but there are all these other people who only went to one event. And Quinn and I were talking about it and – maybe brokenness is the point. Maybe there’s things that happened because of connections made at those conferences that manifested in other ways, but don’t show up in this data. And, look, we <em>don’t</em> have a question here. But being able to say, ‘here are some things, here’s how you do it’ – for me, computational text analysis is a way to find things that sets us on a path that historicizes, theorizes, etc. – otherwise you just have some beautiful visualization that doesn’t mean much. But we can say, ‘here are some of the kinds of questions that this could lead us to start to ask.’”</p>
+<p id="index-44"><span id="index-43"></span>We talked about the potential for using networks and their downsides. “On this other project about the Pan-African Congresses, I had all these network analysis plans. My students and I identified participants who attended the Pan-African Congress events all over the world in the first half of the 20th century, thinking we’d see this amazing network visualizing relationships between major figures in pan-Africanist social movements – but it turned out that very few people attended multiple events,” mused Roopsi. “It was a movement – it seemed like they should be linked, but once you really actually ascertain the names of as many attendees as you can, there’s so many of them – and yeah, you get Du Bois and a few other people attending regularly, but there are all these other people who only went to one event. And Quinn and I were talking about it and – maybe brokenness is the point. Maybe there’s things that happened because of connections made at those conferences that manifested in other ways, but don’t show up in this data. And, look, we <em>don’t</em> have a question here. But being able to say, ‘here are some things, here’s how you do it’ – for me, computational text analysis is a way to find things that sets us on a path that historicizes, theorizes, etc. – otherwise you just have some beautiful visualization that doesn’t mean much. But we can say, ‘here are some of the kinds of questions that this could lead us to start to ask.’”</p>
 <p>“You know, having a DSC book just on TEI itself without any big questions can be useful – and we can come back to it later when we can combine it with other tools like GIS for comparing fictional Stoneybrook with actual Connecticut,” added Katia.</p>
 <p>I told the other Data-Sitters about the email exchanges I’ve been having with Elisa, and how helpful she had been.</p>
 <p>“I’d love to interview her!” said Roopsi. “She knows I think TEI is like a cult. I felt like I had to do a TEI project because then people would take me seriously as a digital humanist. I still don’t know – I made a <a class="reference external" href="http://harlemshadows.org/">TEI edition of Harlem Shadows</a>…”</p>
@@ -679,7 +704,7 @@ All TEI files start with a &lt;teiHeader&gt; section, where you’re supposed to
 </section>
 </section>
 <section id="the-interview">
-<h2>The interview<a class="headerlink" href="#the-interview" title="Permalink to this heading">#</a></h2>
+<h2>The interview<a class="headerlink" href="#the-interview" title="Link to this heading">#</a></h2>
 <div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
 <img src="_static/images/dsc5_interview.png" alt="Zoom screenshot from the interview" />
 </div>
@@ -717,9 +742,9 @@ All TEI files start with a &lt;teiHeader&gt; section, where you’re supposed to
 <p>“Joooooooin. Theeeee. Cuuuuuult.” Roopsi replied. Elisa, Katia, and Roopsi laughed.</p>
 </section>
 <section id="id6">
-<h2>Quinn<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
+<h2>Quinn<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
 <section id="conclusion">
-<h3>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h3>
+<h3>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h3>
 <p>Together, the Data-Sitters Club has managed to write over 10,000 words about TEI, mark up 7 graphic novels using TEI-compatible conventions, and still not settle on a question to answer with TEI… or even formalize our conventions we used with a customized schema.</p>
 <p>But I think Roopsi and Katia were on to something in our call – the questions where TEI markup might be helpful are also ones where more tools, like GIS or network analysis, might need to be part of the mix. I have to believe that all the time I spent doing that markup wasn’t for nothing… it just might not be for something today.</p>
 <p>If you’d like to learn more about TEI and try it out yourself, there’s a lot of resources out there you can use. Here’s a few suggestions from Elisa:</p>
@@ -732,7 +757,7 @@ All TEI files start with a &lt;teiHeader&gt; section, where you’re supposed to
 </section>
 </section>
 <section id="suggested-citation">
-<h2>Suggested Citation<a class="headerlink" href="#suggested-citation" title="Permalink to this heading">#</a></h2>
+<h2>Suggested Citation<a class="headerlink" href="#suggested-citation" title="Link to this heading">#</a></h2>
 <p>Beshero-Bondar, Elisa, Lee Skallerup Bessette, Quinn Dombrowski, and Roopika Risam. “DSC #5: The DSC and the Impossible TEI Quandaries.” <em>The Data-Sitters Club.</em> June 25, 2020. <a class="reference external" href="https://doi.org/10.25740/wq850xt2646">https://doi.org/10.25740/wq850xt2646</a>.</p>
 </section>
 </section>
@@ -762,11 +787,10 @@ All TEI files start with a &lt;teiHeader&gt; section, where you’re supposed to
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer d-print-none">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="dsc4.html"
@@ -786,10 +810,7 @@ All TEI files start with a &lt;teiHeader&gt; section, where you’re supposed to
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -797,6 +818,7 @@ All TEI files start with a &lt;teiHeader&gt; section, where you’re supposed to
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -857,9 +879,10 @@ By The Data-Sitters Club
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -883,8 +906,8 @@ By The Data-Sitters Club
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
