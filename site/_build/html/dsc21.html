@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="./" >
+<html lang="en" data-content_root="./" data-theme="light">
 
   <head>
     <meta charset="utf-8" />
@@ -11,18 +11,18 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://datasittersclub.github.io/site/dsc21.html" />
 <meta property="og:site_name" content="Project name not set" />
-<meta property="og:description" content="by Quinn Dombrowski September 23, 2024" />
+<meta property="og:description" content="by Quinn Dombrowski September 23, 2024 The Trouble with Environments: “Kindergarten baby, stick your head in gravy! Wash it off with applesauce and show it to the Navy!” sang Nicky. “Mommy, make hi..." />
 <meta property="og:image" content="https://datasittersclub.github.io/site/_static/DSClogo.png" />
 <meta property="og:image:alt" content="Project name not set" />
-<meta name="description" content="by Quinn Dombrowski September 23, 2024" />
+<meta name="description" content="by Quinn Dombrowski September 23, 2024 The Trouble with Environments: “Kindergarten baby, stick your head in gravy! Wash it off with applesauce and show it to the Navy!” sang Nicky. “Mommy, make hi..." />
 
     <title>DSC #21: Quinn and the Trouble with Environments &#8212; The Data-Sitters Club</title>
   
   
   
   <script data-cfasync="false">
-    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
@@ -43,7 +43,7 @@
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="_static/style.css?v=a0fcb558" />
+    <link rel="stylesheet" type="text/css" href="_static/style.css?v=3424d877" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -77,7 +77,7 @@
   </head>
   
   
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="light">
 
   
   
@@ -160,8 +160,6 @@
   
     
     
-      
-    
     
     <img src="_static/DSClogo.png" class="logo__image only-light" alt="The Data-Sitters Club - Home"/>
     <script>document.write(`<img src="_static/DSClogo.png" class="logo__image only-dark" alt="The Data-Sitters Club - Home"/>`);</script>
@@ -226,10 +224,6 @@
 <li class="toctree-l1"><a class="reference internal" href="dscm3.html">DSCM 3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dscm4.html">DSCM 4: Isabelle and the Missing Spaghetti-O's</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dscm5.html">DSCM 5: Lee &amp; Quinn and the Mystery in the French NLP Model</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Super Specials</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="dscss1.html">DSCSS 1: The Data-Sitters Debate at Dartmouth</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Fun</span></p>
 <ul class="nav bd-sidenav">
@@ -375,7 +369,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -391,6 +387,32 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-trouble-with-environments">The Trouble with Environments</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-s-an-environment">What’s an environment?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#environments-in-jupyter-notebooks">Environments in Jupyter notebooks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#managing-your-digital-spaces">Managing your digital spaces</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-environments">Python environments</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#our-scenario">Our scenario</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ana-mini-conda">(Ana/mini)conda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conda-vs-pip">Conda vs Pip</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-and-configuring-miniconda">Installing and configuring Miniconda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-basic-environment">Creating a basic environment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#working-in-an-environment">Working in an environment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exporting-and-importing-an-environment">Exporting and importing an environment</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-environments">Troubleshooting environments</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#you-can-change-your-environment">You can change your environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suggested-citation">Suggested citation</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -407,13 +429,148 @@ document.write(`
 <div style="width: 300px;margin-left: 7px;margin-top: 0px;">
 <img src="_static/images/bookcovers/dsc21_cover.jpg" alt="DSC 21 book cover" />
 </div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
+<div class="admonition note" id="index-2">
+<span id="index-1"></span><p class="admonition-title">Note</p>
 <p>It’s hard to believe we’ve been doing the DSC for 5 years now. This book tackles the topic of environments – specifically, the environment on your computer where you run your code. It’s been about a whole year since I started writing this. And I’m coming at it now from a better place: work switched out my laptop, so I actually had to follow my own early notes here to rebuild my environment and be able to get back to publishing DSC books.</p>
-<p>My coding environment isn’t the only one that I’m rebuilding right now. I’ve filed for divorce. Bless Ann M. Martin for her work explaining divorce to kids: I literally brought out the graphic novel of <em>Karen’s Witch</em> when I broke the news to my kids. (They weren’t shocked, but they were super excited about Karen’s description of DOUBLE HOLIDAYS.)</p>
+<p>My coding environment isn’t the only one that I’m rebuilding right now. I’ve filed for divorce. Bless Ann M. Martin for her work explaining divorce to kids: I literally brought out the graphic novel of <em>Karen’s Witch</em> when I broke the news to my kids. (They weren’t shocked, but they were super excited about Karen’s description of <strong>double holidays</strong>!)</p>
 <p>Throughout this whole process, the Data-Sitters have been there for me, checking in and offering support and advice. So before we dive into Conda and Pip and all that coding environment goodness, let me start by saying that going home after a fun day out with friends shouldn’t fill you with dread. You shouldn’t feel like you have to constantly apologize for things to be okay. You shouldn’t be asking for permission all the time. You shouldn’t be afraid to say, “No, that’s not what I want” , and should know you’ll be heard. And there’s no shame in needing to be loved in the way(s) that are meaningful for you, even if you’re still figuring out what exactly that looks like.</p>
 <p>If your own environment is dragging you down (even if you can talk yourself into it being fine), or if it isn’t what you need to feel like a happy and fulfilled person, you can change it. You really can. Even if you have kids and a mortgage. Or if it means taking a huge leap of faith with a job, or trying a new city. If you’re reading this, you’re still alive and today can be the day that you make radically different choices about what to do with your life. You’re truly not as stuck as you might think, and you might be shocked at how much better you feel on the other side of it.</p>
 </div>
+<section id="the-trouble-with-environments">
+<h2>The Trouble with Environments<a class="headerlink" href="#the-trouble-with-environments" title="Link to this heading">#</a></h2>
+<p id="index-3"><em>“Kindergarten baby, stick your head in gravy! Wash it off with applesauce and show it to the Navy!” sang Nicky.</em></p>
+<p><em>“Mommy, make him stop!” cried Claire.</em></p>
+<p>So begins <em>BSC 21: Mallory and the Trouble with Twins</em>, where everyone’s favorite babysitting horse-girl, Mallory Pike, is in the car with her seven siblings. The Pike family car has more than a little in common with my laptop: it’s chaos, and packed full of my data and code, and – most crucially – a bunch of different libraries that I need to run my code. And sometimes you update one library, and the rest of your libraries act like it’s Thanksgiving in a conservative family and one of the cousins has just shown up with weird tattoos, her hair cut short and dyed purple, and a girlfriend<a class="footnote-reference brackets" href="#id7" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
+<p id="index-4">I’ve known for a long time that environments can be an issue, and I probably should be paying some attention to them instead of just blithely installing whatever, wherever, by whatever means is handy. But honestly, it felt more like when the dentist chides you about flossing. Would it be better if you flossed two, even three times a day? Sure. But it’s an annoying and time-consuming chore, and if you brush your teeth regularly and floss from time to time, you’re probably going to be fine. Same with environments, I figured. Most of the time my code ran fine, so why worry?</p>
+<p id="index-5">But then it took me most of a year to write <a class="reference external" href="https://datasittersclub.github.io/site/dsc20.html">DSC #20 - Xanda Rescues the Topic Model Disaster</a>, and the library we use for publishing our books, <a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">JupyterBook</a>, went through a major update that (as promised by the release notes) broke a bunch of things. Suddenly my laptop felt like the Pike family car, with libraries calling each other names and others sulking and unresponsive. I knew the time had come to channel Mallory and put things in their place:</p>
+<blockquote>
+<div><p>When it comes to kids — my brothers and sisters, or any others — I’m pretty smart. For instance, I had figured out the seating arrangement for our outing to the mall. (It takes awhile to drive there.) I had put Margo in the front seat with Mom and Dad, since she gets carsick sometimes and riding in the front is less bumpy. I had put the triplets in the way back, where they could be jerks without bothering anybody, especially Nicky, whom they are apt to tease mercilessly. And in the backseat, I had put Claire, me, Nicky, and Vanessa, in that order. Sitting between Claire and Nicky, I could break up fights. And with Vanessa by the window, she could daydream or make up poems, lost in her own world, which is how she’s happiest.</p>
+</div></blockquote>
+<p>If you’re new to doing computational text analysis, you can probably get away with not worrying about environments for a while. It’s okay to skip this one – certainly I, of all people, don’t need to lecture you about the joy and value of getting your environment situation straightened out. But when that day arrives for you too, you can count on the Data-Sitters Club to get you unstuck! (What’s the DSC? Check out <a class="reference external" href="https://datasittersclub.github.io/site/chapter-2.html">chapter 2</a>.)</p>
+</section>
+<section id="what-s-an-environment">
+<h2>What’s an environment?<a class="headerlink" href="#what-s-an-environment" title="Link to this heading">#</a></h2>
+<p id="index-6">With software, “Where did you install it?” feels almost like a nonsense question, demanding no answer more precise than “on my laptop” or “on my phone”. On a Mac, there’s the Applications directory; Windows has installers that put software files in the right places before sticking an icon in the Start menu. On phones, apps show up as little icons once you’ve hit a button in an app store. By and large, that kind of software just works once you’ve installed it, with any interactions with your hardware and other software happening invisibly behind the scenes. Sometimes the seams show; there’s DH software written in Java, where you have to get the right version of Java installed for the software to run – which may be easier said than done. And installing Mallet (like we did in DSC #20) means having to keep track, at least at first, of where you put it.</p>
+<p>Broadly speaking, an “environment” is just a context that some code runs in. Once you’re writing your own code that depends on libraries (code that other people have written to do a specific thing, which you usually need to install to use), you have to start to think a little more about environments.</p>
+<section id="environments-in-jupyter-notebooks">
+<h3>Environments in Jupyter notebooks<a class="headerlink" href="#environments-in-jupyter-notebooks" title="Link to this heading">#</a></h3>
+<p id="index-7">Jupyter notebooks make some aspects of environments very visible. When you create or run a notebook, you have to choose what kernel to use. Each of the coding languages supported by Jupyter notebooks has its own kernel; the kernel tells the notebook about the context in which the notebook cells should be interpreted – most significantly, what coding language the cells are written in. (There’s ways to override this with special commands, like how we’ve <a class="reference external" href="https://datasittersclub.github.io/site/dsc10.html#index-21">run R in a Python notebook</a> before.)</p>
+<p>If you’ve followed the most common installation approach for the Jupyter Notebook software, odds are it’s part of the massive Anaconda software suite, and you launch it either from the Anaconda launcher, or by just typing <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> into the Terminal. In that case, you’ll be using the version of Python that Anaconda has installed for its default environment. If you want to check on where the version of Python you’re using is, create a new cell in your Jupyter notebook and run the code <code class="docutils literal notranslate"><span class="pre">!which</span> <span class="pre">python</span></code>. (The ! is used to run code as if you’re typing it into the command line, which is why we use it to do things like install new libraries.) With the most typical Anaconda-based installation, you’ll see a path that looks like: <code class="docutils literal notranslate"><span class="pre">/Users/your-user-name/anaconda3/bin/python</span></code>. Curious what version of Python you’re running? Try <code class="docutils literal notranslate"><span class="pre">!python</span> <span class="pre">--V</span></code>.</p>
+</section>
+<section id="managing-your-digital-spaces">
+<h3>Managing your digital spaces<a class="headerlink" href="#managing-your-digital-spaces" title="Link to this heading">#</a></h3>
+<p id="index-8">Do you need separate environments for your projects? It depends. There were a couple projects where I had used a separate environment because they involved a library with very specific requirements. This happens a lot with libraries related to machine learning, which frequently put out new releases, but the only version that works for the code in a given project is the one that was current when the project was created. If you have two projects like that, you could quickly run into problems if the two projects use different versions of the same library. If you just have one environment, using the version that makes one project work will break the other project.</p>
+<p id="index-9">I keep my digital spaces like my physical spaces: everything exists side-by-side with everything else, piled up together. The computational text analysis visualizations, a pile of wool, the multi-volume Russian etymological dictionary, a punchcard knitting machine from eBay, the copy of the Unicode 2.0 standard left behind by a friend who left the university, an electronic spinning wheel, a giant wood spinning wheel, yarn and scraps inter-mixed, a huge floor loom. That’s my office.</p>
+<p><img alt="Quinn's very messy office with books and textile things everywhere, including several looms" src="_images/dsc21_quinn_office.jpg" /></p>
+<p>And that’s the way I love it. You never know what connections may come from having it all right there: sometimes you’re talking about medieval literature, and all of a sudden what you need to illustrate something is a loom. Or you’re showing someone the knitting machine, and the stitches remind you of data points in a text analysis visualization. The result is that my office certainly makes an impression – even when I’m not sitting there tying strings onto the ancient-looking wooden loom like some kind of time traveler.</p>
+<p>But what if I could flip a switch and magically transform the space into “office hours mode” with some couches, a tea pot at the ready, and some snacks? Or hit a button for “project meeting mode” and get a large screen on one of the walls, some chairs, and several more power outlets? Physical spaces don’t work like that, but your digital spaces can.</p>
+</section>
+</section>
+<section id="python-environments">
+<h2>Python environments<a class="headerlink" href="#python-environments" title="Link to this heading">#</a></h2>
+<p id="index-10">Despite my hopes for making R a more regular part of my coding life, that hasn’t really happened. I use R whenever I need to (usually when running Associate Data-Sitter Mark Algee-Hewitt’s code), but I don’t get into the trouble with R libraries that I do with Python. If you use R and want to be more deliberate about your environments, <a class="reference external" href="https://rstudio.github.io/renv/articles/renv.html">Renv is a thing</a> and there are ways to <a class="reference external" href="https://stackoverflow.com/questions/71242328/renv-venv-jupyterlab-irkernel-will-it-blend">manage R and Python environments</a>.</p>
+<p id="index-11">For Python, there’s not a single answer, or even a good consensus answer. Zoe LeBlanc (<a class="reference external" href="https://datasittersclub.github.io/site/dsc8.html#cosine-distance-with-word-frequencies">who helped us out in DSC #8</a>) asked about managing environments on DH Twitter in 2020, and the results were very mixed, with some people vocally advocating for options that others decried. There’s <a class="reference external" href="https://dev.to/bowmanjd/python-tools-for-managing-virtual-environments-3bko">at least eight different tools for Python environments</a>, and part of the reason why there’s no consensus answer is that the choice depends on a lot of factors. What other frameworks are you using? Jupyter notebooks are more likely to tie you into the conda ecosystem than if you’re building websites with Django. Even your aesthetic preferences come into play: do you want something that does the absolute minimum job so you can optimize other parts of the process, or would you prefer to have something that makes a bunch of choices for you so you don’t have to think about them?</p>
+<section id="our-scenario">
+<h3>Our scenario<a class="headerlink" href="#our-scenario" title="Link to this heading">#</a></h3>
+<p>For our purposes here, we’ll take my real-life scenario of running a project that publishes using JupyterBook. This would also apply if you have a collection of Jupyter notebooks (e.g. for doing text analysis and visualization) that you don’t run all the time, but you’d like to increase the odds of them working the way you remembered when you revisit them after 6 months or a year, regardless of what you’ve been up to on your computer in the meantime.</p>
+<p>Let’s also assume that you want to do this as easily as possible, don’t mind giving up some control, and don’t terribly mind a slightly kludgy solution if it makes things a little more straightforward than doing it elegantly.</p>
+</section>
+<section id="ana-mini-conda">
+<h3>(Ana/mini)conda<a class="headerlink" href="#ana-mini-conda" title="Link to this heading">#</a></h3>
+<p id="index-12">If you’re already using Jupyter notebooks, you may also have Anaconda installed. Anaconda is a massive, hulking thing that installs thousands of libraries, several graphical user interfaces, and a bunch of other things. It needs at least 5 GB of disk space just to install, which I’ve found to be a problem for grad students who just may not have that much space free. (Also, there was <a class="reference external" href="https://www.anaconda.com/blog/update-on-anacondas-terms-of-service-for-academia-and-research">a dust-up over licensing for academic institutions</a> recently, even though the company quickly backpedaled.)</p>
+<p>If you don’t have Anaconda, and don’t want to commit to the whole package (very reasonable!), you can still use Conda to get your environment in order by installing <a class="reference external" href="https://docs.anaconda.com/miniconda/">miniconda</a> – which isn’t a Python package, but a separate collection of things installed as regular software on your system.</p>
+</section>
+<section id="conda-vs-pip">
+<span id="index-13"></span><h3>Conda vs Pip<a class="headerlink" href="#conda-vs-pip" title="Link to this heading">#</a></h3>
+<p>Conda and Pip are both ecosystems of Python libraries: places where you can go to install libraries, update existing versions, and so on. Pip has more libraries than Conda – including some niche but useful ones. You can find everything available through Pip in the <a class="reference external" href="https://pypi.org/">Python package index</a>.</p>
+<p>Conda, on the other hand, is a little more complicated. Libraries are available through channels. The default channel is maintained by Anaconda the company, and all the packages are tested to play well together. That said, it has a relatively limited selection; there’s another channel called conda-forge that has more packages, and more up-to-date versions.</p>
+<p>I’d used both Conda and Pip to install Python libraries for years without giving it a lot of thought – which, let’s face it, is part of how I got into this environment mess to begin with. Trying to rationalize my system (at least for purposes of the DSC) using environments gave me a chance to rethink that when I had to start over from scratch anyway with a new work laptop.</p>
+<p>While it’s entirely possible to mix-and-match environment tools, installers, etc., it felt like the most straightforward route to getting my environment in order was to stick with one ecosystem, at least as much as possible. So I went with Conda for creating the environment, and for installing as many things as I could.</p>
+</section>
+<section id="installing-and-configuring-miniconda">
+<span id="index-14"></span><h3>Installing and configuring Miniconda<a class="headerlink" href="#installing-and-configuring-miniconda" title="Link to this heading">#</a></h3>
+<p>On my new laptop, I <a class="reference external" href="https://docs.anaconda.com/miniconda/">installed Miniconda</a>, then added the conda-forge channel to get access to a wider range of software by typing this in my terminal:</p>
+<p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">config</span> <span class="pre">--add</span> <span class="pre">channels</span> <span class="pre">conda-forge</span></code></p>
+<p>Then I ran the following line in the terminal so that conda always starts by looking in conda-forge:</p>
+<p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">config</span> <span class="pre">--set</span> <span class="pre">channel_priority</span> <span class="pre">strict</span></code><a class="footnote-reference brackets" href="#id8" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></p>
+</section>
+<section id="creating-a-basic-environment">
+<h3>Creating a basic environment<a class="headerlink" href="#creating-a-basic-environment" title="Link to this heading">#</a></h3>
+<p>When you create an environment, you can give it a list of all the things you want it to install upfront. You can also point it to a file that has a list of all the things – but when you’re starting out, you probably won’t know what those are. It’s okay to start off simple with the things you know you’ll need, and add more as you go. For instance, if you know for sure that you want Python and Jupyter notebooks and R, you could run the following command<a class="footnote-reference brackets" href="#id9" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a>:</p>
+<p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">-n</span> <span class="pre">my-environment-name</span> <span class="pre">python</span> <span class="pre">jupyter</span> <span class="pre">r</span></code></p>
+<p>The thing that comes after -n is the name of the environment, and you’ll use that to activate (or deactivate) that particular environment. You can name it whatever, but if it’s multiple words, it’s best to not use spaces– use hyphens-between-words or maybe CamelCase to differentiate the words.</p>
+<p>What you’ll see is a lot of text scrolling through as Conda figures out all the dependencies for all the things you’ve asked for – and these lists can get long. Then it’ll ask if you want to proceed. Type y and hit enter.</p>
+<p>Then go get a coffee or a snack because it’s probably going to be a while while everything installs.</p>
+</section>
+<section id="working-in-an-environment">
+<span id="index-15"></span><h3>Working in an environment<a class="headerlink" href="#working-in-an-environment" title="Link to this heading">#</a></h3>
+<p>Once you finish creatine a new environment, you should see a helpful message telling you that to activate the environment, type into a terminal:</p>
+<p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">my-environment-name</span></code></p>
+<p>If you’ve done this correctly, you should see the name of the environment in parentheses at the very start of your terminal prompt, before the name of the computer or the directory you’re currently in. It’s a handy way to check: you can just look at any terminal window and immediately see if you have a specific environment active.</p>
+<p>To deactivate, type in: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">deactivate</span></code> and the environment name in parentheses will disappear.</p>
+<p>If you’re just using the standard Jupyter notebook interface, you’d type this into the terminal before typing jupyter notebook, so that the notebook launches in your environment that has all the things you need. If you’re using another interface like VS Code, when you open a notebook and run the first cell, you have to choose a kernel, and it should give you the option of selecting your environment if you pick “Select another kernel” → “Python environments” → then choose the environment you created.</p>
+<p>Do this every time you work with the code for that project (and deactivate the environment when you’re not working on that project), and over time you’ll end up with a pretty extensive pile of packages that you’ve installed. It’s better to try to install things using conda first (conda install your-package-name), but if a package isn’t available that way, it’s not a problem to use pip (<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">your-package-name</span></code>).</p>
+<p>Some libraries, like spacy and NLTK (which we’ve used a lot for the Data-Sitters Club), require you to download modules or other data in order to actually work. You can do that outside of conda and it’ll work fine, but it will mean there’s additional setup steps for anyone else you share your environment with. Fortunately, people have put together conda wrappers for these necessary downloads that make them look and act like any other library in the ecosystem. For <a class="reference external" href="https://anaconda.org/conda-forge/nltk_data">NLTK</a> you can use conda install nltk_data, and for spacy models, you can use conda install spacy-model-en_core_web_smor any other language model option listed in the <a class="reference external" href="https://github.com/conda-forge/spacy-models-feedstock">spacy models feedstock GitHub repo</a>.</p>
+</section>
+<section id="exporting-and-importing-an-environment">
+<span id="index-16"></span><h3>Exporting and importing an environment<a class="headerlink" href="#exporting-and-importing-an-environment" title="Link to this heading">#</a></h3>
+<p>Let’s say you need to get a new collaborator set up with the project, and all the packages that it uses. The easiest way to do that is to export a file called environment.yml. This has a list of all the packages that you’ve installed using both conda and pip<a class="footnote-reference brackets" href="#id10" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a>.</p>
+<p>If you have a terminal open, and you’ve activated the environment you want to export, you can run: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">export</span> <span class="pre">-f</span> <span class="pre">environment.yml</span> <span class="pre">--no-builds</span></code>.</p>
+<p>The –no-builds parameter removes parameters specific to your operating system, which was important when going from my old laptop to my new one. Once you have that file, you can recreate the environment by creating a new conda environment using that environment.yml file, running: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">create</span> <span class="pre">-f</span> <span class="pre">environment.yml</span></code>. (Just make sure you’re in the directory with your environment.yml file when you run it or you’ll get an error.)</p>
+<p>Want to try it out? You can make your very own local environment for building the Data-Sitters Club website using the <a class="reference external" href="https://github.com/datasittersclub/site/blob/master/environment.yml">environment.yml file in our GitHub repo</a>.</p>
+</section>
+</section>
+<section id="troubleshooting-environments">
+<span id="index-17"></span><h2>Troubleshooting environments<a class="headerlink" href="#troubleshooting-environments" title="Link to this heading">#</a></h2>
+<p>Wrangling libraries can be … fiddly. And the messages that you get from conda can feel like they’ve got big pedantic jerk vibes. Sometimes, an attempt to simply install a library will get you a vomit-tree with a lot of red:</p>
+<p><img alt="Error vomit from conda with lots of red and saying that things can't be resolved" src="_images/dsc21_unresolved.jpg" /></p>
+<p>The news that this or that version “cannot be installed (as previously explained)” is not really what you need to hear. There’s not a set of specific steps guaranteed to fix this, but in the spirit of “have you turned it off and turned it back on again?”, straight up uninstalling and reinstalling (perhaps a different version of) core things like r-base and/or Python, or some of the specific dependencies that it complains about, can help the environment reach a place where it’s willing to install the thing you need. To finally get the environment to install the <a class="reference external" href="https://cran.r-project.org/web/packages/tm/index.html">r-tm</a> package (used in DSC 10 for PCA), it took me 25 more steps, including uninstalling r-base, unsuccessfully attempting to install r-base four times before it installed successfully – which involved me installing a version of the Python jpeg library it was happy with.</p>
+<p>Persistence and patience (with yourself, as much as the machine) and resisting despair are key for troubleshooting your environment… whether you’re trying to have a reliable and reproducible space on your computer for running your code, or if you’ve realized your life isn’t set up in a way that allows you to thrive.</p>
+</section>
+<section id="you-can-change-your-environment">
+<h2>You can change your environment<a class="headerlink" href="#you-can-change-your-environment" title="Link to this heading">#</a></h2>
+<p id="index-19"><span id="index-18"></span>I bet my friends who think a lot about pedagogy would have some … feedback. Centering the <em>difficulty</em> that people have experienced with Python environments – to put it more bluntly, the <em>trauma</em> that environment wrangling has caused people – is that the best way to approach this topic? But it’s a real thing, and considering how much we emphasize that <em>digital humanities is people</em>, trying to lead with ✨<em>don’t stress, environments are totally manageable</em>✨ would fall flat in the face of how people actually talk about them.</p>
+<p id="index-20"><img alt="Left panel, a Bluesky post by Quinn promoting is DSC book, and David Mimno replying with &quot;I didn't realize the DSC was pivoting to horror&quot;. Right panel, David Mimno standing by a slide that says &quot;Why is this so hard? Also Python is a god-awful f-ing nightmare&quot;" src="_images/dsc21_horror.jpg" /></p>
+<p>(Yeah that’s the same David Mimno who maintains the topic modeling tool Mallet, and was the PhD advisor for<a class="reference external" href="https://datasittersclub.github.io/site/dsc20.html"> Xanda who saved the topic modeling disaster in DSC 20</a>.)</p>
+<p>Maybe you’re one of the many people who’s tried  – probably more than once – to set up project-specific environments on your computer, but it’s been too hard, or you’ve gotten frustrated, or doing it consistently just hasn’t stuck. Or maybe you’ve heard about “environments” but when you looked at the instructions, your eyes glazed over and you quickly closed the tab… or maybe let it fester in one corner of your browser window until you had to do a computer reboot.</p>
+<p>I get it. This was me too. For so long it was easier to just shrug and say, “I’ve tried this before, and it didn’t work. Why bother?”</p>
+<p id="index-21">People really are working on better solutions for Python environments, and if the Conda approach I’ve laid out here isn’t doing it for you, there are many others. You can probably get away without some kind of environment wrangling up to a certain point, but confronting your anxiety and trying (or trying again) to actually set up and consistently use an environment for each project – it’s an act of self-care. (Even if it works out to be mostly harm reduction.) Even if it hasn’t worked for you before, today can be the day you make a different set of choices.</p>
+<p id="index-22">I’ve always loved stories with parallel universes or alternate histories. During the years my fellow Data-Sitters were reading <em>The Baby-Sitters Club</em><a class="footnote-reference brackets" href="#id11" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>6<span class="fn-bracket">]</span></a>, I was obsessed with the Super Nintendo JRPG <em>Chrono Trigger</em>, whose “game over” screen still haunts me.</p>
+<p><img alt="Black and white screenshot of the earth and the text &quot;But the future refused to change&quot;" src="_images/dsc21_chronotrigger.jpg" /></p>
+<p id="index-23">This doesn’t have to be your Python environment, or your life. Every few days, I’m caught off-guard by a feeling of gratitude that in <em>this timeline</em>, a day came when I made fundamentally different choices. And that my community showed up for me, to help me through the hardest weeks of my life<a class="footnote-reference brackets" href="#id12" id="id6" role="doc-noteref"><span class="fn-bracket">[</span>7<span class="fn-bracket">]</span></a>. DH is people. People who will be there, whether you want to throw your laptop out the window because you cannot get the infuriating dependency tree to behave, or if you’re having a panic attack because what you need to do next with your life is just too much for you to handle in that moment.</p>
+<p>Dedicated Python environments for your individual projects are worth investing in. So is community. It’s not always easy, but I bet you’ll be grateful you did.</p>
+</section>
+<section id="suggested-citation">
+<h2>Suggested citation<a class="headerlink" href="#suggested-citation" title="Link to this heading">#</a></h2>
+<p>Dombrowski, Quinn. “DSC #21: Quinn and the Trouble with Environments.” <em>The Data-Sitters Club.</em> September 23, 2024.</p>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id7" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Okay, so this is literally me this year – especially with my new wrist tattoos of <a class="reference external" href="https://en.wikipedia.org/wiki/Cyrillic_O_variants#Multiocular_O">my favorite Unicode character Multi-Ocular O (ꙮ)</a>  – and that’s why I’m just inviting friends over for this Thanksgiving.</p>
+</aside>
+<aside class="footnote brackets" id="id8" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>Having conda always look at conda-forge first and ignore alternatives speeds up the process of installing things. But if you find yourself in a tricky troubleshooting situation as described below, it can help to run <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">config</span> <span class="pre">--set</span> <span class="pre">channel_priority</span> <span class="pre">flexible</span></code> to try to untangle version conflict knots.</p>
+</aside>
+<aside class="footnote brackets" id="id9" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">3</a><span class="fn-bracket">]</span></span>
+<p>Sometimes you want not just the default version of Python or R, but a specific one in order to make some other library work. You can do that by specifying a version this way: <code class="docutils literal notranslate"><span class="pre">python=3.12.1</span></code></p>
+</aside>
+<aside class="footnote brackets" id="id10" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">4</a><span class="fn-bracket">]</span></span>
+<p>If you’re using a mostly pip-based workflow, the equivalent is a requirements.txt file, which you can get by running <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">freeze</span> <span class="pre">&gt;</span> <span class="pre">requirements.txt</span></code>. There are other options, too, that come with different ways of managing environments. Simon Wiles, the quiet force of nature behind all the ADHO infrastructure, feels optimistic about the potential of <a class="reference external" href="https://docs.astral.sh/uv/">UV</a> as a way to solve Python environment woes once and for all.</p>
+</aside>
+<aside class="footnote brackets" id="id11" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">6</a><span class="fn-bracket">]</span></span>
+<p>Awkward fun fact: I didn’t actually like the Baby-Sitters Club books much at all when I was a kid. And then I wrote about that for <a class="reference external" href="https://doi.org/10.25740/tj111dp6475">my contribution</a> to <em>We Are the Baby-Sitters Club: Essays and Artwork from Grown-Up Readers</em>, ed. Marisa Crawford and Megan Milks.</p>
+</aside>
+<aside class="footnote brackets" id="id12" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">7</a><span class="fn-bracket">]</span></span>
+<p>I know a lot of you are reading this. There are too many of you to thank individually here. But you all know who you are, and I am more grateful than I have words for.</p>
+</aside>
+</aside>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -470,6 +627,39 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-trouble-with-environments">The Trouble with Environments</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-s-an-environment">What’s an environment?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#environments-in-jupyter-notebooks">Environments in Jupyter notebooks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#managing-your-digital-spaces">Managing your digital spaces</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-environments">Python environments</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#our-scenario">Our scenario</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ana-mini-conda">(Ana/mini)conda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conda-vs-pip">Conda vs Pip</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-and-configuring-miniconda">Installing and configuring Miniconda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-basic-environment">Creating a basic environment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#working-in-an-environment">Working in an environment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exporting-and-importing-an-environment">Exporting and importing an environment</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-environments">Troubleshooting environments</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#you-can-change-your-environment">You can change your environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suggested-citation">Suggested citation</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

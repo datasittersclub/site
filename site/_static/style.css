@@ -551,9 +551,6 @@ html[data-theme="dark"] .bd-content img.leaflet-tile.leaflet-tile-loaded {
   padding-right: 0.2em;
 }
 
-button.theme-switch-button {
-  display: none;
-}
 
 #blue-66ccff #pink-f9bbc6 #yellow-fff66b #pinkthings body {
   background-color: #f9bbc6 !important;
@@ -663,4 +660,24 @@ blockquote #email {
 
 pre {
   background-color: var(--pst-color-surface);
+}
+
+.bd-header-article {
+  background-color: #f9bbc6;
+}
+
+.search-button-field {
+  background-color: none;
+}
+
+button.theme-switch-button {
+  display: none !important;
+}
+
+blockquote {
+  background-color: #fff66b !important;
+}
+
+a {
+  color:#6d079f;
 }

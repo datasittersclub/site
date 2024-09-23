@@ -31,3 +31,5 @@ sphinx:
     ogp_site_url: "https://datasittersclub.github.io/site/"
     ogp_image: "https://datasittersclub.github.io/site/_static/DSClogo.png"
     ogp_description_length: 200
+    html_context:
+      default_mode: light

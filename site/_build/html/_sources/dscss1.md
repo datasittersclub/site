@@ -286,10 +286,10 @@ I nodded.
 
 “Like Lee was saying before, ‘tl;dr’ is a good way to describe the Baby-Sitters Little Sisters series,” Katia quipped. “Let’s run with that!”
 
-## Meet Data-Sitters Little Tl;dr
-And that – with some refinement over the 32 hours that followed – was how the Data Sitters Tl;dr was born. If you are (or know someone who is) part of the audience we were describing, where you’re not so committed to DH or any particular tool or method that you want to read through our books or work through in-depth technical tutorials, go check it out and let us know what you think.
+## Meet Data-Sitters Little tl;dr
+And that – with some refinement over the 32 hours that followed – was how the Data Sitters Little tl;dr was born. If you are (or know someone who is) part of the audience we were describing, where you’re not so committed to DH or any particular tool or method that you want to read through our books or work through in-depth technical tutorials, go check it out and let us know what you think.
 
 
 ## Suggested citation
 
-Bessette, Lee Skallerup et al. "DSC Super Special \#1: The Data-Sitters Debate at Dartmouth". September 23, 2024.
+Bessette, Lee Skallerup et al. "DSC Super Special \#1: The Data-Sitters Debate at Dartmouth". *The Data-Sitters Club*. September 23, 2024.

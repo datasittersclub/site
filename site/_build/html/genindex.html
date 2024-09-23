@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="./" >
+<html lang="en" data-content_root="./" data-theme="light">
 
   <head>
     <meta charset="utf-8" />
@@ -12,8 +12,8 @@
   
   
   <script data-cfasync="false">
-    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="_static/style.css?v=a0fcb558" />
+    <link rel="stylesheet" type="text/css" href="_static/style.css?v=3424d877" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -66,7 +66,7 @@
   </head>
   
   
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="light">
 
   
   
@@ -149,8 +149,6 @@
   
     
     
-      
-    
     
     <img src="_static/DSClogo.png" class="logo__image only-light" alt="The Data-Sitters Club - Home"/>
     <script>document.write(`<img src="_static/DSClogo.png" class="logo__image only-dark" alt="The Data-Sitters Club - Home"/>`);</script>
@@ -215,10 +213,6 @@
 <li class="toctree-l1"><a class="reference internal" href="dscm3.html">DSCM 3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dscm4.html">DSCM 4: Isabelle and the Missing Spaghetti-O's</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dscm5.html">DSCM 5: Lee &amp; Quinn and the Mystery in the French NLP Model</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Super Specials</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="dscss1.html">DSCSS 1: The Data-Sitters Debate at Dartmouth</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Fun</span></p>
 <ul class="nav bd-sidenav">
@@ -397,19 +391,17 @@ document.write(`
 </li>
         <li><a href="dsc14.html#index-0">DMCA text &amp; data mining exemption (DSC 14)</a>
 </li>
+        <li><a href="dsc21.html#index-0">Environments (DSC 21)</a>
+</li>
         <li><a href="dsc3.html#index-7">Finding textual differences (DSC 3 Dear Reader)</a>
 </li>
         <li><a href="dsc18.html#index-0">HathiTrust (DSC 18)</a>
-</li>
-        <li><a href="dscss1.html#index-0">Is the DSC working as a project?</a>
 </li>
         <li><a href="dsc12.html#index-0">Learning to code (DSC 12)</a>
 </li>
         <li><a href="dscm2.html#index-0">Named Entity Recognition (DSC M2)</a>
 </li>
         <li><a href="dsc10.html#index-0">Principal component analysis (DSC 10)</a>
-</li>
-        <li><a href="dsc21.html#index-0">Python environments</a>
 </li>
         <li><a href="dsc2.html#index-0">Scanning and OCR (DSC M2)</a>
 </li>
@@ -897,6 +889,10 @@ document.write(`
       <li><a href="dsc11.html#index-3">DH is people</a>
 
       <ul>
+        <li><a href="dsc21.html#index-23">as a source of support</a>
+</li>
+        <li><a href="dsc21.html#index-19">collective trauma</a>
+</li>
         <li><a href="dsc13.html#index-23">remembering &amp; sharing stories</a>
 </li>
         <li><a href="dsc19.html#index-16">sometimes things take time</a>
@@ -956,6 +952,13 @@ document.write(`
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="dsc15.html#index-21">Distinctive words</a>
 </li>
+      <li>
+    Divorce
+
+      <ul>
+        <li><a href="dsc21.html#index-1">in BSC books</a>
+</li>
+      </ul></li>
       <li><a href="dsc7.html#index-28">DMCA</a>
 
       <ul>
@@ -1007,6 +1010,47 @@ document.write(`
         <li><a href="dsc10.html#index-28">angst about PCA</a>
 </li>
         <li><a href="dsc9.html#index-21">burn-out</a>
+</li>
+      </ul></li>
+      <li>
+    Environments
+
+      <ul>
+        <li><a href="dsc21.html#index-12">Anaconda and Miniconda</a>
+</li>
+        <li><a href="dsc21.html#index-21">as self-care</a>
+</li>
+        <li><a href="dsc21.html#index-2">changing yours</a>
+</li>
+        <li><a href="dsc21.html#index-13">Conda vs Pip</a>
+</li>
+        <li><a href="dsc21.html#index-6">definition</a>
+</li>
+        <li><a href="dsc21.html#index-8">digital and physical spaces</a>
+</li>
+        <li><a href="dsc21.html#index-16">exporting and importing with Conda</a>
+</li>
+        <li><a href="dsc21.html#index-5">for JupyterBook</a>
+</li>
+        <li><a href="dsc21.html#index-11">for Python</a>
+</li>
+        <li><a href="dsc21.html#index-10">for R</a>
+</li>
+        <li><a href="dsc21.html#index-7">in Jupyter notebooks</a>
+</li>
+        <li><a href="dsc21.html#index-4">Python environments like flossing</a>
+</li>
+        <li><a href="dsc21.html#index-3">Python environments like the Pike family</a>
+</li>
+        <li><a href="dsc21.html#index-9">Quinn&#39;s office</a>
+</li>
+        <li><a href="dsc21.html#index-20">trauma</a>
+</li>
+        <li><a href="dsc21.html#index-17">troubleshooting</a>
+</li>
+        <li><a href="dsc21.html#index-14">Using Conda</a>
+</li>
+        <li><a href="dsc21.html#index-15">working in a Conda environment</a>
 </li>
       </ul></li>
   </ul></td>
@@ -1711,6 +1755,8 @@ document.write(`
 <h2 id="P">P</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="dsc21.html#index-22">Parallel universes</a>
+</li>
       <li>
     Part-of-speech tagging
 
@@ -1724,6 +1770,8 @@ document.write(`
     Pedagogy
 
       <ul>
+        <li><a href="dsc21.html#index-18">bad pedagogical approaches</a>
+</li>
         <li><a href="dsc1.html#index-1">communities of practice</a>
 </li>
         <li><a href="dsc9.html#index-17">insecurity</a>
