@@ -1,20 +1,19 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="./" data-theme="light">
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta property="og:title" content="DSC #10: Heather Likes Principal Component Analysis" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://datasittersclub.github.io/site/dsc10.html" />
-<meta property="og:site_name" content="Python" />
+<meta property="og:site_name" content="Project name not set" />
 <meta property="og:description" content="by Mark Algee-Hewitt, Katherine Bowers, Quinn Dombrowski, and Heather Froehlich July 20, 2021 https://doi.org/10.25740/bx457br7329 Quinn: Have you ever been to one of those DH talks that involved d..." />
 <meta property="og:image" content="https://datasittersclub.github.io/site/_static/DSClogo.png" />
-<meta property="og:image:alt" content="Python" />
+<meta property="og:image:alt" content="Project name not set" />
 <meta name="description" content="by Mark Algee-Hewitt, Katherine Bowers, Quinn Dombrowski, and Heather Froehlich July 20, 2021 https://doi.org/10.25740/bx457br7329 Quinn: Have you ever been to one of those DH talks that involved d..." />
 
     <title>DSC #10: Heather Likes Principal Component Analysis &#8212; The Data-Sitters Club</title>
@@ -22,56 +21,53 @@
   
   
   <script data-cfasync="false">
-    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "light";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/style.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/style.css?v=5b1d681e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'dsc10';</script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="DSC #11: Katia and the Sentiment Snobs" href="dsc11.html" />
@@ -81,23 +77,27 @@ const thebe_selector_output = ".output, .cell_output"
   </head>
   
   
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="light">
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -119,12 +119,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -139,6 +147,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="index.html">
@@ -146,17 +157,27 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
-      
     
-    
-    <img src="_static/DSClogo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/DSClogo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/DSClogo.png" class="logo__image only-light" alt="The Data-Sitters Club - Home"/>
+    <script>document.write(`<img src="_static/DSClogo.png" class="logo__image only-dark" alt="The Data-Sitters Club - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -194,14 +215,19 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="dsc18.html">DSC 18: The Data-Sitters' HathiTrust Mistake</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dsc19.html">DSC 19: Shelley and the Bad Corpus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dsc20.html">DSC 20: Xanda Rescues the Topic Model Disaster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc21.html">DSC 21: Quinn and the Trouble with Environments</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Multilingual mysteries</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Multilingual Mysteries</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="dscm1.html">DSCM 1: Lee and the Missing Metadata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dscm2.html">DSCM 2: Beware, Lee and Quinn!</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dscm3.html">DSCM 3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dscm4.html">DSCM 4: Isabelle and the Missing Spaghetti-O's</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dscm5.html">DSCM 5: Lee &amp; Quinn and the Mystery in the French NLP Model</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Super Specials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="dscss1.html">DSCSS 1: The Data-Sitters Debate at Dartmouth</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Fun</span></p>
 <ul class="nav bd-sidenav">
@@ -222,7 +248,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -231,14 +257,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -328,26 +354,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -420,17 +448,17 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="dsc-10-heather-likes-principal-component-analysis">
-<h1>DSC #10: Heather Likes Principal Component Analysis<a class="headerlink" href="#dsc-10-heather-likes-principal-component-analysis" title="Permalink to this heading">#</a></h1>
+<h1>DSC #10: Heather Likes Principal Component Analysis<a class="headerlink" href="#dsc-10-heather-likes-principal-component-analysis" title="Link to this heading">#</a></h1>
 <div style='float: right; width: 200px;margin-left: 7px;margin-top: 0px;'>
 <img src='_static/images/bookcovers/dsc10_cover.jpg' alt='DSC 10 book cover' />
 </div><p id="index-0">by Mark Algee-Hewitt, Katherine Bowers, Quinn Dombrowski, and Heather Froehlich</p>
 <p>July 20, 2021</p>
 <p><img src='_static/images/doi_logo.png' alt='DOI logo' height="20px" /> <a class="reference external" href="https://doi.org/10.25740/bx457br7329">https://doi.org/10.25740/bx457br7329</a></p>
 <section id="quinn">
-<h2>Quinn<a class="headerlink" href="#quinn" title="Permalink to this heading">#</a></h2>
+<h2>Quinn<a class="headerlink" href="#quinn" title="Link to this heading">#</a></h2>
 <p id="index-1">Have you ever been to one of those DH talks that involved dazzling graphs, showing some aspect of literature at a scale way bigger than you can imagine, and thought to yourself, “Wow… I wonder <em>how they did that</em>?” These slides usually whiz by at a brisk clip, appearing just long enough for you to marvel at the nicely-clustered bunches of colorful dots with a brief explanation from the speaker, before moving on to the next thing. I don’t think there’s some kind of conspiracy afoot here – like most DH work, there’s just <em>so much</em> you want to share, especially with a DH-friendly audience, and only so much you can pack into 20 or even 40 minutes. But one side effect of the quick pace of these talks is that they rarely stay on one colorful visualization long enough for the sense of unease to sink in. There are some visualizations that the audience knows how to read. Comparing the number of occurrences for different character names? Yup, no problem, that’s the stuff of first grade math.</p>
 <img src='_static/images/dsc10_barchart.png' alt='A DH bar chart with character names vs an excerpt from a 1st grade math worksheet' />
 <p>But how do you grapple with something like this?</p>
@@ -438,18 +466,18 @@ document.write(`
 <p id="index-2">This was a slide from a talk that Associate Data-Sitter Mark Algee-Hewitt gave at <em>DARIAH Beyond Europe</em>, a conference at Stanford a few weeks before I started working there in fall 2018. He was speaking about a project in the Stanford Literary Lab called “Typicality”, or “Typicality as Mean”. This chart shows American fiction– specifically, the Gale American Fiction corpus. My fellow Data-Sitter Roopsi critiqued that corpus in our recent LitLab talk, on account of all the American fiction that gets left out – significantly, non-English fiction and fiction by people who were not white men with access to mainstream commercial publishing channels. Anyhow, with those caveats in place, it takes this corpus of (a subset of) American fiction and looks for the “most average” one – the one that is closest to the middle. Not one off in the romance cluster, not one over by the mysteries. Just… totally average for this corpus, or as close to it as you can get.</p>
 <p>That book, by the way, is “The Dragon’s Daughter” by Clyde C. Westover. In his talk, Mark noted that he’s probably one of the only people to have read it all the way through in the last 50 years – which immediately prompted me to download it from Project Gutenberg and attempt the slog myself. But boy, is it ever a slog. A hackneyed plot, liberally sprinkled with jaw-dropping racism, applied to everyone from an Irish policeman to the protagonists who are implicated in the Chinese mafia of San Francisco. I gave up halfway through, so I guess Mark can legitimately keep saying he’s the only one who’s read it. (In Russian there’s a handy set of verbal prefixes you can use to differentiate “read some of” and “read all the way to the end”. I miss having those in English.)</p>
 <p>But even as I’ve tried to put “The Dragon’s Daughter” out of my mind, I haven’t forgotten about that visualization. I wanted to understand what he did to make it – and even more importantly, I wanted to <em>actually</em> understand how to read it, beyond smiling and nodding along with the explanation.</p>
-<span class="target" id="index-3"></span><p id="index-4">One of the cool things about the Data-Sitters Club being part of the LitLab is that it makes it easy to build on work that’s been done for other projects. (And all the other Lab members have been super nice about answering my questions and helping me wrangle their code.) The Typicality code is Mark’s, and Mark primarily works in R. I don’t know how to explain this to a monolingual English speaker, but dealing with R code when you’re … let’s call it an “intermediate” Python user is kind of like trying to read Italian with high-school Spanish. (Or, if I’m having a bad day, like trying to read <em>Romanian</em> with high-school Spanish.) Most of the high-level structure of the language is comparable, and a lot of the roots are recognizable, but I wouldn’t claim it’s something I’m exactly comfortable doing.</p>
+<p id="index-4"><span id="index-3"></span>One of the cool things about the Data-Sitters Club being part of the LitLab is that it makes it easy to build on work that’s been done for other projects. (And all the other Lab members have been super nice about answering my questions and helping me wrangle their code.) The Typicality code is Mark’s, and Mark primarily works in R. I don’t know how to explain this to a monolingual English speaker, but dealing with R code when you’re … let’s call it an “intermediate” Python user is kind of like trying to read Italian with high-school Spanish. (Or, if I’m having a bad day, like trying to read <em>Romanian</em> with high-school Spanish.) Most of the high-level structure of the language is comparable, and a lot of the roots are recognizable, but I wouldn’t claim it’s something I’m exactly comfortable doing.</p>
 <p>On one hand, it would make sense to show you the Typicality code next, then talk about how to interpret it. On the other hand, the Typicality code is going to make a lot more sense after we talk, conceptually, about what it’s doing. (Trust me on this, as someone who ran the Typicality code blindly for a while before understanding it.) So for the moment, let’s just say I ran some code and visualized the output and it looked something like Mark’s all-the-dots viz, but with the Baby-Sitters Club books. All we needed was someone to help interpret it. And I knew just the person.</p>
 <section id="meet-heather">
-<span id="index-5"></span><h3>Meet Heather<a class="headerlink" href="#meet-heather" title="Permalink to this heading">#</a></h3>
+<span id="index-5"></span><h3>Meet Heather<a class="headerlink" href="#meet-heather" title="Link to this heading">#</a></h3>
 <p>Heather Froehlich (Penn State University) has wavy-curly red hair and a more-than-passing similarity in style to the famed missing Waldo. She has an affinity for stripes, and like the Baby-Sitters Club members spent her tween years in New England. She spends a lot of time pondering computers and how they understand language. She spends even more time thinking about what people’s brains can do with the resulting data, because as she will be the first to tell you, “computers are dumb boxes of plastic and metal”. In her position as Literary Informatics Librarian at Penn State University, she has the opportunity to consult with a range of scholars in diffuse fields about all the ways people can work smartly with the data computers give us and how to get them to give it to us. She loves a good corpus.</p>
 <p>Heather is the author of such DH hits as “<a class="reference external" href="https://hfroehli.ch/2019/09/27/moby-dick-is-about-whales-or-why-should-we-count-words/">Moby Dick is About Whales, or Why Should We Count Words?</a>”, as well as the Programming Historian tutorial on <a class="reference external" href="https://programminghistorian.org/en/lessons/corpus-analysis-with-antconc">Corpus Analysis with AntConc</a>, which Anouk referenced in <a class="reference external" href="https://datasittersclub.github.io/site/dsc4.html">DSC #4: AntConc Saves the Day</a>. Heather likes math – and even better, she likes explaining how various computational methods actually work, and was kind enough to give me and Katia a crash course on PCA.</p>
 </section>
 </section>
 <section id="katia">
-<h2>Katia<a class="headerlink" href="#katia" title="Permalink to this heading">#</a></h2>
+<h2>Katia<a class="headerlink" href="#katia" title="Link to this heading">#</a></h2>
 <section id="heather-likes-principal-component-analysis">
-<h3>Heather Likes Principal Component Analysis<a class="headerlink" href="#heather-likes-principal-component-analysis" title="Permalink to this heading">#</a></h3>
+<h3>Heather Likes Principal Component Analysis<a class="headerlink" href="#heather-likes-principal-component-analysis" title="Link to this heading">#</a></h3>
 <p>It was March 2021 when we spoke with Heather. We were both in the busy part of the term, and overwhelmed with Zooms, but it was enjoyable to spend a couple of hours with Heather and her spreadsheets. And oh were there spreadsheets! But more on that in a bit.</p>
 <p>As usual, Quinn was overwhelmed with enthusiasm for the topic at hand, and it took some effort to pause for introductions first. (You, too, can pause for introductions by checking out the <a class="reference external" href="https://datasittersclub.github.io/site/chapter-2">Data-Sitters Club Chapter 2 page</a>.) Quinn and Heather knew each other, but Heather and I didn’t, so introductions were needed!</p>
 <p>“Okay, so my name is Katia and I’m an Associate Professor of Slavic Studies at the University of British Columbia, and I work on 19th-century Russian lit. My research expertise is in genre and narrative theory.” I explained. “Also, I am fascinated by the Baby-Sitters Club books, which was true when I was eight and apparently it’s still true, and I’ve read a lot of them. I’m relatively new to DH, and so I usually have a lot of questions about how we do things.”</p>
@@ -477,7 +505,7 @@ document.write(`
 <p id="index-10">“Graphing generally is trying to find relationships between multiple points of stuff,” said Heather, before pausing to reconsider. “Well, my computer scientists are going to tell me something else, but most people commonly look at relationships between different kinds of stuff in graph spaces. Principal component analysis, or PCA, is a way of taking lots of data and condensing it into something that is more human readable.”</p>
 </section>
 <section id="pca-for-pets">
-<span id="index-11"></span><h3>PCA for Pets<a class="headerlink" href="#pca-for-pets" title="Permalink to this heading">#</a></h3>
+<span id="index-11"></span><h3>PCA for Pets<a class="headerlink" href="#pca-for-pets" title="Link to this heading">#</a></h3>
 <p>The graphs that immediately leapt to all of our minds were COVID-related, those charts of daily positive tests, hospitalizations, deaths that had dominated the news and social media. But learning PCA using people’s suffering and death didn’t feel right for the Data-Sitters Club. So instead, let’s talk pets. In <em>BSC #22: Jessi Ramsey, Pet-Sitter</em>, the Mancusi family has a ridiculous number of pets:</p>
 <ul class="simple">
 <li><p>Cheryl - Great Dane</p></li>
@@ -501,7 +529,7 @@ document.write(`
 <li><p>Various turtles and fish</p></li>
 </ul>
 <p>Let’s imagine that the Mancusis are also eccentric data scientists, and instead of just telling Jessi what she’s in for with pet-sitting for them, they give Jessi a spreadsheet with data about the pets. If they only give her one parameter, like weight, she might consider graphing it.</p>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p><strong>Pet</strong></p></th>
 <th class="head"><p><strong>Weight</strong></p></th>
@@ -585,13 +613,14 @@ document.write(`
 </tr>
 </tbody>
 </table>
+</div>
 <p>In addition to weight, imagine all the other data you could assemble on your pets! Length, number of teeth, number of legs, number of claws, number of scales, approximate number of hairs, how loud the pet is. You might be wondering, “Why are we ignoring the elephant in the room and not using something like ‘species’ or ‘color’?” (Thankfully, the Mancusi menagerie does not include an actual elephant.) PCA works with <em>continuous</em> data, and it’s not intended for data that codes categories with 1’s and 0’s (e.g. if there were a “dog” column), or other arbitrary marks intended to designate categories (e.g. if there were a “species” column where 1 = “dog”, 2 = “cat”, etc.)<a class="footnote-reference brackets" href="#id7" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
 <p>Jessi might try a bar graph on the pets’ weight to get a sense of what she’s dealing with, and if she has weight + length, she might try a line graph. But once we start throwing in teeth and legs and hairs and average decibels, it’s more than Jessi can possibly keep in her head, and the usual graphing software wouldn’t be much happier about it than she is. That said, there is some relationship between all those different traits: longer animals tend to have more hairs (unless they don’t have any). Heavier animals tend to be louder (except for the annoying parakeet). If Jessi were to take the spreadsheet and use PCA on it, odds are that the pets of the same species would cluster together in the resulting chart – but <strong>not</strong> because PCA somehow “guessed” the species. PCA takes all the data and creates <strong>new</strong> parameters – called principal components – that by themselves are uninterpretable numbers, but in their relationship to one another, they capture something meaningful about the relationships between points of the original data.</p>
 <p>“I’m going to say, roughly over 6 variables is going to get complicated,” said Heather. “And it depends on what the data looks like, but in general PCA is used for lots of data that intersects in ways that are somewhat meaningful together, like the physical properties of pets or… words in a book.”</p>
 <p>Suddenly, we were back to books and word counts.</p>
 </section>
 <section id="counting-language">
-<h3>Counting Language<a class="headerlink" href="#counting-language" title="Permalink to this heading">#</a></h3>
+<h3>Counting Language<a class="headerlink" href="#counting-language" title="Link to this heading">#</a></h3>
 <p>“Books, as a whole, have lots of words in them. We’re all comfortable with that idea, yes?” asked Heather. Quinn and I nodded, sure that someone in DH would find something to object to there, but we’d already <a class="reference external" href="https://datasittersclub.github.io/site/dsc8.html#counting-words">counted the number of words in our Baby-Sitters Club corpus in DSC #8</a>, and it seemed fair to say it was a lot.</p>
 <p>“Books that are written in various styles and formats, they all have lots of words in them, and you can trace them in lots of different ways, right?” Heather continued. “When we think about categories for counting words, there are lots of ways to do it, like only counting words from a certain part of speech. Or, with certain languages, you could get very specific about the different kinds of words you want to count.”</p>
 <p>“Like perfective vs. imperfective verbs in Slavic!” I offered.</p>
@@ -604,11 +633,11 @@ document.write(`
 <p>No objections from us! So we scaled things back.</p>
 </section>
 <section id="counting-claudia-kishis-snacks">
-<span id="index-13"></span><h3>Counting Claudia Kishi’s Snacks<a class="headerlink" href="#counting-claudia-kishis-snacks" title="Permalink to this heading">#</a></h3>
+<span id="index-13"></span><h3>Counting Claudia Kishi’s Snacks<a class="headerlink" href="#counting-claudia-kishis-snacks" title="Link to this heading">#</a></h3>
 <p>“I want you to draw 5 columns on your paper for me,” said Heather. “And label them BSC #1-#5. And our rows will be red, yellow, brown, and black. We’re going to make up some percentages for the colors of Claudia Kishi’s snacks mentioned in the books.”</p>
 <p>“How much space should we put between the columns?” I asked, and we held our pieces of paper up to Zoom to try to come up with roughly-comparable tables.</p>
 <p>We worked out a table, laughing and flinging random percentages into our hand-written cells, trying to ensure our entirely-fictional numbers didn’t add up to something so big that it would exclude the possibility of other categories, like orange Doritos or green M&amp;Ms.</p>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Snack color</p></th>
 <th class="head"><p>BSC 1</p></th>
@@ -649,15 +678,16 @@ document.write(`
 </tr>
 </tbody>
 </table>
+</div>
 <p id="index-14">“Okay, in our hypothetical version of what our spreadsheet is looking like, we’re beginning to see that relationships exist across these categories that are relevant to each individual item, yes?” said Heather. I nodded. “That giant spreadsheet I showed you before shows you what it looks like to aggregate your data at a scale that offers a ton of information. This one is a little bit more reasonable to kind of deal with, right? Like, we can kind of talk around this one in ways that feel more accessible. But, imagine that you were to do this for all – how many Baby-Sitters Club books? You have what, like 60?”</p>
 <p>“225 or so,” Quinn deadpanned.</p>
 <p>Heather blinked. “Yeah, if you did this with 225, you’d have numbers down to the floor. And that’s, again, too much to keep in your head. So let’s go back to this simpler table. So instead of plotting each of these things on a graph, what we want to do is <em>draw the line that covers the most amount of variation that covers this axis</em>.”</p>
 <p>She gestured towards the grid she had drawn earlier. “I know my hand is making this hard on Zoom. We want to use the X-axis to capture the most variation in the data. So we’re going to look at all the data in the table and condense it into something that is more human-friendly. What value for each book captures the most amount of variation across those books? 250 books x 4 dimensions – red, yellow, brown, black – isn’t so big for me to do in my head, but we want the end result to be set into two dimensions so we can graph it.”</p>
 <p>“With this Typicality code, there are like 1,000 dimensions because each of the overall most common nouns has a word-count for each book. How do you squish that into two dimensions?” asked Quinn.</p>
 <p>“So, crucially, we don’t work well in 1,000 dimensions, right? We struggle after, like, three dimensions most of the time. Even encountering four dimensions in college, it’s like, ‘I don’t know how to do this’. We as humans like to see things visually in two dimensions – sometimes we can handle three, but we do really well in two dimensions. So that’s what PCA’s trying to do,” explained Heather. “But to get there, we have to flatten the variation in our data a whole bunch. And this comes into play when you’re trying to interpret it.”</p>
-<span class="target" id="index-15"></span></section>
+</section>
 <section id="interpreting-typicality">
-<span id="index-16"></span><h3>Interpreting Typicality<a class="headerlink" href="#interpreting-typicality" title="Permalink to this heading">#</a></h3>
+<span id="index-16"></span><span id="index-15"></span><h3>Interpreting Typicality<a class="headerlink" href="#interpreting-typicality" title="Link to this heading">#</a></h3>
 <p>Heather pulled up the graph that Quinn had generated, running Mark’s Typicality code on the BSC corpus using the top 1,000 nouns.</p>
 <img src='_static/images/dsc10_bsc_nouns.png' alt='PCA of BSC books using top 1k nouns' />
 <p>“Everything in quadrant 1 is somehow related. Everything in quadrant 2 is also somehow related. Somewhere in the middle of the graph is (0,0) and this is the most ‘average’ BSC book. Hopefully these are color-coded in some sensible way…” We explained that turquoise was the main series. “Got it,” said Heather. “It looks like the turquoise x’s are distributed throughout all four quadrants, and so are the green asterisks – those are mysteries, right? But some of the other series cluster more clearly. What do you see with the distribution of the colors? Let’s start with orange – and use your quadrant names, please.”</p>
@@ -676,7 +706,7 @@ document.write(`
 <p>“See how <em>BSC #20 Kristy and the Walking Disaster</em> is all the way over there? Both its plot and subplot revolve around taking care of kids. The main plot is about the kids’ softball team Kristy coaches and the subplot is about a new baby-sitting client whose son is very accident prone. Teen drama is at a minimum in this book!”</p>
 </section>
 <section id="pca-across-series">
-<span id="index-17"></span><h3>PCA Across Series<a class="headerlink" href="#pca-across-series" title="Permalink to this heading">#</a></h3>
+<span id="index-17"></span><h3>PCA Across Series<a class="headerlink" href="#pca-across-series" title="Link to this heading">#</a></h3>
 <p>“Should we try another example?” asked Heather. “How about the series one, I saw that and it was fascinating!”</p>
 <p>Since late last summer, Quinn had been working with <a class="reference external" href="https://nicholenomura.com">Nichole Nomura</a> on building a bigger corpus called YAMS (for Young Adult and Middle-School), of books we might use as a comparison with the Baby-Sitters Club. This was the first time we’d tried to use it for anything.</p>
 <img src='_static/images/dsc10_yams_nouns.png' alt='PCA of series books using top 1k nouns' />
@@ -694,13 +724,13 @@ document.write(`
 </section>
 </section>
 <section id="id2">
-<h2>Quinn<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<h2>Quinn<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <p>I had thoughts (and feelings!) after talking with Heather about PCA, but before I get into those, it’s finally time to look at how these visualizations come into being to begin with.</p>
 <section id="a-high-level-look-at-typicality">
-<span id="index-18"></span><h3>A High-Level Look at Typicality<a class="headerlink" href="#a-high-level-look-at-typicality" title="Permalink to this heading">#</a></h3>
+<span id="index-18"></span><h3>A High-Level Look at Typicality<a class="headerlink" href="#a-high-level-look-at-typicality" title="Link to this heading">#</a></h3>
 <p id="index-19">For the Typicality code to do what it’s supposed to do, it’s designed to take as its input all the <em>nouns</em> in a series of texts. Since I’m more comfortable working with Python, I used that to prepare the text by extracting all the nouns first. There are more recent and sophisticated natural language processing (NLP) packages that you can use to extract nouns, but it felt like overkill for this task, especially since we were just looking at English here. So I used the NLTK package.</p>
 <section id="extracting-all-nouns">
-<h4>Extracting All Nouns<a class="headerlink" href="#extracting-all-nouns" title="Permalink to this heading">#</a></h4>
+<h4>Extracting All Nouns<a class="headerlink" href="#extracting-all-nouns" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#NLTK is the NLP package we&#39;re using</span>
@@ -767,11 +797,11 @@ document.write(`
 </div>
 </section>
 <section id="what-typicality-does">
-<span id="index-20"></span><h4>What Typicality Does<a class="headerlink" href="#what-typicality-does" title="Permalink to this heading">#</a></h4>
+<span id="index-20"></span><h4>What Typicality Does<a class="headerlink" href="#what-typicality-does" title="Link to this heading">#</a></h4>
 <p>The Typicality code takes the most frequent nouns across all the texts, and then uses the frequencies of those nouns in each text to plot a location for that text in multi-dimensional space – meaning that if you go with the default of 1,000 nouns, you get coordinates for the text in 1,000-dimensional space. We’ve talked a little bit about <a class="reference external" href="https://datasittersclub.github.io/site/dsc8.html#what-do-we-compare-when-we-compare-texts">grappling with mega-dimensional space before in DSC #8</a> in the context of <em>vectorizing texts</em>, and that’s what we’re doing here, too: turning each text into a <em>vector</em> consisting of 1,000 coordinates based on the frequency of each of the top 1,000 nouns. But in DSC #8, we were measuring the distance between the vectors as one way of looking at text similarity. Here, we’re using PCA to generate principal component values for each of the texts, and then we’ll plot the first two principal components (which account for the greatest variation in the data) as the X- and Y-values in an easier-to-understand 2-dimensional space. You could make other choices about how to visualize the data, like graphing PC1 vs PC2 vs PC3 in 3-dimensional space (in case you want a graph that looks even more baffling to people who aren’t used to interpreting PCA visualizations)! There’s no single “right” next step once you have your PC values, though – it’s an interpretive decision, and PC1 on the X-axis and PC2 on the Y-axis is just something that people often go with. The interpretive spin on all this that Mark’s Typicality  approach offers is that the concept that the most “typical” text is the one that’s closest to (0,0) or the <em>center</em> of the grid: not too far up, not too far down. Not too far left, not too far right. Just… average.</p>
 </section>
 <section id="fitting-an-r-shaped-peg-into-a-jupyter-shaped-hole">
-<span id="index-21"></span><h4>Fitting an R-shaped Peg into a Jupyter-shaped Hole<a class="headerlink" href="#fitting-an-r-shaped-peg-into-a-jupyter-shaped-hole" title="Permalink to this heading">#</a></h4>
+<span id="index-21"></span><h4>Fitting an R-shaped Peg into a Jupyter-shaped Hole<a class="headerlink" href="#fitting-an-r-shaped-peg-into-a-jupyter-shaped-hole" title="Link to this heading">#</a></h4>
 <p>You may have noticed that all the code we’ve used in the Data-Sitters Club to date has been Python. Or maybe you haven’t noticed, and that’s fine too! When you’re not familiar with coding, looking at any code is like when the TV closed captions just show something like <em>&lt;speaking quickly in a foreign language&gt;</em> instead of the actual words the person is saying in Spanish.</p>
 <p>If you’re interested in understanding more about PCA but don’t want to get into the code, feel free to skip ahead! If you’re curious about how to run code in R (maybe even alongside Python code), or the details of how the Typicality code works, read on!</p>
 <p>We ran into some problems displaying large code blocks and their outputs after <a class="reference external" href="https://datasittersclub.github.io/site/dsc8.html">DSC #8: Text-Comparison-Algorithm-Crazy Quinn</a>, and, inspired by Melanie Walsh’s <a class="reference external" href="https://melaniewalsh.github.io/Intro-Cultural-Analytics/welcome.html">Introduction to Cultural Analytics and Python</a> (an awesome resource if you want to learn Python by doing things that you might find interesting, rather than just printing stuff like “Hello World” and making inane lists of things), we switched the Data-Sitters Club website to something called <a class="reference external" href="https://jupyterbook.org/intro.html">Jupyter Book</a>. Jupyter Book lets you turn <a class="reference external" href="https://programminghistorian.org/en/lessons/jupyter-notebooks">Jupyter Notebooks</a> (which let you combine human-readable text and computer-readable code in a single document) into websites, and gives you nice features like sidebar navigation and such. (Ours is the only Jupyter Book in the <a class="reference external" href="https://executablebooks.org/en/latest/gallery.html">gallery of examples</a> that eschewed the default color scheme for something with a 90’s girl series vibe.)</p>
@@ -799,9 +829,9 @@ document.write(`
 </section>
 </section>
 <section id="running-typicality">
-<h3>Running Typicality<a class="headerlink" href="#running-typicality" title="Permalink to this heading">#</a></h3>
+<h3>Running Typicality<a class="headerlink" href="#running-typicality" title="Link to this heading">#</a></h3>
 <section id="mark-s-special-cleaning-code">
-<h4>Mark’s Special Cleaning Code<a class="headerlink" href="#mark-s-special-cleaning-code" title="Permalink to this heading">#</a></h4>
+<h4>Mark’s Special Cleaning Code<a class="headerlink" href="#mark-s-special-cleaning-code" title="Link to this heading">#</a></h4>
 <p>Most text analysis people have their own routine when it comes to how to clean text. Especially when you’re doing something based on word counts, you want to make sure that the words you’re counting are actually consistently formatted! That means things like no capitalization (because the computer thinks ‘cat’ and ‘Cat’ are two different words), and getting rid of punctuation.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -829,7 +859,7 @@ cleanChunk &lt;- function(text.chunk){
 </div>
 </section>
 <section id="the-typicality-function">
-<span id="index-22"></span><h4>The Typicality function<a class="headerlink" href="#the-typicality-function" title="Permalink to this heading">#</a></h4>
+<span id="index-22"></span><h4>The Typicality function<a class="headerlink" href="#the-typicality-function" title="Link to this heading">#</a></h4>
 <p>The Typicality code takes a directory with your corpus (plain text files, and only the plain text files you want it to analyze), a metadata table (the code for running this function, below, includes steps for creating a basic metadata table with filename and title), the number of most-frequent words you want it to use for its analysis, and a corpus name (to use for the output files).</p>
 <p>It then cleans all the text (using Mark’s special cleaning function, above), puts all the texts into a vector in order to identify the top words, then writes those to the top_terms_[your-corpus-name].csv file.</p>
 <p>It sets up a document-term matrix, which is just a big table where each row has the filename of one file, and the frequency of each of the most-frequent words in the columns. (Think something like what Heather had us create when we were <em>counting Claudia Kishi’s snacks</em>.) Then it calculates the first two principal components (PC1 and PC2) for each of your texts.</p>
@@ -918,7 +948,7 @@ corpusTypicality&lt;-function(corpus.dir, meta.data.file, output.dir, top.words 
 </div>
 </section>
 <section id="index-23">
-<span id="id3"></span><h4>Running Typicality<a class="headerlink" href="#index-23" title="Permalink to this heading">#</a></h4>
+<span id="id3"></span><h4>Running Typicality<a class="headerlink" href="#index-23" title="Link to this heading">#</a></h4>
 <p>The code cell below is what you use to actually run Typicality. You’ll need to edit it first your own data, as described here.</p>
 <p>(If you’ve <a class="reference external" href="https://github.com/datasittersclub/dsc10">downloaded the R script from this book’s GitHub repo</a> and open it in RStudio, you can run each line of code below, one at a time, in the R console, after setting the R script to be the ‘source’. Or if you’re using the Jupyter notebook, you should be able to just run the code cell below once you’ve installed the <code class="docutils literal notranslate"><span class="pre">tm</span></code> package in RStudio.)</p>
 <ul class="simple">
@@ -969,10 +999,10 @@ means.text&lt;-corpusTypicality(&#39;dsc_pca_all_words&#39;, dsc.meta, &quot;.&q
 </div>
 </div>
 </div>
-<span class="target" id="index-24"></span><span class="target" id="index-25"></span></section>
+</section>
 </section>
 <section id="visualizing-the-typicality-output">
-<span id="index-26"></span><h3>Visualizing the Typicality Output<a class="headerlink" href="#visualizing-the-typicality-output" title="Permalink to this heading">#</a></h3>
+<span id="index-26"></span><span id="index-25"></span><span id="index-24"></span><h3>Visualizing the Typicality Output<a class="headerlink" href="#visualizing-the-typicality-output" title="Link to this heading">#</a></h3>
 <p>After running the Typicality code, you should now have two CSV files:</p>
 <ul class="simple">
 <li><p>Top_terms_[your-corpus-name].txt: a list of all the terms that Typicality used for its calculation; they’re listed in an arbitrary order, not in terms of frequency</p></li>
@@ -997,7 +1027,7 @@ Then, I started up the Tableau visualization software, which <a class="reference
 <p>And that’s how we got our graphs. But before we could feel good about it, first we needed to make sense of these coordinates, and how PCA manages to squish 1,000 dimensions down to 2, and what it means for things to not be in the middle, because without that, we didn’t have a lot of hope of interpreting what the middle means. And that’s what led to the conversation with Heather that you just read about.</p>
 </section>
 <section id="making-sense-of-features">
-<span id="index-27"></span><h3>Making Sense of Features<a class="headerlink" href="#making-sense-of-features" title="Permalink to this heading">#</a></h3>
+<span id="index-27"></span><h3>Making Sense of Features<a class="headerlink" href="#making-sense-of-features" title="Link to this heading">#</a></h3>
 <p>I was grateful for the conversation with Heather; I felt like I had a better sense of how to start interpreting a PCA graph, but some things were still troubling me. The Typicality code was how I stumbled into this world of PCA, so I figured it was time to go to the source: it was time for a conversation with Mark Algee-Hewitt, Director of the Stanford Literary Lab and Associate Data Sitter (just like Logan Bruno in the Baby-Sitters Club.)</p>
 <p>“Heather explained how PCA ends up looking– with principal component 1 on the X-axis, and principal component 2 on the Y-axis. But how many principal components <strong>are</strong> there?” I asked.</p>
 <p>“As many as the things in your corpus,” said Mark. “So if you’ve got 250 Baby-Sitters Club books, there could be 250 principal components. But in practice, it’s not worth it to do the math for all 250 because there are diminishing returns. You can calculate the percentage of the variation that each principal component covers. PC1 always covers the most variation – it depends on your data, but 25% is a plausible number for what PC1 might cover. And it all goes downhill from there, so by the time you get to PCA 200, it’s not explaining a whole lot. Plus, keep in mind that we’re trying to flatten everything down to 2 dimensions using values that summarize the biggest range of variation. And if that’s our end-goal, PCA 200 really isn’t of any use here.”</p>
@@ -1008,7 +1038,7 @@ Then, I started up the Tableau visualization software, which <a class="reference
 <p>That seemed reasonable to me, but I felt like there was some secret mapping that no one had ever told me between the kinds of things you want to look at and how you actually go about doing that computationally.</p>
 <p>“If you want to know how novels are the same or different based on their ‘about-ness’, maybe a topic model is the right thing to use to create a feature set,” Mark went on. “If you want to know differences related to who wrote it, you could try stylometry or most frequent words.”</p>
 <p>The mention of “most frequent words” lit off sparks in my brain: the top-1,000-word PCA model for the series books! Maybe that’s why the series were so strongly delineated! I mean, yes, there were ghostwriters involved for most or all of the series, but if they were trying to write in a consistent voice and style, maybe that attenuated some of the “author signal” from the ghostwriters. What would happen if we color-coded the BSC chart with the top-1,000 words by ghostwriter? And were there any ghostwriters who wrote for more than one of the series we had in our corpora?! But I tried to not get too distracted by the new rabbit holes forming in my brain because Mark had other pointers.</p>
-<span class="target" id="index-30"></span><span class="target" id="index-31"></span><p id="index-32">“To differentiate individual texts, you can look at the most distinctive words.” (<a class="reference external" href="https://datasittersclub.github.io/site/books/dsc8.html#tf-idf">We tried that in DSC #8: Text-Comparison-Algorithm-Crazy Quinn!</a>) “For genre, you can try a topic model. If you’re interested in dialogue, that has a lot to do with verb tenses, and you can try part-of-speech. We used part-of-speech in the Lab’s Microgenres project because we were interested in grammatical similarities across texts rather than semantics. The Lab’s Personhood project, on the other hand, used syntactical features – we were less into looking at words, and more into the relationships between words. Who or what is ‘owned’, vs. ‘put’, vs. ‘does’?”</p>
+<p id="index-32"><span id="index-31"></span><span id="index-30"></span>“To differentiate individual texts, you can look at the most distinctive words.” (<a class="reference external" href="https://datasittersclub.github.io/site/books/dsc8.html#tf-idf">We tried that in DSC #8: Text-Comparison-Algorithm-Crazy Quinn!</a>) “For genre, you can try a topic model. If you’re interested in dialogue, that has a lot to do with verb tenses, and you can try part-of-speech. We used part-of-speech in the Lab’s Microgenres project because we were interested in grammatical similarities across texts rather than semantics. The Lab’s Personhood project, on the other hand, used syntactical features – we were less into looking at words, and more into the relationships between words. Who or what is ‘owned’, vs. ‘put’, vs. ‘does’?”</p>
 <p>I nodded. I really liked what the Lab had done with Microgenres, looking at moments in novels that shifted into a kind of narration style more reminiscent of a different genre of writing. My kingdom for a corpus of real teenage girl diaries or letters to use as something to compare grammatically against the Baby-Sitters Club, especially the parts where they’re writing letters or in the BSC club notebook! Maybe my fellow Data-Sitters would be willing to digitize theirs… or maybe we could try this approach to see if detective fiction (like Nancy Drew) has a narration style that crops up here and there in the BSC Mysteries? I’d been thinking about Personhood too, especially whether there were syntactic features that clearly distinguished between children and the teenage protagonists, or teenage protagonists vs. adults.</p>
 <p>But Mark wasn’t finished. “There are lots of different possible feature sets, and choosing one is a statement about what you care about. Noun-ness of a corpus – its ‘object world’ – is a better representation of a certain kind of about-ness than verbs, adjectives, or more frequent verbs. The choice of nouns was a hypothesis of the Typicality project, baked into the feature set we chose. You can do that with part-of-speech, or you can look at ranges within the overall word frequency. It’s really well established at this point that the highest-frequency words are useful for author signal, but that’s not the only range that gives us something valuable. The 150-300th most common words are another range that can get at the ‘about-ness’ of the text,” he said.</p>
 <p>But just as I was feeling happy that I finally got some answers about the “right” way to go about investigating different kinds of questions, Mark turned everything upside down. “But all these things are, of course, proxies for different apparatuses of a textual theory that is both complex and abstract. When we pick a proxy and it ‘doesn’t work’ for what we expect it to show us, sometimes it’s not something to ‘fix.’ Maybe it’s a moment for us to re-evaluate what we think we know about authorship, themes, characters, or whatever else we’re trying to pin down computationally.”</p>
@@ -1021,7 +1051,7 @@ Then, I started up the Tableau visualization software, which <a class="reference
 </section>
 </section>
 <section id="id4">
-<h2>Katia<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+<h2>Katia<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
 <p id="index-33">Quinn sent me Mark’s chapter and I got excited and read it. And Mark’s chapter is great! It gave me so much food for thought for my Dostoevsky project and for the Data-Sitters Club. But then Quinn asked me to use my literature scholar skills to conclude this book… and I had no idea what to say. The fact is, I understood what we’re doing with PCA and I understood what Mark’s saying in his chapter, but what I didn’t understand is how to put those things together in a way that says something conclusive or meaningful. Now, it’s true that concluding a Data-Sitters Club book is lower stakes and more relaxed than concluding a monograph or even a journal article. But I still felt like the pieces weren’t coming together for me well enough to write anything yet.</p>
 <p>So Quinn and I jumped on Zoom and talked through the data again.</p>
 <p>“So, here’s the visualization of the BSC using the top 1,000 nouns,” Quinn said.</p>
@@ -1035,7 +1065,7 @@ Then, I started up the Tableau visualization software, which <a class="reference
 <p>“Ooh, I get to watch you write some code? Fun!” I said.</p>
 <p>“Ehhhh, don’t get too excited,” Quinn laughed. “I don’t actually know how to do this. But I bet the internet does.”</p>
 <section id="finding-the-closest-points-to-0-0">
-<span id="index-34"></span><h3>Finding the Closest Points to 0,0<a class="headerlink" href="#finding-the-closest-points-to-0-0" title="Permalink to this heading">#</a></h3>
+<span id="index-34"></span><h3>Finding the Closest Points to 0,0<a class="headerlink" href="#finding-the-closest-points-to-0-0" title="Link to this heading">#</a></h3>
 <p>And sure enough, <a class="reference external" href="https://www.geeksforgeeks.org/find-k-closest-points-to-the-origin/">the internet did</a>. Quinn took the coordinates of each book from the CSV that the Typicality code generated, and used some regular expressions in a plain text file to reformat it into a list:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1093,9 +1123,9 @@ Then, I started up the Tableau visualization software, which <a class="reference
 </section>
 </section>
 <section id="id5">
-<h2>Quinn<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
+<h2>Quinn<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
 <section id="mark-and-biplots-save-the-day">
-<span id="index-35"></span><h3>Mark and Biplots Save the Day<a class="headerlink" href="#mark-and-biplots-save-the-day" title="Permalink to this heading">#</a></h3>
+<span id="index-35"></span><h3>Mark and Biplots Save the Day<a class="headerlink" href="#mark-and-biplots-save-the-day" title="Link to this heading">#</a></h3>
 <p>“Hi, we’re stuck.”</p>
 <p>It always feels like a kinda embarrassing way to start a conversation, even though it’s not like there’s anything at stake. I’ve got nothing to prove here – Mark is our Associate Data-Sitter and has been nothing but patient and generous with our questions. And the whole point of the <em>Data-Sitters Club</em> is that we explore and learn stuff and write it up so other people can learn, too. But I won’t lie, the visceral awkwardness is still there sometimes.</p>
 <p>“We’re trying to do what your article suggested,” I told Mark. “We don’t get what’s going on with the 20 most ‘typical’ books. And that’s an opportunity for us to learn something from how the model is looking at it. But… <em>how do we know what the model is seeing?</em>” I asked.</p>
@@ -1110,7 +1140,7 @@ Then, I started up the Tableau visualization software, which <a class="reference
 <p>So we set about building one as he explained how biplot analysis works.</p>
 </section>
 <section id="biplot-time">
-<h3>Biplot time<a class="headerlink" href="#biplot-time" title="Permalink to this heading">#</a></h3>
+<h3>Biplot time<a class="headerlink" href="#biplot-time" title="Link to this heading">#</a></h3>
 <p>“In the PCA you did, each of the top 1,000 nouns in your corpus is a feature. And each principal component in a PCA is made up of a different mix of features. How important each feature is for a given principal component is called that feature’s loading. A biplot analysis shows which features – or in your case, nouns – will have the biggest loading, or the most influence on shaping PC1 and PC2.”</p>
 <p>“So for interpreting your PCA, doing a biplot analysis will get you… a list of words?” I asked.</p>
 <p>“Joy,” replied Mark with a smile. “But, yes, also words.”</p>
@@ -1287,9 +1317,9 @@ Instead of being fairly evenly distributed throughout the chart, most of them we
 <p>“Oh, cool – I get it now!” I exclaimed. “Once you have the feature loadings from the biplot analysis, you can use TF-IDF to look at how significantly the major features for that part of the graph appear in a given text, to get a sense of why it’s located there and not somewhere else.”</p>
 </section>
 <section id="interpretation-help-from-tf-idf">
-<span id="index-39"></span><h3>Interpretation Help from TF-IDF<a class="headerlink" href="#interpretation-help-from-tf-idf" title="Permalink to this heading">#</a></h3>
+<span id="index-39"></span><h3>Interpretation Help from TF-IDF<a class="headerlink" href="#interpretation-help-from-tf-idf" title="Link to this heading">#</a></h3>
 <p>I pulled up the top terms in the TF-IDF analysis of just the nouns in the books. (TF-IDF, or Term Frequency-Inverse Document Frequency, is a way to get at the distinctive terms in a text. You can read more about it in <a class="reference external" href="https://datasittersclub.github.io/site/dsc8.html#tf-idf">DSC #8</a>.):</p>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>BSC #103: Happy Holidays, Jessi</p></th>
 <th class="head"><p>BSC #84: Dawn and the School Spirit War</p></th>
@@ -1339,6 +1369,7 @@ Instead of being fairly evenly distributed throughout the chart, most of them we
 </tr>
 </tbody>
 </table>
+</div>
 <p>The first term in the TF-IDF for <em>Dawn and the School Spirit War</em> was “kids” – which is what dragged it off to Q3 in the original PCA:
 <img src='_static/images/dsc10_school_spirit_war.png' alt='Biplot of the PCA of the Baby-Sitters Club book using top 1k nouns with Dawn and the School Spirit War highlighted' />
 But we also see sports words (like “locker”) and domestic words (“room”, “house”) in the mix, so once the effect of “kids” was dampened down a bit with the z-score, <em>Dawn and the School Spirit War</em> became “average” through its combination of multiple words that pull in different directions.</p>
@@ -1351,7 +1382,7 @@ But we also see sports words (like “locker”) and domestic words (“room”,
 </section>
 </section>
 <section id="id6">
-<h2>Katia<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
+<h2>Katia<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
 <p>I opened up the draft of DSC #10 that Quinn and I had been working on and read through the biplot material.</p>
 <p>“Biplots are really, really cool!” I texted Quinn. “This all makes so much sense now!” And then I got to this graphic:</p>
 <img src='_static/images/dsc10_happy_holidays_jessi.png' alt='Biplot of the PCA of the Baby-Sitters Club book using top 1k nouns with Happy Holidays Jessi highlighted' />
@@ -1374,16 +1405,18 @@ But we also see sports words (like “locker”) and domestic words (“room”,
 <p>On the YAMS corpus, PCA can show us that the Baby-Sitters Mystery series is more similar to the regular BSC books than other YA mysteries. And it can show us that Gossip Girl and Sweet Valley High are similar to one another. And that there’s a more complicated relationship between the Hardy Boys, Nancy Drew, and Boxcar Children that gives you different results depending on whether you’re looking at nouns or all words. But it isn’t going into the specifics in a thorough way. It is counting nouns or words or whatever and munging parts of it together in a graph so that we can understand what’s happening better than we could on a SPREADSHEET OF DOOM. That can be really useful, but it’s important to remember that, as with any of these tools, it can’t tell you everything.</p>
 </section>
 <section id="acknowledgements">
-<h2>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permalink to this heading">#</a></h2>
+<h2>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Link to this heading">#</a></h2>
 <p>Special thanks to Josh Quan for helping Quinn sort out point labeling in the biplot visualization. We’ll be talking more about the pros and cons and options of different R visualization packages in a future book.</p>
 </section>
 <section id="suggested-citation">
-<h2>Suggested citation<a class="headerlink" href="#suggested-citation" title="Permalink to this heading">#</a></h2>
+<h2>Suggested citation<a class="headerlink" href="#suggested-citation" title="Link to this heading">#</a></h2>
 <p>Algee-Hewitt, Mark, Katherine Bowers, Quinn Dombrowski, and Heather Froehlich. “Heather Loves Principal Component Analysis”. <em>The Data-Sitters Club</em>. July 20, 2021. <a class="reference external" href="https://doi.org/10.25740/bx457br7329">https://doi.org/10.25740/bx457br7329</a>.</p>
 <hr class="footnotes docutils" />
-<aside class="footnote brackets" id="id7" role="note">
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id7" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
 <p>‘That said, there’s a workaround! As Mark pointed out to us, “Multiple Correspondence Analysis (or MCA) is effectively PCA with categorical data. It’s pretty big in European sociology - Gisèle Sapiro uses it a lot.”’</p>
+</aside>
 </aside>
 </section>
 </section>
@@ -1413,11 +1446,10 @@ But we also see sports words (like “locker”) and domestic words (“room”,
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer d-print-none">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="dsc9.html"
@@ -1437,10 +1469,7 @@ But we also see sports words (like “locker”) and domestic words (“room”,
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1448,6 +1477,7 @@ But we also see sports words (like “locker”) and domestic words (“room”,
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1519,9 +1549,10 @@ By The Data-Sitters Club
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -1545,8 +1576,8 @@ By The Data-Sitters Club
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
