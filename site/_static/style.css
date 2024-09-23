@@ -17,8 +17,6 @@ html[data-theme="dark"] {
   --pst-color-target: #ce7fd6;
   --pst-color-background: #f9bbc6;
   --pst-color-on-background: #c68acd;
-  --pst-color-surface: #373737;
-  --pst-color-on-surface: #373737;
   --pst-color-link: var(--pst-color-primary);
   --pst-color-link-hover: var(--pst-color-warning);
 }
