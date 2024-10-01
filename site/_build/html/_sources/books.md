@@ -47,3 +47,12 @@ Feeling lost? Check out our **[index](genindex)** of book topics, tools, mistake
 | [![DSC Multilingual Mystery #4: Isabelle and the Missing Spaghetti O's](_static/images/bookcovers/dscm4_cover.jpg) ](dscm4.ipynb) | ![DSC Multilingual Mystery #5: Lee & Quinn and the Mystery in the French NLP Model](_static/images/bookcovers/dscm5_cover.jpg) | ![Coming soon!](_static/images/bookcovers/blankcover.png) |
 | :----------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------: |
 |                                                      [DSCM #4](dscm4.ipynb)                                                       |                                                      [DSCM #5](dscm5.ipynb)                                                       |                                                      |
+
+<a name="superspecial" />
+
+## Super Specials
+
+| [![DSC Super Special #1 Data-Sitters Debate at Dartmouth](_static/images/bookcovers/dscss1_cover.jpg)](dscss1.md) | ![Coming soon!](_static/images/bookcovers/blankcover.png) | ![Coming soon!](_static/images/bookcovers/blankcover.png) |
+| :----------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------: |
+|                                                [DSCSS #1](dscss1.md)                                                 |                                                                                          |                                                                                                                  |
+

@@ -68,6 +68,10 @@ parts:
         title: "DSCM 4: Isabelle and the Missing Spaghetti-O's"
       - file: dscm5
         title: "DSCM 5: Lee & Quinn and the Mystery in the French NLP Model"
+  - caption: Super Specials
+    chapters:
+      - file: dscss1
+        title: "DSCSS 1: Data-Sitters Debate at Dartmouth"
   - caption: Fun
     chapters:
       - file: covid19

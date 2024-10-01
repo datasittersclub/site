@@ -177,7 +177,7 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-  --pst-color-primary: #077c9f;
+  --pst-color-primary: #459db9;
   --pst-color-primary-text: #fff;
   --pst-color-primary-highlight: #306e81;
   --sd-color-primary: var(--pst-color-primary);
@@ -678,4 +678,8 @@ blockquote {
 
 a {
   color:#6d079f;
+}
+
+.table {
+  background-color:#f9bbc6; !important
 }
