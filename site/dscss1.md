@@ -8,7 +8,7 @@ permalink: /dscss1/
 
 # DSC Super Special \#1: The Data-Sitters Debate at Dartmouth
 
-```{index} single: *Book Topics ; Is the DSC working as a project?
+```{index} single: *Book Topics ; DSC audience and goals (DSCSS 1)
 
 ```
 
