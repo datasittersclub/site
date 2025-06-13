@@ -43,7 +43,7 @@
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="_static/style.css?v=3424d877" />
+    <link rel="stylesheet" type="text/css" href="_static/style.css?v=b048ff87" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -70,7 +70,7 @@
     <link rel="icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="DSC Multilingual Mystery #1: Lee and the Missing Metadata" href="dscm1.html" />
+    <link rel="next" title="DSC #22: Lee Skallerup Bessette, Zine-Sitter" href="dsc22.html" />
     <link rel="prev" title="DSC #20: Xanda Rescues the Topic Model Disaster" href="dsc20.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -216,6 +216,7 @@
 <li class="toctree-l1"><a class="reference internal" href="dsc19.html">DSC 19: Shelley and the Bad Corpus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dsc20.html">DSC 20: Xanda Rescues the Topic Model Disaster</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">DSC 21: Quinn and the Trouble with Environments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc22.html">DSC 22: Lee Skallerup Bessette, Zine-Sitter</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Multilingual Mysteries</span></p>
 <ul class="nav bd-sidenav">
@@ -224,6 +225,14 @@
 <li class="toctree-l1"><a class="reference internal" href="dscm3.html">DSCM 3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dscm4.html">DSCM 4: Isabelle and the Missing Spaghetti-O's</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dscm5.html">DSCM 5: Lee &amp; Quinn and the Mystery in the French NLP Model</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Super Specials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="dscss1.html">DSCSS 1: Data-Sitters Debate at Dartmouth</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Little tl;dr</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://datasittersclub.github.io/tldr/books/tldr1/">tldr #1: DH Curious?</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Fun</span></p>
 <ul class="nav bd-sidenav">
@@ -440,7 +449,7 @@ document.write(`
 <h2>The Trouble with Environments<a class="headerlink" href="#the-trouble-with-environments" title="Link to this heading">#</a></h2>
 <p id="index-3"><em>“Kindergarten baby, stick your head in gravy! Wash it off with applesauce and show it to the Navy!” sang Nicky.</em></p>
 <p><em>“Mommy, make him stop!” cried Claire.</em></p>
-<p>So begins <em>BSC 21: Mallory and the Trouble with Twins</em>, where everyone’s favorite babysitting horse-girl, Mallory Pike, is in the car with her seven siblings. The Pike family car has more than a little in common with my laptop: it’s chaos, and packed full of my data and code, and – most crucially – a bunch of different libraries that I need to run my code. And sometimes you update one library, and the rest of your libraries act like it’s Thanksgiving in a conservative family and one of the cousins has just shown up with weird tattoos, her hair cut short and dyed purple, and a girlfriend<a class="footnote-reference brackets" href="#id7" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
+<p>So begins <em>BSC 21: Mallory and the Trouble with Twins</em>, where everyone’s favorite babysitting horse-girl, Mallory Pike, is in the car with her seven siblings. The Pike family car has more than a little in common with my laptop: it’s chaos, and packed full of my data and code, and – most crucially – a bunch of different libraries that I need to run my code. And sometimes you update one library, and the rest of your libraries act like it’s Thanksgiving in a conservative family and one of the cousins has just shown up with weird tattoos, her hair cut short and dyed purple, and a girlfriend<a class="footnote-reference brackets" href="#id8" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
 <p id="index-4">I’ve known for a long time that environments can be an issue, and I probably should be paying some attention to them instead of just blithely installing whatever, wherever, by whatever means is handy. But honestly, it felt more like when the dentist chides you about flossing. Would it be better if you flossed two, even three times a day? Sure. But it’s an annoying and time-consuming chore, and if you brush your teeth regularly and floss from time to time, you’re probably going to be fine. Same with environments, I figured. Most of the time my code ran fine, so why worry?</p>
 <p id="index-5">But then it took me most of a year to write <a class="reference external" href="https://datasittersclub.github.io/site/dsc20.html">DSC #20 - Xanda Rescues the Topic Model Disaster</a>, and the library we use for publishing our books, <a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">JupyterBook</a>, went through a major update that (as promised by the release notes) broke a bunch of things. Suddenly my laptop felt like the Pike family car, with libraries calling each other names and others sulking and unresponsive. I knew the time had come to channel Mallory and put things in their place:</p>
 <blockquote>
@@ -489,14 +498,14 @@ document.write(`
 </section>
 <section id="installing-and-configuring-miniconda">
 <span id="index-14"></span><h3>Installing and configuring Miniconda<a class="headerlink" href="#installing-and-configuring-miniconda" title="Link to this heading">#</a></h3>
-<p>On my new laptop, I <a class="reference external" href="https://docs.anaconda.com/miniconda/">installed Miniconda</a>, then added the conda-forge channel to get access to a wider range of software by typing this in my terminal:</p>
+<p>On my new laptop<a class="footnote-reference brackets" href="#id9" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>, I <a class="reference external" href="https://docs.anaconda.com/miniconda/">installed Miniconda</a>, then added the conda-forge channel to get access to a wider range of software by typing this in my terminal:</p>
 <p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">config</span> <span class="pre">--add</span> <span class="pre">channels</span> <span class="pre">conda-forge</span></code></p>
 <p>Then I ran the following line in the terminal so that conda always starts by looking in conda-forge:</p>
-<p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">config</span> <span class="pre">--set</span> <span class="pre">channel_priority</span> <span class="pre">strict</span></code><a class="footnote-reference brackets" href="#id8" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">config</span> <span class="pre">--set</span> <span class="pre">channel_priority</span> <span class="pre">strict</span></code><a class="footnote-reference brackets" href="#id10" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a></p>
 </section>
 <section id="creating-a-basic-environment">
 <h3>Creating a basic environment<a class="headerlink" href="#creating-a-basic-environment" title="Link to this heading">#</a></h3>
-<p>When you create an environment, you can give it a list of all the things you want it to install upfront. You can also point it to a file that has a list of all the things – but when you’re starting out, you probably won’t know what those are. It’s okay to start off simple with the things you know you’ll need, and add more as you go. For instance, if you know for sure that you want Python and Jupyter notebooks and R, you could run the following command<a class="footnote-reference brackets" href="#id9" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a>:</p>
+<p>When you create an environment, you can give it a list of all the things you want it to install upfront. You can also point it to a file that has a list of all the things – but when you’re starting out, you probably won’t know what those are. It’s okay to start off simple with the things you know you’ll need, and add more as you go. For instance, if you know for sure that you want Python and Jupyter notebooks and R, you could run the following command<a class="footnote-reference brackets" href="#id11" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a>:</p>
 <p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">-n</span> <span class="pre">my-environment-name</span> <span class="pre">python</span> <span class="pre">jupyter</span> <span class="pre">r</span></code></p>
 <p>The thing that comes after -n is the name of the environment, and you’ll use that to activate (or deactivate) that particular environment. You can name it whatever, but if it’s multiple words, it’s best to not use spaces– use hyphens-between-words or maybe CamelCase to differentiate the words.</p>
 <p>What you’ll see is a lot of text scrolling through as Conda figures out all the dependencies for all the things you’ve asked for – and these lists can get long. Then it’ll ask if you want to proceed. Type y and hit enter.</p>
@@ -514,7 +523,7 @@ document.write(`
 </section>
 <section id="exporting-and-importing-an-environment">
 <span id="index-16"></span><h3>Exporting and importing an environment<a class="headerlink" href="#exporting-and-importing-an-environment" title="Link to this heading">#</a></h3>
-<p>Let’s say you need to get a new collaborator set up with the project, and all the packages that it uses. The easiest way to do that is to export a file called environment.yml. This has a list of all the packages that you’ve installed using both conda and pip<a class="footnote-reference brackets" href="#id10" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a>.</p>
+<p>Let’s say you need to get a new collaborator set up with the project, and all the packages that it uses. The easiest way to do that is to export a file called environment.yml. This has a list of all the packages that you’ve installed using both conda and pip<a class="footnote-reference brackets" href="#id12" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a>.</p>
 <p>If you have a terminal open, and you’ve activated the environment you want to export, you can run: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">export</span> <span class="pre">-f</span> <span class="pre">environment.yml</span> <span class="pre">--no-builds</span></code>.</p>
 <p>The –no-builds parameter removes parameters specific to your operating system, which was important when going from my old laptop to my new one. Once you have that file, you can recreate the environment by creating a new conda environment using that environment.yml file, running: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">create</span> <span class="pre">-f</span> <span class="pre">environment.yml</span></code>. (Just make sure you’re in the directory with your environment.yml file when you run it or you’ll get an error.)</p>
 <p>Want to try it out? You can make your very own local environment for building the Data-Sitters Club website using the <a class="reference external" href="https://github.com/datasittersclub/site/blob/master/environment.yml">environment.yml file in our GitHub repo</a>.</p>
@@ -535,9 +544,9 @@ document.write(`
 <p>Maybe you’re one of the many people who’s tried  – probably more than once – to set up project-specific environments on your computer, but it’s been too hard, or you’ve gotten frustrated, or doing it consistently just hasn’t stuck. Or maybe you’ve heard about “environments” but when you looked at the instructions, your eyes glazed over and you quickly closed the tab… or maybe let it fester in one corner of your browser window until you had to do a computer reboot.</p>
 <p>I get it. This was me too. For so long it was easier to just shrug and say, “I’ve tried this before, and it didn’t work. Why bother?”</p>
 <p id="index-21">People really are working on better solutions for Python environments, and if the Conda approach I’ve laid out here isn’t doing it for you, there are many others. You can probably get away without some kind of environment wrangling up to a certain point, but confronting your anxiety and trying (or trying again) to actually set up and consistently use an environment for each project – it’s an act of self-care. (Even if it works out to be mostly harm reduction.) Even if it hasn’t worked for you before, today can be the day you make a different set of choices.</p>
-<p id="index-22">I’ve always loved stories with parallel universes or alternate histories. During the years my fellow Data-Sitters were reading <em>The Baby-Sitters Club</em><a class="footnote-reference brackets" href="#id11" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>6<span class="fn-bracket">]</span></a>, I was obsessed with the Super Nintendo JRPG <em>Chrono Trigger</em>, whose “game over” screen still haunts me.</p>
+<p id="index-22">I’ve always loved stories with parallel universes or alternate histories. During the years my fellow Data-Sitters were reading <em>The Baby-Sitters Club</em><a class="footnote-reference brackets" href="#id13" id="id6" role="doc-noteref"><span class="fn-bracket">[</span>6<span class="fn-bracket">]</span></a>, I was obsessed with the Super Nintendo JRPG <em>Chrono Trigger</em>, whose “game over” screen still haunts me.</p>
 <p><img alt="Black and white screenshot of the earth and the text &quot;But the future refused to change&quot;" src="_images/dsc21_chronotrigger.jpg" /></p>
-<p id="index-23">This doesn’t have to be your Python environment, or your life. Every few days, I’m caught off-guard by a feeling of gratitude that in <em>this timeline</em>, a day came when I made fundamentally different choices. And that my community showed up for me, to help me through the hardest weeks of my life<a class="footnote-reference brackets" href="#id12" id="id6" role="doc-noteref"><span class="fn-bracket">[</span>7<span class="fn-bracket">]</span></a>. DH is people. People who will be there, whether you want to throw your laptop out the window because you cannot get the infuriating dependency tree to behave, or if you’re having a panic attack because what you need to do next with your life is just too much for you to handle in that moment.</p>
+<p id="index-23">This doesn’t have to be your Python environment, or your life. Every few days, I’m caught off-guard by a feeling of gratitude that in <em>this timeline</em>, a day came when I made fundamentally different choices. And that my community showed up for me, to help me through the hardest weeks of my life<a class="footnote-reference brackets" href="#id14" id="id7" role="doc-noteref"><span class="fn-bracket">[</span>7<span class="fn-bracket">]</span></a>. DH is people. People who will be there, whether you want to throw your laptop out the window because you cannot get the infuriating dependency tree to behave, or if you’re having a panic attack because what you need to do next with your life is just too much for you to handle in that moment.</p>
 <p>Dedicated Python environments for your individual projects are worth investing in. So is community. It’s not always easy, but I bet you’ll be grateful you did.</p>
 </section>
 <section id="suggested-citation">
@@ -545,28 +554,32 @@ document.write(`
 <p>Dombrowski, Quinn. “DSC #21: Quinn and the Trouble with Environments.” <em>The Data-Sitters Club.</em> September 23, 2024.</p>
 <hr class="footnotes docutils" />
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id7" role="doc-footnote">
+<aside class="footnote brackets" id="id8" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
 <p>Okay, so this is literally me this year – especially with my new wrist tattoos of <a class="reference external" href="https://en.wikipedia.org/wiki/Cyrillic_O_variants#Multiocular_O">my favorite Unicode character Multi-Ocular O (ꙮ)</a>  – and that’s why I’m just inviting friends over for this Thanksgiving.</p>
 </aside>
-<aside class="footnote brackets" id="id8" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
-<p>Having conda always look at conda-forge first and ignore alternatives speeds up the process of installing things. But if you find yourself in a tricky troubleshooting situation as described below, it can help to run <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">config</span> <span class="pre">--set</span> <span class="pre">channel_priority</span> <span class="pre">flexible</span></code> to try to untangle version conflict knots.</p>
-</aside>
 <aside class="footnote brackets" id="id9" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">3</a><span class="fn-bracket">]</span></span>
-<p>Sometimes you want not just the default version of Python or R, but a specific one in order to make some other library work. You can do that by specifying a version this way: <code class="docutils literal notranslate"><span class="pre">python=3.12.1</span></code></p>
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>My work laptop upgrade involved a change in hardware, which led to some problems creating environments with dependencies that hadn’t been built for my laptop’s ARM64 processor. If you run into similar issues, <a class="reference external" href="https://stackoverflow.com/questions/70205633/cannot-install-python-3-7-on-osx-arm64">this Stackoverflow thread</a> helped me out with how to tweak the conda command so that MacOS emulates an older environment to make it work. Basically, after you activate your environment but before you install things, run the command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">config</span> <span class="pre">--env</span> <span class="pre">--set</span> <span class="pre">subdir</span> <span class="pre">osx-64</span></code>.</p>
 </aside>
 <aside class="footnote brackets" id="id10" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">4</a><span class="fn-bracket">]</span></span>
-<p>If you’re using a mostly pip-based workflow, the equivalent is a requirements.txt file, which you can get by running <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">freeze</span> <span class="pre">&gt;</span> <span class="pre">requirements.txt</span></code>. There are other options, too, that come with different ways of managing environments. Simon Wiles, the quiet force of nature behind all the ADHO infrastructure, feels optimistic about the potential of <a class="reference external" href="https://docs.astral.sh/uv/">UV</a> as a way to solve Python environment woes once and for all.</p>
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">3</a><span class="fn-bracket">]</span></span>
+<p>Having conda always look at conda-forge first and ignore alternatives speeds up the process of installing things. But if you find yourself in a tricky troubleshooting situation as described below, it can help to run <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">config</span> <span class="pre">--set</span> <span class="pre">channel_priority</span> <span class="pre">flexible</span></code> to try to untangle version conflict knots.</p>
 </aside>
 <aside class="footnote brackets" id="id11" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">6</a><span class="fn-bracket">]</span></span>
-<p>Awkward fun fact: I didn’t actually like the Baby-Sitters Club books much at all when I was a kid. And then I wrote about that for <a class="reference external" href="https://doi.org/10.25740/tj111dp6475">my contribution</a> to <em>We Are the Baby-Sitters Club: Essays and Artwork from Grown-Up Readers</em>, ed. Marisa Crawford and Megan Milks.</p>
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">4</a><span class="fn-bracket">]</span></span>
+<p>Sometimes you want not just the default version of Python or R, but a specific one in order to make some other library work. You can do that by specifying a version this way: <code class="docutils literal notranslate"><span class="pre">python=3.12.1</span></code></p>
 </aside>
 <aside class="footnote brackets" id="id12" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">7</a><span class="fn-bracket">]</span></span>
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">5</a><span class="fn-bracket">]</span></span>
+<p>If you’re using a mostly pip-based workflow, the equivalent is a requirements.txt file, which you can get by running <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">freeze</span> <span class="pre">&gt;</span> <span class="pre">requirements.txt</span></code>. There are other options, too, that come with different ways of managing environments. Simon Wiles, the quiet force of nature behind all the ADHO infrastructure, feels optimistic about the potential of <a class="reference external" href="https://docs.astral.sh/uv/">UV</a> as a way to solve Python environment woes once and for all.</p>
+</aside>
+<aside class="footnote brackets" id="id13" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">6</a><span class="fn-bracket">]</span></span>
+<p>Awkward fun fact: I didn’t actually like the Baby-Sitters Club books much at all when I was a kid. And then I wrote about that for <a class="reference external" href="https://doi.org/10.25740/tj111dp6475">my contribution</a> to <em>We Are the Baby-Sitters Club: Essays and Artwork from Grown-Up Readers</em>, ed. Marisa Crawford and Megan Milks.</p>
+</aside>
+<aside class="footnote brackets" id="id14" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id7">7</a><span class="fn-bracket">]</span></span>
 <p>I know a lot of you are reading this. There are too many of you to thank individually here. But you all know who you are, and I am more grateful than I have words for.</p>
 </aside>
 </aside>
@@ -613,11 +626,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="dscm1.html"
+       href="dsc22.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">DSC Multilingual Mystery #1: Lee and the Missing Metadata</p>
+        <p class="prev-next-title">DSC #22: Lee Skallerup Bessette, Zine-Sitter</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

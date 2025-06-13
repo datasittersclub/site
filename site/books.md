@@ -36,6 +36,10 @@ Feeling lost? Check out our **[index](genindex)** of book topics, tools, mistake
 | :-------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------: |
 |                                      [DSC #19](dsc19.ipynb)                                      |                                       [DSC #20](dsc20.ipynb)                                        |     [DSC #21](dsc21.md)                                                            |
 
+| [![DSC #22: Lee Skallerup Bessette, Zine-Sitter](_static/images/bookcovers/dsc22_cover.jpg)](dsc22.md) | ![Coming soon](_static/images/bookcovers/blankcover.png) | ![Coming soon](_static/images/bookcovers/blankcover.png) |
+| :-------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------: |
+|                                      [DSC #22](dsc22.md)                                      |                                                                               |      
+
 <a name="mystery" />
 
 ## Multilingual Mysteries

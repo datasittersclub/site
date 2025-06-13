@@ -156,19 +156,21 @@ While it's entirely possible to mix-and-match environment tools, installers, etc
 
 ### Installing and configuring Miniconda
 
-On my new laptop, I [installed Miniconda](https://docs.anaconda.com/miniconda/), then added the conda-forge channel to get access to a wider range of software by typing this in my terminal:
+On my new laptop[^2], I [installed Miniconda](https://docs.anaconda.com/miniconda/), then added the conda-forge channel to get access to a wider range of software by typing this in my terminal:
+
+[^2]: My work laptop upgrade involved a change in hardware, which led to some problems creating environments with dependencies that hadn't been built for my laptop's ARM64 processor. If you run into similar issues, [this Stackoverflow thread](https://stackoverflow.com/questions/70205633/cannot-install-python-3-7-on-osx-arm64) helped me out with how to tweak the conda command so that MacOS emulates an older environment to make it work. Basically, after you activate your environment but before you install things, run the command `conda config --env --set subdir osx-64`.
 
 `conda config --add channels conda-forge`
 
 Then I ran the following line in the terminal so that conda always starts by looking in conda-forge:
 
-`conda config --set channel_priority strict`[^2]
-[^2]: Having conda always look at conda-forge first and ignore alternatives speeds up the process of installing things. But if you find yourself in a tricky troubleshooting situation as described below, it can help to run `conda config --set channel_priority flexible` to try to untangle version conflict knots.
+`conda config --set channel_priority strict`[^3]
+[^3]: Having conda always look at conda-forge first and ignore alternatives speeds up the process of installing things. But if you find yourself in a tricky troubleshooting situation as described below, it can help to run `conda config --set channel_priority flexible` to try to untangle version conflict knots.
 
 ### Creating a basic environment
 
-When you create an environment, you can give it a list of all the things you want it to install upfront. You can also point it to a file that has a list of all the things -- but when you're starting out, you probably won't know what those are. It's okay to start off simple with the things you know you'll need, and add more as you go. For instance, if you know for sure that you want Python and Jupyter notebooks and R, you could run the following command[^3]:
-[^3]: Sometimes you want not just the default version of Python or R, but a specific one in order to make some other library work. You can do that by specifying a version this way: `python=3.12.1`
+When you create an environment, you can give it a list of all the things you want it to install upfront. You can also point it to a file that has a list of all the things -- but when you're starting out, you probably won't know what those are. It's okay to start off simple with the things you know you'll need, and add more as you go. For instance, if you know for sure that you want Python and Jupyter notebooks and R, you could run the following command[^4]:
+[^4]: Sometimes you want not just the default version of Python or R, but a specific one in order to make some other library work. You can do that by specifying a version this way: `python=3.12.1`
 
 `conda create -n my-environment-name python jupyter r`
 
@@ -204,9 +206,9 @@ Some libraries, like spacy and NLTK (which we've used a lot for the Data-Sitters
 
 ### Exporting and importing an environment
 
-Let's say you need to get a new collaborator set up with the project, and all the packages that it uses. The easiest way to do that is to export a file called environment.yml. This has a list of all the packages that you've installed using both conda and pip[^4].
+Let's say you need to get a new collaborator set up with the project, and all the packages that it uses. The easiest way to do that is to export a file called environment.yml. This has a list of all the packages that you've installed using both conda and pip[^5].
 
-[^4]: If you’re using a mostly pip-based workflow, the equivalent is a requirements.txt file, which you can get by running `pip freeze > requirements.txt`. There are other options, too, that come with different ways of managing environments. Simon Wiles, the quiet force of nature behind all the ADHO infrastructure, feels optimistic about the potential of [UV](https://docs.astral.sh/uv/) as a way to solve Python environment woes once and for all.
+[^5]: If you’re using a mostly pip-based workflow, the equivalent is a requirements.txt file, which you can get by running `pip freeze > requirements.txt`. There are other options, too, that come with different ways of managing environments. Simon Wiles, the quiet force of nature behind all the ADHO infrastructure, feels optimistic about the potential of [UV](https://docs.astral.sh/uv/) as a way to solve Python environment woes once and for all.
 
 If you have a terminal open, and you've activated the environment you want to export, you can run: `conda env export -f environment.yml --no-builds`.
 
