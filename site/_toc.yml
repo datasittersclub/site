@@ -58,6 +58,8 @@ parts:
         title: "DSC 21: Quinn and the Trouble with Environments"
       - file: dsc22
         title: "DSC 22: Lee Skallerup Bessette, Zine-Sitter"
+      - file: dsc23
+        title: "DSC 23: Dawn of the Coasting AI"
   - caption: Multilingual Mysteries
     chapters:
       - file: dscm1
