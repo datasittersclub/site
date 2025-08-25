@@ -1,0 +1,792 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" data-theme="light">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="DSC #23: Dawn of the Coasting AI" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://datasittersclub.github.io/site/dsc23.html" />
+<meta property="og:site_name" content="Project name not set" />
+<meta property="og:description" content="by Anastasia Salter, John Murray, and Lee Skallerup Bessette August 25, 2025 Prelude: The Clankers are Coming: Anastasia: You probably feel like you already hear too much about generative AI. I kno..." />
+<meta property="og:image" content="https://datasittersclub.github.io/site/_static/DSClogo.png" />
+<meta property="og:image:alt" content="Project name not set" />
+<meta name="description" content="by Anastasia Salter, John Murray, and Lee Skallerup Bessette August 25, 2025 Prelude: The Clankers are Coming: Anastasia: You probably feel like you already hear too much about generative AI. I kno..." />
+
+    <title>DSC #23: Dawn of the Coasting AI &#8212; The Data-Sitters Club</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/style.css?v=b048ff87" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'dsc23';</script>
+    <link rel="icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="DSC Multilingual Mystery #1: Lee and the Missing Metadata" href="dscm1.html" />
+    <link rel="prev" title="DSC #22: Lee Skallerup Bessette, Zine-Sitter" href="dsc22.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="light">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+    
+    <img src="_static/DSClogo.png" class="logo__image only-light" alt="The Data-Sitters Club - Home"/>
+    <script>document.write(`<img src="_static/DSClogo.png" class="logo__image only-dark" alt="The Data-Sitters Club - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
+                    The Data-Sitters Club
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">The Kid-Kit</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">DSC Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="books.html">DSC Books</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter-2.html">About the DSC</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Main series</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="dsc1.html">DSC 1: Quinn's Great Idea</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc2.html">DSC 2: Katia and the Phantom Corpus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc3.html">DSC 3: The Truth About DH Collaboration (and Textual Variants!)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc4.html">DSC 4: AntConc Saves the Day</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc5.html">DSC 5: The DSC and the Impossible TEI Quandaries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc6.html">DSC 6: Voyant's Big Day</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc7.html">DSC 7: The DSC and Mean Copyright Law</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc8.html">DSC 8: Text-Comparison-Algorithm-Crazy Quinn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc9.html">DSC 9: The Ghost in Anouk's Laptop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc10.html">DSC 10: Heather Likes PCA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc11.html">DSC 11: Katia and the Sentiment Snobs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc12.html">DSC 12: The DSC and the New Programming Language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc13.html">DSC 13: Goodbye, Friends, Goodbye</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc14.html">DSC 14: Hello, DMCA Exemption!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc15.html">DSC 15: Little Miss California Stereotype... and the BY Times</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc16.html">DSC 16: Anastasia's Secret Language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc17.html">DSC 17: Cadence's Archives Mystery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc18.html">DSC 18: The Data-Sitters' HathiTrust Mistake</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc19.html">DSC 19: Shelley and the Bad Corpus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc20.html">DSC 20: Xanda Rescues the Topic Model Disaster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc21.html">DSC 21: Quinn and the Trouble with Environments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dsc22.html">DSC 22: Lee Skallerup Bessette, Zine-Sitter</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">DSC 23: Dawn of the Coasting AI</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Multilingual Mysteries</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="dscm1.html">DSCM 1: Lee and the Missing Metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dscm2.html">DSCM 2: Beware, Lee and Quinn!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dscm3.html">DSCM 3: Quinn and Lee Clean Up Ghost Cat Data-Hairballs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dscm4.html">DSCM 4: Isabelle and the Missing Spaghetti-O's</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dscm5.html">DSCM 5: Lee &amp; Quinn and the Mystery in the French NLP Model</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Super Specials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="dscss1.html">DSCSS 1: Data-Sitters Debate at Dartmouth</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Little tl;dr</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://datasittersclub.github.io/tldr/books/tldr1/">tldr #1: DH Curious?</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Fun</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="covid19.html">Important Public Health Messages from the Data-Sitters Club about COVID-19</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dhawards2019.html">DH Awards 2019 Ad Campaign</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/datasittersclub/site" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/dsc23.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>DSC #23: Dawn of the Coasting AI</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prelude-the-clankers-are-coming">Prelude: The Clankers are Coming</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anastasia">Anastasia</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#of-code-and-pedagogy">Of Code and Pedagogy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anastasia-and-john">Anastasia and John</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-a-website-with-github-copilot-agents">Building a Website with GitHub Copilot Agents</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Anastasia</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agents-on-call">Agents on Call</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lee">Lee</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-analysis-with-colab-and-gemini-agents">Data analysis with Colab and Gemini Agents</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#john">John</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#narrative-processing">Narrative Processing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concluding-thoughts-from-john">Concluding Thoughts from John</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-s-your-take">What’s Your Take?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suggested-citation">Suggested citation</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="dsc-23-dawn-of-the-coasting-ai">
+<h1>DSC #23: Dawn of the Coasting AI<a class="headerlink" href="#dsc-23-dawn-of-the-coasting-ai" title="Link to this heading">#</a></h1>
+<p id="index-0">by Anastasia Salter, John Murray, and Lee Skallerup Bessette</p>
+<p>August 25, 2025</p>
+<div style="width: 300px;margin-left: 7px;margin-top: 0px;">
+<img src="_static/images/bookcovers/dsc23_cover.jpg" alt="DSC 23 book cover" />
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p><strong>A note from Quinn</strong></p>
+<p>“Dawn on the Coast” is a weird BSC book, and I specifically remember hating it as a kid. Instead of our familiar club members in their usual setting, it brings Dawn to California, where kids are named things like Daffodil and Clover, and she’s got a friend named Sunny. As a west coast person who spent time in California visiting relatives, I didn’t appreciate how the whole thing was portrayed, and I wanted to get back to Stonybrook already.</p>
+<p>You might feel that way about this DSC book, too.</p>
+<p>Rest assured, the DSC hasn’t sold out to the algorithmic edgelords of Silicon Valley. Each of us has our own take on AI – and we’ve got another book in the works about all that. (We want <a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSc5xxDEfV0F3duLSt4gIaDpDoDgwU1hFbnJSoyOhTJWnq3AUA/viewform?usp=dialog">your input on AI</a> to help us write it!) But Lee went to DHSI and got super excited about Anastasia and John’s vibe coding class and one thing led to another and here we are. “Dawn of the Coasting AI” isn’t the book for you if you’re fundamentally opposed to generative AI on principle. But what we do here at the DSC is walk through, step by step, in a friendly way, how people are actually using computational methods for digital humanities. So if you’re curious what that looks like with AI, read on.</p>
+</div>
+<section id="prelude-the-clankers-are-coming">
+<h2>Prelude: The Clankers are Coming<a class="headerlink" href="#prelude-the-clankers-are-coming" title="Link to this heading">#</a></h2>
+<section id="anastasia">
+<h3>Anastasia<a class="headerlink" href="#anastasia" title="Link to this heading">#</a></h3>
+<p>You probably feel like you already hear too much about generative AI. I know I groan whenever I get a university-wide email with AI in the headlines, and it doesn’t help that generative AI is coming soon to a learning management system near you. I read the <a class="reference external" href="https://www.instructure.com/press-release/instructure-and-openai-announce-global-partnership-embed-ai-learning-experiences">press release of the Instructure and OpenAI partnership</a> that will add all sorts of questionable features to Canvas a few weeks ago, and that’s what finally got us to sit down and write this book.</p>
+<p>The first tool they are promising in that press release is an “LLM-enabled” assignment:</p>
+<blockquote>
+<div><p>…designed to let educators create a custom GPT-like experience within Canvas. Teachers can define how AI interacts with students, set specific learning goals and objectives and determine what evidence of learning it should track. They can do this using natural language prompts or by leveraging an assistant within the assignment creation flow to guide them through the process.</p>
+</div></blockquote>
+<p>Here’s the thing: I teach lots of assignments that do involve working with LLMs. None of them would ever look like that. It’s the sort of use case that makes me sympathize with the folks rolling out the Star Wars lingo and calling bots (and the folks who over-rely on them for life choices and companionship) “clankers.” And that’s even though there are plenty of folks who would say I’m doing too much with AI myself.</p>
+<p>Bringing chatbots into the classroom, particularly at this stage of their evolution and without any real input from educators, makes me recall a very old BSC book from my own childhood: “The Truth about Stacey”. The b-plot of that book is a competition with a rival agency of older babysitters who build a centralized hub for finding a babysitter. They turn out to be a mess - one of the kids, Jamie, tells the BSC about a sitter who brought over her boyfriend and smoked cigarettes - and the depersonalization of the whole experience eventually drives most of the clients back to our regular BSC.</p>
+<p>The BSC “wins” against the rival club by offering human connection instead of a factory-ized service, in spite of their earlier bed times (the rivals are college students). The BSC members double down on bringing toys, doing crafts, and caring about the kids they sit - all things I think about looking at the news out of Texas of an <a class="reference external" href="https://www.nytimes.com/2025/07/27/us/politics/ai-alpha-school-austin-texas.html">“AI-powered”</a> private school. The thought of handing over any critical aspect of education to a bot is enough to make me, a fairly tech-dependent DH’er type and former ProfHacker, reach for pen and paper. Speaking of ProfHacker - thirteen years ago (!!) I wrote a post for the old group digital humanities column entitled “<a class="reference external" href="https://www.chronicle.com/blogs/profhacker/robot-writers-robot-readers/">Robot Writers, Robot Readers</a>,” at a moment when a now adorably quaint “essay writer” site was circulating. The future I was worried about, robot graders evaluating robot essays, has arrived. For more on this moment in higher education, I recommend listening to the <a class="reference external" href="https://www.buzzsprout.com/2126417/episodes/17583296-et-tu-american-federation-of-teachers-with-charles-logan-2025-07-14">“Et Tu, American Federation of Teachers?”</a> episode of Mystery AI Hype Theater 3000.</p>
+<p>(Lee: I also wrote ages ago about how adjuncts were basically forced to be grading machines, and thus why actual machine grading would always be more efficient [but not better], and I can’t for the life of me find it online. There is something to be said about the adjunctification of higher education and ed-tech “efficiency” - but I digress…)</p>
+<p>But here’s the thing - in the Datasitter’s Club, and for that matter digital humanities, we have lots of potential use cases for generative AI tools that don’t involve letting them teach our classes, write our papers, or grade anything. generative AI tools raise lots of other questions and possibilities, some of which the club has talked about before when LLMs were still a novelty. So, in this book (inspired by “Dawn on the Coast”, in which Dawn visits California and is almost lured in by its cool factor) we acknowledge that Silicon Valley is pushing a lot of edtech solutionism with dangerous implications for the already precarious future of higher education. However, we want to think about generative AI through a digital humanities lens: can these tools be a part of our DSC kit?</p>
+<p>Certainly, they are already a part of mine, but almost exclusively in the context of code. John Murray and I taught a workshop for Digital Humanities Summer Institute, “<a class="reference external" href="https://anastasiasalter.net/DHProgramming/">DH Programming Pedagogy in the Age of AI</a>,” focused on those questions and possibilities: what does it mean to bring generative AI coding into our work and classrooms, and how can we approach it thoughtfully? To begin to answer those questions, John and I sat down to discuss the problem.</p>
+<div class="admonition-lee-says admonition">
+<p class="admonition-title">Lee says…</p>
+<p>I took their course at DHSI, and I’ll be interjecting throughout in my positionality as a student learning these things for the first time.</p>
+</div>
+</section>
+</section>
+<section id="of-code-and-pedagogy">
+<h2>Of Code and Pedagogy<a class="headerlink" href="#of-code-and-pedagogy" title="Link to this heading">#</a></h2>
+<section id="anastasia-and-john">
+<h3>Anastasia and John<a class="headerlink" href="#anastasia-and-john" title="Link to this heading">#</a></h3>
+<p><strong>Anastasia:</strong> So I’ve been thinking a lot about the rip-off BSCs that pop up throughout the series, including in one of the earliest books, “The Truth About Stacey” - a book I actually owned in paperback from a book signing with Ann M. Martin when I was a kid. Of course, I lost that copy. But it reminds me of the nonsense OpenAI is selling right now about on-demand course assistance and an on-call PhD - the rip-off club hired a bunch of college students.</p>
+<p><strong>John:</strong> Right, they don’t have bedtimes.</p>
+<p><strong>Anastasia:</strong> Yes. They don’t have bedtimes and also you can call a line and you get somebody right away as opposed to just this group of a few kids where one of them may not be available for your Friday night date.</p>
+<p><strong>John:</strong> The centralization and factory-ization.</p>
+<p><strong>Anastasia:</strong> The club’s response is to emphasize their human connection and their Kid-Kits that they take with toys and crafts and those sorts of personal things.</p>
+<p><strong>John:</strong> And that they know the kids.</p>
+<p><strong>Anastasia:</strong> Yup. And so it’s all this like, the human connection versus the depersonalized service - which is exactly what we’re seeing with higher education right now. I’ve read lots of people talking about going back to oral exams, making zines in classes, blue books - all things that require a lot of hands-on time. It doesn’t scale. AI, on the other hand, is all about scale - and I think that speaks to why educators especially are going to have a lot of trouble wanting to work with any of these things right now. What OpenAI just announced is truly the worst.</p>
+<p><strong>John:</strong> What is OpenAI really promising with all their current hype?</p>
+<p><strong>Anastasia:</strong> Right now, they’re saying that they’re going to integrate in a bunch of grading and instructional tools that are supposed to reduce the amount of time people have to spend grading and writing feedback; those are supposed to be able to use your rubrics that are built into Canvas. So one of the cases they described was a personalization case: if a student has an emergency and you need to change the due dates for just them for the next three assignments, you should be able to use a prompt-based interface to do that.</p>
+<p><strong>John:</strong> As opposed to the graphical interface, which is actually awful.</p>
+<p><strong>Anastasia:</strong> It is so bad.</p>
+<p><strong>John:</strong> They have a point there.</p>
+<p><strong>Anastasia:</strong> I mean, it is the worst. It’s okay to acknowledge that it is in fact absolutely terrible to work in the LMS now.</p>
+<p><strong>John:</strong> Changing all the due dates and adapting them for a new semester shouldn’t be as hard as it was - is.</p>
+<p><strong>Anastasia:</strong> No, there’s lots of things about the Canvas interface that suck, and there are several times when I’ve been working with the agent-based tools which we’re gonna be talking about in this book that I would like to actually be able to let my agent do: “update every reference in here,” “fix the assignment deadlines based on what you just did with the schedule”, “remove all mentions of the hurricane”</p>
+<p><strong>John:</strong> These edits are doable through more complex tools, like the API - Application Programming Interface - which provides a means to talk directly to the software system, skilling the interface. Tapping into that with agents would basically let you make those sorts of changes - but there is a lot of technical set-up involved.</p>
+<p><strong>Anastasia:</strong> Sure, you can do it with the API, but most of us won’t.</p>
+<p><strong>John:</strong> But building it directly in the Canvas is obviously better, but then you can only use OpenAI’s tools - we’ll be locked in to their agents and ecosystem.</p>
+<p><strong>Anastasia:</strong> That is going to be the problem, and not only that, but there’s very real questions about FERPA and data surveillance that are coming up already, and there are only going to be more such questions as we go through this. There should be because I have really strong concerns about what these contracts are going to look like and what it’s going to mean for the institution to do this.</p>
+<p>And it also goes right back to the part where some of our colleagues, if they in fact follow the institution’s advice and only use the tools that we’re provided for things related to campus activity, are getting a really narrow view of what these things are because they’re locked in to not-great chatbots - and our students are going to have their views shaped by interactions with those systems as well.</p>
+<p><strong>John:</strong> The Open AI partnership with Canvas actually is motivating me to think about building open source tools for educators and releasing them for free as soon as possible because it’s just going to be the alternative and maybe, maybe even it might not even be allowed.</p>
+<p><strong>Anastasia:</strong> That question of what is going to be allowed is a big one, and there’s already folks (including me) thinking about going old school if you don’t want your content to become part of Canvas’s OpenAI partnership data. Agent-based AI tools are great for building web classes with interfaces and experiences that are separate from that ecosystem, but not every university is going to even let us do that. But it seems to me that rolling your own site again, going back to some of our old school DH practices is a really good way to escape the AI layer and still give your students all the online content they expect.</p>
+<p><strong>John:</strong> Because you know what this partnership will likely involve: just what you’ve said, contributing Canvas course content and getting it back to OpenAI for their training. Not to mention student content, and interaction data.</p>
+<p><strong>Anastasia:</strong> Yeah, we just watched Johns Hopkins University press <a class="reference external" href="https://www.insidehighered.com/news/faculty-issues/books-publishing/2025/07/25/johns-hopkins-press-plans-license-books-train-ai">send notice to their authors</a> that everything’s going to be used to train models unless they sign an opt-out agreement. I already build as much as I can outside Canvas to be shareable. And I know that when I do that, it is available not just to one model, it’s available to lots of models. And that’s actually what I’d prefer. I’d rather contribute to the whole ecosystem and put things out for open knowledge than have my stuff locked up in Sam Altman’s world. I’ve been reading <a class="reference external" href="https://www.penguinrandomhouse.com/books/743569/empire-of-ai-by-karen-hao/">Empire of AI</a>, which really speaks to why Sam Altman’s world and vision is particularly concerning. And that’s, I think, important here as well. It’s not just that they made a deal. Canvas made a deal with, of the players, if not the worst, certainly a competitor for worst.</p>
+<div class="admonition-lee-says admonition">
+<p class="admonition-title">Lee says…</p>
+<p>Academic Bluesky had an absolute field day with the announcement from Altman that the new version of ChatGPT would be like having five PhDs in your pocket. I already have five+ PhDs in my pocket - it’s called the DSC group chat, and I highly doubt whatever ChatGPT has come out with even remotely would give me what this group chat gives me, but again, I digress…</p>
+<p><img alt="Bluesky repost screenshot" src="_images/dsc23_repost1.jpg" />
+<img alt="Bluesky repost screenshot" src="_images/dsc23_repost2.jpg" /></p>
+</div>
+<p><strong>John:</strong> I mean, my approach has always been that you’ve got to have multiple models to leverage, to shore up each other’s deficiencies. Yeah. I’d rather have three different models work on a problem and then allow me to review all of their differences as kind of a meta-reviewer than to be stuck in one AI’s models world view and perceptions. These tools actually are better if you can play them off of each other and have them critique each other. But if you have just one model involved in anything it won’t be nearly as good.</p>
+<p><strong>Anastasia:</strong> Well, and you’re also, right, so contextually, we’re talking about large classes and all of the realities of working at an institution like UCF, which is not in fact the ideal (<em>laugh</em>). And that’s exactly who the OpenAI solutions are going to be most appealing to–my grad students who are being assigned to teach 140-person classes. Like, I’m not going to tell them not to use it, honestly. But I will tell them that I don’t think the tools that they’re going to get through OpenAI are going to be the best tools for the problem.</p>
+<p><strong>John:</strong> No, because the people designing those tools don’t understand the pedagogy or the concepts of how to use it effectively in every case. And that’s where they’re constraining the innovation, really, that the instructors could bring to bear it by the more guardrails they put on it.</p>
+<p><strong>Anastasia:</strong> Yeah. But my other concern with all that is that I mean, in the case of my students, if they’ve taken my AI classes and really thought through some of these things, they know how to go and do something that would not compromise student data. But a lot of people do not, in fact, understand what’s happening when they use a free web model. So there are almost certainly lots of FERPA violations related to AI happening right now. And also a bunch in the peer reviewing process because people are absolutely feeding most papers to all sorts of things. So we have a fundamental problem of literacy.</p>
+<p><strong>Anastasia:</strong> So, I guess the question is, how do we build that literacy through the digital humanities? That’s really why we’re here, guest-sitting in the DSC as fall semester is crashing down - to talk about why we find agentic AI tools useful in digital humanities, and where we teach with them, and how that differs from what edtech is selling everyone.</p>
+<p><strong>John:</strong> Agreed - and to go back to the BSC, one agent is useful, but you can have your own coder’s club, your own six always on-call agents, and maybe that’s the most terrifying stuff there is.</p>
+<p><strong>Anastasia:</strong> Perhaps. But it is where it’s going, because each individual agent is limited.</p>
+<p><strong>John:</strong> Yeah. These limitations start to become more and more apparent.</p>
+<p><strong>Anastasia:</strong> Yeah, we saw that teaching programming at DHSI - it’s powerful, but there’s also a need to build new literacies, and the frustration points can be just as bad as any type of coding.</p>
+<p><strong>John:</strong> It’s also worth noting that all the best tools for working with this stuff do in fact involve the terminal at this point. So there’s another interface literacy involved, and doing things like controlling your own content, and yes, even with GitHub, you’re still throwing it into somebody else’s ecosystem of shitty tech. Regardless of which of these things you’re working with, there’s all those other literacies. For this DSC book, we should spend a little time talking about Visual Studio Code. A lot of the DSC work has involved Python, which is also changing dramatically right now - whether you use Colab, with Gemini built in, or manage your own environments, agents are changing how we do and our students will do this work.</p>
+<p><strong>John:</strong> Using these tools intentionally gets to the heart of why we frame this work as “distant coding.” You might have seen articles go by where folks have talked about doing <a class="reference external" href="https://gizmodo.com/billionaires-convince-themselves-ai-is-close-to-making-new-scientific-discoveries-2000629060">vibe physics and vibe science</a>, how they think they’re pushing the frontiers of scientific research when they are just talking to a chatbot. And I think that stuff is a really good explanation for why the language of “vibe” coding is so troubling. The idea of it - build complex systems without ever looking at the code - allows people to think that because they’re talking to this chatbot that they have the expertise. And that’s really dangerous, especially from a <a class="reference external" href="https://thenewstack.io/vibe-coding-the-shadow-it-problem-no-one-saw-coming/">security standpoint.</a></p>
+<p><strong>Anastasia:</strong> So distant coding offers us a place to intervene through a digital humanities lens, with parallels to how distant reading doesn’t replace reading, it augments the practice and allows us to do different things. We do need to preserve the significance of human expertise and the importance of going back and forth between looking at and interacting with the code and working with the code at a distance through these interfaces and tools. Otherwise, you have no responsibility for or integration of human expertise into the outcome.</p>
+<p><strong>John:</strong> There’s also the problem of AI agents designed to please and to be overly positive and basically wanting to give the user whatever they want, which leads to these “you’re creating this breakthrough” and “great job” and all that, which can lead to overconfidence in vibe coding.</p>
+<p><strong>Anastasia:</strong> This is also a challenge for the students that are going to be using these tools, because potentially even the people teaching them don’t know that these are problems. And as agentic AI is going to be normalized, a lot of these concerns about lack of expertise are also going to be dismissed and swept under the rug.</p>
+<p><strong>John:</strong> Yeah, well, and we’re going to get the curriculum as brought to you by edtech and a lot of companies. It’s going to make that even worse. And everything that you ask it to do, it might inject or inflect positive perspectives on AI. And that might affect a lot of assignments in the future just by that kind of optimism that AI has built in its own future that maybe could skip some of the criticism that is valid, just because it’s being used to generate assignments by instructors now using the OpenAI tools.</p>
+<p><strong>Anastasia:</strong> We’re also going to have to reckon with the consequences of the AI executive orders and policy rollbacks. If in fact this administration is successful in their crusade against so-called woke AI, then we’re going to have to deal with the fact that a lot of these tools are going to have things embedded in them in ways that might not immediately be obvious in terms of their consequences for code. For instance, let’s say you ask an agentic AI to build a survey with a gender field. What it gives as a response - I mean, right now, it’s probably already not great. Because it’s already drawing from what’s most common practice in things like code base, like all the open source software on GitHub. It’s already going to get a bunch of male-female stuff from that. But it’s only going to get worse. And we might even get to the point where, if they are successful with some of this, where it actually just refuses to do anything different. And that’ll be fascinating, dystopian hellscape stuff.</p>
+<p><strong>John:</strong> Same sort of thing we were accusing the Chinese AI sponsors of embedding in their models.</p>
+<p><strong>Anastasia:</strong> Yes. Oh, the hypocrisy of it all. Yes, at our institution we received a “you cannot use DeepSeek” warning. I believe in that announcement, they did not differentiate between the model and the web service as well, but it is the web service that is banned on Florida state networks. Meanwhile, Grok appears on people’s tool lists and might well make its way into campus partnerships - and DeepSeek is the problem? Okay. Let’s talk about your <a class="reference external" href="https://www.wired.com/story/elon-musk-xai-ai-companion-ani/">sexualized anime AI chatbots </a>over there, folks.</p>
+<p><strong>John:</strong> Probably not the best examples of the future of AI.</p>
+<p><strong>Anastasia:</strong> But inescapably part of it.</p>
+<p><strong>John:</strong> And on that note…maybe we should build some things.</p>
+<div class="admonition-lee-says admonition">
+<p class="admonition-title">Lee says…</p>
+<p>While I was taking their course, I was able to (<a class="reference external" href="https://anastasiasalter.net/DHProgramming/scraper.html">using their tutorial</a>) a) scrape Project Gutenberg’s collection of Canadian literature, b) change all the files names, c) scrape the metadata and turn it into a CSV, and (most problematically) d) run a topic model on the corpus - all using AI. I didn’t have to worry about the command line, or R code or anything. I just…worked with AI to do the things. And it only took me about 30 minutes. Now, I was doing really simple DH tasks, but often those same tasks can be roadblocks. I also have a basic understanding of metadata, corpuses, file structure, etc, because of my work in and with DH, so I could understand if what the AI was giving me was actually what I wanted. Now, when it came to the question of topic modeling, well, it was asked more as a joke because topic modeling is kinda my DH blind spot, so I could present the results (jokingly) and being like, see TOPIC MODELING, even though I know I have almost zero understanding of it, let along what the AI did to get to whatever topic models it presented me with. So AI can definitely lower the barrier to entry to DH by doing some of the grunt work, but you still have to understand what it is you want the AI to do to know if it was successful in doing it. For instance, just asking the AI to “clean your data” won’t be all that useful, because, well, what does that even mean?</p>
+<p>I had a similar conversation with a history professor who studies a small, long-lost culture and language. AI can help digitize, transcribe, and translate documents, work that would be too much for one (or even a handful) of researchers’ lifetimes. But, you still need the experience and expertise to ensure that the work the AI is doing is accurate AND to know what questions to ask of the data/materials after the fact. HOWEVER, as a teacher, many students are using AI to shortcut the actual learning of the skills and knowledge necessary to eventually ask the right questions and make sense of answers. It’s the same thing in DH - AI can speed up processes, but unless we understand what the processes do and why we would want to do them, then we’re just going through the motions and not actually engaging in scholarship.</p>
+</div>
+</section>
+</section>
+<section id="building-a-website-with-github-copilot-agents">
+<h2>Building a Website with GitHub Copilot Agents<a class="headerlink" href="#building-a-website-with-github-copilot-agents" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>Anastasia<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>In “Dawn on the Coast”, Dawn visits an “inspired by” BSC club with lots of California touches, like healthier snacks and cookbooks for kids. The group has even copied the kid-kits - “boxes that we fill with all kinds of things for kids to play with — books, games, crayons, puzzles. We bring them to the houses we baby-sit at and, of course, the kids just love them. They’re also good for business. They show we really are concerned and involved sitters.” I’m not saying I approach my teaching and scholarly work quite like a kid-kit, but there’s certainly some elements of style and interactivity that I approach in that same way.</p>
+<p>Agentic distant coding, where the model uses tools, builds files, and makes edits directly, can be used for just about any type of programming - but I mostly use it for web development because so much of my work falls into that category, both in preparing my classes and building scholarly, weird things for other people to interact with. So as an example of how generative AI can expand our “Kid-Kits,” as it were—our educational materials, visualizations, public scholarship projects, etc.—I decided to build a BSC educational “tech” visualization site.</p>
+<p>I didn’t want to spend much time on the Python part of that effort (for more on Python, see John’s section below), so I used the new Claude Opus 4.1 to make a quick Jupyter notebook for building a JSON concordance of some of the most-mentioned examples of old tech in the BSC series. The prompt I used was fairly basic, and the notebook worked on the first go:</p>
+<blockquote>
+<div><p>Build a Jupyter notebook for deploying on Google Colab that takes a large number of pre-processed novels as an upload, searches them for any mention of 1990s and 2000s appropriate educational technology (broadly defined), and builds a JSON concordance of the results with the top twenty edtech items mentioned and the eight word context of their mentions.</p>
+</div></blockquote>
+<p>I did have to do some hilarious refinement on the terms it suggested - for instance, PDA (Claude was thinking of Palm Pilots) only came up in the dataset in a slightly different context:</p>
+<p><img alt="JSON output of the notebook" src="_images/dsc23_json.jpg" /></p>
+<p>Once those terms were sorted out, I left a few that were entertainingly ambiguous (“Web” showed up both for the World Wide Web and Charlotte’s Web, for instance) and ran the visualization and final concordance. Unsurprisingly, some retro tech rose to the forefront:</p>
+<p><img alt="Bar chart of references" src="_images/dsc23_barchart.jpg" /></p>
+<p>I didn’t differentiate between mentions of tech that were contextualized in education versus daily life for this, so it isn’t surprising video (subset: <code class="docutils literal notranslate"><span class="pre">'video',</span> <span class="pre">'videos',</span> <span class="pre">'educational</span> <span class="pre">video',</span> <span class="pre">'VHS',</span> <span class="pre">'videotape',</span> <span class="pre">'video</span> <span class="pre">cassette'</span></code>) won by a landslide. This fairly boring visualization of occurrences was part of the <a class="reference external" href="https://colab.research.google.com/drive/1h7jYOBMAdESqfxIF_326rUEfeVYWb0TU?usp=sharing">original notebook</a> generated by Claude.</p>
+<p>This isn’t amazing data, but it is fun (especially for geriatric millennials like myself) and it gives us a web-ready file to play with. You’ve probably heard plenty of the risk of AI “hallucinations” - I’m not particularly a fan of that term, as it contributes to treating models through a human lens, but it is true that in the absence of data, AI will fill in the gaps with nonsense. So, to play with visualizing data using agentic AI, I brought it over into Visual Studio Code.</p>
+<p>My current favorite way to work with agentic AI and generative AI tools for pretty much everything I do with distant coding is through the GitHub Copilot tools. For fellow educators and students, one advantage to this approach is you can currently get free access to this by enrolling in the <a class="reference external" href="https://github.com/education">GitHub Education program</a>: it requires a tedious verification process - it uses geolocation-driven barriers as part of creating an account. If you’re not currently near your campus, it will give you a bit of a hassle on verifying your identity.</p>
+<p>If you’re at a Microsoft campus (as I, sadly, am) you might have access to a “Copilot” already. That is not the one I’m talking about, as it’s just a watered down chatbot. GitHub Copilot is an integrated development tool that’s model-agnostic (it offers several choices right now, and can also work with models run locally) and hyperfocused on programming.Basically, you get access to current models integrated right into your IDE development environment where the coding happens. If you’ve generated any code with a generative AI tool—maybe Python code or HTML or structured data or whatever—through a chatbot in a browser, there are a lot of other fussy steps involved. You have to track where things go, and the longer and more complicated it gets, the less context it has for the whole project. There are lots of things that make that approach to distant coding frustrating.</p>
+<p>By contrast, Visual Studio Code is very much a programmer’s environment, so it’s ideal for complex projects - and it is also overwhelming and filled with features, particularly if like me you grew up thinking Notepad++ was as good as a code editor can get. If you haven’t used Visual Studio Code before and want to try it, I recommend<a class="reference external" href="https://code.visualstudio.com/"> downloading it</a>, then making sure you’ve connected it to your GitHub account (installing GitHub Desktop is a shortcut to this process). The extensions I rely on for distant coding are primarily <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server">Live Preview,</a> for testing the website as it progresses, and GitHub Copilot itself with <a class="reference external" href="https://github.blog/news-insights/product-news/github-copilot-the-agent-awakens/">agent mode</a>.</p>
+<p>Once you’re in Visual Studio Code and you’ve logged into GitHub Copilot with an education account, load Copilot by clicking on the little goggled avatar in the side top. The interface is pretty straightforward compared to the rest of VSC: it’s basically just like your text prompt but with a few fancier features.</p>
+<p><img alt="Copilot VS Code interface" src="_images/dsc23_editcopilot.jpg" /></p>
+<p>Here, I’ve loaded the concordance into an empty repository, and selected “Agent” and “Claude Sonnet 4” from the options. Notice the “Add Context” feature - while the agent will work across all the files in the folder, this is a way to direct the gaze to specific things for queries. Agent mode is the only setting where we let the tool change our files—a little frightening, “ghost in the machine” style—but it also spares us a lot of management work. The option to “keep” and “undo” changes helps, which is where live preview comes in: if something goes totally off-kilter, that’s a way to quickly reset. It’s also possible to use the other modes for getting suggestions and evaluating them before implementing, which is more important when the project is complicated.</p>
+<p>So, once the agent is directed to the structured data file, the development cycle begins through prompting just like any bot. Since agent mode takes me back to the golden age of GeoCities and LiveJournal, and there’s a similar sense that you’re playing within a community of shared code, I started with a prompt pulling in those retro aesthetics while describing the goals of the selection interface:</p>
+<blockquote>
+<div><p>I have a concordance of mentions of retro technology from the Babysitter’s Club in this JSON file. Build a website suitable for deployment on GitHub Pages with a 90s interface with BSC aesthetics that allows users to select one of the twenty words, then fills a retro monitor display with the concordance texts, rotating through all mentions until the user selects another term.</p>
+</div></blockquote>
+<p>The workflow becomes really straightforward. The more specific you are in your language—as far as the type of website you want, how you’re going to deploy it, aesthetics, interface, even libraries (like mentioning a library like D3 for data visualization)—and the better structured your data or content is beforehand, the better results you’ll get. It helps that when we’re talking about this interface for a course website or public humanities projects, we don’t typically have the baggage of “what happens if you’re building something where there are actually security risks around the software” or those critical concerns. Here’s the first iteration after a single prompt:</p>
+<p><img alt="V1 output" src="_images/dsc23_v1.jpg" /></p>
+<p>It’s quite serviceable - pick a term, go through the concordance and see the mentions - but there’s lots of things worth fixing, including getting rid of that slightly over the top menu of buttons. I went through a number of iterations with prompts asking for stylistic changes as well as practical changes around the display of the filename versus the book title - you’ll notice there are still a few problems with that in the final, as I didn’t go through the full hassle of dealing with punctuation that isn’t in place in the filenames parsed.</p>
+<p>Here’s an in-progress iteration that shows some of the challenges of asking for particular aesthetics - the organization doesn’t make much sense, and the animation (thankfully not captured in this screenshot) is overwhelming.</p>
+<p><img alt="V2 output" src="_images/dsc23_v2.jpg" /></p>
+<p>However, I could quickly correct that with specific prompts, as captured in the<a class="reference external" href="https://anastasiasalter.net/DSC_AI/visualizing-with-agents.html"> “Visualizing with Agents”</a> sub-page - also generated, with the chat transcript from this project as the source. I’ve left some of the hilarity, like the Claude Sonnet 4 generated description: “This retro concordance interface was entirely built through a conversation with AI agents. The process demonstrates how modern AI tools can translate creative ideas into functional web applications, complete with 90s aesthetics, responsive design, and interactive features—all through natural language instructions.”</p>
+<p>The final version of this visualization is <a class="reference external" href="https://datasittersclub.github.io/dsc23/dsc-retro-tech/">deployed on GitHub Pages</a>, which fits well with the workflow of using GitHub’s repositories to track changes and versions over time, and makes it easier to have students host work. I have assignments that take students through this process, including deployment, in my Humanities in the Age of AI course on an open-access Pages site - with layouts and styling also generated using this workflow.</p>
+<p><img alt="V3 output" src="_images/dsc23_v3.jpg" /></p>
+<p>Part of the promise of this workflow from my perspective is the ability to eliminate unwieldy frameworks like WordPress. Building client-site only sites to a particular purpose has already freed me from a lot of overly complicated code. I now find for most projects I either use generative AI to assist in refining layouts for a static site or I go straight to fairly basic HTML, CSS, and JavaScript, keeping that content free of some of those more annoying dependencies and structures. My legacy WordPress sites have together brought me the headaches of a million messages involving attacks and PHP exploits - most of them are now offline to avoid the constant maintenance. When we work with native web technology, we avoid all that.</p>
+<p>Returning to the idea of “coasting AI” that we opened with: I acknowledge that these tools are making me lazy in lots of ways - see also the fact that this was written from an AudioPen transcription, which is another tool I use constantly because of carpal tunnel from playing all those video games in the ’90s. However, this is also giving me the bandwidth to do things I would never have gotten to, like actually update my website for the first time in years. The original site was locked into a dated theme, and bringing in new structured content was as simple as dropping in the JSON file in this project. (It’s also built in a ’90s aesthetic that I described as “Trapper Keeper style,” which apparently has plenty of reference material in Sonnet 4’s dataset.)</p>
+<p>At the same time, literacy of libraries and tools is still critical for doing anything more complicated. The back and forth process benefits from our ability to specifically reference a library like <a class="reference external" href="http://p5.js">p5.js</a> and to define things in concrete terms. This is why when I teach distant coding, I assign readings from <a class="reference external" href="https://www.amazon.com/Code-Joy-Everyone-Should-Programming/dp/0262546396/">Code to Joy by Michael Littman</a>, which I highly recommend to folks diving into this way of working or just playing around with programming in digital humanities. His approach is focused on the language of coding and understanding the operations and principles more so than the syntax of code.</p>
+</section>
+</section>
+<section id="agents-on-call">
+<h2>Agents on Call<a class="headerlink" href="#agents-on-call" title="Link to this heading">#</a></h2>
+<section id="lee">
+<h3>Lee<a class="headerlink" href="#lee" title="Link to this heading">#</a></h3>
+<p>I did nothing like this, but I did distant code <a class="reference external" href="https://readywriting.github.io/wordvomit/">this cool e-lit piece</a> and re-did <a class="reference external" href="https://readywriting.github.io/">my personal website</a>. Blew my mind.</p>
+<p>For the piece of e-lit, I set up my distant coding environment using <a class="reference external" href="https://code.visualstudio.com/blogs/2025/02/24/introducing-copilot-agent-mode">Claude agent from GitHib in VS Code</a> and then <a class="reference external" href="https://anastasiasalter.net/DHProgramming/ml5.html">Creative Code with ML5</a>/<a class="reference external" href="https://anastasiasalter.net/DHProgramming/ml5/index.html">Face Mesh</a>. I used the raw text from my eLit project <a class="reference external" href="https://kairos.technorhetoric.net/26.2/interviews/bessette/index.html">Moving In and Out of Time</a> and had Claude turn it into a CSV file with each value being one sentence. I then took the Face Mesh program and worked with the Claude agent to make it so that every time the mouth was opened, random sentences from the CSV file would fall out, creating - as I was finally able to accurately describe to Claude to get what I wanted - a wall of text that would eventually cover or “drown” the speaker. I also had it randomly make sentences in black so they would stand out and be easier to read. Finally, I made it so that the words never stopped falling, but instead would speed up the more the person opened their mouth. I have no idea what Ana and John were trying to teach the rest of the class at the time, but I spent an afternoon going back and forth with the Claude agent to get the effect I wanted.</p>
+<p>Now, as for my new personal website, <a class="reference external" href="https://anastasiasalter.net/DHProgramming/agentwebsite.html">I had the Claude agent</a> create a clean, modern format for the site, and then fed it my CV, my list of publications from Google Scholar, and some writing samples, asking it to create a personal, professional website. We went back and forth for probably a total of 8 hours, again with me not paying attention to what I was actually supposed to be doing in the course, but also at night when I couldn’t sleep in my dorm room. It was a conversation - I would tell Claude I wanted to change the order of the materials presented, or fix the spacing, or to stop making up publications for me because I had already given it my actual list of publications. When I was satisfied with one part, I’d move on to the next, and then added other sections and pages. I didn’t write most of the text on the site - Claude generated it based on my prompts and my writing samples. Honestly, I’ve always struggled with making myself sound professional, and this is the most professional I’ve ever appeared on the web. I had a lot of fun making it; honestly, the hardest part is getting the GitHub Education account, and then installing everything in the right order so that everything syncs. And I’ve used GitHub before as well as different coding environments, so there was less of a learning curve for me.</p>
+<p>I’ve been an AI skeptic, and hadn’t really used it in my day-to-day because, well, I couldn’t find anywhere where using some form of AI would actually help me. As someone with ADHD, redistributing the cognitive load is an attractive proposition, but getting the AI to work the way I want/need it to is an ADHD nightmare, so I’ve just stuck with what I’ve been doing which works pretty well for me. This revelation of possible uses of AI was jarring, because I could see myself using it for doing creative eLit work or rebuilding my website that I have been putting off but also wouldn’t ever pay someone else to do. I keep going back to what Martha Burtis said about friction being a feature not a bug when it comes to learning - in this case talking about Domain of One’s Own - and I can’t help but pause on how relatively frictionless all of this was. I didn’t really learn anything, other than I can use Claude agent to avoid learning, although if I used it the way Ana and John wanted me to use it, I would have learned some (more) rudimentary coding skills. I could have asked Claude to explain to me what parts of the code were responsible for what parts of the site or the Word Vomit experiment, but I didn’t, because I was now focused on product rather than process. Which, again, appeals to my ADHD brain because I don’t want to do all the detail-oriented grunt-work of coding and looking for my mistakes in the code and installing everything in the right order and doing the commands just-so, etc. I get to jump to the fun part, which is making something. I get the appeal! I do!</p>
+<p>One of my responsibilities as a faculty member in the Learning, Design, and Technology MA program at Georgetown is to guide students through the process of creating their capstone ePortfolios/personal websites, which are required for graduation. I try to spend more time on the content than on the actual technological side of building their sites, because it doesn’t matter how “pretty” their sites look, if they don’t have any meaningful content. We provide hosting and WordPress, but many of them are - rightfully - frustrated by the platform now, and choose to pay for a different proprietary content management system/website builder. Which…Is teaching them how to use Claude agent and Github Pages better or worse than Wix or Squarespace? This would really get the technology out of the way and allow them to focus on content, narrative aesthetic, etc. And part of me REALLY wants to never have to deal with WordPress again anymore, although I supposed at the end of the day I could distant code WordPress to do my bidding and I’m back where I started.</p>
+<p>All of this to say, I’m happy with what I learned and accomplished. I’m glad we’re lowering some barriers to entry to DH and other kinds of digital experiments, but I don’t want to lose what makes this fun and worthwhile - struggling alongside other people to figure stuff out. One more step towards I don’t need other people anymore, only AI. I don’t want to replace the five PhDs I already have in my pocket with the ones Altman wants to give us.</p>
+</section>
+</section>
+<section id="data-analysis-with-colab-and-gemini-agents">
+<h2>Data analysis with Colab and Gemini Agents<a class="headerlink" href="#data-analysis-with-colab-and-gemini-agents" title="Link to this heading">#</a></h2>
+<section id="john">
+<h3>John<a class="headerlink" href="#john" title="Link to this heading">#</a></h3>
+<p>I learn best by working through a project. While we had recorded our conversation using AudioPen, I wasn’t very happy with the transcript, so I started looking into ways to improve the transcript, and thought that it’d be a good chance to use local models. I was similarly excited to dig into narrative processing after looking over the Babysitters Club corpus.</p>
+<p>What types of analysis can we do across a large number of related stories using large language models? And can local open-weight models (such as the recently released OpenAI OSS model) identify complex concepts such as a character’s “goals” and “conflicts”?</p>
+<p>This pulled me back in time to my own dissertation work where I studied a narrative game (“The Wolf Among Us” by Telltale Games) and ended up extending an annotation format for narratives developed by David Elson: <a class="reference external" href="http://www.cs.columbia.edu/~delson/pubs/Modeling-Narrative-Discourse_Elson_R4.pdf">Story Intention Graphs</a>. In essence, they allow a formal way to talk about the entities, events and relationships in stories and draw from linguistics heavily.</p>
+<p>Instead of attempting to encode the Baby Sitters Club books using SIGs directly for this project (maybe later), I thought that goal identification might be a good balance between using LLM-specific capabilities (natural language processing beyond entity-recognition or statistics) and simplicity. This is a great time to experiment with AI to discover what it can be used for, both smaller and larger models, and narrative theory offers some useful frameworks.</p>
+<p>I’ll describe my approach through both projects below, with an emphasis on some of the principles I’ve discovered and some of the challenges I faced. Generally, it’s best to work directly with the agents and to scrutinize the outputs prior to running something that takes a long time. Today’s models are prone to declare success or to miss critical insights, especially as projects get bigger. This complexity ceiling is important, as it suggests that anytime some feature is “patched” on, it is best to direct the same agent to simplify and rewrite things. Programmers often fall into the same trap of postponing refactoring and to just make things work by making small modifications.</p>
+<p>I’ll start with the “<a class="reference external" href="https://deepgram.com/learn/what-is-speaker-diarization">speaker diarization</a>” (which is assigning labels to segments of a voice transcript based on speaker identity). I used Claude to do deep research to help me determine which models and techniques were the “best.” I find deep research (either Claude or ChatGPT) can sift through evaluations and openly available tools and offer a good starting point. I’ve even used it to research big purchase decisions such as PCs and laptops, though in the end it can still miss critical factors that are underrepresented in the available sources, just like humans.</p>
+<p><img alt="Screenshot of transcript tool info" src="_images/dsc23_transcripttools.jpg" /></p>
+<p>Going from research to implementation involved asking it for an implementation-focused description that I could then pass into another tool to do the work of development. While I could easily use ChatGPT, VS Code Copilot, or even another tool to finish implementation, Claude produced a full document including samples of python code and advice on Huggingface models and configuration. You can find my work here on GitHub, though you’ll need to register with Huggingface to access those models.</p>
+<p>The hardest part was making sure the system would run on my system, and to agree to the terms through my logged-in account on HuggingFace.</p>
+<p>The first output was already better than trying to identify speakers from the raw transcript. It assigned speakers based on the voice itself, so there was a speaker 1 and a speaker 2. I asked Copilot Chat to rename the speakers to Anastasia and John and it created a script to do it.</p>
+<p>It was mostly successful – it couldn’t handle when we spoke over one another, and sometimes it missed interjections, but overall it was way more effective using the audio segmentation than just trying to identify individual speakers from the text alone.</p>
+<p>Since there are many models that can handle transcripts, they have become a valuable source of data for local and remote LLMs. I would much rather record my own audio and process it than rely on Zoom or other products for meetings, and have already used this method to create draft notes for meetings with graduate students.</p>
+<p><img alt="Pipeline screenshot" src="_images/dsc23_pipeline.jpg" /></p>
+<p>I added a web UI as a final step, asking it to be done in Python. It produced the above UI, which I then requested it to be adapted for the actual python code (rather than a demo version shown). I appreciate the ability for LLMs to produce reasonable UIs even for longer-running local programs. You can find the finished codebase (including the web UI) at the <a class="reference external" href="https://github.com/datasittersclub/dsc23/tree/main/speaker-diarization">GitHub repository</a>.</p>
+<section id="narrative-processing">
+<h4>Narrative Processing<a class="headerlink" href="#narrative-processing" title="Link to this heading">#</a></h4>
+<p>For the next part, I returned to one of my research topics: story understanding and visualization. I took a simple approach: consider what would be <strong>BOTH</strong> tedious and yet not easily analyzed through traditional natural language techniques. This would likely be a good match for LLMs.</p>
+<p>I started with ChatGPT and opened up the newly released GPT-5. When I saw the baby sitter’s club corpus, I remembered one of the goals from my dissertation work, shared by many who use annotation: automatic annotation possibly even using the full set of encoding elements from the model I based my work on. This would include named entities, events, values and goals. I quickly fed it a description of the annotation format and an overview of the goals and the corpus. The approach it recommended is one I hope to pursue, but was much too complex for a first project with the corpus.</p>
+<p>After a few rounds with ChatGPT, I decided to scale it back to just characters and goals, and later added conflict and supporting evidence (to try to limit hallucinations).</p>
+<p>One of my most current techniques is simply to use larger, commercial models to help write and revise programs to run small models and APIs on local data. Pretty much every task that involves applying an LLM to a large set of texts in a systematic and controlled manner would lend itself to either a local LLM or an API.</p>
+<p>I started with just goal identification, and in my chats, it eventually crystallized into better and better support for JSON formatted outputs with characters, goals and conflicts (when two characters’ goals collide). There are some conflicts that don’t involve another character, but I focused primarily on those goals which directly belonged to a character and which directly conflicted. The level of complexity also was a good opportunity to compare local models made available via ollama to those of OpenAI. Here’s my <a class="reference external" href="https://github.com/datasittersclub/dsc23/tree/main/bsc-corpus-analysis">finished project repository</a>, which contains both the web frontend as well as the jupyter (ipynb) notebook.</p>
+<p>I did have to iterate several times, but I found that either making edits via AI directly in VS Code Copilot Chat or asking for revisions in a single GPT-5 thread were effective, but ultimately Copilot Chat’s agent mode was able to troubleshoot connection issues as well as identifying that my computer couldn’t handle the full 128,000 token context window without using more RAM than I had available.</p>
+<p><img alt="Screenshot of solution created" src="_images/dsc23_solution.jpg" /></p>
+<p>In the end, it did help me directly by running cells and reviewing their output. While it was way more output than I would prefer, ultimately have Copilot Chat revise and run Jupyter cells directly saved me a lot of time over using ChatGPT and either downloading new versions or copying over individual fixes.</p>
+<p><a class="reference download internal" download="" href="_downloads/972b0e16e56d47cb705263b51ef5373b/dsc23_chargoal.jpg"><span class="xref download myst">Force-directed graph of character goals</span></a>
+<em>A sample force-directed graph from character goals</em></p>
+<p>In the end, I was able to run a local LLM across a large set of scenes, starting with a smaller sample set. This would have been beyond the capability of the chat applications ChatGPT or Claude. I used a local model and my own computer, and can easily compare the results to the remote models. After I was happy with the results in the ipynb, I transitioned the entire project over to python with just a few prompts, mostly focused on aesthetics and creating a web server.</p>
+<p><a class="reference download internal" download="" href="_downloads/8794029eabeace840dcf74b4498a66b5/dsc23_analysisterminal.jpg"><span class="xref download myst">Screenshot of analysis terminal</span></a>
+<a class="reference download internal" download="" href="_downloads/640dbaa45bce47ff1af39cf641777bd6/dsc23_network.jpg"><span class="xref download myst">Screenshot of character network</span></a></p>
+<p>In the future, I’ll compare the local model results to remote models through APIs to assess if this type of task really does perform better on those “larger” models. The pricing is about $0.05 per scene based on 1M tokens, based on their <a class="reference external" href="https://platform.openai.com/docs/pricing?latest-pricing=standard">latest pricing table</a> (in standard, not batch, which is priced at 50% off):</p>
+<p><a class="reference download internal" download="" href="_downloads/b9befdc68f9c97f478af8b7f7cd7eacd/dsc23_gptpricing.jpg"><span class="xref download myst">Screenshot of OpenAI pricing table</span></a></p>
+<p>And <a class="reference external" href="https://www.anthropic.com/pricing#api">Anthropic’s pricing</a>:</p>
+<p><a class="reference download internal" download="" href="_downloads/54d4496534fe48956d5b5dcd58305906/dsc23_anthropicpricing.jpg"><span class="xref download myst">Screenshot of Anthropic pricing table</span></a></p>
+</section>
+</section>
+</section>
+<section id="concluding-thoughts-from-john">
+<h2>Concluding Thoughts from John<a class="headerlink" href="#concluding-thoughts-from-john" title="Link to this heading">#</a></h2>
+<p>Working with Large Language Models in 2025 has three main tracks. One is to use the existing consumer-facing products: ChatGPT or Claude. These can produce better results by far than a year ago, but require a lot of computational literacies in order to translate the code back into production. Another is to use built-in AI in development environments: this includes Gemini in Google Colab (a way to generate notebooks without writing code) or even GitHub Copilot built into VS Code with either a free or educational subscription. The final track is what I’ve shown in both of the above projects – using machine learning and LLMs locally, but using a combination of applications and in-development support to get there. Ultimately, these smaller models will become more and more capable over time and can be used for a variety of tasks and projects. While GPT-5’s release hasn’t been widely acclaimed as a major advancement in raw capabilities, it is a refinement over the previous approach of a set of models with varying capabilities that relied on the users expertise to select the appropriate model. I saw firsthand the value of selecting a model through the story analysis project, as the combination of context limits, processing limits and just time were all factors, and the dropping price of remote APIs make those options attractive when it makes sense.</p>
+<p>Stay close to the data, start small, ask for verification when interacting with LLMs, and keep an eye on projects that you can adapt or build on.</p>
+</section>
+<section id="what-s-your-take">
+<h2>What’s Your Take?<a class="headerlink" href="#what-s-your-take" title="Link to this heading">#</a></h2>
+<div class="admonition-lee-quinn-say admonition">
+<p class="admonition-title">Lee &amp; Quinn say…</p>
+<p>We fully expect this DSC book will probably bring up a lot of thoughts and feelings from the DH community. We’re already planning a follow-up book where were get into a deeper discussion about AI and since we’re all about community, we’d <a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSc5xxDEfV0F3duLSt4gIaDpDoDgwU1hFbnJSoyOhTJWnq3AUA/viewform?usp=dialog">love to hear from you and what you think</a>. You might even get included in the next DSC book!</p>
+</div>
+</section>
+<section id="suggested-citation">
+<h2>Suggested citation<a class="headerlink" href="#suggested-citation" title="Link to this heading">#</a></h2>
+<p>Salter, Anastasia, John Murray, and Lee Skallerup Bessette. “DSC #23: Dawn of the Coasting AI.” <em>The Data-Sitters Club.</em> August 25, 2025.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="dsc22.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">DSC #22: Lee Skallerup Bessette, Zine-Sitter</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="dscm1.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">DSC Multilingual Mystery #1: Lee and the Missing Metadata</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prelude-the-clankers-are-coming">Prelude: The Clankers are Coming</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anastasia">Anastasia</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#of-code-and-pedagogy">Of Code and Pedagogy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anastasia-and-john">Anastasia and John</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-a-website-with-github-copilot-agents">Building a Website with GitHub Copilot Agents</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Anastasia</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agents-on-call">Agents on Call</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lee">Lee</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-analysis-with-colab-and-gemini-agents">Data analysis with Colab and Gemini Agents</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#john">John</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#narrative-processing">Narrative Processing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concluding-thoughts-from-john">Concluding Thoughts from John</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-s-your-take">What’s Your Take?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suggested-citation">Suggested citation</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Data-Sitters Club
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
