@@ -198,7 +198,7 @@ dependencies:
   - pyparsing=3.1.4
   - pysocks=1.7.1
   - python=3.11.9
-  - python-dateutil=2.9.0
+  - python-dateutil=2.9.0.post0
   - python-fastjsonschema=2.20.0
   - python-tzdata=2024.1
   - python_abi=3.11
@@ -227,7 +227,7 @@ dependencies:
   - r-deriv=4.1.6
   - r-digest=0.6.37
   - r-dplyr=1.1.4
-  - r-dtt=0.1_2
+  - r-dtt=0.1_2.1
   - r-e1071=1.7_16
   - r-ellipsis=0.3.2
   - r-fansi=1.0.6
@@ -271,7 +271,7 @@ dependencies:
   - r-r.utils=2.12.3
   - r-r6=2.5.1
   - r-rappdirs=0.3.3
-  - r-rcpp=1.0.13
+  - r-rcpp=1.0.13_1
   - r-readr=2.1.5
   - r-rematch2=2.1.2
   - r-rlang=1.1.4
@@ -381,5 +381,6 @@ dependencies:
   - zstandard=0.23.0
   - zstd=1.5.6
   - pip:
+      - ghp-import==2.1.0
       - rpy2==3.5.16
 prefix: /opt/miniconda3/envs/dsc
