@@ -224,7 +224,7 @@ Here’s an in-progress iteration that shows some of the challenges of asking fo
 
 However, I could quickly correct that with specific prompts, as captured in the[ "Visualizing with Agents"](https://anastasiasalter.net/DSC_AI/visualizing-with-agents.html) sub-page - also generated, with the chat transcript from this project as the source. I've left some of the hilarity, like the Claude Sonnet 4 generated description: "This retro concordance interface was entirely built through a conversation with AI agents. The process demonstrates how modern AI tools can translate creative ideas into functional web applications, complete with 90s aesthetics, responsive design, and interactive features---all through natural language instructions."
 
-The final version of this visualization is [deployed on GitHub Pages](https://anastasiasalter.net/DSC_AI/index.html), which fits well with the workflow of using GitHub's repositories to track changes and versions over time, and makes it easier to have students host work. I have assignments that take students through this process, including deployment, in my Humanities in the Age of AI course on an open-access Pages site - with layouts and styling also generated using this workflow.
+The final version of this visualization is [deployed on GitHub Pages](https://datasittersclub.github.io/dsc23/dsc-retro-tech/), which fits well with the workflow of using GitHub's repositories to track changes and versions over time, and makes it easier to have students host work. I have assignments that take students through this process, including deployment, in my Humanities in the Age of AI course on an open-access Pages site - with layouts and styling also generated using this workflow.
 
 
 ![V3 output](_static/images/dsc23_v3.jpg)
@@ -233,7 +233,7 @@ Part of the promise of this workflow from my perspective is the ability to elimi
 
 Returning to the idea of "coasting AI" that we opened with: I acknowledge that these tools are making me lazy in lots of ways - see also the fact that this was written from an AudioPen transcription, which is another tool I use constantly because of carpal tunnel from playing all those video games in the '90s. However, this is also giving me the bandwidth to do things I would never have gotten to, like actually update my website for the first time in years. The original site was locked into a dated theme, and bringing in new structured content was as simple as dropping in the JSON file in this project. (It's also built in a '90s aesthetic that I described as "Trapper Keeper style," which apparently has plenty of reference material in Sonnet 4's dataset.)
 
-At the same time, literacy of libraries and tools is still critical for doing anything more complicated. The back and forth process benefits from our ability to specifically reference a library like [p5.js](http://p5.js) and to define things in concrete terms. This is why when I teach distant coding, I use [Code to Joy by Michael Littman](https://www.amazon.com/Code-Joy-Everyone-Should-Programming/dp/0262546396/), which I highly recommend to folks diving into this way of working or just playing around with programming in digital humanities. His approach is focused on the language of coding and understanding the operations and principles more so than the syntax of code.
+At the same time, literacy of libraries and tools is still critical for doing anything more complicated. The back and forth process benefits from our ability to specifically reference a library like [p5.js](http://p5.js) and to define things in concrete terms. This is why when I teach distant coding, I assign readings from [Code to Joy by Michael Littman](https://www.amazon.com/Code-Joy-Everyone-Should-Programming/dp/0262546396/), which I highly recommend to folks diving into this way of working or just playing around with programming in digital humanities. His approach is focused on the language of coding and understanding the operations and principles more so than the syntax of code.
 
 ## Agents on Call
 
@@ -282,7 +282,7 @@ Since there are many models that can handle transcripts, they have become a valu
 ![Pipeline screenshot](_static/images/dsc23_pipeline.jpg)
 
 
-I added a web UI as a final step, asking it to be done in Python. It produced the above UI, which I then requested it to be adapted for the actual python code (rather than a demo version shown). I appreciate the ability for LLMs to produce reasonable UIs even for longer-running local programs. You can find the finished codebase (including the web UI) at the [GitHub repository](https://github.com/lucidbard/speaker_diarization).
+I added a web UI as a final step, asking it to be done in Python. It produced the above UI, which I then requested it to be adapted for the actual python code (rather than a demo version shown). I appreciate the ability for LLMs to produce reasonable UIs even for longer-running local programs. You can find the finished codebase (including the web UI) at the [GitHub repository](https://github.com/datasittersclub/dsc23/tree/main/speaker-diarization).
 
 #### Narrative Processing
 
@@ -294,7 +294,7 @@ After a few rounds with ChatGPT, I decided to scale it back to just characters a
 
 One of my most current techniques is simply to use larger, commercial models to help write and revise programs to run small models and APIs on local data. Pretty much every task that involves applying an LLM to a large set of texts in a systematic and controlled manner would lend itself to either a local LLM or an API.
 
-I started with just goal identification, and in my chats, it eventually crystallized into better and better support for JSON formatted outputs with characters, goals and conflicts (when two characters' goals collide). There are some conflicts that don't involve another character, but I focused primarily on those goals which directly belonged to a character and which directly conflicted. The level of complexity also was a good opportunity to compare local models made available via ollama to those of OpenAI. Here's my [finished project repository](https://github.com/lucidbard/story_corpus_analysis), which contains both the web frontend as well as the jupyter (ipynb) notebook.
+I started with just goal identification, and in my chats, it eventually crystallized into better and better support for JSON formatted outputs with characters, goals and conflicts (when two characters' goals collide). There are some conflicts that don't involve another character, but I focused primarily on those goals which directly belonged to a character and which directly conflicted. The level of complexity also was a good opportunity to compare local models made available via ollama to those of OpenAI. Here's my [finished project repository](https://github.com/datasittersclub/dsc23/tree/main/bsc-corpus-analysis), which contains both the web frontend as well as the jupyter (ipynb) notebook.
 
 I did have to iterate several times, but I found that either making edits via AI directly in VS Code Copilot Chat or asking for revisions in a single GPT-5 thread were effective, but ultimately Copilot Chat's agent mode was able to troubleshoot connection issues as well as identifying that my computer couldn't handle the full 128,000 token context window without using more RAM than I had available.
 
@@ -318,11 +318,11 @@ And [Anthropic's pricing](https://www.anthropic.com/pricing#api):
 
 [Screenshot of Anthropic pricing table](_static/images/dsc23_anthropicpricing.jpg)
 
-## Concluding Thoughts
+## Concluding Thoughts from John
 
 Working with Large Language Models in 2025 has three main tracks. One is to use the existing consumer-facing products: ChatGPT or Claude. These can produce better results by far than a year ago, but require a lot of computational literacies in order to translate the code back into production. Another is to use built-in AI in development environments: this includes Gemini in Google Colab (a way to generate notebooks without writing code) or even GitHub Copilot built into VS Code with either a free or educational subscription. The final track is what I’ve shown in both of the above projects -- using machine learning and LLMs locally, but using a combination of applications and in-development support to get there. Ultimately, these smaller models will become more and more capable over time and can be used for a variety of tasks and projects. While GPT-5’s release hasn’t been widely acclaimed as a major advancement in raw capabilities, it is a refinement over the previous approach of a set of models with varying capabilities that relied on the users expertise to select the appropriate model. I saw firsthand the value of selecting a model through the story analysis project, as the combination of context limits, processing limits and just time were all factors, and the dropping price of remote APIs make those options attractive when it makes sense. 
 
-Stay close to the data, start small, ask for verification when interacting with LLMs, and keep an eye on projects that you can adapt or build on.
+Stay close to the data, start small, ask for verification when interacting with LLMs, and keep an eye on projects that you can adapt or build on. 
 
 ## What's Your Take?
 
