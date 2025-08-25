@@ -28,7 +28,7 @@ August 25, 2025
 
 You might feel that way about this DSC book, too.
 
-Rest assured, the DSC hasn't sold out to the algorithmic edgelords of Silicon Valley. Each of us has our own take on AI -- and we've got another book in the works about all that. But Lee went to DHSI and got super excited about Anastasia's vibe coding class and one thing led to another and here we are. "Dawn of the Coasting AI" isn't the book for you if you're fundamentally opposed to generative AI on principle. But what we do here at the DSC is walk through, step by step, in a friendly way, how people are actually using computational methods for digital humanities. So if you're curious what that looks like with AI, read on.
+Rest assured, the DSC hasn't sold out to the algorithmic edgelords of Silicon Valley. Each of us has our own take on AI -- and we've got another book in the works about all that. (We want [your input on AI](https://docs.google.com/forms/d/e/1FAIpQLSc5xxDEfV0F3duLSt4gIaDpDoDgwU1hFbnJSoyOhTJWnq3AUA/viewform?usp=dialog) to help us write it!) But Lee went to DHSI and got super excited about Anastasia and John's vibe coding class and one thing led to another and here we are. "Dawn of the Coasting AI" isn't the book for you if you're fundamentally opposed to generative AI on principle. But what we do here at the DSC is walk through, step by step, in a friendly way, how people are actually using computational methods for digital humanities. So if you're curious what that looks like with AI, read on.
 
 ```
 
@@ -324,7 +324,13 @@ Working with Large Language Models in 2025 has three main tracks. One is to use 
 
 Stay close to the data, start small, ask for verification when interacting with LLMs, and keep an eye on projects that you can adapt or build on.
 
+## What's Your Take?
 
+```{admonition} Lee & Quinn say...
+
+We fully expect this DSC book will probably bring up a lot of thoughts and feelings from the DH community. We're already planning a follow-up book where were get into a deeper discussion about AI and since we're all about community, we'd [love to hear from you and what you think](https://docs.google.com/forms/d/e/1FAIpQLSc5xxDEfV0F3duLSt4gIaDpDoDgwU1hFbnJSoyOhTJWnq3AUA/viewform?usp=dialog). You might even get included in the next DSC book!
+
+```
 
 
 

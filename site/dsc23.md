@@ -28,7 +28,7 @@ August 25, 2025
 
 You might feel that way about this DSC book, too.
 
-Rest assured, the DSC hasn't sold out to the algorithmic edgelords of Silicon Valley. Each of us has our own take on AI -- and we've got another book in the works about all that. But Lee went to DHSI and got super excited about Anastasia and John's vibe coding class and one thing led to another and here we are. "Dawn of the Coasting AI" isn't the book for you if you're fundamentally opposed to generative AI on principle. But what we do here at the DSC is walk through, step by step, in a friendly way, how people are actually using computational methods for digital humanities. So if you're curious what that looks like with AI, read on.
+Rest assured, the DSC hasn't sold out to the algorithmic edgelords of Silicon Valley. Each of us has our own take on AI -- and we've got another book in the works about all that. (We want [your input on AI](https://docs.google.com/forms/d/e/1FAIpQLSc5xxDEfV0F3duLSt4gIaDpDoDgwU1hFbnJSoyOhTJWnq3AUA/viewform?usp=dialog) to help us write it!) But Lee went to DHSI and got super excited about Anastasia and John's vibe coding class and one thing led to another and here we are. "Dawn of the Coasting AI" isn't the book for you if you're fundamentally opposed to generative AI on principle. But what we do here at the DSC is walk through, step by step, in a friendly way, how people are actually using computational methods for digital humanities. So if you're curious what that looks like with AI, read on.
 
 ```
 
