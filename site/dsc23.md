@@ -324,6 +324,14 @@ Working with Large Language Models in 2025 has three main tracks. One is to use 
 
 Stay close to the data, start small, ask for verification when interacting with LLMs, and keep an eye on projects that you can adapt or build on.
 
+## What's Your Take?
+
+```{admonition} Lee & Quinn say...
+
+We fully expect this DSC book will probably bring up a lot of thoughts and feelings from the DH community. We're already planning a follow-up book where were get into a deeper discussion about AI and since we're all about community, we'd [love to hear from you and what you think](https://docs.google.com/forms/d/e/1FAIpQLSc5xxDEfV0F3duLSt4gIaDpDoDgwU1hFbnJSoyOhTJWnq3AUA/viewform?usp=dialog). You might even get included in the next DSC book!
+
+```
+
 
 
 ## Suggested citation
