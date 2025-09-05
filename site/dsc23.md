@@ -303,20 +303,22 @@ I did have to iterate several times, but I found that either making edits via AI
 In the end, it did help me directly by running cells and reviewing their output. While it was way more output than I would prefer, ultimately have Copilot Chat revise and run Jupyter cells directly saved me a lot of time over using ChatGPT and either downloading new versions or copying over individual fixes. 
 
 ![Force-directed graph of character goals](_static/images/dsc23_chargoal.jpg)
+
 *A sample force-directed graph from character goals*
 
 In the end, I was able to run a local LLM across a large set of scenes, starting with a smaller sample set. This would have been beyond the capability of the chat applications ChatGPT or Claude. I used a local model and my own computer, and can easily compare the results to the remote models. After I was happy with the results in the ipynb, I transitioned the entire project over to python with just a few prompts, mostly focused on aesthetics and creating a web server. 
 
 ![Screenshot of analysis terminal](_static/images/dsc23_analysisterminal.jpg)
+
 ![Screenshot of character network](_static/images/dsc23_network.jpg)
 
 In the future, I'll compare the local model results to remote models through APIs to assess if this type of task really does perform better on those "larger" models. The pricing is about $0.05 per scene based on 1M tokens, based on their [latest pricing table](https://platform.openai.com/docs/pricing?latest-pricing=standard) (in standard, not batch, which is priced at 50% off):
 
-![Screenshot of OpenAI pricing table](_static/images/dsc23_gptpricing.jpg)
+<img src="_static/images/dsc23_gptpricing.jpg" alt="Screenshot of OpenAI pricing table" />
 
 And [Anthropic's pricing](https://www.anthropic.com/pricing#api):
 
-![Screenshot of Anthropic pricing table](_static/images/dsc23_anthropicpricing.jpg)
+<img src="_static/images/dsc23_anthropicpricing.jpg" alt="Screenshot of Anthropic pricing table" />
 
 ## Concluding Thoughts from John
 
