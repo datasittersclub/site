@@ -298,6 +298,7 @@ I started with just goal identification, and in my chats, it eventually crystall
 
 I did have to iterate several times, but I found that either making edits via AI directly in VS Code Copilot Chat or asking for revisions in a single GPT-5 thread were effective, but ultimately Copilot Chat's agent mode was able to troubleshoot connection issues as well as identifying that my computer couldn't handle the full 128,000 token context window without using more RAM than I had available.
 
+
 ![Screenshot of solution created](_static/images/dsc23_solution.jpg)
 
 In the end, it did help me directly by running cells and reviewing their output. While it was way more output than I would prefer, ultimately have Copilot Chat revise and run Jupyter cells directly saved me a lot of time over using ChatGPT and either downloading new versions or copying over individual fixes. 
@@ -314,13 +315,11 @@ In the end, I was able to run a local LLM across a large set of scenes, starting
 
 In the future, I'll compare the local model results to remote models through APIs to assess if this type of task really does perform better on those "larger" models. The pricing is about $0.05 per scene based on 1M tokens, based on their [latest pricing table](https://platform.openai.com/docs/pricing?latest-pricing=standard) (in standard, not batch, which is priced at 50% off):
 
-![Screenshot of OpenAI pricing table](_static/images/dsc23_gptpricing.jpg)
+<img src="_static/images/dsc23_gptpricing.jpg" alt="Screenshot of OpenAI pricing table" />
 
 And [Anthropic's pricing](https://www.anthropic.com/pricing#api):
 
-![Screenshot of Anthropic pricing table](_static/images/dsc23_anthropicpricing.jpg)
-
-<img src="_static/images/dsc23_anthropicpricing.jpg" />
+<img src="_static/images/dsc23_anthropicpricing.jpg" alt="Screenshot of Anthropic pricing table" />
 
 ## Concluding Thoughts from John
 

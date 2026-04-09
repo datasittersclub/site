@@ -298,6 +298,7 @@ I started with just goal identification, and in my chats, it eventually crystall
 
 I did have to iterate several times, but I found that either making edits via AI directly in VS Code Copilot Chat or asking for revisions in a single GPT-5 thread were effective, but ultimately Copilot Chat's agent mode was able to troubleshoot connection issues as well as identifying that my computer couldn't handle the full 128,000 token context window without using more RAM than I had available.
 
+
 ![Screenshot of solution created](_static/images/dsc23_solution.jpg)
 
 In the end, it did help me directly by running cells and reviewing their output. While it was way more output than I would prefer, ultimately have Copilot Chat revise and run Jupyter cells directly saved me a lot of time over using ChatGPT and either downloading new versions or copying over individual fixes. 

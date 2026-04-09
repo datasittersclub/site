@@ -80,6 +80,8 @@ parts:
     chapters:
       - url: https://datasittersclub.github.io/tldr/books/tldr1/
         title: "tldr #1: DH Curious?" 
+      - url: https://datasittersclub.github.io/tldr/books/tldr2/
+        title: "tldr #2: Forming Your Corpus"
   - caption: Fun
     chapters:
       - file: covid19
