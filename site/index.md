@@ -1,7 +1,5 @@
 ![DSC logo](https://datasittersclub.github.io/site/_static/DSClogo.png)
 
-# The Data-Sitters Club
-
 <div style="float:right; margin-left:10px;">
 <img src="https://datasittersclub.github.io/site/_static/images/dsc_book_cover.jpg" width="300px" style="float:right;" />
 </div>
