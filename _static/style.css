@@ -8,16 +8,6 @@
   .myst-top-nav {
     display: none;
   }
-  .myst-outline {
-    display: none;
-  }
-  .myst-outline-section {
-    display: none;
-  }
-  div.bd-toc,
-  #bd-toc-nav {
-    display: none;
-  }
 }
 
 
@@ -621,10 +611,6 @@ a {
 /* MyST dark mode should visually match light mode */
 html.dark {
   color-scheme: light;
-  --myst-dark-surface: rgba(255, 248, 229, 0.96);
-  --myst-dark-surface-strong: #fff2bf;
-  --myst-dark-on-surface: #18181b;
-  --myst-dark-border: rgba(109, 7, 159, 0.28);
 }
 
 html.dark body {
@@ -732,39 +718,11 @@ html.dark [class*="dark:fill-"],
   fill: currentColor !important;
 }
 
-html.dark [class*="dark:bg-"],
-[class*="dark:bg-"]:is(.dark *) {
-  background-color: var(--myst-dark-surface) !important;
-  color: var(--myst-dark-on-surface) !important;
-}
-
 html.dark [class*="dark:border-"],
 html.dark [class*="dark:hover:border-"]:hover,
 [class*="dark:border-"]:is(.dark *),
 [class*="dark:hover:border-"]:hover:is(.dark *) {
   border-color: currentColor !important;
-}
-
-html.dark .myst-admonition,
-.myst-admonition:is(.dark *) {
-  color: var(--myst-dark-on-surface) !important;
-}
-
-html.dark .myst-admonition-tip,
-.myst-admonition-tip:is(.dark *) {
-  background-color: var(--myst-dark-surface-strong) !important;
-  border: 1px solid var(--myst-dark-border) !important;
-  color: var(--myst-dark-on-surface) !important;
-}
-
-html.dark .myst-admonition-tip :is(p, li, strong, em, code, span),
-.myst-admonition-tip:is(.dark *) :is(p, li, strong, em, code, span) {
-  color: inherit !important;
-}
-
-html.dark .myst-admonition-tip :is(a, .link, .hover-link),
-.myst-admonition-tip:is(.dark *) :is(a, .link, .hover-link) {
-  color: #6d079f !important;
 }
 
 html.dark .hover-link,
