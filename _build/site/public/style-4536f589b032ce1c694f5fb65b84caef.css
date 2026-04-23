@@ -695,8 +695,3 @@ html.dark .dark\:text-blue-200,
   color: rgb(30 64 175 / 1) !important;
 }
 
-html.dark .dark\:text-slate-100,
-.dark\:text-slate-100:is(.dark *) {
-  color: inherit !important;
-}
-
