@@ -736,3 +736,56 @@ html.dark a,
 html.dark .link {
   color: #6d079f !important;
 }
+
+/* Sphinx dark mode should visually match light mode exactly */
+html[data-theme="dark"] {
+  color-scheme: light;
+  --pst-color-text-base: #000000;
+  --pst-color-text-muted: #646464;
+  --pst-color-on-background: #000000;
+  --pst-color-on-surface: #000000;
+}
+
+html[data-theme="dark"] body,
+html[data-theme="dark"] .bd-content,
+html[data-theme="dark"] .bd-content p,
+html[data-theme="dark"] .bd-content li,
+html[data-theme="dark"] .bd-content dt,
+html[data-theme="dark"] .bd-content dd,
+html[data-theme="dark"] .bd-content label,
+html[data-theme="dark"] .bd-content blockquote,
+html[data-theme="dark"] .bd-header-article,
+html[data-theme="dark"] .bd-search-container ul.search li div.context,
+html[data-theme="dark"] .bd-search-container ul.search li p.context,
+html[data-theme="dark"] .pst-color-text-base,
+html[data-theme="dark"] .pst-color-on-background,
+html[data-theme="dark"] .pst-color-on-surface {
+  color: #000000 !important;
+}
+
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5,
+html[data-theme="dark"] h6,
+html[data-theme="dark"] .caption,
+html[data-theme="dark"] .toc-entry,
+html[data-theme="dark"] .nav-link,
+html[data-theme="dark"] .reference {
+  color: #000000 !important;
+}
+
+html[data-theme="dark"] a {
+  color: #6d079f !important;
+}
+
+html[data-theme="dark"] pre,
+html[data-theme="dark"] code,
+html[data-theme="dark"] .highlight,
+html[data-theme="dark"] .bd-content .nboutput .output_area.rendered_html,
+html[data-theme="dark"] .bd-content div.cell_output .text_html,
+html[data-theme="dark"] .bd-content div.cell_output img {
+  background-color: #f9bbc6 !important;
+  color: #000000 !important;
+}
