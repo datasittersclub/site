@@ -1,7 +1,5 @@
 <img src="https://datasittersclub.github.io/site/_static/DSClogo.png" />
 
-# The Data-Sitters Club Books
-
 Check out our main series and our <a href="#mystery">multilingual mystery series</a>!
 
 Feeling lost? Check out our **[index](genindex)** of book topics, tools, mistakes, and more!

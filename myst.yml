@@ -102,4 +102,21 @@ site:
       <script>
         localStorage.setItem('myst:theme', 'light');
         document.documentElement.classList.remove('dark');
+
+        const disableHoverPopups = () => {
+          document.querySelectorAll('a.hover-link').forEach((link) => {
+            link.classList.remove('hover-link');
+            if (!link.classList.contains('link')) {
+              link.classList.add('link');
+            }
+          });
+        };
+
+        disableHoverPopups();
+        document.addEventListener('DOMContentLoaded', disableHoverPopups);
+
+        new MutationObserver(disableHoverPopups).observe(document.documentElement, {
+          childList: true,
+          subtree: true,
+        });
       </script>
