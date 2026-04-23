@@ -703,3 +703,74 @@ html.dark .dark\:text-slate-100,
   color: inherit !important;
 }
 
+/* Neutralize generated dark-only utilities so light-mode classes win */
+html.dark [class*="dark:text-"],
+html.dark [class*="dark:hover:text-"]:hover,
+html.dark [class*="hover:dark:text-"]:hover,
+[class*="dark:text-"]:is(.dark *),
+[class*="dark:hover:text-"]:hover:is(.dark *),
+[class*="hover:dark:text-"]:is(.dark *):hover {
+  color: inherit !important;
+}
+
+html.dark [class*="dark:fill-"],
+[class*="dark:fill-"]:is(.dark *) {
+  fill: currentColor !important;
+}
+
+html.dark [class*="dark:border-"],
+html.dark [class*="dark:hover:border-"]:hover,
+[class*="dark:border-"]:is(.dark *),
+[class*="dark:hover:border-"]:hover:is(.dark *) {
+  border-color: currentColor !important;
+}
+
+html.dark .hover-link,
+html.dark .link,
+.hover-link:is(.dark *),
+.link:is(.dark *) {
+  color: #6d079f !important;
+  text-decoration-color: #6d079f !important;
+}
+
+html.dark .hover-text,
+.hover-text:is(.dark *) {
+  text-decoration-color: currentColor !important;
+}
+
+html.dark .jupyter-output,
+html.dark .jupyter-error {
+  --ansi-black: #000;
+  --ansi-red: #b91c1c;
+  --ansi-green: #1d7500;
+  --ansi-yellow: #854d0e;
+  --ansi-blue: #1e40af;
+  --ansi-magenta: #86198f;
+  --ansi-cyan: #0c6ea6;
+  --ansi-white: #575757;
+}
+
+html.dark .jupyter-error {
+  background-color: rgb(254 242 242 / 1) !important;
+}
+
+html.dark .jupyter-output table tr:nth-child(odd),
+.jp-OutputArea-output table tr:nth-child(odd):is(.dark *) {
+  background-color: rgb(245 245 245 / 1) !important;
+}
+
+html.dark .jupyter-output table tr:nth-child(odd):hover > *,
+.jp-OutputArea-output table tr:nth-child(odd):hover:is(.dark *) > * {
+  background-color: rgb(224 242 254 / 1) !important;
+}
+
+html.dark .jupyter-output table tr:nth-child(even),
+.jp-OutputArea-output table tr:nth-child(2n):is(.dark *) {
+  background-color: rgb(229 229 229 / 1) !important;
+}
+
+html.dark .jupyter-output table tr:nth-child(even):hover > *,
+.jp-OutputArea-output table tr:nth-child(2n):hover:is(.dark *) > * {
+  background-color: rgb(224 242 254 / 1) !important;
+}
+
