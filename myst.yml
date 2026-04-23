@@ -92,7 +92,7 @@ project:
         - file: dhawards2019.md
 site:
   options:
-    logo: DSClogo.png
+    logo: _static/images/DSClogo.png
     favicon: _static/images/favicon.ico
     folders: true
     style: _static/style.css
