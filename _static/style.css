@@ -14,6 +14,10 @@
   .myst-outline-section {
     display: none;
   }
+  div.bd-toc,
+  #bd-toc-nav {
+    display: none;
+  }
 }
 
 
