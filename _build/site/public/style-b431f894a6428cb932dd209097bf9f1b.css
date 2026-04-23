@@ -80,19 +80,19 @@
 
 html[data-theme="light"], html[data-theme="dark"] {
   --pst-color-primary: #6d079f;
-  --pst-color-primary-text: #000000;
+  --pst-color-primary-text: #fff;
   --pst-color-primary-highlight: #4a005c;
   --sd-color-primary: var(--pst-color-primary);
   --sd-color-primary-text: var(--pst-color-primary-text);
   --sd-color-primary-highlight: var(--pst-color-primary-highlight);
   --pst-color-secondary: #de0e5e;
-  --pst-color-secondary-text: #31165c;
+  --pst-color-secondary-text: #fff;
   --pst-color-secondary-highlight: #a00944;
   --sd-color-secondary: var(--pst-color-secondary);
   --sd-color-secondary-text: var(--pst-color-secondary-text);
   --sd-color-secondary-highlight: var(--pst-color-secondary-highlight);
   --pst-color-success: #28a745;
-  --pst-color-success-text: #a9289e;
+  --pst-color-success-text: #fff;
   --pst-color-success-highlight: #19692c;
   --sd-color-success: var(--pst-color-success);
   --sd-color-success-text: var(--pst-color-success-text);
@@ -147,6 +147,8 @@ html[data-theme="light"], html[data-theme="dark"] {
   --sd-color-white-highlight: var(--pst-color-white-highlight);
 }
 
+
+}
 
 html[data-theme="dark"],
 html[data-theme="light"] {
