@@ -8,6 +8,12 @@
   .myst-top-nav {
     display: none;
   }
+  .myst-outline,
+  .myst-outline-section,
+  #bd-toc-nav,
+  #thispagenav-should-be-blue .tocsection {
+    display: none;
+  }
 }
 
 
