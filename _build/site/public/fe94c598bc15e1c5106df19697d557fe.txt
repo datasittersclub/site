@@ -1,0 +1,1211 @@
+                                                    gpt2-011_run1-c  \
+gpt2-901_run3-c                                            0.354351   
+gpt2-011_run3-c                                            0.241242   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.278128   
+gpt2-011_run4-c                                            0.180248   
+gpt2-401_run2-c                                            0.408177   
+gpt2-401_run1-c                                            0.361294   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.259532   
+gpt2-401_run3-c                                            0.313905   
+sample_004c_mary_anne_saves_the_day_2_240                  0.280657   
+gpt2-101_run3-c                                            0.229970   
+
+                                                    gpt2-011_run2-c  \
+gpt2-901_run3-c                                            0.479423   
+gpt2-011_run3-c                                            0.435037   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.420096   
+gpt2-011_run4-c                                            0.418290   
+gpt2-401_run2-c                                            0.351753   
+gpt2-401_run1-c                                            0.396288   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.418507   
+gpt2-401_run3-c                                            0.361409   
+sample_004c_mary_anne_saves_the_day_2_240                  0.379596   
+gpt2-101_run3-c                                            0.340588   
+
+                                                    gpt2-011_run3-c  \
+gpt2-901_run3-c                                            0.430473   
+gpt2-011_run3-c                                            0.000000   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.461316   
+gpt2-011_run4-c                                            0.369124   
+gpt2-401_run2-c                                            0.444581   
+gpt2-401_run1-c                                            0.517296   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.366972   
+gpt2-401_run3-c                                            0.431704   
+sample_004c_mary_anne_saves_the_day_2_240                  0.367020   
+gpt2-101_run3-c                                            0.397940   
+
+                                                    gpt2-011_run4-c  \
+gpt2-901_run3-c                                            0.402222   
+gpt2-011_run3-c                                            0.369124   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.330523   
+gpt2-011_run4-c                                            0.000000   
+gpt2-401_run2-c                                            0.513022   
+gpt2-401_run1-c                                            0.404661   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.329566   
+gpt2-401_run3-c                                            0.424944   
+sample_004c_mary_anne_saves_the_day_2_240                  0.348291   
+gpt2-101_run3-c                                            0.270305   
+
+                                                    gpt2-011_run5-c  \
+gpt2-901_run3-c                                            0.386210   
+gpt2-011_run3-c                                            0.306006   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.255868   
+gpt2-011_run4-c                                            0.298558   
+gpt2-401_run2-c                                            0.378565   
+gpt2-401_run1-c                                            0.291330   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.223750   
+gpt2-401_run3-c                                            0.292353   
+sample_004c_mary_anne_saves_the_day_2_240                  0.217697   
+gpt2-101_run3-c                                            0.346657   
+
+                                                    gpt2-101_run1-c  \
+gpt2-901_run3-c                                            0.413528   
+gpt2-011_run3-c                                            0.373274   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.400752   
+gpt2-011_run4-c                                            0.332010   
+gpt2-401_run2-c                                            0.389150   
+gpt2-401_run1-c                                            0.380028   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.323053   
+gpt2-401_run3-c                                            0.338503   
+sample_004c_mary_anne_saves_the_day_2_240                  0.324630   
+gpt2-101_run3-c                                            0.318504   
+
+                                                    gpt2-101_run2-c  \
+gpt2-901_run3-c                                            0.327145   
+gpt2-011_run3-c                                            0.391320   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.242891   
+gpt2-011_run4-c                                            0.285007   
+gpt2-401_run2-c                                            0.313298   
+gpt2-401_run1-c                                            0.289731   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.248307   
+gpt2-401_run3-c                                            0.238286   
+sample_004c_mary_anne_saves_the_day_2_240                  0.275674   
+gpt2-101_run3-c                                            0.342450   
+
+                                                    gpt2-101_run3-c  \
+gpt2-901_run3-c                                            0.445145   
+gpt2-011_run3-c                                            0.397940   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.433690   
+gpt2-011_run4-c                                            0.270305   
+gpt2-401_run2-c                                            0.516503   
+gpt2-401_run1-c                                            0.465579   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.391393   
+gpt2-401_run3-c                                            0.441192   
+sample_004c_mary_anne_saves_the_day_2_240                  0.367748   
+gpt2-101_run3-c                                            0.000000   
+
+                                                    gpt2-101_run4-c  \
+gpt2-901_run3-c                                            0.375283   
+gpt2-011_run3-c                                            0.410283   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.404258   
+gpt2-011_run4-c                                            0.423795   
+gpt2-401_run2-c                                            0.287290   
+gpt2-401_run1-c                                            0.397757   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.374117   
+gpt2-401_run3-c                                            0.321275   
+sample_004c_mary_anne_saves_the_day_2_240                  0.333305   
+gpt2-101_run3-c                                            0.360718   
+
+                                                    gpt2-101_run5-c  \
+gpt2-901_run3-c                                            0.395328   
+gpt2-011_run3-c                                            0.406094   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.403925   
+gpt2-011_run4-c                                            0.335504   
+gpt2-401_run2-c                                            0.342628   
+gpt2-401_run1-c                                            0.353212   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.323612   
+gpt2-401_run3-c                                            0.346150   
+sample_004c_mary_anne_saves_the_day_2_240                  0.356710   
+gpt2-101_run3-c                                            0.256626   
+
+                                                    gpt2-201_run1-c  \
+gpt2-901_run3-c                                            0.374843   
+gpt2-011_run3-c                                            0.350788   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.335168   
+gpt2-011_run4-c                                            0.289017   
+gpt2-401_run2-c                                            0.406872   
+gpt2-401_run1-c                                            0.350377   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.290284   
+gpt2-401_run3-c                                            0.330012   
+sample_004c_mary_anne_saves_the_day_2_240                  0.288904   
+gpt2-101_run3-c                                            0.197803   
+
+                                                    gpt2-201_run2-c  \
+gpt2-901_run3-c                                            0.491080   
+gpt2-011_run3-c                                            0.460159   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.510741   
+gpt2-011_run4-c                                            0.438918   
+gpt2-401_run2-c                                            0.414251   
+gpt2-401_run1-c                                            0.487885   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.487692   
+gpt2-401_run3-c                                            0.448002   
+sample_004c_mary_anne_saves_the_day_2_240                  0.452188   
+gpt2-101_run3-c                                            0.361896   
+
+                                                    gpt2-201_run3-c  \
+gpt2-901_run3-c                                            0.356954   
+gpt2-011_run3-c                                            0.415590   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.328501   
+gpt2-011_run4-c                                            0.355384   
+gpt2-401_run2-c                                            0.282208   
+gpt2-401_run1-c                                            0.253615   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.271450   
+gpt2-401_run3-c                                            0.271312   
+sample_004c_mary_anne_saves_the_day_2_240                  0.303951   
+gpt2-101_run3-c                                            0.341759   
+
+                                                    gpt2-201_run4-c  \
+gpt2-901_run3-c                                            0.401965   
+gpt2-011_run3-c                                            0.319761   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.353694   
+gpt2-011_run4-c                                            0.241928   
+gpt2-401_run2-c                                            0.428140   
+gpt2-401_run1-c                                            0.361106   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.282498   
+gpt2-401_run3-c                                            0.313230   
+sample_004c_mary_anne_saves_the_day_2_240                  0.313905   
+gpt2-101_run3-c                                            0.155757   
+
+                                                    gpt2-201_run5-c  \
+gpt2-901_run3-c                                            0.407790   
+gpt2-011_run3-c                                            0.347909   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.411564   
+gpt2-011_run4-c                                            0.311886   
+gpt2-401_run2-c                                            0.347278   
+gpt2-401_run1-c                                            0.420651   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.357542   
+gpt2-401_run3-c                                            0.382751   
+sample_004c_mary_anne_saves_the_day_2_240                  0.341205   
+gpt2-101_run3-c                                            0.220106   
+
+                                                    gpt2-301_run1-c  \
+gpt2-901_run3-c                                            0.366560   
+gpt2-011_run3-c                                            0.367770   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.383912   
+gpt2-011_run4-c                                            0.409310   
+gpt2-401_run2-c                                            0.268605   
+gpt2-401_run1-c                                            0.388628   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.360828   
+gpt2-401_run3-c                                            0.314475   
+sample_004c_mary_anne_saves_the_day_2_240                  0.301950   
+gpt2-101_run3-c                                            0.383288   
+
+                                                    gpt2-301_run2-c  \
+gpt2-901_run3-c                                            0.365038   
+gpt2-011_run3-c                                            0.392230   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.330360   
+gpt2-011_run4-c                                            0.337901   
+gpt2-401_run2-c                                            0.328349   
+gpt2-401_run1-c                                            0.288421   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.252775   
+gpt2-401_run3-c                                            0.280938   
+sample_004c_mary_anne_saves_the_day_2_240                  0.285456   
+gpt2-101_run3-c                                            0.248698   
+
+                                                    gpt2-301_run3-c  \
+gpt2-901_run3-c                                            0.386410   
+gpt2-011_run3-c                                            0.359861   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.377085   
+gpt2-011_run4-c                                            0.270426   
+gpt2-401_run2-c                                            0.391049   
+gpt2-401_run1-c                                            0.374298   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.342194   
+gpt2-401_run3-c                                            0.354211   
+sample_004c_mary_anne_saves_the_day_2_240                  0.314631   
+gpt2-101_run3-c                                            0.162878   
+
+                                                    gpt2-301_run4-c  \
+gpt2-901_run3-c                                            0.390072   
+gpt2-011_run3-c                                            0.410740   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.344922   
+gpt2-011_run4-c                                            0.275673   
+gpt2-401_run2-c                                            0.359596   
+gpt2-401_run1-c                                            0.313223   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.290923   
+gpt2-401_run3-c                                            0.329157   
+sample_004c_mary_anne_saves_the_day_2_240                  0.286870   
+gpt2-101_run3-c                                            0.202681   
+
+                                                    gpt2-301_run5-c  \
+gpt2-901_run3-c                                            0.388131   
+gpt2-011_run3-c                                            0.311930   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.332735   
+gpt2-011_run4-c                                            0.277383   
+gpt2-401_run2-c                                            0.368981   
+gpt2-401_run1-c                                            0.363635   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.341485   
+gpt2-401_run3-c                                            0.352252   
+sample_004c_mary_anne_saves_the_day_2_240                  0.276893   
+gpt2-101_run3-c                                            0.212709   
+
+                                                    gpt2-401_run1-c  \
+gpt2-901_run3-c                                            0.414374   
+gpt2-011_run3-c                                            0.517296   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.299000   
+gpt2-011_run4-c                                            0.404661   
+gpt2-401_run2-c                                            0.375920   
+gpt2-401_run1-c                                            0.000000   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.265152   
+gpt2-401_run3-c                                            0.320525   
+sample_004c_mary_anne_saves_the_day_2_240                  0.281618   
+gpt2-101_run3-c                                            0.465579   
+
+                                                    gpt2-401_run2-c  \
+gpt2-901_run3-c                                            0.353900   
+gpt2-011_run3-c                                            0.444581   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.445632   
+gpt2-011_run4-c                                            0.513022   
+gpt2-401_run2-c                                            0.000000   
+gpt2-401_run1-c                                            0.375920   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.399764   
+gpt2-401_run3-c                                            0.347893   
+sample_004c_mary_anne_saves_the_day_2_240                  0.330729   
+gpt2-101_run3-c                                            0.516503   
+
+                                                    gpt2-401_run3-c  \
+gpt2-901_run3-c                                            0.400433   
+gpt2-011_run3-c                                            0.431704   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.353823   
+gpt2-011_run4-c                                            0.424944   
+gpt2-401_run2-c                                            0.347893   
+gpt2-401_run1-c                                            0.320525   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.290226   
+gpt2-401_run3-c                                            0.000000   
+sample_004c_mary_anne_saves_the_day_2_240                  0.313532   
+gpt2-101_run3-c                                            0.441192   
+
+                                                    gpt2-401_run4-c  \
+gpt2-901_run3-c                                            0.365026   
+gpt2-011_run3-c                                            0.385914   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.346055   
+gpt2-011_run4-c                                            0.355208   
+gpt2-401_run2-c                                            0.295465   
+gpt2-401_run1-c                                            0.302873   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.296619   
+gpt2-401_run3-c                                            0.289617   
+sample_004c_mary_anne_saves_the_day_2_240                  0.229984   
+gpt2-101_run3-c                                            0.276715   
+
+                                                    gpt2-401_run5-c  \
+gpt2-901_run3-c                                            0.476713   
+gpt2-011_run3-c                                            0.447239   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.373485   
+gpt2-011_run4-c                                            0.397336   
+gpt2-401_run2-c                                            0.366282   
+gpt2-401_run1-c                                            0.378795   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.366065   
+gpt2-401_run3-c                                            0.331857   
+sample_004c_mary_anne_saves_the_day_2_240                  0.365503   
+gpt2-101_run3-c                                            0.357577   
+
+                                                    gpt2-501_run1-c  \
+gpt2-901_run3-c                                            0.468625   
+gpt2-011_run3-c                                            0.402770   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.441768   
+gpt2-011_run4-c                                            0.401089   
+gpt2-401_run2-c                                            0.333171   
+gpt2-401_run1-c                                            0.422735   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.396230   
+gpt2-401_run3-c                                            0.354212   
+sample_004c_mary_anne_saves_the_day_2_240                  0.396445   
+gpt2-101_run3-c                                            0.403887   
+
+                                                    gpt2-501_run2-c  \
+gpt2-901_run3-c                                            0.462317   
+gpt2-011_run3-c                                            0.413343   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.411205   
+gpt2-011_run4-c                                            0.395135   
+gpt2-401_run2-c                                            0.335591   
+gpt2-401_run1-c                                            0.353968   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.355810   
+gpt2-401_run3-c                                            0.309507   
+sample_004c_mary_anne_saves_the_day_2_240                  0.360888   
+gpt2-101_run3-c                                            0.345686   
+
+                                                    gpt2-501_run3-c  \
+gpt2-901_run3-c                                            0.432906   
+gpt2-011_run3-c                                            0.397082   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.405411   
+gpt2-011_run4-c                                            0.344306   
+gpt2-401_run2-c                                            0.357926   
+gpt2-401_run1-c                                            0.378541   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.389845   
+gpt2-401_run3-c                                            0.364340   
+sample_004c_mary_anne_saves_the_day_2_240                  0.307319   
+gpt2-101_run3-c                                            0.251113   
+
+                                                    gpt2-501_run4-c  \
+gpt2-901_run3-c                                            0.493388   
+gpt2-011_run3-c                                            0.471245   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.407092   
+gpt2-011_run4-c                                            0.414301   
+gpt2-401_run2-c                                            0.372740   
+gpt2-401_run1-c                                            0.375449   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.417195   
+gpt2-401_run3-c                                            0.381046   
+sample_004c_mary_anne_saves_the_day_2_240                  0.374651   
+gpt2-101_run3-c                                            0.385829   
+
+                                                    gpt2-501_run5-c  \
+gpt2-901_run3-c                                            0.371186   
+gpt2-011_run3-c                                            0.451096   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.300621   
+gpt2-011_run4-c                                            0.338588   
+gpt2-401_run2-c                                            0.312630   
+gpt2-401_run1-c                                            0.225285   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.269021   
+gpt2-401_run3-c                                            0.274372   
+sample_004c_mary_anne_saves_the_day_2_240                  0.272818   
+gpt2-101_run3-c                                            0.321016   
+
+                                                    gpt2-601_run1-c  \
+gpt2-901_run3-c                                            0.445305   
+gpt2-011_run3-c                                            0.414384   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.433258   
+gpt2-011_run4-c                                            0.312879   
+gpt2-401_run2-c                                            0.403619   
+gpt2-401_run1-c                                            0.441626   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.383780   
+gpt2-401_run3-c                                            0.406324   
+sample_004c_mary_anne_saves_the_day_2_240                  0.366643   
+gpt2-101_run3-c                                            0.187049   
+
+                                                    gpt2-601_run2-c  \
+gpt2-901_run3-c                                            0.517321   
+gpt2-011_run3-c                                            0.536094   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.452552   
+gpt2-011_run4-c                                            0.462990   
+gpt2-401_run2-c                                            0.361347   
+gpt2-401_run1-c                                            0.401916   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.455855   
+gpt2-401_run3-c                                            0.347890   
+sample_004c_mary_anne_saves_the_day_2_240                  0.404759   
+gpt2-101_run3-c                                            0.401512   
+
+                                                    gpt2-601_run3-c  \
+gpt2-901_run3-c                                            0.499938   
+gpt2-011_run3-c                                            0.504359   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.504097   
+gpt2-011_run4-c                                            0.543097   
+gpt2-401_run2-c                                            0.306026   
+gpt2-401_run1-c                                            0.413279   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.463396   
+gpt2-401_run3-c                                            0.361700   
+sample_004c_mary_anne_saves_the_day_2_240                  0.387409   
+gpt2-101_run3-c                                            0.474110   
+
+                                                    gpt2-601_run4-c  \
+gpt2-901_run3-c                                            0.352470   
+gpt2-011_run3-c                                            0.372683   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.347431   
+gpt2-011_run4-c                                            0.297137   
+gpt2-401_run2-c                                            0.317911   
+gpt2-401_run1-c                                            0.343792   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.295462   
+gpt2-401_run3-c                                            0.308881   
+sample_004c_mary_anne_saves_the_day_2_240                  0.280403   
+gpt2-101_run3-c                                            0.254031   
+
+                                                    gpt2-601_run5-c  \
+gpt2-901_run3-c                                            0.452177   
+gpt2-011_run3-c                                            0.422593   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.430198   
+gpt2-011_run4-c                                            0.389331   
+gpt2-401_run2-c                                            0.333059   
+gpt2-401_run1-c                                            0.394216   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.397664   
+gpt2-401_run3-c                                            0.336848   
+sample_004c_mary_anne_saves_the_day_2_240                  0.374819   
+gpt2-101_run3-c                                            0.344329   
+
+                                                    gpt2-701_run1-c  \
+gpt2-901_run3-c                                            0.381138   
+gpt2-011_run3-c                                            0.418052   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.392596   
+gpt2-011_run4-c                                            0.331855   
+gpt2-401_run2-c                                            0.408560   
+gpt2-401_run1-c                                            0.293794   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.242387   
+gpt2-401_run3-c                                            0.300116   
+sample_004c_mary_anne_saves_the_day_2_240                  0.315722   
+gpt2-101_run3-c                                            0.299427   
+
+                                                    gpt2-701_run2-c  \
+gpt2-901_run3-c                                            0.355674   
+gpt2-011_run3-c                                            0.344757   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.366385   
+gpt2-011_run4-c                                            0.276099   
+gpt2-401_run2-c                                            0.378604   
+gpt2-401_run1-c                                            0.324453   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.241974   
+gpt2-401_run3-c                                            0.290522   
+sample_004c_mary_anne_saves_the_day_2_240                  0.297275   
+gpt2-101_run3-c                                            0.269754   
+
+                                                    gpt2-701_run3-c  \
+gpt2-901_run3-c                                            0.333938   
+gpt2-011_run3-c                                            0.333525   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.379987   
+gpt2-011_run4-c                                            0.328041   
+gpt2-401_run2-c                                            0.356014   
+gpt2-401_run1-c                                            0.378446   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.331440   
+gpt2-401_run3-c                                            0.367773   
+sample_004c_mary_anne_saves_the_day_2_240                  0.259706   
+gpt2-101_run3-c                                            0.207221   
+
+                                                    gpt2-701_run4-c  \
+gpt2-901_run3-c                                            0.386207   
+gpt2-011_run3-c                                            0.376386   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.330415   
+gpt2-011_run4-c                                            0.326229   
+gpt2-401_run2-c                                            0.351113   
+gpt2-401_run1-c                                            0.340491   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.275699   
+gpt2-401_run3-c                                            0.262236   
+sample_004c_mary_anne_saves_the_day_2_240                  0.257581   
+gpt2-101_run3-c                                            0.343292   
+
+                                                    gpt2-701_run5-c  \
+gpt2-901_run3-c                                            0.407188   
+gpt2-011_run3-c                                            0.423251   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.376923   
+gpt2-011_run4-c                                            0.335980   
+gpt2-401_run2-c                                            0.387039   
+gpt2-401_run1-c                                            0.338458   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.310468   
+gpt2-401_run3-c                                            0.317765   
+sample_004c_mary_anne_saves_the_day_2_240                  0.309407   
+gpt2-101_run3-c                                            0.285361   
+
+                                                    gpt2-801_run1-c  \
+gpt2-901_run3-c                                            0.420979   
+gpt2-011_run3-c                                            0.426888   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.378315   
+gpt2-011_run4-c                                            0.336779   
+gpt2-401_run2-c                                            0.363720   
+gpt2-401_run1-c                                            0.332344   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.315117   
+gpt2-401_run3-c                                            0.324769   
+sample_004c_mary_anne_saves_the_day_2_240                  0.305001   
+gpt2-101_run3-c                                            0.279941   
+
+                                                    gpt2-801_run2-c  \
+gpt2-901_run3-c                                            0.449663   
+gpt2-011_run3-c                                            0.457171   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.384730   
+gpt2-011_run4-c                                            0.320772   
+gpt2-401_run2-c                                            0.376440   
+gpt2-401_run1-c                                            0.333129   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.310879   
+gpt2-401_run3-c                                            0.294283   
+sample_004c_mary_anne_saves_the_day_2_240                  0.357331   
+gpt2-101_run3-c                                            0.271524   
+
+                                                    gpt2-801_run3-c  \
+gpt2-901_run3-c                                            0.402270   
+gpt2-011_run3-c                                            0.345132   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.417195   
+gpt2-011_run4-c                                            0.275723   
+gpt2-401_run2-c                                            0.434311   
+gpt2-401_run1-c                                            0.442490   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.364468   
+gpt2-401_run3-c                                            0.406116   
+sample_004c_mary_anne_saves_the_day_2_240                  0.317786   
+gpt2-101_run3-c                                            0.189990   
+
+                                                    gpt2-801_run4-c  \
+gpt2-901_run3-c                                            0.497899   
+gpt2-011_run3-c                                            0.464251   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.429252   
+gpt2-011_run4-c                                            0.403829   
+gpt2-401_run2-c                                            0.349646   
+gpt2-401_run1-c                                            0.403772   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.396068   
+gpt2-401_run3-c                                            0.357754   
+sample_004c_mary_anne_saves_the_day_2_240                  0.360551   
+gpt2-101_run3-c                                            0.364647   
+
+                                                    gpt2-801_run5-c  \
+gpt2-901_run3-c                                            0.429266   
+gpt2-011_run3-c                                            0.419932   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.400739   
+gpt2-011_run4-c                                            0.315979   
+gpt2-401_run2-c                                            0.367109   
+gpt2-401_run1-c                                            0.348605   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.348232   
+gpt2-401_run3-c                                            0.328787   
+sample_004c_mary_anne_saves_the_day_2_240                  0.324444   
+gpt2-101_run3-c                                            0.268270   
+
+                                                    gpt2-901_run1-c  \
+gpt2-901_run3-c                                            0.333436   
+gpt2-011_run3-c                                            0.364835   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.324460   
+gpt2-011_run4-c                                            0.286606   
+gpt2-401_run2-c                                            0.318627   
+gpt2-401_run1-c                                            0.283022   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.232059   
+gpt2-401_run3-c                                            0.254298   
+sample_004c_mary_anne_saves_the_day_2_240                  0.288206   
+gpt2-101_run3-c                                            0.293015   
+
+                                                    gpt2-901_run2-c  \
+gpt2-901_run3-c                                            0.407318   
+gpt2-011_run3-c                                            0.402296   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.301268   
+gpt2-011_run4-c                                            0.330455   
+gpt2-401_run2-c                                            0.344174   
+gpt2-401_run1-c                                            0.230402   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.242713   
+gpt2-401_run3-c                                            0.293242   
+sample_004c_mary_anne_saves_the_day_2_240                  0.260296   
+gpt2-101_run3-c                                            0.349461   
+
+                                                    gpt2-901_run3-c  \
+gpt2-901_run3-c                                            0.000000   
+gpt2-011_run3-c                                            0.430473   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.447857   
+gpt2-011_run4-c                                            0.402222   
+gpt2-401_run2-c                                            0.353900   
+gpt2-401_run1-c                                            0.414374   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.362717   
+gpt2-401_run3-c                                            0.400433   
+sample_004c_mary_anne_saves_the_day_2_240                  0.320637   
+gpt2-101_run3-c                                            0.445145   
+
+                                                    gpt2-901_run4-c  \
+gpt2-901_run3-c                                            0.359791   
+gpt2-011_run3-c                                            0.417648   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.405182   
+gpt2-011_run4-c                                            0.374005   
+gpt2-401_run2-c                                            0.313634   
+gpt2-401_run1-c                                            0.350096   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.313639   
+gpt2-401_run3-c                                            0.276117   
+sample_004c_mary_anne_saves_the_day_2_240                  0.289165   
+gpt2-101_run3-c                                            0.345519   
+
+                                                    gpt2-901_run5-c  \
+gpt2-901_run3-c                                            0.368614   
+gpt2-011_run3-c                                            0.342530   
+sample_m36c_kristy_and_the_cat_burglar_2_748               0.313934   
+gpt2-011_run4-c                                            0.302824   
+gpt2-401_run2-c                                            0.329483   
+gpt2-401_run1-c                                            0.298944   
+sample_m25c_kristy_and_the_middle_school_vandal...         0.270179   
+gpt2-401_run3-c                                            0.271864   
+sample_004c_mary_anne_saves_the_day_2_240                  0.235000   
+gpt2-101_run3-c                                            0.241440   
+
+                                                    sample_004c_mary_anne_saves_the_day_2_240  \
+gpt2-901_run3-c                                                                      0.320637   
+gpt2-011_run3-c                                                                      0.367020   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                         0.302063   
+gpt2-011_run4-c                                                                      0.348291   
+gpt2-401_run2-c                                                                      0.330729   
+gpt2-401_run1-c                                                                      0.281618   
+sample_m25c_kristy_and_the_middle_school_vandal...                                   0.220285   
+gpt2-401_run3-c                                                                      0.313532   
+sample_004c_mary_anne_saves_the_day_2_240                                            0.000000   
+gpt2-101_run3-c                                                                      0.367748   
+
+                                                    sample_005c_dawn_and_the_impossible_three_2_216  \
+gpt2-901_run3-c                                                                            0.388717   
+gpt2-011_run3-c                                                                            0.443260   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                               0.418210   
+gpt2-011_run4-c                                                                            0.474338   
+gpt2-401_run2-c                                                                            0.299858   
+gpt2-401_run1-c                                                                            0.323173   
+sample_m25c_kristy_and_the_middle_school_vandal...                                         0.375579   
+gpt2-401_run3-c                                                                            0.367350   
+sample_004c_mary_anne_saves_the_day_2_240                                                  0.268499   
+gpt2-101_run3-c                                                                            0.418557   
+
+                                                    sample_005c_dawn_and_the_impossible_three_2_432  \
+gpt2-901_run3-c                                                                            0.340356   
+gpt2-011_run3-c                                                                            0.401664   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                               0.418201   
+gpt2-011_run4-c                                                                            0.436451   
+gpt2-401_run2-c                                                                            0.287269   
+gpt2-401_run1-c                                                                            0.338206   
+sample_m25c_kristy_and_the_middle_school_vandal...                                         0.334223   
+gpt2-401_run3-c                                                                            0.341737   
+sample_004c_mary_anne_saves_the_day_2_240                                                  0.255810   
+gpt2-101_run3-c                                                                            0.365369   
+
+                                                    sample_006c_kristys_big_day_2_321  \
+gpt2-901_run3-c                                                              0.355542   
+gpt2-011_run3-c                                                              0.328233   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                 0.305022   
+gpt2-011_run4-c                                                              0.279635   
+gpt2-401_run2-c                                                              0.349204   
+gpt2-401_run1-c                                                              0.294265   
+sample_m25c_kristy_and_the_middle_school_vandal...                           0.240819   
+gpt2-401_run3-c                                                              0.286745   
+sample_004c_mary_anne_saves_the_day_2_240                                    0.270275   
+gpt2-101_run3-c                                                              0.307801   
+
+                                                    sample_006c_kristys_big_day_2_850  \
+gpt2-901_run3-c                                                              0.407465   
+gpt2-011_run3-c                                                              0.386187   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                 0.302368   
+gpt2-011_run4-c                                                              0.337177   
+gpt2-401_run2-c                                                              0.370228   
+gpt2-401_run1-c                                                              0.305352   
+sample_m25c_kristy_and_the_middle_school_vandal...                           0.294715   
+gpt2-401_run3-c                                                              0.287630   
+sample_004c_mary_anne_saves_the_day_2_240                                    0.285165   
+gpt2-101_run3-c                                                              0.326482   
+
+                                                    sample_013c_goodbye_stacey_goodbye_2_537  \
+gpt2-901_run3-c                                                                     0.309542   
+gpt2-011_run3-c                                                                     0.356832   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                        0.321225   
+gpt2-011_run4-c                                                                     0.313504   
+gpt2-401_run2-c                                                                     0.378303   
+gpt2-401_run1-c                                                                     0.304341   
+sample_m25c_kristy_and_the_middle_school_vandal...                                  0.213513   
+gpt2-401_run3-c                                                                     0.261385   
+sample_004c_mary_anne_saves_the_day_2_240                                           0.171074   
+gpt2-101_run3-c                                                                     0.286892   
+
+                                                    sample_014c_hello_mallory_2_239  \
+gpt2-901_run3-c                                                            0.450396   
+gpt2-011_run3-c                                                            0.453871   
+sample_m36c_kristy_and_the_cat_burglar_2_748                               0.352009   
+gpt2-011_run4-c                                                            0.381964   
+gpt2-401_run2-c                                                            0.363952   
+gpt2-401_run1-c                                                            0.281060   
+sample_m25c_kristy_and_the_middle_school_vandal...                         0.256585   
+gpt2-401_run3-c                                                            0.264891   
+sample_004c_mary_anne_saves_the_day_2_240                                  0.294211   
+gpt2-101_run3-c                                                            0.352152   
+
+                                                    sample_024c_kristy_and_the_mothers_day_surprise_2_106  \
+gpt2-901_run3-c                                                                              0.390565       
+gpt2-011_run3-c                                                                              0.410883       
+sample_m36c_kristy_and_the_cat_burglar_2_748                                                 0.383739       
+gpt2-011_run4-c                                                                              0.291071       
+gpt2-401_run2-c                                                                              0.419218       
+gpt2-401_run1-c                                                                              0.363035       
+sample_m25c_kristy_and_the_middle_school_vandal...                                           0.363954       
+gpt2-401_run3-c                                                                              0.372777       
+sample_004c_mary_anne_saves_the_day_2_240                                                    0.277260       
+gpt2-101_run3-c                                                                              0.157034       
+
+                                                    sample_025c_mary_anne_and_the_search_for_tigger_2_118  \
+gpt2-901_run3-c                                                                              0.416700       
+gpt2-011_run3-c                                                                              0.425135       
+sample_m36c_kristy_and_the_cat_burglar_2_748                                                 0.394764       
+gpt2-011_run4-c                                                                              0.328492       
+gpt2-401_run2-c                                                                              0.360603       
+gpt2-401_run1-c                                                                              0.361186       
+sample_m25c_kristy_and_the_middle_school_vandal...                                           0.351048       
+gpt2-401_run3-c                                                                              0.332242       
+sample_004c_mary_anne_saves_the_day_2_240                                                    0.308166       
+gpt2-101_run3-c                                                                              0.241942       
+
+                                                    sample_027c_jessi_and_the_superbrat_2_159  \
+gpt2-901_run3-c                                                                      0.494146   
+gpt2-011_run3-c                                                                      0.483243   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                         0.456547   
+gpt2-011_run4-c                                                                      0.437427   
+gpt2-401_run2-c                                                                      0.349265   
+gpt2-401_run1-c                                                                      0.411781   
+sample_m25c_kristy_and_the_middle_school_vandal...                                   0.439752   
+gpt2-401_run3-c                                                                      0.367884   
+sample_004c_mary_anne_saves_the_day_2_240                                            0.384755   
+gpt2-101_run3-c                                                                      0.354648   
+
+                                                    sample_028c_welcome_back_stacey_2_679  \
+gpt2-901_run3-c                                                                  0.404447   
+gpt2-011_run3-c                                                                  0.437123   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                     0.321243   
+gpt2-011_run4-c                                                                  0.344655   
+gpt2-401_run2-c                                                                  0.361210   
+gpt2-401_run1-c                                                                  0.272931   
+sample_m25c_kristy_and_the_middle_school_vandal...                               0.242848   
+gpt2-401_run3-c                                                                  0.255728   
+sample_004c_mary_anne_saves_the_day_2_240                                        0.239645   
+gpt2-101_run3-c                                                                  0.336158   
+
+                                                    sample_030c_mary_anne_and_the_great_romance_2_570  \
+gpt2-901_run3-c                                                                              0.457868   
+gpt2-011_run3-c                                                                              0.414145   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                                 0.377648   
+gpt2-011_run4-c                                                                              0.403461   
+gpt2-401_run2-c                                                                              0.341159   
+gpt2-401_run1-c                                                                              0.322863   
+sample_m25c_kristy_and_the_middle_school_vandal...                                           0.319382   
+gpt2-401_run3-c                                                                              0.277551   
+sample_004c_mary_anne_saves_the_day_2_240                                                    0.298510   
+gpt2-101_run3-c                                                                              0.359923   
+
+                                                    sample_032c_kristy_and_the_secret_of_susan_2_1152  \
+gpt2-901_run3-c                                                                              0.478581   
+gpt2-011_run3-c                                                                              0.467484   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                                 0.450983   
+gpt2-011_run4-c                                                                              0.412577   
+gpt2-401_run2-c                                                                              0.320219   
+gpt2-401_run1-c                                                                              0.409687   
+sample_m25c_kristy_and_the_middle_school_vandal...                                           0.422433   
+gpt2-401_run3-c                                                                              0.371599   
+sample_004c_mary_anne_saves_the_day_2_240                                                    0.411198   
+gpt2-101_run3-c                                                                              0.411734   
+
+                                                    sample_041c_mary_anne_vs_logan_2_1765  \
+gpt2-901_run3-c                                                                  0.466786   
+gpt2-011_run3-c                                                                  0.414751   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                     0.417879   
+gpt2-011_run4-c                                                                  0.403293   
+gpt2-401_run2-c                                                                  0.329584   
+gpt2-401_run1-c                                                                  0.435640   
+sample_m25c_kristy_and_the_middle_school_vandal...                               0.406587   
+gpt2-401_run3-c                                                                  0.359981   
+sample_004c_mary_anne_saves_the_day_2_240                                        0.381277   
+gpt2-101_run3-c                                                                  0.368467   
+
+                                                    sample_045c_kristy_and_the_baby_parade_2_767  \
+gpt2-901_run3-c                                                                         0.513154   
+gpt2-011_run3-c                                                                         0.488166   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                            0.494749   
+gpt2-011_run4-c                                                                         0.496665   
+gpt2-401_run2-c                                                                         0.316945   
+gpt2-401_run1-c                                                                         0.474229   
+sample_m25c_kristy_and_the_middle_school_vandal...                                      0.474364   
+gpt2-401_run3-c                                                                         0.408221   
+sample_004c_mary_anne_saves_the_day_2_240                                               0.433020   
+gpt2-101_run3-c                                                                         0.464952   
+
+                                                    sample_046c_mary_anne_misses_logan_2_488  \
+gpt2-901_run3-c                                                                     0.472160   
+gpt2-011_run3-c                                                                     0.432448   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                        0.368391   
+gpt2-011_run4-c                                                                     0.389362   
+gpt2-401_run2-c                                                                     0.404073   
+gpt2-401_run1-c                                                                     0.358694   
+sample_m25c_kristy_and_the_middle_school_vandal...                                  0.377601   
+gpt2-401_run3-c                                                                     0.356767   
+sample_004c_mary_anne_saves_the_day_2_240                                           0.290027   
+gpt2-101_run3-c                                                                     0.393022   
+
+                                                    sample_048c_jessis_wish_2_68  \
+gpt2-901_run3-c                                                         0.468722   
+gpt2-011_run3-c                                                         0.410559   
+sample_m36c_kristy_and_the_cat_burglar_2_748                            0.442421   
+gpt2-011_run4-c                                                         0.398056   
+gpt2-401_run2-c                                                         0.382756   
+gpt2-401_run1-c                                                         0.428874   
+sample_m25c_kristy_and_the_middle_school_vandal...                      0.411754   
+gpt2-401_run3-c                                                         0.383261   
+sample_004c_mary_anne_saves_the_day_2_240                               0.346295   
+gpt2-101_run3-c                                                         0.357328   
+
+                                                    sample_049c_claudia_and_the_genius_of_elm_street_2_105  \
+gpt2-901_run3-c                                                                              0.415303        
+gpt2-011_run3-c                                                                              0.404964        
+sample_m36c_kristy_and_the_cat_burglar_2_748                                                 0.391543        
+gpt2-011_run4-c                                                                              0.393639        
+gpt2-401_run2-c                                                                              0.307496        
+gpt2-401_run1-c                                                                              0.325291        
+sample_m25c_kristy_and_the_middle_school_vandal...                                           0.316282        
+gpt2-401_run3-c                                                                              0.296968        
+sample_004c_mary_anne_saves_the_day_2_240                                                    0.295780        
+gpt2-101_run3-c                                                                              0.362650        
+
+                                                    sample_051c_staceys_ex_best_friend_2_1270  \
+gpt2-901_run3-c                                                                      0.458658   
+gpt2-011_run3-c                                                                      0.451504   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                         0.448704   
+gpt2-011_run4-c                                                                      0.402905   
+gpt2-401_run2-c                                                                      0.342141   
+gpt2-401_run1-c                                                                      0.412101   
+sample_m25c_kristy_and_the_middle_school_vandal...                                   0.408155   
+gpt2-401_run3-c                                                                      0.349420   
+sample_004c_mary_anne_saves_the_day_2_240                                            0.335869   
+gpt2-101_run3-c                                                                      0.315430   
+
+                                                    sample_057c_dawn_saves_the_planet_2_522  \
+gpt2-901_run3-c                                                                    0.385871   
+gpt2-011_run3-c                                                                    0.337515   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                       0.341678   
+gpt2-011_run4-c                                                                    0.261155   
+gpt2-401_run2-c                                                                    0.401561   
+gpt2-401_run1-c                                                                    0.331250   
+sample_m25c_kristy_and_the_middle_school_vandal...                                 0.299590   
+gpt2-401_run3-c                                                                    0.333217   
+sample_004c_mary_anne_saves_the_day_2_240                                          0.290874   
+gpt2-101_run3-c                                                                    0.190369   
+
+                                                    sample_064c_dawns_family_feud_2_305  \
+gpt2-901_run3-c                                                                0.395865   
+gpt2-011_run3-c                                                                0.421705   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                   0.369016   
+gpt2-011_run4-c                                                                0.378320   
+gpt2-401_run2-c                                                                0.317338   
+gpt2-401_run1-c                                                                0.335717   
+sample_m25c_kristy_and_the_middle_school_vandal...                             0.315198   
+gpt2-401_run3-c                                                                0.245321   
+sample_004c_mary_anne_saves_the_day_2_240                                      0.316014   
+gpt2-101_run3-c                                                                0.350071   
+
+                                                    sample_065c_staceys_big_crush_2_1311  \
+gpt2-901_run3-c                                                                 0.371222   
+gpt2-011_run3-c                                                                 0.386931   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                    0.328372   
+gpt2-011_run4-c                                                                 0.294068   
+gpt2-401_run2-c                                                                 0.376657   
+gpt2-401_run1-c                                                                 0.303136   
+sample_m25c_kristy_and_the_middle_school_vandal...                              0.285910   
+gpt2-401_run3-c                                                                 0.304278   
+sample_004c_mary_anne_saves_the_day_2_240                                       0.276514   
+gpt2-101_run3-c                                                                 0.231876   
+
+                                                    sample_068c_jessi_and_the_bad_babysitter_2_89  \
+gpt2-901_run3-c                                                                          0.461608   
+gpt2-011_run3-c                                                                          0.452270   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                             0.428598   
+gpt2-011_run4-c                                                                          0.414790   
+gpt2-401_run2-c                                                                          0.364330   
+gpt2-401_run1-c                                                                          0.370416   
+sample_m25c_kristy_and_the_middle_school_vandal...                                       0.400917   
+gpt2-401_run3-c                                                                          0.341122   
+sample_004c_mary_anne_saves_the_day_2_240                                                0.365416   
+gpt2-101_run3-c                                                                          0.314473   
+
+                                                    sample_070c_stacey_and_the_cheerleaders_2_1293  \
+gpt2-901_run3-c                                                                           0.398984   
+gpt2-011_run3-c                                                                           0.468152   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                              0.420857   
+gpt2-011_run4-c                                                                           0.378447   
+gpt2-401_run2-c                                                                           0.350811   
+gpt2-401_run1-c                                                                           0.388990   
+sample_m25c_kristy_and_the_middle_school_vandal...                                        0.400917   
+gpt2-401_run3-c                                                                           0.342293   
+sample_004c_mary_anne_saves_the_day_2_240                                                 0.371944   
+gpt2-101_run3-c                                                                           0.330916   
+
+                                                    sample_078c_claudia_and_crazy_peaches_2_36  \
+gpt2-901_run3-c                                                                       0.430699   
+gpt2-011_run3-c                                                                       0.394287   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                          0.394055   
+gpt2-011_run4-c                                                                       0.393294   
+gpt2-401_run2-c                                                                       0.332063   
+gpt2-401_run1-c                                                                       0.336304   
+sample_m25c_kristy_and_the_middle_school_vandal...                                    0.336081   
+gpt2-401_run3-c                                                                       0.329131   
+sample_004c_mary_anne_saves_the_day_2_240                                             0.296114   
+gpt2-101_run3-c                                                                       0.343577   
+
+                                                    sample_079c_mary_anne_breaks_the_rules_2_782  \
+gpt2-901_run3-c                                                                         0.406419   
+gpt2-011_run3-c                                                                         0.385925   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                            0.397926   
+gpt2-011_run4-c                                                                         0.322270   
+gpt2-401_run2-c                                                                         0.341476   
+gpt2-401_run1-c                                                                         0.383995   
+sample_m25c_kristy_and_the_middle_school_vandal...                                      0.346365   
+gpt2-401_run3-c                                                                         0.345237   
+sample_004c_mary_anne_saves_the_day_2_240                                               0.326739   
+gpt2-101_run3-c                                                                         0.237668   
+
+                                                    sample_082c_jessi_and_the_troublemaker_2_738  \
+gpt2-901_run3-c                                                                         0.480444   
+gpt2-011_run3-c                                                                         0.493576   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                            0.441927   
+gpt2-011_run4-c                                                                         0.409744   
+gpt2-401_run2-c                                                                         0.332368   
+gpt2-401_run1-c                                                                         0.383296   
+sample_m25c_kristy_and_the_middle_school_vandal...                                      0.421747   
+gpt2-401_run3-c                                                                         0.385248   
+sample_004c_mary_anne_saves_the_day_2_240                                               0.404536   
+gpt2-101_run3-c                                                                         0.388452   
+
+                                                    sample_084c_dawn_and_the_school_spirit_war_2_493  \
+gpt2-901_run3-c                                                                             0.425719   
+gpt2-011_run3-c                                                                             0.370129   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                                0.359927   
+gpt2-011_run4-c                                                                             0.287904   
+gpt2-401_run2-c                                                                             0.371720   
+gpt2-401_run1-c                                                                             0.350753   
+sample_m25c_kristy_and_the_middle_school_vandal...                                          0.314165   
+gpt2-401_run3-c                                                                             0.326957   
+sample_004c_mary_anne_saves_the_day_2_240                                                   0.329336   
+gpt2-101_run3-c                                                                             0.204856   
+
+                                                    sample_090c_welcome_to_the_bsc_abby_2_1491  \
+gpt2-901_run3-c                                                                       0.541717   
+gpt2-011_run3-c                                                                       0.523369   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                          0.481855   
+gpt2-011_run4-c                                                                       0.457020   
+gpt2-401_run2-c                                                                       0.422208   
+gpt2-401_run1-c                                                                       0.449189   
+sample_m25c_kristy_and_the_middle_school_vandal...                                    0.466279   
+gpt2-401_run3-c                                                                       0.396067   
+sample_004c_mary_anne_saves_the_day_2_240                                             0.460550   
+gpt2-101_run3-c                                                                       0.407096   
+
+                                                    sample_097c_claudia_and_the_worlds_cutest_baby_2_1631  \
+gpt2-901_run3-c                                                                              0.426473       
+gpt2-011_run3-c                                                                              0.442119       
+sample_m36c_kristy_and_the_cat_burglar_2_748                                                 0.383535       
+gpt2-011_run4-c                                                                              0.379274       
+gpt2-401_run2-c                                                                              0.313046       
+gpt2-401_run1-c                                                                              0.345531       
+sample_m25c_kristy_and_the_middle_school_vandal...                                           0.355875       
+gpt2-401_run3-c                                                                              0.328214       
+sample_004c_mary_anne_saves_the_day_2_240                                                    0.318263       
+gpt2-101_run3-c                                                                              0.316893       
+
+                                                    sample_100c_kristys_worst_idea_2_2163  \
+gpt2-901_run3-c                                                                  0.402392   
+gpt2-011_run3-c                                                                  0.417056   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                     0.424791   
+gpt2-011_run4-c                                                                  0.352157   
+gpt2-401_run2-c                                                                  0.382778   
+gpt2-401_run1-c                                                                  0.413975   
+sample_m25c_kristy_and_the_middle_school_vandal...                               0.375749   
+gpt2-401_run3-c                                                                  0.377923   
+sample_004c_mary_anne_saves_the_day_2_240                                        0.334569   
+gpt2-101_run3-c                                                                  0.272866   
+
+                                                    sample_106c_claudia_queen_of_the_seventh_grade_2_958  \
+gpt2-901_run3-c                                                                              0.444895      
+gpt2-011_run3-c                                                                              0.469058      
+sample_m36c_kristy_and_the_cat_burglar_2_748                                                 0.409680      
+gpt2-011_run4-c                                                                              0.382819      
+gpt2-401_run2-c                                                                              0.364013      
+gpt2-401_run1-c                                                                              0.348058      
+sample_m25c_kristy_and_the_middle_school_vandal...                                           0.343124      
+gpt2-401_run3-c                                                                              0.307364      
+sample_004c_mary_anne_saves_the_day_2_240                                                    0.323552      
+gpt2-101_run3-c                                                                              0.303143      
+
+                                                    sample_107c_mind_your_own_business_kristy_2_1194  \
+gpt2-901_run3-c                                                                             0.460230   
+gpt2-011_run3-c                                                                             0.469952   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                                0.413971   
+gpt2-011_run4-c                                                                             0.412021   
+gpt2-401_run2-c                                                                             0.328946   
+gpt2-401_run1-c                                                                             0.372235   
+sample_m25c_kristy_and_the_middle_school_vandal...                                          0.391581   
+gpt2-401_run3-c                                                                             0.337243   
+sample_004c_mary_anne_saves_the_day_2_240                                                   0.384144   
+gpt2-101_run3-c                                                                             0.378353   
+
+                                                    sample_108c_dont_give_up_mallory_2_489  \
+gpt2-901_run3-c                                                                   0.419397   
+gpt2-011_run3-c                                                                   0.449773   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                      0.366517   
+gpt2-011_run4-c                                                                   0.330739   
+gpt2-401_run2-c                                                                   0.373731   
+gpt2-401_run1-c                                                                   0.282060   
+sample_m25c_kristy_and_the_middle_school_vandal...                                0.308272   
+gpt2-401_run3-c                                                                   0.318265   
+sample_004c_mary_anne_saves_the_day_2_240                                         0.281450   
+gpt2-101_run3-c                                                                   0.324646   
+
+                                                    sample_110c_abby_and_the_bad_sport_2_535  \
+gpt2-901_run3-c                                                                     0.475494   
+gpt2-011_run3-c                                                                     0.479589   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                        0.452935   
+gpt2-011_run4-c                                                                     0.411300   
+gpt2-401_run2-c                                                                     0.352108   
+gpt2-401_run1-c                                                                     0.377652   
+sample_m25c_kristy_and_the_middle_school_vandal...                                  0.415717   
+gpt2-401_run3-c                                                                     0.402877   
+sample_004c_mary_anne_saves_the_day_2_240                                           0.344256   
+gpt2-101_run3-c                                                                     0.377716   
+
+                                                    sample_111c_staceys_secret_friend_2_700  \
+gpt2-901_run3-c                                                                    0.472944   
+gpt2-011_run3-c                                                                    0.460735   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                       0.455577   
+gpt2-011_run4-c                                                                    0.385803   
+gpt2-401_run2-c                                                                    0.384153   
+gpt2-401_run1-c                                                                    0.389871   
+sample_m25c_kristy_and_the_middle_school_vandal...                                 0.394513   
+gpt2-401_run3-c                                                                    0.366430   
+sample_004c_mary_anne_saves_the_day_2_240                                          0.382163   
+gpt2-101_run3-c                                                                    0.303371   
+
+                                                    sample_120c_mary_anne_and_the_playground_fight_2_942  \
+gpt2-901_run3-c                                                                              0.398819      
+gpt2-011_run3-c                                                                              0.375010      
+sample_m36c_kristy_and_the_cat_burglar_2_748                                                 0.401938      
+gpt2-011_run4-c                                                                              0.238020      
+gpt2-401_run2-c                                                                              0.450157      
+gpt2-401_run1-c                                                                              0.355299      
+sample_m25c_kristy_and_the_middle_school_vandal...                                           0.305044      
+gpt2-401_run3-c                                                                              0.376735      
+sample_004c_mary_anne_saves_the_day_2_240                                                    0.325300      
+gpt2-101_run3-c                                                                              0.178115      
+
+                                                    sample_121c_abby_in_wonderland_2_494  \
+gpt2-901_run3-c                                                                 0.514414   
+gpt2-011_run3-c                                                                 0.539196   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                    0.452673   
+gpt2-011_run4-c                                                                 0.528969   
+gpt2-401_run2-c                                                                 0.313590   
+gpt2-401_run1-c                                                                 0.374158   
+sample_m25c_kristy_and_the_middle_school_vandal...                              0.459303   
+gpt2-401_run3-c                                                                 0.387202   
+sample_004c_mary_anne_saves_the_day_2_240                                       0.401883   
+gpt2-101_run3-c                                                                 0.461545   
+
+                                                    sample_m03c_mallory_and_the_ghost_cat_2_261  \
+gpt2-901_run3-c                                                                        0.508227   
+gpt2-011_run3-c                                                                        0.500505   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                           0.471258   
+gpt2-011_run4-c                                                                        0.433921   
+gpt2-401_run2-c                                                                        0.362205   
+gpt2-401_run1-c                                                                        0.441003   
+sample_m25c_kristy_and_the_middle_school_vandal...                                     0.462301   
+gpt2-401_run3-c                                                                        0.377793   
+sample_004c_mary_anne_saves_the_day_2_240                                              0.417434   
+gpt2-101_run3-c                                                                        0.343293   
+
+                                                    sample_m04c_kristy_and_the_missing_child_2_1829  \
+gpt2-901_run3-c                                                                            0.389361   
+gpt2-011_run3-c                                                                            0.392852   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                               0.341251   
+gpt2-011_run4-c                                                                            0.331188   
+gpt2-401_run2-c                                                                            0.300502   
+gpt2-401_run1-c                                                                            0.325510   
+sample_m25c_kristy_and_the_middle_school_vandal...                                         0.323979   
+gpt2-401_run3-c                                                                            0.296802   
+sample_004c_mary_anne_saves_the_day_2_240                                                  0.281952   
+gpt2-101_run3-c                                                                            0.282845   
+
+                                                    sample_m06c_the_mystery_at_claudias_house_2_420  \
+gpt2-901_run3-c                                                                            0.511953   
+gpt2-011_run3-c                                                                            0.476576   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                               0.478028   
+gpt2-011_run4-c                                                                            0.409219   
+gpt2-401_run2-c                                                                            0.391034   
+gpt2-401_run1-c                                                                            0.465752   
+sample_m25c_kristy_and_the_middle_school_vandal...                                         0.470359   
+gpt2-401_run3-c                                                                            0.406761   
+sample_004c_mary_anne_saves_the_day_2_240                                                  0.394283   
+gpt2-101_run3-c                                                                            0.335873   
+
+                                                    sample_m10c_stacey_and_the_mystery_money_2_937  \
+gpt2-901_run3-c                                                                           0.457658   
+gpt2-011_run3-c                                                                           0.465530   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                              0.414049   
+gpt2-011_run4-c                                                                           0.375826   
+gpt2-401_run2-c                                                                           0.333504   
+gpt2-401_run1-c                                                                           0.397745   
+sample_m25c_kristy_and_the_middle_school_vandal...                                        0.420830   
+gpt2-401_run3-c                                                                           0.404037   
+sample_004c_mary_anne_saves_the_day_2_240                                                 0.319447   
+gpt2-101_run3-c                                                                           0.305196   
+
+                                                    sample_m12c_dawn_and_the_surfer_ghost_2_126  \
+gpt2-901_run3-c                                                                        0.459760   
+gpt2-011_run3-c                                                                        0.477651   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                           0.448544   
+gpt2-011_run4-c                                                                        0.360095   
+gpt2-401_run2-c                                                                        0.414897   
+gpt2-401_run1-c                                                                        0.378542   
+sample_m25c_kristy_and_the_middle_school_vandal...                                     0.357305   
+gpt2-401_run3-c                                                                        0.355920   
+sample_004c_mary_anne_saves_the_day_2_240                                              0.382390   
+gpt2-101_run3-c                                                                        0.286622   
+
+                                                    sample_m14c_stacey_and_the_mystery_at_the_mall_2_1474  \
+gpt2-901_run3-c                                                                              0.417698       
+gpt2-011_run3-c                                                                              0.466289       
+sample_m36c_kristy_and_the_cat_burglar_2_748                                                 0.388769       
+gpt2-011_run4-c                                                                              0.380298       
+gpt2-401_run2-c                                                                              0.352635       
+gpt2-401_run1-c                                                                              0.336892       
+sample_m25c_kristy_and_the_middle_school_vandal...                                           0.343990       
+gpt2-401_run3-c                                                                              0.329666       
+sample_004c_mary_anne_saves_the_day_2_240                                                    0.330806       
+gpt2-101_run3-c                                                                              0.280627       
+
+                                                    sample_m18c_stacey_and_the_mystery_at_the_empty_house_2_224  \
+gpt2-901_run3-c                                                                              0.392375             
+gpt2-011_run3-c                                                                              0.391493             
+sample_m36c_kristy_and_the_cat_burglar_2_748                                                 0.390592             
+gpt2-011_run4-c                                                                              0.401906             
+gpt2-401_run2-c                                                                              0.311908             
+gpt2-401_run1-c                                                                              0.314635             
+sample_m25c_kristy_and_the_middle_school_vandal...                                           0.348076             
+gpt2-401_run3-c                                                                              0.338699             
+sample_004c_mary_anne_saves_the_day_2_240                                                    0.311540             
+gpt2-101_run3-c                                                                              0.367010             
+
+                                                    sample_m20c_mary_anne_and_the_zoo_mystery_2_80  \
+gpt2-901_run3-c                                                                           0.431608   
+gpt2-011_run3-c                                                                           0.438953   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                              0.398172   
+gpt2-011_run4-c                                                                           0.372245   
+gpt2-401_run2-c                                                                           0.371339   
+gpt2-401_run1-c                                                                           0.343996   
+sample_m25c_kristy_and_the_middle_school_vandal...                                        0.354803   
+gpt2-401_run3-c                                                                           0.338031   
+sample_004c_mary_anne_saves_the_day_2_240                                                 0.318459   
+gpt2-101_run3-c                                                                           0.263552   
+
+                                                    sample_m25c_kristy_and_the_middle_school_vandal_2_134  \
+gpt2-901_run3-c                                                                              0.362717       
+gpt2-011_run3-c                                                                              0.366972       
+sample_m36c_kristy_and_the_cat_burglar_2_748                                                 0.301307       
+gpt2-011_run4-c                                                                              0.329566       
+gpt2-401_run2-c                                                                              0.399764       
+gpt2-401_run1-c                                                                              0.265152       
+sample_m25c_kristy_and_the_middle_school_vandal...                                           0.000000       
+gpt2-401_run3-c                                                                              0.290226       
+sample_004c_mary_anne_saves_the_day_2_240                                                    0.220285       
+gpt2-101_run3-c                                                                              0.391393       
+
+                                                    sample_m27c_claudia_and_the_lighthouse_ghost_2_356  \
+gpt2-901_run3-c                                                                              0.387444    
+gpt2-011_run3-c                                                                              0.403492    
+sample_m36c_kristy_and_the_cat_burglar_2_748                                                 0.393566    
+gpt2-011_run4-c                                                                              0.327204    
+gpt2-401_run2-c                                                                              0.374978    
+gpt2-401_run1-c                                                                              0.342433    
+sample_m25c_kristy_and_the_middle_school_vandal...                                           0.314246    
+gpt2-401_run3-c                                                                              0.335444    
+sample_004c_mary_anne_saves_the_day_2_240                                                    0.318535    
+gpt2-101_run3-c                                                                              0.255750    
+
+                                                    sample_m30c_kristy_and_the_mystery_train_2_1949  \
+gpt2-901_run3-c                                                                            0.549685   
+gpt2-011_run3-c                                                                            0.553948   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                               0.522906   
+gpt2-011_run4-c                                                                            0.505739   
+gpt2-401_run2-c                                                                            0.447380   
+gpt2-401_run1-c                                                                            0.490096   
+sample_m25c_kristy_and_the_middle_school_vandal...                                         0.510381   
+gpt2-401_run3-c                                                                            0.449219   
+sample_004c_mary_anne_saves_the_day_2_240                                                  0.452010   
+gpt2-101_run3-c                                                                            0.428533   
+
+                                                    sample_m36c_kristy_and_the_cat_burglar_2_748  \
+gpt2-901_run3-c                                                                         0.447857   
+gpt2-011_run3-c                                                                         0.461316   
+sample_m36c_kristy_and_the_cat_burglar_2_748                                            0.000000   
+gpt2-011_run4-c                                                                         0.330523   
+gpt2-401_run2-c                                                                         0.445632   
+gpt2-401_run1-c                                                                         0.299000   
+sample_m25c_kristy_and_the_middle_school_vandal...                                      0.301307   
+gpt2-401_run3-c                                                                         0.353823   
+sample_004c_mary_anne_saves_the_day_2_240                                               0.302063   
+gpt2-101_run3-c                                                                         0.433690   
+
+                                                          Sum  
+gpt2-901_run3-c                                     41.617101  
+gpt2-011_run3-c                                     41.355960  
+sample_m36c_kristy_and_the_cat_burglar_2_748        38.582972  
+gpt2-011_run4-c                                     35.910895  
+gpt2-401_run2-c                                     35.785294  
+gpt2-401_run1-c                                     35.697719  
+sample_m25c_kristy_and_the_middle_school_vandal...  34.150405  
+gpt2-401_run3-c                                     33.450365  
+sample_004c_mary_anne_saves_the_day_2_240           32.092564  
+gpt2-101_run3-c                                     31.670140  
