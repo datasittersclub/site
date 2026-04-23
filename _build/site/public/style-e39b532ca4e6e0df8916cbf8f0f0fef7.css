@@ -344,26 +344,13 @@ html[data-theme="dark"] .myst-admonition,
   background-color: #eed4e5 !important;
 }
 
-html[data-theme="light"] .myst-outline-section,
-html[data-theme="light"] .myst-outline-section a,
-html[data-theme="light"] .myst-outline-section .myst-outline-header,
-html[data-theme="dark"] .myst-outline-section,
-html[data-theme="dark"] .myst-outline-section a,
-html[data-theme="dark"] .myst-outline-section .myst-outline-header,
-.myst-outline-section,
-.myst-outline-section a,
-.myst-outline-section .myst-outline-header {
-  color: #6d079f !important;
-}
-
 html[data-theme="light"] .myst-outline-item-active,
 html[data-theme="light"] .myst-outline-item-active a,
 html[data-theme="dark"] .myst-outline-item-active,
 html[data-theme="dark"] .myst-outline-item-active a,
 .myst-outline-item-active,
 .myst-outline-item-active a {
-  background-color: #ffffff !important;
-  color: #6d079f !important;
+  color: #ffffff !important;
 }
 
 .bd-content details.toggle-details summary {
