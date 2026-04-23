@@ -12,8 +12,9 @@ permalink: /dsc16
 
 ```
 
-
+<div style="float: right; width: 200px;margin-left: 7px;margin-top: 0px;">
 <img src="_static/images/bookcovers/dsc16_cover.jpg" alt="DSC 16 book cover" />
+</div>
 
 by Anastasia Salter and Quinn Dombrowski, with Sam and Paul Dombrowski
 

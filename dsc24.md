@@ -15,9 +15,7 @@ by Anouk Lang, Lee Skallerup Bessette, and the Data-Sitters Club
 April 23, 2026
 
 
-<div style="width: 300px;margin-left: 7px;margin-top: 0px;">
 <img src="_static/images/bookcovers/dsc24_cover.jpg" alt="DSC 24 book cover" />
-</div>
 
 > This is Just To Say
 >

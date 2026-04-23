@@ -10,9 +10,8 @@ September 21, 2022
 
 <img src='_static/images/doi_logo.png' alt='DOI logo' height="20px" /> https://doi.org/10.25740/sd796vb8535
 
-<div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
+
 <img src="_static/images/bookcovers/dsc17_cover.jpg" alt="DSC 17 book cover" />
-</div>
 
 ## Preface (Quinn)
 

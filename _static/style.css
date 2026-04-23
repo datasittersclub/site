@@ -5,6 +5,9 @@
   #jb-print-toc {
     display: none;
   }
+  .myst-top-nav {
+    display: none;
+  }
 }
 
 

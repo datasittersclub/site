@@ -10,9 +10,7 @@ November 10, 2022
 
 <img src='_static/images/doi_logo.png' alt='DOI logo' height="20px" /> https://doi.org/10.25740/wr486nr4873
 
-<div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
 <img src="_static/images/bookcovers/dsc18_cover.jpg" alt="DSC 18 book cover" />
-</div>
 
 ## Dear Reader
 

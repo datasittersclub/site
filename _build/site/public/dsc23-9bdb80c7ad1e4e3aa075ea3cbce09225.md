@@ -14,7 +14,9 @@ by Anastasia Salter, John Murray, and Lee Skallerup Bessette
 August 25, 2025
 
 
+<div style="width: 300px;margin-left: 7px;margin-top: 0px;">
 <img src="_static/images/bookcovers/dsc23_cover.jpg" alt="DSC 23 book cover" />
+</div>
 
 ```{danger} 
 **A note from Quinn**

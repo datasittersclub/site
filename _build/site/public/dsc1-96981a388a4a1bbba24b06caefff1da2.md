@@ -11,7 +11,9 @@ permalink: /dsc1/
 
 ```
 
+<div style="float: right; width: 300px;margin-left: 7px;margin-top: 0px;">
 <img src="/_static/images/bookcovers/dsc1_cover.jpg" alt="DSC 1 book cover" />
+</div>
 
 by Quinn Dombrowski
 
