@@ -701,3 +701,38 @@ a {
 .table {
   background-color:#f9bbc6; !important
 }
+
+/* MyST dark mode should visually match light mode */
+html.dark {
+  color-scheme: light;
+}
+
+html.dark body {
+  background-color: #f9bbc6 !important;
+  color: #000000 !important;
+}
+
+html.dark .myst-top-nav {
+  background-color: #f9bbc6 !important;
+  color: #000000 !important;
+}
+
+html.dark .myst-primary-sidebar-pointer,
+html.dark .myst-outline {
+  background-color: #fff66b !important;
+  color: #000000 !important;
+}
+
+html.dark .myst-toc,
+html.dark .myst-toc-item,
+html.dark .myst-home-link,
+html.dark .myst-footer-link,
+html.dark .myst-fm-block,
+html.dark .myst-fm-author {
+  color: #000000 !important;
+}
+
+html.dark a,
+html.dark .link {
+  color: #6d079f !important;
+}
