@@ -45,7 +45,7 @@ April 23, 2026
 
 ## Anouk
 
-Anouk here. Your friendly, neighborhood data-sitters held a meeting to discuss the topic *du jour*: artificial intelligence. Chaos, ambivalence, a lot of grousing, and a few good insights ensued. (Katia, a noted grouser on this topic, adds that we have cut much of the grousing for your ease of reading. You’re welcome.)
+Anouk here. Your friendly, neighborhood data-sitters held a meeting to discuss the topic *du jour*: artificial intelligence. Chaos, ambivalence, a lot of grousing, and a few good insights ensued. (Katia, a noted grouser on this topic, adds that we have cut much of the grousing for your ease of reading. You’re welcome.) 
 
 There is a really basic but important insight from STS scholarship, I told my friends, which is that AI is not a singular *thing*. It makes no sense to just talk about “AI”: you need to specify which of its different manifestations you are talking about, unfold that into the many complicated assemblages in which it is situated, think about the processes that have gone into making those, which in turn involves understanding not just the computational processes going on under the hood but also the histories which constitute their development. 
 
