@@ -37,6 +37,24 @@ jobs:
         run: npm install -g jupyter-book
       - name: Build HTML Assets
         run: jupyter-book build --html
+      - name: Generate DSC Redirect Pages
+        run: |
+          for i in $(seq 1 21); do
+            cat > "_build/html/dsc${i}.html" <<EOF
+          <!doctype html>
+          <html lang="en">
+            <head>
+              <meta charset="utf-8">
+              <meta http-equiv="refresh" content="0; url=/site/dsc${i}/">
+              <link rel="canonical" href="/site/dsc${i}/">
+              <title>Redirecting to /site/dsc${i}/</title>
+            </head>
+            <body>
+              <p>Redirecting to <a href="/site/dsc${i}/">/site/dsc${i}/</a>...</p>
+            </body>
+          </html>
+          EOF
+          done
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
