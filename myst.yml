@@ -86,6 +86,8 @@ project:
           title: 'tldr #1: DH Curious?'
         - url: https://datasittersclub.github.io/tldr/books/tldr2/
           title: 'tldr #2: Forming Your Corpus'
+        - url: https://datasittersclub.github.io/tldr/books/tldr3/
+          title: 'tldr #3: Get "AI Ready" with Textiles'
     - title: Fun
       children:
         - file: covid19.md
