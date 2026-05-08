@@ -101,6 +101,7 @@ site:
   template: book-theme
   parts:
     navbar_end: |
+      <script defer src="https://webstats.yaffle.xyz/visit.js" data-website-id="d05d561b-8369-404e-ab35-241feeadd4ed"></script>
       <script>
         localStorage.setItem('myst:theme', 'light');
         document.documentElement.classList.remove('dark');
