@@ -88,6 +88,10 @@ project:
           title: 'tldr #2: Forming Your Corpus'
         - url: https://datasittersclub.github.io/tldr/books/tldr3/
           title: 'tldr #3: Get "AI Ready" with Textiles'
+        - url: https://datasittersclub.github.io/tldr/books/tldr4/
+          title: 'tldr #4: Navigating the Terminal for the First Time'
+        - url: https://datasittersclub.github.io/tldr/books/tldr5/
+          title: "tldr #5: What's the Deal with Topic Modeling?"
     - title: Fun
       children:
         - file: covid19.md
