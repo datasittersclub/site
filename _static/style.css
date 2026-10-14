@@ -173,7 +173,12 @@ html.dark .article,
 html.dark .prose,
 .article:is(.dark *),
 .prose:is(.dark *) {
-  background-color: #fff;
+  background-color: #f9bbc6;
+  color: #1c1917;
+}
+
+.myst-search-input {
+  background-color: #fff !important;
   color: #1c1917;
 }
 
