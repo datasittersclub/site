@@ -1,2 +1,4 @@
 .DS_Store
 /site/_build/
+# MyST build outputs
+_build

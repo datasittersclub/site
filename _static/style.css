@@ -182,6 +182,10 @@ html.dark .prose,
   color: #1c1917;
 }
 
+.task-list-item-checkbox:is(.dark *) {
+  background-color: #f9bbc6;
+}
+
 .bd-content .sd-card {
   border: 1px solid var(--pst-color-border);
 }

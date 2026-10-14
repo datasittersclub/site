@@ -12,7 +12,7 @@ permalink: /dsc4/
 
 ```
 
-<img src="https://datasittersclub.github.io/site/_images/dsc4_cover.jpg" alt="DSC 4 book cover" />
+<img src="/_static/images/bookcovers/dsc4_cover.jpg" alt="DSC 4 book cover" />
 
 by Anouk Lang
 
