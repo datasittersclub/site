@@ -8,7 +8,7 @@ bookseries: regular
 permalink: /dsc16
 ---
 
-```{index} single: *Book Topics ; Software studies (DSC 16)
+```{index} single: *Book Topics ; Software Studies (DSC 16)
 
 ```
 
@@ -31,7 +31,7 @@ Maybe there’s a software store in your local mall. Maybe you send away for it 
 
 <img src="_static/images/dsc16_cd.jpg" alt="Front and back CD cover of the Baby-Sitters Club Friendship Kit" />
 
-```{index} single: Software studies ; difficulty of building corpora
+```{index} single: Software Studies ; difficulty of building corpora
 
 ```
 

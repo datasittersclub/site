@@ -169,6 +169,14 @@ html[data-theme="light"] .sd-shadow-xs {
   color: #1c1917;
 }
 
+html.dark .article,
+html.dark .prose,
+.article:is(.dark *),
+.prose:is(.dark *) {
+  background-color: #fff;
+  color: #1c1917;
+}
+
 .bd-content .sd-card {
   border: 1px solid var(--pst-color-border);
 }
