@@ -164,6 +164,11 @@ html[data-theme="light"] .sd-shadow-xs {
     0 0 0.0625rem var(--pst-color-shadow) !important;
 }
 
+.hover-document:is(.dark *) {
+  background-color: #fff;
+  color: #1c1917;
+}
+
 .bd-content .sd-card {
   border: 1px solid var(--pst-color-border);
 }
