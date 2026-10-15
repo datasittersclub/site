@@ -13,7 +13,7 @@ by Quinn Dombrowski
 
 September 23, 2024
 
-
+ <img src='_static/images/doi_logo.png' alt='DOI logo' height="20px" />  https://doi.org/10.25740/jy691gy6559
 
 
 <img src="_static/images/bookcovers/dsc21_cover.jpg" alt="DSC 21 book cover" />
