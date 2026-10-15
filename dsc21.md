@@ -14,6 +14,8 @@ by Quinn Dombrowski
 September 23, 2024
 
 
+
+
 <img src="_static/images/bookcovers/dsc21_cover.jpg" alt="DSC 21 book cover" />
 
 ```{index} single: Divorce ; in BSC books 

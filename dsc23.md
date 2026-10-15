@@ -13,6 +13,8 @@ by Anastasia Salter, John Murray, and Lee Skallerup Bessette
 
 August 25, 2025
 
+<img src='_static/images/doi_logo.png' alt='DOI logo' height="20px" /> https://doi.org/10.25740/rq757ps3569
+
 
 <img src="_static/images/bookcovers/dsc23_cover.jpg" alt="DSC 23 book cover" />
 

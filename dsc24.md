@@ -14,6 +14,8 @@ by Anouk Lang, Lee Skallerup Bessette, and the Data-Sitters Club
 
 April 23, 2026
 
+<img src='_static/images/doi_logo.png' alt='DOI logo' height="20px" /> https://doi.org/10.25740/dt177qh8322
+
 
 <img src="/_static//images/bookcovers/dsc24_cover.jpg" alt="DSC 24 book cover" />
 

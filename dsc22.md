@@ -13,6 +13,8 @@ by Lee Skallerup Bessette, Quinn Dombrowski, Julia Evans, and Marie LeBlanc Flan
 
 June 13, 2025
 
+<img src='_static/images/doi_logo.png' alt='DOI logo' height="20px" /> https://doi.org/10.25740/yx200mp8753
+
 
 <img src="_static/images/bookcovers/dsc22_cover.jpg" alt="DSC 22 book cover" />
 
